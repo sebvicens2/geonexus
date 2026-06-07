@@ -187,8 +187,10 @@ export_graphml(g, "graph.graphml")  # → Gephi / yEd
 To show EventGraph on a live feed rather than a toy, `examples/` includes an
 experimental integration with [World Observer](https://github.com/) — a corpus of
 analysed geopolitical articles (countries, actors, theatres, categories,
-importance, dates). The integration is **read-only and one-directional**: a single
-script exports a real sample to JSON; the library never depends on World Observer.
+importance, dates, plus WO's LLM-flagged `entities_to_watch` as a lightweight
+forward-looking signal). The integration is **read-only and one-directional**: a
+single script exports a real sample to JSON; the library never depends on World
+Observer, and EventGraph itself runs no LLM.
 
 ```bash
 python examples/world_observer_demo.py   # text report
@@ -212,28 +214,28 @@ a prototype for a future World Observer tab.
 ![EventGraph dashboard — overview](assets/dashboard_overview.png)
 ![EventGraph dashboard — clusters](assets/dashboard_clusters.png)
 
-From **350 real events** (a 3-day window), the graph (~875 nodes) surfaces — with
-no LLM and no hand-tuning — the structure of the news cycle:
+From **2,365 real events** (a 14-day window), the graph (~4,500 nodes) surfaces —
+with no LLM and no hand-tuning — the structure of the news cycle:
 
 ```text
 Top by influence (≈ media coverage volume)
-  United States  Iran  Israel  gulf_iran  Russia  Ukraine  China …
+  United States  Iran  Russia  Israel  Ukraine  ukraine_russia  gulf_iran …
 
 Emerging clusters (media co-occurrence)
-  Cluster 1: Israel, israel_gaza, Lebanon, Palestine, israel_hezbollah_lebanon
-  Cluster 2: United States, Iran, gulf_iran, strait_hormuz, maritime_chokepoints
+  Cluster 1: United States, Iran, gulf_iran, strait_hormuz, maritime_chokepoints
+  Cluster 2: Israel, israel_gaza, Lebanon, Palestine, israel_hezbollah_lebanon
   Cluster 3: Russia, Ukraine, ukraine_russia, Vladimir Putin, Volodymyr Zelensky
   Cluster 4: China, taiwan_strait, Taiwan, korean_peninsula, global_crisis
 
 Top attention hotspots (connectivity / attention — NOT real-world risk)
-  United States  0.817   Iran  0.688   Israel  0.662   gulf_iran  0.512
+  United States  0.819   Iran  0.728   Russia  0.602   Israel  0.590
 ```
 
 > **Honest caveats.** These metrics describe **media attention**, not real-world
 > risk or causality. *Influence* ≈ coverage volume (it correlates ~0.93 with raw
 > degree); *hotspots* measure connectivity, not risk; the *causal paths* in the
 > report attach assets via a hand-mapped heuristic and are **illustrative, not
-> predictive**. The sample is 3 days of English-language coverage.
+> predictive**. The sample is 14 days of English-language coverage.
 
 The four largest communities still cleanly recover the four live theatres —
 Middle East, Iran/Gulf, Russia/Ukraine and Asia-Pacific — from co-occurrence alone:

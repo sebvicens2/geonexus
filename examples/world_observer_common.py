@@ -13,6 +13,9 @@ Graph model (reusing EventGraph's three node kinds, no new abstractions):
 
 Edges run *entity -> event* (the entity participates in / drives the event),
 so a node's influence_score reflects how much significant activity it touches.
+WO's LLM-flagged ``entities_to_watch`` add weaker, forward-looking CORRELATES
+edges for entities not already involved (metadata source="watch"). Entities are
+de-duplicated across case/underscore variants.
 """
 
 from __future__ import annotations
@@ -89,7 +92,8 @@ def build_graph(events: list[dict[str, Any]]) -> EventGraph:
     # pass 1: pick a canonical display name per entity key (merge variants)
     display: dict[str, str] = {}
     for e in events:
-        for raw in (*e["countries"], *e["actors"], *e["organizations"]):
+        watch = e.get("entities_to_watch", [])
+        for raw in (*e["countries"], *e["actors"], *e["organizations"], *watch):
             name = _canon(raw)
             if not name:
                 continue
@@ -126,6 +130,23 @@ def build_graph(events: list[dict[str, Any]]) -> EventGraph:
                     target=event.node_id,
                     relation_type=RelationType.INVOLVES,
                     weight=weight,
+                )
+            )
+
+        # entities_to_watch -> forward-looking "watch" links, but only for entities
+        # not already involved (pure enrichment from WO's LLM, weaker weight)
+        watch_names = {resolve(x) for x in e.get("entities_to_watch", []) if x.strip()} - names
+        for name in watch_names:
+            nid = f"actor:{name}"
+            if nid not in g:
+                g.add_actor(Actor(id=name, name=name, metadata={"wo_kind": "actor"}))
+            g.add_relation(
+                Relation(
+                    source=nid,
+                    target=event.node_id,
+                    relation_type=RelationType.CORRELATES,
+                    weight=weight * 0.7,
+                    metadata={"source": "watch"},
                 )
             )
 

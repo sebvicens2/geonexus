@@ -60,6 +60,14 @@ def extract(
             best[aid] = n
             categories[aid] = cat
 
+    # entities_to_watch is a clean JSON list written by the WO LLM (forward-looking)
+    watch: dict[str, str] = {}
+    for r in conn.execute(
+        "SELECT article_id, entities_to_watch FROM article_analysis "
+        "WHERE entities_to_watch IS NOT NULL AND entities_to_watch NOT IN ('', '[]')"
+    ).fetchall():
+        watch.setdefault(r["article_id"], r["entities_to_watch"])
+
     # NB: articles.published_at holds raw RSS date strings of mixed formats, so we
     # use article_metadata.created_at (always ISO-8601) as the authoritative date.
     rows = conn.execute(
@@ -90,6 +98,7 @@ def extract(
             "actors": _loads(r["actors"]),
             "organizations": _loads(r["organizations"]),
             "commodities": _loads(r["commodities"]),
+            "entities_to_watch": _loads(watch.get(r["article_id"])),
         }
 
     if per_day is None:
