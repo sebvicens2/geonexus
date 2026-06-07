@@ -264,6 +264,37 @@ Russia/Ukraine/Baltics, the Sahel…) ranked by mean WO instability.
 
 ![EventGraph over WO's synthesis layer](assets/synthesis_dashboard.png)
 
+### Narrative evolution — where the genuinely new signal is
+
+The static instability scores and the co-occurrence graph mostly recover the
+obvious. The interesting signal turned out to be the **drift of WO's LLM
+narratives over time** — which topics *enter*, *fade* or *persist* in each
+country/theatre synthesis. Topics are extracted deterministically from the
+summary bullets (no LLM); one graph per day is stored in an `EventMemory` and
+diffed.
+
+```bash
+python examples/extract_world_observer_narrative_history.py  # versioned LLM summaries → JSON
+python examples/narrative_evolution.py                        # → reports/world_observer_narrative_evolution.md
+```
+
+Real, interpretable output (10-day window):
+
+```text
+[gulf_iran]   + entered: Bahrain, Kuwait, China, Belt & Road, Supreme Leader
+              - faded:   IRGC, South Korean         (the conflict widens to the Gulf)
+[ukraine_russia] + entered: Chornobyl, IAEA, Zaporizhzhia, Black Sea   (nuclear-site dimension)
+[israel_gaza]    + entered: Bab-el-Mandeb, West Bank, Egypt            (spread to the Red Sea)
+
+Entering the world narrative (across entities):
+  8 entities  Ebola        ← a weak signal rising across many narratives at once
+  3 entities  DRC, IAEA, Chornobyl, Hormuz …
+```
+
+The `Ebola` rollup is the kind of cross-cutting weak signal no single-entity view
+or instability score surfaces — it only appears by diffing the narrative content
+across entities over time.
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day
