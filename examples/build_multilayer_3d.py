@@ -28,8 +28,8 @@ LAYER_COLOR = {
     "energy": "#a855f7",
     "health": "#10b981",
 }
-Z_SPACING = 160
-XY_SCALE = 420
+Z_SPACING = 230  # vertical gap between layer planes
+XY_SCALE = 340  # spread of countries within a plane
 
 
 def build_graph_data(net: dict) -> dict:
@@ -62,12 +62,13 @@ def build_graph_data(net: dict) -> dict:
                     "layer": lay,
                     "color": LAYER_COLOR[lay],
                     "val": 1 + deg.get(c, 0),
+                    # layer = vertical axis (Y) so planes read as stacked; country (x,y) -> X,Z
                     "x": x * XY_SCALE,
                     "fx": x * XY_SCALE,
-                    "y": y * XY_SCALE,
-                    "fy": y * XY_SCALE,
-                    "z": li * Z_SPACING,
-                    "fz": li * Z_SPACING,
+                    "y": li * Z_SPACING,
+                    "fy": li * Z_SPACING,
+                    "z": y * XY_SCALE,
+                    "fz": y * XY_SCALE,
                 }
             )
         for (a, b), s in net[lay].items():
@@ -123,8 +124,7 @@ _TEMPLATE = """<!doctype html>
   #legend { margin-top:6px; font-size:13px; }
   #legend span { font-size:15px; }
 </style>
-<script src="//unpkg.com/three@0.149.0/build/three.min.js"></script>
-<script src="//unpkg.com/3d-force-graph"></script>
+<script src="https://unpkg.com/3d-force-graph"></script>
 </head><body>
 <div id="hud">
   <h1>EventGraph — 3D multiplex (__N__ nodes)</h1>
@@ -136,6 +136,13 @@ _TEMPLATE = """<!doctype html>
 <div id="g"></div>
 <script>
   const DATA = __DATA__;
+  if (typeof ForceGraph3D === 'undefined') {
+    document.getElementById('g').innerHTML =
+      '<p style="padding:120px 30px;color:#f87171;font-size:16px">Could not load '
+      + '3d-force-graph from the CDN — this page needs an internet connection '
+      + '(or use the static dashboard instead).</p>';
+    throw new Error('3d-force-graph not loaded');
+  }
   const Graph = ForceGraph3D()(document.getElementById('g'))
     .graphData(DATA)
     .backgroundColor('#0b1020')
@@ -149,7 +156,10 @@ _TEMPLATE = """<!doctype html>
     .enableNodeDrag(false);
   // nodes carry fixed x/y/z (fx/fy/fz) -> the layers stay as stacked planes
   Graph.d3Force('charge', null); Graph.d3Force('link', null); Graph.d3Force('center', null);
-  setTimeout(function() { Graph.zoomToFit(600, 80); }, 400);
+  // oblique initial camera so the stacked layer-planes are immediately visible
+  setTimeout(function() {
+    Graph.cameraPosition({ x: 700, y: 500, z: 950 }, { x: 0, y: 450, z: 0 }, 0);
+  }, 350);
 </script>
 </body></html>
 """
