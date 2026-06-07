@@ -295,6 +295,27 @@ The `Ebola` rollup is the kind of cross-cutting weak signal no single-entity vie
 or instability score surfaces — it only appears by diffing the narrative content
 across entities over time.
 
+**Day by day**, the tracker dates *when* each topic enters, with a sparkline of
+how many narratives carry it, plus a chronological feed and per-entity timelines:
+
+```text
+Rising topics (dated)
+  Ebola       first seen 2026-05-27   1 → 9 entities   ▁▃▂▁▇█████   ← breakout ~06-01
+  West Bank   first seen 2026-06-06   0 → 4 entities          ▂▄
+  Beirut      first seen 2026-05-28   0 → 4 entities    ▁ ▄▂▁   ▄
+
+Chronological feed (first crossing into 2+ narratives)
+  2026-05-31  Zaporizhzhia, IAEA, Beaufort Castle      ← nuclear angle enters
+  2026-06-05  Bab, Mandeb (Bab-el-Mandeb), Shangri-La  ← Red Sea chokepoint enters
+  2026-06-07  Chornobyl, Nordic
+
+Entry timeline — gulf_iran
+  2026-05-28 + Oil, Merchant      2026-06-01 + China, Kuwait
+  2026-06-04 + Bahrain            2026-06-05 + Belt & Road, Supreme Leader
+```
+
+![Narrative momentum — topics rising across the world's syntheses](assets/narrative_momentum.png)
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day

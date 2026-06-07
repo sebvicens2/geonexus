@@ -26,6 +26,7 @@ from eventgraph import Actor, EventGraph, EventMemory, Relation, RelationType
 
 DATA = Path(__file__).parent / "data" / "world_observer_narrative_history.json"
 REPORT = Path("reports") / "world_observer_narrative_evolution.md"
+MOMENTUM_PNG = Path("world_observer_narrative_momentum.png")
 
 # generic capitalised tokens that are not informative entities/topics
 GENERIC = {
@@ -161,6 +162,57 @@ def topics_of(memory: EventMemory, day: str, entity_key: str) -> set[str]:
     return {g.label(n) for n in g.neighbors(eid, direction="out")}
 
 
+def world_series(memory: EventMemory, entities: list[dict]) -> dict[str, dict[str, int]]:
+    """For each topic: {day -> number of entities whose narrative mentions it}."""
+    days = memory.dates()
+    series: dict[str, dict[str, int]] = {}
+    for day in days:
+        for e in entities:
+            for topic in topics_of(memory, day, e["key"]):
+                series.setdefault(topic, dict.fromkeys(days, 0))[day] += 1
+    return series
+
+
+def first_seen(series_for_topic: dict[str, int], days: list[str]) -> str | None:
+    """First day a topic's count is non-zero."""
+    return next((d for d in days if series_for_topic[d] > 0), None)
+
+
+def rising_topics(
+    series: dict[str, dict[str, int]], days: list[str], *, min_end: int = 3
+) -> list[tuple[str, int, int, str]]:
+    """(topic, start_count, end_count, first_day) for topics that climb across entities."""
+    out = []
+    for topic, by_day in series.items():
+        start, end = by_day[days[0]], by_day[days[-1]]
+        if end >= min_end and end - start >= 2:
+            out.append((topic, start, end, first_seen(by_day, days) or days[0]))
+    out.sort(key=lambda r: (r[2] - r[1], r[2]), reverse=True)
+    return out
+
+
+def render_momentum_chart(
+    series: dict[str, dict[str, int]], days: list[str], topics: list[str], path: Path
+) -> None:
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    fig, ax = plt.subplots(figsize=(12, 6))
+    for topic in topics:
+        ax.plot(days, [series[topic][d] for d in days], marker="o", linewidth=1.8, label=topic)
+    ax.set_xlabel("day")
+    ax.set_ylabel("# entities whose narrative mentions the topic")
+    ax.set_title("Narrative momentum — topics rising across the world's syntheses")
+    ax.legend(loc="upper left", fontsize=8)
+    ax.tick_params(axis="x", rotation=45)
+    ax.grid(True, alpha=0.3)
+    fig.tight_layout()
+    fig.savefig(path, dpi=130, bbox_inches="tight")
+    plt.close(fig)
+
+
 def main() -> None:
     entities = json.loads(DATA.read_text(encoding="utf-8"))
     memory = build_memory(entities)
@@ -218,21 +270,85 @@ def main() -> None:
     for topic, n in entering.most_common(15):
         print(f"  {n:>2} entities  {topic}")
 
-    _write_markdown(memory, entities, by_key, spotlight, entering, first, last)
-    print(f"\nMarkdown report written to {REPORT}")
+    # ---- day-by-day temporal analysis ---------------------------------- #
+    series = world_series(memory, entities)
+    rising = rising_topics(series, days)
+
+    head("RISING TOPICS  (trajectory across the window, dated)")
+    print(f"  {'topic':<26} {'first seen':<12} {'start→end (entities)':<20} sparkline")
+    for topic, start, end, fday in rising[:12]:
+        spark = "".join(_spark(series[topic][d]) for d in days)
+        print(f"  {topic[:26]:<26} {fday:<12} {start:>2} → {end:<2}  {' ' * 9}{spark}")
+
+    head("CHRONOLOGICAL FEED  (topics first crossing into 2+ narratives, by day)")
+    seen: set[str] = set()
+    for d in days:
+        new_today = []
+        for topic, by_day in series.items():
+            if topic in seen:
+                continue
+            if by_day[d] >= 2:
+                new_today.append((by_day[d], topic))
+                seen.add(topic)
+        if new_today:
+            new_today.sort(reverse=True)
+            tops = ", ".join(f"{t} ({n})" for n, t in new_today[:6])
+            print(f"  {d}:  {tops}")
+
+    head(f"ENTRY TIMELINE per entity  (when each topic entered, {spotlight[0]})")
+    key = spotlight[0]
+    entry_day: dict[str, str] = {}
+    for d in days:
+        for topic in topics_of(memory, d, key):
+            entry_day.setdefault(topic, d)
+    for topic, d in sorted(entry_day.items(), key=lambda kv: kv[1]):
+        if d != days[0]:  # only show topics that entered after the start
+            print(f"    {d}  + {topic}")
+
+    chart_topics = [t for t, *_ in rising[:6]] or list(series)[:6]
+    render_momentum_chart(series, days, chart_topics, MOMENTUM_PNG)
+    print(f"\nNarrative momentum chart → {MOMENTUM_PNG}")
+
+    _write_markdown(memory, entities, spotlight, entering, rising, series, days, first, last)
+    print(f"Markdown report written to {REPORT}")
 
 
-def _write_markdown(memory, entities, by_key, spotlight, entering, first, last) -> None:
+def _spark(n: int) -> str:
+    bars = " ▁▂▃▄▅▆▇█"
+    return bars[min(n, len(bars) - 1)]
+
+
+def _write_markdown(
+    memory, entities, spotlight, entering, rising, series, days, first, last
+) -> None:
     L: list[str] = []
     L.append("# World Observer — narrative evolution\n")
     L.append(
         f"_How WO's LLM syntheses drifted between **{first}** and **{last}**: which "
-        "topics entered, faded or persisted. Topics are extracted deterministically "
-        "from the summary bullets (no LLM). EventGraph stores one graph per day in an "
-        "EventMemory and diffs each entity's topic set._\n"
+        "topics entered, faded or persisted, and *when*. Topics are extracted "
+        "deterministically from the summary bullets (no LLM). EventGraph stores one "
+        "graph per day in an EventMemory and diffs the daily topic sets._\n"
     )
 
-    L.append("## What entered / faded per narrative\n")
+    L.append("## Rising topics (dated trajectory)\n")
+    L.append("| Topic | First seen | Start → End (entities) |")
+    L.append("| --- | --- | --- |")
+    for topic, start, end, fday in rising[:15]:
+        L.append(f"| {topic} | {fday} | {start} → {end} |")
+
+    L.append("\n## Chronological feed (topics first reaching 2+ narratives, by day)\n")
+    seen: set[str] = set()
+    for d in days:
+        new_today = sorted(
+            ((by_day[d], t) for t, by_day in series.items() if t not in seen and by_day[d] >= 2),
+            reverse=True,
+        )
+        for _, t in new_today:
+            seen.add(t)
+        if new_today:
+            L.append(f"- **{d}** — {', '.join(t for _, t in new_today[:8])}")
+
+    L.append("\n## What entered / faded per narrative\n")
     for key in spotlight:
         a = topics_of(memory, first, key)
         b = topics_of(memory, last, key)
