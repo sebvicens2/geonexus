@@ -316,6 +316,16 @@ Entry timeline — gulf_iran
 
 ![Narrative momentum — topics rising across the world's syntheses](assets/narrative_momentum.png)
 
+A self-contained HTML dashboard puts it all together — momentum chart, dated
+rising topics with trajectory sparklines, a chronological feed, and per-entity
+enter/fade/timeline:
+
+```bash
+python examples/build_narrative_dashboard.py   # → reports/eventgraph_narrative_dashboard.html
+```
+
+![Narrative dashboard — rising topics with sparklines](assets/narrative_dashboard_rising.png)
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day
