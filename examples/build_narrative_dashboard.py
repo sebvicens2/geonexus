@@ -10,6 +10,7 @@ Reuses the components from build_dashboard.py. Open in any browser; no server.
 
 from __future__ import annotations
 
+import argparse
 import base64
 import html
 import io
@@ -27,10 +28,12 @@ from narrative_evolution import (
     _spark,
     build_memory,
     emerging_signals,
+    relate_signals,
     rising_topics,
     topics_of,
     world_series,
 )
+from narrative_llm_brief import _prompt, ollama
 
 OUT_PATH = Path("reports") / "eventgraph_narrative_dashboard.html"
 SPOTLIGHT = (
@@ -64,7 +67,50 @@ def _chart_b64(series: dict[str, dict[str, int]], days: list[str], topics: list[
     return base64.b64encode(buf.getvalue()).decode("ascii")
 
 
+def _llm_enrich(
+    signals: list[dict], chains: list[list[dict]], by_key: dict, model: str
+) -> tuple[dict[str, str], dict[int, str]]:
+    """Optional Qwen layer: grounded per-signal explanation + per-chain storyline."""
+    explain: dict[str, str] = {}
+    thesis: dict[int, str] = {}
+    if ollama(model, "ping") is None:
+        print(f"  (Ollama not reachable — skipping LLM enrichment, model {model})")
+        return explain, thesis
+    for s in signals:
+        key = s["where"][0] if s["where"] else None
+        if not key or key not in by_key:
+            continue
+        bd = by_key[key]["by_day"]
+        ed = sorted(bd)
+        out = ollama(model, _prompt(key, s["topic"], ed[0], bd[ed[0]], ed[-1], bd[ed[-1]]))
+        for ln in (out or "").splitlines():
+            if ln.upper().startswith("CHANGE:"):
+                explain[s["topic"]] = ln.split(":", 1)[1].strip()
+    for i, chain in enumerate(chains):
+        members = ", ".join(s["topic"] for s in chain)
+        ctx = "\n".join(f"- {s['topic']}: {explain.get(s['topic'], '')}" for s in chain)
+        prompt = (
+            f"These news topics rose together over the same week: {members}.\n{ctx}\n"
+            "In ONE sentence, name the underlying storyline and how they connect. "
+            "Use only the facts above. Start the line with 'STORYLINE:'."
+        )
+        out = ollama(model, prompt)
+        for ln in (out or "").splitlines():
+            if ln.upper().startswith("STORYLINE:"):
+                thesis[i] = ln.split(":", 1)[1].strip()
+    return explain, thesis
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--llm",
+        action="store_true",
+        help="enrich with a local Qwen (Ollama): explanations + chain storylines",
+    )
+    parser.add_argument("--model", default="qwen2.5:7b")
+    args = parser.parse_args()
+
     entities = json.loads(DATA.read_text(encoding="utf-8"))
     memory = build_memory(entities)
     days = memory.dates()
@@ -85,20 +131,47 @@ def main() -> None:
 
     # emerging-signals board (the headline: denoised, surprise-ranked breakouts)
     signals = emerging_signals(memory, entities, series, days)[:12]
-    signal_cards = "".join(
-        f"""
+    chains = relate_signals(signals)
+    explain, thesis = ({}, {})
+    if args.llm:
+        print(f"Enriching with {args.model} (per-signal explanation + chain storylines)…")
+        explain, thesis = _llm_enrich(signals, chains, by_key, args.model)
+
+    def _sig_card(s: dict) -> str:
+        why = explain.get(s["topic"])
+        why_html = f'<div class="sig-why">{html.escape(why)}</div>' if why else ""
+        chips = "".join(f'<span class="chip2">{html.escape(w)}</span>' for w in s["where"])
+        return f"""
         <div class="sig">
           <div class="sig-top">
             <span class="sig-topic">{html.escape(s["topic"])}</span>
             <span class="sig-meta">broke out <b>{s["breakout_day"]}</b>
               · now in <b>~{s["recent"]:.0f}</b> narratives</span>
           </div>
-          <span class="spark">{s["spark"]}</span>
-          <div class="sig-where">{
-            "".join(f'<span class="chip2">{html.escape(w)}</span>' for w in s["where"])
-        }</div>
+          <span class="spark">{s["spark"]}</span>{why_html}
+          <div class="sig-where">{chips}</div>
         </div>"""
-        for s in signals
+
+    signal_cards = "".join(_sig_card(s) for s in signals)
+
+    # signal chains (storylines): signals sharing the same narratives
+    def _chain_card(i: int, chain: list[dict]) -> str:
+        title = thesis.get(i) or " + ".join(s["topic"] for s in chain)
+        mems = "".join(
+            f'<div class="cmem"><b>{html.escape(s["topic"])}</b> '
+            f'<span class="spark">{s["spark"]}</span> '
+            f'<span class="sig-meta">⤴{s["breakout_day"]}</span></div>'
+            for s in chain
+        )
+        tag = " + ".join(s["topic"] for s in chain)
+        return (
+            f'<div class="chain"><div class="chain-title">{html.escape(title)}</div>'
+            f'<div class="chain-tag">{html.escape(tag)}</div>{mems}</div>'
+        )
+
+    chains_html = (
+        "".join(_chain_card(i, c) for i, c in enumerate(chains))
+        or '<p class="hint">No multi-signal chains at the current threshold.</p>'
     )
 
     # momentum chart (top rising)
@@ -181,6 +254,7 @@ def main() -> None:
 
     page = _TEMPLATE.format(
         signals=signal_cards,
+        chains=chains_html,
         cards=cards,
         chart=chart,
         rising=rising_tbl,
@@ -252,6 +326,14 @@ _TEMPLATE = """<!doctype html>
   .sig-meta {{ font-size:12px; color:var(--muted); }}
   .sig .spark {{ display:block; margin:8px 0; font-size:18px; }}
   .sig-where {{ margin-top:4px; }}
+  .sig-why {{ font-size:13px; color:#334155; margin:6px 0; font-style:italic; }}
+  .chains {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:14px; }}
+  .chain {{ background:var(--panel); border:1px solid var(--line); border-left:4px solid #b45309;
+    border-radius:10px; padding:14px; }}
+  .chain-title {{ font-size:15px; font-weight:700; }}
+  .chain-tag {{ font-size:12px; color:var(--muted); margin:2px 0 8px; }}
+  .cmem {{ padding:3px 0; font-size:13px; }}
+  .cmem .spark {{ font-size:15px; }}
   .feed-row {{ padding:8px 0; border-bottom:1px solid var(--line); }}
   .feed-day {{ display:inline-block; width:96px; font-weight:600;
     font-variant-numeric:tabular-nums; color:#334155; }}
@@ -283,6 +365,7 @@ _TEMPLATE = """<!doctype html>
 </div>
 <nav>
   <button class="active" data-tab="signals">⚡ Emerging signals</button>
+  <button data-tab="chains">Chains</button>
   <button data-tab="momentum">Momentum</button>
   <button data-tab="rising">Rising topics</button>
   <button data-tab="feed">Chronological feed</button>
@@ -295,6 +378,13 @@ _TEMPLATE = """<!doctype html>
       Each shows when it broke out, how many narratives carry it, its trajectory,
       and where it spread.</p>
     <div class="sigs">{signals}</div>
+  </section>
+  <section class="tab" id="chains">
+    <h2 class="section">Signal chains — storylines that rose together</h2>
+    <p class="hint">Signals that surfaced in the same narratives are linked into
+      chains (EventGraph connected components). With <code>--llm</code>, a local
+      Qwen names each storyline and how the pieces connect.</p>
+    <div class="chains">{chains}</div>
   </section>
   <section class="tab" id="momentum">
     <h2 class="section">Overview</h2>

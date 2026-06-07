@@ -349,6 +349,23 @@ EventGraph itself stays LLM-free; this enrichment lives in `examples/` and
 degrades gracefully if Ollama isn't running. Detection is reproducible; the
 LLM interpretation layer is not.
 
+#### Relating signals into chains
+
+Signals that surface in the same narratives are linked into **chains** — built
+deterministically as connected components of a signal graph (EventGraph used on
+its own output). With `--llm`, a local Qwen names each storyline and explains how
+the pieces connect, grounded in the per-signal explanations:
+
+```bash
+python examples/build_narrative_dashboard.py --llm --model qwen2.5:7b
+```
+
+> *"An Ebola outbreak in Congo has led to border closures in Uganda, prompting the
+> WHO to seek international support, and drawing attention to broader impacts
+> across Central Africa."* — chain: Uganda + WHO + Central Africa
+
+![Narrative dashboard — signal chains](assets/narrative_chains.png)
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day

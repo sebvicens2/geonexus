@@ -281,6 +281,37 @@ def emerging_signals(
     return out
 
 
+def relate_signals(signals: list[dict], *, min_overlap: float = 0.2) -> list[list[dict]]:
+    """Group emerging signals into chains: signals sharing the narratives they appear in.
+
+    Builds an EventGraph of signals (edge = Jaccard overlap of their ``where``
+    narratives) and returns the connected components of size >= 2 — the
+    storylines. Deterministic; reproducible.
+    """
+    import networkx as nx
+
+    g = EventGraph()
+    by_node: dict[str, dict] = {}
+    for s in signals:
+        nid = g.add_actor(Actor(id=s["topic"], name=s["topic"]))
+        by_node[nid] = s
+    for i in range(len(signals)):
+        for j in range(i + 1, len(signals)):
+            wa, wb = set(signals[i]["where"]), set(signals[j]["where"])
+            if wa and wb:
+                jac = len(wa & wb) / len(wa | wb)
+                if jac >= min_overlap:
+                    g.connect(f"actor:{signals[i]['topic']}", f"actor:{signals[j]['topic']}",
+                              RelationType.CORRELATES, weight=jac)
+    chains = [
+        sorted((by_node[n] for n in comp), key=lambda s: s["recent"], reverse=True)
+        for comp in nx.connected_components(g.raw.to_undirected())
+        if len(comp) >= 2
+    ]
+    chains.sort(key=len, reverse=True)
+    return chains
+
+
 def render_momentum_chart(
     series: dict[str, dict[str, int]], days: list[str], topics: list[str], path: Path
 ) -> None:
@@ -319,13 +350,18 @@ def main() -> None:
         f"{len(entities)} entities — deterministic extraction, no LLM."
     )
 
+    signals = emerging_signals(memory, entities, series, days)[:12]
     head("EMERGING SIGNALS  (denoised, ranked by surprise — read this first)")
-    for s in emerging_signals(memory, entities, series, days)[:12]:
+    for s in signals:
         print(
             f"  {s['topic'][:22]:<22} ^{s['breakout_day']}  "
             f"~{s['recent']:.0f} narratives  {s['spark']}"
         )
         print(f"     -> {', '.join(s['where'])}")
+
+    head("SIGNAL CHAINS  (signals sharing the same narratives = one storyline)")
+    for chain in relate_signals(signals):
+        print(f"  • {' + '.join(s['topic'] for s in chain)}")
 
     # spotlight a few high-signal theatres/countries
     spotlight = [
