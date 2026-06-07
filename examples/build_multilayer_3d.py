@@ -62,9 +62,12 @@ def build_graph_data(net: dict) -> dict:
                     "layer": lay,
                     "color": LAYER_COLOR[lay],
                     "val": 1 + deg.get(c, 0),
-                    "x": x * XY_SCALE, "fx": x * XY_SCALE,
-                    "y": y * XY_SCALE, "fy": y * XY_SCALE,
-                    "z": li * Z_SPACING, "fz": li * Z_SPACING,
+                    "x": x * XY_SCALE,
+                    "fx": x * XY_SCALE,
+                    "y": y * XY_SCALE,
+                    "fy": y * XY_SCALE,
+                    "z": li * Z_SPACING,
+                    "fz": li * Z_SPACING,
                 }
             )
         for (a, b), s in net[lay].items():
