@@ -22,6 +22,7 @@ if TYPE_CHECKING:
     from matplotlib.axes import Axes
 
     from eventgraph.graph.knowledge_graph import EventGraph
+    from eventgraph.memory.event_memory import EventMemory
 
 #: Colour per node kind, shared across backends.
 NODE_COLORS: dict[str, str] = {
@@ -66,6 +67,53 @@ def draw(
     if with_labels:
         nx.draw_networkx_labels(g, pos, labels=labels, font_size=8, ax=ax)
     ax.set_axis_off()
+    return ax
+
+
+def plot_hotspot_evolution(
+    memory: EventMemory,
+    *,
+    nodes: list[str] | None = None,
+    top_k: int = 6,
+    ax: Axes | None = None,
+) -> Axes:
+    """Plot how risk hotspot scores evolve across an :class:`EventMemory`.
+
+    Args:
+        memory: The temporal memory holding dated snapshots.
+        nodes: Specific node ids to plot. Defaults to the ``top_k`` nodes with the
+            highest cumulative score across all snapshots.
+        top_k: Number of nodes to plot when ``nodes`` is not given.
+        ax: Optional matplotlib Axes.
+
+    Returns:
+        The matplotlib Axes.
+    """
+    import matplotlib.pyplot as plt
+
+    dates = memory.dates()
+    series = memory.hotspot_series(top_k=50)
+
+    if nodes is None:
+        totals: dict[str, float] = {}
+        for day in dates:
+            for node_id, score in series[day].items():
+                totals[node_id] = totals.get(node_id, 0.0) + score
+        nodes = [n for n, _ in sorted(totals.items(), key=lambda kv: kv[1], reverse=True)[:top_k]]
+
+    if ax is None:
+        _, ax = plt.subplots(figsize=(12, 6))
+
+    for node_id in nodes:
+        ys = [series[day].get(node_id, 0.0) for day in dates]
+        ax.plot(dates, ys, marker="o", linewidth=1.8, label=memory.label(node_id))
+
+    ax.set_xlabel("date")
+    ax.set_ylabel("risk hotspot score")
+    ax.set_title("Risk hotspot evolution")
+    ax.legend(loc="upper left", fontsize=8)
+    ax.tick_params(axis="x", rotation=45)
+    ax.grid(True, alpha=0.3)
     return ax
 
 

@@ -175,6 +175,7 @@ export_graphml(g, "graph.graphml")  # → Gephi / yEd
 | **Metrics** | `centrality` (degree / betweenness / closeness) + `influence_score` (causal reach) |
 | **Causality** | `impact(target)` — deterministic, ranked, explainable causal chains |
 | **Analytics** | `emerging_clusters()` (Louvain communities) + `risk_hotspots()` (centrality × influence × density) |
+| **Temporal** | `EventMemory`: dated snapshots, `compare_hotspots()` & `compare_clusters()`, hotspot evolution plot |
 | **Storage** | In-memory + JSON backends behind a `Storage` protocol; canonical (deterministic) serialisation |
 | **Visualisation** | matplotlib (core) · pyvis interactive HTML (extra) · GraphML export |
 | **Quality** | `mypy --strict`, `ruff`, `py.typed`, ~96% test coverage, CI on 3.11 & 3.12 |
@@ -222,6 +223,41 @@ Iran/Gulf, Russia/Ukraine and Asia-Pacific — straight from co-occurrence struc
 
 ![World Observer event graph coloured by emerging cluster](assets/world_observer_map.png)
 
+### Tracking change over time with `EventMemory`
+
+`EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day
+window it detects **which hotspots appear, intensify or fade** and **which crises
+emerge, persist or dissolve**:
+
+```bash
+python examples/world_observer_timeline_demo.py   # → world_observer_timeline.png
+```
+
+```text
+Hotspot changes  2026-05-20 → 2026-06-07
+  ▲ Israel          intensified  0.43 → 0.82
+  ▲ taiwan_strait   appeared     0.00 → 0.30
+  ▲ Palestine       appeared     0.00 → 0.28
+  ▼ Russia          faded        0.77 → 0.37
+  ▼ NATO            disappeared  0.26 → 0.00
+
+Cluster changes  2026-05-20 → 2026-06-07
+  + EMERGED    United States, Iran, gulf_iran   (Iran–Hormuz–oil nexus crystallised)
+  = PERSISTED  Ukraine, Russia, ukraine_russia
+  = PERSISTED  Israel, Lebanon, israel_hezbollah_lebanon
+```
+
+```python
+from eventgraph import EventMemory
+
+mem = EventMemory("snapshots/")          # optional on-disk persistence
+mem.snapshot("2026-06-07", graph)
+mem.compare_hotspots("2026-05-20", "2026-06-07")   # appeared / intensified / faded
+mem.compare_clusters("2026-05-20", "2026-06-07")   # emerged / persisted / dissolved
+```
+
+![Risk hotspot evolution over 14 days](assets/world_observer_timeline.png)
+
 ---
 
 ## Roadmap — Phase 2
@@ -230,8 +266,8 @@ The core is deliberately minimal. Planned work builds *on top* of it without
 touching the existing layers:
 
 - **Event similarity** — embed/compare events to answer *"what looks like this?"*
-- **Temporal graphs** — time-sliced views to watch a crisis evolve and detect
-  emerging weak signals in a region.
+- **Temporal graphs** — ✅ shipped as `EventMemory` (dated snapshots, hotspot/cluster
+  diffs); next: weak-signal detection and trend forecasting on the series.
 - **Geopolitical scoring** — actor/region risk metrics derived from graph structure.
 - **Market-impact modelling** — turn causal chains into directional asset signals.
 - **Narrative analysis** — cluster and contrast competing narratives over events.

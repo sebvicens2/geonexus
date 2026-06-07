@@ -17,6 +17,12 @@ from eventgraph.core.node import NodeKind
 from eventgraph.core.relation import Relation
 from eventgraph.graph.analytics import RiskHotspot
 from eventgraph.graph.knowledge_graph import EventGraph
+from eventgraph.memory.event_memory import (
+    ClusterChange,
+    ClusterDiff,
+    EventMemory,
+    HotspotChange,
+)
 from eventgraph.ontology.actor_types import ActorType
 from eventgraph.ontology.asset_types import AssetType
 from eventgraph.ontology.event_types import EventType
@@ -30,9 +36,13 @@ __all__ = [
     "Asset",
     "AssetType",
     "CausalPath",
+    "ClusterChange",
+    "ClusterDiff",
     "Event",
     "EventGraph",
+    "EventMemory",
     "EventType",
+    "HotspotChange",
     "NodeKind",
     "Relation",
     "RelationType",
