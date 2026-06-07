@@ -446,6 +446,14 @@ the firmer signal.
 
 ![Multi-layer geopolitical network dashboard](assets/multilayer_dashboard.png)
 
+For a navigable view, an **interactive 3D multiplex** stacks each layer as a plane
+(country at the same x,y on every plane; green/red intra-layer ties; vertical
+links couple a country across layers) — drag to rotate, scroll to zoom:
+
+```bash
+python examples/build_multilayer_3d.py   # → reports/eventgraph_multilayer_3d.html (WebGL)
+```
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day
