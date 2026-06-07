@@ -66,8 +66,10 @@ def ollama(model: str, prompt: str, timeout: int = 120) -> str | None:
 def parse(text: str) -> list[tuple[str, str, str, str]]:
     rows = []
     for line in (text or "").splitlines():
-        parts = [p.strip(" -*\t").lower() if i >= 2 else p.strip(" -*\t")
-                 for i, p in enumerate(line.split("|"))]
+        parts = [
+            p.strip(" -*\t").lower() if i >= 2 else p.strip(" -*\t")
+            for i, p in enumerate(line.split("|"))
+        ]
         if len(parts) == 4 and all(parts) and parts[2] in DOMAINS and parts[3] in SIGN:
             a, b = parts[0], parts[1]
             if a and b and a.lower() != b.lower() and len(a) < 50 and len(b) < 50:
@@ -100,8 +102,17 @@ def main() -> None:
             if key in seen:
                 continue
             seen.add(key)
-            edges.append({"a": a, "b": b, "domain": domain, "cameo": cameo,
-                          "sign": SIGN[cameo], "source": e["key"], "day": day})
+            edges.append(
+                {
+                    "a": a,
+                    "b": b,
+                    "domain": domain,
+                    "cameo": cameo,
+                    "sign": SIGN[cameo],
+                    "source": e["key"],
+                    "day": day,
+                }
+            )
         if i % 25 == 0:
             print(f"  {i}/{len(entities)} entities, {len(edges)} edges")
 

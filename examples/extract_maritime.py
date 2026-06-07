@@ -62,22 +62,26 @@ def extract(db_path: str) -> list[dict]:
         query = _core(r["short_name"] or r["name"])
         match = get_close_matches(query, cores, n=1, cutoff=0.6)
         d = disruption.get(core_to_name[match[0]]) if match else None
-        chokepoints.append({
-            "id": r["id"],
-            "name": r["short_name"] or r["name"],
-            "region": r["region"],
-            "importance": r["importance"],
-            "type": r["chokepoint_type"],
-            "theatres": json.loads(r["theatres"]) if r["theatres"] else [],
-            "traffic": r["traffic_volume"],
-            "commodity": _commodity(r["description"]),
-            "description": (r["description"] or "")[:160],
-            "disruption": None if d is None else {
-                "z_score": d["z_score"],
-                "delta_pct": d["delta_pct"],
-                "classification": d["classification"],
-            },
-        })
+        chokepoints.append(
+            {
+                "id": r["id"],
+                "name": r["short_name"] or r["name"],
+                "region": r["region"],
+                "importance": r["importance"],
+                "type": r["chokepoint_type"],
+                "theatres": json.loads(r["theatres"]) if r["theatres"] else [],
+                "traffic": r["traffic_volume"],
+                "commodity": _commodity(r["description"]),
+                "description": (r["description"] or "")[:160],
+                "disruption": None
+                if d is None
+                else {
+                    "z_score": d["z_score"],
+                    "delta_pct": d["delta_pct"],
+                    "classification": d["classification"],
+                },
+            }
+        )
     conn.close()
     return chokepoints
 

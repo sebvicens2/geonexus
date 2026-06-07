@@ -40,10 +40,48 @@ ALIASES = {
     "Republic of Korea": "South Korea",
 }
 LAYERS = ["military", "economic", "diplomatic", "energy", "health"]
+NARR = Path(__file__).parent / "data" / "world_observer_narrative_history.json"
+BLOCS = {
+    "NATO",
+    "European Union",
+    "OPEC",
+    "OPEC+",
+    "United Nations",
+    "ASEAN",
+    "BRICS",
+    "African Union",
+    "Quad",
+    "G7",
+    "G20",
+    "Hamas",
+    "Hezbollah",
+    "Taliban",
+    "IAEA",
+    "WHO",
+}
 
 
 def _canon(name: str) -> str:
     return ALIASES.get(name.strip(), name.strip())
+
+
+def _valid_actors() -> set[str]:
+    """Real geopolitical actors: WO's country list + a bloc/org whitelist."""
+    countries: set[str] = set()
+    if NARR.exists():
+        for e in json.loads(NARR.read_text(encoding="utf-8")):
+            if e["dimension"] == "country":
+                countries.add(_canon(e["key"]))
+    return countries | BLOCS
+
+
+VALID = _valid_actors()
+
+
+def _actor(name: str) -> str | None:
+    """Canonical actor name if it's a country/bloc, else None (drops junk nodes)."""
+    c = _canon(name)
+    return c if c in VALID else None
 
 
 def countries_per_theatre(top: int = 6) -> dict[str, list[str]]:
@@ -64,11 +102,83 @@ def net_dyads(cameo: list[dict]) -> dict[str, dict[tuple[str, str], int]]:
     """Per layer: {(A,B) sorted: net sign}."""
     net: dict[str, dict[tuple[str, str], int]] = {lay: defaultdict(int) for lay in LAYERS}
     for e in cameo:
-        a, b = _canon(e["a"]), _canon(e["b"])
-        if a == b or e["domain"] not in net:
+        a, b = _actor(e["a"]), _actor(e["b"])
+        if not a or not b or a == b or e["domain"] not in net:
             continue
         net[e["domain"]][tuple(sorted((a, b)))] += e["sign"]
     return net
+
+
+def alignment(net: dict[str, dict[tuple[str, str], int]]) -> dict[tuple[str, str], int]:
+    """Geopolitical alignment per dyad = military + diplomatic net stance (signed)."""
+    align: dict[tuple[str, str], int] = defaultdict(int)
+    for lay in ("military", "diplomatic"):
+        for pair, s in net[lay].items():
+            align[pair] += s
+    return {p: s for p, s in align.items() if s != 0}
+
+
+def signed_analysis(net: dict) -> dict:
+    """Structural balance % + a 2-bloc faction split on the signed alignment graph."""
+    import networkx as nx
+
+    align = alignment(net)
+    g = nx.Graph()
+    for (a, b), s in align.items():
+        g.add_edge(a, b, sign=1 if s > 0 else -1)
+
+    # structural balance: a triangle is balanced if the product of its edge signs is +
+    balanced = unbalanced = 0
+    unbalanced_examples = []
+    for a, b, c in (tri for tri in _triangles(g)):
+        prod = g[a][b]["sign"] * g[b][c]["sign"] * g[a][c]["sign"]
+        if prod > 0:
+            balanced += 1
+        else:
+            unbalanced += 1
+            if len(unbalanced_examples) < 6:
+                unbalanced_examples.append((a, b, c))
+    total = balanced + unbalanced
+    balance_pct = 100 * balanced / total if total else 0.0
+
+    # factions: largest component, seed two camps from the strongest rivalry, then assign
+    factions: tuple[list[str], list[str]] = ([], [])
+    if g.number_of_edges():
+        comp = max(nx.connected_components(g), key=len)
+        sub = g.subgraph(comp)
+        seed = min(sub.edges(data=True), key=lambda e: e[2]["sign"])
+        seed_a, seed_b = seed[0], seed[1]
+        rest = [n for n in sub.nodes if n not in (seed_a, seed_b)]
+        campA, campB = {seed_a}, {seed_b}
+        for _ in range(4):  # reassign every node fresh each pass (no double membership)
+            newA, newB = {seed_a}, {seed_b}
+            for n in rest:
+                aff = sum(sub[n][m]["sign"] for m in campA if sub.has_edge(n, m)) - sum(
+                    sub[n][m]["sign"] for m in campB if sub.has_edge(n, m)
+                )
+                (newA if aff >= 0 else newB).add(n)
+            campA, campB = newA, newB
+        factions = (sorted(campA), sorted(campB))
+    return {
+        "balance_pct": balance_pct,
+        "n_triads": total,
+        "factions": factions,
+        "unbalanced": unbalanced_examples,
+    }
+
+
+def _triangles(g: object):
+    seen = set()
+    for a in g:
+        nbrs = list(g[a])
+        for i in range(len(nbrs)):
+            for j in range(i + 1, len(nbrs)):
+                b, c = nbrs[i], nbrs[j]
+                if g.has_edge(b, c):
+                    tri = frozenset((a, b, c))
+                    if tri not in seen:
+                        seen.add(tri)
+                        yield (a, b, c)
 
 
 def build(cameo: list[dict], maritime: list[dict]) -> EventGraph:
@@ -164,6 +274,22 @@ def main() -> None:
             desc = ", ".join(f"{lay} {s:+d}" for lay, s in layers.items() if s)
             print(f"  {pair[0]} - {pair[1]}:  {desc}")
 
+    sa = signed_analysis(net)
+    head("SIGNED-NETWORK ANALYSIS  (alignment = military + diplomatic)")
+    print(
+        f"  Structural balance: {sa['balance_pct']:.0f}% of {sa['n_triads']} triads balanced "
+        "(balanced = allies-of-allies / enemy-of-enemy)."
+    )
+    fa, fb = sa["factions"]
+    if fa or fb:
+        print(f"  Bloc A: {', '.join(fa[:12])}")
+        print(f"  Bloc B: {', '.join(fb[:12])}")
+    if sa["unbalanced"]:
+        print(
+            "  Tension triads (unbalanced): "
+            + "; ".join(" - ".join(t) for t in sa["unbalanced"][:4])
+        )
+
     head("HARD MARITIME LAYER — chokepoints by PortWatch disruption")
     cps = sorted(
         (o for o in g.nodes() if o.metadata.get("kind") == "chokepoint"),
@@ -178,11 +304,11 @@ def main() -> None:
             f"z={d.get('z_score', '?')} {d.get('classification', '?'):9} → {deps}"
         )
 
-    _write_md(g, net, by_pair, cps)
+    _write_md(g, net, by_pair, cps, sa)
     print(f"\nMarkdown report written to {REPORT}")
 
 
-def _write_md(g, net, by_pair, cps) -> None:
+def _write_md(g, net, by_pair, cps, sa) -> None:
     L = [
         "# World Observer — multi-layer geopolitical network\n",
         "_Signed news layers (CAMEO: military/economic/diplomatic/energy/health) + a "
@@ -198,6 +324,14 @@ def _write_md(g, net, by_pair, cps) -> None:
             if s != 0:
                 L.append(f"- {a} - {b}: **{s:+d}** ({'conflict' if s < 0 else 'cooperation'})")
         L.append("")
+    fa, fb = sa["factions"]
+    L.append("## Signed-network analysis (alignment = military + diplomatic)\n")
+    L.append(
+        f"- **Structural balance:** {sa['balance_pct']:.0f}% of {sa['n_triads']} triads balanced"
+    )
+    L.append(f"- **Bloc A:** {', '.join(fa[:14])}")
+    L.append(f"- **Bloc B:** {', '.join(fb[:14])}\n")
+
     L.append("## Cross-layer divergence\n")
     for pair, layers in by_pair.items():
         signs = [s for s in layers.values() if s != 0]

@@ -430,6 +430,22 @@ Honest split: the news layers are *reported stance* (LLM-classified, imperfect);
 PortWatch is hard data. EventGraph's `MultiDiGraph` carries the parallel typed
 layers natively.
 
+It all comes together in a dashboard — small-multiples (one signed network per
+layer, green = cooperation / red = conflict) + the maritime layer, plus
+**signed-network analysis** (structural-balance % and a faction split on the
+military+diplomatic alignment, à la "enemy of my enemy"):
+
+```bash
+python examples/build_multilayer_dashboard.py   # → reports/eventgraph_multilayer_dashboard.html
+```
+
+Actors are normalised and filtered to real countries/blocs (junk like "World Cup
+organizers" dropped). Honest caveat: faction blocs are a rough heuristic on sparse
+data — the structural-balance score and tension triads (e.g. Iran–US–Israel) are
+the firmer signal.
+
+![Multi-layer geopolitical network dashboard](assets/multilayer_dashboard.png)
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day
