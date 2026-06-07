@@ -457,6 +457,14 @@ gives three legible, interactive views in one file — pick whichever fits:
 python examples/build_country_views.py   # → reports/eventgraph_country_views.html
 ```
 
+The Network view also comes in **navigable 3D** — one force-directed cloud you fly
+through, labelled, edges green/red, filter by layer, click a country to fly to it
+and focus its links:
+
+```bash
+python examples/build_country_network_3d.py   # → reports/eventgraph_country_network_3d.html (WebGL)
+```
+
 For a navigable view, an **interactive 3D multiplex** stacks each layer as a plane
 (country at the same x,y on every plane; green/red intra-layer ties; vertical
 links couple a country across layers) — drag to rotate, scroll to zoom:
