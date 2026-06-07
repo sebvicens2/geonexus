@@ -366,29 +366,31 @@ python examples/build_narrative_dashboard.py --llm --model qwen2.5:7b
 
 ![Narrative dashboard — signal chains](assets/narrative_chains.png)
 
-#### Hidden cross-narrative links
+#### Hidden links: a typed relation graph (LLM-extracted)
 
-Chains only connect things that already share a narrative. To surface links that
-span theatres — e.g. a miner operating across continents — `hidden_links.py`
-builds an entity co-mention graph over *all* summaries, weights pairs by **PMI**
-(so a specific pairing beats a generic one), drops split-name artifacts, and
-**grounds** each link in the source sentence:
+Chains and co-occurrence only connect things that share a narrative — and plain
+co-occurrence/PMI mining turned out to be mostly noise (split names, definitional
+pairs). The approach that actually works is **relation extraction**: a local Qwen
+pulls explicit `SUBJECT | RELATION | OBJECT` triples from each summary, which build
+a typed relation graph in EventGraph. Multi-hop queries then return *real stated
+relations*, not statistical co-occurrence.
 
 ```bash
-python examples/hidden_links.py                       # top grounded links
-python examples/hidden_links.py --between China Africa # strongest multi-hop path
-python examples/hidden_links.py --llm                  # Qwen phrases each relationship
+python examples/extract_relations.py                 # → data/world_observer_relations.json (LLM)
+python examples/relation_graph.py                    # hubs + example chains
+python examples/relation_graph.py --between China Ukraine
 ```
 
 ```text
-Diana Shipping — Genco Shipping   “Diana Shipping intensifies takeover bid for Genco Shipping & Trading.”
-Kinross Gold — Atacama            “Kinross Gold is investing heavily in Chile's Atacama region…”
-China → Aya Gold → Africa         (strongest PMI-weighted path: a miner bridging the two)
+China → Ukraine:  China —[competes with]→ Russia —[supports]→ Ukraine
+Iran  → Israel:   Iran —[condemned]→ Israel
+Stated: Canada —[bans]→ Texas cattle · Russia —[attacks]→ Ukrainian nuclear waste facility
 ```
 
-These are also a tab in the narrative dashboard.
+It's the **Relations** tab in the narrative dashboard. (Honest limits: extraction
+is LLM-based and non-deterministic; some chains still route through hub entities.)
 
-![Narrative dashboard — hidden links](assets/narrative_hidden_links.png)
+![Narrative dashboard — relation graph](assets/narrative_relations.png)
 
 ### Tracking change over time with `EventMemory`
 

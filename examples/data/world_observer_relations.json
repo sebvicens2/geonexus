@@ -1,0 +1,8598 @@
+[
+  {
+    "subject": "US",
+    "relation": "implement",
+    "object": "travel restrictions",
+    "source": "United States",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "continue",
+    "object": "cover",
+    "source": "United States",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "USDA",
+    "relation": "confirm",
+    "object": "presence",
+    "source": "United States",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "strike",
+    "object": "sites",
+    "source": "United States",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "launch",
+    "object": "drones",
+    "source": "United States",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ebola",
+    "relation": "raises",
+    "object": "global health concerns",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "travel restrictions",
+    "relation": "prompt",
+    "object": "Ebola outbreak response",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "escalate tensions with",
+    "object": "Russia",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "attacks",
+    "object": "Ukrainian nuclear waste storage facility",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Xi Jinping",
+    "relation": "visits",
+    "object": "North Korea",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "AI-designed vaccine",
+    "relation": "enters",
+    "object": "human trials",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "bans",
+    "object": "Texas cattle",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "El Niño",
+    "relation": "threatens",
+    "object": "global agriculture",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "adjusts",
+    "object": "Belt and Road Initiative",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "damages",
+    "object": "nuclear storage site near Chornobyl",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "aviation leaders",
+    "relation": "meet in",
+    "object": "Rio",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "near agreement with",
+    "object": "Iran to extend ceasefire",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "increases trade surplus due to",
+    "object": "higher exports of soy and copper",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "announces travel restrictions for",
+    "object": "World Cup",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Africa",
+    "relation": "reaffirms commitment to supporting",
+    "object": "continental efforts against Ebola",
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "Condemned",
+    "object": "US",
+    "source": "Iran",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "Condemned",
+    "object": "Israel",
+    "source": "Iran",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Tensions",
+    "relation": "Escalated",
+    "object": "Iran",
+    "source": "Iran",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Conflict",
+    "relation": "Resulted In",
+    "object": "Civilian Casualties",
+    "source": "Iran",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Conflict",
+    "relation": "Resulted In",
+    "object": "Economic Disruption",
+    "source": "Iran",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "launches",
+    "object": "ballistic missiles",
+    "source": "gulf_iran",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "strengthen",
+    "relation": "ties",
+    "object": "amid growing Russian-North Korean relations",
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "boosts",
+    "object": "commercial flights with South Korea",
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "warns",
+    "object": "of stronger response to Chinese exports",
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Beijing",
+    "relation": "threatens",
+    "object": "retaliation",
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "arrives in",
+    "object": "DR Congo",
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "help",
+    "relation": "fight",
+    "object": "Ebola outbreak",
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "adjusts",
+    "object": "Belt and Road Initiative strategy",
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "intercepts",
+    "object": "Iranian missiles",
+    "source": "Israel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "threatens",
+    "object": "retaliation",
+    "source": "Israel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "warns",
+    "object": "disruptions",
+    "source": "Israel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "reports",
+    "object": "intercepting missiles",
+    "source": "Israel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.-Africa Business Summit",
+    "relation": "postponed due to",
+    "object": "Ebola outbreak in Mauritius",
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "conducts attacks in",
+    "object": "Gaza",
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US military",
+    "relation": "shoots down",
+    "object": "Iranian drones",
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pentagon",
+    "relation": "raises threat level on",
+    "object": "Israeli espionage activities against the United States",
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "launches missiles at",
+    "object": "Bahrain and Kuwait",
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "exceeded",
+    "object": "expectations",
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US job growth",
+    "relation": "added",
+    "object": "172,000 jobs",
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "unemployment",
+    "relation": "remained",
+    "object": "steady",
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Global markets",
+    "relation": "remain",
+    "object": "volatile",
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran conflict",
+    "relation": "affects",
+    "object": "energy-importing regions",
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US stock market",
+    "relation": "experienced",
+    "object": "significant declines",
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "inflation",
+    "relation": "puts pressure on",
+    "object": "Federal Reserve",
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "trade tensions",
+    "relation": "continue",
+    "object": "between US and China",
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian forces",
+    "relation": "attack",
+    "object": "Ukrainian nuclear waste storage facility",
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "launches",
+    "object": "drone strikes into Russia",
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian forces",
+    "relation": "hit",
+    "object": "nuclear fuel site near Chernobyl",
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukrainian President Zelensky",
+    "relation": "proposes",
+    "object": "direct meeting with Putin",
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian forces",
+    "relation": "intensify",
+    "object": "offensive in eastern Ukraine",
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "reports",
+    "object": "civilian casualties from Russian attacks",
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US insurers",
+    "relation": "cover",
+    "object": "vaccines",
+    "source": "us_politics",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "ICE",
+    "relation": "stop",
+    "object": "reporting",
+    "source": "us_politics",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Democrats",
+    "relation": "disrupt",
+    "object": "detente",
+    "source": "us_politics",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Trump",
+    "relation": "reinstate",
+    "object": "tariffs",
+    "source": "us_politics",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "report",
+    "object": "hunger",
+    "source": "us_politics",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "launches",
+    "object": "strikes",
+    "source": "Lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Beirut's southern suburbs",
+    "relation": "suffers",
+    "object": "attacks",
+    "source": "Lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "retaliates",
+    "object": "by firing missiles",
+    "source": "Lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Lebanon",
+    "relation": "has",
+    "object": "death toll",
+    "source": "Lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "doubles",
+    "object": "aid appeal",
+    "source": "Lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "intercepts",
+    "object": "Iranian missiles",
+    "source": "Lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "IAEA",
+    "relation": "brokers",
+    "object": "local ceasefire",
+    "source": "ukraine_russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "launches",
+    "object": "drone strikes",
+    "source": "ukraine_russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian forces",
+    "relation": "attack",
+    "object": "Ukrainian search and rescue vessels",
+    "source": "ukraine_russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukrainian President Zelensky",
+    "relation": "proposes",
+    "object": "direct meeting",
+    "source": "ukraine_russia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israeli",
+    "relation": "attacks",
+    "object": "Gaza",
+    "source": "israel_gaza",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Palestinian",
+    "relation": "deaths",
+    "object": "Israeli attacks",
+    "source": "israel_gaza",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Palestinian",
+    "relation": "injuries",
+    "object": "Israeli attacks",
+    "source": "israel_gaza",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "doesNotCeaseStrikes",
+    "object": "Iran",
+    "source": "israel_gaza",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israeli military",
+    "relation": "kills",
+    "object": "civilians",
+    "source": "israel_gaza",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian drone",
+    "relation": "damages",
+    "object": "spent nuclear fuel storage site",
+    "source": "Ukraine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zelensky",
+    "relation": "criticizes",
+    "object": "Russian action",
+    "source": "Ukraine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukrainian military",
+    "relation": "forces",
+    "object": "Russia to a standstill",
+    "source": "Ukraine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "threatens",
+    "object": "retaliation",
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "launches",
+    "object": "attacks",
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Saint Petersburg",
+    "relation": "is attacked by",
+    "object": "drone attacks",
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "refuses",
+    "object": "peace talks",
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Minors",
+    "relation": "are recruited by",
+    "object": "Russia",
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Minors",
+    "relation": "are recruited by",
+    "object": "Iran",
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Europe",
+    "relation": "faces",
+    "object": "crossroads",
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "European Union",
+    "relation": "considers",
+    "object": "increasing budget",
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "announces",
+    "object": "travel restrictions",
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "engages",
+    "object": "diplomatic balancing act",
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "pushes",
+    "object": "Federal Reserve closer to rate hikes",
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "purchases",
+    "object": "business jets",
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Alberta",
+    "relation": "holds",
+    "object": "referendum",
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US Senate",
+    "relation": "passes",
+    "object": "budget",
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canadian economy",
+    "relation": "faces",
+    "object": "stagnation",
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Wildland firefighters in Canada",
+    "relation": "are not classified as",
+    "object": "firefighters",
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israeli",
+    "relation": "attacks",
+    "object": "Palestinians",
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Gaza City tent camp",
+    "relation": "attacked",
+    "object": "Israel",
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Palestinian infant",
+    "relation": "killed",
+    "object": "Israeli forces",
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hebron",
+    "relation": "killed",
+    "object": "Palestinian infant",
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hamas",
+    "relation": "criticizes",
+    "object": "Israeli strikes",
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Seven-month-old Palestinian baby",
+    "relation": "killed",
+    "object": "Israeli soldier",
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "experiences",
+    "object": "local ceasefire",
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zaporizhzhia nuclear plant",
+    "relation": "experiences",
+    "object": "local ceasefire",
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "calls for",
+    "object": "stronger response",
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "warns of",
+    "object": "global hunger crisis",
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US-Iran conflict",
+    "relation": "exacerbates",
+    "object": "food crises",
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Middle East conflicts",
+    "relation": "affect",
+    "object": "millions in fragile countries",
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "disputes water with",
+    "object": "Pakistan",
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "disputes water with",
+    "object": "India",
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "NHS",
+    "relation": "has",
+    "object": "patients",
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK",
+    "relation": "warns",
+    "object": "Russia",
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mercuria Energy Group",
+    "relation": "navigated",
+    "object": "oil",
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "criticizes",
+    "object": "Russia",
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK",
+    "relation": "sanctions",
+    "object": "Israel",
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "urges",
+    "object": "Japan",
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Japan",
+    "relation": "upgrades",
+    "object": "carrier fleet",
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Global energy crisis",
+    "relation": "disrupts",
+    "object": "oil trade",
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Global energy crisis",
+    "relation": "disrupts",
+    "object": "LNG trade",
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Global energy crisis",
+    "relation": "affects",
+    "object": "Asian economies",
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "reinstates",
+    "object": "tariffs",
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "despite",
+    "object": "Supreme Court ruling",
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Japan",
+    "relation": "boosts",
+    "object": "anti-ship missile capabilities",
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Beirut",
+    "relation": "violated",
+    "object": "ceasefire",
+    "source": "israel_hezbollah_lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "intercepts",
+    "object": "missiles",
+    "source": "israel_hezbollah_lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Lebanon",
+    "relation": "faces",
+    "object": "violence",
+    "source": "israel_hezbollah_lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "targets",
+    "object": "southern suburbs",
+    "source": "israel_hezbollah_lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Armenian parliamentary elections",
+    "relation": "show",
+    "object": "high voter turnout",
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Prime Minister Pashinyan's ruling party",
+    "relation": "favoring",
+    "object": "voter turnout",
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Peruvian presidential election",
+    "relation": "contested",
+    "object": "closely",
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "markets",
+    "relation": "watching",
+    "object": "outcome",
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "pressure",
+    "object": "Armenia",
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Moscow",
+    "relation": "threaten",
+    "object": "scenario",
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pashinyan",
+    "relation": "seek",
+    "object": "pivot",
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Armenia",
+    "relation": "align",
+    "object": "Europe",
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC+",
+    "relation": "agreed",
+    "object": "increase",
+    "source": "oil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Strait of Hormuz crisis",
+    "relation": "causing",
+    "object": "disruptions",
+    "source": "oil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "oil tanker traffic",
+    "relation": "decreased",
+    "object": "through Strait of Hormuz",
+    "source": "oil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC crude output",
+    "relation": "fell",
+    "object": "historic lows",
+    "source": "oil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US sanctions on Iran",
+    "relation": "caused",
+    "object": "OPEC crude output decrease",
+    "source": "oil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "conflicts in Middle East",
+    "relation": "caused",
+    "object": "OPEC crude output decrease",
+    "source": "oil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "French government",
+    "relation": "initiates",
+    "object": "war crimes probes",
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "is subject of",
+    "object": "war crimes probes",
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "France",
+    "relation": "experiences",
+    "object": "judicial dysfunction",
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US Defense Secretary Hegseth",
+    "relation": "criticizes",
+    "object": "Europe's handling of migration",
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "French Foreign Minister",
+    "relation": "suggests",
+    "object": "further sanctions",
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israeli settlers",
+    "relation": "are target of",
+    "object": "further sanctions",
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mirra Andreeva",
+    "relation": "wins",
+    "object": "French Open women's singles title",
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "faces",
+    "object": "energy security challenges",
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "explores",
+    "object": "cooperation opportunities",
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "increases",
+    "object": "oil imports from Venezuela",
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "decreases",
+    "object": "rare-earth exports to Japan",
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "disputes",
+    "object": "Teesta River with Bangladesh",
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "rejects",
+    "object": "India's objections",
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "grows",
+    "object": "economy by 7.8%",
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Trump",
+    "relation": "suggests",
+    "object": "meeting",
+    "source": "us_iran_nuclear",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "engages",
+    "object": "military skirmishes",
+    "source": "us_iran_nuclear",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "North Korea",
+    "relation": "expands",
+    "object": "nuclear program",
+    "source": "us_iran_nuclear",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "IAEA",
+    "relation": "warns",
+    "object": "increased risk",
+    "source": "us_iran_nuclear",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "warns",
+    "object": "conflict expansion",
+    "source": "us_iran_nuclear",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "strikes",
+    "object": "suburbs",
+    "source": "us_iran_nuclear",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Tribesmen",
+    "relation": "Block",
+    "object": "Highways",
+    "source": "social_unrest",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Khyber",
+    "relation": "Experiencing",
+    "object": "Targeted killings",
+    "source": "social_unrest",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nairobi City Marathon",
+    "relation": "Warned",
+    "object": "Protests",
+    "source": "social_unrest",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iranians",
+    "relation": "Face",
+    "object": "Economic hardship",
+    "source": "social_unrest",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Haiti",
+    "relation": "Worsening",
+    "object": "Displacement crisis",
+    "source": "social_unrest",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "London councils",
+    "relation": "Force",
+    "object": "Homeless individuals",
+    "source": "social_unrest",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Poultry prices",
+    "relation": "remain",
+    "object": "high",
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "tribesmen",
+    "relation": "block",
+    "object": "highway",
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "claims",
+    "object": "India weaponizes water",
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Interior Minister",
+    "relation": "visits",
+    "object": "Iran",
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "PPP",
+    "relation": "expresses",
+    "object": "reservations",
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "security forces",
+    "relation": "kill",
+    "object": "terrorists",
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "elections",
+    "relation": "conclude",
+    "object": "peacefully",
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian drone strikes",
+    "relation": "damage",
+    "object": "nuclear sites",
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "nuclear sites",
+    "relation": "near",
+    "object": "Chornobyl",
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chinese medical team",
+    "relation": "arrives in",
+    "object": "DR Congo",
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "exports drop",
+    "object": "rare-earth to Japan",
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "companies",
+    "relation": "seek",
+    "object": "alternative sources",
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "calls for",
+    "object": "dedicated instrument",
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "reduce",
+    "object": "dependency on China for critical minerals",
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Korea",
+    "relation": "navigate",
+    "object": "balancing act",
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mexico",
+    "relation": "prepares",
+    "object": "Ebola outbreak prevention measures",
+    "source": "Mexico",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "detects",
+    "object": "Screwworm parasite",
+    "source": "Mexico",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "faces",
+    "object": "visa issues",
+    "source": "Mexico",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mexico",
+    "relation": "travels to",
+    "object": "Mexico",
+    "source": "Mexico",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Guatemala",
+    "relation": "borders with",
+    "object": "Mexico",
+    "source": "Mexico",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OECD",
+    "relation": "downgrades",
+    "object": "GDP growth forecast",
+    "source": "Mexico",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "engages-in",
+    "object": "military skirmishes",
+    "source": "strait_hormuz",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "engages-in",
+    "object": "military skirmishes",
+    "source": "strait_hormuz",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "escalates",
+    "object": "tensions",
+    "source": "strait_hormuz",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "escalates",
+    "object": "tensions",
+    "source": "strait_hormuz",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "impacts",
+    "object": "maritime trade",
+    "source": "strait_hormuz",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC+",
+    "relation": "agrees-to",
+    "object": "increase",
+    "source": "strait_hormuz",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Xi Jinping",
+    "relation": "visit",
+    "object": "North Korea",
+    "source": "technology",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Microsoft",
+    "relation": "tighten",
+    "object": "controls",
+    "source": "technology",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "SpaceX",
+    "relation": "prepare",
+    "object": "IPO",
+    "source": "technology",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Apple",
+    "relation": "focus",
+    "object": "Siri AI",
+    "source": "technology",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "FIFA",
+    "relation": "kickoff",
+    "object": "World Cup",
+    "source": "technology",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "NYDIG",
+    "relation": "suggest",
+    "object": "decline",
+    "source": "technology",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "KAIST",
+    "relation": "become",
+    "object": "incubator",
+    "source": "technology",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Marks and Spencer",
+    "relation": "launches",
+    "object": "traineeship program",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK",
+    "relation": "addresses",
+    "object": "youth unemployment",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Increased gas-fired power plant construction",
+    "relation": "may lead to",
+    "object": "higher energy prices",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "experiences",
+    "object": "market volatility",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "mass shooting",
+    "relation": "leaves",
+    "object": "people injured",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ohio festival",
+    "relation": "prompts",
+    "object": "event cancellations",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "wildfires",
+    "relation": "reverse",
+    "object": "progress toward ozone air quality standards",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "United States",
+    "relation": "since 2015",
+    "object": "experienced wildfires",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "California and New York",
+    "relation": "weaken",
+    "object": "climate policies",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "red states",
+    "relation": "intensify",
+    "object": "green energy deployment",
+    "source": "us_domestic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK Prime Minister",
+    "relation": "warns",
+    "object": "Russia",
+    "source": "Belgium",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "could attack",
+    "object": "NATO",
+    "source": "Belgium",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "requests",
+    "object": "EU",
+    "source": "Belgium",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK",
+    "relation": "faces",
+    "object": "need to boost defense spending",
+    "source": "Belgium",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Taiwan",
+    "relation": "expands",
+    "object": "anti-ship missile arsenal",
+    "source": "taiwan_strait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Beijing",
+    "relation": "deploys",
+    "object": "HQ-16F missiles",
+    "source": "taiwan_strait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Trump-Xi summit",
+    "relation": "offers",
+    "object": "substance",
+    "source": "taiwan_strait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chinese ships",
+    "relation": "provoke",
+    "object": "Taiwan",
+    "source": "taiwan_strait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Korea",
+    "relation": "experiences",
+    "object": "decline",
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Korea",
+    "relation": "reaches",
+    "object": "weakest level",
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "increases",
+    "object": "tourism with South Korea",
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Korea",
+    "relation": "sees",
+    "object": "boost in commercial flights",
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "North Korea",
+    "relation": "expands",
+    "object": "navy",
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "TA4922",
+    "relation": "expands",
+    "object": "operations globally",
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "KAIST",
+    "relation": "emerges as",
+    "object": "incubator",
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "AI",
+    "relation": "enters",
+    "object": "human trials",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "vaccine",
+    "relation": "targets",
+    "object": "multiple viruses",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Anthropic",
+    "relation": "urges",
+    "object": "global pause",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "global pause",
+    "relation": "on",
+    "object": "advanced AI development",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "AI",
+    "relation": "used by",
+    "object": "terrorist groups",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S. Department of Defense",
+    "relation": "faces challenges in maintaining",
+    "object": "AI model advantage",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chinese distillation techniques",
+    "relation": "due to",
+    "object": "U.S. Department of Defense",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Apple",
+    "relation": "features",
+    "object": "major Siri update",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Cook",
+    "relation": "testing",
+    "object": "AI legacy",
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "faces",
+    "object": "heavy drone attacks",
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zelensky",
+    "relation": "proposes",
+    "object": "direct talks with Putin",
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "expands",
+    "object": "sanctions on Iran",
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK and Western allies",
+    "relation": "prepare",
+    "object": "sanctions against Israel",
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "considers",
+    "object": "sanctions against Israeli officials",
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian elites",
+    "relation": "purchase",
+    "object": "Western business jets",
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian elites",
+    "relation": "use",
+    "object": "intermediaries",
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "deploys",
+    "object": "new missiles",
+    "source": "Taiwan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "People's Liberation Army",
+    "relation": "maintains",
+    "object": "high alert",
+    "source": "Taiwan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Screwworm outbreaks",
+    "relation": "pose threats to",
+    "object": "U.S. cattle production",
+    "source": "agriculture",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Poultry prices",
+    "relation": "affect",
+    "object": "low-income consumers in Pakistan",
+    "source": "agriculture",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "designate as terrorist",
+    "object": "US’s two largest gangs",
+    "source": "Brazil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "face pressure from",
+    "object": "dollar",
+    "source": "Brazil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "increase",
+    "object": "trade surplus",
+    "source": "Brazil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "tighten",
+    "object": "visa requirements for freelancers",
+    "source": "Brazil",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zelenskyy",
+    "relation": "meets",
+    "object": "Western leaders",
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zelenskyy",
+    "relation": "criticizes",
+    "object": "Russian drone strikes",
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US doctor",
+    "relation": "recovers",
+    "object": "Germany",
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "DRC",
+    "relation": "cases rise",
+    "object": "Ebola",
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Germany",
+    "relation": "faces",
+    "object": "economic stagnation",
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Germany",
+    "relation": "defends",
+    "object": "yen",
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Alexander Zverev",
+    "relation": "wins",
+    "object": "first Grand Slam title",
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zverev",
+    "relation": "becomes",
+    "object": "first German man to win major since 1996",
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "doubles",
+    "object": "nuclear power capacity",
+    "source": "china_indo_pacific",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "North Korea",
+    "relation": "ramps up",
+    "object": "nuclear programs",
+    "source": "korean_peninsula",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "North Korea",
+    "relation": "ramps up",
+    "object": "missile programs",
+    "source": "korean_peninsula",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Xi Jinping",
+    "relation": "aims to strengthen",
+    "object": "Sino-North Korean ties",
+    "source": "korean_peninsula",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Korea",
+    "relation": "boosts",
+    "object": "commercial flights",
+    "source": "korean_peninsula",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "North Korea",
+    "relation": "plans to build",
+    "object": "10,000-ton destroyer",
+    "source": "korean_peninsula",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Container shipping rates",
+    "relation": "surge",
+    "object": "globally",
+    "source": "shipping",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Strait of Hormuz",
+    "relation": "impact",
+    "object": "maritime trade",
+    "source": "shipping",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Geopolitical conflicts",
+    "relation": "alter",
+    "object": "trade routes",
+    "source": "shipping",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Trade routes",
+    "relation": "affect",
+    "object": "landlocked countries",
+    "source": "shipping",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Shipping",
+    "relation": "disrupt",
+    "object": "by strikes",
+    "source": "shipping",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "propose",
+    "object": "nuclear-powered floating island",
+    "source": "shipping",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Australian farmland",
+    "relation": "causes",
+    "object": "economic damage",
+    "source": "Australia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S. Defense Secretary",
+    "relation": "outlined",
+    "object": "new approach",
+    "source": "Australia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "dropped",
+    "object": "rare-earth exports to Japan",
+    "source": "Australia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Quad initiative",
+    "relation": "faces",
+    "object": "challenges",
+    "source": "Australia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Greens party in Australia",
+    "relation": "calls for",
+    "object": "cancellation of AUKUS deal",
+    "source": "Australia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Cristiano Ronaldo",
+    "relation": "Pushing",
+    "object": "Limits",
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Scotland",
+    "relation": "Qualifies",
+    "object": "World Cup",
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Scott McTominay",
+    "relation": "Leads",
+    "object": "Scotland",
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kimi Antonelli",
+    "relation": "Secures",
+    "object": "Pole Position",
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kim",
+    "relation": "Becomes",
+    "object": "First Italian",
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "World Cup Players",
+    "relation": "Raise",
+    "object": "Questions",
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mexico",
+    "relation": "Deploys",
+    "object": "Personnel",
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Armenia",
+    "relation": "sees-as",
+    "object": "referendum",
+    "source": "balkans_eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Armenian parliamentary elections",
+    "relation": "favor",
+    "object": "Pashinyan",
+    "source": "balkans_eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US administration",
+    "relation": "endorses",
+    "object": "Pashinyan",
+    "source": "balkans_eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Global spending",
+    "relation": "reaches",
+    "object": "$20 trillion",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "spending",
+    "relation": "is projected over",
+    "object": "next decade",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Geopolitical tensions",
+    "relation": "undermine",
+    "object": "global climate commitments",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "tensions",
+    "relation": "reevaluate",
+    "object": "energy market risks",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Extreme weather events",
+    "relation": "pose challenges to",
+    "object": "food security",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "events",
+    "relation": "pose challenges to",
+    "object": "public health",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Environmental pollution",
+    "relation": "exacerbate",
+    "object": "disasters",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "governance failures",
+    "relation": "exacerbate",
+    "object": "disasters",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Climate change impacts",
+    "relation": "recognize",
+    "object": "women's safety and health",
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Ukrainian drones",
+    "relation": "target",
+    "object": "St Petersburg",
+    "source": "us_china_drone_conflicts",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chinese President",
+    "relation": "visit",
+    "object": "North Korea",
+    "source": "us_china_drone_conflicts",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "suffers",
+    "object": "drone strikes",
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "NATO",
+    "relation": "faces",
+    "object": "challenges",
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK Prime Minister",
+    "relation": "warns",
+    "object": "of attack",
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian President",
+    "relation": "announces",
+    "object": "plans",
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chinese military team",
+    "relation": "inspects",
+    "object": "Russian bases",
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Putin",
+    "relation": "hails",
+    "object": "natural allies",
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "takes",
+    "object": "harder line",
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US government",
+    "relation": "instructs",
+    "object": "companies",
+    "source": "semiconductors",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "claims",
+    "object": "disrupts",
+    "source": "semiconductors",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Resin",
+    "relation": "leads_to",
+    "object": "increased_prices",
+    "source": "semiconductors",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "issues",
+    "object": "guidance",
+    "source": "semiconductors",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "impacts",
+    "object": "Chinese_tech_firms",
+    "source": "semiconductors",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Semiconductor_stocks",
+    "relation": "experience",
+    "object": "sell-off",
+    "source": "semiconductors",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Teesta River",
+    "relation": "remains unresolved",
+    "object": "dispute",
+    "source": "india_china_himalaya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "reaffirms",
+    "object": "Kashmir",
+    "source": "india_china_himalaya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "reaffirms",
+    "object": "Palestine",
+    "source": "india_china_himalaya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "clash",
+    "object": "UN Security Council",
+    "source": "india_china_himalaya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "threatens",
+    "object": "tariffs",
+    "source": "india_china_himalaya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Sindh",
+    "relation": "faces",
+    "object": "shortage",
+    "source": "india_china_himalaya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S. Defense Secretary",
+    "relation": "outlined",
+    "object": "new regional security approach",
+    "source": "Philippines",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Japan",
+    "relation": "began",
+    "object": "talks with Philippines",
+    "source": "Philippines",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "upset",
+    "object": "by Japan-Philippines sea border talks",
+    "source": "Philippines",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "conducts",
+    "object": "military exercises",
+    "source": "Philippines",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "ASEAN",
+    "relation": "considers",
+    "object": "legally binding agreement",
+    "source": "Philippines",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Philippines",
+    "relation": "slowed",
+    "object": "inflation rate",
+    "source": "Philippines",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nigerian army",
+    "relation": "rescues",
+    "object": "captives",
+    "source": "Nigeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Foreign inflows",
+    "relation": "increased",
+    "object": "investments",
+    "source": "Nigeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "warns",
+    "object": "weapons",
+    "source": "Nigeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Dangote Refinery",
+    "relation": "surpasses",
+    "object": "capacity",
+    "source": "Nigeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nigeria",
+    "relation": "experiences",
+    "object": "kidnapping",
+    "source": "Nigeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "designates",
+    "object": "Brazil's two largest gangs",
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Peru",
+    "relation": "has",
+    "object": "presidential election",
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Keiko Fujimori",
+    "relation": "competes",
+    "object": "Roberto Sanchez",
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Gen. Dan Caine",
+    "relation": "visits",
+    "object": "Venezuela",
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Argentina",
+    "relation": "warns",
+    "object": "British companies",
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "aims",
+    "object": "boost oil production",
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nigeria",
+    "relation": "increased",
+    "object": "foreign inflows",
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Tanzania, Kenya",
+    "relation": "made investments",
+    "object": "America’s largest banks",
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "America’s largest banks",
+    "relation": "launching",
+    "object": "shared tokenized deposit network",
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Banco BPM",
+    "relation": "invites",
+    "object": "MPS for merger",
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Banco BPM, MPS",
+    "relation": "merge",
+    "object": "Italy's second-biggest banking group",
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Bank of Canada",
+    "relation": "decided to hold",
+    "object": "interest rates",
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hong Kong",
+    "relation": "forms",
+    "object": "Tokenised Bond Expert Group",
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mark Carney",
+    "relation": "navigates",
+    "object": "diplomatic relations",
+    "source": "canada_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "holds",
+    "object": "referendum",
+    "source": "canada_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "federalists",
+    "relation": "debate",
+    "object": "separatists",
+    "source": "canada_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "experiences",
+    "object": "technical recession",
+    "source": "canada_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "wildland firefighters",
+    "relation": "face",
+    "object": "discrepancies",
+    "source": "canada_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "government",
+    "relation": "allocates",
+    "object": "funds",
+    "source": "canada_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Flu cases",
+    "relation": "rise due to",
+    "object": "waning vaccine protection",
+    "source": "Hong Kong",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hong Kong",
+    "relation": "sign deals with",
+    "object": "Central Asia",
+    "source": "Hong Kong",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Scammers",
+    "relation": "defraud",
+    "object": "students",
+    "source": "Hong Kong",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "A US citizen and journalist",
+    "relation": "charged for",
+    "object": "acting as a Chinese agent",
+    "source": "Hong Kong",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Lung cancer rates among Hong Kong women",
+    "relation": "increase by",
+    "object": "20%",
+    "source": "Hong Kong",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "launches",
+    "object": "drone attacks",
+    "source": "cyber",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "St. Petersburg",
+    "relation": "targets",
+    "object": "military infrastructure",
+    "source": "cyber",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian",
+    "relation": "shot down",
+    "object": "drones",
+    "source": "cyber",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "A Ukrainian naval drone",
+    "relation": "exploded",
+    "object": "in a Romanian port",
+    "source": "cyber",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "TA4922",
+    "relation": "expands",
+    "object": "operations",
+    "source": "cyber",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Myanmar’s military",
+    "relation": "seeks",
+    "object": "support",
+    "source": "cyber",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ebola outbreaks",
+    "relation": "lead to",
+    "object": "border closures",
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ebola outbreaks",
+    "relation": "lead to",
+    "object": "economic disruptions",
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kenya",
+    "relation": "experiences",
+    "object": "violent protests",
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "funds",
+    "object": "Ebola quarantine facility",
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "East African Community ministers",
+    "relation": "agree on",
+    "object": "harmonized response measures",
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Somalia",
+    "relation": "faces",
+    "object": "escalating political violence",
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mogadishu",
+    "relation": "prompts",
+    "object": "calls for de-escalation",
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ethiopia",
+    "relation": "confirms",
+    "object": "status quo",
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "WHO",
+    "relation": "reports",
+    "object": "Ebola cases",
+    "source": "DR Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US health officials",
+    "relation": "warn",
+    "object": "Ebola outbreak",
+    "source": "DR Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chinese medical team",
+    "relation": "arrives",
+    "object": "DR Congo",
+    "source": "DR Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Trade",
+    "relation": "halts",
+    "object": "Uganda–DR Congo border",
+    "source": "DR Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Scientists",
+    "relation": "develop",
+    "object": "Ebola vaccines",
+    "source": "DR Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Uganda",
+    "relation": "closed",
+    "object": "border with Congo",
+    "source": "supply_chains",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "trade",
+    "relation": "halted",
+    "object": "at Uganda–DR Congo border",
+    "source": "supply_chains",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "goods",
+    "relation": "spoiled",
+    "object": "due to trade halt",
+    "source": "supply_chains",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "900 aircraft",
+    "relation": "sidelined",
+    "object": "due to engine shortages",
+    "source": "supply_chains",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "considering",
+    "object": "new rules",
+    "source": "supply_chains",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK businesses",
+    "relation": "remain unprepared for",
+    "object": "disruptions in food supplies",
+    "source": "supply_chains",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Negative views",
+    "relation": "increase",
+    "object": "Israel",
+    "source": "Malaysia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "operations",
+    "relation": "expand",
+    "object": "TA4922",
+    "source": "Malaysia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "seek",
+    "relation": "strengthen",
+    "object": "partnership",
+    "source": "Malaysia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "makes",
+    "relation": "attractive",
+    "object": "destination",
+    "source": "Malaysia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "conflicts",
+    "relation": "increase",
+    "object": "consumption",
+    "source": "Malaysia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "boom",
+    "relation": "increase",
+    "object": "consumption",
+    "source": "Malaysia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "Increased",
+    "object": "Negative views globally",
+    "source": "Spain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Europe",
+    "relation": "Handled",
+    "object": "Migration poorly",
+    "source": "Spain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pope Leo XIV",
+    "relation": "Visited",
+    "object": "Spain",
+    "source": "Spain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Telefonica",
+    "relation": "Sought to enforce",
+    "object": "Arbitration award against Colombia",
+    "source": "Spain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Honda warehouse",
+    "relation": "Experienced",
+    "object": "Fire",
+    "source": "Spain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Barcelona",
+    "relation": "Evacuated",
+    "object": "Workers",
+    "source": "Spain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Argentina",
+    "relation": "warns",
+    "object": "British oil drilling plans",
+    "source": "Argentina",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Argentina",
+    "relation": "could reshape",
+    "object": "Vaca Muerta gas field",
+    "source": "Argentina",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Foreign fleets",
+    "relation": "catch",
+    "object": "four times national industry’s volume",
+    "source": "Argentina",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chile",
+    "relation": "reasserts",
+    "object": "full sovereignty over Strait of Magellan",
+    "source": "Argentina",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Argentina",
+    "relation": "applies",
+    "object": "CPTPP",
+    "source": "Argentina",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "NCDC Director-General",
+    "relation": "acknowledges",
+    "object": "Ebola preparedness not at 100%",
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "NCDC mechanisms",
+    "relation": "can contain",
+    "object": "outbreak",
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nigerian army",
+    "relation": "rescues",
+    "object": "abductees",
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Boko Haram",
+    "relation": "kidnaps",
+    "object": "women and children",
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Agbogbloshie scrapyard workers",
+    "relation": "face",
+    "object": "health risks",
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Agbogbloshie scrapyard workers",
+    "relation": "face",
+    "object": "environmental risks",
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "lawsuit",
+    "relation": "challenges",
+    "object": "deportations",
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "African Commission on Human and Peoples' Rights",
+    "relation": "hears",
+    "object": "lawsuit",
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Italy",
+    "relation": "faces",
+    "object": "challenges",
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Malta",
+    "relation": "capsizes",
+    "object": "boat",
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "bodies",
+    "relation": "recovered",
+    "object": "10",
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pete Hegseth",
+    "relation": "criticizes",
+    "object": "Europe's handling of migration",
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "BPM",
+    "relation": "proposes",
+    "object": "merger with Monte dei Paschi",
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Italy",
+    "relation": "forms",
+    "object": "second-largest banking group (through merger)",
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "special forces",
+    "relation": "train",
+    "object": "in underground cisterns",
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pope Leo",
+    "relation": "addresses",
+    "object": "migration and polarization issues",
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC",
+    "relation": "falls to",
+    "object": "historic lows",
+    "source": "Saudi Arabia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UAE",
+    "relation": "exits from",
+    "object": "OPEC",
+    "source": "Saudi Arabia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Saudi Arabia",
+    "relation": "condemns",
+    "object": "Israel's actions against Lebanon",
+    "source": "Saudi Arabia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Saudi Arabia",
+    "relation": "supports",
+    "object": "Lebanese sovereignty",
+    "source": "Saudi Arabia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC",
+    "relation": "hits",
+    "object": "historic lows",
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "sanctions",
+    "object": "Iran",
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "deployed",
+    "object": "troops",
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UAE",
+    "relation": "left",
+    "object": "OPEC",
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "impacted",
+    "object": "oil diplomacy",
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC+",
+    "relation": "increase",
+    "object": "production targets",
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Safeen Drydocks",
+    "relation": "secured",
+    "object": "contracts",
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iraqi man",
+    "relation": "accused",
+    "object": "terrorist attacks",
+    "source": "Netherlands",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Dutch warship",
+    "relation": "tracked",
+    "object": "Chinese military",
+    "source": "Netherlands",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ramaphosa",
+    "relation": "reaffirms",
+    "object": "commitment",
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ruto",
+    "relation": "defended",
+    "object": "decision",
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "violence",
+    "relation": "forced",
+    "object": "migrants flee",
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Fitch Ratings",
+    "relation": "upgraded",
+    "object": "credit rating",
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Africa",
+    "relation": "experiences",
+    "object": "violence",
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Africa",
+    "relation": "resumes",
+    "object": "exports",
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Eskom",
+    "relation": "secures",
+    "object": "partnership",
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "unemployment",
+    "relation": "remains",
+    "object": "high",
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "engages-in",
+    "object": "trade tensions",
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "engages-in",
+    "object": "trade tensions",
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "concerns",
+    "object": "policy loopholes",
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "concerns",
+    "object": "policy loopholes",
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "focuses-on",
+    "object": "energy dominance",
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "focuses-on",
+    "object": "energy dominance",
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "concerned-about",
+    "object": "Chinese influence",
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "concerned-about",
+    "object": "US influence",
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Uzbekistan",
+    "relation": "commence",
+    "object": "construction",
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "commence",
+    "object": "construction",
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "double",
+    "object": "nuclear power capacity",
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "compete",
+    "object": "China",
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Japan",
+    "relation": "implement",
+    "object": "emergency budget",
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Middle East",
+    "relation": "conflict",
+    "object": "energy crisis",
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "activate",
+    "object": "emergency plan",
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "launches",
+    "object": "missile and drone attacks",
+    "source": "Kuwait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kuwait",
+    "relation": "intercepts",
+    "object": "ballistic missiles",
+    "source": "Kuwait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US military",
+    "relation": "strikes",
+    "object": "Iranian sites",
+    "source": "Kuwait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kuwait",
+    "relation": "condemns",
+    "object": "attacks",
+    "source": "Kuwait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC+",
+    "relation": "agrees",
+    "object": "increase oil output targets",
+    "source": "Kuwait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US Secretary of State Marco Rubio",
+    "relation": "meets",
+    "object": "Kuwait’s Foreign Minister",
+    "source": "Kuwait",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Bank of England",
+    "relation": "warns",
+    "object": "Middle East energy crisis",
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India's central bank",
+    "relation": "keeps",
+    "object": "rates steady",
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "faces",
+    "object": "trade deficit",
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Venezuela",
+    "relation": "slowed",
+    "object": "inflation rate",
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Central Bank of Kazakhstan",
+    "relation": "reduced",
+    "object": "interest rates",
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US President Donald Trump",
+    "relation": "endorsed",
+    "object": "Abelardo de la Espriella",
+    "source": "Colombia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Colombia's outgoing President Gustavo Petro",
+    "relation": "criticized",
+    "object": "US support for far-right candidate Abelardo de la Espriella",
+    "source": "Colombia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "OECD",
+    "relation": "downgraded",
+    "object": "Colombia's growth forecast",
+    "source": "Colombia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Colombia's stock market",
+    "relation": "experienced",
+    "object": "slight decline",
+    "source": "Colombia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Bolivia",
+    "relation": "debates",
+    "object": "allowing military intervention to clear blockades",
+    "source": "Colombia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "US",
+    "relation": "imposes sanctions on",
+    "object": "Díaz-Canel",
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "imposes sanctions on",
+    "object": "Castro family members",
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "considers",
+    "object": "reviving canal project in Nicaragua",
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nicaragua",
+    "relation": "involves",
+    "object": "China",
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Venezuela",
+    "relation": "faces controversy over",
+    "object": "Pigasse’s involvement",
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US dollar",
+    "relation": "weakens, affecting",
+    "object": "Latin American markets",
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mexico City",
+    "relation": "uses",
+    "object": "World Cup celebrations to pressure government",
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Asia",
+    "relation": "impacted by",
+    "object": "US tariffs",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Indonesia",
+    "relation": "impacted by",
+    "object": "US tariffs",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "global views",
+    "relation": "increase",
+    "object": "Negative towards Israel",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "associated with",
+    "object": "Iran conflict",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "floods",
+    "relation": "exacerbated by",
+    "object": "Environmental destruction",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "floods",
+    "relation": "exacerbated by",
+    "object": "Governance failures",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Sumatra",
+    "relation": "experiences",
+    "object": "floods",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "operates",
+    "object": "TA4922",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "critical minerals",
+    "relation": "affected by",
+    "object": "Resource nationalism",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "lithium",
+    "relation": "included in",
+    "object": "critical minerals",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "rare earth elements",
+    "relation": "included in",
+    "object": "critical minerals",
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "North Korea",
+    "relation": "reaffirms",
+    "object": "nuclear status",
+    "source": "North Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "North Korea",
+    "relation": "increases",
+    "object": "missile production",
+    "source": "North Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kim Jong Un",
+    "relation": "emphasizes",
+    "object": "naval capabilities",
+    "source": "North Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Armenia",
+    "relation": "shows",
+    "object": "high voter turnout",
+    "source": "Armenia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pashinyan",
+    "relation": "favors",
+    "object": "ruling party",
+    "source": "Armenia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "applies",
+    "object": "political pressure",
+    "source": "Armenia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "threatens",
+    "object": "'Ukrainian scenario'",
+    "source": "Armenia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Disinformation campaigns",
+    "relation": "link",
+    "object": "Russia",
+    "source": "Armenia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pro-Russian politicians",
+    "relation": "oppose",
+    "object": "Pashinyan",
+    "source": "Armenia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "kills",
+    "object": "nine",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Egypt",
+    "relation": "hosts",
+    "object": "talks",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "NATO",
+    "relation": "considers",
+    "object": "aid",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "receives",
+    "object": "aid",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "survey",
+    "relation": "shows",
+    "object": "views",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Turkey",
+    "relation": "expands",
+    "object": "role",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "reshapes",
+    "object": "Middle East",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Turkey",
+    "relation": "aims",
+    "object": "expand",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "NATO",
+    "relation": "reassesses",
+    "object": "dependencies",
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "detects",
+    "object": "New World screwworm",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Texas",
+    "relation": "has",
+    "object": "New World screwworm",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Central America",
+    "relation": "smuggles",
+    "object": "cattle",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "REalloys",
+    "relation": "secures",
+    "object": "rights",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "hosts",
+    "object": "rare earth processing facility",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "REalloys",
+    "relation": "builds",
+    "object": "heavy rare earth metallization facility",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canadian Prime Minister Carney",
+    "relation": "engages",
+    "object": "US",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canadian Prime Minister Carney",
+    "relation": "engages",
+    "object": "China",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "AMLO",
+    "relation": "accuses",
+    "object": "U.S.",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "AMLO",
+    "relation": "supports",
+    "object": "Sheinbaum",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OECD",
+    "relation": "cuts",
+    "object": "forecast",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mexico",
+    "relation": "has",
+    "object": "policy uncertainty",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OECD",
+    "relation": "raises",
+    "object": "outlook",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mexico",
+    "relation": "faces",
+    "object": "trade tariffs",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "FIFA",
+    "relation": "reverses",
+    "object": "water bottle ban",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US and Canada stadiums",
+    "relation": "had",
+    "object": "water bottle ban",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mexican authorities",
+    "relation": "capture",
+    "object": "MS-13 leader",
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Alberta",
+    "relation": "hold",
+    "object": "referendum",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "federalist groups",
+    "relation": "spark",
+    "object": "battle",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "separatist groups",
+    "relation": "spark",
+    "object": "battle",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nova Scotia",
+    "relation": "reach",
+    "object": "agreement",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ontario",
+    "relation": "overhaul",
+    "object": "OSAP",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "influence",
+    "object": "Sino-Canadian relations",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ontario",
+    "relation": "affect",
+    "object": "immigrant students",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ontario",
+    "relation": "affect",
+    "object": "refugee students",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Parti Québécois",
+    "relation": "maintain",
+    "object": "contact",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Alberta separatists",
+    "relation": "prepare",
+    "object": "referendum",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canadian Prime Minister Mark Carney",
+    "relation": "consult",
+    "object": "residents",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Toronto’s Billy Bishop airport",
+    "relation": "expand",
+    "object": "consulted",
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kenyan residents",
+    "relation": "protest against",
+    "object": "US Ebola quarantine facility",
+    "source": "Kenya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South African president",
+    "relation": "hold talks with",
+    "object": "Kenyan president",
+    "source": "Kenya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "presidents",
+    "relation": "sign",
+    "object": "six new accords",
+    "source": "Kenya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "government of Kenya",
+    "relation": "propose banning",
+    "object": "shisha smoking",
+    "source": "Kenya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "experts",
+    "relation": "criticize",
+    "object": "US plan for Ebola quarantine center",
+    "source": "Kenya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "lenders of Kenya",
+    "relation": "seek",
+    "object": "interest rate hike",
+    "source": "Kenya",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pete Hegseth",
+    "relation": "showed",
+    "object": "shift",
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "TA4922",
+    "relation": "expanded",
+    "object": "operations",
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Singaporean troops",
+    "relation": "trained",
+    "object": "Taiwan",
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "initiated",
+    "object": "tariffs",
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Southeast Asian economies",
+    "relation": "targeted",
+    "object": "tariffs",
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Singapore",
+    "relation": "engaged",
+    "object": "China",
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ebola cases",
+    "relation": "surge",
+    "object": "nearly 500",
+    "source": "world_diseases",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US and Canada",
+    "relation": "announce",
+    "object": "travel restrictions",
+    "source": "world_diseases",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "WHO",
+    "relation": "warns",
+    "object": "current outbreak could match scale of 2014 epidemic",
+    "source": "world_diseases",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South African government",
+    "relation": "reaffirms",
+    "object": "commitment to addressing Ebola",
+    "source": "world_diseases",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "health workers",
+    "relation": "treat",
+    "object": "patients without pay",
+    "source": "world_diseases",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Korean won",
+    "relation": "reach",
+    "object": "lowest level",
+    "source": "fx",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "rupiah",
+    "relation": "make",
+    "object": "Indonesia attractive",
+    "source": "fx",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "yen",
+    "relation": "face",
+    "object": "currency crisis",
+    "source": "fx",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "prepare",
+    "object": "measures",
+    "source": "fx",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC+",
+    "relation": "approved",
+    "object": "increase",
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Strait of Hormuz",
+    "relation": "issue",
+    "object": "ongoing",
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UAE",
+    "relation": "exit",
+    "object": "OPEC",
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russian elites",
+    "relation": "purchase",
+    "object": "business jets",
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "The Wall Street Journal",
+    "relation": "report",
+    "object": "purchasing",
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kazakhstan's National Security Committee",
+    "relation": "conclude",
+    "object": "not engage",
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kazakhstan",
+    "relation": "partner",
+    "object": "Hong Kong",
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kyrgyzstan",
+    "relation": "elect",
+    "object": "UN Security Council",
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Uzbekistan",
+    "relation": "has",
+    "object": "nuclear power plant",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "dominate",
+    "object": "natural gas",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK",
+    "relation": "forecast",
+    "object": "oil prices",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Gulf",
+    "relation": "cause",
+    "object": "supply issues",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "expand",
+    "object": "operations",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Asia",
+    "relation": "increase",
+    "object": "imports",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "provide",
+    "object": "oil and gas",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "create",
+    "object": "tensions",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Climate change",
+    "relation": "reshape",
+    "object": "energy markets",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "train",
+    "object": "experts",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EV race",
+    "relation": "outpace",
+    "object": "countries",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "British Airways",
+    "relation": "warn",
+    "object": "increases",
+    "source": "global_energy",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "is-targeted-by",
+    "object": "ballistic missiles",
+    "source": "iran_asia_oil_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "impacts",
+    "object": "global trade",
+    "source": "iran_asia_oil_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "impacts",
+    "object": "global economy",
+    "source": "iran_asia_oil_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Bab el-Mandeb",
+    "relation": "disrupts",
+    "object": "oil exports",
+    "source": "iran_asia_oil_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "increases",
+    "object": "negative views globally",
+    "source": "iran_asia_oil_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Gold",
+    "relation": "surpasses",
+    "object": "US Treasuries",
+    "source": "gold",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "China",
+    "relation": "drives",
+    "object": "increased gold demand",
+    "source": "gold",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "gold prices",
+    "relation": "rally",
+    "object": "in 2025",
+    "source": "gold",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "prices",
+    "relation": "fall",
+    "object": "during conflicts",
+    "source": "gold",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "gold prices",
+    "relation": "forecasted",
+    "object": "hit record $4,920 an ounce",
+    "source": "gold",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Canada",
+    "relation": "discusses",
+    "object": "stocks",
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US Dollar",
+    "relation": "exchange rate with",
+    "object": "Canadian Dollar",
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canadians",
+    "relation": "protect",
+    "object": "savings",
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Royal Bank of Canada",
+    "relation": "maintains rating",
+    "object": "buy",
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "National Bank of Canada",
+    "relation": "announces",
+    "object": "offering",
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "IMF",
+    "relation": "podcast participation by",
+    "object": "Lipsky",
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "USDCAD",
+    "relation": "suggests correction toward",
+    "object": "support",
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israeli",
+    "relation": "strike",
+    "object": "Gaza",
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Gaza",
+    "relation": "kill",
+    "object": "nine people",
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Palestinian factions",
+    "relation": "resume",
+    "object": "talks",
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Cairo",
+    "relation": "host",
+    "object": "talks",
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hamas",
+    "relation": "arrive",
+    "object": "Cairo",
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Egyptian officials",
+    "relation": "condemn",
+    "object": "Kuwait",
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "down",
+    "object": "missiles",
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "continue",
+    "object": "attacks",
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Africa CDC",
+    "relation": "launch joint response plan with",
+    "object": "WHO across Congo and Uganda",
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nigerian army",
+    "relation": "rescues",
+    "object": "abductees from Boko Haram in Borno State",
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mali's military junta",
+    "relation": "offers reward for",
+    "object": "Al-Qaeda-linked JNIM leader Iyad Ag Ghaly",
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "poses food security concerns to",
+    "object": "Africa via stolen grain",
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "plans to centralise",
+    "object": "visa processing across Africa",
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nigeria's Dangote Refinery",
+    "relation": "doubles output capacity, reshaping",
+    "object": "regional fuel trade",
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "warns about",
+    "object": "weapons from Libya resurfacing in Nigeria and Sahel region",
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "pressures",
+    "object": "Singapore",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Singapore",
+    "relation": "diversifies",
+    "object": "foreign policy",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Singapore",
+    "relation": "engages",
+    "object": "China",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Malaysia",
+    "relation": "strengthens",
+    "object": "relationship",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Netherlands",
+    "relation": "strengthens",
+    "object": "relationship",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Japan",
+    "relation": "expands",
+    "object": "export presence",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Singapore",
+    "relation": "blocks",
+    "object": "posts",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "funds",
+    "object": "projects",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "receives",
+    "object": "funds",
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Foreign fleets",
+    "relation": "catch",
+    "object": "more fish than Argentina's national industry",
+    "source": "maritime_chokepoints",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Taiwan coast guard",
+    "relation": "engage in standoff with",
+    "object": "China coast guard",
+    "source": "maritime_chokepoints",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Portugal",
+    "relation": "won",
+    "object": "seats",
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Austria",
+    "relation": "won",
+    "object": "seats",
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Germany",
+    "relation": "failed",
+    "object": "secure",
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Germany",
+    "relation": "blamed",
+    "object": "Russia",
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Portugal",
+    "relation": "elected",
+    "object": "member",
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Austria",
+    "relation": "elected",
+    "object": "member",
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Cristiano Ronaldo",
+    "relation": "preparing",
+    "object": "World Cup",
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Trade",
+    "relation": "halted",
+    "object": "between Uganda and DR Congo",
+    "source": "Uganda",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "WHO and Africa CDC",
+    "relation": "unveil",
+    "object": "plan to combat Ebola outbreak",
+    "source": "Uganda",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "UN",
+    "relation": "scales up",
+    "object": "Ebola response efforts",
+    "source": "Uganda",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Rebel attacks",
+    "relation": "complicate",
+    "object": "Ebola response efforts",
+    "source": "Uganda",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "China",
+    "relation": "transformed",
+    "object": "Antelope Reef",
+    "source": "south_china_sea",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "China",
+    "relation": "conducted",
+    "object": "maritime incursion near Taiwan",
+    "source": "south_china_sea",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Taiwan, China coast guards",
+    "relation": "involved in",
+    "object": "standoffs",
+    "source": "south_china_sea",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Japan, Philippines",
+    "relation": "strengthening",
+    "object": "maritime security cooperation to counter China's influence",
+    "source": "south_china_sea",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Venezuela",
+    "relation": "faces",
+    "object": "controversy",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Matthieu Pigasse",
+    "relation": "involves",
+    "object": "Venezuela",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Peter Schiff",
+    "relation": "warns",
+    "object": "crisis",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "G20",
+    "relation": "releases",
+    "object": "template",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "biodiversity loss",
+    "relation": "pushes",
+    "object": "India",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "India",
+    "relation": "defaults",
+    "object": "sovereign",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Research",
+    "relation": "suggests",
+    "object": "crises",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Fitch Ratings",
+    "relation": "upgrades",
+    "object": "South Africa",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Sudan",
+    "relation": "signs",
+    "object": "agreement",
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Germany",
+    "relation": "bid for",
+    "object": "UN Security Council seat",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Germany",
+    "relation": "blames",
+    "object": "Russia",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Russia",
+    "relation": "supports",
+    "object": "Ukraine",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Russia",
+    "relation": "supports",
+    "object": "Israel",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Austria",
+    "relation": "elected to",
+    "object": "UN Security Council",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Portugal",
+    "relation": "elected to",
+    "object": "UN Security Council",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Trinidad and Tobago",
+    "relation": "elected to",
+    "object": "UN Security Council",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Zimbabwe",
+    "relation": "elected to",
+    "object": "UN Security Council",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Germany",
+    "relation": "fails",
+    "object": "in bid",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Germany",
+    "relation": "soul-searching about",
+    "object": "international leadership role",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "congratulates",
+    "object": "non-permanent UNSC members",
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US",
+    "relation": "arrives",
+    "object": "DR Congo",
+    "source": "central_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "arrives",
+    "object": "DR Congo",
+    "source": "central_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "DRC",
+    "relation": "faces",
+    "object": "challenges",
+    "source": "central_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Disinformation",
+    "relation": "worsens",
+    "object": "epidemic",
+    "source": "central_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ebola vaccine",
+    "relation": "is being developed",
+    "object": "Congo-Kinshasa",
+    "source": "central_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Agentic AI",
+    "relation": "transforms",
+    "object": "finance",
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S. Department of Defense",
+    "relation": "faces",
+    "object": "challenges",
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chinese firms",
+    "relation": "use",
+    "object": "distillation techniques",
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Washington",
+    "relation": "competes",
+    "object": "Brussels",
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "SpaceX",
+    "relation": "highlights",
+    "object": "importance",
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "trading firms",
+    "relation": "view",
+    "object": "prediction markets",
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Polymarket, Kalshi",
+    "relation": "are",
+    "object": "asset classes",
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Huawei chips",
+    "relation": "refine",
+    "object": "DeepSeek model",
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "commits",
+    "object": "funds",
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "US",
+    "relation": "invests",
+    "object": "$1.5 billion",
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Delfin Midstream",
+    "relation": "approves",
+    "object": "project",
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Russia",
+    "relation": "faces",
+    "object": "hurdles",
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Putin",
+    "relation": "authorizes",
+    "object": "sale",
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "India",
+    "relation": "secures",
+    "object": "energy security",
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Russian",
+    "relation": "celebrated",
+    "object": "new nuclear power plant construction",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Uzbek",
+    "relation": "started",
+    "object": "new nuclear power plant construction",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hong Kong",
+    "relation": "signed",
+    "object": "deals",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hong Kong",
+    "relation": "planned",
+    "object": "flights",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "signed",
+    "object": "agreements",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "combat",
+    "object": "illegal immigration",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "combat",
+    "object": "drug trafficking",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kyrgyzstan",
+    "relation": "elected",
+    "object": "UN Security Council",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Afghanistan",
+    "relation": "discussed",
+    "object": "deepening trade ties",
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "became",
+    "object": "largest assessed contributor to WHO",
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US",
+    "relation": "quit",
+    "object": "WHO",
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Pacific nations",
+    "relation": "adopted",
+    "object": "regional framework for planned climate relocation",
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Quad",
+    "relation": "proposed",
+    "object": "Fiji port project",
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "China",
+    "relation": "expand",
+    "object": "influence",
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Australia",
+    "relation": "agree",
+    "object": "strategic treaty with Solomon Islands",
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "China",
+    "relation": "influence",
+    "object": "region",
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Australia",
+    "relation": "experience",
+    "object": "industrial action at Ichthys LNG project",
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US",
+    "relation": "imposes",
+    "object": "sanctions",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "escalates",
+    "object": "pressure",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "foreign companies",
+    "relation": "leave",
+    "object": "Cuba",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "affects",
+    "object": "tourism sector",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "affects",
+    "object": "mining sectors",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "seeks",
+    "object": "occupation",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "seeks",
+    "object": "permanent occupation",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Lebanon",
+    "relation": "is targeted",
+    "object": "by Israel",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "criticizes",
+    "object": "US",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "calls",
+    "object": "for end",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Cuba",
+    "relation": "faces",
+    "object": "terrorism charges",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "indictes",
+    "object": "Raul Castro",
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "sanctioned",
+    "object": "by US",
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Gen. Dan Caine",
+    "relation": "visited",
+    "object": "Venezuela",
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "increased",
+    "object": "imports",
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Venezuela",
+    "relation": "approved",
+    "object": "reforms",
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Venezuela",
+    "relation": "set_to_visit",
+    "object": "Turkey",
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Delcy Rodriguez",
+    "relation": "visits",
+    "object": "Turkey",
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC+",
+    "relation": "impact",
+    "object": "oil prices",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "block",
+    "object": "Strait of Hormuz",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "sanction",
+    "object": "Iran",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "deploy",
+    "object": "Azerbaijan",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "deploy",
+    "object": "UAE",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "deploy",
+    "object": "Iraq",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "deploy",
+    "object": "Somaliland",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Gulf tensions",
+    "relation": "continue",
+    "object": "diplomatic efforts",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iraq parliament",
+    "relation": "reject",
+    "object": "2026 budget",
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "claims",
+    "object": "India",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "weaponizing",
+    "object": "water",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "faces",
+    "object": "environmental challenges",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "deepens",
+    "object": "military ties",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "warns",
+    "object": "of terrorist threats",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "security forces",
+    "relation": "killed",
+    "object": "terrorists",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Sindh government",
+    "relation": "failed",
+    "object": "wheat procurement",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "leads to",
+    "object": "flour crisis",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Regional leaders",
+    "relation": "discussed",
+    "object": "trade ties",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Myanmar",
+    "relation": "visited",
+    "object": "India",
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mozambique",
+    "relation": "strengthens",
+    "object": "state participation",
+    "source": "southern_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "foreign migrants",
+    "relation": "flee",
+    "object": "South Africa",
+    "source": "southern_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Africa",
+    "relation": "experiences",
+    "object": "diplomatic tensions",
+    "source": "southern_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South Africa",
+    "relation": "signs",
+    "object": "accords",
+    "source": "southern_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kenya",
+    "relation": "signs",
+    "object": "accords",
+    "source": "southern_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zimbabwe",
+    "relation": "elected",
+    "object": "Security Council",
+    "source": "southern_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Vietnam",
+    "relation": "disputes",
+    "object": "U.S. claims",
+    "source": "Vietnam",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Vietnam",
+    "relation": "establishing",
+    "object": "financial center",
+    "source": "Vietnam",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "increased",
+    "object": "trade surplus",
+    "source": "commodities",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Peru",
+    "relation": "holds",
+    "object": "presidential runoff election",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Keiko Fujimori",
+    "relation": "is candidate in",
+    "object": "election",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Roberto Sanchez",
+    "relation": "is candidate in",
+    "object": "election",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "markets",
+    "relation": "watch",
+    "object": "outcome",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "voter",
+    "relation": "concerns",
+    "object": "insecurity",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "voter",
+    "relation": "concerns",
+    "object": "crime",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Peruvians",
+    "relation": "vote for",
+    "object": "president",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Peru",
+    "relation": "has",
+    "object": "political instability",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Peru",
+    "relation": "forecasts",
+    "object": "boost",
+    "source": "Peru",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Serbian President Vucic",
+    "relation": "supports",
+    "object": "Macron-Merz proposal",
+    "source": "Serbia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN Secretary-General",
+    "relation": "condemns",
+    "object": "killing",
+    "source": "Serbia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU leaders",
+    "relation": "meet",
+    "object": "in Montenegro",
+    "source": "Serbia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU leaders",
+    "relation": "reaffirm",
+    "object": "membership prospects",
+    "source": "Serbia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Trump administration",
+    "relation": "outlines",
+    "object": "new policy",
+    "source": "Serbia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Switzerland",
+    "relation": "explains",
+    "object": "gold remains safe haven",
+    "source": "Switzerland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Donald Trump Jr.",
+    "relation": "discusses",
+    "object": "cryptocurrency and geopolitics",
+    "source": "Switzerland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Dr Marnie Lovejoy",
+    "relation": "chairs",
+    "object": "Grayling Society",
+    "source": "Switzerland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Partners Group",
+    "relation": "warns",
+    "object": "fund liquidity restrictions",
+    "source": "Switzerland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Guy Spier",
+    "relation": "shut down",
+    "object": "fund",
+    "source": "Switzerland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "close_to",
+    "object": "deal",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Iran",
+    "relation": "extend",
+    "object": "ceasefire",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Israel",
+    "relation": "captures",
+    "object": "Beaufort Castle",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Netanyahu",
+    "relation": "claims",
+    "object": "Israel captures Beaufort Castle",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Ukraine war",
+    "relation": "lead_to",
+    "object": "food crisis",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Ukraine war",
+    "relation": "lead_to",
+    "object": "political upheaval",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Africa",
+    "relation": "experience",
+    "object": "food crisis",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Africa",
+    "relation": "experience",
+    "object": "energy crisis",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Iran",
+    "relation": "linked_to",
+    "object": "energy crisis",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Diesel protests",
+    "relation": "erupt",
+    "object": "Africa",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Romania",
+    "relation": "intensify",
+    "object": "political crisis",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Romania",
+    "relation": "government",
+    "object": "collapse",
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Trump",
+    "relation": "reinstated",
+    "object": "tariffs",
+    "source": "japan_security",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "exports",
+    "relation": "dropped",
+    "object": "80%",
+    "source": "japan_security",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Japan",
+    "relation": "seeks",
+    "object": "alternatives",
+    "source": "japan_security",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Japan",
+    "relation": "strengthens",
+    "object": "stance",
+    "source": "japan_security",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "improves",
+    "object": "relations",
+    "source": "japan_security",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "firm",
+    "relation": "argues",
+    "object": "hike",
+    "source": "japan_security",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "nationalism",
+    "relation": "rises",
+    "object": "Japan",
+    "source": "japan_security",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kyrgyzstan",
+    "relation": "elected_to",
+    "object": "UN Security Council",
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Kazakhstan",
+    "relation": "precedes",
+    "object": "Kyrgyzstan",
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "C5+1",
+    "relation": "gained_importance_in",
+    "object": "critical minerals supply chains",
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "EBRD",
+    "relation": "downgraded",
+    "object": "Kyrgyzstan's GDP forecast",
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "European sanctions",
+    "relation": "affect",
+    "object": "Kyrgyzstan",
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "energy prices",
+    "relation": "potentially_increase",
+    "object": "in Kyrgyzstan",
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Pakistan",
+    "relation": "reaffirmed_commitment_to",
+    "object": "Shanghai spirit",
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "SCO member states",
+    "relation": "call_for",
+    "object": "joint strategies",
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Iran",
+    "relation": "fired",
+    "object": "missiles",
+    "source": "Oman",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Oman",
+    "relation": "raised",
+    "object": "concerns",
+    "source": "Oman",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UAE",
+    "relation": "exited",
+    "object": "Opec",
+    "source": "Oman",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Gulf",
+    "relation": "continued",
+    "object": "tensions",
+    "source": "Oman",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "warns",
+    "object": "Middle East conflict",
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "fighting",
+    "relation": "deepens",
+    "object": "political crisis",
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "fighting",
+    "relation": "causes",
+    "object": "civilian displacement",
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "aid networks",
+    "relation": "strain",
+    "object": "Hormuz crisis",
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hormuz crisis",
+    "relation": "exacerbates",
+    "object": "global food shortages",
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hormuz crisis",
+    "relation": "exacerbates",
+    "object": "global medical shortages",
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "protests",
+    "relation": "spark",
+    "object": "clashes",
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "former child soldier",
+    "relation": "recounts",
+    "object": "psychological trauma",
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Finland",
+    "relation": "favors",
+    "object": "renewables",
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Finland",
+    "relation": "increases",
+    "object": "tension",
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "NATO",
+    "relation": "borders",
+    "object": "uncertainty",
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "European countries",
+    "relation": "callFor",
+    "object": "stricter visa policies",
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Finland",
+    "relation": "suggests",
+    "object": "EU expansion",
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Bank of Finland Governor",
+    "relation": "impacts",
+    "object": "economy",
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Bank of Finland Governor",
+    "relation": "impacts",
+    "object": "payments systems",
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Panama",
+    "relation": "balances",
+    "object": "US, China",
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Panama Canal Authority",
+    "relation": "reduces",
+    "object": "Neopanamax draft limits",
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Traffic",
+    "relation": "nears",
+    "object": "maximum capacity",
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Strait of Hormuz",
+    "relation": "disrupts",
+    "object": "Traffic",
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Panama",
+    "relation": "ranks",
+    "object": "Argentina, Ecuador",
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "China-linked groups",
+    "relation": "target",
+    "object": "Latin American maritime shipping, oil production",
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "honor",
+    "object": "militia",
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Poland",
+    "relation": "cause",
+    "object": "tension",
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "11 European countries",
+    "relation": "call for",
+    "object": "stricter visa policies",
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Poland",
+    "relation": "reach",
+    "object": "final",
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mirra Andreeva",
+    "relation": "win",
+    "object": "title",
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Poland",
+    "relation": "lead",
+    "object": "gold buying",
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "lead",
+    "object": "gold buying",
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zimbabwe",
+    "relation": "elected_to",
+    "object": "UN Security Council",
+    "source": "Zimbabwe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zimbabwe",
+    "relation": "faces",
+    "object": "criticism",
+    "source": "Zimbabwe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zimbabwe",
+    "relation": "experiences",
+    "object": "tensions",
+    "source": "Zimbabwe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Zimbabwe",
+    "relation": "strengthens",
+    "object": "state_participation_in_mining",
+    "source": "Zimbabwe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "South_Africa",
+    "relation": "affects",
+    "object": "Zimbabwe",
+    "source": "Zimbabwe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "explode",
+    "object": "drone",
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Romania",
+    "relation": "host",
+    "object": "incident",
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hungary",
+    "relation": "drop",
+    "object": "veto",
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hungary",
+    "relation": "signal",
+    "object": "improved relations",
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Viktor Orban",
+    "relation": "have",
+    "object": "defeat",
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hungary",
+    "relation": "imply",
+    "object": "political implications",
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Romania",
+    "relation": "appoint",
+    "object": "prime minister-designate",
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Poland",
+    "relation": "exploit",
+    "object": "case",
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "exploded",
+    "object": "drone",
+    "source": "Romania",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Romania",
+    "relation": "hosted",
+    "object": "incident",
+    "source": "Romania",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "UK",
+    "relation": "summoned",
+    "object": "ambassador",
+    "source": "Romania",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Russia",
+    "relation": "struck",
+    "object": "Romania",
+    "source": "Romania",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Romania",
+    "relation": "enhancing",
+    "object": "air defenses",
+    "source": "Romania",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Iran",
+    "relation": "workedFor",
+    "object": "journalist",
+    "source": "Romania",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Romansians",
+    "relation": "convictedOf",
+    "object": "stabbing",
+    "source": "Romania",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Ousmane Sonko",
+    "relation": "re-elected",
+    "object": "head of PASTEF party",
+    "source": "Senegal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ousmane Sonko",
+    "relation": "consolidates",
+    "object": "support as party leader",
+    "source": "Senegal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Senegal",
+    "relation": "aims to outperform in",
+    "object": "2026 World Cup",
+    "source": "Senegal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "JNIM",
+    "relation": "releases",
+    "object": "propaganda video",
+    "source": "Senegal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Malian military and airport",
+    "relation": "attacked by",
+    "object": "JNIM",
+    "source": "Senegal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Senegalese fans",
+    "relation": "face",
+    "object": "visa restrictions",
+    "source": "Senegal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "warns",
+    "object": "food crisis",
+    "source": "Sri Lanka",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US-Iran conflict",
+    "relation": "affects",
+    "object": "fragile countries",
+    "source": "Sri Lanka",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Hormuz crisis",
+    "relation": "exacerbates",
+    "object": "global medical aid shortages",
+    "source": "Sri Lanka",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Strait of Hormuz",
+    "relation": "impacts",
+    "object": "human security",
+    "source": "Sri Lanka",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Strait of Hormuz",
+    "relation": "impacts",
+    "object": "economic stability",
+    "source": "Sri Lanka",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US forces",
+    "relation": "boarded",
+    "object": "Iranian oil tanker",
+    "source": "Sri Lanka",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Sri Lanka",
+    "relation": "launches",
+    "object": "public awareness campaign",
+    "source": "Sri Lanka",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Thailand",
+    "relation": "engages_in",
+    "object": "UN-backed maritime arbitration",
+    "source": "Thailand",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Thailand",
+    "relation": "faces",
+    "object": "public reckoning",
+    "source": "Thailand",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Thailand",
+    "relation": "faces",
+    "object": "inflation_decrease",
+    "source": "Thailand",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Thailand",
+    "relation": "implements",
+    "object": "shopping_subsidy_program",
+    "source": "Thailand",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Cambodia",
+    "relation": "engages_in",
+    "object": "maritime_arbitration",
+    "source": "Thailand",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Malaysia's_Langkawi",
+    "relation": "used_by",
+    "object": "smugglers",
+    "source": "Thailand",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "FRETILIN",
+    "relation": "proposes",
+    "object": "budget",
+    "source": "Timor-Leste",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Timor-Leste",
+    "relation": "prepares",
+    "object": "meeting",
+    "source": "Timor-Leste",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "AMKTL",
+    "relation": "initiates",
+    "object": "program",
+    "source": "Timor-Leste",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "government",
+    "relation": "implements",
+    "object": "taxes",
+    "source": "Timor-Leste",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Ministry of Public Works",
+    "relation": "compensates",
+    "object": "victims",
+    "source": "Timor-Leste",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Bolivia",
+    "relation": "debates",
+    "object": "military intervention",
+    "source": "Bolivia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "backs",
+    "object": "Rodrigo Paz",
+    "source": "Bolivia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Bolivia",
+    "relation": "passes",
+    "object": "law",
+    "source": "Bolivia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Indigenous",
+    "relation": "leads",
+    "object": "road blocks",
+    "source": "Bolivia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US, Shield of Americas",
+    "relation": "condemn",
+    "object": "efforts",
+    "source": "Bolivia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kosovo",
+    "relation": "held",
+    "object": "election",
+    "source": "Kosovo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "election",
+    "relation": "aims",
+    "object": "advance progress",
+    "source": "Kosovo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Trump administration",
+    "relation": "emphasizes",
+    "object": "self-reliance",
+    "source": "Kosovo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Slovakia",
+    "relation": "discussed",
+    "object": "stance",
+    "source": "Kosovo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU leaders",
+    "relation": "meet",
+    "object": "Montenegro",
+    "source": "Kosovo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Mali",
+    "relation": "offers",
+    "object": "reward",
+    "source": "Mali",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Mali's military junta",
+    "relation": "sentences",
+    "object": "French diplomat",
+    "source": "Mali",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "French diplomat",
+    "relation": "undermines",
+    "object": "state security",
+    "source": "Mali",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Mali",
+    "relation": "bans",
+    "object": "motorcycles",
+    "source": "Mali",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Trafigura",
+    "relation": "warns of",
+    "object": "global energy crisis",
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Middle East",
+    "relation": "causes",
+    "object": "persistent global energy crisis",
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S., Qatar",
+    "relation": "dominate",
+    "object": "natural gas market",
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "global energy markets",
+    "relation": "expose",
+    "object": "dangerously",
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "kills",
+    "object": "nine in Gaza",
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Egypt",
+    "relation": "hosts",
+    "object": "ceasefire talks",
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "damages",
+    "object": "US Air Operations Center",
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Qatar",
+    "relation": "condemns",
+    "object": "Israeli attack",
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "warns",
+    "object": "US-Iran conflict",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US-Iran conflict",
+    "relation": "pushes",
+    "object": "millions into food crisis",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "food crisis",
+    "relation": "particularly affecting",
+    "object": "Afghanistan",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hormuz crisis",
+    "relation": "exacerbates",
+    "object": "global aid shortages",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "global aid shortages",
+    "relation": "impacting",
+    "object": "Somalia",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "global aid shortages",
+    "relation": "impacting",
+    "object": "Afghanistan's food and medical supplies",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Middle East conflicts",
+    "relation": "driving",
+    "object": "global food insecurity",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "deepens military ties with",
+    "object": "Taliban government",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "warns of threats from",
+    "object": "Pakistan",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Peshawar-Torkham Highway",
+    "relation": "reopened",
+    "object": "following protests",
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Papua LNG Project",
+    "relation": "Approved by",
+    "object": "CEPA",
+    "source": "Papua New Guinea",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Prime Minister Marape",
+    "relation": "Reflects on",
+    "object": "governance and progress",
+    "source": "Papua New Guinea",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Sir Melchior Togolo",
+    "relation": "Appointed as",
+    "object": "CEO of Bougainville Copper Limited",
+    "source": "Papua New Guinea",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "TotalEnergies",
+    "relation": "Sponsors",
+    "object": "Gulf Isou rugby club",
+    "source": "Papua New Guinea",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "New community health post",
+    "relation": "Completed in",
+    "object": "Aipanda, Mai Rural LLG",
+    "source": "Papua New Guinea",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Turkey",
+    "relation": "seeks",
+    "object": "to expand defence exports",
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Malta",
+    "relation": "capsizing",
+    "object": "recovered bodies",
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Venezuela's acting president",
+    "relation": "plans",
+    "object": "talks with Erdogan",
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "The New York Times",
+    "relation": "opines",
+    "object": "on end of partnership between Erdogan and Putin",
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Libya",
+    "relation": "continues",
+    "object": "rebuilding efforts",
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UN",
+    "relation": "attributes",
+    "object": "protests to online disinformation campaigns",
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kuwait",
+    "relation": "faces",
+    "object": "significant security challenges",
+    "source": "Bahrain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Bahrain",
+    "relation": "faces",
+    "object": "significant security challenges",
+    "source": "Bahrain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US military",
+    "relation": "strikes",
+    "object": "Iranian radar sites",
+    "source": "Bahrain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kuwait",
+    "relation": "issues",
+    "object": "public alerts",
+    "source": "Bahrain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Bahrain",
+    "relation": "issues",
+    "object": "public alerts",
+    "source": "Bahrain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Yemen",
+    "relation": "condemns",
+    "object": "Iran's attacks",
+    "source": "Bahrain",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Norway",
+    "relation": "urges",
+    "object": "ICC member states",
+    "source": "Norway",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK Defense Minister",
+    "relation": "confirms",
+    "object": "delivery",
+    "source": "Norway",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "HMS Prince of Wales",
+    "relation": "experienced",
+    "object": "technical issue",
+    "source": "Norway",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Crown Princess Mette-Marit",
+    "relation": "is on",
+    "object": "waiting list",
+    "source": "Norway",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "offshore workers",
+    "relation": "reached",
+    "object": "wage agreement",
+    "source": "Norway",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "Increased",
+    "object": "Negative views",
+    "source": "Sweden",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Sweden",
+    "relation": "Considers",
+    "object": "Lowering",
+    "source": "Sweden",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "Supports",
+    "object": "Limiting",
+    "source": "Sweden",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EU",
+    "relation": "Explores",
+    "object": "Alternatives",
+    "source": "Sweden",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "Shows interest",
+    "object": "Acquiring",
+    "source": "Sweden",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Syria",
+    "relation": "finds",
+    "object": "undeclared chemical weapons",
+    "source": "Syria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "peace_deal",
+    "relation": "persists_in_challenges_and_obstacles",
+    "object": "after_100_days_of_conflict",
+    "source": "Syria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Syria",
+    "relation": "benefits_from",
+    "object": "Strait_of_Hormuz_oil_crisis",
+    "source": "Syria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Syria",
+    "relation": "initiates",
+    "object": "wheat_procurement_season",
+    "source": "Syria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "injures",
+    "object": "Syrians_and_Bangladeshis",
+    "source": "Syria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S.-Qatar",
+    "relation": "left",
+    "object": "global energy markets dangerously exposed",
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Kurdish natural gas",
+    "relation": "enhance",
+    "object": "Europe's energy security",
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Algeria",
+    "relation": "begins construction of",
+    "object": "Trans-Saharan gas pipeline",
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "parliamentary committee",
+    "relation": "recommends expanding",
+    "object": "strategic fuel reserves",
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "aims to strengthen",
+    "object": "gas networks",
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chile",
+    "relation": "reasserts",
+    "object": "sovereignty",
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Argentina",
+    "relation": "dismisses",
+    "object": "sovereignty",
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Copper",
+    "relation": "hits",
+    "object": "$14,000 per metric ton",
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Aluminum",
+    "relation": "hits",
+    "object": "four-year high",
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Cencosud",
+    "relation": "enters",
+    "object": "low-cost grocery segment",
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chilean stock market index IPSA",
+    "relation": "holds steady",
+    "object": "amid commodity rout and peso depreciation",
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Aclara Resources",
+    "relation": "plans to establish",
+    "object": "independent rare-earth supply chain",
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ethiopia",
+    "relation": "holds",
+    "object": "parliamentary elections",
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Abiy Ahmed's ruling party",
+    "relation": "confirms",
+    "object": "status quo",
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "plans",
+    "object": "centralise visa processing",
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "IGAD",
+    "relation": "calls for",
+    "object": "de-escalation",
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Yemeni workers",
+    "relation": "face",
+    "object": "job displacement",
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ethiopian migrants",
+    "relation": "cause",
+    "object": "lower-paid conditions",
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Posidonia shipping conference",
+    "relation": "faces",
+    "object": "market conditions",
+    "source": "Greece",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Posidonia exhibition",
+    "relation": "saw",
+    "object": "record participation",
+    "source": "Greece",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Bally’s Intralot",
+    "relation": "agrees to acquire",
+    "object": "Evoke",
+    "source": "Greece",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Global Ship Lease",
+    "relation": "orders",
+    "object": "containerships",
+    "source": "Greece",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Aegean Shipping Management",
+    "relation": "orders",
+    "object": "VLCCs",
+    "source": "Greece",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Hengli Heavy Industries",
+    "relation": "provides",
+    "object": "newbuilding package",
+    "source": "Greece",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Sudan",
+    "relation": "kill",
+    "object": "11 people",
+    "source": "red_sea_horn_africa",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "More than 20 countries",
+    "relation": "join",
+    "object": "US-led coalition",
+    "source": "red_sea_horn_africa",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Clashes",
+    "relation": "deepen",
+    "object": "Somalia’s political instability",
+    "source": "red_sea_horn_africa",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Parts of Khartoum",
+    "relation": "described as",
+    "object": "ghost towns",
+    "source": "red_sea_horn_africa",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Heavy fighting",
+    "relation": "worsen",
+    "object": "political crisis",
+    "source": "red_sea_horn_africa",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Protests",
+    "relation": "Erupt",
+    "object": "Trump-Kushner-backed luxury resort project",
+    "source": "Albania",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Albania",
+    "relation": "Spark",
+    "object": "EU concerns",
+    "source": "Albania",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Narta Lagoon",
+    "relation": "Proposed development",
+    "object": "luxury resort project",
+    "source": "Albania",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "London councils",
+    "relation": "Face criticism",
+    "object": "forcing homeless individuals to relocate long distances",
+    "source": "Albania",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Albanian government",
+    "relation": "Under pressure",
+    "object": "reaffirm western Balkans' membership prospects with EU",
+    "source": "Albania",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Online",
+    "relation": "Note",
+    "object": "Misreporting of protests",
+    "source": "Albania",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Algeria",
+    "relation": "initiates",
+    "object": "construction",
+    "source": "Algeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Europe",
+    "relation": "receives",
+    "object": "supplies",
+    "source": "Algeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Opec+",
+    "relation": "agrees",
+    "object": "increase",
+    "source": "Algeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Strait of Hormuz",
+    "relation": "disrupts",
+    "object": "sectors",
+    "source": "Algeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Canada",
+    "relation": "wins",
+    "object": "ruling",
+    "source": "Algeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "OPEC+",
+    "relation": "sets",
+    "object": "hike",
+    "source": "Algeria",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "conducts",
+    "object": "cyberattacks",
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Czech organizations",
+    "relation": "are targeted by",
+    "object": "cyberattacks",
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Czech police",
+    "relation": "charge",
+    "object": "individuals",
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Metropolitan Ilarion",
+    "relation": "is sent to",
+    "object": "Brazil",
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Patriarch Kirill",
+    "relation": "sends",
+    "object": "Metropolitan Ilarion",
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Alexander Zverev",
+    "relation": "advances to",
+    "object": "final",
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Jakub Mensik",
+    "relation": "is defeated by",
+    "object": "Alexander Zverev",
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Myanmar",
+    "relation": "turns to",
+    "object": "Russia",
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "India",
+    "relation": "engages with",
+    "object": "Myanmar's junta",
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "competes with",
+    "object": "Russia",
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Myanmar's military",
+    "relation": "releases",
+    "object": "Win Myint",
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Timor-Leste",
+    "relation": "criticizes",
+    "object": "Myanmar",
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Azerbaijan",
+    "relation": "reports",
+    "object": "sailors killed",
+    "source": "Azerbaijan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Azov Sea",
+    "relation": "attacked",
+    "object": "by drones",
+    "source": "Azerbaijan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Azerbaijan",
+    "relation": "establishes",
+    "object": "national cybersecurity agency",
+    "source": "Azerbaijan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Armenia",
+    "relation": "holds",
+    "object": "parliamentary elections",
+    "source": "Azerbaijan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "pressures",
+    "object": "Armenia for elections",
+    "source": "Azerbaijan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Viktor Orban",
+    "relation": "CouldBe",
+    "object": "Defeat",
+    "source": "Hungary",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Hungary",
+    "relation": "EventIn",
+    "object": "EuropeanPolitics",
+    "source": "Hungary",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "NegativePerceptions",
+    "relation": "Rose",
+    "object": "Israel",
+    "source": "Hungary",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "PewResearchCenter",
+    "relation": "Surveyed",
+    "object": "NegativePerceptions",
+    "source": "Hungary",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Charges",
+    "relation": "Dropped",
+    "object": "GergelyKaracsony",
+    "source": "Hungary",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "EUCourt",
+    "relation": "RuledOn",
+    "object": "Charges",
+    "source": "Hungary",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "MarcMarquez",
+    "relation": "Achieved",
+    "object": "100thCareerVictory",
+    "source": "Hungary",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "raises",
+    "object": "concerns",
+    "source": "Yemen",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "joins",
+    "object": "coalition",
+    "source": "Yemen",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Yemen",
+    "relation": "condemns",
+    "object": "attacks",
+    "source": "Yemen",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Al-Jawf",
+    "relation": "achieves",
+    "object": "record_wheat_production",
+    "source": "Yemen",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Yemen",
+    "relation": "faces",
+    "object": "job_displacement",
+    "source": "Yemen",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Economists",
+    "relation": "predict",
+    "object": "Canadian economy not good",
+    "source": "bank_of_canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Bank of Canada",
+    "relation": "may stabilize",
+    "object": "interest rates",
+    "source": "bank_of_canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Reuters",
+    "relation": "indicates",
+    "object": "Bank of Canada maintain rates 2026",
+    "source": "bank_of_canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ottawa's budget watchdog",
+    "relation": "expects",
+    "object": "Bank of Canada raise rates 2.75% 2027",
+    "source": "bank_of_canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Multiple sources",
+    "relation": "indicate",
+    "object": "Canadian economy faces challenges",
+    "source": "bank_of_canada",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Christian Eriksen",
+    "relation": "collapses",
+    "object": "during match",
+    "source": "Denmark",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Christian Eriksen",
+    "relation": "remains",
+    "object": "conscious",
+    "source": "Denmark",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Estonia's former President",
+    "relation": "shares",
+    "object": "insights",
+    "source": "Denmark",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Denmark",
+    "relation": "hosts",
+    "object": "mullet championship",
+    "source": "Denmark",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "humpback whale",
+    "relation": "dies",
+    "object": "in Denmark",
+    "source": "Denmark",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "bans",
+    "object": "four New Zealand MPs",
+    "source": "New Zealand",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Beijing",
+    "relation": "imposes",
+    "object": "travel bans",
+    "source": "New Zealand",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Diplomatic tensions",
+    "relation": "rise",
+    "object": "between China and New Zealand",
+    "source": "New Zealand",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US and Five Eyes allies",
+    "relation": "warn",
+    "object": "of Chinese espionage",
+    "source": "New Zealand",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Argentina",
+    "relation": "applies",
+    "object": "to join CPTPP",
+    "source": "New Zealand",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US President Trump",
+    "relation": "threatens",
+    "object": "new tariffs",
+    "source": "New Zealand",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Russian forces",
+    "relation": "attacked",
+    "object": "Ukrainian search and rescue vessels",
+    "source": "black_sea_corridor",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukrainian search and rescue vessels",
+    "relation": "caused injuries to",
+    "object": "unspecified individuals",
+    "source": "black_sea_corridor",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Romania's Constanta port",
+    "relation": "experienced",
+    "object": "drone explosion",
+    "source": "black_sea_corridor",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Russia",
+    "relation": "linked",
+    "object": "Romania's Constanta port drone explosion",
+    "source": "black_sea_corridor",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "claims",
+    "object": "Russia shot down hundreds of drones",
+    "source": "black_sea_corridor",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "St Petersburg",
+    "relation": "site of",
+    "object": "economic forum",
+    "source": "black_sea_corridor",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "TV reporter",
+    "relation": "fled live on air",
+    "object": "amid recent explosions",
+    "source": "black_sea_corridor",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Federal Reserve",
+    "relation": "influence",
+    "object": "policy decisions",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Federal Reserve",
+    "relation": "influence",
+    "object": "inflation data",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Federal Reserve",
+    "relation": "influence",
+    "object": "geopolitical risks",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "grow",
+    "object": "1.1%",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "complicate",
+    "object": "rate cut decisions",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Middle East conflict",
+    "relation": "intensify",
+    "object": "inflationary pressures",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Middle East conflict",
+    "relation": "weaken",
+    "object": "consumer confidence",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Philip N Jefferson",
+    "relation": "discuss",
+    "object": "global economic conditions",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Philip N Jefferson",
+    "relation": "provide",
+    "object": "outlook on U.S. economic conditions",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Fed chair",
+    "relation": "alter",
+    "object": "communication strategies",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "India central bank",
+    "relation": "maintain",
+    "object": "interest rates",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Japan",
+    "relation": "increase",
+    "object": "real wages",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Sweden",
+    "relation": "exceed",
+    "object": "expectations",
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "U.S. Interior Department",
+    "relation": "auctions",
+    "object": "drilling rights",
+    "source": "nordic_arctic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Trump Administration",
+    "relation": "holds",
+    "object": "lease sale",
+    "source": "nordic_arctic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "HMS Prince of Wales",
+    "relation": "experiences",
+    "object": "technical issue",
+    "source": "nordic_arctic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "wage agreement",
+    "relation": "averts",
+    "object": "disruptions",
+    "source": "nordic_arctic",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Algeria",
+    "relation": "starts construction of",
+    "object": "Trans-Saharan gas pipeline",
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Niger",
+    "relation": "dies of thirst in",
+    "object": "Sahara desert",
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "General Tchiani",
+    "relation": "meets with",
+    "object": "Turkish President Erdogan",
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Benin's new president",
+    "relation": "visits",
+    "object": "Niger",
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Benin's new president",
+    "relation": "visits",
+    "object": "Burkina Faso",
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "US and Italy",
+    "relation": "provide military assistance to",
+    "object": "Niger’s armed forces",
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "DRAM companies",
+    "relation": "entered",
+    "object": "higher profitability phase",
+    "source": "semiconductor_war",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "U.S. stock markets",
+    "relation": "saw",
+    "object": "significant declines",
+    "source": "semiconductor_war",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Jim Cramer's Charitable Trust",
+    "relation": "purchased",
+    "object": "Intel shares",
+    "source": "semiconductor_war",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US stock futures",
+    "relation": "experienced",
+    "object": "downward pressure",
+    "source": "semiconductor_war",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US stock futures",
+    "relation": "declined",
+    "object": "due to chip losses related to Broadcom",
+    "source": "semiconductor_war",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Ongoing Iran-related concerns",
+    "relation": "contributed to",
+    "object": "decline in U.S. stock futures",
+    "source": "semiconductor_war",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Bangladesh",
+    "relation": "faces",
+    "object": "economic revival challenges",
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Bangladesh",
+    "relation": "manages",
+    "object": "relations with nuclear powers",
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Bangladesh",
+    "relation": "affected by",
+    "object": "measles outbreak",
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "imposed",
+    "object": "punitive tariffs on goods from Bangladesh",
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Bangladesh",
+    "relation": "elected",
+    "object": "president of UN General Assembly's 81st session",
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Bangladesh",
+    "relation": "experienced",
+    "object": "increase in fuel prices",
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Bangladesh",
+    "relation": "experiencing",
+    "object": "human security crisis",
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Aryna Sabalenka",
+    "relation": "lost",
+    "object": "French Open quarterfinals",
+    "source": "Belarus",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Russia",
+    "relation": "preparing",
+    "object": "escalation",
+    "source": "Belarus",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Belarus",
+    "relation": "preparing",
+    "object": "escalation",
+    "source": "Belarus",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Ukraine",
+    "relation": "claims",
+    "object": "Russia is drawing Belarus deeper into war",
+    "source": "Belarus",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "US and Europe",
+    "relation": "have differing approaches to",
+    "object": "Belarus",
+    "source": "Belarus",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Abu Zaeima market",
+    "relation": "caused",
+    "object": "civilian casualties",
+    "source": "Sudan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Khartoum",
+    "relation": "described_as",
+    "object": "ghost town",
+    "source": "Sudan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Kubum, South Darfur",
+    "relation": "experienced",
+    "object": "drone strike",
+    "source": "Sudan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Finance Minister",
+    "relation": "signed",
+    "object": "agreement",
+    "source": "Sudan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "AfDB",
+    "relation": "agreed_on",
+    "object": "emergency water project with UNICEF",
+    "source": "Sudan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "RSF",
+    "relation": "facing",
+    "object": "internal tensions",
+    "source": "Sudan",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Morocco",
+    "relation": "train near",
+    "object": "Brazil",
+    "source": "Morocco",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "consider",
+    "object": "striker selections for match against Morocco",
+    "source": "Morocco",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Senegal",
+    "relation": "aim to outperform",
+    "object": "North Africa teams in 2026 World Cup",
+    "source": "Morocco",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Morocco",
+    "relation": "experience",
+    "object": "increase in millionaires",
+    "source": "Morocco",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "stay in",
+    "object": "Basking Ridge, New Jersey",
+    "source": "Morocco",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Uruguay",
+    "relation": "rose",
+    "object": "3.77%",
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Uruguay",
+    "relation": "due_to",
+    "object": "fuel price hikes",
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "China",
+    "relation": "increased",
+    "object": "flight searches",
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "visa-free entry",
+    "relation": "announced",
+    "object": "visa-free entry",
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Vaca Muerta gas field",
+    "relation": "could reshape",
+    "object": "energy map",
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Congress",
+    "relation": "faces scrutiny",
+    "object": "Transparency and Public Ethics Board",
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "President Orsi",
+    "relation": "vehicle purchase case",
+    "object": "faces scrutiny",
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Latin America",
+    "relation": "features",
+    "object": "films",
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Iran",
+    "relation": "reopened",
+    "object": "missile bases",
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "subject": "Israel",
+    "relation": "prompts",
+    "object": "military action",
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "subject": "US",
+    "relation": "announces",
+    "object": "end",
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "subject": "US",
+    "relation": "blocks",
+    "object": "naval blockade",
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "subject": "Iran",
+    "relation": "reaches",
+    "object": "memorandum",
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "subject": "Iran",
+    "relation": "proposes",
+    "object": "security order",
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "subject": "Kazakhstan",
+    "relation": "expresses",
+    "object": "willingness",
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "subject": "Ireland",
+    "relation": "addresses",
+    "object": "youth unemployment",
+    "source": "Ireland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Irish GDP",
+    "relation": "turns",
+    "object": "negative",
+    "source": "Ireland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Cardano ADA token",
+    "relation": "drops",
+    "object": "to four-year lows",
+    "source": "Ireland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ireland",
+    "relation": "bans",
+    "object": "entry for ministers",
+    "source": "Ireland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Israel",
+    "relation": "makes",
+    "object": "controversial statements and actions regarding Palestinians",
+    "source": "Ireland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Cardano",
+    "relation": "experiences",
+    "object": "surge in social activity",
+    "source": "Ireland",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Legislative",
+    "relation": "change",
+    "object": "June",
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Promoted",
+    "relation": "individuals",
+    "object": "Dentons",
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Highlighted",
+    "relation": "routes",
+    "object": "Beckerich",
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Operational",
+    "relation": "trains",
+    "object": "Romania",
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Miss",
+    "relation": "deadline",
+    "object": "Luxembourg",
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Receive",
+    "relation": "rise",
+    "object": "workers",
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Exiting",
+    "relation": "contracts",
+    "object": "Lactalis",
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Nepali FM Khanal",
+    "relation": "urges",
+    "object": "development-focused relations",
+    "source": "Nepal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Nepali PM Balendra Shah",
+    "relation": "called for",
+    "object": "UK mediation",
+    "source": "Nepal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "UK",
+    "relation": "rejected",
+    "object": "mediation request",
+    "source": "Nepal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Dawa Sherpa",
+    "relation": "survived",
+    "object": "week",
+    "source": "Nepal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Dawa Sherpa",
+    "relation": "survived",
+    "object": "six days",
+    "source": "Nepal",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "thank",
+    "object": "China",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "threaten",
+    "object": "sell elsewhere",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "US",
+    "relation": "impose",
+    "object": "tariffs",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Lula",
+    "relation": "criticize",
+    "object": "US tariffs",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Fitch Ratings",
+    "relation": "upgrade",
+    "object": "GDP growth forecast",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Fitch Ratings",
+    "relation": "cut",
+    "object": "outlook",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Kenya",
+    "relation": "sign",
+    "object": "MoUs",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "South Africa",
+    "relation": "sign",
+    "object": "MoUs",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Lula",
+    "relation": "argue",
+    "object": "trade surplus",
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Ghana",
+    "relation": "faces",
+    "object": "severe health and environmental risks",
+    "source": "Ghana",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Agbogbloshie scrapyard",
+    "relation": "is located in",
+    "object": "Ghana",
+    "source": "Ghana",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "African inter-Parliamentary conference",
+    "relation": "follows",
+    "object": "bill",
+    "source": "Ghana",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "conference",
+    "relation": "hosts",
+    "object": "country",
+    "source": "Ghana",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Ghana",
+    "relation": "launches",
+    "object": "plan",
+    "source": "Ghana",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Ghana",
+    "relation": "raises concerns about",
+    "object": "free speech",
+    "source": "Ghana",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Mexican authorities",
+    "relation": "captured",
+    "object": "MS-13 leader",
+    "source": "Guatemala",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Guatemala",
+    "relation": "border with",
+    "object": "Mexico",
+    "source": "Guatemala",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Guatemalan immigrant Elder Guerra",
+    "relation": "suffered",
+    "object": "head injury",
+    "source": "Guatemala",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "ICE",
+    "relation": "detained",
+    "object": "Guatemalan immigrant",
+    "source": "Guatemala",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Guatemala",
+    "relation": "signed",
+    "object": "agricultural-cooperation accord",
+    "source": "Guatemala",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Brazil",
+    "relation": "signed",
+    "object": "agricultural-cooperation accord",
+    "source": "Guatemala",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Jordan",
+    "relation": "condemns",
+    "object": "Israeli attack",
+    "source": "Jordan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Jordan",
+    "relation": "supports",
+    "object": "UK custodianship",
+    "source": "Jordan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "U.S. military",
+    "relation": "benefits-from",
+    "object": "using foreign territories",
+    "source": "Jordan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Jordan",
+    "relation": "participates-in",
+    "object": "2026 World Cup",
+    "source": "Jordan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Jordan",
+    "relation": "boosts",
+    "object": "football prospects",
+    "source": "Jordan",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Slovakia",
+    "relation": "has",
+    "object": "empty apartments",
+    "source": "Slovakia",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Russian drone strike",
+    "relation": "linkedTo",
+    "object": "EU-Moscow dialogue issues",
+    "source": "Slovakia",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Czech Republic",
+    "relation": "surpasses",
+    "object": "€2,000",
+    "source": "Slovakia",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Military Metals",
+    "relation": "falls",
+    "object": "due to licence revocation",
+    "source": "Slovakia",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Slovak Foreign Minister",
+    "relation": "stresses",
+    "object": "need for talks",
+    "source": "Slovakia",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Slovenia",
+    "relation": "blocked",
+    "object": "Israeli flight",
+    "source": "Croatia",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Israeli flight",
+    "relation": "landed",
+    "object": "Zagreb",
+    "source": "Croatia",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Krk LNG terminal",
+    "relation": "enhances",
+    "object": "Croatia's energy security",
+    "source": "Croatia",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Yannis Stournaras",
+    "relation": "discusses",
+    "object": "central bank strategies",
+    "source": "Croatia",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "people",
+    "relation": "died",
+    "object": "plane crash",
+    "source": "Croatia",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "plane crash",
+    "relation": "occurred near",
+    "object": "Medulin, Croatia",
+    "source": "Croatia",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "International Maritime Organization",
+    "relation": "plays role",
+    "object": "addressing global shipping challenges",
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Confrontations",
+    "relation": "increased",
+    "object": "since Trump's administration",
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Latin America",
+    "relation": "faces",
+    "object": "confrontations",
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Jamaica",
+    "relation": "faces",
+    "object": "potential economic impacts",
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Middle Eastern geopolitical tensions",
+    "relation": "affect",
+    "object": "oil and gas prices",
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Jamaican police officer",
+    "relation": "charged",
+    "object": "murder",
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "violent protests",
+    "relation": "followed",
+    "object": "shooting",
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Caribbean hot sauce producers",
+    "relation": "warn",
+    "object": "shortages and higher prices",
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "France",
+    "relation": "inaugurate",
+    "object": "memorial",
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Rwanda",
+    "relation": "improve relations",
+    "object": "France",
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "European Union",
+    "relation": "approve",
+    "object": "return hubs",
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "U.S.",
+    "relation": "echo",
+    "object": "policies",
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Rwanda",
+    "relation": "charge",
+    "object": "journalists",
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Rwanda",
+    "relation": "crackdown",
+    "object": "free speech",
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "France",
+    "relation": "recognize role",
+    "object": "genocide",
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Pandemic Fund",
+    "relation": "approve",
+    "object": "funding",
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Tunisians",
+    "relation": "protest against",
+    "object": "sub-Saharan African migrants",
+    "source": "Tunisia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Tunisians",
+    "relation": "demonstrate for",
+    "object": "press freedom",
+    "source": "Tunisia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Tunisians",
+    "relation": "demonstrate for",
+    "object": "release of political prisoners",
+    "source": "Tunisia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Tunisia's central bank",
+    "relation": "keep key interest rate at",
+    "object": "7%",
+    "source": "Tunisia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Tunisia",
+    "relation": "face",
+    "object": "travel safety concerns",
+    "source": "Tunisia",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Global oil and gas markets",
+    "relation": "faced",
+    "object": "supply shortages",
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Global oil and gas markets",
+    "relation": "faced",
+    "object": "price volatility",
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Iran war",
+    "relation": "caused",
+    "object": "disruptions",
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Venezuela",
+    "relation": "increased",
+    "object": "crude exports",
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "US",
+    "relation": "led",
+    "object": "blockade",
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Container shipping rates",
+    "relation": "rose",
+    "object": "by over 40%",
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Companies",
+    "relation": "sought",
+    "object": "alternative routes",
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "China",
+    "relation": "expresses",
+    "object": "concerns",
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "subject": "Cambodia",
+    "relation": "considers",
+    "object": "joining",
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Thailand",
+    "relation": "engages",
+    "object": "arbitration",
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Cambodia",
+    "relation": "initiates",
+    "object": "conciliation",
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Cambodia",
+    "relation": "faces",
+    "object": "confrontations",
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Cambodia",
+    "relation": "depicts",
+    "object": "scams",
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Health workers",
+    "relation": "treat",
+    "object": "Patients",
+    "source": "Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "WHO",
+    "relation": "seeks",
+    "object": "Resources",
+    "source": "Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Uganda",
+    "relation": "closes",
+    "object": "Border",
+    "source": "Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Traditional healers",
+    "relation": "play",
+    "object": "Role",
+    "source": "Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "CMOC",
+    "relation": "has",
+    "object": "Strike",
+    "source": "Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "emphasizes",
+    "object": "regional self-reliance",
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "France",
+    "relation": "investigates",
+    "object": "judicial dysfunction",
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Germany's Chancellor",
+    "relation": "announces",
+    "object": "EU plans",
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "EU leaders",
+    "relation": "discuss",
+    "object": "speeding up enlargement processes",
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Balkan leaders",
+    "relation": "attend",
+    "object": "EU summit",
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Serbian President Vucic",
+    "relation": "defies",
+    "object": "intelligence warnings",
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "EU",
+    "relation": "aims to accelerate",
+    "object": "membership process",
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Montenegro",
+    "relation": "restricts entry",
+    "object": "Serbian nationals",
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Chinese company",
+    "relation": "invests_in",
+    "object": "Etango uranium project",
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Namibia",
+    "relation": "approves",
+    "object": "investment",
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "blue and fin whales",
+    "relation": "increase_sightings_in",
+    "object": "South-East Atlantic",
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Namibia",
+    "relation": "faces_challenges_hosting",
+    "object": "international boxing events",
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Namibia",
+    "relation": "reviews",
+    "object": "immigration law",
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "body",
+    "relation": "found_offshore_near",
+    "object": "Swakopmund",
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "South Africa's national football team",
+    "relation": "delays",
+    "object": "World Cup trip",
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Paraguay",
+    "relation": "qualifiedFor",
+    "object": "2026 World Cup",
+    "source": "Paraguay",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Argentina",
+    "relation": "qualifiesFor",
+    "object": "2026 World Cup",
+    "source": "Paraguay",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Buenos Aires",
+    "relation": "hosts",
+    "object": "World Yerba Mate Championship",
+    "source": "Paraguay",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "Gulf offshore market",
+    "relation": "impacted by",
+    "object": "conflict-related risks",
+    "source": "arabian_peninsula",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Kuwait",
+    "relation": "issued",
+    "object": "warnings",
+    "source": "arabian_peninsula",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Bahrain",
+    "relation": "issued",
+    "object": "warnings",
+    "source": "arabian_peninsula",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "US",
+    "relation": "approved",
+    "object": "sale",
+    "source": "arabian_peninsula",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Safeen Drydocks",
+    "relation": "secured",
+    "object": "contract",
+    "source": "arabian_peninsula",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Gulf offshore market",
+    "relation": "indicating",
+    "object": "ongoing regional instability",
+    "source": "arabian_peninsula",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "An activist",
+    "relation": "detained",
+    "object": "Israeli prison ship",
+    "source": "Cyprus",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Middle East conflict",
+    "relation": "impact",
+    "object": "global IT growth",
+    "source": "Cyprus",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US Defence Secretary Pete Hegseth",
+    "relation": "criticized",
+    "object": "European nations",
+    "source": "Cyprus",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Turkey",
+    "relation": "warned",
+    "object": "Greece",
+    "source": "Cyprus",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Turkey",
+    "relation": "warned",
+    "object": "Cyprus",
+    "source": "Cyprus",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ivory Coast",
+    "relation": "defeated",
+    "object": "France",
+    "source": "Ivory Coast",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "France",
+    "relation": "surprised",
+    "object": "both teams and fans",
+    "source": "Ivory Coast",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "France",
+    "relation": "warned",
+    "object": "by Ivory Coast's victory",
+    "source": "Ivory Coast",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "France",
+    "relation": "ended",
+    "object": "nine-match unbeaten streak",
+    "source": "Ivory Coast",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "France",
+    "relation": "lost",
+    "object": "first warm-up match",
+    "source": "Ivory Coast",
+    "day": "2026-06-05"
+  },
+  {
+    "subject": "US",
+    "relation": "threatens",
+    "object": "reconsider",
+    "source": "Bosnia and Herzegovina",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Ibrahim Traore",
+    "relation": "calls for",
+    "object": "forgetting democracy",
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Burkina Faso",
+    "relation": "activates",
+    "object": "military force",
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "West African countries",
+    "relation": "activate",
+    "object": "military force",
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Clashes",
+    "relation": "result in",
+    "object": "deaths",
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Burkinabé refugees",
+    "relation": "reported in",
+    "object": "Mali's Bandiagara region",
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Viral misinformation",
+    "relation": "driven by",
+    "object": "profit motives",
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Ecuador",
+    "relation": "experiences",
+    "object": "increase in enforced disappearances",
+    "source": "Ecuador",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "President Daniel Noboa",
+    "relation": "has streamlined",
+    "object": "cabinet",
+    "source": "Ecuador",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Ecuador",
+    "relation": "qualified for",
+    "object": "2026 World Cup",
+    "source": "Ecuador",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Argentina, Ecuador, Panama",
+    "relation": "rank among the worst",
+    "object": "countries for workers' rights",
+    "source": "Ecuador",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "US",
+    "relation": "deported",
+    "object": "South American migrants",
+    "source": "Ecuador",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "European countries",
+    "relation": "call for",
+    "object": "stricter visa policies",
+    "source": "Estonia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Estonia's former President",
+    "relation": "shares",
+    "object": "lessons learned",
+    "source": "Estonia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Milrem Robotics",
+    "relation": "establishes",
+    "object": "new assembly line",
+    "source": "Estonia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "assembly line",
+    "relation": "produces",
+    "object": "UGVs",
+    "source": "Estonia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Estonia",
+    "relation": "highlights",
+    "object": "digital technology",
+    "source": "Estonia",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "China",
+    "relation": "questions",
+    "object": "influence",
+    "source": "Honduras",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "article",
+    "relation": "mentions",
+    "object": "Mexico's Free World Cup Fan Festivals",
+    "source": "Honduras",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "stock market data",
+    "relation": "provided_for",
+    "object": "Mexican companies",
+    "source": "Honduras",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Chile",
+    "relation": "explains",
+    "object": "Plan Retorno program for expats",
+    "source": "Honduras",
+    "day": "2026-06-07"
+  },
+  {
+    "subject": "Rescue",
+    "relation": "ceased",
+    "object": "efforts",
+    "source": "Laos",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Video_game",
+    "relation": "highlights",
+    "object": "issues",
+    "source": "Laos",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Bombs",
+    "relation": "destroyed",
+    "object": "by_teams",
+    "source": "Laos",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "President",
+    "relation": "visited",
+    "object": "countries",
+    "source": "Laos",
+    "day": "2026-06-06"
+  },
+  {
+    "subject": "Latvian general",
+    "relation": "warns of",
+    "object": "Russian invasion",
+    "source": "Latvia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Latvian general",
+    "relation": "cites",
+    "object": "drone technology threat",
+    "source": "Latvia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "Latvian army chief",
+    "relation": "reports",
+    "object": "Russia's advantage",
+    "source": "Latvia",
+    "day": "2026-06-04"
+  },
+  {
+    "subject": "NATO",
+    "relation": "conducts",
+    "object": "counter-drone tests",
+    "source": "Latvia",
+    "day": "2026-06-04"
+  }
+]

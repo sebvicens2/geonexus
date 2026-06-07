@@ -23,7 +23,6 @@ sys.path.insert(0, str(Path(__file__).parent))
 import json
 
 from build_dashboard import bar, stat_card, table
-from hidden_links import top_grounded_links
 from narrative_evolution import (
     DATA,
     _spark,
@@ -35,6 +34,9 @@ from narrative_evolution import (
     world_series,
 )
 from narrative_llm_brief import _prompt, ollama
+from relation_graph import build as build_relations
+from relation_graph import chain as relation_chain
+from relation_graph import load_triples, top_hubs
 
 OUT_PATH = Path("reports") / "eventgraph_narrative_dashboard.html"
 SPOTLIGHT = (
@@ -175,17 +177,55 @@ def main() -> None:
         or '<p class="hint">No multi-signal chains at the current threshold.</p>'
     )
 
-    # hidden cross-narrative links (PMI co-mention, grounded)
-    def _hl_card(h: dict) -> str:
-        meta = f'<span class="sig-meta">PMI {h["pmi"]}, {h["co"]}x</span>'
-        pair = f"<b>{html.escape(h['a'])}</b> — <b>{html.escape(h['b'])}</b> {meta}"
-        snip = f"“{html.escape(h['snippet'])}”"
-        return (
-            f'<div class="hl"><div class="hl-pair">{pair}</div>'
-            f'<div class="hl-snip">{snip}</div></div>'
+    # relation graph (LLM-extracted typed relations: subject → relation → object)
+    triples = load_triples()
+    if triples:
+        rg, _ = build_relations(triples)
+        hubs = top_hubs(rg, 14)
+        hub_names = {label.lower() for label, _ in hubs}
+        hub_chips = "".join(
+            f'<span class="chip2">{html.escape(label)} ({c})</span>' for label, c in hubs
         )
-
-    hidden_html = "".join(_hl_card(h) for h in top_grounded_links(14))
+        chain_cards = ""
+        for a, b in [
+            ("China", "Ukraine"),
+            ("Iran", "Israel"),
+            ("China", "Africa"),
+            ("US", "Ebola"),
+            ("Russia", "NATO"),
+        ]:
+            steps = relation_chain(rg, a, b)
+            if steps and len(steps) >= 2:
+                seq = f"<b>{html.escape(steps[0][0])}</b>"
+                for _, rel, y in steps:
+                    seq += f' <span class="rel">[{html.escape(rel)}]</span> <b>{html.escape(y)}</b>'
+                chain_cards += (
+                    f'<div class="chain"><div class="chain-title">{a} → {b}</div>{seq}</div>'
+                )
+        rel_cards = ""
+        shown = 0
+        for t in triples:
+            if shown >= 24:
+                break
+            if t["subject"].lower() in hub_names or t["object"].lower() in hub_names:
+                rel_cards += (
+                    f'<div class="hl"><b>{html.escape(t["subject"])}</b> '
+                    f'<span class="rel">[{html.escape(t["relation"])}]</span> '
+                    f"<b>{html.escape(t['object'])}</b></div>"
+                )
+                shown += 1
+        relations_html = (
+            f'<p class="hint">Most-connected: {hub_chips}</p>'
+            f'<h3 class="section">Multi-hop relation chains (real stated relations)</h3>'
+            f'<div class="chains">{chain_cards}</div>'
+            f'<h3 class="section">Stated relations involving the hubs</h3>'
+            f'<div class="hls">{rel_cards}</div>'
+        )
+    else:
+        relations_html = (
+            '<p class="hint">No relations file. Run '
+            "<code>python examples/extract_relations.py</code> first (needs Ollama).</p>"
+        )
 
     # momentum chart (top rising)
     chart_topics = [t for t, *_ in rising[:6]] or list(series)[:6]
@@ -268,7 +308,7 @@ def main() -> None:
     page = _TEMPLATE.format(
         signals=signal_cards,
         chains=chains_html,
-        hidden=hidden_html,
+        relations=relations_html,
         cards=cards,
         chart=chart,
         rising=rising_tbl,
@@ -353,6 +393,7 @@ _TEMPLATE = """<!doctype html>
     border-radius:10px; padding:12px 14px; }}
   .hl-pair {{ font-size:14px; }}
   .hl-snip {{ font-size:13px; color:#334155; font-style:italic; margin-top:6px; }}
+  .rel {{ color:#b45309; font-size:12px; }}
   .feed-row {{ padding:8px 0; border-bottom:1px solid var(--line); }}
   .feed-day {{ display:inline-block; width:96px; font-weight:600;
     font-variant-numeric:tabular-nums; color:#334155; }}
@@ -385,7 +426,7 @@ _TEMPLATE = """<!doctype html>
 <nav>
   <button class="active" data-tab="signals">⚡ Emerging signals</button>
   <button data-tab="chains">Chains</button>
-  <button data-tab="hidden">Hidden links</button>
+  <button data-tab="relations">Relations</button>
   <button data-tab="momentum">Momentum</button>
   <button data-tab="rising">Rising topics</button>
   <button data-tab="feed">Chronological feed</button>
@@ -406,12 +447,11 @@ _TEMPLATE = """<!doctype html>
       Qwen names each storyline and how the pieces connect.</p>
     <div class="chains">{chains}</div>
   </section>
-  <section class="tab" id="hidden">
-    <h2 class="section">Hidden links — surprising cross-narrative co-mentions</h2>
-    <p class="hint">Entity pairs that co-occur far more than chance (PMI) across all
-      summaries — including cross-theatre links (companies, places, people) the
-      narrative chains miss. Each is grounded in the source sentence.</p>
-    <div class="hls">{hidden}</div>
+  <section class="tab" id="relations">
+    <h2 class="section">Relations — LLM-extracted subject → relation → object</h2>
+    <p class="hint">Real stated relations (not co-occurrence), pulled from the summaries
+      by a local LLM, as a typed graph. Multi-hop chains are genuine relation paths.</p>
+    {relations}
   </section>
   <section class="tab" id="momentum">
     <h2 class="section">Overview</h2>
