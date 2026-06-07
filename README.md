@@ -199,6 +199,19 @@ python examples/results_report.py         # full report → reports/world_observ
 A full generated report (overview, influence, hotspots, clusters, causal paths to
 assets) lives at [`reports/world_observer_results.md`](reports/world_observer_results.md).
 
+### Self-contained HTML dashboard
+
+```bash
+python examples/build_dashboard.py   # → reports/eventgraph_dashboard.html
+```
+
+One self-contained file (interactive pyvis network inlined — no server, no app,
+works offline). Tabs for overview, network, clusters, hotspots and causal paths —
+a prototype for a future World Observer tab.
+
+![EventGraph dashboard — overview](assets/dashboard_overview.png)
+![EventGraph dashboard — clusters](assets/dashboard_clusters.png)
+
 From **350 real events**, the graph (≈900 nodes) surfaces — with no LLM and no
 hand-tuning — exactly the structure you'd expect:
 
