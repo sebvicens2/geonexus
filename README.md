@@ -387,10 +387,20 @@ Iran  → Israel:   Iran —[condemned]→ Israel
 Stated: Canada —[bans]→ Texas cattle · Russia —[attacks]→ Ukrainian nuclear waste facility
 ```
 
-It's the **Relations** tab in the narrative dashboard. (Honest limits: extraction
-is LLM-based and non-deterministic; some chains still route through hub entities.)
+It's the **Relations** tab in the narrative dashboard (direct relations only, each
+grounded in its source sentence — extraction is LLM-based and imperfect, so the
+grounding lets you verify it; no multi-hop chains, because relations don't compose).
 
 ![Narrative dashboard — relation graph](assets/narrative_relations.png)
+
+The same relations render as an **interactive network** — each edge is one grounded
+fact (hover for the verb), showing the connected core (degree-1 leaves hidden):
+
+```bash
+python examples/relation_network.py   # → reports/eventgraph_relation_network.html
+```
+
+![Relation network](assets/relation_network.png)
 
 ### Tracking change over time with `EventMemory`
 
