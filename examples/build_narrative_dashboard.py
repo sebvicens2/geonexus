@@ -26,6 +26,7 @@ from narrative_evolution import (
     DATA,
     _spark,
     build_memory,
+    emerging_signals,
     rising_topics,
     topics_of,
     world_series,
@@ -80,6 +81,24 @@ def main() -> None:
             stat_card("Topics tracked", str(n_topics)),
             stat_card("Window", f"{first} → {last}"),
         ]
+    )
+
+    # emerging-signals board (the headline: denoised, surprise-ranked breakouts)
+    signals = emerging_signals(memory, entities, series, days)[:12]
+    signal_cards = "".join(
+        f"""
+        <div class="sig">
+          <div class="sig-top">
+            <span class="sig-topic">{html.escape(s["topic"])}</span>
+            <span class="sig-meta">broke out <b>{s["breakout_day"]}</b>
+              · now in <b>~{s["recent"]:.0f}</b> narratives</span>
+          </div>
+          <span class="spark">{s["spark"]}</span>
+          <div class="sig-where">{
+            "".join(f'<span class="chip2">{html.escape(w)}</span>' for w in s["where"])
+        }</div>
+        </div>"""
+        for s in signals
     )
 
     # momentum chart (top rising)
@@ -161,6 +180,7 @@ def main() -> None:
         </div>"""
 
     page = _TEMPLATE.format(
+        signals=signal_cards,
         cards=cards,
         chart=chart,
         rising=rising_tbl,
@@ -222,6 +242,16 @@ _TEMPLATE = """<!doctype html>
     font-variant-numeric:tabular-nums; font-size:13px; }}
   .spark {{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:15px;
     letter-spacing:1px; color:#0f766e; }}
+  .hint {{ color:var(--muted); font-size:13px; margin:-6px 0 14px; }}
+  .sigs {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:14px; }}
+  .sig {{ background:var(--panel); border:1px solid var(--line); border-left:4px solid #0f766e;
+    border-radius:10px; padding:14px; }}
+  .sig-top {{ display:flex; justify-content:space-between; align-items:baseline; gap:8px;
+    flex-wrap:wrap; }}
+  .sig-topic {{ font-size:16px; font-weight:700; }}
+  .sig-meta {{ font-size:12px; color:var(--muted); }}
+  .sig .spark {{ display:block; margin:8px 0; font-size:18px; }}
+  .sig-where {{ margin-top:4px; }}
   .feed-row {{ padding:8px 0; border-bottom:1px solid var(--line); }}
   .feed-day {{ display:inline-block; width:96px; font-weight:600;
     font-variant-numeric:tabular-nums; color:#334155; }}
@@ -252,13 +282,21 @@ _TEMPLATE = """<!doctype html>
   EventGraph stores one graph per day in an EventMemory and diffs the daily topic sets.
 </div>
 <nav>
-  <button class="active" data-tab="momentum">Momentum</button>
+  <button class="active" data-tab="signals">⚡ Emerging signals</button>
+  <button data-tab="momentum">Momentum</button>
   <button data-tab="rising">Rising topics</button>
   <button data-tab="feed">Chronological feed</button>
   <button data-tab="entities">Per entity</button>
 </nav>
 <main>
-  <section class="tab active" id="momentum">
+  <section class="tab active" id="signals">
+    <h2 class="section">Emerging signals — what's newly rising (read this first)</h2>
+    <p class="hint">Denoised, ranked by surprise: topics ~absent early that surged.
+      Each shows when it broke out, how many narratives carry it, its trajectory,
+      and where it spread.</p>
+    <div class="sigs">{signals}</div>
+  </section>
+  <section class="tab" id="momentum">
     <h2 class="section">Overview</h2>
     <div class="grid">{cards}</div>
     <div class="panel">{chart}</div>

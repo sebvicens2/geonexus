@@ -316,15 +316,17 @@ Entry timeline — gulf_iran
 
 ![Narrative momentum — topics rising across the world's syntheses](assets/narrative_momentum.png)
 
-A self-contained HTML dashboard puts it all together — momentum chart, dated
-rising topics with trajectory sparklines, a chronological feed, and per-entity
-enter/fade/timeline:
+A self-contained HTML dashboard puts it all together. Its headline tab is an
+**Emerging-signals board** — denoised, ranked by surprise: each card is a topic
+that was ~absent early and surged, with the day it broke out, how many of the 197
+narratives now carry it, a trajectory sparkline, and where it spread. (Other tabs:
+momentum chart, dated rising topics, chronological feed, per-entity timelines.)
 
 ```bash
 python examples/build_narrative_dashboard.py   # → reports/eventgraph_narrative_dashboard.html
 ```
 
-![Narrative dashboard — rising topics with sparklines](assets/narrative_dashboard_rising.png)
+![Narrative dashboard — emerging-signals board](assets/narrative_dashboard.png)
 
 ### Tracking change over time with `EventMemory`
 

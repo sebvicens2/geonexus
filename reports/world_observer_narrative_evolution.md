@@ -9,7 +9,6 @@ _How WO's LLM syntheses drifted between **2026-05-27** and **2026-06-07**: which
 | Israel | 2026-05-27 | 15 → 28 |
 | Ebola | 2026-05-27 | 6 → 19 |
 | World Cup | 2026-05-27 | 3 → 13 |
-| Negative | 2026-06-05 | 0 → 7 |
 | OPEC | 2026-05-27 | 3 → 9 |
 | North Korea | 2026-05-27 | 3 → 8 |
 | Uganda | 2026-05-27 | 1 → 6 |
@@ -21,18 +20,19 @@ _How WO's LLM syntheses drifted between **2026-05-27** and **2026-06-07**: which
 | Kenya | 2026-05-27 | 1 → 5 |
 | Latin American | 2026-05-28 | 0 → 4 |
 | Central Africa | 2026-06-01 | 0 → 4 |
+| Belt | 2026-06-01 | 0 → 4 |
 
 ## Chronological feed (topics first reaching 2+ narratives, by day)
 
 - **2026-05-27** — Iran, China, Russia, NATO, Hormuz, India, Ukraine, Israel
-- **2026-05-28** — United States, Washington, Uzbekistan, Serbia, Political, Ongoing, Mandeb Strait, Gripen
-- **2026-05-29** — Romania, South American, Malian, World, Vietnam, Pratas Islands, Five South American, Economic
+- **2026-05-28** — United States, Washington, Uzbekistan, Serbia, Political, Mandeb Strait, Gripen, Federal Reserve
+- **2026-05-29** — Romania, South American, Malian, Vietnam, Pratas Islands, Five South American, Economic, Capricorn Bioceanic Corridor
 - **2026-05-31** — Singapore, Beaufort Castle, Beirut, Analysts, Paris Saint, Netanyahu, IAEA, Germain
 - **2026-06-01** — Uganda, Two, Shabaab, Austria, Yvette Cooper, Kidal, Colombia, Belgium
 - **2026-06-03** — Four, Belarusian, Zaporozhye Nuclear Power Plant, USS, UNICEF, Pandemic Fund, OECD, Nimitz
 - **2026-06-04** — Vaca Muerta, South America, Antelope Reef, Vadinar, Sudanese, South African President Ramaphosa, Royal Navy, Resource
-- **2026-06-05** — Defense, Negative, Trans, Texas, Libya, Department, Traditional, Supreme Leader
-- **2026-06-06** — Defense Secretary Pete Hegseth, Tribesmen, St Petersburg, Kramatorsk, Khyber, Fitch Ratings, Day, AFCON
+- **2026-06-05** — Defense, Trans, Texas, Libya, Department, Traditional, Supreme Leader, Saharan
+- **2026-06-06** — Defense Secretary Pete Hegseth, Tribesmen, St Petersburg, Kramatorsk, Khyber, Fitch Ratings, AFCON, Xenophobic
 - **2026-06-07** — Chornobyl, Mexican, London, Zelensky, Yemeni, Wildland, Wales, WWDC
 
 ## What entered / faded per narrative
@@ -51,7 +51,7 @@ _How WO's LLM syntheses drifted between **2026-05-27** and **2026-06-07**: which
 
 ### israel_gaza
 
-- **Entered:** Bab, Iran, Mandeb, Ongoing, West Bank
+- **Entered:** Bab, Iran, Mandeb, West Bank
 - **Faded:** Adha, Hamas, Lebanon, Palestinians
 - **Core (persisted):** Eid, Gaza, Israel
 
@@ -94,6 +94,6 @@ _How WO's LLM syntheses drifted between **2026-05-27** and **2026-06-07**: which
 | Ukraine | 7 |
 | Pakistan | 7 |
 | NATO | 7 |
-| Negative | 7 |
 | France | 7 |
 | LNG | 6 |
+| Taiwan | 6 |

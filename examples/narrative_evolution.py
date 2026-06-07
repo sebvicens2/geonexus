@@ -104,6 +104,43 @@ GENERIC = {
     "Eastern",
     "Northern",
     "Southern",
+    # abstract / common nouns that are noise as "topics"
+    "Negative",
+    "Positive",
+    "Protests",
+    "Violence",
+    "Talks",
+    "Concerns",
+    "Warning",
+    "Warnings",
+    "Report",
+    "Reports",
+    "Statement",
+    "Rising",
+    "Major",
+    "Significant",
+    "Key",
+    "Recent",
+    "Ongoing",
+    "Potential",
+    "Global",
+    "World",
+    "Crisis",
+    "Conflict",
+    "Attack",
+    "Attacks",
+    "Strikes",
+    "Deal",
+    "Summit",
+    "Dialogue",
+    "Meeting",
+    "Forces",
+    "Officials",
+    "Government",
+    "Military",
+    "Economy",
+    "Markets",
+    "Day",
 }
 _TOKEN = re.compile(r"\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*|[A-Z]{2,})\b")
 _LEADING = ("The ", "A ", "An ")
@@ -191,6 +228,59 @@ def rising_topics(
     return out
 
 
+def emerging_signals(
+    memory: EventMemory,
+    entities: list[dict],
+    series: dict[str, dict[str, int]],
+    days: list[str],
+    *,
+    min_recent: float = 4.0,
+    max_baseline: float = 2.5,
+    min_surprise: float = 3.0,
+) -> list[dict]:
+    """Denoised, surprise-ranked breakouts: topics ~absent early, prominent now.
+
+    For each topic, compares an early baseline (mean of the first 3 days) to a
+    recent level (mean of the last 2 days). Returns the ones that genuinely
+    surged, with their breakout day, trajectory sparkline and the narratives
+    carrying them now — the short, legible "what's newly rising" board.
+    """
+    last = days[-1]
+    where: dict[str, list[str]] = {}
+    for e in entities:
+        for topic in topics_of(memory, last, e["key"]):
+            where.setdefault(topic, []).append(e["key"])
+
+    def _mean(values: list[int]) -> float:
+        return sum(values) / len(values) if values else 0.0
+
+    def _breakout_day(by_day: dict[str, int]) -> str:
+        best, day0 = 0, days[-1]
+        for i in range(1, len(days)):
+            jump = by_day[days[i]] - by_day[days[i - 1]]
+            if jump > best:
+                best, day0 = jump, days[i]
+        return day0
+
+    out: list[dict] = []
+    for topic, by_day in series.items():
+        baseline = _mean([by_day[d] for d in days[:3]])
+        recent = _mean([by_day[d] for d in days[-2:]])
+        if recent >= min_recent and baseline <= max_baseline and recent - baseline >= min_surprise:
+            out.append(
+                {
+                    "topic": topic,
+                    "breakout_day": _breakout_day(by_day),
+                    "recent": recent,
+                    "surprise": round(recent - baseline, 1),
+                    "spark": "".join(_spark(by_day[d]) for d in days),
+                    "where": sorted(where.get(topic, []))[:6],
+                }
+            )
+    out.sort(key=lambda s: s["surprise"], reverse=True)
+    return out
+
+
 def render_momentum_chart(
     series: dict[str, dict[str, int]], days: list[str], topics: list[str], path: Path
 ) -> None:
@@ -219,6 +309,7 @@ def main() -> None:
     days = memory.dates()
     first, last = days[0], days[-1]
     by_key = {e["key"]: e for e in entities}
+    series = world_series(memory, entities)
 
     def head(t: str) -> None:
         print(f"\n{'=' * 74}\n{t}\n{'=' * 74}")
@@ -227,6 +318,14 @@ def main() -> None:
         f"Narrative evolution over {len(days)} days ({first} → {last}), "
         f"{len(entities)} entities — deterministic extraction, no LLM."
     )
+
+    head("EMERGING SIGNALS  (denoised, ranked by surprise — read this first)")
+    for s in emerging_signals(memory, entities, series, days)[:12]:
+        print(
+            f"  {s['topic'][:22]:<22} ^{s['breakout_day']}  "
+            f"~{s['recent']:.0f} narratives  {s['spark']}"
+        )
+        print(f"     -> {', '.join(s['where'])}")
 
     # spotlight a few high-signal theatres/countries
     spotlight = [
@@ -271,7 +370,6 @@ def main() -> None:
         print(f"  {n:>2} entities  {topic}")
 
     # ---- day-by-day temporal analysis ---------------------------------- #
-    series = world_series(memory, entities)
     rising = rising_topics(series, days)
 
     head("RISING TOPICS  (trajectory across the window, dated)")
