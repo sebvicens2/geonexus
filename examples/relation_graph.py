@@ -13,16 +13,60 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from itertools import pairwise
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
+from narrative_evolution import DATA as NARRATIVE_DATA
+
 from eventgraph import Actor, EventGraph, Relation, RelationType
 
 DATA = Path(__file__).parent / "data" / "world_observer_relations.json"
 REPORT = Path("reports") / "world_observer_relations.md"
+
+_NARR: dict[str, dict[str, str]] | None = None
+
+
+def _narratives() -> dict[str, dict[str, str]]:
+    global _NARR
+    if _NARR is None:
+        hist = json.loads(NARRATIVE_DATA.read_text(encoding="utf-8"))
+        _NARR = {e["key"]: e["by_day"] for e in hist}
+    return _NARR
+
+
+def ground(triple: dict) -> str:
+    """The source sentence behind a triple — lets you verify it (and catch errors)."""
+    text = _narratives().get(triple["source"], {}).get(triple["day"], "")
+    chunks = [" ".join(c.split()) for c in re.split(r"(?:\n|- |\. )", text) if c.strip()]
+    both = [c for c in chunks if triple["subject"] in c and triple["object"] in c]
+    one = [c for c in chunks if triple["subject"] in c]
+    pick = (both or one or [""])[0]
+    return pick[:200]
+
+
+def grounded_relations(
+    triples: list[dict], n: int = 24, *, involving: set[str] | None = None
+) -> list[dict]:
+    """Direct relations with their source sentence; optionally filtered to hub entities."""
+    out: list[dict] = []
+    for t in triples:
+        if (
+            involving is not None
+            and t["subject"].lower() not in involving
+            and t["object"].lower() not in involving
+        ):
+            continue
+        snippet = ground(t)
+        if not snippet:
+            continue
+        out.append({**t, "snippet": snippet})
+        if len(out) >= n:
+            break
+    return out
 
 
 def _norm(name: str) -> str:
@@ -126,9 +170,11 @@ def main() -> None:
         except nx.NetworkXNoPath:
             print(f"No relation chain links {g.label(sa)} and {g.label(sb)}.")
             return
-        print(f"\nRelation chain  {g.label(sa)} -> {g.label(sb)}:")
+        print(f"\nGraph path  {g.label(sa)} -> {g.label(sb)}:")
         for x, y in pairwise(path):
             print(f"  {g.label(x)}  --[{_edge_label(g, x, y)}]->  {g.label(y)}")
+        print("\n  ⚠ This is graph CONNECTIVITY, not implication. Relations do NOT compose:")
+        print("    read each edge literally; the end-to-end path means nothing on its own.")
         return
 
     hubs = top_hubs(g, args.top)
@@ -136,24 +182,29 @@ def main() -> None:
     for label, c in hubs:
         print(f"  {label}  ({c} relations)")
 
-    print("\nSample stated relations:")
-    for t in triples[: args.top]:
-        print(f"  {t['subject']}  --[{t['relation']}]->  {t['object']}")
+    grounded = grounded_relations(triples, args.top, involving={lbl.lower() for lbl, _ in hubs})
+    print("\nGrounded stated relations (with source sentence):")
+    for t in grounded:
+        print(f"  {t['subject']} --[{t['relation']}]-> {t['object']}")
+        print(f"     “{t['snippet']}”")
 
     lines = [
         "# World Observer — relation graph (LLM-extracted)\n",
-        f"_{len(triples)} stated relations from {g.raw.number_of_edges()} edges over "
-        f"{len(g)} entities, extracted as subject→relation→object triples by a local LLM "
-        "(not co-occurrence). Non-deterministic; grounded in WO's summaries._\n",
+        f"_{len(triples)} stated relations over {len(g)} entities, extracted as "
+        "subject→relation→object triples by a local LLM (not co-occurrence). Each is "
+        "**grounded** in its source sentence so you can verify it — LLM extraction is "
+        "imperfect (it can strip context/negation), so the grounding matters._\n",
+        "> Note: multi-hop *chains* are deliberately omitted — relations do not compose "
+        "(`A competes-with B` + `B supports C` implies nothing about A→C). Only direct, "
+        "grounded relations are reported.\n",
         "## Most-connected entities\n",
     ]
     lines += [f"- **{label}** — {c} relations" for label, c in hubs]
-    lines.append("\n## Example relation chains\n")
-    for a, b in [("China", "Ukraine"), ("Iran", "Israel"), ("China", "Africa"), ("US", "Ebola")]:
-        steps = chain(g, a, b)
-        if steps:
-            txt = "  →  ".join([steps[0][0]] + [f"[{r}] {y}" for _, r, y in steps])
-            lines.append(f"- **{a} → {b}:** {txt}")
+    lines.append("\n## Grounded stated relations\n")
+    for t in grounded_relations(triples, 40, involving={lbl.lower() for lbl, _ in hubs}):
+        lines.append(
+            f"- **{t['subject']} —[{t['relation']}]→ {t['object']}**  \n  > {t['snippet']}"
+        )
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"\nMarkdown report written to {REPORT}")

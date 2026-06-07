@@ -35,8 +35,7 @@ from narrative_evolution import (
 )
 from narrative_llm_brief import _prompt, ollama
 from relation_graph import build as build_relations
-from relation_graph import chain as relation_chain
-from relation_graph import load_triples, top_hubs
+from relation_graph import grounded_relations, load_triples, top_hubs
 
 OUT_PATH = Path("reports") / "eventgraph_narrative_dashboard.html"
 SPOTLIGHT = (
@@ -177,7 +176,7 @@ def main() -> None:
         or '<p class="hint">No multi-signal chains at the current threshold.</p>'
     )
 
-    # relation graph (LLM-extracted typed relations: subject → relation → object)
+    # relation graph (LLM-extracted typed relations, grounded; no misleading chains)
     triples = load_triples()
     if triples:
         rg, _ = build_relations(triples)
@@ -186,39 +185,18 @@ def main() -> None:
         hub_chips = "".join(
             f'<span class="chip2">{html.escape(label)} ({c})</span>' for label, c in hubs
         )
-        chain_cards = ""
-        for a, b in [
-            ("China", "Ukraine"),
-            ("Iran", "Israel"),
-            ("China", "Africa"),
-            ("US", "Ebola"),
-            ("Russia", "NATO"),
-        ]:
-            steps = relation_chain(rg, a, b)
-            if steps and len(steps) >= 2:
-                seq = f"<b>{html.escape(steps[0][0])}</b>"
-                for _, rel, y in steps:
-                    seq += f' <span class="rel">[{html.escape(rel)}]</span> <b>{html.escape(y)}</b>'
-                chain_cards += (
-                    f'<div class="chain"><div class="chain-title">{a} → {b}</div>{seq}</div>'
-                )
-        rel_cards = ""
-        shown = 0
-        for t in triples:
-            if shown >= 24:
-                break
-            if t["subject"].lower() in hub_names or t["object"].lower() in hub_names:
-                rel_cards += (
-                    f'<div class="hl"><b>{html.escape(t["subject"])}</b> '
-                    f'<span class="rel">[{html.escape(t["relation"])}]</span> '
-                    f"<b>{html.escape(t['object'])}</b></div>"
-                )
-                shown += 1
+        rel_cards = "".join(
+            f'<div class="hl"><div class="hl-pair"><b>{html.escape(t["subject"])}</b> '
+            f'<span class="rel">[{html.escape(t["relation"])}]</span> '
+            f"<b>{html.escape(t['object'])}</b></div>"
+            f'<div class="hl-snip">“{html.escape(t["snippet"])}”</div></div>'
+            for t in grounded_relations(triples, 30, involving=hub_names)
+        )
         relations_html = (
             f'<p class="hint">Most-connected: {hub_chips}</p>'
-            f'<h3 class="section">Multi-hop relation chains (real stated relations)</h3>'
-            f'<div class="chains">{chain_cards}</div>'
-            f'<h3 class="section">Stated relations involving the hubs</h3>'
+            f'<p class="hint">Direct stated relations, each grounded in its source sentence. '
+            f"<b>No multi-hop chains</b> — relations do not compose, and chaining them "
+            f"(“A competes-with B” + “B supports C”) is misleading.</p>"
             f'<div class="hls">{rel_cards}</div>'
         )
     else:

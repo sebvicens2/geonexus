@@ -85,8 +85,9 @@ def main() -> None:
             if key in seen:
                 continue
             seen.add(key)
-            relations.append({"subject": subj, "relation": rel, "object": obj,
-                              "source": e["key"], "day": day})
+            relations.append(
+                {"subject": subj, "relation": rel, "object": obj, "source": e["key"], "day": day}
+            )
         if i % 25 == 0:
             print(f"  {i}/{len(entities)} entities, {len(relations)} relations")
 
