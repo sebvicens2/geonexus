@@ -242,6 +242,28 @@ Middle East, Iran/Gulf, Russia/Ukraine and Asia-Pacific — from co-occurrence a
 
 ![World Observer event graph coloured by emerging cluster](assets/world_observer_map.png)
 
+### Consuming WO's synthesis layer (recommended)
+
+World Observer already computes, on a schedule, per-country / per-theatre
+intelligence: instability scores, attention shares, narratives and LLM summaries.
+Rather than re-deriving a weaker "attention" from raw articles, EventGraph can
+**consume those scores as node attributes** and add the relational layer WO lacks
+— a country co-occurrence graph, communities (blocs) and connectivity ranking.
+
+```bash
+python examples/extract_world_observer_synthesis.py   # → data/world_observer_synthesis.json
+python examples/world_observer_synthesis.py           # report → reports/world_observer_synthesis.md
+python examples/build_synthesis_dashboard.py          # → reports/eventgraph_synthesis_dashboard.html
+```
+
+This is the honest division of labour: **ranking by WO's real instability &
+attention** (not a recomputed proxy), with EventGraph contributing structure —
+e.g. the US is the most *connected* country (it bridges theatres) though far from
+the most *unstable*, and co-occurrence communities surface real blocs (Gulf/Iran,
+Russia/Ukraine/Baltics, the Sahel…) ranked by mean WO instability.
+
+![EventGraph over WO's synthesis layer](assets/synthesis_dashboard.png)
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day
