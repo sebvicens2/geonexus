@@ -23,6 +23,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import json
 
 from build_dashboard import bar, stat_card, table
+from hidden_links import top_grounded_links
 from narrative_evolution import (
     DATA,
     _spark,
@@ -174,6 +175,18 @@ def main() -> None:
         or '<p class="hint">No multi-signal chains at the current threshold.</p>'
     )
 
+    # hidden cross-narrative links (PMI co-mention, grounded)
+    def _hl_card(h: dict) -> str:
+        meta = f'<span class="sig-meta">PMI {h["pmi"]}, {h["co"]}x</span>'
+        pair = f"<b>{html.escape(h['a'])}</b> — <b>{html.escape(h['b'])}</b> {meta}"
+        snip = f"“{html.escape(h['snippet'])}”"
+        return (
+            f'<div class="hl"><div class="hl-pair">{pair}</div>'
+            f'<div class="hl-snip">{snip}</div></div>'
+        )
+
+    hidden_html = "".join(_hl_card(h) for h in top_grounded_links(14))
+
     # momentum chart (top rising)
     chart_topics = [t for t, *_ in rising[:6]] or list(series)[:6]
     chart = (
@@ -255,6 +268,7 @@ def main() -> None:
     page = _TEMPLATE.format(
         signals=signal_cards,
         chains=chains_html,
+        hidden=hidden_html,
         cards=cards,
         chart=chart,
         rising=rising_tbl,
@@ -334,6 +348,11 @@ _TEMPLATE = """<!doctype html>
   .chain-tag {{ font-size:12px; color:var(--muted); margin:2px 0 8px; }}
   .cmem {{ padding:3px 0; font-size:13px; }}
   .cmem .spark {{ font-size:15px; }}
+  .hls {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:12px; }}
+  .hl {{ background:var(--panel); border:1px solid var(--line); border-left:4px solid #0369a1;
+    border-radius:10px; padding:12px 14px; }}
+  .hl-pair {{ font-size:14px; }}
+  .hl-snip {{ font-size:13px; color:#334155; font-style:italic; margin-top:6px; }}
   .feed-row {{ padding:8px 0; border-bottom:1px solid var(--line); }}
   .feed-day {{ display:inline-block; width:96px; font-weight:600;
     font-variant-numeric:tabular-nums; color:#334155; }}
@@ -366,6 +385,7 @@ _TEMPLATE = """<!doctype html>
 <nav>
   <button class="active" data-tab="signals">⚡ Emerging signals</button>
   <button data-tab="chains">Chains</button>
+  <button data-tab="hidden">Hidden links</button>
   <button data-tab="momentum">Momentum</button>
   <button data-tab="rising">Rising topics</button>
   <button data-tab="feed">Chronological feed</button>
@@ -385,6 +405,13 @@ _TEMPLATE = """<!doctype html>
       chains (EventGraph connected components). With <code>--llm</code>, a local
       Qwen names each storyline and how the pieces connect.</p>
     <div class="chains">{chains}</div>
+  </section>
+  <section class="tab" id="hidden">
+    <h2 class="section">Hidden links — surprising cross-narrative co-mentions</h2>
+    <p class="hint">Entity pairs that co-occur far more than chance (PMI) across all
+      summaries — including cross-theatre links (companies, places, people) the
+      narrative chains miss. Each is grounded in the source sentence.</p>
+    <div class="hls">{hidden}</div>
   </section>
   <section class="tab" id="momentum">
     <h2 class="section">Overview</h2>

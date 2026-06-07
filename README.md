@@ -366,6 +366,30 @@ python examples/build_narrative_dashboard.py --llm --model qwen2.5:7b
 
 ![Narrative dashboard — signal chains](assets/narrative_chains.png)
 
+#### Hidden cross-narrative links
+
+Chains only connect things that already share a narrative. To surface links that
+span theatres — e.g. a miner operating across continents — `hidden_links.py`
+builds an entity co-mention graph over *all* summaries, weights pairs by **PMI**
+(so a specific pairing beats a generic one), drops split-name artifacts, and
+**grounds** each link in the source sentence:
+
+```bash
+python examples/hidden_links.py                       # top grounded links
+python examples/hidden_links.py --between China Africa # strongest multi-hop path
+python examples/hidden_links.py --llm                  # Qwen phrases each relationship
+```
+
+```text
+Diana Shipping — Genco Shipping   “Diana Shipping intensifies takeover bid for Genco Shipping & Trading.”
+Kinross Gold — Atacama            “Kinross Gold is investing heavily in Chile's Atacama region…”
+China → Aya Gold → Africa         (strongest PMI-weighted path: a miner bridging the two)
+```
+
+These are also a tab in the narrative dashboard.
+
+![Narrative dashboard — hidden links](assets/narrative_hidden_links.png)
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day

@@ -301,8 +301,12 @@ def relate_signals(signals: list[dict], *, min_overlap: float = 0.2) -> list[lis
             if wa and wb:
                 jac = len(wa & wb) / len(wa | wb)
                 if jac >= min_overlap:
-                    g.connect(f"actor:{signals[i]['topic']}", f"actor:{signals[j]['topic']}",
-                              RelationType.CORRELATES, weight=jac)
+                    g.connect(
+                        f"actor:{signals[i]['topic']}",
+                        f"actor:{signals[j]['topic']}",
+                        RelationType.CORRELATES,
+                        weight=jac,
+                    )
     chains = [
         sorted((by_node[n] for n in comp), key=lambda s: s["recent"], reverse=True)
         for comp in nx.connected_components(g.raw.to_undirected())
