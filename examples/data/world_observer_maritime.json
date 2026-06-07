@@ -1,0 +1,235 @@
+[
+  {
+    "id": "hormuz",
+    "name": "Hormuz",
+    "region": "Middle East",
+    "importance": "critical",
+    "type": "maritime",
+    "theatres": [
+      "gulf_iran"
+    ],
+    "traffic": "~21M bbl/day oil",
+    "commodity": "oil",
+    "description": "Controls ~20% of global oil trade. Iran can close at will.",
+    "disruption": {
+      "z_score": -0.0193,
+      "delta_pct": -1.3,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "suez",
+    "name": "Suez",
+    "region": "North Africa",
+    "importance": "critical",
+    "type": "canal",
+    "theatres": [
+      "israel_gaza",
+      "israel_hezbollah_lebanon"
+    ],
+    "traffic": "~19,000 vessels/year",
+    "commodity": "trade",
+    "description": "~12% of global trade. Closure adds 2 weeks and ~$1M fuel per transit.",
+    "disruption": {
+      "z_score": -0.7468,
+      "delta_pct": -11.65,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "bab_el_mandeb",
+    "name": "Bab el-Mandeb",
+    "region": "East Africa / Arabian Peninsula",
+    "importance": "critical",
+    "type": "maritime",
+    "theatres": [
+      "gulf_iran",
+      "africa_sahel"
+    ],
+    "traffic": "~4.7M bbl/day oil",
+    "commodity": "trade",
+    "description": "Gateway between Red Sea and Gulf of Aden. Houthi threat active.",
+    "disruption": {
+      "z_score": -0.1392,
+      "delta_pct": -2.77,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "malacca",
+    "name": "Malacca",
+    "region": "Southeast Asia",
+    "importance": "critical",
+    "type": "maritime",
+    "theatres": [
+      "china_indo_pacific"
+    ],
+    "traffic": "~15.2M bbl/day oil",
+    "commodity": "oil",
+    "description": "Busiest shipping lane. ~80% of China oil imports pass here.",
+    "disruption": {
+      "z_score": -0.0723,
+      "delta_pct": -0.39,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "panama",
+    "name": "Panama",
+    "region": "Central America",
+    "importance": "high",
+    "type": "canal",
+    "theatres": [
+      "latin_america"
+    ],
+    "traffic": "~13,000 vessels/year",
+    "commodity": "trade",
+    "description": "Links Pacific and Atlantic. ~5% of global trade. Drought risk.",
+    "disruption": {
+      "z_score": 0.0,
+      "delta_pct": 0.0,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "gibraltar",
+    "name": "Gibraltar",
+    "region": "Western Europe",
+    "importance": "high",
+    "type": "maritime",
+    "theatres": [
+      "russia_nato_europe"
+    ],
+    "traffic": "~100,000 vessels/year",
+    "commodity": "trade",
+    "description": "Gateway between Mediterranean and Atlantic. Only ~14km wide.",
+    "disruption": {
+      "z_score": -0.4175,
+      "delta_pct": -4.98,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "bosphorus",
+    "name": "Bosphorus",
+    "region": "Eastern Europe / Middle East",
+    "importance": "critical",
+    "type": "strait",
+    "theatres": [
+      "ukraine_russia",
+      "russia_nato_europe"
+    ],
+    "traffic": "~45,000 vessels/year",
+    "commodity": "trade",
+    "description": "Only Black Sea access. Turkey controls under Montreux Convention.",
+    "disruption": {
+      "z_score": 0.2586,
+      "delta_pct": 4.12,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "taiwan_strait",
+    "name": "Taiwan Strait",
+    "region": "East Asia",
+    "importance": "critical",
+    "type": "maritime",
+    "theatres": [
+      "china_indo_pacific"
+    ],
+    "traffic": "~88 ships/day",
+    "commodity": "trade",
+    "description": "~48% of global container traffic transits. China-Taiwan flashpoint.",
+    "disruption": {
+      "z_score": 0.998,
+      "delta_pct": 9.13,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "dover",
+    "name": "Dover",
+    "region": "Western Europe",
+    "importance": "high",
+    "type": "maritime",
+    "theatres": [
+      "russia_nato_europe"
+    ],
+    "traffic": "~500 vessels/day",
+    "commodity": "trade",
+    "description": "Busiest shipping lane in the world. 500+ vessels/day.",
+    "disruption": {
+      "z_score": -0.5265,
+      "delta_pct": -6.3,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "cape_good_hope",
+    "name": "Cape",
+    "region": "Southern Africa",
+    "importance": "high",
+    "type": "maritime",
+    "theatres": [
+      "africa_sahel"
+    ],
+    "traffic": "Surge when Suez blocked",
+    "commodity": "trade",
+    "description": "Alternative route when Suez/Bab el-Mandeb closed. +15 days vs Suez.",
+    "disruption": null
+  },
+  {
+    "id": "luzon",
+    "name": "Luzon",
+    "region": "East Asia",
+    "importance": "high",
+    "type": "maritime",
+    "theatres": [
+      "china_indo_pacific"
+    ],
+    "traffic": "Major US Navy transit",
+    "commodity": "trade",
+    "description": "US carrier battle group access to South China Sea. Key SLOC.",
+    "disruption": {
+      "z_score": 1.3008,
+      "delta_pct": 24.49,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "lombok",
+    "name": "Lombok",
+    "region": "Southeast Asia",
+    "importance": "high",
+    "type": "maritime",
+    "theatres": [
+      "china_indo_pacific"
+    ],
+    "traffic": "Deep-draft bypass",
+    "commodity": "trade",
+    "description": "Malacca alternative for deep-draft vessels. Key for Chinese carriers.",
+    "disruption": {
+      "z_score": 0.1927,
+      "delta_pct": 3.17,
+      "classification": "normal"
+    }
+  },
+  {
+    "id": "ormuz_sea",
+    "name": "Gulf of Oman",
+    "region": "Middle East",
+    "importance": "high",
+    "type": "maritime",
+    "theatres": [
+      "gulf_iran"
+    ],
+    "traffic": "Major oil tanker route",
+    "commodity": "oil",
+    "description": "Oil tanker corridor. Frequent tanker incidents and seizures.",
+    "disruption": {
+      "z_score": 0.1445,
+      "delta_pct": 4.76,
+      "classification": "normal"
+    }
+  }
+]

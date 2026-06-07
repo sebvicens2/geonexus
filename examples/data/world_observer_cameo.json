@@ -1,0 +1,3827 @@
+[
+  {
+    "a": "US",
+    "b": "Canada",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "United States",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Iran",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "United States",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Russia",
+    "b": "North Korea",
+    "domain": "diplomatic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "North Korea",
+    "domain": "diplomatic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Canada",
+    "b": "U.S.",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "world",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Israel",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Iran",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "Israel",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Iran",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Iran",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "Israel",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "gulf_iran",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "US",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "gulf_iran",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "US",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "gulf_iran",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "gulf_iran",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "Israel",
+    "domain": "energy",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "gulf_iran",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "North Korea",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "South Korea",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "European Union",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "DR Congo",
+    "domain": "health",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "China",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Iran",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Israel",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Israel",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Mauritius",
+    "domain": "health",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Israel",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Iran",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Palestine",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "Bahrain",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "Kuwait",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "us_defense",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Iran",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "us_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Russia",
+    "b": "Ukraine",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Russia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "us_politics",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Asia (countries)",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "us_politics",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UN",
+    "b": "Iran",
+    "domain": "health",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "us_politics",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Lebanon",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "IAEA",
+    "b": "Ukraine",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "ukraine_russia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "NATO",
+    "domain": "military",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "ukraine_russia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "israel_gaza",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Western_countries",
+    "b": "Israel",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "israel_gaza",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Russia",
+    "b": "Iran",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "western_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Canada",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Canada",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Russia",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Canada",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Palestinians",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Gaza City residents",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Palestinians (Hebron)",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Hamas",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Palestine",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Zaporizhzhia nuclear plant",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "EU",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "Pakistan",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "global_crisis",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UK",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UK",
+    "b": "Ukraine",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Mercuria Energy Group",
+    "b": "Government(s)",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "United Kingdom",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Japan",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Japan",
+    "b": "China",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Japan",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Asian countries",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Japan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UN",
+    "b": "Lebanon",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "israel_hezbollah_lebanon",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Armenia",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Armenia",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "elections",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "OPEC+",
+    "b": "OPEC",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "oil",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "OPEC+",
+    "b": "OPEC",
+    "domain": "energy",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "oil",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "French government",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Europe",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "France",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "India",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "Venezuela",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "Bangladesh",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "Pakistan",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "India",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "Saudi Arabia",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "us_iran_nuclear",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Pakistan",
+    "b": "India",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Pakistan",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Pakistan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "DR Congo",
+    "domain": "health",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Japan",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South Korea",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "critical_minerals",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Mexico",
+    "b": "OECD",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Mexico",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "strait_hormuz",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Microsoft",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "technology",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Belgium",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Taiwan",
+    "b": "US",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "taiwan_strait",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Japan",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "taiwan_strait",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Beijing",
+    "b": "Taiwan",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "taiwan_strait",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Taiwan",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "taiwan_strait",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South_Korea",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "North_Korea",
+    "b": "South_Korea",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "South Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S. Department of Defense",
+    "b": "China",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Anthropic",
+    "b": "Global community",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "ai_industry",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Putin",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Iran",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UK",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "EU",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Russia",
+    "b": "Western business jets manufacturers",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "sanctions",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Taiwan",
+    "b": "US",
+    "domain": "military",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Taiwan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Taiwan",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Taiwan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Dutch",
+    "b": "China",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Taiwan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Mexico",
+    "domain": "health",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "agriculture",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Argentina",
+    "b": "Global market",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "agriculture",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Brazil",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Brazil",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Brazil",
+    "b": "global_tensions",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Brazil",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Germany",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Germany",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Middle East",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "china_indo_pacific",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Taiwan",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "china_indo_pacific",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Japan",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "china_indo_pacific",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "korean_peninsula",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South Korea",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "korean_peninsula",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "Middle East",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "shipping",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Middle East",
+    "b": "China",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "shipping",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "China",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Australia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Australia",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Australia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Japan",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Australia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Mexico",
+    "b": "World Cup organizers",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Scotland",
+    "b": "FIFA",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "sport",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Russia",
+    "b": "Armenia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "balkans_eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Armenia",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "balkans_eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Geopolitical tensions",
+    "b": "Global",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "climate_risk",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "NATO",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "us_china_drone_conflicts",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Russia",
+    "b": "NATO",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UK",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Russia",
+    "b": "China",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US/Europe",
+    "b": "Russia",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "russia_nato_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "india_china_himalaya",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "United States",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "india_china_himalaya",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Philippines",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Philippines",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Japan",
+    "b": "Philippines",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Philippines",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Nigeria",
+    "b": "Boko Haram",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Nigeria",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Nigeria",
+    "b": "Libya",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Nigeria",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Brazil",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Venezuela",
+    "b": "Gen. Dan Caine",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Argentina",
+    "b": "Britain",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "south_america",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Tanzania",
+    "b": "Kenya",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Nigeria",
+    "b": "Tanzania",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "banking",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Canada",
+    "b": "United States",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "canada_macro",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Hong Kong",
+    "b": "Central Asia",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Hong Kong",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Romania",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "cyber",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "DRC",
+    "b": "Uganda",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Kenya",
+    "b": "US",
+    "domain": "health",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "East African Community",
+    "b": "DRC",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Somalia",
+    "b": "East African Community",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "east_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "WHO",
+    "b": "Central Africa",
+    "domain": "health",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "DR Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Uganda",
+    "b": "DR Congo",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "DR Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Uganda",
+    "b": "Congo",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "supply_chains",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Uganda",
+    "b": "DR Congo",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "supply_chains",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Malaysia",
+    "b": "Netherlands",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Malaysia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Malaysia",
+    "b": "Indonesia",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Malaysia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Europe",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Spain",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Argentina",
+    "b": "UK",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Argentina",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Argentina",
+    "b": "Chile",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Argentina",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Nigeria",
+    "b": "Boko Haram",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "west_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Italy",
+    "b": "Malta",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Italy",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Saudi Arabia",
+    "b": "Lebanon",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Saudi Arabia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "OPEC",
+    "b": "Iran",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Iran",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "United Arab Emirates",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Chinese military",
+    "b": "Dutch",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Netherlands",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "PLA",
+    "b": "Dutch",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Netherlands",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South Africa",
+    "b": "Kenya",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "South Africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "China",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "us_china_relations",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Uzbekistan",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Russia",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "energy",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Kuwait",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Kuwait",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Bank of England",
+    "b": "Middle East",
+    "domain": "energy",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "Middle East",
+    "domain": "energy",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Pakistan",
+    "b": "Middle East",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Venezuela",
+    "b": "Middle East",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Kazakhstan",
+    "b": "Middle East",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "central_banks",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Colombia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Colombia",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Colombia",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Colombia",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "US",
+    "b": "Cuba",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "latin_america",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Asia",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Indonesia",
+    "b": "US",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Indonesia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "North Korea",
+    "b": "United States",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "North Korea",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Armenia",
+    "b": "Europe",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Armenia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Egypt",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Gaza",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "NATO",
+    "b": "Ukraine",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Turkey",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Turkey",
+    "b": "NATO allies",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Turkey",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Central America",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Mexico",
+    "b": "US",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Mexico",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "north_american_trade",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Alberta",
+    "b": "Canada",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ontario",
+    "b": "Alberta",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "canada_north_america",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Kenya",
+    "b": "United States",
+    "domain": "health",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Kenya",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South Africa",
+    "b": "Kenya",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Kenya",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Singapore",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Singapore",
+    "b": "Taiwan",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Southeast Asian economies",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Singapore",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South Africa",
+    "b": "Central Africa",
+    "domain": "health",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "world_diseases",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Latin America",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "fx",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South Korea",
+    "b": "US",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "fx",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Indonesia",
+    "b": "Malaysia",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "fx",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "OPEC+",
+    "b": "Russia",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Kazakhstan",
+    "b": "Hong Kong",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Kazakhstan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Central banks",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "gold",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "China",
+    "b": "Global central banks",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "gold",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Royal_Bank_of_Canada",
+    "b": "National_Bank_of_Canada",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "IMF",
+    "b": "Lipsky",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "weak_signals",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Egypt",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Egypt",
+    "b": "Palestine",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Egypt",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Egypt",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Africa CDC",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Mali's military junta",
+    "b": "Al-Qaeda-linked JNIM",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Africa",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UN",
+    "b": "Libya",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "africa_sahel",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Singapore",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Singapore",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Japan",
+    "b": "Southeast Asia",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "India",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "asean_southeast_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Taiwan",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "maritime_chokepoints",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Portugal",
+    "b": "Germany",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Germany",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Portugal",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Uganda",
+    "b": "WHO",
+    "domain": "health",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Uganda",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Taiwan",
+    "b": "China",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "south_china_sea",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "China",
+    "b": "Philippines",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "south_china_sea",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Japan",
+    "b": "Philippines",
+    "domain": "military",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "south_china_sea",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Venezuela",
+    "b": "France",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "U.S.",
+    "b": "Dr. Doom Peter Schiff",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "G20",
+    "b": "Venezuela",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "South Africa",
+    "b": "Fitch Ratings",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Sudan",
+    "b": "AfDB",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Sudan",
+    "b": "UNICEF",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "sovereign_debt",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Germany",
+    "b": "Ukraine",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Austria",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "US",
+    "b": "China",
+    "domain": "health",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "central_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "DRC",
+    "domain": "health",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "central_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S. Department of Defense",
+    "b": "Chinese firms",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Washington",
+    "b": "Brussels",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "ai_competition",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "India",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "India",
+    "b": "Australia",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "US",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "lng",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Russian",
+    "b": "Uzbekistan",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Pakistan",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Uzbekistan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "WHO",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "China",
+    "b": "Quad",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Australia",
+    "b": "Solomon Islands",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Australia",
+    "b": "Ichthys LNG project",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "oceania_pacific",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "US",
+    "b": "Cuba",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Cuba",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "OPEC",
+    "b": "US",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Venezuela",
+    "b": "Turkey",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "Venezuela",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Venezuela",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "OPEC+",
+    "b": "Iran",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Iraq",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Pakistan",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "south_asia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South Africa",
+    "b": "Mozambique",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "southern_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "South Africa",
+    "b": "Zimbabwe",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "southern_africa",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Vietnam",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Vietnam",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Vietnam",
+    "b": "United States",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Vietnam",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "United States",
+    "b": "Vietnam",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Vietnam",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Taiwan",
+    "b": "China",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Vietnam",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Brazil",
+    "b": "Latin American markets",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "commodities",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Brazil",
+    "b": "Southeast Asia",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "commodities",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Serbia",
+    "b": "France",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Serbia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "EU",
+    "b": "Western Balkan countries",
+    "domain": "diplomatic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Serbia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UN",
+    "b": "Serbia",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Serbia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Switzerland",
+    "b": "Donald Trump Jr.",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Switzerland",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Switzerland",
+    "b": "Partners Group",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Switzerland",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Africa",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Africa",
+    "b": "Iran",
+    "domain": "energy",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "civil_unrest",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "China",
+    "b": "Japan",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "japan_security",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Kyrgyzstan",
+    "b": "Kazakhstan",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Kyrgyzstan",
+    "b": "C5+1",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Kyrgyzstan",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Iran",
+    "b": "US",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Oman",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UN",
+    "b": "Middle East",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UN",
+    "b": "Somalia",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UN",
+    "b": "International aid networks",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Somalia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Finland",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Finland",
+    "b": "NATO",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Finland",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Finland",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Panama",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Panama",
+    "b": "China",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Panama",
+    "b": "Strait of Hormuz",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Panama",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Ukraine",
+    "b": "Poland",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Poland",
+    "b": "European Union",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Poland",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Zimbabwe",
+    "b": "South Africa",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Zimbabwe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Romania",
+    "b": "Ukraine",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Hungary",
+    "b": "European Union",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "eastern_europe",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Senegal",
+    "b": "Mali",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Senegal",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Iran",
+    "domain": "energy",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Sri Lanka",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Thailand",
+    "b": "Cambodia",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Thailand",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Thailand",
+    "b": "Cambodia",
+    "domain": "diplomatic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Thailand",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "FRETILIN",
+    "b": "Ministry of Foreign and Cooperative Affairs",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Timor-Leste",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Timor-Leste",
+    "b": "World Health Organization",
+    "domain": "health",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Timor-Leste",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Bolivia",
+    "b": "United States",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Bolivia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "United States",
+    "b": "Bolivia",
+    "domain": "military",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Bolivia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Kosovo",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Kosovo",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Slovakia",
+    "b": "Serbia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Kosovo",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Mali",
+    "b": "US",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Mali",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Mali",
+    "b": "France",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Mali",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Mali",
+    "b": "JNIM",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Mali",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Trafigura",
+    "b": "Middle East",
+    "domain": "energy",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S., Qatar",
+    "b": "natural gas",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "US Air Operations Center in Qatar",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Qatar",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Qatar",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UN",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Russia",
+    "b": "Afghanistan",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Afghanistan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "CEPA",
+    "b": "Government_of_Papua_New_Guinea",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Papua New Guinea",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "TotalEnergies",
+    "b": "Gulf_Isou_rugby_club",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Papua New Guinea",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Turkey",
+    "b": "Malta",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Venezuela",
+    "b": "Turkey",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Turkey",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "turkey_eastern_mediterranean",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Yemen",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Bahrain",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UK",
+    "b": "Norway",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Norway",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Norway",
+    "b": "UK",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Norway",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ukraine",
+    "b": "EU",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Sweden",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Sweden",
+    "b": "Brazil",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Sweden",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Lebanon",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Syria",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Syria",
+    "b": "Saudi Arabia",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Syria",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "U.S.",
+    "b": "Qatar",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Qatar",
+    "b": "Europe",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Algeria",
+    "b": "Europe",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "Papua New Guinea",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "gas",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Chile",
+    "b": "Argentina",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Chile",
+    "b": "Brazil",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Chile",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ethiopia",
+    "b": "US",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ethiopia",
+    "b": "IGAD",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ethiopia",
+    "b": "Yemen",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Ethiopia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Greece",
+    "b": "Turkey",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Greece",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Sudan",
+    "b": "United States",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "red_sea_horn_africa",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Somalia",
+    "b": "Government",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "red_sea_horn_africa",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Albania",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Albania",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Opec+",
+    "b": "UAE",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Algeria",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Czech Republic",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Czech Republic",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Czech Republic",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Myanmar",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "India",
+    "b": "Myanmar",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Russia",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Timor-Leste",
+    "b": "Myanmar",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Myanmar",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Israel",
+    "b": "Azerbaijan",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Azerbaijan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Azerbaijan",
+    "b": "Ukraine (via Azov Sea)",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Azerbaijan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Hungary",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Hungary",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "US",
+    "b": "Yemen",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Yemen",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Bank of Canada",
+    "b": "Economists",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "bank_of_canada",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Bank of Canada",
+    "b": "Reuters",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "bank_of_canada",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Estonia",
+    "b": "Russia",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Denmark",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Denmark",
+    "b": "Ukraine",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Denmark",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "New Zealand",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "New Zealand",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "China",
+    "b": "New Zealand",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "New Zealand",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Russia",
+    "b": "Ukraine",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "black_sea_corridor",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Federal_Reserve",
+    "b": "Middle_East",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Brazil",
+    "b": "Federal_Reserve",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "fed",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "U.S.",
+    "b": "Sweden",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "nordic_arctic",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "UK",
+    "b": "Norway",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "nordic_arctic",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Norway",
+    "b": "Canada",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "nordic_arctic",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Niger",
+    "b": "Turkey",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Benin",
+    "b": "Niger",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "US and Italy",
+    "b": "Niger",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Niger",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Intel",
+    "b": "Broadcom",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "semiconductor_war",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "U.S.",
+    "b": "Iran",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "semiconductor_war",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "U.S.",
+    "b": "Bangladesh",
+    "domain": "economic",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "Bangladesh",
+    "b": "UN General Assembly",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Bangladesh",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "Russia",
+    "b": "Belarus",
+    "domain": "military",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Belarus",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Sudan",
+    "b": "RSF",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Sudan",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Sudan",
+    "b": "civilians",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Sudan",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Morocco",
+    "b": "Brazil",
+    "domain": "military",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Morocco",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Senegal",
+    "b": "Morocco",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Morocco",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "China",
+    "b": "Uruguay",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Uruguay",
+    "b": "Vaca Muerta",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Uruguay",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Iran",
+    "b": "US",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "a": "Iran",
+    "b": "Kazakhstan",
+    "domain": "energy",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "iran_climate_china_risk",
+    "day": "2026-05-31"
+  },
+  {
+    "a": "Ireland",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Ireland",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ireland",
+    "b": "Cardano Community",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Ireland",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Luxembourg",
+    "b": "Germany",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Luxembourg",
+    "b": "Romania",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Luxembourg",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Nepal",
+    "b": "India",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Nepal",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Nepal",
+    "b": "UK",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Nepal",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Brazil",
+    "b": "United States",
+    "domain": "economic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Brazil",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Kenya",
+    "b": "South Africa",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "brics",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Ghana",
+    "b": "African Union",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Ghana",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Ghana",
+    "b": "international organizations",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Ghana",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Brazil",
+    "b": "Guatemala",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Guatemala",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Guatemala",
+    "b": "United States",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Guatemala",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Jordan",
+    "b": "Israel",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Jordan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Jordan",
+    "b": "UK",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Jordan",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Slovakia",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Slovakia",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Slovakia",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Slovakia",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Slovenia",
+    "b": "Israel",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Croatia",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Jamaica",
+    "b": "Middle East",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Jamaica",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "France",
+    "b": "Rwanda",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Rwanda",
+    "b": "European Union",
+    "domain": "economic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Rwanda",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Tunisia",
+    "b": "UNHCR",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Tunisia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Tunisia",
+    "b": "sub-Saharan African migrants",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Tunisia",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Venezuela",
+    "b": "Iran",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Venezuela",
+    "b": "United States",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "China",
+    "b": "Strait of Hormuz",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "maritime_transport",
+    "day": "2026-06-01"
+  },
+  {
+    "a": "Cambodia",
+    "b": "Thailand",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Cambodia",
+    "b": "Thailand",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Cambodia",
+    "b": "CPTPP",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Cambodia",
+    "b": "UN",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Cambodia",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Uganda",
+    "b": "Congo",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Congo",
+    "b": "WHO",
+    "domain": "health",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Congo",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Germany",
+    "b": "EU",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "EU",
+    "b": "Serbia",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Montenegro",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Namibia",
+    "b": "China",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "Namibia",
+    "b": "South Africa",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Namibia",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "Paraguay",
+    "b": "Argentina",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Paraguay",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Argentina",
+    "b": "Brazil",
+    "domain": "diplomatic",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Paraguay",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Argentina",
+    "b": "South American countries",
+    "domain": "economic",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Paraguay",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "Kuwait",
+    "b": "Bahrain",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "arabian_peninsula",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Kuwait",
+    "b": "US",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "arabian_peninsula",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Israel",
+    "b": "Gaza activists",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Cyprus",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Turkey",
+    "b": "Greece",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Cyprus",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Turkey",
+    "b": "Cyprus",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Cyprus",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Ivory Coast",
+    "b": "France",
+    "domain": "military",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Ivory Coast",
+    "day": "2026-06-05"
+  },
+  {
+    "a": "US",
+    "b": "Bosnia and Herzegovina",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Bosnia and Herzegovina",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "EU",
+    "b": "Bosnia and Herzegovina",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Bosnia and Herzegovina",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "EU",
+    "b": "Montenegro",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Bosnia and Herzegovina",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Trump administration",
+    "b": "Western Balkans",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Bosnia and Herzegovina",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Burkina Faso",
+    "b": "Niger",
+    "domain": "military",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "Benin",
+    "b": "Burkina Faso",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "Burkina Faso",
+    "b": "Mali",
+    "domain": "military",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Burkina Faso",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "Ecuador",
+    "b": "Security forces",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Ecuador",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Argentina",
+    "b": "Ecuador",
+    "domain": "diplomatic",
+    "cameo": "verbal_conflict",
+    "sign": -1,
+    "source": "Ecuador",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Estonia",
+    "b": "European countries",
+    "domain": "diplomatic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Estonia",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Estonia",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Estonia",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "China",
+    "b": "Latin America",
+    "domain": "economic",
+    "cameo": "verbal_cooperation",
+    "sign": 1,
+    "source": "Honduras",
+    "day": "2026-06-07"
+  },
+  {
+    "a": "Laos",
+    "b": "United States",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Laos",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Laos",
+    "b": "Laotian teams",
+    "domain": "energy",
+    "cameo": "neutral",
+    "sign": 0,
+    "source": "Laos",
+    "day": "2026-06-06"
+  },
+  {
+    "a": "Latvia",
+    "b": "Russia",
+    "domain": "military",
+    "cameo": "material_conflict",
+    "sign": -2,
+    "source": "Latvia",
+    "day": "2026-06-04"
+  },
+  {
+    "a": "Latvia",
+    "b": "NATO",
+    "domain": "military",
+    "cameo": "material_cooperation",
+    "sign": 2,
+    "source": "Latvia",
+    "day": "2026-06-04"
+  }
+]

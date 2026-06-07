@@ -402,6 +402,34 @@ python examples/relation_network.py   # → reports/eventgraph_relation_network.
 
 ![Relation network](assets/relation_network.png)
 
+### Multi-layer geopolitical network (signed news + hard maritime)
+
+A multiplex country network where the same nodes carry several **layers**, and
+news edges are **signed** by stance (CAMEO quad-classes → Goldstein sign):
+
+```bash
+python examples/extract_maritime.py   # hard layer: chokepoints + PortWatch disruption
+python examples/extract_cameo.py      # signed news layers (LLM): A | B | domain | CAMEO class
+python examples/multilayer.py         # → reports/world_observer_multilayer.md
+```
+
+- **News layers** (military / economic / diplomatic / energy / health): country↔country
+  edges signed −2…+2 (material/verbal × conflict/cooperation). Media-derived stance.
+- **Hard maritime layer**: chokepoint nodes (Hormuz, Bab-el-Mandeb…) with *real*
+  IMF-PortWatch disruption (z-score), linked to their theatre's countries.
+
+The payoff is **cross-layer divergence** — only a multi-layer view shows it:
+
+```text
+China – United States:  military -1, economic -1, diplomatic -1, energy +2, health +1
+Canada – United States: economic -2, diplomatic +3
+Maritime: Hormuz/Gulf of Oman [oil] → Iran, United States, Israel, Kuwait …
+```
+
+Honest split: the news layers are *reported stance* (LLM-classified, imperfect);
+PortWatch is hard data. EventGraph's `MultiDiGraph` carries the parallel typed
+layers natively.
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day
