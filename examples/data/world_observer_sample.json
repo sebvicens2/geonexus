@@ -1,0 +1,6678 @@
+[
+  {
+    "id": "6508317804337ab7093cff5f",
+    "title": "Iran war: 100 days on, a costly stalemate",
+    "published_at": "2026-06-07T15:34:41+00:00",
+    "importance": 8.0,
+    "category": "oil",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US President Trump",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "89983c516edd252e5d20ae5d",
+    "title": "Israel strikes south Beirut after intercepting Hezbollah launches",
+    "published_at": "2026-06-07T15:00:19+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Israel",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "3a27269bb04a9cb8337c574b",
+    "title": "Trump calls for more 'surgical' strikes on Hezbollah",
+    "published_at": "2026-06-07T15:22:29+00:00",
+    "importance": 4.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon"
+    ],
+    "actors": [
+      "Donald Trump",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ae4cfab6a793672409095fea",
+    "title": "Ukrainians playing Russia came close to beating NATO in cyber war exercise — FT - RBC-Ukraine",
+    "published_at": "2026-06-07T15:02:15+00:00",
+    "importance": 4.0,
+    "category": "russia_nato_europe",
+    "theatre": "russia_nato_europe",
+    "countries": [
+      "Ukraine",
+      "NATO member states"
+    ],
+    "actors": [
+      "Ukraine",
+      "NATO"
+    ],
+    "organizations": [
+      "NATO"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "a5a5e2888d75075cbcb473aa",
+    "title": "Does Israel really think it can get rid of Hezbollah in Lebanon?",
+    "published_at": "2026-06-07T14:58:17+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Hezbollah",
+      "Israel",
+      "United States"
+    ],
+    "organizations": [
+      "Arab Center Washington DC"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "c6163066710b223e90bbf77f",
+    "title": "Middle East crisis live: at least two people killed and 11 injured in Israeli strikes on southern Beirut, reports say - The Guardian",
+    "published_at": "2026-06-07T13:37:00+00:00",
+    "importance": 4.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "92f8707e1b56ea8a22bfa910",
+    "title": "US says shot down Iran drones as war reaches 100th day",
+    "published_at": "2026-06-07T15:00:19+00:00",
+    "importance": 8.0,
+    "category": "strait_hormuz",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "United States",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1009f04c055048695d5c0daf",
+    "title": "Iran will deliver 'painful response' to Israel for Beirut strikes",
+    "published_at": "2026-06-07T14:58:41+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Iran",
+      "Israel"
+    ],
+    "actors": [
+      "Iran",
+      "Israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "2177e6165963d9e38b9c05ce",
+    "title": "Army frees 360 abductees after clashes with Boko Haram in Nigeria’s Borno",
+    "published_at": "2026-06-07T14:39:53+00:00",
+    "importance": 5.0,
+    "category": "africa_sahel",
+    "theatre": "africa_sahel",
+    "countries": [
+      "Nigeria"
+    ],
+    "actors": [
+      "Boko Haram",
+      "Nigerian army"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1880c18673b03382bfb71dd5",
+    "title": "Israel kills nine in Gaza as Egypt hosts renewed ceasefire talks",
+    "published_at": "2026-06-07T14:31:33+00:00",
+    "importance": 5.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Palestine",
+      "Gaza Strip"
+    ],
+    "actors": [
+      "Israeli army",
+      "Hamas",
+      "Palestinian factions"
+    ],
+    "organizations": [
+      "Egypt",
+      "Qatar",
+      "Turkiye"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "eb973c1c62a7cc7fe79b7947",
+    "title": "Israel escalates war against Hezbollah with airstrikes on Beirut suburbs",
+    "published_at": "2026-06-07T14:49:37+00:00",
+    "importance": 7.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Israel",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "962acd93961771a9704908b7",
+    "title": "Когда-то психоделики ассоциировались с хиппи и зависимостями. Но теперь МДМА и другие вещества все чаще используют как лекарства. Они и правда эффективны? А что ими лечат? И не опасна ли такая терапия?",
+    "published_at": "2026-06-07T14:41:36+00:00",
+    "importance": 4.0,
+    "category": "critical_minerals",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "Donald Trump",
+      "FDA"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "9b147debfd66663a00474a22",
+    "title": "«Он единственный россиянин, которого готовы терпеть в Киеве». Бизнесменом, который ездил встречаться с Зеленским и передавал послание Путину, оказался Роман Абрамович",
+    "published_at": "2026-06-07T14:40:13+00:00",
+    "importance": 4.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Roman Abramovich",
+      "Vladimir Putin",
+      "Volodymyr Zelensky"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "f0ada1603c662a4b6928aa02",
+    "title": "Soccer-Iran's World Cup team arrive in Tijuana with US tensions high",
+    "published_at": "2026-06-07T14:36:35+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "Iran's national soccer team",
+      "U.S. authorities"
+    ],
+    "organizations": [
+      "Federation of Iran",
+      "Marriott hotel"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "834a7ccec9623e58f7e28522",
+    "title": "Fifty-two hours on an Israeli prison ship",
+    "published_at": "2026-06-07T14:14:50+00:00",
+    "importance": 4.0,
+    "category": "ukraine_russia_israel_conflict",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Gaza"
+    ],
+    "actors": [
+      "Israeli forces",
+      "Global Sumud Flotilla activists"
+    ],
+    "organizations": [
+      "Nahshon (Israeli military landing craft)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "fd3c5f0cf03473bf968e98b2",
+    "title": "Missiles and negotiations: Iran 100 days into the war with US and Israel",
+    "published_at": "2026-06-07T14:14:29+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "United States",
+      "Israel",
+      "Iran"
+    ],
+    "organizations": [
+      "Islamic Revolutionary Guard Corps (IRGC)",
+      "Lebanese group Hezbollah"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "e308467ecfc0022347ef293f",
+    "title": "Israel strikes southern suburbs of Lebanon’s capital Beirut",
+    "published_at": "2026-06-07T14:00:05+00:00",
+    "importance": 7.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "fd138316662049c1bff9fab5",
+    "title": "Why has the Pentagon raised the risk of Israeli spying to the highest level?",
+    "published_at": "2026-06-07T13:47:19+00:00",
+    "importance": 5.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Israel",
+      "United States"
+    ],
+    "actors": [
+      "Pentagon",
+      "Defense Intelligence Agency",
+      "Israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4bb38f55e66261fd166d2f27",
+    "title": "Israel Continues Strikes on Gaza, Killing Several in Ongoing Ceasefire Violations - Countercurrents",
+    "published_at": "2026-06-07T11:54:39+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Gaza"
+    ],
+    "actors": [
+      "Israel",
+      "Palestinians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "3cd88d763246561f07b9f396",
+    "title": "China urged to fast-track carrier fleet upgrades as Japan boosts strike power",
+    "published_at": "2026-06-07T14:00:07+00:00",
+    "importance": 7.0,
+    "category": "global_crisis",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Japan"
+    ],
+    "actors": [
+      "PLA Navy",
+      "Japanese military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "7896fe6fd02fef2b57b233a7",
+    "title": "Hundreds of captives freed from Boko Haram mountain hideout",
+    "published_at": "2026-06-07T13:38:28+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Nigeria"
+    ],
+    "actors": [
+      "Boko Haram",
+      "Nigerian Army"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "5fe695ebd93f97ca0269dcac",
+    "title": "Middle East crisis live: Israel strikes southern Beirut days after ceasefire agreement with Lebanon",
+    "published_at": "2026-06-07T13:37:36+00:00",
+    "importance": 8.0,
+    "category": "global_crisis",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Hezbollah",
+      "Israeli military",
+      "Lebanese government"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "f0b1c419d76e401aa1ea5b7b",
+    "title": "‘What ceasefire?’ Palestinians inspect destruction after Israeli strike - Al Jazeera",
+    "published_at": "2026-06-07T13:29:49+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Palestinians",
+      "Israelis"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "b0407d9fb330950c874b9366",
+    "title": "Taiwan dispatches vessels to counter China's 'law enforcement operation' - TRT World",
+    "published_at": "2026-06-07T07:36:45+00:00",
+    "importance": 4.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Taiwan",
+      "China"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4cddc4db5428d739b4a73c96",
+    "title": "China holds 'special operation' near Taiwan after Japan-Philippines sea border talks - MSN",
+    "published_at": "2026-06-07T04:04:52+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Taiwan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "04acfe0e713d16d70b9a4123",
+    "title": "Trump says he would not unfreeze Iran's assets ahead before deal is done",
+    "published_at": "2026-06-07T13:36:37+00:00",
+    "importance": 4.0,
+    "category": "sanctions",
+    "theatre": "",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "Donald Trump"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "48783a9450342046b9bc984b",
+    "title": "Война. 1565-й день. Украина обвиняет Россию в ударе по хранилищу с ядерным топливом в Чернобыле. Киев обратился в МАГАТЭ",
+    "published_at": "2026-06-07T13:32:32+00:00",
+    "importance": 8.0,
+    "category": "critical_minerals",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Ukraine",
+      "Russia",
+      "International Atomic Energy Agency"
+    ],
+    "organizations": [
+      "Энергоатом",
+      "International Atomic Energy Agency"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "565b234060aaabe8f0615b0f",
+    "title": "Will ‘Trump-class’ battleship be a sitting duck for Chinese carrier-killer missiles?",
+    "published_at": "2026-06-07T13:31:32+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "US Congress",
+      "House Armed Services Committee",
+      "Congressman Joe Courtney"
+    ],
+    "organizations": [
+      "Department of Defense",
+      "navy"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "f886f34235ef5bc94aa18224",
+    "title": "‘What ceasefire?’ Palestinians inspect destruction after Israeli strike",
+    "published_at": "2026-06-07T13:26:23+00:00",
+    "importance": 5.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Palestinians",
+      "Israelis"
+    ],
+    "organizations": [
+      "Egypt"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "f0059926c01ae9755e3fd40d",
+    "title": "100 days into Iran war, Americans face higher prices",
+    "published_at": "2026-06-07T13:25:04+00:00",
+    "importance": 5.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "Donald Trump",
+      "US government",
+      "Israel"
+    ],
+    "organizations": [
+      "Moody’s Analytics",
+      "American Automobile Association (AAA)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "aeb2ef17bcebbbdd7cb986fe",
+    "title": "Russian drone strike damages site near Chornobyl nuclear plant",
+    "published_at": "2026-06-07T12:47:23+00:00",
+    "importance": 10.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine"
+    ],
+    "actors": [
+      "Russia",
+      "Ukraine"
+    ],
+    "organizations": [
+      "International Atomic Energy Agency",
+      "Energoatom"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "0459641ad801c497cbb4edac",
+    "title": "Congo’s health workers treat Ebola without pay as WHO seeks resources",
+    "published_at": "2026-06-07T13:03:47+00:00",
+    "importance": 9.0,
+    "category": "central_africa",
+    "theatre": "central_africa",
+    "countries": [
+      "Congo"
+    ],
+    "actors": [
+      "Congo's health workers",
+      "WHO"
+    ],
+    "organizations": [
+      "WHO"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "41d224514de815a123024f3e",
+    "title": "US resolution text at IAEA demands Iran open up on sites, uranium stocks",
+    "published_at": "2026-06-07T13:01:42+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "United States",
+      "International Atomic Energy Agency",
+      "Iran"
+    ],
+    "organizations": [
+      "IAEA"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "f64886c8548a0682452ac244",
+    "title": "As US turns 250, Trump adds fuel to battles over monuments and memory",
+    "published_at": "2026-06-07T13:00:34+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "Donald Trump",
+      "Paul Farber",
+      "Monuments Lab"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "67f5c7c2f20c8b13f5fd9dcd",
+    "title": "Can Mark Carney’s US-China juggling act keep Canada’s ‘primary relationship’ intact?",
+    "published_at": "2026-06-07T13:00:07+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Canada",
+      "China",
+      "United States"
+    ],
+    "actors": [
+      "Mark Carney",
+      "Wang Yi"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "6ca14eb3f3e4f8d4d6caabf0",
+    "title": "Xi heads to Pyongyang, Moscow on his mind",
+    "published_at": "2026-06-07T12:55:46+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "China",
+      "North Korea"
+    ],
+    "actors": [
+      "Xi Jinping",
+      "Kim Jong Un"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "12d82386ec9fae371091bb42",
+    "title": "Taiwan coast guard ‘expels’ Chinese ships from restricted waters - Internazionale",
+    "published_at": "2026-06-07T12:36:22+00:00",
+    "importance": 4.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Taiwan coast guard",
+      "Chinese ships"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "45b60aca3a80872c1f27798d",
+    "title": "Zelensky criticises 'vile' Chornobyl drone strike ahead of London talks",
+    "published_at": "2026-06-07T12:09:57+00:00",
+    "importance": 9.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine"
+    ],
+    "actors": [
+      "Volodymyr Zelensky",
+      "Russia",
+      "UK",
+      "France",
+      "Germany"
+    ],
+    "organizations": [
+      "Enerhoatom",
+      "Kyiv officials"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "820993d0248e60fabfbe9ecb",
+    "title": "Israel bombs Beirut with multiple blasts heard",
+    "published_at": "2026-06-07T12:43:06+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "acf8bcd5ffd320c5126a733b",
+    "title": "Taiwan coast guard 'expels' Chinese ships from restricted waters - The Straits Times",
+    "published_at": "2026-06-07T12:36:55+00:00",
+    "importance": 4.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Taiwan coast guard",
+      "Chinese ships"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ed5cc7002840aa97e47ccd48",
+    "title": "Ukraine nearly routed NATO team in cyberwar simulation based on Russian scenario, - FT - Цензор.НЕТ",
+    "published_at": "2026-06-07T11:58:00+00:00",
+    "importance": 4.0,
+    "category": "russia_nato_europe",
+    "theatre": "russia_nato_europe",
+    "countries": [
+      "Ukraine",
+      "NATO"
+    ],
+    "actors": [
+      "Ukraine",
+      "NATO"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "38fe5c47b9da764c5acd601c",
+    "title": "Israel kills five in Gaza as Egypt hosts new ceasefire talks - The Straits Times",
+    "published_at": "2026-06-07T11:56:54+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Gaza",
+      "Egypt"
+    ],
+    "actors": [
+      "Israel",
+      "Palestinians",
+      "Egypt"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "5f7591ee965a1863ab66a23b",
+    "title": "US-Iran War Big Update: US military shoots down Iranian attack drones, tensions escalate in Strait of Hormuz, - India.Com",
+    "published_at": "2026-06-07T05:36:15+00:00",
+    "importance": 8.0,
+    "category": "oil",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US military",
+      "Iranian military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8a25f07ef812ab293eac8ff8",
+    "title": "Ukraine escalates conflict with 500 drone strikes inside Russia in 24 hours as NATO unfolds Nordic strategy - Bankingnews",
+    "published_at": "2026-06-07T12:34:03+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Ukraine",
+      "NATO"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ace766b22c9b45d919668e0a",
+    "title": "On Taiwan, the Trump-Xi summit offered more than optics",
+    "published_at": "2026-06-07T12:30:06+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "United States"
+    ],
+    "actors": [
+      "Xi Jinping",
+      "Donald Trump"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ba184735d673f77d1e802901",
+    "title": "Russian drone hits building storing spent nuclear fuel near Chornobyl",
+    "published_at": "2026-06-07T11:39:54+00:00",
+    "importance": 10.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Russian forces",
+      "Ukrainian government"
+    ],
+    "organizations": [
+      "International Atomic Energy Agency",
+      "Energoatom"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "89acc1ce29aba31f089aa246",
+    "title": "Zelenskyy used Abramovich to send message to Putin about peace talks",
+    "published_at": "2026-06-07T12:06:17+00:00",
+    "importance": 4.0,
+    "category": "us_china_drone_conflicts",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Volodymyr Zelenskyy",
+      "Roman Abramovich",
+      "Vladimir Putin"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "7832d5178379e806318187bc",
+    "title": "North Korea Sees Nuclear Deterrent Role For Navy",
+    "published_at": "2026-06-07T12:05:04+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea",
+      "China"
+    ],
+    "actors": [
+      "Kim Jong Un",
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e9573595768207ee70d37795",
+    "title": "Russian drone hits nuclear fuel site near Chernobyl",
+    "published_at": "2026-06-07T10:37:30+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine"
+    ],
+    "actors": [
+      "Russia"
+    ],
+    "organizations": [
+      "Ukraine's state nuclear company"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "0bac2f2237bd60ff1d466276",
+    "title": "Israel kills five in Gaza as Egypt hosts new ceasefire talks",
+    "published_at": "2026-06-07T12:01:51+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Palestine"
+    ],
+    "actors": [
+      "Hamas",
+      "Israeli military"
+    ],
+    "organizations": [
+      "United Nations Security Council",
+      "Board of Peace"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "fc62fefa5cd27ed81b023b95",
+    "title": "More sanctions could be imposed on Israeli settlers in 'coming days', France says",
+    "published_at": "2026-06-07T12:01:51+00:00",
+    "importance": 4.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "France",
+      "Israel"
+    ],
+    "actors": [
+      "French Foreign Minister Jean-Noel Barrot",
+      "Israeli government"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "efd7c5f64910d3777a944dd5",
+    "title": "Pakistan’s mediators in Iran as US downs drones, Lebanon looks for peace",
+    "published_at": "2026-06-07T11:52:27+00:00",
+    "importance": 4.0,
+    "category": "global_crisis",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Pakistan",
+      "Iran"
+    ],
+    "actors": [
+      "Pakistan",
+      "Iran",
+      "United States"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e0015937120363bd855f9e10",
+    "title": "Armenians go to polls in test of PM’s pivot to Europe amid Russian pressure",
+    "published_at": "2026-06-07T11:42:01+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia"
+    ],
+    "actors": [
+      "Nikol Pashinyan",
+      "Russia",
+      "United States"
+    ],
+    "organizations": [
+      "Civil Contract party",
+      "Strong Armenia party"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "636677543276cc2dc3420414",
+    "title": "Russian Forces Attack Rescue Vessels In Ukrainian Waters, Causing Injuries",
+    "published_at": "2026-06-07T11:41:58+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Russian forces",
+      "Ukrainian maritime search and rescue service"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "fbeef9d1db07c356efddf6dd",
+    "title": "Army Kills Three Palestinians In New Ceasefire Violations In Gaza - - IMEMC News",
+    "published_at": "2026-06-07T10:14:02+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli Army",
+      "Palestinians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d0687d865940f6238281e3df",
+    "title": "Kim orders North Korea to increase missile production by 2.5 times - خبرگزاری صدای افغان(آوا)",
+    "published_at": "2026-06-07T09:38:42+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea"
+    ],
+    "actors": [
+      "Kim"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4d6bfebfd854b8ad3e8cc712",
+    "title": "Ukraine says drone hit nuclear fuel facility near Chernobyl",
+    "published_at": "2026-06-07T10:51:00+00:00",
+    "importance": 8.0,
+    "category": "critical_minerals",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine"
+    ],
+    "actors": [
+      "Ukraine",
+      "IAEA"
+    ],
+    "organizations": [
+      "IAEA"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "552fc582fe4bea258af63e01",
+    "title": "US insurers’ move to back vaccines sends ‘powerful’ message about safety of shots, experts say",
+    "published_at": "2026-06-07T11:00:32+00:00",
+    "importance": 9.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "AHIP",
+      "Advisory Committee on Immunization Practices (ACIP)",
+      "American Academy of Pediatrics (AAP)"
+    ],
+    "organizations": [
+      "AHIP",
+      "Advisory Committee on Immunization Practices (ACIP)",
+      "American Academy of Pediatrics (AAP)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "f5598455668b96d721973156",
+    "title": "North Korea says its nuclear programme is ‘irreversible’ ahead of Chinese leader’s visit",
+    "published_at": "2026-06-07T11:00:18+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea"
+    ],
+    "actors": [
+      "Kim Jong-un",
+      "Kim Yo-jong",
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e3f126c4222b4f30cf14071d",
+    "title": "China Announces Maritime Operation Near Taiwan Amid Japan–Philippines Maritime Border Talks - Мілітарний",
+    "published_at": "2026-06-07T09:00:44+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Taiwan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "df8f8c39523aa041c8686011",
+    "title": "An Eid celebration on a Gaza rooftop turns into a ‘horror movie’",
+    "published_at": "2026-06-07T10:17:59+00:00",
+    "importance": 7.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine"
+    ],
+    "actors": [
+      "Israel",
+      "Gaza civilians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "3fb68a581a47c498bdcb97f3",
+    "title": "US troops, families adjust to new normal of Iran war",
+    "published_at": "2026-06-07T10:36:34+00:00",
+    "importance": 7.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "US military",
+      "Iranian forces"
+    ],
+    "organizations": [
+      "Pentagon",
+      "U.S. Department of Defense"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "5bd8d3798dbc1fd24d087e5d",
+    "title": "Russian drone hits nuclear-fuel storage facility near Chornobyl, Ukraine says",
+    "published_at": "2026-06-07T10:21:25+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine"
+    ],
+    "actors": [
+      "Russian forces",
+      "Ukrainian President Zelenskyy"
+    ],
+    "organizations": [
+      "International Atomic Energy Agency",
+      "Energoatom"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "a042de8b048382cacc5c18be",
+    "title": "Пропускной пункт «Джанкой» на въезде в Крым закрыли после атаки украинских дронов",
+    "published_at": "2026-06-07T10:21:06+00:00",
+    "importance": 5.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Ukrainian military",
+      "Russian authorities"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "b77c93a15eb9109558575a6f",
+    "title": "One killed, 5 wounded in Israel shooting attacks; suspect dead",
+    "published_at": "2026-06-07T10:10:34+00:00",
+    "importance": 4.0,
+    "category": "us_iran_nuclear",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel"
+    ],
+    "actors": [
+      "Israeli authorities",
+      "Perpetrators"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "88ceb7bbcc74629112cd4ced",
+    "title": "Nigeria: Hundreds of kidnapped women, children freed from Boko Haram jihadists",
+    "published_at": "2026-06-07T10:09:52+00:00",
+    "importance": 4.0,
+    "category": "west_africa",
+    "theatre": "west_africa",
+    "countries": [
+      "Nigeria"
+    ],
+    "actors": [
+      "Boko Haram",
+      "Nigerian military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "5bfbc90b62127634a33da734",
+    "title": "‘It’s time to move forward’: Armenians vote in election closely watched by Russia and EU",
+    "published_at": "2026-06-07T09:56:04+00:00",
+    "importance": 5.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia"
+    ],
+    "actors": [
+      "Nikol Pashinyan",
+      "Samvel Karapetyan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "6630ea37cdb3d7a00d07950a",
+    "title": "Inflation Is Surging, Trump Wants Rate Cuts -- and Kevin Warsh Is Caught in a Market-Moving Crossfire - The Globe and Mail",
+    "published_at": "2026-06-07T09:11:43+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "Donald Trump",
+      "Kevin Warsh"
+    ],
+    "organizations": [
+      "Federal Reserve"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "0071673e6c937f17b436d385",
+    "title": "Will Xi’s North Korea visit show Kim that China remains Pyongyang’s most vital ally?",
+    "published_at": "2026-06-07T10:00:30+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea",
+      "China"
+    ],
+    "actors": [
+      "Xi Jinping",
+      "William Yang (International Crisis Group)"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ad1d3cd5abeb98e85eb78afb",
+    "title": "Hamas, Palestinian Islamic Jihad says shooting 'natural consequence' of settler violence",
+    "published_at": "2026-06-07T09:54:47+00:00",
+    "importance": 4.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Gaza"
+    ],
+    "actors": [
+      "Hamas",
+      "Palestinian Islamic Jihad"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d21546cc24767cf8d68f450c",
+    "title": "Armenians vote in parliamentary elections seen as ‘referendum on independence’",
+    "published_at": "2026-06-07T09:43:46+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia"
+    ],
+    "actors": [
+      "Nikol Pashinyan",
+      "Russia"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8224c0329a97678029954077",
+    "title": "How have countries around the world responded to the US-Israel war on Iran?",
+    "published_at": "2026-06-07T09:35:31+00:00",
+    "importance": 8.0,
+    "category": "global_crisis",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States",
+      "Israel"
+    ],
+    "actors": [
+      "US",
+      "Israel",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "7e75bbd4d68c204e47ecc168",
+    "title": "100 days of the US–Israel war on Iran",
+    "published_at": "2026-06-07T09:34:16+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "US",
+      "Israel",
+      "Iran",
+      "Lebanese civilians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "12bc5f959a7fc11a2556b3eb",
+    "title": "Delays to defence investment plan have damaged UK’s credibility, say MPs",
+    "published_at": "2026-06-07T09:29:48+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "UK"
+    ],
+    "actors": [
+      "UK parliamentary committee",
+      "UK Ministry of Defence",
+      "UK government"
+    ],
+    "organizations": [
+      "Public Accounts Committee (PAC)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "5c2602f0201fec7a63b8e979",
+    "title": "Israel's permanent state of war comes with economic, social costs",
+    "published_at": "2026-06-07T09:29:25+00:00",
+    "importance": 5.0,
+    "category": "sovereign_debt",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel"
+    ],
+    "actors": [
+      "Israeli government",
+      "Hamas",
+      "Iran"
+    ],
+    "organizations": [
+      "Bank of Israel",
+      "Finance ministry",
+      "IDF (Israel Defense Forces)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "0dd157197e9d7142f8ab406f",
+    "title": "EU and Russia clash as Armenians head to the polls, Putin fumes",
+    "published_at": "2026-06-07T09:29:10+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia",
+      "Russia"
+    ],
+    "actors": [
+      "Nikol Pashinyan",
+      "Vladimir Putin"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1cc2a53d283b9e9956bbeb9a",
+    "title": "Kevin Warsh Takes Helm at Federal Reserve as Inflation Hits 3.8% and Tariffs Bite - News and Statistics - IndexBox",
+    "published_at": "2026-06-07T09:20:00+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "Kevin Warsh"
+    ],
+    "organizations": [
+      "Federal Reserve"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "5aa114b371d54c3ad711420f",
+    "title": "The accomplishments of 100 days of war on Iran are undeniable",
+    "published_at": "2026-06-07T08:55:20+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "iran"
+    ],
+    "actors": [
+      "united_states",
+      "israel"
+    ],
+    "organizations": [
+      "international atomic energy agency"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "344a3f38de1ff7b67ecea833",
+    "title": "Iran after 100 days of war: The triumph of survival",
+    "published_at": "2026-06-07T08:52:20+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "United States",
+      "Israel",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "9ca3c9d08485a23b7c7c7e7c",
+    "title": "Pakistan’s Naqvi visits Iran with ‘special letter’ for supreme leader",
+    "published_at": "2026-06-07T08:45:01+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Pakistan",
+      "Iran"
+    ],
+    "actors": [
+      "Mohsin Naqvi",
+      "Mojtaba Khamenei"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1b0155037d9b995ba4eb6f2a",
+    "title": "Teesta River Dispute: A 15-Year Impasse on the Brink of Resolution or South Asia’s New Geopolitical Battleground? - Pressenza - International Press Agency",
+    "published_at": "2026-06-07T04:41:42+00:00",
+    "importance": 4.0,
+    "category": "india_china_himalaya",
+    "theatre": "india_china_himalaya",
+    "countries": [
+      "India",
+      "Bangladesh"
+    ],
+    "actors": [
+      "India",
+      "Bangladesh"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "cf465d5ff539ad0d118645cf",
+    "title": "China holds ‘special operation’ near Taiwan after Japan-Philippines sea border talks - Free Malaysia Today",
+    "published_at": "2026-06-07T03:23:58+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Japan",
+      "Philippines"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "a1c1ef31e05dbc1ed04dbf8b",
+    "title": "Taiwan dispatches vessels to counter China's 'law enforcement operation' - TRT World",
+    "published_at": "2026-06-07T07:36:45+00:00",
+    "importance": 4.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Taiwan",
+      "China"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "586e01e72af278e2e6c1229f",
+    "title": "Китай начал свою «специальную операцию» в водах к востоку от Тайваня. Это ответ на территориальный спор с Японией и Филиппинами. Что важно знать?",
+    "published_at": "2026-06-07T08:51:15+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Japan",
+      "Philippines"
+    ],
+    "actors": [
+      "China",
+      "Japan",
+      "Philippines"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e8a9d497460c220806a4876e",
+    "title": "Israeli troops kill infant, injure parents in West Bank",
+    "published_at": "2026-06-07T08:39:25+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli troops",
+      "Palestinian health ministry"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "54bd13dc5bf1be4f95a356c8",
+    "title": "Israel claims killing of Hamas commander in southern Gaza",
+    "published_at": "2026-06-07T08:34:55+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Hamas",
+      "Gaza"
+    ],
+    "actors": [
+      "Israeli army",
+      "Hamas"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "63efa3e511ad97f1b017506e",
+    "title": "Chinese team arrives in DR Congo to help fight Ebola, ‘filling US void’ - South China Morning Post",
+    "published_at": "2026-06-07T06:00:16+00:00",
+    "importance": 9.0,
+    "category": "central_africa",
+    "theatre": "central_africa",
+    "countries": [
+      "DR Congo"
+    ],
+    "actors": [
+      "China",
+      "DR Congo"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "a3177de7bef76a9d1cc5fe7a",
+    "title": "Israeli forces continue to pound southern Lebanon",
+    "published_at": "2026-06-07T08:27:56+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Israeli forces",
+      "Lebanese anti-government drones"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "06abb413eadd04c692b1a5f2",
+    "title": "Palestinian Fisherman Killed as Israeli Forces Continue Ceasefire Violations - Palestine Chronicle",
+    "published_at": "2026-06-07T08:21:27+00:00",
+    "importance": 4.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Palestinian fishermen",
+      "Israeli forces"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "0de21418f977950790422355",
+    "title": "Hamas begins talks with Palestinian factions on Gaza ceasefire agreement - People's Daily Online",
+    "published_at": "2026-06-07T07:38:00+00:00",
+    "importance": 4.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine"
+    ],
+    "actors": [
+      "Hamas"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8df9242a614994c8f14971ee",
+    "title": "For Nigeria's Shia, the US-Israeli war on Iran is personal",
+    "published_at": "2026-06-07T08:07:45+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Nigeria"
+    ],
+    "actors": [
+      "Islamic Movement in Nigeria",
+      "Shia Muslims"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8c8969a96f794a4eb9ecead7",
+    "title": "Украина заявила, что российский беспилотник атаковал хранилище отработанного ядерного топлива в Чернобыле",
+    "published_at": "2026-06-07T07:58:51+00:00",
+    "importance": 7.0,
+    "category": "critical_minerals",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Ukraine",
+      "Russia"
+    ],
+    "organizations": [
+      "Energoatom",
+      "Rosatom",
+      "MAAG"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "b21fee04cc36676d2576cd9e",
+    "title": "Iran war day 100: US, Iran trade attacks again, raising tensions",
+    "published_at": "2026-06-07T07:33:38+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "US Central Command",
+      "Iranian Ministry of Foreign Affairs",
+      "Pakistani Interior Minister Mohsin Naqvi"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "c237bd15214b0b6787b9ff46",
+    "title": "Taiwan dispatches vessels to counter China's 'law enforcement operation' - TRT World",
+    "published_at": "2026-06-07T07:36:45+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Taiwan",
+      "China"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "c320aaa78010fc4ec92fb9bf",
+    "title": "Steve Rosenberg: Lasting image of Russia's economic forum is plume of smoke over St Petersburg",
+    "published_at": "2026-06-07T07:11:18+00:00",
+    "importance": 7.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Vladimir Putin",
+      "Volodymyr Zelensky"
+    ],
+    "organizations": [
+      "International Economic Forum (SPIEF)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "03f6e289a918b541e8c16adf",
+    "title": "Armenia, once Russia's reliable ally, considers an EU future",
+    "published_at": "2026-06-07T06:58:00+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia"
+    ],
+    "actors": [
+      "Nikol Pashinyan",
+      "Samvel Karapetyan",
+      "Robert Kocharyan",
+      "Gagik Tsarukyan"
+    ],
+    "organizations": [
+      "International Republican Institute (IRI)",
+      "European Political Community"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "c7273e725e981eb47e2ddfe4",
+    "title": "Morning update",
+    "published_at": "2026-06-07T07:03:40+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States",
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "US forces",
+      "Iranian drones",
+      "Pakistan interior minister",
+      "Hezbollah",
+      "Israeli troops"
+    ],
+    "organizations": [
+      "UN peacekeeping mission in Lebanon"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "ec8b6e1bb94ba32d36c013bd",
+    "title": "US Terror Designation of Brazil’s Two Biggest Gangs Takes Effect",
+    "published_at": "2026-06-07T06:54:45+00:00",
+    "importance": 5.0,
+    "category": "sanctions",
+    "theatre": "south_america",
+    "countries": [
+      "Brazil"
+    ],
+    "actors": [
+      "US",
+      "Comando Vermelho",
+      "Primeiro Comando da Capital"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "0bd39125e8776c0458f5ff37",
+    "title": "Ahead of talks, Kim has a message for Xi: North Korea’s nukes aren’t up for negotiation",
+    "published_at": "2026-06-07T06:44:00+00:00",
+    "importance": 4.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "north korea",
+      "china"
+    ],
+    "actors": [
+      "kim jong un",
+      "xi jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "c10289928d2ed47edb08d7d7",
+    "title": "Middle East live: US downs two Iranian drones targeting Hormuz shipping traffic",
+    "published_at": "2026-06-07T06:39:58+00:00",
+    "importance": 7.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "US military",
+      "Iranian military"
+    ],
+    "organizations": [
+      "OPEC+"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "2b865c797872d078244452e2",
+    "title": "Two killed, 22 wounded in Israeli strike on south Lebanon, ministry says",
+    "published_at": "2026-06-07T06:31:07+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel",
+      "Lebanese army"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d0b743e8b1c382a9189193b8",
+    "title": "North Korea nuclear programme 'absolutely non-negotiable': Kim Jong Un's sister",
+    "published_at": "2026-06-07T06:30:42+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea",
+      "China"
+    ],
+    "actors": [
+      "Kim Yo Jong",
+      "Chinese President Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "a446cb4e3afa5fdb47f2fa99",
+    "title": "Почему поражение Орбана на выборах — это одно из важнейших событий десятилетия в европейской политике? И как оно изменит правых в ЕС? Перевод текста Ивана Крастева (Foreign Affairs)",
+    "published_at": "2026-06-07T06:24:53+00:00",
+    "importance": 5.0,
+    "category": "eastern_europe",
+    "theatre": "eastern_europe",
+    "countries": [
+      "Hungary"
+    ],
+    "actors": [
+      "Viktor Orban",
+      "Peter Madyar"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "290799e64e7cfc93bea4435d",
+    "title": "Israeli drone strike kills 6 Palestinians in Gaza City tent - Yeni Safak English",
+    "published_at": "2026-06-07T06:14:20+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Palestine"
+    ],
+    "actors": [
+      "Israel",
+      "Palestinians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "80a0567fb77dcb8440d7b7a9",
+    "title": "Tehran raises concerns over strikes at IAEA board meeting",
+    "published_at": "2026-06-07T06:13:35+00:00",
+    "importance": 9.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "Iran",
+      "US",
+      "Israel"
+    ],
+    "organizations": [
+      "IAEA"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "9c70a05b6567dce01a7e4ef2",
+    "title": "Social housing lists ‘would take 119 years to clear at current building rate’",
+    "published_at": "2026-06-07T06:00:26+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "England"
+    ],
+    "actors": [
+      "Shelter",
+      "Sarah Elliott",
+      "Suzanne Muna",
+      "Social Housing Action Campaign"
+    ],
+    "organizations": [
+      "Shelter"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "de1e6b7ca0444bde197787dd",
+    "title": "Iran condemns US strikes on coastal sites as ceasefire violation - Yeni Safak English",
+    "published_at": "2026-06-07T06:09:19+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "United States",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "04a1a2ff2e4b7e78ae7fdd6b",
+    "title": "Chinese medical team arrives in DR Congo to help fight Ebola, filling US void",
+    "published_at": "2026-06-07T06:00:16+00:00",
+    "importance": 9.0,
+    "category": "world_diseases",
+    "theatre": "central_africa",
+    "countries": [
+      "Democratic Republic of Congo"
+    ],
+    "actors": [
+      "China",
+      "DR Congo"
+    ],
+    "organizations": [
+      "National Health Commission of China"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "a8a0992282689460e6b7201b",
+    "title": "Insecurity and instability drive voters in Peru's tight presidential race",
+    "published_at": "2026-06-06T23:17:43+00:00",
+    "importance": 4.0,
+    "category": "social_unrest",
+    "theatre": "south_america",
+    "countries": [
+      "Peru"
+    ],
+    "actors": [
+      "Keiko Fujimori",
+      "Roberto Sánchez"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "41d33bbfbdad8662066ed16d",
+    "title": "By the numbers: 100 days of the US-Israel war on Iran",
+    "published_at": "2026-06-07T05:30:52+00:00",
+    "importance": 7.0,
+    "category": "global_crisis",
+    "theatre": "gulf_iran",
+    "countries": [
+      "lebanon",
+      "iran"
+    ],
+    "actors": [
+      "us",
+      "israel",
+      "hezbollah"
+    ],
+    "organizations": [
+      "wfp"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "faaf4855bb83d0e45bb63aa3",
+    "title": "Why Zelensky’s celebration of WWII-era nationalist guerrillas is causing tension with Poland",
+    "published_at": "2026-06-07T05:40:47+00:00",
+    "importance": 4.0,
+    "category": "russia_nato_europe",
+    "theatre": "russia_nato_europe",
+    "countries": [
+      "Ukraine",
+      "Poland"
+    ],
+    "actors": [
+      "Volodymyr Zelensky",
+      "Lech Walesa",
+      "Karol Nawrocki"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "102e29cd168482e625eb0436",
+    "title": "China holds ‘special operation’ near Taiwan after Japan-Philippines sea border talks - The Hindu",
+    "published_at": "2026-06-07T04:48:04+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Japan",
+      "Philippines"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "7191821fcb31d909c81d415a",
+    "title": "Armenia polls open in test of prime minister's pivot away from Russia",
+    "published_at": "2026-06-07T05:21:40+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia"
+    ],
+    "actors": [
+      "Nikol Pashinyan",
+      "Russia",
+      "Ukraine"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "913af03b72b97fa71606a7e7",
+    "title": "Video: Displaced Palestinian killed by Israeli forces on his wedding day",
+    "published_at": "2026-06-07T05:18:39+00:00",
+    "importance": 5.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli forces",
+      "Muhannad Farwaneh"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ee3242fde80d35a620ff43d1",
+    "title": "China Launches Maritime Operation Near Taiwan After Japan-Philippines Talks - Khaama Press",
+    "published_at": "2026-06-07T05:13:08+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Japan",
+      "Philippines"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "79e1733913226aaa485315d9",
+    "title": "100 days of the Iran war: How global markets and the economy have been affected, in charts",
+    "published_at": "2026-06-07T05:00:01+00:00",
+    "importance": 7.0,
+    "category": "oil",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "U.S.",
+      "Iran"
+    ],
+    "organizations": [
+      "Netwealth",
+      "BRI Wealth Management"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "49f733bd0c4bfccf29c60c47",
+    "title": "How many times were the US and Iran on the verge of a deal?",
+    "published_at": "2026-06-07T04:51:02+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "US",
+      "Iran"
+    ],
+    "actors": [
+      "US",
+      "Iran",
+      "Pakistan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "02eb1b4347065c17190e1894",
+    "title": "Video: Senior Iranian official rules out Trump-Khamenei meeting",
+    "published_at": "2026-06-07T05:04:27+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "Mohsen Rezaei",
+      "US President Donald Trump",
+      "Mojtaba Khamenei"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8fd6f6f309b7dd3227d68aae",
+    "title": "Hezbollah claims drone and rocket attacks on Israeli forces in south Lebanon",
+    "published_at": "2026-06-07T05:02:53+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Hezbollah",
+      "Israeli forces"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "666339ecaf4c220357243365",
+    "title": "Could this one man have been behind terrorist attacks on Jewish communities across Europe?",
+    "published_at": "2026-06-07T05:00:24+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iraq",
+      "Belgium",
+      "Netherlands",
+      "United Kingdom"
+    ],
+    "actors": [
+      "Mohammad Baqer Saad Dawood al-Saadi"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4517bbf45cafbeda85f34413",
+    "title": "Greens warn nuclear submarines deal risks war with China as Albanese says Aukus ‘full-steam ahead’",
+    "published_at": "2026-06-07T04:59:56+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "australia"
+    ],
+    "actors": [
+      "greens party",
+      "anthony albanese",
+      "david shoebridge"
+    ],
+    "organizations": [
+      "australian government"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "e4715ae5a016dd8fe51d83a8",
+    "title": "Video: Theo Von shocked by Israeli killing of US journalist",
+    "published_at": "2026-06-07T04:52:50+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Palestine"
+    ],
+    "actors": [
+      "Shireen Abu Akleh",
+      "Israeli forces",
+      "Theo Von",
+      "John Kiriakou"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "7059d33e4d5374f3ac96f42e",
+    "title": "Reports say Pentagon raised Israeli espionage threat level to ‘critical’",
+    "published_at": "2026-06-07T04:49:53+00:00",
+    "importance": 7.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Israel",
+      "United States"
+    ],
+    "actors": [
+      "Pentagon",
+      "Defense Intelligence Agency (DIA)",
+      "Israeli intelligence services"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "b31856ea05e2b839f74ec3da",
+    "title": "Why is Chinese President Xi Jinping visiting North Korea now?",
+    "published_at": "2026-06-07T04:30:44+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "China",
+      "North Korea"
+    ],
+    "actors": [
+      "Xi Jinping",
+      "Kim Jong Un"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "3c8905df5268f519439993a5",
+    "title": "Trump news at a glance: Iran war pushing millions into hunger, UN says, as president struggles to reach peace deal - The Guardian",
+    "published_at": "2026-06-07T02:01:13+00:00",
+    "importance": 5.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "UN",
+      "Trump"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ff7f0e310e408a688fd55838",
+    "title": "Report says US weighing use of frozen Iranian assets for Gulf reconstruction",
+    "published_at": "2026-06-07T03:58:58+00:00",
+    "importance": 5.0,
+    "category": "sanctions",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States",
+      "Gulf states"
+    ],
+    "actors": [
+      "US Treasury Secretary Scott Bessent",
+      "Mohsen Rezaei"
+    ],
+    "organizations": [
+      "US Treasury Department",
+      "Iranian government"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "c111af025961531029e5851e",
+    "title": "Hamas Begins Talks With Palestinian Factions On Gaza Ceasefire Agreement - Bernama",
+    "published_at": "2026-06-07T03:55:29+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Palestine"
+    ],
+    "actors": [
+      "Hamas"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e454ec067513de5b9df0a317",
+    "title": "China holds 'special operation' near Taiwan after Japan-Philippines sea border talks - ABS-CBN",
+    "published_at": "2026-06-07T03:02:04+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Japan",
+      "Philippines"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "99e96ea874029b6fb69fd36d",
+    "title": "Kim Jong Un pushes missile production boost in factory visit before Xi summit - NK News",
+    "published_at": "2026-06-07T01:04:57+00:00",
+    "importance": 4.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea",
+      "China"
+    ],
+    "actors": [
+      "Kim Jong Un",
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "32678976bf0414280c59869a",
+    "title": "Iran denounces ‘political pressure’ from nuclear watchdog",
+    "published_at": "2026-06-07T03:09:54+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "iran"
+    ],
+    "actors": [
+      "iran",
+      "iaea",
+      "united_states",
+      "israel"
+    ],
+    "organizations": [
+      "iaea"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "391e99dbc6402ee9571fdbe6",
+    "title": "China holds 'special operation' near Taiwan after Japan-Philippines sea border talks - Bangladesh Sangbad Sangstha (BSS)",
+    "published_at": "2026-06-07T03:07:28+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Japan",
+      "Philippines"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1223301d8afdf5fb20814239",
+    "title": "Facing settler violence, Palestinian farmers race to harvest",
+    "published_at": "2026-06-07T03:00:25+00:00",
+    "importance": 4.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine"
+    ],
+    "actors": [
+      "Israeli settlers",
+      "Palestinian farmers"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "fb7ca7696d2913e6266f60d7",
+    "title": "Israeli strike kills three soldiers in south Lebanon",
+    "published_at": "2026-06-07T02:57:47+00:00",
+    "importance": 7.0,
+    "category": "global_crisis",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel",
+      "Lebanese military",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "b15be19ecb845e44a58451f4",
+    "title": "UN affirms Kashmir and Palestine are unresolved disputes",
+    "published_at": "2026-06-07T02:53:04+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Pakistan",
+      "India"
+    ],
+    "actors": [
+      "UN Security Council",
+      "Pakistan",
+      "India"
+    ],
+    "organizations": [
+      "United Nations"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "71d5006f7eed50a9b8b7fb0c",
+    "title": "US Ambassador to UN vows to dismantle structures seen as anti-Israel",
+    "published_at": "2026-06-07T02:41:30+00:00",
+    "importance": 4.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "United States",
+      "Israel"
+    ],
+    "actors": [
+      "US Ambassador Jeff Bartos"
+    ],
+    "organizations": [
+      "UN"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "2250cdc7f46b5cc4b79b224a",
+    "title": "US, Iran trade blows as Gulf allies targeted",
+    "published_at": "2026-06-07T02:40:06+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "iran",
+      "kuwait",
+      "bahrain"
+    ],
+    "actors": [
+      "iran",
+      "kuwait",
+      "bahrain",
+      "united states"
+    ],
+    "organizations": [
+      "centcom",
+      "us fifth fleet"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "687977a8dbc1412497712bf7",
+    "title": "Ukraine targets St. Petersburg after Putin refuses talks",
+    "published_at": "2026-06-07T00:48:00+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Ukraine",
+      "Russia"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "3abc8aeaf0f4353be86b85ac",
+    "title": "Hezbollah claims fresh attacks on Israeli forces in southern Lebanon",
+    "published_at": "2026-06-07T02:33:58+00:00",
+    "importance": 4.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Hezbollah",
+      "Israeli forces"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "bffd7c80f0464508c568986f",
+    "title": "Naqvi takes CDF’s message to Tehran amid stalemate",
+    "published_at": "2026-06-07T02:32:29+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Pakistan",
+      "Iran"
+    ],
+    "actors": [
+      "Mohsin Naqvi",
+      "Chief of Defence Forces",
+      "Prime Minister Shehbaz Sharif",
+      "Interior Ministry",
+      "Iranian Supreme Leader Mojtaba Khamenei",
+      "Eskandar Momeni"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "79d02e2ce9af8551c7268fb9",
+    "title": "As OPEC+ meets, Iran war hobbles power to shape oil market",
+    "published_at": "2026-06-07T02:30:18+00:00",
+    "importance": 7.0,
+    "category": "strait_hormuz",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "iran",
+      "saudi_arabia"
+    ],
+    "actors": [
+      "opec+",
+      "iran",
+      "united_states",
+      "israel"
+    ],
+    "organizations": [
+      "rystad_energy",
+      "saxo_bank",
+      "kpler"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "2dfae39865cfc8a72edbbbe5",
+    "title": "Pentagon sees growing espionage threat from Israel",
+    "published_at": "2026-06-07T00:19:00+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States",
+      "Israel"
+    ],
+    "actors": [
+      "Pentagon",
+      "Israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "08522d2d30d788dacdbe849c",
+    "title": "Kim Jong Un pushes missile production boost in factory visit before Xi summit - NK News",
+    "published_at": "2026-06-07T01:01:29+00:00",
+    "importance": 4.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea",
+      "China"
+    ],
+    "actors": [
+      "Kim Jong Un",
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "6c84a968f18076c41995be9e",
+    "title": "US denies visas to Iranian World Cup delegation members, Tasnim reports",
+    "published_at": "2026-06-07T00:46:18+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US",
+      "Iran Football Federation"
+    ],
+    "organizations": [
+      "Tasnim News Agency"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "1abd6f248010bc469441df6a",
+    "title": "North Korea reaffirms nuclear status a day before Xi Jinping's visit",
+    "published_at": "2026-06-07T00:19:10.772469+00:00",
+    "importance": 7.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea",
+      "China"
+    ],
+    "actors": [
+      "Kim Jong Un",
+      "Kim Yo Jong",
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "84e94a0bbbc8e07f782d8d3e",
+    "title": "Iran war live: Israel kills Lebanon general, Pakistan urges end to war",
+    "published_at": "2026-06-07T00:00:00+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon",
+      "Palestine",
+      "Iran"
+    ],
+    "actors": [
+      "Israeli forces",
+      "Lebanese soldiers",
+      "Palestinian soldiers",
+      "Pakistan's Interior Minister"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "f2ddfe90723fcde6731eaf2a",
+    "title": "Pope Leo says war on Iran fails Catholic ‘just war’ criteria",
+    "published_at": "2026-06-06T23:56:56+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States",
+      "Israel"
+    ],
+    "actors": [
+      "Pope Leo",
+      "US",
+      "Israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "028fb80e7b44b52d0cbc7edf",
+    "title": "Hamas begins talks with Palestinian factions on Gaza ceasefire agreement - Xinhua",
+    "published_at": "2026-06-06T21:46:15+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Palestine"
+    ],
+    "actors": [
+      "Hamas"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8fc2cdf151f02ddd4bd50cb4",
+    "title": "Israeli soldier kills seven-month-old Palestinian baby, then walks away",
+    "published_at": "2026-06-06T23:00:26+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli soldiers",
+      "Palestinian family"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "abf748a39afbb83a8d118aa9",
+    "title": "US eyes Iranian assets for Gulf allies' reconstruction, source says",
+    "published_at": "2026-06-06T22:36:35+00:00",
+    "importance": 7.0,
+    "category": "sanctions",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "U.S. Treasury Department",
+      "Mohsen Rezaei",
+      "Scott Bessent"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "c66542fcd3f635373a477596",
+    "title": "China Escalates Patrols Near Taiwan Over Japan-Philippines Talks - Bloomberg.com",
+    "published_at": "2026-06-06T14:12:08+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Taiwan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d309a3bc12f2c41f1fdb74ce",
+    "title": "France pushes sanctions over West Bank settler violence",
+    "published_at": "2026-06-06T22:20:28+00:00",
+    "importance": 4.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "France",
+      "Israel"
+    ],
+    "actors": [
+      "French government",
+      "Israeli settlers"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "68e1e13fda786dd3b35dbc3c",
+    "title": "Asia-To-US Container Rates Spike 109% Since Iran War Started",
+    "published_at": "2026-06-06T21:55:58+00:00",
+    "importance": 5.0,
+    "category": "supply_chains",
+    "theatre": "",
+    "countries": [
+      "US",
+      "Iran"
+    ],
+    "actors": [
+      "Xeneta",
+      "Drewry"
+    ],
+    "organizations": [
+      "A.P. Moller-Maersk A/S"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "18cc1e47af7953515f695e5e",
+    "title": "Israeli attack on Gaza tent camp kills eight people",
+    "published_at": "2026-06-06T21:39:48+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Palestine"
+    ],
+    "actors": [
+      "Israel",
+      "Palestinians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4b538ba3fd5d39e8ec74dd23",
+    "title": "Taiwan Says Chinese Coast Guard, Research Ships Near Key S. China Sea Islands",
+    "published_at": "2026-06-06T21:36:41+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Taiwan"
+    ],
+    "organizations": [
+      "Chinese coast guard",
+      "Taiwan National Security Council"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "973f038ec6e5d5e565967d85",
+    "title": "Pentagon said to raise threat level on Israel spying to ‘critical’",
+    "published_at": "2026-06-06T21:10:36+00:00",
+    "importance": 7.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States",
+      "Israel"
+    ],
+    "actors": [
+      "Pentagon",
+      "Defense Intelligence Agency (DIA)",
+      "US Department of Defense",
+      "Israel",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "a710860fcc08ec00dc12ab1f",
+    "title": "Iran World Cup team heads to Mexico as US visa row rages",
+    "published_at": "2026-06-06T11:00:16+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States",
+      "Mexico"
+    ],
+    "actors": [
+      "Iran Football Federation",
+      "US administration",
+      "FIFA"
+    ],
+    "organizations": [
+      "Iran's World Cup team",
+      "US embassy in Turkey"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "5d5d22ff148b1e2b71f053d2",
+    "title": "Israeli soldier kills seven-month-old Palestinian baby, then walks away",
+    "published_at": "2026-06-06T20:30:38+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli soldier",
+      "Sam Fahd Abu Haikal",
+      "Ferial Abu Haikal"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "9f92dea20b9526cf1ceea180",
+    "title": "US doctor recovers from Ebola in Germany as DRC cases surge to 488",
+    "published_at": "2026-06-06T20:01:29+00:00",
+    "importance": 9.0,
+    "category": "central_africa",
+    "theatre": "central_africa",
+    "countries": [
+      "Germany",
+      "Democratic Republic of the Congo"
+    ],
+    "actors": [
+      "Peter Stafford",
+      "Charite hospital",
+      "World Health Organization"
+    ],
+    "organizations": [
+      "Christian missionary group",
+      "US Centers for Disease Control and Prevention"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "97a214578ff37c1db0f45c86",
+    "title": "Funeral held for baby shot dead by Israeli troops in occupied West Bank",
+    "published_at": "2026-06-06T19:57:42+00:00",
+    "importance": 4.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli troops",
+      "Palestinian family"
+    ],
+    "organizations": [
+      "Israel Defense Forces (IDF)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "7ea1def660ff4b4855a7bc13",
+    "title": "Video shows Israeli soldier and settlers assaulting two Palestinians",
+    "published_at": "2026-06-06T19:48:22+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli soldiers",
+      "Settlers",
+      "Palestinians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "cd5f6e85b745267e3ebc9d5a",
+    "title": "Israeli attack on Gaza City tent camp kills several Palestinians",
+    "published_at": "2026-06-06T19:25:27+00:00",
+    "importance": 8.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israel",
+      "Hamas"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "95f4f8baf38198dc49e49f93",
+    "title": "OPEC crude output falls to lowest level in decades amid US blockade of Iran - Crypto Briefing",
+    "published_at": "2026-06-06T19:25:53+00:00",
+    "importance": 7.0,
+    "category": "opec",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "Saudi Arabia",
+      "United Arab Emirates",
+      "Iraq",
+      "Venezuela"
+    ],
+    "actors": [
+      "OPEC",
+      "United States",
+      "Iran"
+    ],
+    "organizations": [
+      "OPEC"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "4a3c304b9529bae7a39ba74d",
+    "title": "Yvette Cooper’s China and India visit highlights UK’s balancing act in Asia amid Strait of Hormuz crisis - India Sentinels",
+    "published_at": "2026-06-06T13:38:04+00:00",
+    "importance": 4.0,
+    "category": "global_crisis",
+    "theatre": "",
+    "countries": [
+      "China",
+      "India",
+      "United Kingdom"
+    ],
+    "actors": [
+      "Yvette Cooper"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "56517ee0aeab6623d11f55ad",
+    "title": "France, allies eye national measures to pressure Israel over West Bank, diplomats say",
+    "published_at": "2026-06-06T19:01:38+00:00",
+    "importance": 4.0,
+    "category": "western_europe",
+    "theatre": "western_europe",
+    "countries": [
+      "France",
+      "Israel"
+    ],
+    "actors": [
+      "France",
+      "Israeli government",
+      "Settlers"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "cb459b1f5e6aee83fef6b659",
+    "title": "Mexico’s week in review: Sheinbaum pushes back on US pressure as World Cup nears",
+    "published_at": "2026-06-06T19:00:55+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Mexico"
+    ],
+    "actors": [
+      "Claudia Sheinbaum",
+      "United States of America (USA)"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "76703e5e24bd834f83dd3dd7",
+    "title": "From first lady to president? Inside the rise of Peru’s Keiko Fujimori",
+    "published_at": "2026-06-06T18:51:53+00:00",
+    "importance": 5.0,
+    "category": "south_america",
+    "theatre": "south_america",
+    "countries": [
+      "Peru"
+    ],
+    "actors": [
+      "Keiko Fujimori",
+      "Roberto Sanchez"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "fbed0eda2d36c33bb0faccba",
+    "title": "Did Kim just reveal Xi's secret Taiwan killer? North Korea's new nuclear warship looks eerily ready | Videos - Hindustan Times",
+    "published_at": "2026-06-06T18:19:02+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "North Korea",
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "Kim Jong-un",
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "42f4552fea5b5514a3bc57aa",
+    "title": "Pentagon raises alarm over Israel’s ‘unhinged’ spying on US officials: Report",
+    "published_at": "2026-06-06T18:49:45+00:00",
+    "importance": 8.0,
+    "category": "us_politics",
+    "theatre": "",
+    "countries": [
+      "Israel",
+      "United States"
+    ],
+    "actors": [
+      "Pentagon",
+      "Defense Intelligence Agency",
+      "Israel"
+    ],
+    "organizations": [
+      "DIA",
+      "NBC News",
+      "The New York Times"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "bafefbe4e898bd6a772cba78",
+    "title": "Ballot fiasco shakes faith in South Korea’s electoral system",
+    "published_at": "2026-06-06T18:02:55+00:00",
+    "importance": 4.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "South Korea"
+    ],
+    "actors": [
+      "National Election Commission",
+      "voters",
+      "People Power Party"
+    ],
+    "organizations": [
+      "National Election Commission"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "70e5f37ac53cc5ad04a139e8",
+    "title": "Starmer to host Zelenskyy and EU leaders for Ukraine talks",
+    "published_at": "2026-06-06T17:54:21+00:00",
+    "importance": 5.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "UK",
+      "Ukraine"
+    ],
+    "actors": [
+      "Keir Starmer",
+      "Volodymyr Zelenskyy",
+      "Emmanuel Macron",
+      "Friedrich Merz"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "45965d732a631d75e27efbb2",
+    "title": "The Wall Street Journal: приближенные к Путину бизнесмены и чиновники продолжают покупать западные бизнес-джеты — несмотря на санкции",
+    "published_at": "2026-06-06T17:23:15+00:00",
+    "importance": 4.0,
+    "category": "russia_nato_europe",
+    "theatre": "russia_nato_europe",
+    "countries": [
+      "Russia"
+    ],
+    "actors": [
+      "Russian elites",
+      "Western business jet manufacturers"
+    ],
+    "organizations": [
+      "The Wall Street Journal",
+      "Bombardier",
+      "Gulfstream"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "236e21149f1cbd11cba6f3b7",
+    "title": "100 days into the war on Iran, Trump fails to rally US support",
+    "published_at": "2026-06-06T17:04:38+00:00",
+    "importance": 5.0,
+    "category": "us_iran_nuclear",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "President Donald Trump",
+      "Democrats"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "b2cc5731b7922b1ec6ffe24a",
+    "title": "Hamas says Israel is trying to wreck Gaza ceasefire deal",
+    "published_at": "2026-06-06T16:58:01+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Hamas",
+      "Israel"
+    ],
+    "organizations": [
+      "US"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "8d4b2988d77dad354a1e87db",
+    "title": "Taiwan says Chinese coast guard, research ships near key S. China Sea islands - The Hindu",
+    "published_at": "2026-06-06T16:40:18+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Chinese coast guard",
+      "Research ships"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ff70626d07b873cf41f8edb6",
+    "title": "Beijing deploys new missiles matching Patriots opposite Taiwan - South China Morning Post",
+    "published_at": "2026-06-06T11:12:22+00:00",
+    "importance": 7.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Taiwan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "9294cf66b6930565be3235dd",
+    "title": "Israeli attacks kill 3,593 people in Lebanon since March",
+    "published_at": "2026-06-06T16:43:26+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel",
+      "Lebanon"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "fd3f0d5d183dd3a5feef84d7",
+    "title": "China’s military tracks Dutch warship in Taiwan Strait, calls earlier passage illegal - NL Times",
+    "published_at": "2026-06-06T10:15:00+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Netherlands",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Dutch warship"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e4770760c8063606f6335812",
+    "title": "Iran World Cup team heads to Mexico as US visa row erupts",
+    "published_at": "2026-06-06T11:00:16+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Iran",
+      "United States",
+      "Mexico"
+    ],
+    "actors": [
+      "Iranian Football Federation",
+      "US State Department"
+    ],
+    "organizations": [
+      "FIFA"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "c9fa8f05811e2dd58bdb5842",
+    "title": "Israeli attacks in Lebanon kill 10 people, including high-ranking soldiers",
+    "published_at": "2026-06-06T15:30:53+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel",
+      "Lebanese army",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "730626651025ab8d5e2c0324",
+    "title": "Videos show Kuwait intercepting ballistic missiles from Iran",
+    "published_at": "2026-06-06T15:09:56+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Kuwait",
+      "Iran"
+    ],
+    "actors": [
+      "Kuwait",
+      "Iran",
+      "US"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "5e55287aad6cf4752a868eed",
+    "title": "Israeli strike in Gaza kills seven people, including two women, medics say",
+    "published_at": "2026-06-06T15:36:34+00:00",
+    "importance": 7.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Palestine"
+    ],
+    "actors": [
+      "Hamas",
+      "Israeli military"
+    ],
+    "organizations": [
+      "U.S. President Donald Trump's Board of Peace"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "63de804c299c3ab9214186ea",
+    "title": "Israeli Strike in Gaza Kills 7, Ceasefire Talks Restart in Cairo - Global Banking & Finance Review",
+    "published_at": "2026-06-06T15:34:13+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Gaza"
+    ],
+    "actors": [
+      "Israel",
+      "Palestinians",
+      "Egypt"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ea6d0649cfb794bedd9d2bb4",
+    "title": "Seven-month-old Palestinian killed by Israeli military laid to rest",
+    "published_at": "2026-06-06T15:01:46+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli military",
+      "Palestinian family"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "80c1de09ff95d9667cdbbcab",
+    "title": "US strikes Iranian sites after Iran launches drones, in latest Gulf flare-up",
+    "published_at": "2026-06-06T15:00:51+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "U.S. military",
+      "Iranian Revolutionary Guard Corps"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "c2ceb5784f561e3e5e5f18a4",
+    "title": "Death toll from Israeli attack on Gaza City rises",
+    "published_at": "2026-06-06T14:50:49+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine"
+    ],
+    "actors": [
+      "Israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "3db0f738185aaa558b591eda",
+    "title": "Iran condemns US ceasefire violations as endangering 'security of region'",
+    "published_at": "2026-06-06T14:01:13+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "Iran",
+      "United States"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "0aace2760bef643589070e90",
+    "title": "Chinese EVs may hit U.S. within a few years, one way or another",
+    "published_at": "2026-06-06T13:35:07+00:00",
+    "importance": 4.0,
+    "category": "us_macro",
+    "theatre": "us_china_relations",
+    "countries": [
+      "China",
+      "United States"
+    ],
+    "actors": [
+      "Chinese automakers",
+      "U.S. lawmakers",
+      "Big Three American automakers"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "95933ccea3e658e6871ac7f1",
+    "title": "Lebanon and Israel’s perpetual war machine",
+    "published_at": "2026-06-06T13:31:49+00:00",
+    "importance": 4.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Israel",
+      "US",
+      "Lebanon"
+    ],
+    "organizations": [
+      "Refugees International",
+      "Jewish Currents",
+      "Stimson Centre"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "13622a12eb5fbbb27e36fb58",
+    "title": "‘Elections campaigned on who can be more brutal to Palestinians’",
+    "published_at": "2026-06-06T13:23:02+00:00",
+    "importance": 4.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Palestine"
+    ],
+    "actors": [
+      "Israeli political parties",
+      "Settlers"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "5a0e3c976d0bf4dc20aaa329",
+    "title": "Hunger in Oleshky: Ukraine asks for evacuation",
+    "published_at": "2026-06-06T13:16:00+00:00",
+    "importance": 7.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine"
+    ],
+    "actors": [
+      "Russian army",
+      "Oleshky residents"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "a390f7b65e482fb3806a4eb2",
+    "title": "Ukraine launches fresh drone attack on St. Petersburg region on final day of ‘Russian Davos’",
+    "published_at": "2026-06-06T13:07:17+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Ukraine",
+      "Russia",
+      "Vladimir Putin",
+      "Volodymyr Zelensky"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "0dc8cb1a32f9b5829caa62ab",
+    "title": "Israeli strike kills three Lebanese soldiers",
+    "published_at": "2026-06-06T13:00:21+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Hezbollah",
+      "Israeli military",
+      "Lebanese army"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "bc21ebd904ec1e155773552c",
+    "title": "Hamas Delegation Arrives in Egypt for Talks on Gaza Ceasefire - Hasht-e Subh Daily",
+    "published_at": "2026-06-06T06:54:37+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Egypt",
+      "Gaza",
+      "Israel"
+    ],
+    "actors": [
+      "Hamas"
+    ],
+    "organizations": [
+      "Egyptian government"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "c21b89f48739b6fae16bf696",
+    "title": "Kuwait says it downed 7 Iranian missiles fired on Saturday, reports no casualties",
+    "published_at": "2026-06-06T12:58:02+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Kuwait",
+      "Iran",
+      "Egypt"
+    ],
+    "actors": [
+      "Kuwait",
+      "Iran",
+      "Egypt"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "05a3655e0e54c034e4fdebef",
+    "title": "Taiwan accuses China of coordinated operation near strategic South China Sea outpost - National Herald",
+    "published_at": "2026-06-06T12:34:29+00:00",
+    "importance": 7.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan",
+      "China"
+    ],
+    "actors": [
+      "Taiwan",
+      "China"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "5c27e0846739ae07e97e44dd",
+    "title": "Iran targets Bahrain and Kuwait after renewed US strikes",
+    "published_at": "2026-06-06T05:30:18+00:00",
+    "importance": 8.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "gulf_iran",
+    "countries": [
+      "iran",
+      "bahrain",
+      "kuwait"
+    ],
+    "actors": [
+      "iran",
+      "united states",
+      "bahrain",
+      "kuwait"
+    ],
+    "organizations": [
+      "us central command",
+      "revolutionary guards"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "41ebcb809e3a30bb554e4687",
+    "title": "Kuwait condemns Iran's 'brazen assault'",
+    "published_at": "2026-06-06T12:06:21+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Kuwait",
+      "Iran",
+      "Bahrain"
+    ],
+    "actors": [
+      "Kuwait",
+      "Iran",
+      "Bahrain"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "cf5896b8df1d4a6d0efda728",
+    "title": "Russia says hundreds of Ukrainian drones downed as economic forum ends",
+    "published_at": "2026-06-06T11:59:15+00:00",
+    "importance": 7.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Russian Defence Ministry",
+      "Ukrainian President Volodymyr Zelenskyy"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "998ab0f1d5dba6e11e5c4117",
+    "title": "Inside the Obama-era Iran nuclear deal that Trump withdrew from",
+    "published_at": "2026-06-06T12:00:01+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "Barack Obama",
+      "Donald Trump"
+    ],
+    "organizations": [
+      "Joint Comprehensive Plan of Action (JCPOA)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "df6c4cf9316c1129cc34b162",
+    "title": "Tribesmen block highway in KP's Khyber over targeted killings",
+    "published_at": "2026-06-06T11:59:21+00:00",
+    "importance": 9.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Pakistan"
+    ],
+    "actors": [
+      "Zakhakhel tribesmen",
+      "local tribal elder Malak Abdullah Khan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "0a293c1ecbe07776126d0ebe",
+    "title": "Lebanon says three soldiers killed in Israeli attack on car",
+    "published_at": "2026-06-06T10:57:28+00:00",
+    "importance": 4.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Israel Defense Forces (IDF)",
+      "Lebanese Army",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d7941c2188607f51ee8c26f1",
+    "title": "Tribesmen block highway in KP's Khyber in protest of targeted killings",
+    "published_at": "2026-06-06T11:26:24+00:00",
+    "importance": 9.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Pakistan"
+    ],
+    "actors": [
+      "Zakhakhel tribesmen",
+      "local tribal elder Malak Abdullah Khan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e1016fffd7aa182b037fa735",
+    "title": "NATO considers €70B military aid for Ukraine before Ankara summit - Crypto Briefing",
+    "published_at": "2026-06-06T11:26:15+00:00",
+    "importance": 5.0,
+    "category": "russia_nato_europe",
+    "theatre": "russia_nato_europe",
+    "countries": [
+      "Ukraine",
+      "Turkey"
+    ],
+    "actors": [
+      "NATO"
+    ],
+    "organizations": [
+      "NATO"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "62cbf400ca1a5fe8ef59aef7",
+    "title": "Beijing deploys new missiles matching Patriots opposite Taiwan",
+    "published_at": "2026-06-06T11:12:22+00:00",
+    "importance": 7.0,
+    "category": "us_iran_nuclear",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "People's Liberation Army Eastern Theatre Command",
+      "73rd Army Group"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "acae5b85dc3aad2516d31571",
+    "title": "U.S. attacks Iranian sites after Iran launches drones, in latest Gulf flare-up",
+    "published_at": "2026-06-06T11:09:52+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "U.S.",
+      "Iran",
+      "Revolutionary Guard Corps"
+    ],
+    "organizations": [
+      "U.S. Central Command",
+      "Revolutionary Guard Corps"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "35283e7f09ac287e51026019",
+    "title": "Palestinian baby shot dead by Israeli troops in occupied West Bank",
+    "published_at": "2026-06-06T11:08:51+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli troops",
+      "Fahd Abu Haikal (father)",
+      "Sam Fahd Abu Haikal (baby)"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "42ccb5b54e45c03b32400bf9",
+    "title": "Iran World Cup squad heads to Mexico as US visa row erupts",
+    "published_at": "2026-06-06T11:00:16+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States",
+      "Mexico"
+    ],
+    "actors": [
+      "Iran",
+      "United States",
+      "World Cup squad"
+    ],
+    "organizations": [
+      "US embassy in Ankara",
+      "Iran's football federation"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "13ee06d467cd9a03a353c350",
+    "title": "With Alberta’s future in Canada on the ballot, these groups are vying to shape public opinion",
+    "published_at": "2026-06-06T11:00:00+00:00",
+    "importance": 4.0,
+    "category": "elections",
+    "theatre": "canada_north_america",
+    "countries": [
+      "Canada"
+    ],
+    "actors": [
+      "Alberta",
+      "Premier Danielle Smith",
+      "Forever Canadian",
+      "First Nations"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d56eb2d4a8513e33796952b2",
+    "title": "Israeli airstrikes kill 9 including Lebanese army officers after ceasefire deal",
+    "published_at": "2026-06-06T10:54:34+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Israeli military",
+      "Lebanese army officers"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "23154baa1f54ad3774032335",
+    "title": "Scores of Ukrainian drones target St Petersburg in attack Russia calls 'unprecedented'",
+    "published_at": "2026-06-06T10:54:06+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Ukrainian forces",
+      "Russian authorities",
+      "Ukrainian President Volodymyr Zelensky",
+      "Russian President Vladimir Putin"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "62eb933a3b9424aebe233856",
+    "title": "96 deals signed, flights planned: what’s next for Hong Kong and Central Asia?",
+    "published_at": "2026-06-06T10:53:23+00:00",
+    "importance": 4.0,
+    "category": "global_crisis",
+    "theatre": "",
+    "countries": [
+      "Hong Kong",
+      "Kazakhstan",
+      "Uzbekistan"
+    ],
+    "actors": [
+      "John Lee Ka-chiu",
+      "China International Capital Corporation",
+      "Samruk-Kazyna"
+    ],
+    "organizations": [
+      "Trade Development Council Frederick Ma Si-hang",
+      "Kazakhstan Temir Zholy"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "f7fae4cf1783753cefd394d3",
+    "title": "Война. 1564-й день. Украина ударила дронами по Санкт-Петербургу — второй раз за четыре дня. Зеленский назвал это ответом на отказ Путина от переговоров",
+    "published_at": "2026-06-06T10:50:21+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Ukrainian government",
+      "Russian government"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "55ffed4818cda9edfb39d2c8",
+    "title": "ВСУ атаковали Петербург в день окончания ПМЭФ — как и в день его открытия. Фото и видео. Целями стали кадетский корпус и нефтебаза. Губернатор Беглов посоветовал жителям не выходить из дома",
+    "published_at": "2026-06-06T10:36:58+00:00",
+    "importance": 8.0,
+    "category": "global_crisis",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Ukrainian forces",
+      "Russian government"
+    ],
+    "organizations": [
+      "Petersburg Economic Forum"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "f3c40ca508ad94e545dcb152",
+    "title": "Xi Jinping heads to North Korea for first time since 2019, and crypto markets are watching the geopolitical chessboard - Crypto Briefing",
+    "published_at": "2026-06-06T04:35:53+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "China",
+      "North Korea"
+    ],
+    "actors": [
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "15a0dea6bc1e18314f8e2fe5",
+    "title": "Russian CEO says US using Strait of Hormuz to 'reshape' energy markets",
+    "published_at": "2026-06-06T10:16:17+00:00",
+    "importance": 7.0,
+    "category": "strait_hormuz",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "Russia",
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "Rosneft (Russia)",
+      "US government",
+      "Iran"
+    ],
+    "organizations": [
+      "Rosneft"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "dbf0830fefe425880e79f95f",
+    "title": "Israeli airstrikes kill 9 including Lebanese army officers after ceasefire deal - The Boston Globe",
+    "published_at": "2026-06-06T09:45:00+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel",
+      "Lebanese army"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "745ebe04a8db4f1d13a8d927",
+    "title": "Taiwan accuses China of escalating pressure campaign with coordinated maritime operation near Pratas Islands - The Vibes",
+    "published_at": "2026-06-06T09:26:00+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan",
+      "China"
+    ],
+    "actors": [
+      "Taiwan",
+      "China"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "241c7637991b8921093a4271",
+    "title": "Iran says US and Israeli strikes to blame for partial loss of nuclear oversight",
+    "published_at": "2026-06-06T09:06:56+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "US",
+      "Israel",
+      "Iran",
+      "IAEA"
+    ],
+    "organizations": [
+      "IAEA"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "9ec888dcbcc087c2285ecac7",
+    "title": "Trump has squeezed China in Cuba, Panama and Venezuela. Is Nicaragua next?",
+    "published_at": "2026-06-06T09:00:07+00:00",
+    "importance": 4.0,
+    "category": "global_crisis",
+    "theatre": "latin_america",
+    "countries": [
+      "Nicaragua",
+      "United States",
+      "China"
+    ],
+    "actors": [
+      "Donald Trump",
+      "Zhang Junhua",
+      "Chinese government"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "93d3ca9900dfa989bc42a7bd",
+    "title": "Iran’s nightly pro-government rallies reveal both unity and deep divisions",
+    "published_at": "2026-06-06T08:56:15+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "Mohsen",
+      "Hessam",
+      "Mona"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "9b30b50b96ddc1966bb8a94a",
+    "title": "Armenia prepares for vote amid shifting relations with Russia and the West",
+    "published_at": "2026-06-06T08:56:03+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia"
+    ],
+    "actors": [
+      "Nikol Pashinyan",
+      "European Union",
+      "United States",
+      "Russia"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "6d6db0df65d19022fe57f917",
+    "title": "Russia's Sechin says U.S. companies benefit from the closure of the Strait of Hormuz",
+    "published_at": "2026-06-06T08:51:10+00:00",
+    "importance": 7.0,
+    "category": "global_crisis",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Russia",
+      "Iran"
+    ],
+    "actors": [
+      "Rosneft",
+      "Igor Sechin",
+      "UAE"
+    ],
+    "organizations": [
+      "OPEC+",
+      "Strait of Hormuz"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "9cd51429c7f6dca51e415924",
+    "title": "Several soldiers killed in Israeli strike on Lebanon",
+    "published_at": "2026-06-06T08:50:40+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli military",
+      "Lebanese military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "bcc6cd69d36ee4944b055ca3",
+    "title": "Taiwan says Chinese coast guard, research ships near key South China Sea islands - The Economic Times",
+    "published_at": "2026-06-06T07:18:43+00:00",
+    "importance": 4.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Chinese coast guard",
+      "Research ships"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "b342040c0be5f1c37f86e91f",
+    "title": "PLA says it will stay on ‘high alert’ after Dutch warship crosses Taiwan Strait - South China Morning Post",
+    "published_at": "2026-06-06T08:00:10+00:00",
+    "importance": 4.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan",
+      "Netherlands"
+    ],
+    "actors": [
+      "People's Liberation Army",
+      "Dutch military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1edf0075d95c93769240118d",
+    "title": "В самопровозглашенной ЛНР запретили пассажирские перевозки по трассе «Новороссия» и отменили пригородные поезда",
+    "published_at": "2026-06-06T08:05:44+00:00",
+    "importance": 5.0,
+    "category": "sanctions",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "LNR (self-proclaimed LNR)",
+      "Ukrainian military",
+      "Russian-backed separatists"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "a5162306bf429c75f19f6241",
+    "title": "PLA says it will stay on ‘high alert’ after Dutch warship crosses Taiwan Strait - South China Morning Post",
+    "published_at": "2026-06-06T08:00:10+00:00",
+    "importance": 5.0,
+    "category": "supply_chains",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan",
+      "Netherlands"
+    ],
+    "actors": [
+      "People's Liberation Army (PLA)",
+      "Dutch military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e93164a49ebbf2865e228325",
+    "title": "PLA says it will stay on ‘high alert’ after Dutch warship crosses Taiwan Strait - South China Morning Post",
+    "published_at": "2026-06-06T08:00:10+00:00",
+    "importance": 5.0,
+    "category": "supply_chains",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan",
+      "Netherlands"
+    ],
+    "actors": [
+      "People's Liberation Army (PLA)",
+      "Dutch military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "7ecc4c5aeb239100e7bb2104",
+    "title": "US intercepts Iranian attacks as Israel continues to bomb Lebanon",
+    "published_at": "2026-06-06T07:51:28+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "US",
+      "Iran",
+      "Lebanon"
+    ],
+    "actors": [
+      "US Central Command",
+      "Iran's Islamic Revolutionary Guard Corps",
+      "Israel",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "a0fbf7cfbe36df0de3ec8665",
+    "title": "PLA says it will stay on ‘high alert’ after Dutch warship crosses Taiwan Strait",
+    "published_at": "2026-06-06T08:00:10+00:00",
+    "importance": 5.0,
+    "category": "sanctions",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Netherlands"
+    ],
+    "actors": [
+      "PLA",
+      "De Ruyter (Dutch frigate)"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "894ba1692a4b57c769932c46",
+    "title": "Taiwan Says Chinese Coast Guard, Research Ships Near Key S. China Sea Islands - U.S. News & World Report",
+    "published_at": "2026-06-06T07:14:24+00:00",
+    "importance": 4.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Chinese Coast Guard",
+      "research ships"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d3d1a97b3f3049f9aba9bb9b",
+    "title": "North Korea to build 10,000-ton destroyer, state media says before Xi visit",
+    "published_at": "2026-06-06T07:49:29+00:00",
+    "importance": 4.0,
+    "category": "us_iran_nuclear",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "north_korea"
+    ],
+    "actors": [
+      "kim_jong_un",
+      "xi_jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "046055334bf34d1273be1d14",
+    "title": "Hamas delegation arrives in Cairo for Gaza ceasefire talks - Yeni Safak English",
+    "published_at": "2026-06-06T07:37:00+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Egypt",
+      "Gaza"
+    ],
+    "actors": [
+      "Hamas"
+    ],
+    "organizations": [
+      "Cairo"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "336afdef3dece12b16a5f663",
+    "title": "Taiwan says Chinese coast guard, research ships near key S. China Sea islands - Internazionale",
+    "published_at": "2026-06-06T07:08:54+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Chinese coast guard",
+      "Research ships"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d8e65440cbf94d72ae4cb6e4",
+    "title": "Israeli troops kill 7-month-old Palestinian baby in West Bank car shooting",
+    "published_at": "2026-06-06T07:14:30+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli troops",
+      "Palestinian civilians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "170d4d24e50a71a4dd19cade",
+    "title": "Taiwan says Chinese coast guard, research ships near key S. China Sea islands - Reuters",
+    "published_at": "2026-06-06T07:09:16+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan",
+      "China"
+    ],
+    "actors": [
+      "Chinese coast guard",
+      "Chinese research ships",
+      "Taiwan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "532afa72727a9c137888cb57",
+    "title": "US says Iranian radar sites hit in Goruk and Qeshm Island",
+    "published_at": "2026-06-06T07:03:14+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US military",
+      "Iranian military"
+    ],
+    "organizations": [
+      "CENTCOM"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "c53da3140a8988323151cc65",
+    "title": "Morning update",
+    "published_at": "2026-06-06T07:00:30+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "US Central Command",
+      "Iranian Revolutionary Guard"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8d3f1698ccabed5590e19599",
+    "title": "What does Washington’s latest AI chip guidance mean for Chinese tech firms?",
+    "published_at": "2026-06-06T07:00:07+00:00",
+    "importance": 4.0,
+    "category": "ai_industry",
+    "theatre": "us_china_relations",
+    "countries": [
+      "China",
+      "United States"
+    ],
+    "actors": [
+      "US Bureau of Industry and Security",
+      "China's Ministry of Commerce"
+    ],
+    "organizations": [
+      "BIS",
+      "Chinese tech firms"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "003451417690152403e2a31a",
+    "title": "North Korea’s Kim orders navy to build 10,000-tonne destroyer: State media",
+    "published_at": "2026-06-06T06:55:52+00:00",
+    "importance": 4.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea"
+    ],
+    "actors": [
+      "Kim Jong Un",
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "f8fba51d015220400d0bf9e2",
+    "title": "Latin American Pulse for Saturday, June 6, 2026",
+    "published_at": "2026-06-06T06:52:11+00:00",
+    "importance": 4.0,
+    "category": "south_america",
+    "theatre": "south_america",
+    "countries": [
+      "Peru",
+      "Bolivia",
+      "Colombia",
+      "Mexico"
+    ],
+    "actors": [
+      "Keiko Fujimori",
+      "Roberto Sánchez",
+      "Rodrigo Paz",
+      "Abelardo De La Espriella",
+      "Iván Cepeda",
+      "Claudia Sheinbaum"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e0ced1f9bf7471dd0020701e",
+    "title": "Occupied Kashmir will never be 'integral part of India': Islamabad slams New Delhi for 'misleading' UNSC",
+    "published_at": "2026-06-06T06:48:35+00:00",
+    "importance": 4.0,
+    "category": "india_china_himalaya",
+    "theatre": "india_china_himalaya",
+    "countries": [
+      "Pakistan",
+      "India"
+    ],
+    "actors": [
+      "Pakistan",
+      "India",
+      "UN Security Council"
+    ],
+    "organizations": [
+      "United Nations"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "8e1d714d3a6b6e83a554c6d4",
+    "title": "Tensions Rise as Chinese Ships Provoke Taiwan in Strategic Waters - Devdiscourse",
+    "published_at": "2026-06-06T06:47:37+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "Chinese ships",
+      "Taiwan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "f0bf0daa6873d9025e5bafd7",
+    "title": "Wafa reports settler attacks and Israeli raids across West Bank",
+    "published_at": "2026-06-06T06:45:20+00:00",
+    "importance": 4.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine"
+    ],
+    "actors": [
+      "Palestinian farmers",
+      "Israeli settlers",
+      "Israeli military"
+    ],
+    "organizations": [
+      "Wafa news agency"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "c6324e8ce6403c1694a30e5e",
+    "title": "Fujimori or Sanchez? Peru vote marks 10 years of turmoil",
+    "published_at": "2026-06-06T06:33:00+00:00",
+    "importance": 4.0,
+    "category": "south_america",
+    "theatre": "south_america",
+    "countries": [
+      "Peru"
+    ],
+    "actors": [
+      "Keiko Fujimori",
+      "Roberto Sanchez"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "5c2aa83fe36391ca52a7ab24",
+    "title": "Завтра в Армении выборы. На них решится, как будет дальше развиваться страна: в сторону Европы или России. Пашиняну противостоят четыре пророссийских политика, а из РФ должны прилететь голосовать армяне (кстати, прилетят ли?)",
+    "published_at": "2026-06-06T06:37:57+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia"
+    ],
+    "actors": [
+      "Pashinyan",
+      "Pro-Russian politicians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "b65fd4dc55c0af0825e4c3d1",
+    "title": "Russia downs 376 Ukrainian drones overnight on final day of St Petersburg forum",
+    "published_at": "2026-06-06T06:37:11+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia_israel_conflict",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Russia",
+      "Ukraine"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "72bead22e09ed806139bea38",
+    "title": "Украинские дроны атаковали Санкт-Петербург. В городе перебои с интернетом, губернатор призвал жителей не выходить на улицу",
+    "published_at": "2026-06-06T06:29:36+00:00",
+    "importance": 7.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Russia"
+    ],
+    "actors": [
+      "Ukraine",
+      "Russian authorities"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "960e550b5f3da8b49b2c60c6",
+    "title": "Palestinian baby killed by Israeli gunfire in West Bank, health ministry says",
+    "published_at": "2026-06-05T23:12:24+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine"
+    ],
+    "actors": [
+      "Israel Defense Forces",
+      "Palestinian health ministry"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4c1579a97b008923b272d43d",
+    "title": "US and Iran exchange strikes in Gulf in latest test of ceasefire",
+    "published_at": "2026-06-06T06:16:28+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "US military",
+      "Iranian Islamic Revolution Guard Corps (IRGC)"
+    ],
+    "organizations": [
+      "Centcom",
+      "Irib news agency"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "c48e03e05905f37a323fb09a",
+    "title": "Armenia heads to polls amid Russian pressure and threat of ‘Ukrainian scenario’",
+    "published_at": "2026-06-06T06:00:02+00:00",
+    "importance": 5.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia",
+      "Russia"
+    ],
+    "actors": [
+      "Nikol Pashinyan",
+      "Vladimir Putin"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "afbc5c5f52525904405d5df3",
+    "title": "US, Iran exchange strikes in Gulf in latest flare-up",
+    "published_at": "2026-06-06T05:59:40+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "US",
+      "Iran"
+    ],
+    "actors": [
+      "US military",
+      "Iran's Revolutionary Guards"
+    ],
+    "organizations": [
+      "Centcom",
+      "Fars news agency"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "4ca3e91be6ca9e090881a2af",
+    "title": "US and Iran exchange strikes in new threat to shaky ceasefire",
+    "published_at": "2026-06-06T03:54:14+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "US",
+      "Iran"
+    ],
+    "actors": [
+      "US",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "dc73d378acdc711feafdc2f4",
+    "title": "Chinese leader Xi Jinping will travel to North Korea next week in first visit since 2019, Asia News - AsiaOne",
+    "published_at": "2026-06-06T04:07:00+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "China",
+      "North Korea"
+    ],
+    "actors": [
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8ca3fc00b1f403b14583fd17",
+    "title": "US, Iran trade strikes despite visas for World Cup footballers",
+    "published_at": "2026-06-06T05:30:18+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "US military",
+      "Iranian Revolutionary Guards"
+    ],
+    "organizations": [
+      "CENTCOM",
+      "Fars news agency"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "19afbdcfd2f635af10a8f8b1",
+    "title": "Israeli soldier shoots Palestinian baby dead near Hebron",
+    "published_at": "2026-06-06T04:58:38+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli soldier",
+      "Palestinian family"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "3f9b03b7f06f589e7c5a6d86",
+    "title": "Araghchi rejects claim that Iran is using Lebanon as leverage",
+    "published_at": "2026-06-06T05:04:53+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "Lebanon"
+    ],
+    "actors": [
+      "Abbas Araghchi",
+      "Joseph Aoun"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "027d22e48b3cc56b0bb1a7ec",
+    "title": "Middle East live: US military says Iran launched seven ballistic missiles at Kuwait, Bahrain",
+    "published_at": "2026-06-06T05:02:18+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran",
+      "Kuwait",
+      "Bahrain"
+    ],
+    "actors": [
+      "US military",
+      "Iranian Revolutionary Guards",
+      "Kuwaiti Armed Forces"
+    ],
+    "organizations": [
+      "Anduril",
+      "CENTCOM"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "2effb7f8067b5dc8c2fbc0c9",
+    "title": "Chinese memory makers step up challenge to Korea’s chip champions",
+    "published_at": "2026-06-06T05:00:13+00:00",
+    "importance": 4.0,
+    "category": "ai_competition",
+    "theatre": "",
+    "countries": [
+      "China",
+      "South Korea"
+    ],
+    "actors": [
+      "ChangXin Memory Technologies",
+      "Yangtze Memory Technologies Corp",
+      "Samsung Electronics",
+      "SK Hynix"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4249488a0b1039f143fb4e85",
+    "title": "Kim Jong Un expands North Korea’s navy to reinforce nuclear threat - RBC-Ukraine",
+    "published_at": "2026-06-06T05:00:00+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea"
+    ],
+    "actors": [
+      "Kim Jong Un"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e86cc2faf6bf8fe8461e2ec5",
+    "title": "US raises threat assessment level for Israeli spying of officials to 'critical'",
+    "published_at": "2026-06-06T04:48:04+00:00",
+    "importance": 5.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Israel",
+      "United States"
+    ],
+    "actors": [
+      "Defense Intelligence Agency (DIA)",
+      "Israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "06d1d5ba610785852f8eaf5b",
+    "title": "U.S. military says it shot down Iranian drones launched toward Gulf allies",
+    "published_at": "2026-06-06T04:15:26+00:00",
+    "importance": 7.0,
+    "category": "us_iran_nuclear",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States",
+      "Gulf allies"
+    ],
+    "actors": [
+      "U.S. military",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "a1117cc0a21a0f53631733cd",
+    "title": "Independent says economic impact of Iran war is hitting Britain",
+    "published_at": "2026-06-06T04:14:46+00:00",
+    "importance": 4.0,
+    "category": "oil",
+    "theatre": "",
+    "countries": [
+      "Britain"
+    ],
+    "actors": [
+      "US",
+      "Iran"
+    ],
+    "organizations": [
+      "The Independent"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "a849f9aed595a14af8e01481",
+    "title": "US threatens to reconsider role in Bosnia and Herzegovina amid rift with Europe",
+    "published_at": "2026-06-06T04:00:18+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Bosnia and Herzegovina"
+    ],
+    "actors": [
+      "US",
+      "European states",
+      "High Representative"
+    ],
+    "organizations": [
+      "Peace Implementation Council (PIC)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "b322b32bbb62d27e1d793ef3",
+    "title": "Israel launches air strikes across southern Lebanon, officials say",
+    "published_at": "2026-06-06T03:48:37+00:00",
+    "importance": 7.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Israeli military",
+      "Hezbollah"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "eb88311c1826061c6d4cd478",
+    "title": "IRGC claims strikes on Kuwait base and US Fifth Fleet in Bahrain",
+    "published_at": "2026-06-06T03:40:32+00:00",
+    "importance": 8.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "Kuwait",
+      "United States",
+      "Bahrain"
+    ],
+    "actors": [
+      "Islamic Revolutionary Guard Corps (IRGC)"
+    ],
+    "organizations": [
+      "US Fifth Fleet"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "3ba6dc666c9d706791e05cdb",
+    "title": "Centcom says Iran fired seven missiles towards Kuwait and Bahrain",
+    "published_at": "2026-06-06T03:27:50+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran",
+      "Kuwait",
+      "Bahrain"
+    ],
+    "actors": [
+      "Centcom",
+      "Iran"
+    ],
+    "organizations": [
+      "U.S. Central Command"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "70dd7e5432d4c4db13e19760",
+    "title": "IRGC says it struck ‘enemy bases’ after US attacks on Qeshm Island",
+    "published_at": "2026-06-06T03:20:55+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "Islamic Revolutionary Guard Corps (IRGC)",
+      "United States"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "7112b44ba7bc31a80d49be3f",
+    "title": "More than 20 countries join US-led coalition to protect Red Sea shipping: Pentagon - Ahram Online",
+    "published_at": "2026-06-05T22:29:49+00:00",
+    "importance": 5.0,
+    "category": "maritime_chokepoints",
+    "theatre": "red_sea_horn_africa",
+    "countries": [
+      "United States",
+      "Red Sea countries"
+    ],
+    "actors": [
+      "Pentagon",
+      "20+ countries"
+    ],
+    "organizations": [
+      "US-led coalition"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "305f3b7261da9850d8cc7a1b",
+    "title": "U.S. attacks Iranian coastal sites after Iran launches drones in latest flare-up",
+    "published_at": "2026-06-06T02:06:00+00:00",
+    "importance": 8.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "U.S.",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "8f9f2e77917026d06de3dada",
+    "title": "Taiwan racing to arm itself as US reliability wanes",
+    "published_at": "2026-06-06T02:13:39+00:00",
+    "importance": 8.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan"
+    ],
+    "actors": [
+      "Taiwan",
+      "US"
+    ],
+    "organizations": [
+      "Reuters",
+      "Council for Foreign Relations",
+      "Stimson Center"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "edde1a8ceceb70ad80766685",
+    "title": "Armenians Vote Under Russia’s Shadow",
+    "published_at": "2026-06-06T01:44:04+00:00",
+    "importance": 4.0,
+    "category": "balkans_eastern_europe",
+    "theatre": "balkans_eastern_europe",
+    "countries": [
+      "Armenia"
+    ],
+    "actors": [
+      "Donald Trump",
+      "Nikol Pashinyan",
+      "Russia"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d0b00b16b8a68447830f6635",
+    "title": "Kuwait and Bahrain issue public alerts amid missile and drone threats",
+    "published_at": "2026-06-06T01:51:35+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Kuwait",
+      "Bahrain"
+    ],
+    "actors": [
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "17df16d1f1f4d674d24303a5",
+    "title": "Trump says Iran retains about 22% of missile capability",
+    "published_at": "2026-06-06T01:42:40+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "Donald Trump",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ae5c79dc9b956135a69a2844",
+    "title": "Why North Korea’s Kim is doubling down on nuclear might as Xi visit looms",
+    "published_at": "2026-06-06T01:30:14+00:00",
+    "importance": 7.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "North Korea",
+      "China"
+    ],
+    "actors": [
+      "Kim Jong-un",
+      "Xi Jinping"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "c4024ea74123ed3688544003",
+    "title": "Does Pete Hegseth’s volte-face on China reflect an America in decline?",
+    "published_at": "2026-06-06T01:30:05+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "",
+    "countries": [
+      "United States",
+      "China"
+    ],
+    "actors": [
+      "Pete Hegseth",
+      "Donald Trump"
+    ],
+    "organizations": [
+      "US Defence Department",
+      "Shangri-La Dialogue"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "d3b93f6f8d7321dceb2a97a0",
+    "title": "US strikes Iranian radar sites after drone shootdown in Strait of Hormuz",
+    "published_at": "2026-06-06T00:39:22+00:00",
+    "importance": 8.0,
+    "category": "oil",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US military",
+      "Iranian military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "82114c7184b4d845c179aa46",
+    "title": "US attacks Iranian coastal sites after Iran launches drones in latest flare-up",
+    "published_at": "2026-06-06T00:36:38+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US military",
+      "Iranian armed forces"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "bffdf97fba7de22e32dcb52a",
+    "title": "Iran says half of frozen assets should be released immediately",
+    "published_at": "2026-06-06T00:25:14+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "Iran",
+      "United States"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "c945a9b2103a13970d8d24c7",
+    "title": "Hezbollah says it carried out 32 attacks on Israeli forces in south Lebanon",
+    "published_at": "2026-06-06T00:17:01+00:00",
+    "importance": 5.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Hezbollah",
+      "Israeli forces"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "5df896b58fd27980f324d4ce",
+    "title": "Trump says agreement with Iran will take time",
+    "published_at": "2026-06-06T00:09:02+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "US President Donald Trump"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d2512bf8467945394fc1773d",
+    "title": "Iran war live: US says Iranian drones shot down, radar sites attacked",
+    "published_at": "2026-06-06T00:00:00+00:00",
+    "importance": 8.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "United States",
+      "Iran"
+    ],
+    "organizations": [
+      "CENTCOM"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "5815fa9bba40f7ca251971f6",
+    "title": "Hot jobs report puts Fed cuts further out of reach as Chair Warsh faces policy tests - CNBC",
+    "published_at": "2026-06-05T17:44:14+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "Federal Reserve",
+      "Fed Chair Warsh"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "61ef9fc8a654cb477d79fee5",
+    "title": "US says Iran radar sites struck and drones intercepted, in latest threat to fragile ceasefire",
+    "published_at": "2026-06-05T23:53:02+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US Central Command",
+      "Iranian military"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "563de8a348385845422e9924",
+    "title": "US energy secretary links lower fuel prices to Iran resolution",
+    "published_at": "2026-06-05T23:53:05+00:00",
+    "importance": 5.0,
+    "category": "oil",
+    "theatre": "",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US Energy Secretary Chris Wright",
+      "Iran"
+    ],
+    "organizations": [
+      "US Department of Energy",
+      "Strategic Petroleum Reserve"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "7f631ee407cc1ec149640f07",
+    "title": "Putin says no reason to meet Ukraine’s Zelensky, calls his letter ‘rude’",
+    "published_at": "2026-06-05T23:38:18+00:00",
+    "importance": 4.0,
+    "category": "us_iran_nuclear",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Vladimir Putin",
+      "Volodymyr Zelensky"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "158d277f6845c98f93cbc677",
+    "title": "US sanctions Cuba's president Díaz-Canel and inner circle in push for regime change",
+    "published_at": "2026-06-05T23:12:00+00:00",
+    "importance": 5.0,
+    "category": "latin_america",
+    "theatre": "latin_america",
+    "countries": [
+      "Cuba"
+    ],
+    "actors": [
+      "US",
+      "Cuban Government"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ff7ed767c4f04e5f10ffebbd",
+    "title": "UN says Israeli attacks leave 1.4 million in Lebanon needing aid",
+    "published_at": "2026-06-05T22:45:28+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon"
+    ],
+    "actors": [
+      "Israel",
+      "UN",
+      "OCHA"
+    ],
+    "organizations": [
+      "UN",
+      "OCHA"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "ee58667141742eade6e600a4",
+    "title": "Palestinian baby killed by Israeli gunfire in occupied West Bank, health ministry says",
+    "published_at": "2026-06-05T22:01:40+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli military",
+      "Palestinian family"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ce08ef5e2e892dcaf3643d3d",
+    "title": "Israeli troops kill 7-month-old Palestinian baby, wound parents in occupied West Bank - TRT World",
+    "published_at": "2026-06-05T21:41:43+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli troops"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "394d1cca49358df9c201ba07",
+    "title": "UK Prime Minister Keir Starmer says Russia could attack NATO within four years - Euronews.com",
+    "published_at": "2026-06-05T17:01:23+00:00",
+    "importance": 7.0,
+    "category": "russia_nato_europe",
+    "theatre": "russia_nato_europe",
+    "countries": [
+      "United Kingdom",
+      "Russia",
+      "NATO"
+    ],
+    "actors": [
+      "UK Prime Minister Keir Starmer",
+      "Russia",
+      "NATO"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "3e5177e3d30aa59529475214",
+    "title": "Putin promotes a new world economic order at St. Petersburg forum",
+    "published_at": "2026-06-05T20:56:44+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Vladimir Putin",
+      "Volodymyr Zelenskyy"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "0054917c1d12ddc1af9b48ae",
+    "title": "Zelensky’s Pen Pal Diplomacy",
+    "published_at": "2026-06-05T20:23:57+00:00",
+    "importance": 5.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Volodymyr Zelensky",
+      "Vladimir Putin"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "6be763549c0b2c49b9b630ef",
+    "title": "U.S. Counts Far More Hormuz Ship Transits Than Commercial Tracking Data Shows",
+    "published_at": "2026-06-05T20:53:14+00:00",
+    "importance": 7.0,
+    "category": "maritime_chokepoints",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "US Central Command",
+      "Tehran"
+    ],
+    "organizations": [
+      "Bloomberg"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "24856cf1e682876e63d13d4a",
+    "title": "Iran footballers issued US visas for World Cup, says White House",
+    "published_at": "2026-06-05T20:49:40+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "White House",
+      "US Embassy in Ankara",
+      "Iran’s World Cup players",
+      "Iran's ambassador to Mexico"
+    ],
+    "organizations": [
+      "FIFA",
+      "US State Department"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "794595c68cd98e09f70934a6",
+    "title": "Misinformation complicates Ebola efforts",
+    "published_at": "2026-06-05T20:48:01+00:00",
+    "importance": 9.0,
+    "category": "east_africa",
+    "theatre": "east_africa",
+    "countries": [
+      "Kenya"
+    ],
+    "actors": [
+      "Ruto"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "f060809cc34b523da1db0a50",
+    "title": "Treasury Targets Iranian LPG Smuggling Network as U.S. Pressure Campaign Intensifies",
+    "published_at": "2026-06-05T20:46:16+00:00",
+    "importance": 5.0,
+    "category": "sanctions",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "U.S. Treasury Department",
+      "Sarbaz Abdul Zada",
+      "Mohammad Shakol Mihandoust"
+    ],
+    "organizations": [
+      "OFAC",
+      "Treasury Department's Office of Foreign Assets Control"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "585b47568f1884a1c2e604e2",
+    "title": "Palestinian baby killed after Israeli forces fire on family car",
+    "published_at": "2026-06-05T20:45:19+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Palestine",
+      "Israel"
+    ],
+    "actors": [
+      "Israeli forces",
+      "Palestinian baby and parents"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4a4582e8ad349cd26d887c53",
+    "title": "Zelenskyy: Putin choosing war by rejecting offer for in-person talks",
+    "published_at": "2026-06-05T20:36:46+00:00",
+    "importance": 8.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Volodymyr Zelenskyy",
+      "Vladimir Putin"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d65e761632d2fa43e76317d1",
+    "title": "‘Pervasive fear’ grips Gaza as Israeli attacks persist despite ceasefire",
+    "published_at": "2026-06-05T20:17:35+00:00",
+    "importance": 5.0,
+    "category": "us_china_drone_conflicts",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Gaza"
+    ],
+    "actors": [
+      "Hamas",
+      "Israeli military"
+    ],
+    "organizations": [
+      "Wafa news agency",
+      "Al Jazeera"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "482aeb32597ad4c161a93590",
+    "title": "South China Sea Clash: Third Chinese Maritime 'Incursion' Near Taiwan Within Month - WION",
+    "published_at": "2026-06-05T19:42:00+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan",
+      "China"
+    ],
+    "actors": [
+      "China",
+      "Taiwan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1c26f02f24a44428c162cb71",
+    "title": "‘Pervasive fear’ grips Gaza as Israeli attacks persist despite ceasefire - Al Jazeera",
+    "published_at": "2026-06-05T20:17:53+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Israel",
+      "Palestine"
+    ],
+    "actors": [
+      "Hamas",
+      "Israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "458c6725f52855429821578f",
+    "title": "Iran's threats against this Red Sea chokepoint are a big vulnerability for the oil market",
+    "published_at": "2026-06-05T19:55:00+00:00",
+    "importance": 8.0,
+    "category": "oil",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Iran",
+      "Saudi Arabia"
+    ],
+    "actors": [
+      "Iran's Revolutionary Guard",
+      "Israel",
+      "Hezbollah"
+    ],
+    "organizations": [
+      "Kpler"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "bd7c10a2e08d8790cf53c676",
+    "title": "Negative views of Israel soar across 36 countries since Iran war, survey finds",
+    "published_at": "2026-06-05T20:02:12+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "",
+    "countries": [
+      "Israel",
+      "Turkey",
+      "Pakistan",
+      "Malaysia",
+      "Indonesia",
+      "Japan",
+      "West Bank and occupied East Jerusalem",
+      "Sweden",
+      "Spain",
+      "Hungary"
+    ],
+    "actors": [
+      "Pew Research Center"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "af336bef7ccb1fa04425f8a7",
+    "title": "Survey Shows OPEC Output Plunges Further",
+    "published_at": "2026-06-05T20:00:00+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "US forces",
+      "Iran",
+      "Saudi Arabia",
+      "Iraq",
+      "UAE"
+    ],
+    "organizations": [
+      "OPEC",
+      "Adnoc",
+      "Aramco Trading Co."
+    ],
+    "commodities": []
+  },
+  {
+    "id": "bc85462b794ba33932579245",
+    "title": "Joint Chiefs head makes first official visit to post-Maduro Venezuela",
+    "published_at": "2026-06-05T19:59:31+00:00",
+    "importance": 5.0,
+    "category": "south_america",
+    "theatre": "south_america",
+    "countries": [
+      "Venezuela"
+    ],
+    "actors": [
+      "Gen. Dan Caine",
+      "Joint Chiefs of Staff",
+      "U.S.",
+      "interim government of Venezuela"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ca52c1421fabb437461474a8",
+    "title": "France opens ‘war crimes’ probe into Israel’s treatment of Gaza activists",
+    "published_at": "2026-06-05T19:51:23+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "France",
+      "Israel"
+    ],
+    "actors": [
+      "French anti-terrorism prosecutors",
+      "Israeli far-right National Security Minister Itamar Ben-Gvir"
+    ],
+    "organizations": [
+      "Global Sumud Flotilla"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "04f3bca581b732eeae886134",
+    "title": "Families clear rubble after overnight Israeli strikes in Gaza",
+    "published_at": "2026-06-05T19:40:41+00:00",
+    "importance": 5.0,
+    "category": "us_china_drone_conflicts",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Gaza"
+    ],
+    "actors": [
+      "Israel",
+      "Palestinians"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ed7e354d78af586941b969d5",
+    "title": "Oil Retreats on Global Demand Fears",
+    "published_at": "2026-06-05T19:43:28+00:00",
+    "importance": 4.0,
+    "category": "us_iran_nuclear",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "Donald Trump",
+      "Hezbollah",
+      "Israel",
+      "Lebanon"
+    ],
+    "organizations": [
+      "BOK Financial Securities Inc."
+    ],
+    "commodities": []
+  },
+  {
+    "id": "05c806d87af0fbeb02cade66",
+    "title": "How Ukraine Has Turned the Tide",
+    "published_at": "2026-06-05T19:00:33+00:00",
+    "importance": 8.0,
+    "category": "global_crisis",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine"
+    ],
+    "actors": [
+      "Ukrainian soldiers",
+      "Russian Spetsnaz"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "752f0accafaa2dbf9d53fbd7",
+    "title": "Israelis accuse White House officials of leaking Iran plan to Turkey",
+    "published_at": "2026-06-05T19:12:46+00:00",
+    "importance": 4.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Israel",
+      "United States",
+      "Turkey"
+    ],
+    "actors": [
+      "Israeli sources",
+      "US White House officials",
+      "Turkish President Recep Tayyip Erdogan"
+    ],
+    "organizations": [
+      "White House",
+      "Jerusalem Post"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "0df4b384310dd12c15c06f10",
+    "title": "US Congress moves to tighten oversight of military affairs",
+    "published_at": "2026-06-05T19:06:42+00:00",
+    "importance": 4.0,
+    "category": "us_politics",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "US Congress",
+      "Pentagon",
+      "House Armed Services Committee"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "874926106145fa90106db179",
+    "title": "Hamas delegation lands in Egypt for fresh Gaza ceasefire negotiations - TRT World",
+    "published_at": "2026-06-05T19:06:01+00:00",
+    "importance": 5.0,
+    "category": "israel_gaza",
+    "theatre": "israel_gaza",
+    "countries": [
+      "Egypt",
+      "Gaza"
+    ],
+    "actors": [
+      "Hamas"
+    ],
+    "organizations": [
+      "Egypt"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "4bb3c378acc55d6e09d4f92d",
+    "title": "Memo orders ICE to stop reporting deaths of newly released detainees",
+    "published_at": "2026-06-05T18:54:56+00:00",
+    "importance": 9.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "ICE",
+      "David Venturella"
+    ],
+    "organizations": [
+      "Immigration and Customs Enforcement (ICE)"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "719fb15d8d318495d62900f0",
+    "title": "Judge strikes down Trump bar on asylum, visa processing for 39 countries",
+    "published_at": "2026-06-05T18:50:31+00:00",
+    "importance": 4.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "US"
+    ],
+    "actors": [
+      "US Citizenship and Immigration Services",
+      "District Judge John McConnell"
+    ],
+    "organizations": [
+      "ACLU",
+      "Amnesty International"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "8b10f70be6afd758219d1346",
+    "title": "Ukraine: Dear Putin, Lebanon: A Crude Call, Colombia's 'Tiger'",
+    "published_at": "2026-06-05T18:26:45+00:00",
+    "importance": 7.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Lebanon",
+      "Israel",
+      "Iran",
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Hezbollah",
+      "Iranian regime",
+      "US",
+      "Russia",
+      "Ukraine"
+    ],
+    "organizations": [
+      "Hezbollah",
+      "Iranian Revolutionary Guard Corp",
+      "Institute for the Study of War"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "e2965b32287186fad5bc107e",
+    "title": "Is the latest US ceasefire deal for Lebanon meaningless?",
+    "published_at": "2026-06-05T18:45:16+00:00",
+    "importance": 5.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Israel",
+      "Hezbollah"
+    ],
+    "organizations": [
+      "United States International Crisis Group"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "a8aa884ff840b9696c79e5fe",
+    "title": "Contain, Consolidate, and Co-Opt",
+    "published_at": "2026-06-05T18:40:00+00:00",
+    "importance": 4.0,
+    "category": "global_crisis",
+    "theatre": "western_europe",
+    "countries": [
+      "France"
+    ],
+    "actors": [
+      "Emmanuel Macron",
+      "Recep Tayyip Erdogan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "be2417e59717673f65b63248",
+    "title": "Uzbekistan, Russia Celebrate Start of Nuclear Power Plant Construction… Again",
+    "published_at": "2026-06-05T15:07:00+00:00",
+    "importance": 8.0,
+    "category": "global_energy",
+    "theatre": "global_energy",
+    "countries": [
+      "Uzbekistan",
+      "Russia"
+    ],
+    "actors": [
+      "Russian President Vladimir Putin",
+      "Uzbek President Shavkat Mirziyoyev",
+      "International Atomic Energy Agency Director general Rafael Grossi"
+    ],
+    "organizations": [
+      "Uzatom",
+      "Rosatom",
+      "BRICS New Development Bank"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "ebbf8b678b54fe79e8ad1708",
+    "title": "Pete Hegseth’s Missed Chance to Reassure – and Deter – on Taiwan",
+    "published_at": "2026-06-05T13:17:00+00:00",
+    "importance": 7.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "United States",
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "Pete Hegseth",
+      "Xi Jinping",
+      "Lai Ching-te"
+    ],
+    "organizations": [
+      "Pentagon",
+      "Chinese military"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "b317153e19e3add3e7d3a1d1",
+    "title": "Why China Weaponized the Thucydides Trap",
+    "published_at": "2026-06-05T12:50:00+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "china_indo_pacific",
+    "countries": [
+      "China",
+      "United States"
+    ],
+    "actors": [
+      "Xi Jinping",
+      "President Donald Trump"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "2dc919e31f4d58743d21d83a",
+    "title": "Xi Jinping to Visit North Korea Amid Deepening Three-Way Alliance",
+    "published_at": "2026-06-05T12:13:00+00:00",
+    "importance": 7.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "China",
+      "North Korea"
+    ],
+    "actors": [
+      "Xi Jinping",
+      "Kim Jong Un"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "2ae63ea5379007da060d39ea",
+    "title": "India Turns to Venezuela Oil as the Hormuz Crisis Bites",
+    "published_at": "2026-06-05T18:27:42+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "India",
+      "Venezuela"
+    ],
+    "actors": [
+      "Delcy Rodríguez",
+      "Narendra Modi"
+    ],
+    "organizations": [
+      "Reliance Industries",
+      "ONGC Videsh"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "40ef3f73e1da2eaaaee66391",
+    "title": "No court has authority to block Trump’s White House ballroom, DoJ lawyer says",
+    "published_at": "2026-06-05T18:23:24+00:00",
+    "importance": 4.0,
+    "category": "us_defense",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "Department of Justice",
+      "National Trust for Historic Preservation"
+    ],
+    "organizations": [
+      "White House",
+      "US Congress"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "204bdb80e6ac41ed9df39868",
+    "title": "Two men convicted of wounding journalist ‘on orders of Iran’",
+    "published_at": "2026-06-05T18:21:54+00:00",
+    "importance": 5.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Iran",
+      "United Kingdom"
+    ],
+    "actors": [
+      "Iran",
+      "Pouria Zeraati",
+      "Nandito Badea",
+      "George Stana"
+    ],
+    "organizations": [
+      "Iran International",
+      "Hemroc Ltd"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "968bfcb0a604749c58bcf650",
+    "title": "Putin says there is 'no point' meeting Zelensky over ending Ukraine war",
+    "published_at": "2026-06-05T18:16:15+00:00",
+    "importance": 7.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Vladimir Putin",
+      "Volodymyr Zelensky"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "16d30b37f6532dcb79ab5b83",
+    "title": "Russia’s Putin says ‘no point’ meeting Ukraine’s Zelenskyy for now",
+    "published_at": "2026-06-05T18:04:27+00:00",
+    "importance": 7.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Vladimir Putin",
+      "Volodymyr Zelenskyy"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d1ec8e23deddf2621da44818",
+    "title": "Israel angles for permanent occupation in Lebanon; Dr. Hussam Abu Safiyah transferred to solitary confinement; Trump sanctions Cuban president - Drop Site News",
+    "published_at": "2026-06-05T16:08:15+00:00",
+    "importance": 4.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon",
+      "Cuba"
+    ],
+    "actors": [
+      "Israel",
+      "Dr. Hussam Abu Safiyah",
+      "US"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "267691ffc74573df27b7d04b",
+    "title": "Putin rejects Zelenskyy’s offer to meet and reaffirms Ukraine war aims",
+    "published_at": "2026-06-05T17:59:01+00:00",
+    "importance": 8.0,
+    "category": "global_crisis",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Vladimir Putin",
+      "Volodymyr Zelenskyy"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "4853af761e616573b7b891d3",
+    "title": "Washington 5 June 2026 #2",
+    "published_at": "2026-06-05T15:53:07+00:00",
+    "importance": 7.0,
+    "category": "general",
+    "theatre": "",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "U.S.",
+      "Network of individuals, entities, vessels"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "465143db89d10aa1f5df8c6e",
+    "title": "Hormuz 5 June 2026 #1",
+    "published_at": "2026-06-05T15:52:12+00:00",
+    "importance": 5.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "strait_hormuz",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "U.S. Indo-Pacific Command (INDOPACOM)",
+      "Iran's army"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "11cbb4e252f9ab8ec4fc93a9",
+    "title": "Tehran 5 June 2026 #1",
+    "published_at": "2026-06-05T15:50:10+00:00",
+    "importance": 7.0,
+    "category": "iran_asia_oil_trade",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "U.S. Indo-Pacific Command (INDOPACOM)",
+      "Iran's army"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "38250d9d46ea8ae3477c64cc",
+    "title": "Washington 5 June 2026 #1",
+    "published_at": "2026-06-05T15:49:23+00:00",
+    "importance": 5.0,
+    "category": "maritime_chokepoints",
+    "theatre": "gulf_iran",
+    "countries": [
+      "United States",
+      "Iran"
+    ],
+    "actors": [
+      "U.S. forces",
+      "Iran’s army"
+    ],
+    "organizations": [
+      "INDOPACOM",
+      "U.S. Central Command"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "f75639299f1d586504a4d6f6",
+    "title": "Lebanon 5 June 2026 #1",
+    "published_at": "2026-06-05T15:47:48+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Lebanon",
+      "Israel"
+    ],
+    "actors": [
+      "Hizbollah",
+      "Israeli military",
+      "Lebanese President Joseph Aoun"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1f9e37e7793aabf80e0f071f",
+    "title": "Israel 5 June 2026 #1",
+    "published_at": "2026-06-05T15:46:40+00:00",
+    "importance": 5.0,
+    "category": "global_crisis",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "Israel",
+      "Lebanon"
+    ],
+    "actors": [
+      "Hizbollah",
+      "Israeli military",
+      "Iran",
+      "Lebanese President Joseph Aoun"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "dd8ddfe9d04132fdef9984ca",
+    "title": "Iran Severely Damaged US Air Ops Center in Qatar Soon After War Began - Air & Space Forces Magazine",
+    "published_at": "2026-06-05T13:20:20+00:00",
+    "importance": 5.0,
+    "category": "gulf_iran",
+    "theatre": "gulf_iran",
+    "countries": [
+      "US",
+      "Qatar",
+      "Iran"
+    ],
+    "actors": [
+      "US",
+      "Iran"
+    ],
+    "organizations": [
+      "Air & Space Forces Magazine"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "693b50e92eef1e5dc4b5b955",
+    "title": "After the Invasion: China Considers the Problem of Ruling Taiwan - War on the Rocks",
+    "published_at": "2026-06-05T07:35:22+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "Taiwan",
+      "China"
+    ],
+    "actors": [
+      "China"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "001fbabe7252bc70c97d113c",
+    "title": "Iran adviser says US talks deadlocked as war risks widen",
+    "published_at": "2026-06-05T17:55:55+00:00",
+    "importance": 8.0,
+    "category": "maritime_chokepoints",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran"
+    ],
+    "actors": [
+      "Iran",
+      "US"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "fc6e2c89562ef35943caf9ba",
+    "title": "US judge strikes down Trump policies targeting immigrants from 39 countries",
+    "published_at": "2026-06-05T17:28:59+00:00",
+    "importance": 5.0,
+    "category": "us_macro",
+    "theatre": "",
+    "countries": [
+      "United States"
+    ],
+    "actors": [
+      "US Citizenship and Immigration Services",
+      "US Department of Homeland Security",
+      "Chief US District Judge John McConnell"
+    ],
+    "organizations": [
+      "immigrant service organisations",
+      "labour unions"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "5905b23e86fb36d83cdfa281",
+    "title": "Iran War Warrants ‘Strategic Shifts’ In US Policy In Middle East – OpEd - Eurasia Review",
+    "published_at": "2026-06-05T17:22:50+00:00",
+    "importance": 7.0,
+    "category": "us_politics",
+    "theatre": "gulf_iran",
+    "countries": [
+      "Iran",
+      "United States"
+    ],
+    "actors": [
+      "United States",
+      "Iran"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "58ca1868b10a8f8c6c75b956",
+    "title": "«Российская сторона снова выбирает войну». Зеленский — об отказе Путина встретиться с ним",
+    "published_at": "2026-06-05T17:21:27+00:00",
+    "importance": 7.0,
+    "category": "us_iran_nuclear",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Vladimir Zelensky",
+      "Vladimir Putin"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "d26d5bb07c3b7c73f8e22301",
+    "title": "Ukrainian naval drone explodes in Romania port – first such incident on NATO territory - EUalive",
+    "published_at": "2026-06-05T17:05:44+00:00",
+    "importance": 7.0,
+    "category": "eastern_europe",
+    "theatre": "eastern_europe",
+    "countries": [
+      "Romania",
+      "Ukraine"
+    ],
+    "actors": [
+      "Ukraine",
+      "NATO"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ede9b55bd579bf1fe52f3f75",
+    "title": "UK’s Keir Starmer says Russia could attack Nato within 4 years - South China Morning Post",
+    "published_at": "2026-06-05T15:25:59+00:00",
+    "importance": 5.0,
+    "category": "russia_nato_europe",
+    "theatre": "russia_nato_europe",
+    "countries": [
+      "UK",
+      "Russia",
+      "NATO"
+    ],
+    "actors": [
+      "Keir Starmer"
+    ],
+    "organizations": [
+      "NATO"
+    ],
+    "commodities": []
+  },
+  {
+    "id": "24f2b28db07362593987bbe3",
+    "title": "Путин заявил, что Зеленский просил о личной встрече еще несколько недель назад — через российского бизнесмена, приезжавшего в Киев",
+    "published_at": "2026-06-05T17:13:49+00:00",
+    "importance": 5.0,
+    "category": "us_china_drone_conflicts",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "actors": [
+      "Vladimir Putin",
+      "Volodymyr Zelensky"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "1e54c5e784765733e8d3f30e",
+    "title": "Pakistan ‘categorically rejects’ India’s remarks on GB elections as ‘baseless’",
+    "published_at": "2026-06-05T17:10:56+00:00",
+    "importance": 4.0,
+    "category": "india_china_himalaya",
+    "theatre": "india_china_himalaya",
+    "countries": [
+      "Pakistan",
+      "India"
+    ],
+    "actors": [
+      "Pakistan",
+      "India"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "6d032c8ca8570522672cc14b",
+    "title": "A Ukrainian naval drone blew up in a NATO port after Russian electronic warfare pushed it off course - Business Insider",
+    "published_at": "2026-06-05T16:01:55+00:00",
+    "importance": 5.0,
+    "category": "russia_nato_europe",
+    "theatre": "russia_nato_europe",
+    "countries": [
+      "Ukraine",
+      "Russia",
+      "NATO countries"
+    ],
+    "actors": [
+      "Ukraine",
+      "Russia",
+      "NATO"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "ca70c83dc931a0ce394ab1b6",
+    "title": "Xi Jinping will travel to North Korea next week in first visit since 2019",
+    "published_at": "2026-06-05T17:03:13+00:00",
+    "importance": 5.0,
+    "category": "korean_peninsula",
+    "theatre": "korean_peninsula",
+    "countries": [
+      "China",
+      "North Korea"
+    ],
+    "actors": [
+      "Xi Jinping",
+      "North Korean leadership"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "500016ee69e1aa6ab273391c",
+    "title": "South China Sea: Third Chinese Maritime 'Incursion' Near Taiwan Within Month - WION",
+    "published_at": "2026-06-05T16:57:00+00:00",
+    "importance": 5.0,
+    "category": "taiwan_strait",
+    "theatre": "taiwan_strait",
+    "countries": [
+      "China",
+      "Taiwan"
+    ],
+    "actors": [
+      "China",
+      "Taiwan"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "e045846713e127399f431816",
+    "title": "Ukraine slows Russia’s army but struggles to down ballistic missiles",
+    "published_at": "2026-06-05T16:52:11+00:00",
+    "importance": 9.0,
+    "category": "ukraine_russia",
+    "theatre": "ukraine_russia",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "actors": [
+      "Ukraine",
+      "Russia",
+      "Vladimir Putin",
+      "Volodymyr Zelenskyy"
+    ],
+    "organizations": [],
+    "commodities": []
+  },
+  {
+    "id": "9d5879c6c5fcf9b970086f17",
+    "title": "'Not your country': Joseph Aoun tells Iran to stay out of Lebanon's affairs",
+    "published_at": "2026-06-05T14:55:34+00:00",
+    "importance": 4.0,
+    "category": "israel_hezbollah_lebanon",
+    "theatre": "israel_hezbollah_lebanon",
+    "countries": [
+      "lebanon",
+      "iran"
+    ],
+    "actors": [
+      "joseph aoun",
+      "iran",
+      "hezbollah",
+      "israel"
+    ],
+    "organizations": [],
+    "commodities": []
+  }
+]

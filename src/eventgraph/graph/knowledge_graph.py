@@ -21,6 +21,7 @@ from eventgraph.core.asset import Asset
 from eventgraph.core.event import Event
 from eventgraph.core.node import NodeKind
 from eventgraph.core.relation import Relation
+from eventgraph.graph.analytics import RiskHotspot
 
 #: Anything that can stand in for a node: an id string or a node object.
 NodeRef = str | Event | Actor | Asset
@@ -184,8 +185,7 @@ class EventGraph:
         """Structural centrality of every node.
 
         Args:
-            method: ``"degree"``, ``"betweenness"``, ``"closeness"`` or
-                ``"pagerank"`` (weighted).
+            method: ``"degree"``, ``"betweenness"`` or ``"closeness"``.
         """
         funcs = {
             "degree": nx.degree_centrality,
@@ -241,6 +241,36 @@ class EventGraph:
             top_k=top_k,
             decay=decay,
         )
+
+    # ------------------------------------------------------------------ #
+    # analytics
+    # ------------------------------------------------------------------ #
+    def emerging_clusters(self, *, min_size: int = 2, seed: int = 42) -> list[list[str]]:
+        """Detect strongly-connected groups of nodes (themes / emerging crises).
+
+        Runs Louvain community detection on the undirected projection.
+
+        Returns:
+            Clusters (lists of ``node_id``) of size ``>= min_size``, largest first.
+        """
+        from eventgraph.graph.analytics import detect_communities
+
+        return detect_communities(self, min_size=min_size, seed=seed)
+
+    def risk_hotspots(
+        self,
+        *,
+        top_k: int = 10,
+        weights: tuple[float, float, float] = (0.4, 0.4, 0.2),
+    ) -> list[RiskHotspot]:
+        """Rank nodes by a blended risk-concentration heuristic.
+
+        Combines degree centrality, :meth:`influence_score` and local density.
+        See :func:`eventgraph.graph.analytics.risk_hotspots`.
+        """
+        from eventgraph.graph.analytics import risk_hotspots as _risk_hotspots
+
+        return _risk_hotspots(self, top_k=top_k, weights=weights)
 
     # ------------------------------------------------------------------ #
     # serialisation

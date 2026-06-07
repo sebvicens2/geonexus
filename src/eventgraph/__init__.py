@@ -15,6 +15,7 @@ from eventgraph.core.asset import Asset
 from eventgraph.core.event import Event
 from eventgraph.core.node import NodeKind
 from eventgraph.core.relation import Relation
+from eventgraph.graph.analytics import RiskHotspot
 from eventgraph.graph.knowledge_graph import EventGraph
 from eventgraph.ontology.actor_types import ActorType
 from eventgraph.ontology.asset_types import AssetType
@@ -35,5 +36,6 @@ __all__ = [
     "NodeKind",
     "Relation",
     "RelationType",
+    "RiskHotspot",
     "__version__",
 ]

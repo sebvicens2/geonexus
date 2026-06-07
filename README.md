@@ -174,9 +174,53 @@ export_graphml(g, "graph.graphml")  # → Gephi / yEd
 | **Graph** | `EventGraph` over a `networkx.MultiDiGraph`: `add_*`, `get`, `neighbors`, `shortest_path` |
 | **Metrics** | `centrality` (degree / betweenness / closeness) + `influence_score` (causal reach) |
 | **Causality** | `impact(target)` — deterministic, ranked, explainable causal chains |
+| **Analytics** | `emerging_clusters()` (Louvain communities) + `risk_hotspots()` (centrality × influence × density) |
 | **Storage** | In-memory + JSON backends behind a `Storage` protocol; canonical (deterministic) serialisation |
 | **Visualisation** | matplotlib (core) · pyvis interactive HTML (extra) · GraphML export |
 | **Quality** | `mypy --strict`, `ruff`, `py.typed`, ~96% test coverage, CI on 3.11 & 3.12 |
+
+---
+
+## Real-world demo: World Observer
+
+To show EventGraph on a live feed rather than a toy, `examples/` includes an
+experimental integration with [World Observer](https://github.com/) — a corpus of
+analysed geopolitical articles (countries, actors, theatres, categories,
+importance, dates). The integration is **read-only and one-directional**: a single
+script exports a real sample to JSON; the library never depends on World Observer.
+
+```bash
+python examples/world_observer_demo.py   # text report
+python examples/world_observer_map.py    # → world_observer_graph.png / .html
+```
+
+From **350 real events**, the graph (≈900 nodes) surfaces — with no LLM and no
+hand-tuning — exactly the structure you'd expect:
+
+```text
+Top influential regions
+  gulf_iran                  42.10
+  israel_gaza                25.80
+  ukraine_russia             24.40
+  taiwan_strait              19.60
+  strait_hormuz              12.60
+
+Emerging clusters (themes / crises)
+  Cluster 1: Israel, israel_gaza, Lebanon, Palestine, israel_hezbollah_lebanon
+  Cluster 2: United States, Iran, gulf_iran, strait_hormuz, maritime_chokepoints
+  Cluster 3: Russia, Ukraine, ukraine_russia, Vladimir Putin, Volodymyr Zelensky
+  Cluster 4: China, taiwan_strait, Taiwan, korean_peninsula, global_crisis
+
+Top risk hotspots
+  United States  risk=0.816 (cen=1.00 inf=1.00 den=0.08)
+  Iran           risk=0.667 (cen=0.78 inf=0.82 den=0.14)
+  gulf_iran      risk=0.528 (cen=0.61 inf=0.63 den=0.16)
+```
+
+The four largest communities recover the four live theatres — Middle East,
+Iran/Gulf, Russia/Ukraine and Asia-Pacific — straight from co-occurrence structure:
+
+![World Observer event graph coloured by emerging cluster](assets/world_observer_map.png)
 
 ---
 
