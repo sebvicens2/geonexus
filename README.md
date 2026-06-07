@@ -328,6 +328,27 @@ python examples/build_narrative_dashboard.py   # → reports/eventgraph_narrativ
 
 ![Narrative dashboard — emerging-signals board](assets/narrative_dashboard.png)
 
+#### Optional: a grounded LLM brief
+
+The detection above is fully deterministic. As an *optional* last mile, a local
+Qwen (Ollama) can explain the top signals — one grounded sentence each, written
+from the actual before/after WO summaries (temperature 0, told to use only facts
+in the text), bounded to the top-N signals:
+
+```bash
+python examples/narrative_llm_brief.py --model qwen2.5:14b --top 8
+```
+
+```text
+▲ OPEC    OPEC+ agreed to a fourth oil-output increase amid the Strait of Hormuz crisis and UAE's exit.
+▲ WHO     Health workers treat Ebola patients unpaid as the WHO seeks resources — a critical funding gap.
+▲ Bahrain Iran launches missile and drone attacks on Bahrain, escalating Gulf tensions.
+```
+
+EventGraph itself stays LLM-free; this enrichment lives in `examples/` and
+degrades gracefully if Ollama isn't running. Detection is reproducible; the
+LLM interpretation layer is not.
+
 ### Tracking change over time with `EventMemory`
 
 `EventMemory` stores a dated graph snapshot per day and diffs them. Over a 14-day
