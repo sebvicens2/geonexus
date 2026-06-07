@@ -38,8 +38,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/sebastienvicens/eventgraph"
-Repository = "https://github.com/sebastienvicens/eventgraph"
+Homepage = "https://github.com/sebvicens2/eventgraph"
+Repository = "https://github.com/sebvicens2/eventgraph"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/eventgraph"]
