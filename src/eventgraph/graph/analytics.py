@@ -36,18 +36,34 @@ def undirected_simple(graph: nx.MultiDiGraph) -> nx.Graph:
 def detect_communities(graph: EventGraph, *, min_size: int = 2, seed: int = 42) -> list[list[str]]:
     """Detect strongly-connected groups (themes / emerging crises).
 
-    Uses Louvain community detection on the weighted undirected projection.
+    Uses greedy modularity maximisation on the weighted undirected projection.
+    This is fully deterministic (no RNG): Louvain, despite a fixed ``seed``, is
+    sensitive to string-hash randomisation and gives different results run to run.
+
+    Args:
+        min_size: Minimum members for a cluster to be reported.
+        seed: Accepted for API compatibility; unused (the algorithm is deterministic).
 
     Returns:
         Clusters (lists of ``node_id``) with at least ``min_size`` members,
         sorted from largest to smallest.
     """
+    del seed  # deterministic algorithm; kept in the signature for compatibility
     h = undirected_simple(graph.raw)
     if h.number_of_edges() == 0:
         return []
-    communities: list[set[str]] = nx.community.louvain_communities(h, weight="weight", seed=seed)
-    clusters = [sorted(c) for c in communities if len(c) >= min_size]
-    clusters.sort(key=len, reverse=True)
+    # Relabel to integers in a fixed sorted order so tie-breaking is reproducible
+    # (string node labels would make set iteration depend on PYTHONHASHSEED).
+    order = {name: i for i, name in enumerate(sorted(h.nodes()))}
+    inverse = {i: name for name, i in order.items()}
+    h_int = nx.relabel_nodes(h, order, copy=True)
+    communities = nx.community.greedy_modularity_communities(h_int, weight="weight")
+    clusters = [
+        sorted(inverse[i] for i in community)
+        for community in communities
+        if len(community) >= min_size
+    ]
+    clusters.sort(key=lambda c: (-len(c), c))  # largest first, ties broken stably
     return clusters
 
 
@@ -92,6 +108,13 @@ def risk_hotspots(
     - **density** — square clustering (local neighbourhood redundancy; this works
       on bipartite-style co-occurrence graphs where triangle clustering is always
       zero).
+
+    Note:
+        This is a *structural* heuristic over the graph, not a domain risk model.
+        On a co-occurrence graph (e.g. one built from news), ``centrality`` and
+        ``influence`` are strongly correlated and both track raw connectivity /
+        coverage volume — so the score mostly reflects how connected a node is,
+        not real-world risk. Interpret accordingly.
 
     Args:
         graph: The graph to analyse.

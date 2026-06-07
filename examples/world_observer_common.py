@@ -54,6 +54,16 @@ def _canon(name: str) -> str:
     return ALIASES.get(name, name)
 
 
+def _key(name: str) -> str:
+    """Match key that collapses case and underscore variants (Iran/iran/united_states)."""
+    return _canon(name).casefold().replace("_", " ").strip()
+
+
+def _properness(name: str) -> int:
+    """Display-form score: prefers 'United States' over 'united states'."""
+    return sum(1 for c in name if c.isupper())
+
+
 def _parse_ts(value: str | None) -> datetime:
     if not value:
         return _FALLBACK_TS
@@ -69,8 +79,26 @@ def load_events(path: Path = DATA_PATH) -> list[dict[str, Any]]:
 
 
 def build_graph(events: list[dict[str, Any]]) -> EventGraph:
-    """Build an EventGraph from World Observer event records."""
+    """Build an EventGraph from World Observer event records.
+
+    Entities are de-duplicated across case/underscore variants, so ``Iran``,
+    ``iran`` and a category ``iran`` all collapse onto one node.
+    """
     g = EventGraph()
+
+    # pass 1: pick a canonical display name per entity key (merge variants)
+    display: dict[str, str] = {}
+    for e in events:
+        for raw in (*e["countries"], *e["actors"], *e["organizations"]):
+            name = _canon(raw)
+            if not name:
+                continue
+            k = _key(name)
+            if k not in display or _properness(name) > _properness(display[k]):
+                display[k] = name
+
+    def resolve(raw: str) -> str:
+        return display.get(_key(raw), _canon(raw))
 
     for e in events:
         severity = max(0.0, min(1.0, float(e.get("importance", 0.0)) / 10.0))
@@ -85,7 +113,9 @@ def build_graph(events: list[dict[str, Any]]) -> EventGraph:
         g.add_event(event)
 
         # countries + actors + organizations -> Actor (unified by canonical name)
-        names = {_canon(x) for x in (*e["countries"], *e["actors"], *e["organizations"])}
+        names = {
+            resolve(x) for x in (*e["countries"], *e["actors"], *e["organizations"]) if x.strip()
+        }
         for name in names:
             nid = f"actor:{name}"
             if nid not in g:
@@ -121,9 +151,10 @@ def build_graph(events: list[dict[str, Any]]) -> EventGraph:
                 )
             )
 
-        # category -> node only when it carries info beyond the theatre
+        # category -> node only when it adds info beyond the theatre AND is not
+        # just a duplicate of a country/actor (e.g. category "iran" == actor Iran)
         category = e.get("category")
-        if category and category not in (theatre, "general"):
+        if category and category not in (theatre, "general") and _key(category) not in display:
             nid = f"actor:{category}"
             if nid not in g:
                 g.add_actor(

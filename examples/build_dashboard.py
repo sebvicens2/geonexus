@@ -21,7 +21,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from results_report import ASSETS, add_asset_overlay, causal_paths, collect
+from results_report import ASSETS, _window, add_asset_overlay, causal_paths, collect
 from world_observer_common import build_graph, load_events
 
 from eventgraph import EventGraph
@@ -217,7 +217,7 @@ def render(
         ]
         for i, (_, label, typ, s) in enumerate(data["hotspots"], 1)  # type: ignore[index]
     ]
-    hotspots_tbl = table(["#", "Node", "Type", "Risk", "Cen", "Inf", "Den"], hot_rows)
+    hotspots_tbl = table(["#", "Node", "Type", "Score", "Cen", "Inf", "Den"], hot_rows)
 
     clusters_html = "".join(
         cluster_card(i, c, PALETTE[i % len(PALETTE)])
@@ -236,6 +236,7 @@ def render(
     total = data["total_clusters"]
     n_hot = len(data["hotspots"])  # type: ignore[arg-type]
     n_events = ov["events"]
+    window, n_days = data["window"]  # type: ignore[misc]
 
     return _TEMPLATE.format(
         cards=cards,
@@ -249,6 +250,8 @@ def render(
         total=total,
         n_hot=n_hot,
         n_events=n_events,
+        n_days=n_days,
+        window=window,
     )
 
 
@@ -322,16 +325,25 @@ _TEMPLATE = """<!doctype html>
     border-radius:6px; font-variant-numeric:tabular-nums; }}
   .chain {{ color:#334155; }}
   .muted {{ color:var(--muted); font-weight:400; }}
+  .disclaimer {{ background:#fef3c7; color:#92400e; font-size:12.5px;
+    padding:9px 32px; border-bottom:1px solid #fde68a; }}
+  .note {{ color:var(--muted); font-size:12.5px; margin:-6px 0 12px; }}
   footer {{ text-align:center; color:var(--muted); font-size:13px; padding:26px; }}
   footer b {{ color:var(--ink); }}
 </style></head>
 <body>
 <header>
   <h1>EventGraph — World Observer</h1>
-  <p>Causal graph intelligence over a real geopolitical event feed.</p>
-  <span class="badge">{n_events} real events · {n_hot} hotspots
-    · {n_major} major clusters · no LLM</span>
+  <p>A descriptive map of <b>media attention</b> over a real news feed —
+    not a risk or forecasting model.</p>
+  <span class="badge">{n_events} events · {n_days} days · {n_major} clusters
+    · media attention · no LLM</span>
 </header>
+<div class="disclaimer">
+  Honest caveats: <b>influence ≈ coverage volume</b> (≈0.93 corr. with degree);
+  <b>hotspots</b> = connectivity/attention, <b>not</b> real-world risk;
+  <b>causal paths</b> are illustrative (event→asset links are hand-mapped, not inferred).
+</div>
 <nav>
   <button class="active" data-tab="overview">Overview</button>
   <button data-tab="network">Network</button>
@@ -342,8 +354,10 @@ _TEMPLATE = """<!doctype html>
 <main>
   <section class="tab active" id="overview">
     <h2 class="section">Overview</h2>
+    <p class="note">Window: {window} ({n_days} days) of English-language coverage.</p>
     <div class="grid">{cards}</div>
     <h2 class="section">Top 10 by influence</h2>
+    <p class="note">Influence ≈ media coverage volume, not real-world influence.</p>
     <div class="panel">{influence}</div>
   </section>
   <section class="tab" id="network">
@@ -352,23 +366,26 @@ _TEMPLATE = """<!doctype html>
     {network}
   </section>
   <section class="tab" id="clusters">
-    <h2 class="section">Emerging clusters</h2>
+    <h2 class="section">Emerging clusters <span class="muted">(media co-occurrence)</span></h2>
     <div class="clusters">{clusters}</div>
   </section>
   <section class="tab" id="hotspots">
-    <h2 class="section">Top 10 risk hotspots</h2>
+    <h2 class="section">Top 10 attention hotspots</h2>
+    <p class="note">Connectivity / media attention — <b>not</b> real-world risk.</p>
     <div class="panel">{hotspots}</div>
   </section>
   <section class="tab" id="paths">
     <h2 class="section">Causal paths to assets
-      <span class="muted">(heuristic asset overlay)</span></h2>
+      <span class="muted">(illustrative — heuristic, not predictive)</span></h2>
+    <p class="note">Real actor co-mentioned in a real event; the event→asset link is
+      hand-mapped (theatre→asset), not inferred. Score = event importance.</p>
     <div class="panel">{paths}</div>
   </section>
 </main>
 <footer>
-  <b>EventGraph</b> detected <b>{n_major}</b> major geopolitical clusters
-  (of {total} communities) and <b>{n_hot}</b> risk hotspots
-  from <b>{n_events}</b> real World Observer events.
+  <b>EventGraph</b> organised <b>{n_events}</b> real World Observer events
+  ({n_days} days) into <b>{n_major}</b> major media clusters (of {total} communities)
+  and ranked <b>{n_hot}</b> attention hotspots — a descriptive map of media attention.
 </footer>
 <script>
   document.querySelectorAll('nav button').forEach(function(btn) {{
@@ -387,8 +404,10 @@ _TEMPLATE = """<!doctype html>
 
 
 def main() -> None:
-    g = build_graph(load_events())
+    events = load_events()
+    g = build_graph(events)
     data = collect(g)
+    data["window"] = _window(events)
     keep, cluster_of, cluster_names = _backbone(g)
     network = _network_iframe(g, keep, cluster_of)
 

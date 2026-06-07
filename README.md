@@ -212,31 +212,31 @@ a prototype for a future World Observer tab.
 ![EventGraph dashboard — overview](assets/dashboard_overview.png)
 ![EventGraph dashboard — clusters](assets/dashboard_clusters.png)
 
-From **350 real events**, the graph (≈900 nodes) surfaces — with no LLM and no
-hand-tuning — exactly the structure you'd expect:
+From **350 real events** (a 3-day window), the graph (~875 nodes) surfaces — with
+no LLM and no hand-tuning — the structure of the news cycle:
 
 ```text
-Top influential regions
-  gulf_iran                  42.10
-  israel_gaza                25.80
-  ukraine_russia             24.40
-  taiwan_strait              19.60
-  strait_hormuz              12.60
+Top by influence (≈ media coverage volume)
+  United States  Iran  Israel  gulf_iran  Russia  Ukraine  China …
 
-Emerging clusters (themes / crises)
+Emerging clusters (media co-occurrence)
   Cluster 1: Israel, israel_gaza, Lebanon, Palestine, israel_hezbollah_lebanon
   Cluster 2: United States, Iran, gulf_iran, strait_hormuz, maritime_chokepoints
   Cluster 3: Russia, Ukraine, ukraine_russia, Vladimir Putin, Volodymyr Zelensky
   Cluster 4: China, taiwan_strait, Taiwan, korean_peninsula, global_crisis
 
-Top risk hotspots
-  United States  risk=0.816 (cen=1.00 inf=1.00 den=0.08)
-  Iran           risk=0.667 (cen=0.78 inf=0.82 den=0.14)
-  gulf_iran      risk=0.528 (cen=0.61 inf=0.63 den=0.16)
+Top attention hotspots (connectivity / attention — NOT real-world risk)
+  United States  0.817   Iran  0.688   Israel  0.662   gulf_iran  0.512
 ```
 
-The four largest communities recover the four live theatres — Middle East,
-Iran/Gulf, Russia/Ukraine and Asia-Pacific — straight from co-occurrence structure:
+> **Honest caveats.** These metrics describe **media attention**, not real-world
+> risk or causality. *Influence* ≈ coverage volume (it correlates ~0.93 with raw
+> degree); *hotspots* measure connectivity, not risk; the *causal paths* in the
+> report attach assets via a hand-mapped heuristic and are **illustrative, not
+> predictive**. The sample is 3 days of English-language coverage.
+
+The four largest communities still cleanly recover the four live theatres —
+Middle East, Iran/Gulf, Russia/Ukraine and Asia-Pacific — from co-occurrence alone:
 
 ![World Observer event graph coloured by emerging cluster](assets/world_observer_map.png)
 
@@ -273,7 +273,7 @@ mem.compare_hotspots("2026-05-20", "2026-06-07")   # appeared / intensified / fa
 mem.compare_clusters("2026-05-20", "2026-06-07")   # emerged / persisted / dissolved
 ```
 
-![Risk hotspot evolution over 14 days](assets/world_observer_timeline.png)
+![Attention hotspot evolution over 14 days](assets/world_observer_timeline.png)
 
 ---
 
