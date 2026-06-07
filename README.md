@@ -193,7 +193,11 @@ script exports a real sample to JSON; the library never depends on World Observe
 ```bash
 python examples/world_observer_demo.py   # text report
 python examples/world_observer_map.py    # → world_observer_graph.png / .html
+python examples/results_report.py         # full report → reports/world_observer_results.md
 ```
+
+A full generated report (overview, influence, hotspots, clusters, causal paths to
+assets) lives at [`reports/world_observer_results.md`](reports/world_observer_results.md).
 
 From **350 real events**, the graph (≈900 nodes) surfaces — with no LLM and no
 hand-tuning — exactly the structure you'd expect:
