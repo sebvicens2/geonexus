@@ -446,6 +446,17 @@ the firmer signal.
 
 ![Multi-layer geopolitical network dashboard](assets/multilayer_dashboard.png)
 
+To actually *read* the connections between countries, `build_country_views.py`
+gives three legible, interactive views in one file — pick whichever fits:
+
+- **Explorer** — select a country, see all its ties per layer (signed, coloured);
+- **Network** — labelled interactive graph, filter by layer, click a country to focus;
+- **Matrix** — country x country grid, cell = net stance, filter by layer.
+
+```bash
+python examples/build_country_views.py   # → reports/eventgraph_country_views.html
+```
+
 For a navigable view, an **interactive 3D multiplex** stacks each layer as a plane
 (country at the same x,y on every plane; green/red intra-layer ties; vertical
 links couple a country across layers) — drag to rotate, scroll to zoom:
