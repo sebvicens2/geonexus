@@ -286,9 +286,9 @@ Real, interpretable output (10-day window):
 [ukraine_russia] + entered: Chornobyl, IAEA, Zaporizhzhia, Black Sea   (nuclear-site dimension)
 [israel_gaza]    + entered: Bab-el-Mandeb, West Bank, Egypt            (spread to the Red Sea)
 
-Entering the world narrative (across entities):
-  8 entities  Ebola        ← a weak signal rising across many narratives at once
-  3 entities  DRC, IAEA, Chornobyl, Hormuz …
+Entering the world narrative (across 197 country/theatre/category narratives):
+  14 entities  Ebola       ← a weak signal rising across many narratives at once
+  14 entities  World Cup    8 entities  Gaza, Security Council …
 ```
 
 The `Ebola` rollup is the kind of cross-cutting weak signal no single-entity view

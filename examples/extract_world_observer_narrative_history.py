@@ -29,7 +29,8 @@ def extract(db_path: str, window_hours: int, top_entities: int) -> list[dict]:
         """
         SELECT dimension, key, COUNT(*) n
         FROM topic_summary_history
-        WHERE lang='en' AND window_hours=? AND dimension IN ('country','theatre')
+        WHERE lang='en' AND window_hours=?
+          AND dimension IN ('country','theatre','category','global')
         GROUP BY dimension, key ORDER BY n DESC LIMIT ?
         """,
         (window_hours, top_entities),
@@ -59,7 +60,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", default=DEFAULT_DB)
     parser.add_argument("--window-hours", type=int, default=72)
-    parser.add_argument("--top-entities", type=int, default=50)
+    parser.add_argument("--top-entities", type=int, default=200)
     parser.add_argument("--out", default=str(OUT_PATH))
     args = parser.parse_args()
 
