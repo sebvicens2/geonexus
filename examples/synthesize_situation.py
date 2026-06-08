@@ -20,9 +20,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from extract_cameo import ollama
-from multilayer import CAMEO, LAYERS, MARITIME, net_dyads, signed_analysis
+from multilayer import CAMEO, LAYERS, MARITIME, _actor, net_dyads, signed_analysis
 
 OUT = Path(__file__).parent / "data" / "world_observer_situation.json"
+MIN_LLM = 2  # pairs with >= this many interactions get an LLM summary; others show facts only
+
+_PAIR_PROMPT = (
+    "In 2-3 sentences, summarise the relationship between {a} and {b}, based ONLY on "
+    "these interactions from ~12 days of news coverage (+ = cooperation, - = conflict). "
+    "These are media-derived stances. Be specific, do not invent. Plain prose.\n"
+    "INTERACTIONS:\n{lines}"
+)
 
 _PROMPT = (
     "You are a geopolitical analyst. Using ONLY the structured signals below "
@@ -75,6 +83,48 @@ def build_facts() -> dict:
     return facts
 
 
+def build_pairs() -> dict[str, list[dict]]:
+    """Per canonical country pair: the list of CAMEO interactions between them."""
+    cam = json.loads(CAMEO.read_text(encoding="utf-8"))
+    pairs: dict[str, list[dict]] = {}
+    for e in cam:
+        a, b = _actor(e["a"]), _actor(e["b"])
+        if not a or not b or a == b:
+            continue
+        key = "|".join(sorted((a, b)))
+        pairs.setdefault(key, []).append(
+            {"domain": e["domain"], "cameo": e["cameo"], "sign": e["sign"], "source": e["source"]}
+        )
+    return pairs
+
+
+def _pair_reports(model: str, refresh: bool, cached: dict) -> dict:
+    """Per-pair entries {h, edges, text}; LLM summary for pairs with >= MIN_LLM edges."""
+    prev = cached.get("pairs", {}) if cached else {}
+    pairs = build_pairs()
+    todo = sum(1 for v in pairs.values() if len(v) >= MIN_LLM)
+    out: dict[str, dict] = {}
+    done = 0
+    for key, edges in pairs.items():
+        eh = hashlib.sha256(json.dumps(edges, sort_keys=True).encode()).hexdigest()[:12]
+        entry: dict = {"h": eh, "edges": edges, "text": ""}
+        if len(edges) >= MIN_LLM:
+            old = prev.get(key)
+            if old and old.get("h") == eh and old.get("text") and not refresh:
+                entry["text"] = old["text"]
+            else:
+                a, b = key.split("|")
+                lines = "\n".join(f"- {x['domain']}: {x['cameo']} ({x['sign']:+d})" for x in edges)
+                txt = ollama(model, _PAIR_PROMPT.format(a=a, b=b, lines=lines), timeout=120)
+                entry["text"] = (txt or "").strip()
+                done += 1
+                if done % 10 == 0:
+                    print(f"  pair summaries: {done}/{todo}")
+        out[key] = entry
+    print(f"  pair summaries done ({todo} via LLM, {len(out)} total)")
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", default="qwen2.5:7b")
@@ -83,24 +133,32 @@ def main() -> None:
 
     facts = build_facts()
     digest = hashlib.sha256(json.dumps(facts, sort_keys=True).encode()).hexdigest()[:16]
+    cached = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
 
-    if OUT.exists() and not args.refresh:
-        cached = json.loads(OUT.read_text(encoding="utf-8"))
-        if cached.get("hash") == digest:
-            print(f"situation report already up to date (hash {digest}) — use --refresh to force")
+    # global report: reuse cache if unchanged, else regenerate
+    text = cached.get("text", "")
+    if cached.get("hash") != digest or args.refresh or not text:
+        print(f"generating global situation report with {args.model}…")
+        new = ollama(args.model, _PROMPT.format(facts=json.dumps(facts, indent=2)), timeout=240)
+        if new:
+            text = new
+        elif not text:
+            print("Ollama not reachable and no cache — aborting.")
             return
 
-    print(f"generating situation report with {args.model}…")
-    text = ollama(args.model, _PROMPT.format(facts=json.dumps(facts, indent=2)), timeout=240)
-    if not text:
-        print("Ollama not reachable — keeping any existing cache.")
-        return
+    print("generating per-pair summaries…")
+    pairs = _pair_reports(args.model, args.refresh, cached)
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(
-        json.dumps({"hash": digest, "text": text, "facts": facts}, ensure_ascii=False, indent=2),
+        json.dumps(
+            {"hash": digest, "text": text, "facts": facts, "pairs": pairs},
+            ensure_ascii=False,
+            indent=2,
+        ),
         encoding="utf-8",
     )
-    print(f"wrote {OUT} ({len(text)} chars)")
+    print(f"wrote {OUT} (global {len(text)} chars, {len(pairs)} pairs)")
 
 
 if __name__ == "__main__":

@@ -140,5 +140,2797 @@
       "Bosphorus (trade): normal, z=0.2586",
       "Taiwan Strait (trade): normal, z=0.998"
     ]
+  },
+  "pairs": {
+    "Canada|United States": {
+      "h": "62c2eb290457",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "United States"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "world"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Canada"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "canada_macro"
+        }
+      ],
+      "text": "Based on the recent news coverage, Canada and the United States have shown verbal cooperation in their diplomatic interactions, but there has been conflict in economic matters. Specifically, they have engaged in three instances of verbal cooperation and two instances of material conflict over a 12-day period."
+    },
+    "Iran|United States": {
+      "h": "ac4afd2b3bb5",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "United States"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "world"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Iran"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "gulf_iran"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "us_defense"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "us_macro"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "strait_hormuz"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "sanctions"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "civil_unrest"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Oman"
+        },
+        {
+          "domain": "energy",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Sri Lanka"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "semiconductor_war"
+        },
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "iran_climate_china_risk"
+        }
+      ],
+      "text": "Based on recent media coverage, the relationship between Iran and the United States has been marked by significant conflict in military and economic interactions, with both countries engaging in verbal cooperation and conflict. Specifically, there have been multiple instances of material and verbal conflicts in military and energy sectors, as well as two instances of material conflict in economics, while there was one instance of verbal cooperation in diplomacy."
+    },
+    "Russia|United States": {
+      "h": "87ca1069692f",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "world"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Canada"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Germany"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "lng"
+        }
+      ],
+      "text": "Based on the recent news coverage over the past 12 days, the relationship between Russia and the United States has been marked by ongoing conflicts, primarily in the form of verbal disputes in both military and diplomatic contexts, as well as economic tensions."
+    },
+    "North Korea|Russia": {
+      "h": "2276fa0e1380",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "world"
+        }
+      ],
+      "text": ""
+    },
+    "China|North Korea": {
+      "h": "a22bdb006ed1",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "world"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "China"
+        }
+      ],
+      "text": "Based on recent media reports over the past 12 days, China and North Korea have shown cooperation in diplomacy through material support (+2 interactions) and verbal agreements (+1 interaction), indicating a generally cooperative relationship in this period."
+    },
+    "Israel|United States": {
+      "h": "2ca9fe6fb853",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Iran"
+        },
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "gulf_iran"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "us_defense"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "israel_gaza"
+        }
+      ],
+      "text": "Based on the recent news coverage, Israel and the United States have experienced two instances of material conflict in their military interactions, indicating some level of tension. Diplomatically, however, there has been no reported interaction, suggesting a neutral stance in this domain."
+    },
+    "Iran|Israel": {
+      "h": "1d5be14325f4",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Iran"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "gulf_iran"
+        },
+        {
+          "domain": "energy",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "gulf_iran"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Israel"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Israel"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "United Arab Emirates"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Indonesia"
+        }
+      ],
+      "text": "Based on the recent news coverage, Iran and Israel have maintained a tense relationship characterized by frequent verbal and material conflicts in both military and diplomatic domains. There have been two instances of material conflict and four instances of verbal conflict in military matters, as well as consistent verbal conflicts in diplomatic interactions and discussions related to energy."
+    },
+    "China|Iran": {
+      "h": "f84f996f538d",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "gulf_iran"
+        }
+      ],
+      "text": ""
+    },
+    "China|South Korea": {
+      "h": "11da611f92c2",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "China"
+        },
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "critical_minerals"
+        },
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "korean_peninsula"
+        }
+      ],
+      "text": "Based on the recent news coverage over the past 12 days, China and South Korea have maintained a cooperative relationship in the economic sphere, with both countries engaging in verbal cooperation without significant conflict."
+    },
+    "China|European Union": {
+      "h": "7979c9b0a8cd",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "China"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "western_europe"
+        },
+        {
+          "domain": "economic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "global_crisis"
+        }
+      ],
+      "text": "Based on the recent news coverage over the past 12 days, China and the European Union have primarily engaged in verbal conflicts in both economic and diplomatic interactions, with no instances of cooperation noted."
+    },
+    "China|DR Congo": {
+      "h": "6e7a3814996a",
+      "edges": [
+        {
+          "domain": "health",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "China"
+        },
+        {
+          "domain": "health",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "critical_minerals"
+        }
+      ],
+      "text": "Based on recent news coverage, China and DR Congo have shown cooperative relationships in the health sector, with both material cooperation, such as the provision of medical supplies, and verbal cooperation, indicating shared commitments and agreements in healthcare initiatives."
+    },
+    "Israel|Palestine": {
+      "h": "1e7e33fdc7a1",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "us_defense"
+        }
+      ],
+      "text": ""
+    },
+    "Bahrain|Iran": {
+      "h": "1e7e33fdc7a1",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "us_defense"
+        }
+      ],
+      "text": ""
+    },
+    "Iran|Kuwait": {
+      "h": "1e7e33fdc7a1",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "us_defense"
+        }
+      ],
+      "text": ""
+    },
+    "China|United States": {
+      "h": "78fa2c910047",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "us_macro"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "us_politics"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Australia"
+        },
+        {
+          "domain": "energy",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "us_china_relations"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "us_china_relations"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "latin_america"
+        },
+        {
+          "domain": "health",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "central_africa"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Cuba"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between China and the United States has been marked by conflict in economic, diplomatic, and military interactions, each rated as -1. However, there has been material cooperation in energy matters (rated +2), and some verbal cooperation in health and diplomacy (each rated +1)."
+    },
+    "Russia|Ukraine": {
+      "h": "26aa513a7961",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Russia"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Russia"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Russia"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "United Kingdom"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "black_sea_corridor"
+        }
+      ],
+      "text": "Based on recent news coverage, Russia and Ukraine have been engaged in ongoing military conflicts, with two reports of material conflict and one each of verbal conflict. Additionally, there has been one instance of diplomatic verbal conflict between the two nations."
+    },
+    "Israel|Lebanon": {
+      "h": "dcc6d30a1643",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Lebanon"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Syria"
+        }
+      ],
+      "text": "Based on recent news coverage, Israel and Lebanon have been involved in both military conflicts and verbal disputes, indicating a negative relationship with ongoing tensions between the two countries."
+    },
+    "IAEA|Ukraine": {
+      "h": "e6c3e0d412cb",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "ukraine_russia"
+        }
+      ],
+      "text": ""
+    },
+    "NATO|Ukraine": {
+      "h": "ff5d38760324",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "ukraine_russia"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Turkey"
+        }
+      ],
+      "text": "Based on recent media coverage, NATO and Ukraine have shown cooperation in the military domain, with Ukraine receiving both verbal support and material assistance from NATO allies."
+    },
+    "Iran|Russia": {
+      "h": "6ac546329ea8",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "western_europe"
+        }
+      ],
+      "text": ""
+    },
+    "Canada|China": {
+      "h": "f1fb082c48bf",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Canada"
+        }
+      ],
+      "text": ""
+    },
+    "Hamas|Israel": {
+      "h": "2c0f3ab0e518",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Palestine"
+        }
+      ],
+      "text": ""
+    },
+    "India|Pakistan": {
+      "h": "725379c8349d",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "global_crisis"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "India"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Pakistan"
+        }
+      ],
+      "text": "Based on the recent news coverage, India and Pakistan have maintained a generally neutral stance in their official diplomatic interactions, but there have been verbal conflicts between the two countries, indicating underlying tensions."
+    },
+    "Russia|United Kingdom": {
+      "h": "e71ae9b7d3bf",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "United Kingdom"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "russia_nato_europe"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between Russia and the United Kingdom has been characterized by verbal conflicts in both military and diplomatic interactions over the past 12 days."
+    },
+    "Ukraine|United Kingdom": {
+      "h": "021688854752",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "United Kingdom"
+        }
+      ],
+      "text": ""
+    },
+    "China|Japan": {
+      "h": "8f503898db9b",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Japan"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Japan"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Japan"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "critical_minerals"
+        },
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "taiwan_strait"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "china_indo_pacific"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Australia"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "japan_security"
+        }
+      ],
+      "text": "Based on the recent news coverage, China and Japan have experienced both cooperation and conflict in their interactions. Specifically, they have had verbal conflicts in military and diplomatic relations, as well as material conflicts in economic dealings. There has been some material cooperation in the economic sphere, but overall, the relationship appears to be marked by more negative than positive interactions."
+    },
+    "Armenia|Russia": {
+      "h": "7732fb70a394",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "elections"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "balkans_eastern_europe"
+        }
+      ],
+      "text": "Based on the recent news coverage, Armenia and Russia have been involved in verbal conflicts in their diplomatic interactions over the past 12 days."
+    },
+    "Armenia|European Union": {
+      "h": "a36c29c7b045",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "elections"
+        }
+      ],
+      "text": ""
+    },
+    "OPEC|OPEC+": {
+      "h": "cf113812a7c7",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "oil"
+        },
+        {
+          "domain": "energy",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "oil"
+        }
+      ],
+      "text": "Based on recent media coverage over the past 12 days, OPEC and OPEC+ have shown material cooperation in economic matters (+2 interactions) and verbal cooperation in energy-related discussions (+1 interaction), indicating a generally cooperative relationship between the two groups."
+    },
+    "India|United States": {
+      "h": "0fb0b6ac151c",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "India"
+        },
+        {
+          "domain": "economic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "india_china_himalaya"
+        },
+        {
+          "domain": "energy",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "asean_southeast_asia"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "lng"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between India and the United States shows a mix of cooperation and conflict. They have verbally cooperated economically but also had some verbal conflicts in this period. There is clear material cooperation in energy sectors, with additional economic material cooperation as well."
+    },
+    "India|Venezuela": {
+      "h": "5491cb11be0c",
+      "edges": [
+        {
+          "domain": "energy",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "India"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Venezuela"
+        }
+      ],
+      "text": "Based on recent news coverage, India and Venezuela have been cooperating in the areas of energy and economics, with two instances of material cooperation noted in each sector."
+    },
+    "Bangladesh|India": {
+      "h": "68af036261eb",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "India"
+        }
+      ],
+      "text": ""
+    },
+    "Iran|Saudi Arabia": {
+      "h": "5f6ffe8c1841",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "us_iran_nuclear"
+        }
+      ],
+      "text": ""
+    },
+    "Iran|Pakistan": {
+      "h": "5f153926d47c",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Pakistan"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Ukraine": {
+      "h": "d997eadbbebb",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Belgium"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Sweden"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between the European Union and Ukraine has shown a mix of cooperation and conflict. There has been one instance of verbal cooperation in diplomacy, while there have been two instances of material conflict involving military interactions."
+    },
+    "Taiwan|United States": {
+      "h": "7831d7701a15",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "taiwan_strait"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Taiwan"
+        }
+      ],
+      "text": "Based on recent media coverage, the relationship between Taiwan and the United States has shown a mix of conflict and cooperation in military matters. There was one instance of verbal cooperation, but this was offset by a single instance of verbal conflict."
+    },
+    "China|Taiwan": {
+      "h": "e89c42e9394a",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "taiwan_strait"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Taiwan"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "china_indo_pacific"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "maritime_chokepoints"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "south_china_sea"
+        },
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Vietnam"
+        }
+      ],
+      "text": "Based on the recent news coverage, China and Taiwan have experienced a mix of conflict and neutrality in their interactions. Specifically, there have been two instances of material conflict and three instances of verbal conflict related to military matters, indicating tensions. Diplomatic relations remained neutral once and showed verbal conflict once, reflecting an overall cautious but occasionally confrontational relationship."
+    },
+    "Israel|United Kingdom": {
+      "h": "8bfa56e01c0f",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "sanctions"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Israel": {
+      "h": "8bfa56e01c0f",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "sanctions"
+        }
+      ],
+      "text": ""
+    },
+    "Mexico|United States": {
+      "h": "3383025fddb9",
+      "edges": [
+        {
+          "domain": "health",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "agriculture"
+        },
+        {
+          "domain": "economic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "north_american_trade"
+        }
+      ],
+      "text": "Based on recent news coverage, Mexico and the United States have shown verbal cooperation in health matters, while they have experienced verbal conflict in economic issues over the past 12 days."
+    },
+    "Brazil|United States": {
+      "h": "8e78be33df17",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Brazil"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "south_america"
+        },
+        {
+          "domain": "economic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "brics"
+        }
+      ],
+      "text": "Based on the recent news coverage, Brazil and the United States have had primarily negative interactions, characterized by verbal conflicts in areas such as diplomacy, military matters, and economics."
+    },
+    "Germany|United States": {
+      "h": "aa9fb3574f4f",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Germany"
+        }
+      ],
+      "text": ""
+    },
+    "China|Russia": {
+      "h": "5094ddd951ca",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "korean_peninsula"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "russia_nato_europe"
+        },
+        {
+          "domain": "energy",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "energy"
+        },
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Myanmar"
+        }
+      ],
+      "text": "Based on recent news coverage, China and Russia have maintained a generally cooperative relationship in the military and energy sectors, with two positive interactions each. However, their economic relationship remains neutral, while there is no clear indication of conflict or cooperation in diplomacy."
+    },
+    "Australia|China": {
+      "h": "33543a246ba9",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Australia"
+        }
+      ],
+      "text": ""
+    },
+    "Armenia|United States": {
+      "h": "63303e7f1b50",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "balkans_eastern_europe"
+        }
+      ],
+      "text": ""
+    },
+    "NATO|Russia": {
+      "h": "0f296848b747",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "us_china_drone_conflicts"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "russia_nato_europe"
+        }
+      ],
+      "text": "Based on recent news coverage, NATO and Russia have maintained a neutral stance in terms of direct military interactions, but there has been one instance of verbal conflict between the two parties."
+    },
+    "China|India": {
+      "h": "47507401a8e7",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "india_china_himalaya"
+        }
+      ],
+      "text": ""
+    },
+    "China|Philippines": {
+      "h": "8405e506549c",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Philippines"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "south_china_sea"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between China and the Philippines has shown a mix of cooperation and conflict, primarily in diplomatic interactions where there was one instance of verbal cooperation, but also notable material conflicts in their military engagements."
+    },
+    "Japan|Philippines": {
+      "h": "be25ed2f4d5e",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Philippines"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "south_china_sea"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between Japan and the Philippines has shown cooperation in both economic and military domains, with no reported conflicts during the observed period."
+    },
+    "Romania|Ukraine": {
+      "h": "7250072dcc6b",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "cyber"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "eastern_europe"
+        }
+      ],
+      "text": "Based on recent news coverage, Romania and Ukraine have had a strained relationship in the military domain, characterized by both verbal conflicts and material confrontations, indicating a negative interaction between the two countries."
+    },
+    "Kenya|United States": {
+      "h": "79269004b826",
+      "edges": [
+        {
+          "domain": "health",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "east_africa"
+        },
+        {
+          "domain": "health",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Kenya"
+        }
+      ],
+      "text": "Based on the recent news coverage, Kenya and the United States have had negative interactions in the health sector, characterized by verbal conflicts."
+    },
+    "DR Congo|Uganda": {
+      "h": "a72949431746",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "DR Congo"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "supply_chains"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between DR Congo and Uganda shows a mix of cooperation and conflict. While there has been verbal cooperation in diplomacy, their interactions have primarily involved economic conflicts, with a negative stance indicated by two instances of material conflict."
+    },
+    "Congo|Uganda": {
+      "h": "017004f0a3c9",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "supply_chains"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Congo"
+        }
+      ],
+      "text": "Based on recent news coverage, Congo and Uganda have shown signs of both economic and diplomatic conflicts, with no reported cooperation during the observed period. Specifically, there have been two instances of material conflict and one instance of verbal conflict between the two countries."
+    },
+    "Malaysia|Netherlands": {
+      "h": "e5194ff835e1",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Malaysia"
+        }
+      ],
+      "text": ""
+    },
+    "Indonesia|Malaysia": {
+      "h": "565e78ce3a40",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Malaysia"
+        },
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "fx"
+        }
+      ],
+      "text": "Based on recent news coverage, Indonesia and Malaysia have shown cooperative tendencies in the economic sphere, with instances of both material cooperation and verbal agreements noted over the past 12 days."
+    },
+    "Argentina|United Kingdom": {
+      "h": "4f4c056b4236",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Argentina"
+        }
+      ],
+      "text": ""
+    },
+    "Argentina|Chile": {
+      "h": "4f39279ba0b1",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Argentina"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Chile"
+        }
+      ],
+      "text": "Based on recent news coverage, Argentina and Chile have maintained neutral diplomatic interactions but have experienced a verbal conflict, indicating some tension between the two countries without significant cooperation or open hostility."
+    },
+    "Lebanon|Saudi Arabia": {
+      "h": "a04ded14a881",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Saudi Arabia"
+        }
+      ],
+      "text": ""
+    },
+    "Iran|OPEC": {
+      "h": "2b358e28faad",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "United Arab Emirates"
+        }
+      ],
+      "text": ""
+    },
+    "Kenya|South Africa": {
+      "h": "bde89492c03c",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "South Africa"
+        },
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Kenya"
+        },
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "brics"
+        }
+      ],
+      "text": "Based on the recent news coverage, Kenya and South Africa have shown verbal cooperation in both diplomatic and economic matters over the past 12 days. There have been no reported conflicts or issues between the two countries during this period."
+    },
+    "Russia|Uzbekistan": {
+      "h": "83b2c0caa644",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "energy"
+        }
+      ],
+      "text": ""
+    },
+    "Kuwait|United States": {
+      "h": "610708abe39c",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Kuwait"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "arabian_peninsula"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between Kuwait and the United States has been characterized by cooperation, particularly in the areas of diplomacy and military support, with no reported conflicts during the observed period."
+    },
+    "Colombia|United States": {
+      "h": "80244454c9f1",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Colombia"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Colombia"
+        }
+      ],
+      "text": "Based on the recent news coverage, Colombia and the United States have experienced diplomatic conflicts, with both sides engaging in verbal disagreements on multiple occasions within the past 12 days."
+    },
+    "Cuba|United States": {
+      "h": "5a630a0890e9",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "latin_america"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Cuba"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between Cuba and the United States has been marked by ongoing conflict, primarily in the form of verbal disputes and significant economic tensions, with the U.S. imposing material conflicts through economic sanctions."
+    },
+    "Indonesia|United States": {
+      "h": "0cca8c635b40",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Indonesia"
+        }
+      ],
+      "text": ""
+    },
+    "North Korea|United States": {
+      "h": "95681291dfa6",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "North Korea"
+        }
+      ],
+      "text": ""
+    },
+    "Egypt|Israel": {
+      "h": "20c097eb6067",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Turkey"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Egypt"
+        }
+      ],
+      "text": "Based on recent news coverage, Egypt and Israel have shown both cooperation and conflict in their diplomatic interactions. Specifically, there has been one instance of verbal cooperation and one instance of verbal conflict between the two countries over the past 12 days."
+    },
+    "Iran|Turkey": {
+      "h": "594964975252",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Turkey"
+        }
+      ],
+      "text": ""
+    },
+    "China|Mexico": {
+      "h": "ac5f3d7d935d",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "north_american_trade"
+        }
+      ],
+      "text": ""
+    },
+    "Singapore|United States": {
+      "h": "91cb976a7d1c",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Singapore"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "asean_southeast_asia"
+        }
+      ],
+      "text": "Based on the recent media coverage, Singapore and the United States have maintained a neutral stance in their military interactions, while there has been slight verbal cooperation at the diplomatic level."
+    },
+    "Singapore|Taiwan": {
+      "h": "86d237036d2e",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Singapore"
+        }
+      ],
+      "text": ""
+    },
+    "South Korea|United States": {
+      "h": "2957dcab1314",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "fx"
+        }
+      ],
+      "text": ""
+    },
+    "OPEC+|Russia": {
+      "h": "89ea5b6d89fe",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Kazakhstan"
+        }
+      ],
+      "text": ""
+    },
+    "Hong Kong|Kazakhstan": {
+      "h": "d81907b0a4d0",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Kazakhstan"
+        }
+      ],
+      "text": ""
+    },
+    "Egypt|Palestine": {
+      "h": "c26973c519ff",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Egypt"
+        }
+      ],
+      "text": ""
+    },
+    "Egypt|Iran": {
+      "h": "85464cbc0dc9",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Egypt"
+        }
+      ],
+      "text": ""
+    },
+    "China|Singapore": {
+      "h": "1127ba035953",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "asean_southeast_asia"
+        }
+      ],
+      "text": ""
+    },
+    "Germany|Portugal": {
+      "h": "68ab74264304",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Portugal"
+        }
+      ],
+      "text": ""
+    },
+    "Germany|Russia": {
+      "h": "68ab74264304",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Portugal"
+        }
+      ],
+      "text": ""
+    },
+    "Uganda|WHO": {
+      "h": "96306ea2a1d8",
+      "edges": [
+        {
+          "domain": "health",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Uganda"
+        }
+      ],
+      "text": ""
+    },
+    "France|Venezuela": {
+      "h": "ca1e55200057",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "sovereign_debt"
+        }
+      ],
+      "text": ""
+    },
+    "G20|Venezuela": {
+      "h": "2aa0aa4a0922",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "sovereign_debt"
+        }
+      ],
+      "text": ""
+    },
+    "Germany|Ukraine": {
+      "h": "f84f4110b7c0",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Austria"
+        }
+      ],
+      "text": ""
+    },
+    "Australia|India": {
+      "h": "40dd3e9e8e83",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "lng"
+        }
+      ],
+      "text": ""
+    },
+    "Pakistan|Russia": {
+      "h": "154382e165fc",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Uzbekistan"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "south_asia"
+        }
+      ],
+      "text": "Based on recent media reports, Pakistan and Russia have shown verbal cooperation in both diplomatic and military interactions over the past 12 days."
+    },
+    "China|WHO": {
+      "h": "cf53783e43e8",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "oceania_pacific"
+        }
+      ],
+      "text": ""
+    },
+    "China|Quad": {
+      "h": "cedffab3d9c1",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "oceania_pacific"
+        }
+      ],
+      "text": ""
+    },
+    "OPEC|United States": {
+      "h": "0ff62bff5372",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Venezuela"
+        }
+      ],
+      "text": ""
+    },
+    "Turkey|Venezuela": {
+      "h": "013954b2bdcd",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Venezuela"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "turkey_eastern_mediterranean"
+        }
+      ],
+      "text": "Based on recent media reports, Turkey and Venezuela have shown verbal cooperation in diplomatic interactions and have engaged in material cooperation in the economic sphere, indicating a positive relationship between the two countries."
+    },
+    "Iran|OPEC+": {
+      "h": "400a33050aa7",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Iraq"
+        }
+      ],
+      "text": ""
+    },
+    "South Africa|Zimbabwe": {
+      "h": "1292fbb827f0",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "southern_africa"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Zimbabwe"
+        }
+      ],
+      "text": "Based on recent news coverage, South Africa and Zimbabwe have maintained neutral diplomatic relations with no significant cooperation or conflict in that regard. However, there has been one instance of verbal conflict between the two countries."
+    },
+    "China|Vietnam": {
+      "h": "a7af67099ec6",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Vietnam"
+        }
+      ],
+      "text": ""
+    },
+    "United States|Vietnam": {
+      "h": "2cae75f552e1",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Vietnam"
+        },
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Vietnam"
+        }
+      ],
+      "text": "Based on the recent news coverage, the relationship between the United States and Vietnam has been marked by economic conflicts, with interactions categorized as both verbal disagreements and tangible economic disputes."
+    },
+    "France|Serbia": {
+      "h": "892cb0217a42",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Serbia"
+        }
+      ],
+      "text": ""
+    },
+    "Kazakhstan|Kyrgyzstan": {
+      "h": "fbab067b1715",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Kyrgyzstan"
+        }
+      ],
+      "text": ""
+    },
+    "Finland|Russia": {
+      "h": "81dca41651db",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Finland"
+        }
+      ],
+      "text": ""
+    },
+    "Finland|NATO": {
+      "h": "81dca41651db",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Finland"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Finland": {
+      "h": "edefbd0c466f",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Finland"
+        }
+      ],
+      "text": ""
+    },
+    "Panama|United States": {
+      "h": "71368660ec9d",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Panama"
+        }
+      ],
+      "text": ""
+    },
+    "China|Panama": {
+      "h": "62a54aae4f36",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Panama"
+        }
+      ],
+      "text": ""
+    },
+    "Poland|Ukraine": {
+      "h": "f9ba2be40a6f",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Poland"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Poland": {
+      "h": "6636e8f37786",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Poland"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Hungary": {
+      "h": "59ded0ebc1d5",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "eastern_europe"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Hungary"
+        }
+      ],
+      "text": "Based on the recent news coverage, Hungary and the European Union have shown verbal cooperation in their diplomatic interactions over the past 12 days. There have been no reported conflicts or disagreements during this period."
+    },
+    "Mali|Senegal": {
+      "h": "ced5a37b9752",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Senegal"
+        }
+      ],
+      "text": ""
+    },
+    "Cambodia|Thailand": {
+      "h": "9927db7bc57d",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Thailand"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Thailand"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Cambodia"
+        },
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Cambodia"
+        }
+      ],
+      "text": "Based on recent news coverage, Cambodia and Thailand have shown a mix of cooperation and conflict. While there has been material cooperation in diplomacy (+2), this has been offset by verbal conflicts in both military and diplomatic interactions (−1 each). Additionally, there have been instances of material conflict in the military domain (−2)."
+    },
+    "Bolivia|United States": {
+      "h": "c5b33bb50ffa",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Bolivia"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Bolivia"
+        }
+      ],
+      "text": "Based on the recent news coverage, Bolivia and the United States have shown verbal cooperation in both diplomatic and military interactions over the past 12 days."
+    },
+    "European Union|Kosovo": {
+      "h": "644a42ca15e7",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Kosovo"
+        }
+      ],
+      "text": ""
+    },
+    "Serbia|Slovakia": {
+      "h": "f0c090a6aa3b",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Kosovo"
+        }
+      ],
+      "text": ""
+    },
+    "Mali|United States": {
+      "h": "2f838686c988",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Mali"
+        }
+      ],
+      "text": ""
+    },
+    "France|Mali": {
+      "h": "b68614e98d3e",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Mali"
+        }
+      ],
+      "text": ""
+    },
+    "Israel|Qatar": {
+      "h": "70d78a993c05",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Qatar"
+        }
+      ],
+      "text": ""
+    },
+    "Afghanistan|Russia": {
+      "h": "23163f5c369c",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Afghanistan"
+        }
+      ],
+      "text": ""
+    },
+    "Russia|Turkey": {
+      "h": "a03c04f1b1f5",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "turkey_eastern_mediterranean"
+        }
+      ],
+      "text": ""
+    },
+    "Iran|Yemen": {
+      "h": "352fd68dc46b",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Bahrain"
+        }
+      ],
+      "text": ""
+    },
+    "Norway|United Kingdom": {
+      "h": "8655e0db2e03",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Norway"
+        },
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Norway"
+        },
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "nordic_arctic"
+        }
+      ],
+      "text": "Based on the recent news coverage, Norway and the United Kingdom have maintained a relationship characterized by verbal cooperation in diplomacy but have shown no significant signs of either cooperation or conflict in their military or economic interactions over the past 12 days."
+    },
+    "Brazil|Sweden": {
+      "h": "461f96dfdfc1",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Sweden"
+        }
+      ],
+      "text": ""
+    },
+    "Saudi Arabia|Syria": {
+      "h": "7d2bfa4a93e1",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Syria"
+        }
+      ],
+      "text": ""
+    },
+    "Qatar|United States": {
+      "h": "ccaacc922e8a",
+      "edges": [
+        {
+          "domain": "energy",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "gas"
+        }
+      ],
+      "text": ""
+    },
+    "India|Papua New Guinea": {
+      "h": "ccaacc922e8a",
+      "edges": [
+        {
+          "domain": "energy",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "gas"
+        }
+      ],
+      "text": ""
+    },
+    "Brazil|Chile": {
+      "h": "a73af39efb28",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Chile"
+        }
+      ],
+      "text": ""
+    },
+    "Ethiopia|United States": {
+      "h": "ce8f8d9d0e8f",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Ethiopia"
+        }
+      ],
+      "text": ""
+    },
+    "Ethiopia|Yemen": {
+      "h": "3507e606de11",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Ethiopia"
+        }
+      ],
+      "text": ""
+    },
+    "Greece|Turkey": {
+      "h": "9fe5bacd7520",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Greece"
+        },
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Cyprus"
+        }
+      ],
+      "text": "Based on the recent news coverage, Greece and Turkey have been involved in verbal conflicts related to their military positions, indicating tensions between the two countries."
+    },
+    "Sudan|United States": {
+      "h": "82f3f66f1e2e",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "red_sea_horn_africa"
+        }
+      ],
+      "text": ""
+    },
+    "Albania|European Union": {
+      "h": "30d81718369a",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Albania"
+        }
+      ],
+      "text": ""
+    },
+    "China|Czech Republic": {
+      "h": "e6f82eba46ce",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Czech Republic"
+        }
+      ],
+      "text": ""
+    },
+    "Czech Republic|Russia": {
+      "h": "80135fee6f76",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Czech Republic"
+        }
+      ],
+      "text": ""
+    },
+    "Myanmar|Russia": {
+      "h": "bb378f55bcd1",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Myanmar"
+        }
+      ],
+      "text": ""
+    },
+    "India|Myanmar": {
+      "h": "7ec5cb95b0b3",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Myanmar"
+        }
+      ],
+      "text": ""
+    },
+    "Myanmar|Timor-Leste": {
+      "h": "7ec5cb95b0b3",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Myanmar"
+        }
+      ],
+      "text": ""
+    },
+    "Azerbaijan|Israel": {
+      "h": "eac20040f006",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Azerbaijan"
+        }
+      ],
+      "text": ""
+    },
+    "United States|Yemen": {
+      "h": "ec7fcd42844b",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Yemen"
+        }
+      ],
+      "text": ""
+    },
+    "Estonia|Russia": {
+      "h": "1cf71fda14ff",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Denmark"
+        },
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Estonia"
+        }
+      ],
+      "text": "Based on recent news coverage, Estonia and Russia have shown a mix of cooperation in diplomatic interactions but have engaged in conflicts related to military matters over the past 12 days."
+    },
+    "Denmark|Ukraine": {
+      "h": "6f5ed0c76572",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Denmark"
+        }
+      ],
+      "text": ""
+    },
+    "China|New Zealand": {
+      "h": "8d401dd85584",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "New Zealand"
+        },
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "New Zealand"
+        }
+      ],
+      "text": "Based on recent news coverage, the relationship between China and New Zealand has shown a slight negative trend due to verbal conflicts in diplomacy, while there have been no significant military interactions noted."
+    },
+    "Sweden|United States": {
+      "h": "cc9f6a4be3e8",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "nordic_arctic"
+        }
+      ],
+      "text": ""
+    },
+    "Canada|Norway": {
+      "h": "0831de921326",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "nordic_arctic"
+        }
+      ],
+      "text": ""
+    },
+    "Niger|Turkey": {
+      "h": "26aff976e071",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Niger"
+        }
+      ],
+      "text": ""
+    },
+    "Bangladesh|United States": {
+      "h": "9889de8de4a8",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Bangladesh"
+        }
+      ],
+      "text": ""
+    },
+    "Belarus|Russia": {
+      "h": "a8d84e85c24f",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Belarus"
+        }
+      ],
+      "text": ""
+    },
+    "Brazil|Morocco": {
+      "h": "82b11cb69583",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Morocco"
+        }
+      ],
+      "text": ""
+    },
+    "Morocco|Senegal": {
+      "h": "ca8b042d17ee",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Morocco"
+        }
+      ],
+      "text": ""
+    },
+    "China|Uruguay": {
+      "h": "79653e92f582",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Uruguay"
+        }
+      ],
+      "text": ""
+    },
+    "Iran|Kazakhstan": {
+      "h": "2c389debab75",
+      "edges": [
+        {
+          "domain": "energy",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "iran_climate_china_risk"
+        }
+      ],
+      "text": ""
+    },
+    "Ireland|Israel": {
+      "h": "7614bb66077a",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Ireland"
+        }
+      ],
+      "text": ""
+    },
+    "Germany|Luxembourg": {
+      "h": "47b9f5f05513",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Luxembourg"
+        }
+      ],
+      "text": ""
+    },
+    "Luxembourg|Romania": {
+      "h": "836781364df3",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Luxembourg"
+        }
+      ],
+      "text": ""
+    },
+    "India|Nepal": {
+      "h": "b63d4063bd07",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Nepal"
+        }
+      ],
+      "text": ""
+    },
+    "Nepal|United Kingdom": {
+      "h": "02bed14ac15a",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Nepal"
+        }
+      ],
+      "text": ""
+    },
+    "Brazil|China": {
+      "h": "4335980221a1",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "brics"
+        }
+      ],
+      "text": ""
+    },
+    "African Union|Ghana": {
+      "h": "246e3433abee",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Ghana"
+        }
+      ],
+      "text": ""
+    },
+    "Brazil|Guatemala": {
+      "h": "5d1a9defead8",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Guatemala"
+        }
+      ],
+      "text": ""
+    },
+    "Guatemala|United States": {
+      "h": "ac9821f95842",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Guatemala"
+        }
+      ],
+      "text": ""
+    },
+    "Israel|Jordan": {
+      "h": "908b9955f751",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Jordan"
+        }
+      ],
+      "text": ""
+    },
+    "Jordan|United Kingdom": {
+      "h": "cafecf9805a5",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Jordan"
+        }
+      ],
+      "text": ""
+    },
+    "Russia|Slovakia": {
+      "h": "09e1a2e0e03d",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Slovakia"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Slovakia": {
+      "h": "b98d904c104a",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Slovakia"
+        }
+      ],
+      "text": ""
+    },
+    "France|Rwanda": {
+      "h": "30c242591486",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Rwanda"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Rwanda": {
+      "h": "05524eb88fcf",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Rwanda"
+        }
+      ],
+      "text": ""
+    },
+    "Iran|Venezuela": {
+      "h": "32172f0260bd",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "maritime_transport"
+        }
+      ],
+      "text": ""
+    },
+    "United States|Venezuela": {
+      "h": "32172f0260bd",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "maritime_transport"
+        }
+      ],
+      "text": ""
+    },
+    "Congo|WHO": {
+      "h": "a213688ada30",
+      "edges": [
+        {
+          "domain": "health",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Congo"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Germany": {
+      "h": "68f495309843",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Montenegro"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Serbia": {
+      "h": "fdf2ae9c592c",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Montenegro"
+        }
+      ],
+      "text": ""
+    },
+    "China|Namibia": {
+      "h": "c6ccbd2c3a3b",
+      "edges": [
+        {
+          "domain": "economic",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Namibia"
+        }
+      ],
+      "text": ""
+    },
+    "Namibia|South Africa": {
+      "h": "3a49fc77f5c1",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Namibia"
+        }
+      ],
+      "text": ""
+    },
+    "Argentina|Paraguay": {
+      "h": "54c13374ae92",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Paraguay"
+        }
+      ],
+      "text": ""
+    },
+    "Argentina|Brazil": {
+      "h": "1d4a2add59b1",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Paraguay"
+        }
+      ],
+      "text": ""
+    },
+    "Bahrain|Kuwait": {
+      "h": "a713341c674e",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "arabian_peninsula"
+        }
+      ],
+      "text": ""
+    },
+    "Cyprus|Turkey": {
+      "h": "6502560e2ee9",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Cyprus"
+        }
+      ],
+      "text": ""
+    },
+    "France|Ivory Coast": {
+      "h": "f961b3836da2",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Ivory Coast"
+        }
+      ],
+      "text": ""
+    },
+    "Bosnia and Herzegovina|United States": {
+      "h": "998cb3232043",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Bosnia and Herzegovina"
+        }
+      ],
+      "text": ""
+    },
+    "Bosnia and Herzegovina|European Union": {
+      "h": "eff1ed4974ff",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Bosnia and Herzegovina"
+        }
+      ],
+      "text": ""
+    },
+    "European Union|Montenegro": {
+      "h": "eff1ed4974ff",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Bosnia and Herzegovina"
+        }
+      ],
+      "text": ""
+    },
+    "Burkina Faso|Niger": {
+      "h": "4d466b9d60f2",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "verbal_cooperation",
+          "sign": 1,
+          "source": "Burkina Faso"
+        }
+      ],
+      "text": ""
+    },
+    "Burkina Faso|Mali": {
+      "h": "945eb91a5350",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "neutral",
+          "sign": 0,
+          "source": "Burkina Faso"
+        }
+      ],
+      "text": ""
+    },
+    "Argentina|Ecuador": {
+      "h": "a43d696a3192",
+      "edges": [
+        {
+          "domain": "diplomatic",
+          "cameo": "verbal_conflict",
+          "sign": -1,
+          "source": "Ecuador"
+        }
+      ],
+      "text": ""
+    },
+    "Laos|United States": {
+      "h": "c0978f74d182",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Laos"
+        }
+      ],
+      "text": ""
+    },
+    "Latvia|Russia": {
+      "h": "c0ac0209f741",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_conflict",
+          "sign": -2,
+          "source": "Latvia"
+        }
+      ],
+      "text": ""
+    },
+    "Latvia|NATO": {
+      "h": "5a83327ceee2",
+      "edges": [
+        {
+          "domain": "military",
+          "cameo": "material_cooperation",
+          "sign": 2,
+          "source": "Latvia"
+        }
+      ],
+      "text": ""
+    }
   }
 }

@@ -59,8 +59,15 @@ def main() -> None:
         dyads[lay] = rows
     countries = sorted(degree, key=lambda c: -degree[c])
     data = {"layers": LAYERS, "dyads": dyads, "degree": degree, "countries": countries}
-    page = _TEMPLATE.replace("__DATA__", json.dumps(data)).replace(
-        "__SITUATION__", _situation_html()
+    sit = json.loads(SITUATION.read_text(encoding="utf-8")) if SITUATION.exists() else {}
+    pairs_js = {
+        k: {"text": v.get("text", ""), "edges": v.get("edges", [])}
+        for k, v in sit.get("pairs", {}).items()
+    }
+    page = (
+        _TEMPLATE.replace("__DATA__", json.dumps(data))
+        .replace("__SITUATION__", _situation_html())
+        .replace("__PAIRS__", json.dumps(pairs_js))
     )
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
@@ -118,9 +125,10 @@ _TEMPLATE = r"""<!doctype html>
 </div>
 <div id="report">
   <button id="rptclose">&times;</button>
-  <h2>Situation report</h2>
-  <p class="muted2">Written by a local LLM from the signed multi-layer signals · cached.</p>
-  __SITUATION__
+  <h2 id="rpttitle">Situation report</h2>
+  <p class="muted2" id="rptsub">Written by a local LLM from the signed multi-layer
+    signals · cached.</p>
+  <div id="rptbody">__SITUATION__</div>
 </div>
 <div id="g"></div>
 <script type="module">
@@ -147,6 +155,7 @@ try {
   }
 }
 const D = __DATA__;
+const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign}]}
 const LAYERS = D.layers;
 const active = new Set(LAYERS);  // multi-select: all layers on by default
 const HUBS = 16;                 // how many top countries get a permanent label
@@ -251,6 +260,7 @@ function redraw() {
   const [a, b] = pair;
   document.getElementById('pairinfo').textContent =
     a && b ? `— showing ${a} & ${b} and their direct links` : '';
+  renderPanel();
 }
 
 const btns = document.getElementById('btns');
@@ -279,11 +289,46 @@ function fill(sel) {
   D.countries.forEach(c => sel.appendChild(new Option(c, c)));
 }
 fill(pa); fill(pb);
-pa.onchange = pb.onchange = () => { pair = [pa.value || null, pb.value || null]; redraw(); };
+pa.onchange = pb.onchange = () => {
+  pair = [pa.value || null, pb.value || null];
+  redraw();
+  if (pair[0] && pair[1]) report.classList.add('open');  // surface the pair summary
+};
 document.getElementById('clr').onclick = () => {
   pa.value = ''; pb.value = ''; pair = [null, null]; redraw();
 };
+
 const report = document.getElementById('report');
+const GLOBAL_HTML = document.getElementById('rptbody').innerHTML;
+const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+function renderPanel() {
+  const [a, b] = pair;
+  const title = document.getElementById('rpttitle');
+  const sub = document.getElementById('rptsub');
+  const body = document.getElementById('rptbody');
+  if (!a || !b) {
+    title.textContent = 'Situation report';
+    sub.textContent = 'Written by a local LLM from the signed multi-layer signals · cached.';
+    body.innerHTML = GLOBAL_HTML;
+    return;
+  }
+  const p = PAIRS[[a, b].sort().join('|')];
+  title.textContent = a + ' & ' + b;
+  if (!p || (!p.text && !(p.edges && p.edges.length))) {
+    sub.textContent = '';
+    body.innerHTML = '<p class="muted">No direct interactions recorded between these two.</p>';
+    return;
+  }
+  sub.textContent = 'Pair summary (LLM + interactions, cached) · media-derived.';
+  let h = p.text ? '<p>' + esc(p.text) + '</p>' : '';
+  if (p.edges && p.edges.length) {
+    h += '<p class="muted2">Interactions</p>';
+    h += p.edges.map(e =>
+      `<div><span style="color:${LAYER_COLOR[e.domain] || '#888'}">●</span> `
+      + `${esc(e.domain)}: ${esc(e.cameo)} (${e.sign > 0 ? '+' : ''}${e.sign})</div>`).join('');
+  }
+  body.innerHTML = h;
+}
 document.getElementById('rpt').onclick = () => report.classList.toggle('open');
 document.getElementById('rptclose').onclick = () => report.classList.remove('open');
 redraw();
