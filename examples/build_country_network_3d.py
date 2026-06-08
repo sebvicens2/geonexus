@@ -115,8 +115,10 @@ _TEMPLATE = r"""<!doctype html>
 </head><body>
 <div id="hud">
   <h1>EventGraph — 3D country network</h1>
-  <p>Link colour = domain (buttons below) · moving dots on a link = conflict, plain =
-     cooperation. Click a country to fly to it &amp; focus its links; empty space to reset.</p>
+  <p>Link colour = domain (buttons below) · moving dots = sign
+     (<span style="color:#4ade80">green cooperation</span> /
+     <span style="color:#f87171">red conflict</span>).
+     Click a country to focus; empty space resets.</p>
   <div id="btns"></div>
   <div id="pair">Focus a pair:
     <select id="pa"></select> <select id="pb"></select>
@@ -213,11 +215,12 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   })
   .linkWidth(l => Math.min(5, 0.6 + Math.abs(l.net)))
   .linkCurvature(l => (LAYERS.indexOf(l.layer) - 2) * 0.12)  // fan parallel layer edges
-  .linkOpacity(0.78)
-  .linkDirectionalParticles(l => (l.net < 0 ? 4 : 0))  // moving dots = conflict
-  .linkDirectionalParticleWidth(2)
-  .linkDirectionalParticleSpeed(0.01)
-  .linkDirectionalParticleColor(() => '#fecaca')
+  .linkOpacity(0.5)
+  // moving dots on EVERY link encode the sign: green = cooperation, red = conflict
+  .linkDirectionalParticles(l => 2 + Math.min(4, Math.abs(l.net)))
+  .linkDirectionalParticleWidth(3)
+  .linkDirectionalParticleSpeed(l => (l.net < 0 ? 0.012 : 0.006))
+  .linkDirectionalParticleColor(l => (l.net > 0 ? '#4ade80' : '#f87171'))
   .onNodeClick(node => {
     hlNodes = new Set([node.id]); hlLinks = new Set();
     Graph.graphData().links.forEach(l => {
