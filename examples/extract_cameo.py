@@ -82,6 +82,9 @@ def main() -> None:
     parser.add_argument("--model", default="qwen2.5:7b")
     parser.add_argument("--top-entities", type=int, default=200)
     parser.add_argument("--out", default=str(OUT_PATH))
+    parser.add_argument(
+        "--day", default=None, help="extract a specific historical day (YYYY-MM-DD)"
+    )
     args = parser.parse_args()
 
     entities = json.loads(DATA.read_text(encoding="utf-8"))[: args.top_entities]
@@ -95,7 +98,12 @@ def main() -> None:
         days = sorted(e["by_day"])
         if not days:
             continue
-        day = days[-1]
+        if args.day:
+            if args.day not in e["by_day"]:
+                continue  # entity has no summary for that historical day
+            day = args.day
+        else:
+            day = days[-1]
         out = ollama(args.model, _PROMPT.format(text=e["by_day"][day][:1500]))
         for a, b, domain, cameo in parse(out or ""):
             key = (a.lower(), b.lower(), domain, cameo)

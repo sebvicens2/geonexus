@@ -159,7 +159,8 @@ try {
   }
 }
 const D = __DATA__;
-const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign}]}
+const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign,why}]}
+const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 const LAYERS = D.layers;
 const active = new Set(LAYERS);  // multi-select: all layers on by default
 const HUBS = 16;                 // how many top countries get a permanent label
@@ -221,6 +222,16 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .linkDirectionalParticleWidth(3)
   .linkDirectionalParticleSpeed(l => (l.net < 0 ? 0.012 : 0.006))
   .linkDirectionalParticleColor(l => (l.net > 0 ? '#4ade80' : '#f87171'))
+  .linkLabel(l => {  // hover tooltip: domain, stance, and the reason behind it
+    const a = l.source.id || l.source, b = l.target.id || l.target;
+    const p = PAIRS[[a, b].sort().join('|')];
+    const stance = l.net > 0 ? 'cooperation' : 'conflict';
+    const m = p && p.edges ? p.edges.find(e => e.domain === l.layer && e.why) : null;
+    const col = LAYER_COLOR[l.layer] || '#888';
+    return `<div style="max-width:280px"><b>${a} &ndash; ${b}</b><br>`
+      + `<span style="color:${col}">${l.layer}</span> · ${stance}`
+      + (m ? `<br><i style="color:#cbd5e1">${esc(m.why)}</i>` : '') + '</div>';
+  })
   .onNodeClick(node => {
     hlNodes = new Set([node.id]); hlLinks = new Set();
     Graph.graphData().links.forEach(l => {
@@ -305,7 +316,6 @@ document.getElementById('clr').onclick = () => {
 
 const report = document.getElementById('report');
 const GLOBAL_HTML = document.getElementById('rptbody').innerHTML;
-const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 function renderPanel() {
   const [a, b] = pair;
   const title = document.getElementById('rpttitle');
