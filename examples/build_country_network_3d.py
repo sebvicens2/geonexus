@@ -74,8 +74,8 @@ _TEMPLATE = r"""<!doctype html>
 </head><body>
 <div id="hud">
   <h1>EventGraph — 3D country network</h1>
-  <p>Green = cooperation, red = conflict. Click a country to fly to it &amp; focus its
-     links; click empty space to reset. Drag = rotate · scroll = zoom · right-drag = pan.</p>
+  <p>Link colour = domain (buttons below) · moving dots on a link = conflict, plain =
+     cooperation. Click a country to fly to it &amp; focus its links; empty space to reset.</p>
   <div id="btns"></div>
   <div id="pair">Focus a pair:
     <select id="pa"></select> <select id="pb"></select>
@@ -111,24 +111,24 @@ const D = __DATA__;
 const LAYERS = D.layers;
 const active = new Set(LAYERS);  // multi-select: all layers on by default
 const HUBS = 16;                 // how many top countries get a permanent label
-const COOP = '#22c55e', CONF = '#ef4444';
 let pair = [null, null];         // when both set: show only the pair + direct neighbours
+const LAYER_COLOR = {            // link colour = domain; conflict shown via moving particles
+  military: '#ef4444', economic: '#f59e0b', diplomatic: '#3b82f6',
+  energy: '#a855f7', health: '#10b981',
+};
 
 function graphFor(activeSet) {
-  const agg = {}, deg = {};
+  // one link per (dyad, layer) so link colour can show the domain (no aggregation)
+  const links = [], nbr = {};
   for (const L of activeSet) for (const [a, b, s] of D.dyads[L]) {
-    const k = a < b ? a + '|' + b : b + '|' + a;
-    agg[k] = (agg[k] || 0) + s;
+    if (!s) continue;
+    links.push({ source: a, target: b, net: s, layer: L });
+    (nbr[a] = nbr[a] || new Set()).add(b);
+    (nbr[b] = nbr[b] || new Set()).add(a);
   }
-  const ids = new Set(), links = [];
-  for (const k in agg) {
-    if (!agg[k]) continue;
-    const [a, b] = k.split('|');
-    ids.add(a); ids.add(b);
-    deg[a] = (deg[a] || 0) + 1; deg[b] = (deg[b] || 0) + 1;
-    links.push({ source: a, target: b, net: agg[k] });
-  }
-  const nodes = [...ids].map(c => ({ id: c, deg: deg[c] || 1 }));
+  const ids = new Set();
+  links.forEach(l => { ids.add(l.source); ids.add(l.target); });
+  const nodes = [...ids].map(c => ({ id: c, deg: nbr[c] ? nbr[c].size : 1 }));
   // label only the top-degree hubs ("les principaux") to avoid clutter
   const hubSet = new Set([...nodes].sort((x, y) => y.deg - x.deg).slice(0, HUBS).map(n => n.id));
   nodes.forEach(n => { n.labelOn = hubSet.has(n.id); });
@@ -157,13 +157,17 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   })
   .nodeThreeObjectExtend(true)
   .linkColor(l => {
-    const base = l.net > 0 ? COOP : CONF;
+    const base = LAYER_COLOR[l.layer] || '#94a3b8';
     if (!hlLinks.size) return base;
-    return hlLinks.has(l) ? base : 'rgba(100,116,139,0.12)';
+    return hlLinks.has(l) ? base : 'rgba(100,116,139,0.10)';
   })
   .linkWidth(l => Math.min(5, 0.6 + Math.abs(l.net)))
-  .linkOpacity(0.7)
-  .linkDirectionalParticles(0)
+  .linkCurvature(l => (LAYERS.indexOf(l.layer) - 2) * 0.12)  // fan parallel layer edges
+  .linkOpacity(0.78)
+  .linkDirectionalParticles(l => (l.net < 0 ? 4 : 0))  // moving dots = conflict
+  .linkDirectionalParticleWidth(2)
+  .linkDirectionalParticleSpeed(0.01)
+  .linkDirectionalParticleColor(() => '#fecaca')
   .onNodeClick(node => {
     hlNodes = new Set([node.id]); hlLinks = new Set();
     Graph.graphData().links.forEach(l => {
@@ -213,12 +217,19 @@ function redraw() {
 const btns = document.getElementById('btns');
 LAYERS.forEach(lay => {  // multi-select: each button toggles a layer on/off
   const b = document.createElement('button');
-  b.className = 'btn on'; b.textContent = lay;
+  b.className = 'btn'; b.textContent = lay;
+  const col = LAYER_COLOR[lay];
+  const paint = () => {  // colour the button by its layer so it maps to link colour
+    const on = active.has(lay);
+    b.style.background = on ? col : '#1e293b';
+    b.style.color = on ? '#0b1020' : col;
+    b.style.borderColor = col;
+  };
+  paint();
   b.onclick = () => {
-    if (active.has(lay)) { active.delete(lay); b.classList.remove('on'); }
-    else { active.add(lay); b.classList.add('on'); }
-    if (active.size === 0) { active.add(lay); b.classList.add('on'); }  // keep ≥1
-    redraw();
+    if (active.has(lay)) active.delete(lay); else active.add(lay);
+    if (active.size === 0) active.add(lay);  // keep ≥1
+    paint(); redraw();
   };
   btns.appendChild(b);
 });
