@@ -22,6 +22,25 @@ sys.path.insert(0, str(Path(__file__).parent))
 from multilayer import CAMEO, LAYERS, net_dyads
 
 OUT_PATH = Path("reports") / "eventgraph_country_network_3d.html"
+SITUATION = Path(__file__).parent / "data" / "world_observer_situation.json"
+
+
+def _situation_html() -> str:
+    """Cached LLM situation report as HTML paragraphs (empty hint if not generated)."""
+    import html as _html
+
+    if not SITUATION.exists():
+        return (
+            '<p class="muted">No cached report. Run '
+            "<code>python examples/synthesize_situation.py</code> (needs Ollama).</p>"
+        )
+    text = json.loads(SITUATION.read_text(encoding="utf-8")).get("text", "")
+    paras = []
+    for block in text.split("\n\n"):
+        block = block.strip().lstrip("#").strip()
+        if block:
+            paras.append(f"<p>{_html.escape(block)}</p>")
+    return "".join(paras)
 
 
 def main() -> None:
@@ -40,7 +59,9 @@ def main() -> None:
         dyads[lay] = rows
     countries = sorted(degree, key=lambda c: -degree[c])
     data = {"layers": LAYERS, "dyads": dyads, "degree": degree, "countries": countries}
-    page = _TEMPLATE.replace("__DATA__", json.dumps(data))
+    page = _TEMPLATE.replace("__DATA__", json.dumps(data)).replace(
+        "__SITUATION__", _situation_html()
+    )
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
     print(f"wrote {OUT_PATH} ({OUT_PATH.stat().st_size // 1024} KB) — open in a browser (WebGL)")
@@ -62,6 +83,17 @@ _TEMPLATE = r"""<!doctype html>
     border-radius:8px; padding:5px 8px; font-size:13px; margin-right:4px; }
   #pair { margin-top:8px; font-size:13px; color:#94a3b8; }
   #g { position:fixed; inset:0; z-index:1; }
+  #report { position:fixed; top:0; right:0; width:380px; max-width:90vw; height:100%;
+    z-index:20; background:#0f172af2; border-left:1px solid #334155; padding:20px 22px;
+    overflow:auto; transform:translateX(100%); transition:transform .25s;
+    backdrop-filter:blur(3px); }
+  #report.open { transform:translateX(0); }
+  #report h2 { margin:0 0 4px; font-size:16px; }
+  #report .muted2 { color:#64748b; font-size:11.5px; margin:0 0 12px; }
+  #report p { font-size:13.5px; line-height:1.55; color:#cbd5e1; }
+  #report code { background:#1e293b; padding:1px 5px; border-radius:4px; }
+  #rptclose { float:right; cursor:pointer; color:#94a3b8; font-size:18px; border:none;
+    background:none; }
 </style>
 <!-- single shared three instance (importmap) so label sprites render correctly;
      three/ prefix covers subpaths like three/webgpu that 3d-force-graph imports -->
@@ -80,8 +112,15 @@ _TEMPLATE = r"""<!doctype html>
   <div id="pair">Focus a pair:
     <select id="pa"></select> <select id="pb"></select>
     <button class="btn" id="clr">show all</button>
+    <button class="btn" id="rpt">📄 Situation report</button>
     <span id="pairinfo"></span>
   </div>
+</div>
+<div id="report">
+  <button id="rptclose">&times;</button>
+  <h2>Situation report</h2>
+  <p class="muted2">Written by a local LLM from the signed multi-layer signals · cached.</p>
+  __SITUATION__
 </div>
 <div id="g"></div>
 <script type="module">
@@ -244,6 +283,9 @@ pa.onchange = pb.onchange = () => { pair = [pa.value || null, pb.value || null];
 document.getElementById('clr').onclick = () => {
   pa.value = ''; pb.value = ''; pair = [null, null]; redraw();
 };
+const report = document.getElementById('report');
+document.getElementById('rpt').onclick = () => report.classList.toggle('open');
+document.getElementById('rptclose').onclick = () => report.classList.remove('open');
 redraw();
 </script>
 </body></html>

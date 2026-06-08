@@ -465,6 +465,15 @@ and focus its links:
 python examples/build_country_network_3d.py   # → reports/eventgraph_country_network_3d.html (WebGL)
 ```
 
+Links are coloured by domain (military/economic/diplomatic/energy/health), conflict
+shown by moving particles; pick two countries to focus a pair (hide everything not
+directly connected). A **cached LLM situation report** (local Qwen, grounded in the
+signed signals) is available in-panel:
+
+```bash
+python examples/synthesize_situation.py   # → data/world_observer_situation.json (cached)
+```
+
 For a navigable view, an **interactive 3D multiplex** stacks each layer as a plane
 (country at the same x,y on every plane; green/red intra-layer ties; vertical
 links couple a country across layers) — drag to rotate, scroll to zoom:

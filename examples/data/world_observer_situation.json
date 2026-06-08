@@ -1,0 +1,144 @@
+{
+  "hash": "90ea8a8fed2bf75f",
+  "text": "### Situation Report\n\nThe geopolitical landscape over the past ~12 days is marked by significant fault lines and areas of cooperation across various domains. The main conflicts are concentrated in military tensions between Iran and the United States (-8), Russia and Ukraine (-5), Israel and Lebanon (-3), and China and Taiwan (-4). Notable cooperation includes NATO's support for Ukraine (+3) and the strengthening ties between China and Russia (+2).\n\nEconomic relations reveal divergences, with notable conflicts such as the U.S.-Vietnam trade dispute (-3) and the Sino-European Union economic tensions (-2). However, there are also areas of collaboration, like the positive economic relationship between Indonesia and Malaysia (+3), and the energy cooperation between China and Russia (+2).\n\nDiplomatically, the United States has been at odds with Iran (-1) and Colombia (-2), while China maintains strong diplomatic ties with North Korea (+3). The bloc structure is evident, with countries like Canada (bloc A) and China (bloc B) showing mixed stances across different domains. For instance, Canada and the U.S. have a negative economic relationship but positive diplomatic relations.\n\nCross-domain divergences are particularly pronounced between China and the United States, where they cooperate in energy (+2) and health (+1), while experiencing conflict in military (-1), economic (-1), and diplomatic (-1) domains. Maritime chokepoints generally remain stable, with only minor fluctuations noted for the Strait of Hormuz (oil: normal, z=-0.0193).\n\nIn summary, the geopolitical environment is characterized by complex interplays of cooperation and conflict across multiple domains, with significant tensions in military relations and economic disputes, while also showing areas of mutual benefit and collaboration.",
+  "facts": {
+    "layers": {
+      "military": {
+        "conflict": [
+          "Iran-United States (-8)",
+          "Iran-Israel (-6)",
+          "Russia-Ukraine (-5)",
+          "Israel-United States (-4)",
+          "China-Taiwan (-4)",
+          "Israel-Lebanon (-3)"
+        ],
+        "cooperation": [
+          "NATO-Ukraine (+3)",
+          "China-Russia (+2)",
+          "Russia-Uzbekistan (+2)",
+          "Afghanistan-Russia (+2)",
+          "Brazil-Sweden (+2)",
+          "Myanmar-Russia (+2)"
+        ]
+      },
+      "economic": {
+        "conflict": [
+          "United States-Vietnam (-3)",
+          "Canada-United States (-2)",
+          "China-European Union (-2)",
+          "Russia-United States (-2)",
+          "China-Japan (-2)",
+          "Iran-United States (-2)"
+        ],
+        "cooperation": [
+          "Indonesia-Malaysia (+3)",
+          "China-South Korea (+2)",
+          "OPEC-OPEC+ (+2)",
+          "India-United States (+2)",
+          "Kenya-South Africa (+2)",
+          "OPEC+-Russia (+2)"
+        ]
+      },
+      "diplomatic": {
+        "conflict": [
+          "Iran-Israel (-2)",
+          "Russia-Ukraine (-2)",
+          "India-Pakistan (-2)",
+          "Armenia-Russia (-2)",
+          "Colombia-United States (-2)",
+          "Iran-United States (-1)"
+        ],
+        "cooperation": [
+          "Canada-United States (+3)",
+          "China-North Korea (+3)",
+          "North Korea-Russia (+2)",
+          "Armenia-European Union (+2)",
+          "European Union-Hungary (+2)",
+          "IAEA-Ukraine (+1)"
+        ]
+      },
+      "energy": {
+        "conflict": [
+          "Iran-United States (-2)",
+          "Iran-Israel (-1)"
+        ],
+        "cooperation": [
+          "India-Venezuela (+2)",
+          "China-United States (+2)",
+          "China-Russia (+2)",
+          "India-United States (+2)",
+          "Qatar-United States (+2)",
+          "India-Papua New Guinea (+2)"
+        ]
+      },
+      "health": {
+        "conflict": [
+          "Kenya-United States (-2)"
+        ],
+        "cooperation": [
+          "China-DR Congo (+3)",
+          "Congo-WHO (+2)",
+          "Mexico-United States (+1)",
+          "Uganda-WHO (+1)",
+          "China-United States (+1)"
+        ]
+      }
+    },
+    "cross_layer_divergence": [
+      "China-United States: military -1, economic -1, diplomatic -1, energy +2, health +1",
+      "China-Philippines: military -2, diplomatic +1",
+      "Cambodia-Thailand: military -3, diplomatic +1",
+      "European Union-Ukraine: military -2, diplomatic +1",
+      "Estonia-Russia: military -2, diplomatic +1",
+      "Canada-United States: economic -2, diplomatic +3",
+      "DR Congo-Uganda: economic -2, diplomatic +1",
+      "Mexico-United States: economic -1, health +1"
+    ],
+    "structural_balance_pct": 65,
+    "bloc_A": [
+      "Afghanistan",
+      "Bahrain",
+      "Belarus",
+      "Bosnia and Herzegovina",
+      "Brazil",
+      "Burkina Faso",
+      "Canada",
+      "Colombia",
+      "Cuba",
+      "Egypt",
+      "European Union",
+      "France"
+    ],
+    "bloc_B": [
+      "Albania",
+      "Argentina",
+      "Armenia",
+      "Australia",
+      "Azerbaijan",
+      "Bangladesh",
+      "Bolivia",
+      "Chile",
+      "China",
+      "Cyprus",
+      "Czech Republic",
+      "Denmark"
+    ],
+    "tension_triads": [
+      "Iran - United States - Israel",
+      "Iran - United States - Venezuela",
+      "Iran - Bahrain - Kuwait",
+      "United States - China - Canada",
+      "United States - Brazil - Sweden"
+    ],
+    "maritime": [
+      "Hormuz (oil): normal, z=-0.0193",
+      "Suez (trade): normal, z=-0.7468",
+      "Bab el-Mandeb (trade): normal, z=-0.1392",
+      "Malacca (oil): normal, z=-0.0723",
+      "Panama (trade): normal, z=0.0",
+      "Gibraltar (trade): normal, z=-0.4175",
+      "Bosphorus (trade): normal, z=0.2586",
+      "Taiwan Strait (trade): normal, z=0.998"
+    ]
+  }
+}
