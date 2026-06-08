@@ -250,6 +250,9 @@ _TEMPLATE = r"""<!doctype html>
     <select id="pa"></select> <select id="pb"></select>
     <button class="btn" id="clr">show all</button>
     <button class="btn" id="rpt">📄 Situation report</button>
+    <label style="margin-left:10px">Spread
+      <input type="range" id="spread" min="40" max="420" value="150" style="vertical-align:middle">
+    </label>
     <span id="pairinfo"></span>
   </div>
 </div>
@@ -347,21 +350,19 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     const sz = 5 + Math.min(11, n.deg);
     const group = new THREE.Group();
     const iso = ISO2[n.id];
-    if (iso && flagLoader) {  // flag of the country, billboarded
-      const mat = new THREE.SpriteMaterial({
-        map: flagLoader.load('https://flagcdn.com/w80/' + iso + '.png'),
-        transparent: true, opacity: dim ? 0.18 : 1,
-      });
-      const sp = new THREE.Sprite(mat);
-      sp.scale.set(sz * 1.5, sz, 1);  // flags are ~3:2
-      group.add(sp);
+    let mat;
+    if (iso && flagLoader) {  // the country's flag wrapped on the sphere (keeps the volume)
+      const tex = flagLoader.load('https://flagcdn.com/w160/' + iso + '.png');
+      tex.colorSpace = THREE.SRGBColorSpace;
+      mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, opacity: dim ? 0.18 : 1 });
     } else {  // bloc / unmapped actor: a coloured sphere
-      const mesh = new THREE.Mesh(SPHERE_GEO, new THREE.MeshBasicMaterial({
+      mat = new THREE.MeshBasicMaterial({
         color: NODE_COLOR(n), transparent: true, opacity: dim ? 0.18 : 0.95,
-      }));
-      mesh.scale.setScalar(sz * 0.4);
-      group.add(mesh);
+      });
     }
+    const mesh = new THREE.Mesh(SPHERE_GEO, mat);
+    mesh.scale.setScalar(sz * 0.4);
+    group.add(mesh);
     if (SpriteText && (focused || n.labelOn)) {  // label hubs + the focused node
       const t = new SpriteText(n.id);
       t.backgroundColor = 'rgba(7,11,21,0.5)'; t.padding = 1.5; t.borderRadius = 3;
@@ -428,6 +429,12 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   });
 
 Graph.d3Force('charge').strength(-150);  // more repulsion -> a more legible, spread layout
+
+const spread = document.getElementById('spread');  // live spread control
+spread.oninput = () => {
+  Graph.d3Force('charge').strength(-(+spread.value));
+  Graph.d3ReheatSimulation();
+};
 
 const lid = l => l.source.id || l.source;       // link endpoints can be id or node obj
 const tid = l => l.target.id || l.target;
