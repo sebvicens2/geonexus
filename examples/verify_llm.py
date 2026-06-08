@@ -1,11 +1,15 @@
 """Anti-hallucination auditor for the CAMEO extractions (report-only).
 
-For every extracted interaction (A | B | domain | class) it checks:
-  1. deterministic guard — do both actors actually appear in the source summary?
-  2. LLM judge (strict, Qwen 14b) — does the source SUPPORT / not support / CONTRADICT
-     the claimed interaction? (default UNSUPPORTED unless explicit.)
-Then it aggregates a trust score, the worst offenders, and per-domain / per-source
-patterns into a report. It does NOT modify the network (report only); cached by item.
+For every extracted link (A | B | domain | class) it fact-checks three things against
+the source summary:
+  1. DIRECT   - do the two countries actually interact DIRECTLY in the text (not just
+     co-mentioned, not via a third party)? (deterministic presence guard + judge)
+  2. DOMAIN   - is the assigned domain (military/economic/diplomatic/energy/health) the
+     right one for that interaction?
+  3. STANCE   - does the text support the cooperative/conflictual nature?
+A strict Qwen-14b judge answers all three in one call (default: no / wrong /
+unsupported unless explicit). Aggregates trust scores, domain confusion, worst-
+offending sources and the flagged links into a report. Report only; cached per item.
 
     python examples/verify_llm.py [--model qwen2.5:14b] [--limit N]
         → data/cameo_verification.json + reports/hallucination_report.md
@@ -28,20 +32,27 @@ from multilayer import CAMEO, NARR, _canon
 CACHE = Path(__file__).parent / "data" / "cameo_verification.json"
 REPORT = Path("reports") / "hallucination_report.md"
 STANCE = {2: "cooperation", 1: "cooperation", 0: "neutral", -1: "conflict", -2: "conflict"}
+DOMAINS = {"military", "economic", "diplomatic", "energy", "health", "none"}
+_STANCES = {"SUPPORTED", "UNSUPPORTED", "CONTRADICTED"}
 
 _JUDGE = (
-    "You are a strict fact-checker. Given a NEWS SUMMARY and a CLAIM about an "
-    "interaction between two actors, decide whether the summary SUPPORTS the claim.\n"
-    "Reply on ONE line: VERDICT | short reason (<15 words).\n"
-    "VERDICT is exactly one of:\n"
-    "  SUPPORTED   - the text clearly states this interaction and its cooperative/"
-    "conflictual nature.\n"
-    "  UNSUPPORTED - not stated, or you cannot tell.\n"
-    "  CONTRADICTED- the text states the opposite stance.\n"
-    "Be strict: if it is not explicit, answer UNSUPPORTED.\n\n"
-    "SUMMARY:\n{text}\n\nCLAIM: {claim}"
+    "You are a strict fact-checker for an extracted country-to-country link.\n"
+    "Given the SUMMARY and the extracted CLAIM, answer THREE questions on ONE line, "
+    "pipe-separated, then a short reason:\n"
+    "DIRECT | DOMAIN | STANCE | reason\n"
+    "DIRECT = yes if the summary describes a DIRECT interaction BETWEEN the two countries "
+    "(one acting on/with the other); no if they are merely co-mentioned, unrelated, or one "
+    "is not really involved.\n"
+    "DOMAIN = ok if the interaction's domain matches the claimed one; otherwise give the "
+    "correct domain (military|economic|diplomatic|energy|health|none).\n"
+    "STANCE = SUPPORTED|UNSUPPORTED|CONTRADICTED for the cooperative/conflictual nature.\n"
+    "Be strict: default to no / the-true-domain / UNSUPPORTED when it is not explicit. "
+    "Reason < 15 words.\n"
+    "Output ONLY the answer line, no preamble, do not repeat the header. "
+    "Example: yes | ok | SUPPORTED | A imposed sanctions on B\n\n"
+    "SUMMARY:\n{text}\n\n"
+    "CLAIM: {a} interacts with {b} | domain={domain} | stance={stance}"
 )
-_VERDICTS = {"SUPPORTED", "UNSUPPORTED", "CONTRADICTED"}
 
 
 def _summaries() -> dict[str, dict[str, str]]:
@@ -50,33 +61,47 @@ def _summaries() -> dict[str, dict[str, str]]:
 
 
 def _present(name: str, text: str) -> bool:
-    """Loose check that an actor appears in the source (raw form or canonical name)."""
     low = text.lower()
     return name.lower() in low or _canon(name).lower() in low
 
 
-def _claim(e: dict) -> str:
-    stance = STANCE.get(e["sign"], "neutral")
-    return (
-        f"In the {e['domain']} domain, {e['a']} acted toward {e['b']} "
-        f"in a {stance} way ({e['cameo'].replace('_', ' ')})."
+def _judge(model: str, e: dict, text: str) -> dict:
+    stance_word = STANCE.get(e["sign"], "neutral")
+    prompt = _JUDGE.format(
+        text=text[:1600], a=e["a"], b=e["b"], domain=e["domain"], stance=stance_word
     )
-
-
-def _judge(model: str, text: str, claim: str) -> tuple[str, str]:
-    out = ollama(model, _JUDGE.format(text=text[:1600], claim=claim), timeout=180) or ""
-    line = next((ln for ln in out.splitlines() if ln.strip()), "")
-    head = line.split("|", 1)
-    verdict = head[0].strip().upper().rstrip(".")
-    verdict = next((v for v in _VERDICTS if verdict.startswith(v[:6])), "UNSUPPORTED")
-    reason = head[1].strip() if len(head) > 1 else ""
-    return verdict, reason[:120]
+    out = ollama(model, prompt, timeout=180) or ""
+    # the answer line has >=2 pipes; ignore an echoed header line ("DIRECT | DOMAIN | ...")
+    cands = [
+        ln
+        for ln in out.splitlines()
+        if ln.count("|") >= 2 and "DIRECT" not in ln.upper().split("|")[0]
+    ]
+    line = cands[-1] if cands else ""
+    parts = [p.strip() for p in line.split("|")]
+    parts += [""] * (4 - len(parts))
+    direct = parts[0].lower().startswith("y")
+    dlow = parts[1].lower()
+    if "ok" in dlow:
+        domain_ok, domain_fix = True, ""
+    else:
+        domain_ok = False
+        domain_fix = next((d for d in DOMAINS if d in dlow), "?")
+    su = parts[2].upper()
+    stance = next((v for v in _STANCES if su.startswith(v[:6])), "UNSUPPORTED")
+    return {
+        "direct": direct,
+        "domain_ok": domain_ok,
+        "domain_fix": domain_fix,
+        "stance": stance,
+        "reason": parts[3][:120],
+    }
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--model", default="qwen2.5:14b")
-    ap.add_argument("--limit", type=int, default=0, help="judge only the first N (testing)")
+    ap.add_argument("--limit", type=int, default=0)
     args = ap.parse_args()
 
     edges = json.loads(CAMEO.read_text(encoding="utf-8"))
@@ -86,7 +111,6 @@ def main() -> None:
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
 
     results = []
-    todo = len(edges)
     for i, e in enumerate(edges, 1):
         text = summ.get(e["source"], {}).get(e.get("day", ""), "")
         present = _present(e["a"], text) and _present(e["b"], text)
@@ -95,58 +119,77 @@ def main() -> None:
                 [e["a"], e["b"], e["domain"], e["cameo"], e["source"], e.get("day")], sort_keys=True
             ).encode()
         ).hexdigest()[:16]
-        if key in cache:
-            verdict, reason = cache[key]["verdict"], cache[key]["reason"]
+        if key in cache and "stance" in cache[key]:
+            v = cache[key]
         elif not text:
-            verdict, reason = "UNSUPPORTED", "source summary missing"
-            cache[key] = {"verdict": verdict, "reason": reason}
+            v = {
+                "direct": False,
+                "domain_ok": False,
+                "domain_fix": "?",
+                "stance": "UNSUPPORTED",
+                "reason": "source summary missing",
+            }
+            cache[key] = v
         else:
-            verdict, reason = _judge(args.model, text, _claim(e))
-            cache[key] = {"verdict": verdict, "reason": reason}
-        results.append({**e, "present": present, "verdict": verdict, "reason": reason})
+            v = _judge(args.model, e, text)
+            cache[key] = v
+        results.append({**e, "present": present, **v})
         if i % 20 == 0:
-            print(f"  judged {i}/{todo}")
+            print(f"  judged {i}/{len(edges)}")
 
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
     _report(results)
-    n = len(results)
-    counts = collections.Counter(r["verdict"] for r in results)
+    n = len(results) or 1
+    valid = sum(1 for r in results if r["direct"] and r["domain_ok"] and r["stance"] == "SUPPORTED")
     print(
-        f"\n{n} edges · SUPPORTED {counts['SUPPORTED']} · "
-        f"UNSUPPORTED {counts['UNSUPPORTED']} · CONTRADICTED {counts['CONTRADICTED']} · "
-        f"actor-absent {sum(1 for r in results if not r['present'])}"
+        f"\n{len(results)} links · fully-valid {valid} ({100 * valid // n}%) · "
+        f"direct {sum(r['direct'] for r in results)} · "
+        f"domain-ok {sum(r['domain_ok'] for r in results)} · "
+        f"stance-supported {sum(1 for r in results if r['stance'] == 'SUPPORTED')}"
     )
     print(f"report -> {REPORT}")
 
 
 def _report(results: list[dict]) -> None:
     n = len(results) or 1
-    counts = collections.Counter(r["verdict"] for r in results)
-    absent = [r for r in results if not r["present"]]
-    bad = [r for r in results if r["verdict"] != "SUPPORTED"]
-    by_dom = collections.Counter(r["domain"] for r in bad)
+    direct = sum(r["direct"] for r in results)
+    dom_ok = sum(r["domain_ok"] for r in results)
+    sup = sum(1 for r in results if r["stance"] == "SUPPORTED")
+    valid = [r for r in results if r["direct"] and r["domain_ok"] and r["stance"] == "SUPPORTED"]
+    bad = [r for r in results if r not in valid]
+    confusion = collections.Counter(
+        f"{r['domain']} -> {r['domain_fix']}" for r in results if not r["domain_ok"]
+    )
     by_src = collections.Counter(r["source"] for r in bad)
 
     L = [
-        "# GeoNexus — CAMEO hallucination audit\n",
-        f"_Strict fact-check of {len(results)} extracted interactions against their source "
-        "summaries (deterministic guard + LLM judge). Report only — nothing is removed._\n",
-        "## Trust score\n",
-        f"- **SUPPORTED: {counts['SUPPORTED']} ({100 * counts['SUPPORTED'] // n}%)**",
-        f"- UNSUPPORTED: {counts['UNSUPPORTED']} ({100 * counts['UNSUPPORTED'] // n}%)",
-        f"- CONTRADICTED: {counts['CONTRADICTED']} ({100 * counts['CONTRADICTED'] // n}%)",
-        f"- actor absent from source (deterministic flag): {len(absent)}",
-        "\n## Most-hallucinating sources (summaries)\n",
+        "# GeoNexus — CAMEO link audit\n",
+        f"_Strict fact-check of {len(results)} extracted links vs their source summaries: "
+        "is the tie a DIRECT interaction between the two countries, is the DOMAIN right, is "
+        "the STANCE supported? Report only — nothing is removed._\n",
+        "## Trust scores\n",
+        f"- **fully valid (direct + domain + stance): {len(valid)} ({100 * len(valid) // n}%)**",
+        f"- direct interaction: {direct} ({100 * direct // n}%)",
+        f"- domain correct: {dom_ok} ({100 * dom_ok // n}%)",
+        f"- stance supported: {sup} ({100 * sup // n}%)",
+        f"- both actors present in source (deterministic): {sum(r['present'] for r in results)}",
+        "\n## Domain misclassification (claimed -> correct)\n",
     ]
-    L += [f"- {src}: {c} flagged" for src, c in by_src.most_common(10)]
-    L.append("\n## Flagged by domain\n")
-    L += [f"- {dom}: {c}" for dom, c in by_dom.most_common()]
-    L.append("\n## Contradicted / unsupported interactions\n")
-    for r in sorted(bad, key=lambda r: r["verdict"]):
-        flag = "" if r["present"] else " ⚠actor-absent"
+    L += [f"- {k}: {c}" for k, c in confusion.most_common(12)] or ["- none"]
+    L.append("\n## Most-flagged source summaries\n")
+    L += [f"- {src}: {c}" for src, c in by_src.most_common(10)]
+    L.append(f"\n## Flagged links ({len(bad)})\n")
+    for r in bad:
+        issues = []
+        if not r["direct"]:
+            issues.append("not-direct" + ("" if r["present"] else "/actor-absent"))
+        if not r["domain_ok"]:
+            issues.append(f"domain→{r['domain_fix']}")
+        if r["stance"] != "SUPPORTED":
+            issues.append(r["stance"].lower())
         L.append(
-            f"- **{r['verdict']}** {r['a']} →[{r['domain']}]→ {r['b']} "
-            f"({r['cameo']}){flag} — _{r['reason']}_"
+            f"- {r['a']} →[{r['domain']}]→ {r['b']} ({r['cameo']}): "
+            f"**{', '.join(issues)}** — _{r['reason']}_"
         )
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text("\n".join(L) + "\n", encoding="utf-8")
