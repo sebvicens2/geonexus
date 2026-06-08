@@ -24,11 +24,10 @@ read a cached LLM situation report, and track how the picture **shifts over time
 - **Signed multi-layer graph** — one layer per domain; each dyad carries a CAMEO
   quad-class (verbal/material × cooperation/conflict) mapped to a Goldstein-style
   sign. Built by a **local LLM** (Qwen via Ollama) reading daily news summaries.
-- **20-year inertia** — a long-run baseline from **GDELT** (~2005+, net Goldstein
-  tone) is reclassified into the **military / economic / diplomatic** strata and
-  blended in: it anchors recent ties to their historical stance and keeps a
-  persistent backbone where the news is quiet (energy/health stay news-only, as
-  CAMEO has no such categories).
+- **20-year historical baseline** — a long-run **GDELT** baseline (~2005+, net
+  Goldstein tone), reclassified into the military / economic / diplomatic strata, is
+  shown as a few bullet points in the pair / country panel ("Historical baseline
+  (20y)") — context, kept out of the graph so the recent signal stays readable.
 - **A hard maritime layer** — real chokepoints (Hormuz, Bab-el-Mandeb, Bosphorus…)
   with IMF-PortWatch disruption, alongside the media-derived news layers.
 - **Signed-network analysis** — structural-balance %, faction split, tension

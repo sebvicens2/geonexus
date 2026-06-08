@@ -220,29 +220,23 @@ def main() -> None:
             continue
         directed[e["domain"]][(a, b)] = directed[e["domain"]].get((a, b), 0) + e["sign"]
         actors.update((a, b))
-    merged = {lay: {(a, b): s for (a, b), s in d.items()} for lay, d in directed.items()}
-
-    # INERTIA: blend the GDELT 20-year baseline into each news stratum. It anchors a
-    # recent tie to its long-run stance, and surfaces strong historical ties even where
-    # the news is quiet — so each layer has persistence instead of swinging on a few days.
-    INERTIA_W = 1.0
-    STRONG = {"military": 15000, "economic": 12000, "diplomatic": 80000}
-    if STRATA.exists():
-        strata = json.loads(STRATA.read_text(encoding="utf-8"))
-        for r in strata:  # strong historical ties also introduce their countries as nodes
-            if r["domain"] in STRONG and r["events"] >= STRONG[r["domain"]]:
-                actors.update((r["a"], r["b"]))
-        for r in strata:
-            dom, key, inertia = r["domain"], (r["a"], r["b"]), INERTIA_W * r["net"]
-            if dom not in merged:
-                continue
-            if key in merged[dom]:  # anchor an existing recent tie to its history
-                merged[dom][key] += inertia
-            elif r["events"] >= STRONG[dom] and r["a"] in actors and r["b"] in actors:
-                merged[dom][key] = inertia  # persistent historical-only tie
-
-    dyads = {lay: [[a, b, round(s, 2)] for (a, b), s in merged[lay].items() if s] for lay in LAYERS}
+    dyads = {lay: [[a, b, s] for (a, b), s in d.items() if s] for lay, d in directed.items()}
     countries = sorted(actors)  # alphabetical for the pair dropdowns
+
+    # 20-year GDELT baseline: kept as a SHORT per-pair summary for the panel (a few
+    # bullets), NOT drawn into the graph (that buried the recent signal).
+    hist_pairs: dict[str, dict[str, float]] = {}
+    if STRATA.exists():
+        agg: dict[tuple[str, str], list[float]] = {}
+        for r in json.loads(STRATA.read_text(encoding="utf-8")):
+            if r["a"] in actors and r["b"] in actors:
+                key = ("|".join(sorted((r["a"], r["b"]))), r["domain"])
+                acc = agg.setdefault(key, [0.0, 0.0])
+                acc[0] += r["net"] * r["events"]
+                acc[1] += r["events"]
+        for (key, dom), (sw, ev) in agg.items():
+            hist_pairs.setdefault(key, {})[dom] = round(sw / ev, 2)
+
     data = {"layers": list(LAYERS), "dyads": dyads, "countries": countries}
 
     isos = {ISO2[c] for c in actors if c in ISO2}
@@ -264,6 +258,7 @@ def main() -> None:
         .replace("__PAIRS__", json.dumps(pairs_js))
         .replace("__COUNTRIES__", json.dumps(countries_js))
         .replace("__FLAGS__", json.dumps(flags_by_country))
+        .replace("__HISTPAIRS__", json.dumps(hist_pairs))
     )
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
@@ -356,6 +351,7 @@ const D = __DATA__;
 const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign,why}]}
 const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interactions:[...]}
 const FLAGS = __FLAGS__;  // country -> base64 flag data-URI (overlay <img>)
+const HISTPAIRS = __HISTPAIRS__;  // "A|B" -> {domain: net Goldstein over 20y} (panel summary)
 const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 function bulletize(text) {  // render LLM bullet output as a list (fallback: paragraph)
   const lines = text.split('\n').map(x => x.trim()).filter(Boolean);
@@ -363,6 +359,30 @@ function bulletize(text) {  // render LLM bullet output as a list (fallback: par
   return items.length
     ? '<ul>' + items.map(i => `<li>${esc(i)}</li>`).join('') + '</ul>'
     : '<p>' + esc(text) + '</p>';
+}
+function histRow(label, dom, net) {  // one 20y-baseline bullet
+  const w = net > 0 ? 'cooperation' : 'conflict';
+  return `<li><span style="color:${LAYER_COLOR[dom] || '#888'}">●</span> `
+    + `${label}${dom}: ${w} (${net > 0 ? '+' : ''}${net})</li>`;
+}
+function histPairHTML(a, b) {
+  const hp = HISTPAIRS[[a, b].sort().join('|')];
+  if (!hp) return '';
+  const rows = Object.keys(hp).map(dom => histRow('', dom, hp[dom])).join('');
+  return rows ? '<p class="muted2">Historical baseline (20y · GDELT)</p><ul>' + rows + '</ul>' : '';
+}
+function histCountryHTML(country) {
+  const ties = [];
+  for (const k in HISTPAIRS) {
+    const [x, y] = k.split('|');
+    if (x !== country && y !== country) continue;
+    const other = x === country ? y : x;
+    for (const dom in HISTPAIRS[k]) ties.push({ other, dom, net: HISTPAIRS[k][dom] });
+  }
+  if (!ties.length) return '';
+  ties.sort((p, q) => Math.abs(q.net) - Math.abs(p.net));
+  const rows = ties.slice(0, 6).map(t => histRow(esc(t.other) + ' · ', t.dom, t.net)).join('');
+  return '<p class="muted2">Historical baseline (20y · GDELT)</p><ul>' + rows + '</ul>';
 }
 const LAYERS = D.layers;
 const active = new Set(LAYERS);  // multi-select: all layers on by default
@@ -611,7 +631,8 @@ function renderPanel() {
     body.innerHTML = (p.text ? bulletize(p.text) : '')
       + (p.edges && p.edges.length
         ? '<p class="muted2">Interactions &amp; reasons</p>'
-          + _interactionRows(p.edges, false) : '');
+          + _interactionRows(p.edges, false) : '')
+      + histPairHTML(a, b);
     return;
   }
 
@@ -627,7 +648,8 @@ function renderPanel() {
     body.innerHTML = (c.text ? bulletize(c.text) : '')
       + (c.interactions && c.interactions.length
         ? '<p class="muted2">Interactions &amp; reasons</p>'
-          + _interactionRows(c.interactions, true) : '');
+          + _interactionRows(c.interactions, true) : '')
+      + histCountryHTML(selectedCountry);
     return;
   }
 
