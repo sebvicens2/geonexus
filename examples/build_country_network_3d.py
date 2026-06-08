@@ -321,6 +321,26 @@ const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo
 const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interactions:[...]}
 const FLAGS = __FLAGS__;  // country -> base64 flag data-URI (blocs absent -> coloured sphere)
 const SPHERE_GEO = THREE ? new THREE.SphereGeometry(1, 14, 14) : null;
+
+// preload every flag (base64 -> 128x128 canvas -> CanvasTexture) BEFORE building nodes,
+// so each material is created WITH its map (assigning map after first render renders black)
+const FLAG_TEX = {};
+if (THREE) {
+  await Promise.all(Object.entries(FLAGS).map(([name, uri]) => new Promise(res => {
+    const img = new Image();
+    img.onload = () => {
+      const cv = document.createElement('canvas');
+      cv.width = 128; cv.height = 128;
+      cv.getContext('2d').drawImage(img, 0, 0, 128, 128);
+      const t = new THREE.CanvasTexture(cv);
+      t.colorSpace = THREE.SRGBColorSpace;
+      FLAG_TEX[name] = t;
+      res();
+    };
+    img.onerror = () => res();
+    img.src = uri;
+  })));
+}
 const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 function bulletize(text) {  // render LLM bullet output as a list (fallback: paragraph)
   const lines = text.split('\n').map(x => x.trim()).filter(Boolean);
@@ -374,28 +394,22 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     const focused = hlNodes.size > 0 && hlNodes.has(n.id);
     const sz = 5 + Math.min(11, n.deg);
     const group = new THREE.Group();
-    const flag = FLAGS[n.id];
-    // start as a coloured sphere (never black); swap in the flag texture only once it loads
-    const mat = new THREE.MeshBasicMaterial({
-      color: NODE_COLOR(n), transparent: true, opacity: dim ? 0.18 : 0.95,
-    });
-    if (flag) {  // draw the embedded flag onto a 128x128 (power-of-2) canvas -> CanvasTexture
-      const img = new Image();
-      img.onload = () => {
-        const cv = document.createElement('canvas');
-        cv.width = 128; cv.height = 128;
-        cv.getContext('2d').drawImage(img, 0, 0, 128, 128);
-        const tex = new THREE.CanvasTexture(cv);
-        tex.colorSpace = THREE.SRGBColorSpace;
-        mat.map = tex;
-        mat.color.set(0xffffff);  // let the flag colours show through
-        mat.needsUpdate = true;
-      };
-      img.src = flag;  // base64 data-URI: no network, no CORS, no taint
-    }
-    const mesh = new THREE.Mesh(SPHERE_GEO, mat);
+    // coloured sphere keeps the volume (Mesh+colour renders fine everywhere)
+    const mesh = new THREE.Mesh(SPHERE_GEO, new THREE.MeshBasicMaterial({
+      color: NODE_COLOR(n), transparent: true, opacity: dim ? 0.18 : 0.9,
+    }));
     mesh.scale.setScalar(sz * 0.4);
     group.add(mesh);
+    // flag as a billboard sprite on the sphere — same Sprite+CanvasTexture path as labels
+    const tex = FLAG_TEX[n.id];
+    if (tex) {
+      const sp = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: tex, transparent: true, opacity: dim ? 0.25 : 1, depthTest: false,
+      }));
+      sp.scale.set(sz * 0.85, sz * 0.57, 1);  // flags are ~3:2
+      sp.renderOrder = 3;
+      group.add(sp);
+    }
     if (SpriteText && (focused || n.labelOn)) {  // label hubs + the focused node
       const t = new SpriteText(n.id);
       t.backgroundColor = 'rgba(7,11,21,0.5)'; t.padding = 1.5; t.borderRadius = 3;
