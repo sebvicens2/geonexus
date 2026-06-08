@@ -168,13 +168,6 @@ try {
     throw e2;
   }
 }
-// optional neon glow (post-processing); shares the same three instance, fails soft
-let THREE = null, UnrealBloomPass = null;
-try {
-  THREE = await import('https://esm.sh/three@0.160.0');
-  const mod = await import('https://esm.sh/three@0.160.0/addons/postprocessing/UnrealBloomPass.js?external=three');
-  UnrealBloomPass = mod.UnrealBloomPass;
-} catch (e) { /* bloom is optional */ }
 const D = __DATA__;
 const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign,why}]}
 const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interactions:[...]}
@@ -211,7 +204,7 @@ let hlNodes = new Set(), hlLinks = new Set();
 const NODE_COLOR = n =>  // visual hierarchy by connectivity (bloom makes hubs glow)
   n.deg >= 8 ? '#fcd34d' : n.deg >= 4 ? '#7dd3fc' : '#94a3b8';
 const Graph = ForceGraph3D()(document.getElementById('g'))
-  .backgroundColor('rgba(0,0,0,0)')  // transparent -> CSS radial gradient shows through
+  .backgroundColor('#070b15')  // solid (transparent + postprocessing can render black)
   .nodeRelSize(4)
   .nodeResolution(14)
   .nodeOpacity(0.95)
@@ -285,14 +278,6 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   });
 
 Graph.d3Force('charge').strength(-150);  // more repulsion -> a more legible, spread layout
-
-if (UnrealBloomPass && THREE) {  // neon glow on nodes/links
-  try {
-    const bloom = new UnrealBloomPass(
-      new THREE.Vector2(window.innerWidth, window.innerHeight), 1.1, 0.7, 0.05);
-    Graph.postProcessingComposer().addPass(bloom);
-  } catch (e) { /* skip bloom */ }
-}
 
 const lid = l => l.source.id || l.source;       // link endpoints can be id or node obj
 const tid = l => l.target.id || l.target;
