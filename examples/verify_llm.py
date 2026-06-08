@@ -82,7 +82,7 @@ def _judge(model: str, e: dict, text: str) -> dict:
     parts += [""] * (4 - len(parts))
     direct = parts[0].lower().startswith("y")
     dlow = parts[1].lower()
-    if "ok" in dlow:
+    if "ok" in dlow or e["domain"] in dlow:  # "ok" OR the judge restated the same domain
         domain_ok, domain_fix = True, ""
     else:
         domain_ok = False
@@ -121,6 +121,8 @@ def main() -> None:
         ).hexdigest()[:16]
         if key in cache and "stance" in cache[key]:
             v = cache[key]
+            if not v["domain_ok"] and v.get("domain_fix") == e["domain"]:
+                v = {**v, "domain_ok": True, "domain_fix": ""}  # fix old-parse same-domain
         elif not text:
             v = {
                 "direct": False,
