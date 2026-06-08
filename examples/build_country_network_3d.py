@@ -38,7 +38,8 @@ def main() -> None:
             degree[a] += 1
             degree[b] += 1
         dyads[lay] = rows
-    data = {"layers": LAYERS, "dyads": dyads, "degree": degree}
+    countries = sorted(degree, key=lambda c: -degree[c])
+    data = {"layers": LAYERS, "dyads": dyads, "degree": degree, "countries": countries}
     page = _TEMPLATE.replace("__DATA__", json.dumps(data))
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
@@ -57,6 +58,9 @@ _TEMPLATE = r"""<!doctype html>
   .btn { background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:13px;
     padding:6px 13px; border-radius:8px; cursor:pointer; margin-right:5px; }
   .btn.on { background:#2563eb; border-color:#2563eb; color:#fff; }
+  select { background:#1e293b; color:#cbd5e1; border:1px solid #334155;
+    border-radius:8px; padding:5px 8px; font-size:13px; margin-right:4px; }
+  #pair { margin-top:8px; font-size:13px; color:#94a3b8; }
   #g { position:fixed; inset:0; z-index:1; }
 </style>
 <!-- single shared three instance (importmap) so label sprites render correctly;
@@ -73,6 +77,11 @@ _TEMPLATE = r"""<!doctype html>
   <p>Green = cooperation, red = conflict. Click a country to fly to it &amp; focus its
      links; click empty space to reset. Drag = rotate · scroll = zoom · right-drag = pan.</p>
   <div id="btns"></div>
+  <div id="pair">Focus a pair:
+    <select id="pa"></select> <select id="pb"></select>
+    <button class="btn" id="clr">show all</button>
+    <span id="pairinfo"></span>
+  </div>
 </div>
 <div id="g"></div>
 <script type="module">
@@ -103,6 +112,7 @@ const LAYERS = D.layers;
 const active = new Set(LAYERS);  // multi-select: all layers on by default
 const HUBS = 16;                 // how many top countries get a permanent label
 const COOP = '#22c55e', CONF = '#ef4444';
+let pair = [null, null];         // when both set: show only the pair + direct neighbours
 
 function graphFor(activeSet) {
   const agg = {}, deg = {};
@@ -173,9 +183,31 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     Graph.linkColor(Graph.linkColor());
   });
 
+const lid = l => l.source.id || l.source;       // link endpoints can be id or node obj
+const tid = l => l.target.id || l.target;
+
+function currentData() {
+  const g = graphFor(active);
+  const [a, b] = pair;
+  if (!a || !b) return g;
+  // keep the pair + every node directly connected to A or B, and edges among them
+  const keep = new Set([a, b]);
+  for (const l of g.links) {
+    const s = lid(l), t = tid(l);
+    if (s === a || t === a || s === b || t === b) { keep.add(s); keep.add(t); }
+  }
+  return {
+    nodes: g.nodes.filter(n => keep.has(n.id)).map(n => ({ ...n, labelOn: true })),
+    links: g.links.filter(l => keep.has(lid(l)) && keep.has(tid(l))),
+  };
+}
+
 function redraw() {
   hlNodes = new Set(); hlLinks = new Set();
-  Graph.graphData(graphFor(active));
+  Graph.graphData(currentData());
+  const [a, b] = pair;
+  document.getElementById('pairinfo').textContent =
+    a && b ? `— showing ${a} & ${b} and their direct links` : '';
 }
 
 const btns = document.getElementById('btns');
@@ -190,6 +222,17 @@ LAYERS.forEach(lay => {  // multi-select: each button toggles a layer on/off
   };
   btns.appendChild(b);
 });
+
+const pa = document.getElementById('pa'), pb = document.getElementById('pb');
+function fill(sel) {
+  sel.appendChild(new Option('—', ''));
+  D.countries.forEach(c => sel.appendChild(new Option(c, c)));
+}
+fill(pa); fill(pb);
+pa.onchange = pb.onchange = () => { pair = [pa.value || null, pb.value || null]; redraw(); };
+document.getElementById('clr').onclick = () => {
+  pa.value = ''; pb.value = ''; pair = [null, null]; redraw();
+};
 redraw();
 </script>
 </body></html>
