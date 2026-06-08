@@ -472,7 +472,7 @@ function syncOverlay() {
     const on = !!sc && sc.x > -60 && sc.x < W + 60 && sc.y > -60 && sc.y < H + 60;
     const dim = hlNodes.size > 0 && !hlNodes.has(n.id);
     const dist = front ? Math.hypot(n.x - cam.x, n.y - cam.y, n.z - cam.z) : 1;
-    const sz = Math.max(11, Math.min(54, 1300 / dist)) * (1 + Math.min(8, n.deg) * 0.05);
+    const sz = Math.max(18, Math.min(95, 2100 / dist)) * (1 + Math.min(8, n.deg) * 0.05);
     if (it.img) {
       const s = it.img.style;
       s.display = on ? 'block' : 'none';
