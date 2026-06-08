@@ -357,6 +357,11 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     if (iso && flagLoader) {
       flagLoader.load('https://flagcdn.com/w160/' + iso + '.png', tex => {
         tex.colorSpace = THREE.SRGBColorSpace;
+        // flags are non-power-of-2 -> avoid the WebGL "black texture" bug
+        tex.minFilter = THREE.LinearFilter;
+        tex.generateMipmaps = false;
+        tex.wrapS = THREE.ClampToEdgeWrapping;
+        tex.wrapT = THREE.ClampToEdgeWrapping;
         mat.map = tex;
         mat.color.set(0xffffff);  // let the flag colours show through
         mat.needsUpdate = true;
@@ -388,7 +393,7 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .linkDirectionalParticles(l =>
     (hlLinks.size && !hlLinks.has(l)) ? 0 : 2 + Math.min(4, Math.abs(l.net)))
   .linkDirectionalParticleWidth(3)
-  .linkDirectionalParticleSpeed(l => (l.net < 0 ? 0.012 : 0.006))
+  .linkDirectionalParticleSpeed(l => (l.net < 0 ? 0.005 : 0.0028))
   .linkDirectionalParticleColor(l => (l.net > 0 ? '#4ade80' : '#f87171'))
   .linkDirectionalArrowLength(l => (hlLinks.size && !hlLinks.has(l)) ? 0 : 3.5)
   .linkDirectionalArrowRelPos(1)
