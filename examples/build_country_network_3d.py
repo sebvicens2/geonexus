@@ -350,14 +350,16 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     const sz = 5 + Math.min(11, n.deg);
     const group = new THREE.Group();
     const iso = ISO2[n.id];
-    let mat;
-    if (iso && flagLoader) {  // the country's flag wrapped on the sphere (keeps the volume)
-      const tex = flagLoader.load('https://flagcdn.com/w160/' + iso + '.png');
-      tex.colorSpace = THREE.SRGBColorSpace;
-      mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, opacity: dim ? 0.18 : 1 });
-    } else {  // bloc / unmapped actor: a coloured sphere
-      mat = new THREE.MeshBasicMaterial({
-        color: NODE_COLOR(n), transparent: true, opacity: dim ? 0.18 : 0.95,
+    // start as a coloured sphere (never black); swap in the flag texture only once it loads
+    const mat = new THREE.MeshBasicMaterial({
+      color: NODE_COLOR(n), transparent: true, opacity: dim ? 0.18 : 0.95,
+    });
+    if (iso && flagLoader) {
+      flagLoader.load('https://flagcdn.com/w160/' + iso + '.png', tex => {
+        tex.colorSpace = THREE.SRGBColorSpace;
+        mat.map = tex;
+        mat.color.set(0xffffff);  // let the flag colours show through
+        mat.needsUpdate = true;
       });
     }
     const mesh = new THREE.Mesh(SPHERE_GEO, mat);
