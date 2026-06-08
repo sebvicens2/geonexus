@@ -74,8 +74,6 @@ _TEMPLATE = r"""<!doctype html>
 <div id="g"></div>
 <script>
 const D = __DATA__;
-const active = new Set(LAYERS);  // multi-select: all layers on by default
-const HUBS = 16;                 // how many top countries get a permanent label
 if (typeof ForceGraph3D === 'undefined' || typeof SpriteText === 'undefined') {
   document.getElementById('g').innerHTML =
     '<p style="color:#f87171;padding:140px 40px">Could not load the 3D libraries '
@@ -83,6 +81,8 @@ if (typeof ForceGraph3D === 'undefined' || typeof SpriteText === 'undefined') {
   throw new Error('libs not loaded');
 }
 const LAYERS = D.layers;
+const active = new Set(LAYERS);  // multi-select: all layers on by default
+const HUBS = 16;                 // how many top countries get a permanent label
 const COOP = '#22c55e', CONF = '#ef4444';
 
 function graphFor(activeSet) {
