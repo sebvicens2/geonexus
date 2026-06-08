@@ -12,6 +12,7 @@ Opens in any browser (loads the libs from a CDN, so needs internet + WebGL).
 
 from __future__ import annotations
 
+import argparse
 import base64
 import json
 import sys
@@ -177,7 +178,32 @@ def _situation_html() -> str:
     return "".join(f"<p>{_html.escape(b.strip())}</p>" for b in text.split("\n\n") if b.strip())
 
 
+def _serve() -> None:
+    """Serve reports/ over http and open the network (ES modules need http, not file://)."""
+    import functools
+    import http.server
+    import socketserver
+    import webbrowser
+
+    handler = functools.partial(
+        http.server.SimpleHTTPRequestHandler, directory=str(OUT_PATH.parent)
+    )
+    with socketserver.TCPServer(("127.0.0.1", 8000), handler) as httpd:
+        url = f"http://127.0.0.1:8000/{OUT_PATH.name}"
+        print(f"serving at {url}  (Ctrl+C to stop)")
+        webbrowser.open(url)
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\nstopped.")
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--serve", action="store_true", help="serve over http and open (needed for flags/labels)"
+    )
+    args = parser.parse_args()
     if not CAMEO.exists():
         print(f"{CAMEO} not found — run extract_cameo.py first.")
         return
@@ -217,7 +243,13 @@ def main() -> None:
     )
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
-    print(f"wrote {OUT_PATH} ({OUT_PATH.stat().st_size // 1024} KB) — open in a browser (WebGL)")
+    print(f"wrote {OUT_PATH} ({OUT_PATH.stat().st_size // 1024} KB)")
+    print(
+        "Open via a local server for flags & labels — re-run with --serve, or "
+        "`python -m http.server` in reports/ (file:// blocks ES modules)."
+    )
+    if args.serve:
+        _serve()
 
 
 _TEMPLATE = r"""<!doctype html>
@@ -306,6 +338,11 @@ try {
       document.head.appendChild(sc);
     });
     ForceGraph3D = window.ForceGraph3D;  // SpriteText stays null -> hover labels only
+    document.getElementById('hud').insertAdjacentHTML('beforeend',
+      '<div style="color:#fbbf24;font-size:12px;margin-top:6px">'
+      + '⚠ Flags &amp; labels need a local web server (file:// blocks ES modules). '
+      + 'Run <code>python examples/build_country_network_3d.py --serve</code>, '
+      + 'or <code>python -m http.server</code> in reports/ and open via http://.</div>');
   } catch (e2) {
     document.getElementById('g').innerHTML =
       '<p style="color:#f87171;padding:140px 40px">Could not load the 3D libraries '
