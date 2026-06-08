@@ -188,9 +188,11 @@ def _serve() -> None:
     handler = functools.partial(
         http.server.SimpleHTTPRequestHandler, directory=str(OUT_PATH.parent)
     )
-    with socketserver.TCPServer(("127.0.0.1", 8000), handler) as httpd:
-        url = f"http://127.0.0.1:8000/{OUT_PATH.name}"
-        print(f"serving at {url}  (Ctrl+C to stop)")
+    with socketserver.TCPServer(("127.0.0.1", 0), handler) as httpd:  # 0 = free port
+        url = f"http://127.0.0.1:{httpd.server_address[1]}/{OUT_PATH.name}"
+        print("\n" + "=" * 64)
+        print(f"  OPEN THIS URL (not the file):  {url}")
+        print("=" * 64 + "\n  (Ctrl+C to stop the server)")
         webbrowser.open(url)
         try:
             httpd.serve_forever()
