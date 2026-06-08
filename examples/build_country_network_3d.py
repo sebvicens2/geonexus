@@ -59,11 +59,14 @@ _TEMPLATE = r"""<!doctype html>
   .btn.on { background:#2563eb; border-color:#2563eb; color:#fff; }
   #g { position:fixed; inset:0; z-index:1; }
 </style>
-<!-- order matters: 3d-force-graph first (uses its bundled three), then three +
-     spritetext for the labels (sprites render cross-instance via three's duck-typing) -->
-<script src="https://unpkg.com/3d-force-graph"></script>
-<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
-<script src="https://unpkg.com/three-spritetext/dist/three-spritetext.min.js"></script>
+<!-- single shared three instance (importmap) so label sprites render correctly;
+     three/ prefix covers subpaths like three/webgpu that 3d-force-graph imports -->
+<script type="importmap">
+{ "imports": {
+  "three": "https://esm.sh/three@0.160.0",
+  "three/": "https://esm.sh/three@0.160.0/"
+} }
+</script>
 </head><body>
 <div id="hud">
   <h1>EventGraph — 3D country network</h1>
@@ -72,14 +75,30 @@ _TEMPLATE = r"""<!doctype html>
   <div id="btns"></div>
 </div>
 <div id="g"></div>
-<script>
-const D = __DATA__;
-if (typeof ForceGraph3D === 'undefined' || typeof SpriteText === 'undefined') {
-  document.getElementById('g').innerHTML =
-    '<p style="color:#f87171;padding:140px 40px">Could not load the 3D libraries '
-    + '(needs an internet connection).</p>';
-  throw new Error('libs not loaded');
+<script type="module">
+// Primary: one shared three (ES modules) -> always-on hub labels, no black box.
+// Fallback: UMD 3d-force-graph -> still navigable, names on hover.
+let ForceGraph3D = null, SpriteText = null;
+try {
+  ForceGraph3D = (await import('https://esm.sh/3d-force-graph?external=three')).default;
+  SpriteText = (await import('https://esm.sh/three-spritetext?external=three')).default;
+} catch (e) {
+  try {
+    await new Promise((res, rej) => {
+      const sc = document.createElement('script');
+      sc.src = 'https://unpkg.com/3d-force-graph';
+      sc.onload = res; sc.onerror = rej;
+      document.head.appendChild(sc);
+    });
+    ForceGraph3D = window.ForceGraph3D;  // SpriteText stays null -> hover labels only
+  } catch (e2) {
+    document.getElementById('g').innerHTML =
+      '<p style="color:#f87171;padding:140px 40px">Could not load the 3D libraries '
+      + '(needs an internet connection).</p>';
+    throw e2;
+  }
 }
+const D = __DATA__;
 const LAYERS = D.layers;
 const active = new Set(LAYERS);  // multi-select: all layers on by default
 const HUBS = 16;                 // how many top countries get a permanent label
@@ -111,7 +130,9 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .backgroundColor('#0b1020')
   .nodeRelSize(4)
   .nodeVal(n => 2 + n.deg)
+  .nodeLabel('id')  // hover tooltip (and the only labels in UMD fallback mode)
   .nodeThreeObject(n => {
+    if (!SpriteText) return undefined;  // fallback mode: no always-on labels
     const focused = hlNodes.size > 0 && hlNodes.has(n.id);
     if (!focused && !n.labelOn) return undefined;  // hubs + focused only
     const s = new SpriteText(n.id);
