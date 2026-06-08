@@ -12,8 +12,10 @@ Opens in any browser (loads the libs from a CDN, so needs internet + WebGL).
 
 from __future__ import annotations
 
+import base64
 import json
 import sys
+import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -22,6 +24,26 @@ from multilayer import CAMEO, LAYERS, _actor
 
 OUT_PATH = Path("reports") / "geonexus_country_network_3d.html"
 SITUATION = Path(__file__).parent / "data" / "world_observer_situation.json"
+FLAGS_CACHE = Path(__file__).parent / "data" / "flags_b64.json"
+
+
+def _flag_uris(isos: set[str]) -> dict[str, str]:
+    """Fetch flag PNGs once and cache them base64-encoded (so the HTML is offline-safe)."""
+    cache = json.loads(FLAGS_CACHE.read_text(encoding="utf-8")) if FLAGS_CACHE.exists() else {}
+    changed = False
+    for iso in sorted(isos):
+        if iso in cache:
+            continue
+        try:
+            with urllib.request.urlopen(f"https://flagcdn.com/w80/{iso}.png", timeout=15) as r:
+                cache[iso] = "data:image/png;base64," + base64.b64encode(r.read()).decode("ascii")
+            changed = True
+        except Exception:  # missing flag just falls back to a sphere
+            pass
+    if changed:
+        FLAGS_CACHE.write_text(json.dumps(cache), encoding="utf-8")
+    return {iso: cache[iso] for iso in isos if iso in cache}
+
 
 # country name -> ISO 3166-1 alpha-2 (for flagcdn flag textures); blocs fall back to a sphere
 ISO2 = {
@@ -173,6 +195,10 @@ def main() -> None:
     countries = sorted(actors)  # alphabetical for the pair dropdowns
     data = {"layers": LAYERS, "dyads": dyads, "countries": countries}
 
+    isos = {ISO2[c] for c in actors if c in ISO2}
+    flags = _flag_uris(isos)
+    flags_by_country = {c: flags[ISO2[c]] for c in actors if c in ISO2 and ISO2[c] in flags}
+
     sit = json.loads(SITUATION.read_text(encoding="utf-8")) if SITUATION.exists() else {}
     pairs_js = {
         k: {"text": v.get("text", ""), "edges": v.get("edges", [])}
@@ -187,7 +213,7 @@ def main() -> None:
         .replace("__SITUATION__", _situation_html())
         .replace("__PAIRS__", json.dumps(pairs_js))
         .replace("__COUNTRIES__", json.dumps(countries_js))
-        .replace("__ISO2__", json.dumps({k: v for k, v in ISO2.items() if k in actors}))
+        .replace("__FLAGS__", json.dumps(flags_by_country))
     )
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
@@ -293,8 +319,7 @@ try { THREE = await import('https://esm.sh/three@0.160.0'); } catch (e) { /* no 
 const D = __DATA__;
 const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign,why}]}
 const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interactions:[...]}
-const ISO2 = __ISO2__;  // country -> iso2 for flag textures (blocs absent -> sphere)
-const flagLoader = THREE ? new THREE.TextureLoader() : null;
+const FLAGS = __FLAGS__;  // country -> base64 flag data-URI (blocs absent -> coloured sphere)
 const SPHERE_GEO = THREE ? new THREE.SphereGeometry(1, 14, 14) : null;
 const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 function bulletize(text) {  // render LLM bullet output as a list (fallback: paragraph)
@@ -349,23 +374,24 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     const focused = hlNodes.size > 0 && hlNodes.has(n.id);
     const sz = 5 + Math.min(11, n.deg);
     const group = new THREE.Group();
-    const iso = ISO2[n.id];
+    const flag = FLAGS[n.id];
     // start as a coloured sphere (never black); swap in the flag texture only once it loads
     const mat = new THREE.MeshBasicMaterial({
       color: NODE_COLOR(n), transparent: true, opacity: dim ? 0.18 : 0.95,
     });
-    if (iso && flagLoader) {
-      flagLoader.load('https://flagcdn.com/w160/' + iso + '.png', tex => {
+    if (flag) {  // draw the embedded flag onto a 128x128 (power-of-2) canvas -> CanvasTexture
+      const img = new Image();
+      img.onload = () => {
+        const cv = document.createElement('canvas');
+        cv.width = 128; cv.height = 128;
+        cv.getContext('2d').drawImage(img, 0, 0, 128, 128);
+        const tex = new THREE.CanvasTexture(cv);
         tex.colorSpace = THREE.SRGBColorSpace;
-        // flags are non-power-of-2 -> avoid the WebGL "black texture" bug
-        tex.minFilter = THREE.LinearFilter;
-        tex.generateMipmaps = false;
-        tex.wrapS = THREE.ClampToEdgeWrapping;
-        tex.wrapT = THREE.ClampToEdgeWrapping;
         mat.map = tex;
         mat.color.set(0xffffff);  // let the flag colours show through
         mat.needsUpdate = true;
-      });
+      };
+      img.src = flag;  // base64 data-URI: no network, no CORS, no taint
     }
     const mesh = new THREE.Mesh(SPHERE_GEO, mat);
     mesh.scale.setScalar(sz * 0.4);
@@ -393,7 +419,7 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .linkDirectionalParticles(l =>
     (hlLinks.size && !hlLinks.has(l)) ? 0 : 2 + Math.min(4, Math.abs(l.net)))
   .linkDirectionalParticleWidth(3)
-  .linkDirectionalParticleSpeed(l => (l.net < 0 ? 0.005 : 0.0028))
+  .linkDirectionalParticleSpeed(l => (l.net < 0 ? 0.0025 : 0.0014))
   .linkDirectionalParticleColor(l => (l.net > 0 ? '#4ade80' : '#f87171'))
   .linkDirectionalArrowLength(l => (hlLinks.size && !hlLinks.has(l)) ? 0 : 3.5)
   .linkDirectionalArrowRelPos(1)
