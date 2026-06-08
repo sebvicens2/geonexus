@@ -26,7 +26,7 @@ from multilayer import CAMEO, LAYERS, _actor
 OUT_PATH = Path("reports") / "geonexus_country_network_3d.html"
 SITUATION = Path(__file__).parent / "data" / "world_observer_situation.json"
 FLAGS_CACHE = Path(__file__).parent / "data" / "flags_b64.json"
-GDELT = Path(__file__).parent / "data" / "world_observer_gdelt.json"
+STRATA = Path(__file__).parent / "data" / "world_observer_gdelt_strata.json"
 
 
 def _flag_uris(isos: set[str]) -> dict[str, str]:
@@ -220,25 +220,30 @@ def main() -> None:
             continue
         directed[e["domain"]][(a, b)] = directed[e["domain"]].get((a, b), 0) + e["sign"]
         actors.update((a, b))
-    dyads = {lay: [[a, b, s] for (a, b), s in d.items() if s] for lay, d in directed.items()}
-    countries = sorted(actors)  # alphabetical for the pair dropdowns
+    merged = {lay: {(a, b): s for (a, b), s in d.items()} for lay, d in directed.items()}
 
-    # historical baseline layer: GDELT ~20y net stance, restricted to current actors
-    hist = []
-    if GDELT.exists():
-        for r in json.loads(GDELT.read_text(encoding="utf-8")):
-            # keep only strong, clearly-signed 20y ties (else it's a near-complete hairball)
-            if (
-                r["a"] in actors
-                and r["b"] in actors
-                and r["events"] >= 80000
-                and abs(r["net"]) >= 1.0
-            ):
-                hist.append([r["a"], r["b"], r["net"]])
-    layers = [*LAYERS, "historical"] if hist else list(LAYERS)
-    if hist:
-        dyads["historical"] = hist
-    data = {"layers": layers, "dyads": dyads, "countries": countries}
+    # INERTIA: blend the GDELT 20-year baseline into each news stratum. It anchors a
+    # recent tie to its long-run stance, and surfaces strong historical ties even where
+    # the news is quiet — so each layer has persistence instead of swinging on a few days.
+    INERTIA_W = 1.0
+    STRONG = {"military": 15000, "economic": 12000, "diplomatic": 80000}
+    if STRATA.exists():
+        strata = json.loads(STRATA.read_text(encoding="utf-8"))
+        for r in strata:  # strong historical ties also introduce their countries as nodes
+            if r["domain"] in STRONG and r["events"] >= STRONG[r["domain"]]:
+                actors.update((r["a"], r["b"]))
+        for r in strata:
+            dom, key, inertia = r["domain"], (r["a"], r["b"]), INERTIA_W * r["net"]
+            if dom not in merged:
+                continue
+            if key in merged[dom]:  # anchor an existing recent tie to its history
+                merged[dom][key] += inertia
+            elif r["events"] >= STRONG[dom] and r["a"] in actors and r["b"] in actors:
+                merged[dom][key] = inertia  # persistent historical-only tie
+
+    dyads = {lay: [[a, b, round(s, 2)] for (a, b), s in merged[lay].items() if s] for lay in LAYERS}
+    countries = sorted(actors)  # alphabetical for the pair dropdowns
+    data = {"layers": list(LAYERS), "dyads": dyads, "countries": countries}
 
     isos = {ISO2[c] for c in actors if c in ISO2}
     flags = _flag_uris(isos)
@@ -367,9 +372,7 @@ let selectedCountry = null;      // when a node is clicked: show that country's 
 const LAYER_COLOR = {            // link colour = domain; conflict shown via moving particles
   military: '#ef4444', economic: '#f59e0b', diplomatic: '#3b82f6',
   energy: '#a855f7', health: '#10b981',
-  historical: '#22d3ee',        // GDELT 20-year structural baseline
 };
-active.delete('historical');    // the 20y baseline is OFF by default (toggle to overlay)
 
 function graphFor(activeSet) {
   // one link per (dyad, layer) so link colour can show the domain (no aggregation)

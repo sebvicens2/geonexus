@@ -24,9 +24,11 @@ read a cached LLM situation report, and track how the picture **shifts over time
 - **Signed multi-layer graph** — one layer per domain; each dyad carries a CAMEO
   quad-class (verbal/material × cooperation/conflict) mapped to a Goldstein-style
   sign. Built by a **local LLM** (Qwen via Ollama) reading daily news summaries.
-- **A 20-year historical baseline** — a structural backbone of long-run country
-  relations from **GDELT** (~2005+, net Goldstein tone), as a toggleable `historical`
-  layer to compare *structural ties vs current events*.
+- **20-year inertia** — a long-run baseline from **GDELT** (~2005+, net Goldstein
+  tone) is reclassified into the **military / economic / diplomatic** strata and
+  blended in: it anchors recent ties to their historical stance and keeps a
+  persistent backbone where the news is quiet (energy/health stay news-only, as
+  CAMEO has no such categories).
 - **A hard maritime layer** — real chokepoints (Hormuz, Bab-el-Mandeb, Bosphorus…)
   with IMF-PortWatch disruption, alongside the media-derived news layers.
 - **Signed-network analysis** — structural-balance %, faction split, tension
@@ -54,7 +56,7 @@ uv sync --extra dev --extra viz
 # 1. extract the signed multi-layer relations from World Observer summaries (LLM)
 uv run python examples/extract_cameo.py
 uv run python examples/extract_maritime.py          # hard maritime layer
-uv run python examples/extract_gdelt_baseline.py   # 20y historical baseline (from GDELT export)
+uv run python examples/extract_gdelt_strata.py     # 20y inertia baseline per domain (from GDELT export)
 
 # 2. cached situation reports — global / per pair / per country (LLM, grounded)
 uv run python examples/synthesize_situation.py
