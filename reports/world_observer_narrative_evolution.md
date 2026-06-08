@@ -1,6 +1,6 @@
 # World Observer — narrative evolution
 
-_How WO's LLM syntheses drifted between **2026-05-27** and **2026-06-07**: which topics entered, faded or persisted, and *when*. Topics are extracted deterministically from the summary bullets (no LLM). EventGraph stores one graph per day in an EventMemory and diffs the daily topic sets._
+_How WO's LLM syntheses drifted between **2026-05-27** and **2026-06-07**: which topics entered, faded or persisted, and *when*. Topics are extracted deterministically from the summary bullets (no LLM). GeoNexus stores one graph per day in an EventMemory and diffs the daily topic sets._
 
 ## Rising topics (dated trajectory)
 

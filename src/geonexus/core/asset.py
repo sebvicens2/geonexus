@@ -6,8 +6,8 @@ from typing import Any, ClassVar
 
 from pydantic import BaseModel, Field
 
-from eventgraph.core.node import NodeKind
-from eventgraph.ontology.asset_types import AssetType
+from geonexus.core.node import NodeKind
+from geonexus.ontology.asset_types import AssetType
 
 
 class Asset(BaseModel):

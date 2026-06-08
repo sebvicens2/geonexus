@@ -1,8 +1,8 @@
 """Graph analytics: community detection and risk hotspots.
 
 These are deterministic, dependency-light heuristics that operate on the
-undirected projection of the graph. They power :meth:`EventGraph.emerging_clusters`
-and :meth:`EventGraph.risk_hotspots`.
+undirected projection of the graph. They power :meth:`GeoNexus.emerging_clusters`
+and :meth:`GeoNexus.risk_hotspots`.
 """
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING
 import networkx as nx
 
 if TYPE_CHECKING:
-    from eventgraph.graph.knowledge_graph import EventGraph
+    from geonexus.graph.knowledge_graph import GeoNexus
 
 
 def undirected_simple(graph: nx.MultiDiGraph) -> nx.Graph:
@@ -33,7 +33,7 @@ def undirected_simple(graph: nx.MultiDiGraph) -> nx.Graph:
     return h
 
 
-def detect_communities(graph: EventGraph, *, min_size: int = 2, seed: int = 42) -> list[list[str]]:
+def detect_communities(graph: GeoNexus, *, min_size: int = 2, seed: int = 42) -> list[list[str]]:
     """Detect strongly-connected groups (themes / emerging crises).
 
     Uses greedy modularity maximisation on the weighted undirected projection.
@@ -94,7 +94,7 @@ class RiskHotspot:
 
 
 def risk_hotspots(
-    graph: EventGraph,
+    graph: GeoNexus,
     *,
     top_k: int = 10,
     weights: tuple[float, float, float] = (0.4, 0.4, 0.2),
@@ -104,7 +104,7 @@ def risk_hotspots(
     The score combines three normalised signals:
 
     - **centrality** — degree centrality (how connected the node is),
-    - **influence** — :meth:`EventGraph.influence_score` (causal reach),
+    - **influence** — :meth:`GeoNexus.influence_score` (causal reach),
     - **density** — square clustering (local neighbourhood redundancy; this works
       on bipartite-style co-occurrence graphs where triangle clustering is always
       zero).

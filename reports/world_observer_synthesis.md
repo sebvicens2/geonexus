@@ -1,6 +1,6 @@
-# EventGraph over World Observer synthesis
+# GeoNexus over World Observer synthesis
 
-_EventGraph **consumes World Observer's own scores** (instability, attention, narrative) as node attributes and adds the relational layer (co-occurrence graph, blocs, connectivity). No recomputation of attention; no LLM here._
+_GeoNexus **consumes World Observer's own scores** (instability, attention, narrative) as node attributes and adds the relational layer (co-occurrence graph, blocs, connectivity). No recomputation of attention; no LLM here._
 
 ## Most unstable countries (WO instability)
 
@@ -30,7 +30,7 @@ _EventGraph **consumes World Observer's own scores** (instability, attention, na
 | korean_peninsula | 0.27 |
 | israel_hezbollah_lebanon | 0.23 |
 
-## Most connected countries (EventGraph co-occurrence degree)
+## Most connected countries (GeoNexus co-occurrence degree)
 
 | Country | Degree | WO instability |
 | --- | --: | --: |

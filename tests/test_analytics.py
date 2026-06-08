@@ -4,12 +4,12 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
-from eventgraph import Actor, Event, EventGraph, Relation, RelationType, RiskHotspot
+from geonexus import Actor, Event, GeoNexus, Relation, RelationType, RiskHotspot
 
 
-def _two_community_graph() -> EventGraph:
+def _two_community_graph() -> GeoNexus:
     """Two tight groups (A: x1-x3, B: y1-y3) with a single weak bridge."""
-    g = EventGraph()
+    g = GeoNexus()
     now = datetime(2026, 1, 1, tzinfo=timezone.utc)
 
     def add_group(prefix: str, weight: float) -> None:
@@ -75,7 +75,7 @@ def test_emerging_clusters_min_size_filter() -> None:
 
 
 def test_emerging_clusters_empty_graph() -> None:
-    assert EventGraph().emerging_clusters() == []
+    assert GeoNexus().emerging_clusters() == []
 
 
 def test_emerging_clusters_deterministic() -> None:
@@ -106,7 +106,7 @@ def test_risk_hotspots_actors_outrank_events() -> None:
 
 
 def test_risk_hotspots_empty_graph() -> None:
-    assert EventGraph().risk_hotspots() == []
+    assert GeoNexus().risk_hotspots() == []
 
 
 def test_risk_hotspots_weights_change_ranking() -> None:

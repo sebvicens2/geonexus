@@ -4,7 +4,7 @@ Each edge is a single grounded relation (subject —verb→ object); the network
 *maps* them — no multi-hop composition, no invented links. We drop degree-1 leaves
 (dust) and render the connected core, edges labelled with the relation verb.
 
-    python examples/relation_network.py        → reports/eventgraph_relation_network.html
+    python examples/relation_network.py        → reports/geonexus_relation_network.html
 
 Self-contained (pyvis inlined); open in any browser. Requires the relations file
 (examples/extract_relations.py) and the [viz] extra (pyvis).
@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from relation_graph import _edge_label, build, load_triples
 
-OUT_PATH = Path("reports") / "eventgraph_relation_network.html"
+OUT_PATH = Path("reports") / "geonexus_relation_network.html"
 PALETTE = ["#94a3b8", "#60a5fa", "#3b82f6", "#1d4ed8", "#dc2626"]  # by degree tier
 
 
@@ -65,7 +65,7 @@ def main() -> None:
     try:
         net, n_core, n_total = build_network()
     except ModuleNotFoundError:
-        print("pyvis required: pip install eventgraph[viz]")
+        print("pyvis required: pip install geonexus[viz]")
         return
     if n_total == 0:
         print("No relations — run examples/extract_relations.py first.")
@@ -75,7 +75,7 @@ def main() -> None:
     header = (
         '<div style="font-family:system-ui;background:#0f172a;color:#e2e8f0;'
         'padding:14px 20px;border-bottom:1px solid #1e293b">'
-        "<b>EventGraph — relation network</b> · each edge is one grounded "
+        "<b>GeoNexus — relation network</b> · each edge is one grounded "
         "subject→relation→object fact (hover for the verb). "
         f"Showing the connected core ({n_core} entities, degree ≥ 2; "
         "degree-1 leaves hidden). No multi-hop inference.</div>"

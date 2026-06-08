@@ -5,7 +5,7 @@ labelled, edges green (cooperation) / red (conflict). Filter by layer, click a
 country to fly to it and focus its links. WebGL via 3d-force-graph + spritetext.
 
     python examples/build_country_network_3d.py
-        → reports/eventgraph_country_network_3d.html
+        → reports/geonexus_country_network_3d.html
 
 Opens in any browser (loads the libs from a CDN, so needs internet + WebGL).
 """
@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from multilayer import CAMEO, LAYERS, net_dyads
 
-OUT_PATH = Path("reports") / "eventgraph_country_network_3d.html"
+OUT_PATH = Path("reports") / "geonexus_country_network_3d.html"
 SITUATION = Path(__file__).parent / "data" / "world_observer_situation.json"
 
 
@@ -75,7 +75,7 @@ def main() -> None:
 
 
 _TEMPLATE = r"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>EventGraph — 3D country network</title>
+<html lang="en"><head><meta charset="utf-8"><title>GeoNexus — 3D country network</title>
 <style>
   body { margin:0; background:#0b1020; color:#e2e8f0;
     font-family:system-ui,sans-serif; overflow:hidden; }
@@ -114,7 +114,7 @@ _TEMPLATE = r"""<!doctype html>
 </script>
 </head><body>
 <div id="hud">
-  <h1>EventGraph — 3D country network</h1>
+  <h1>GeoNexus — 3D country network</h1>
   <p>Link colour = domain (buttons below) · moving dots = sign
      (<span style="color:#4ade80">green cooperation</span> /
      <span style="color:#f87171">red conflict</span>).

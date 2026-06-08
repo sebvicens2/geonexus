@@ -1,6 +1,6 @@
-# EventGraph
+# GeoNexus
 
-[![CI](https://github.com/sebvicens2/eventgraph/actions/workflows/ci.yml/badge.svg)](https://github.com/sebvicens2/eventgraph/actions/workflows/ci.yml)
+[![CI](https://github.com/sebvicens2/geonexus/actions/workflows/ci.yml/badge.svg)](https://github.com/sebvicens2/geonexus/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Checked with mypy](https://img.shields.io/badge/mypy-strict-blue)](https://mypy-lang.org/)
@@ -8,7 +8,7 @@
 
 > **A causal graph engine for geopolitical, economic and financial events.**
 
-EventGraph represents **events**, **actors** and **assets** as a typed, directed
+GeoNexus represents **events**, **actors** and **assets** as a typed, directed
 graph, links them with weighted causal relations, and then *reasons* over that
 graph — tracing which assets an event can reach, ranking the most influential
 players, and surfacing the most probable causal chains.
@@ -17,9 +17,9 @@ It is a small, standalone, well-typed library with no ties to any data pipeline.
 Install it and use it from any Python project.
 
 ```python
-from eventgraph import EventGraph, Actor, Asset, RelationType
+from geonexus import GeoNexus, Actor, Asset, RelationType
 
-g = EventGraph()
+g = GeoNexus()
 iran = g.add_actor(Actor(id="iran", name="Iran"))
 gold = g.add_asset(Asset(ticker="XAU_USD"))
 g.connect(iran, gold, RelationType.AFFECTS, weight=0.4)
@@ -29,9 +29,9 @@ g.impact("asset:XAU_USD")   # → ranked causal chains leading to gold
 
 ---
 
-## Why EventGraph?
+## Why GeoNexus?
 
-Most "event graphs" stop at *storing* relations. EventGraph is built as a small
+Most "event graphs" stop at *storing* relations. GeoNexus is built as a small
 **causal reasoning layer** — the graph is the substrate, the answers are the point.
 It is designed to answer questions like:
 
@@ -56,8 +56,8 @@ Design principles:
 ## Installation
 
 ```bash
-pip install eventgraph            # core: pydantic, networkx, matplotlib
-pip install eventgraph[viz]       # + interactive HTML export via pyvis
+pip install geonexus            # core: pydantic, networkx, matplotlib
+pip install geonexus[viz]       # + interactive HTML export via pyvis
 ```
 
 ---
@@ -66,12 +66,12 @@ pip install eventgraph[viz]       # + interactive HTML export via pyvis
 
 ```python
 from datetime import datetime, timezone
-from eventgraph import (
-    EventGraph, Actor, Asset, Event, Relation,
+from geonexus import (
+    GeoNexus, Actor, Asset, Event, Relation,
     ActorType, AssetType, EventType, RelationType,
 )
 
-g = EventGraph()
+g = GeoNexus()
 
 # add nodes (each returns its namespaced node_id, e.g. "actor:iran")
 iran = g.add_actor(Actor(id="iran", name="Iran", category=ActorType.COUNTRY))
@@ -96,7 +96,7 @@ for path in g.impact("asset:XAU_USD"):
 
 # persist
 g.save_json("graph.json")
-g2 = EventGraph.load_json("graph.json")
+g2 = GeoNexus.load_json("graph.json")
 ```
 
 ---
@@ -153,13 +153,13 @@ node to all of its descendants.
 demo or notebook. Nodes are coloured by kind: **event** (red), **actor** (blue),
 **asset** (green).
 
-![EventGraph causal chain: Iran → Hormuz → Oil → Inflation → Gold](assets/example_graph.png)
+![GeoNexus causal chain: Iran → Hormuz → Oil → Inflation → Gold](assets/example_graph.png)
 
 ```python
-from eventgraph.visualization import draw, export_html, export_graphml
+from geonexus.visualization import draw, export_html, export_graphml
 
 draw(g)                          # → matplotlib Axes
-export_html(g, "graph.html")     # interactive (requires eventgraph[viz])
+export_html(g, "graph.html")     # interactive (requires geonexus[viz])
 export_graphml(g, "graph.graphml")  # → Gephi / yEd
 ```
 
@@ -171,7 +171,7 @@ export_graphml(g, "graph.graphml")  # → Gephi / yEd
 | --- | --- |
 | **Domain model** | `Event`, `Actor`, `Asset`, `Relation` — Pydantic v2, validated, JSON-ready |
 | **Ontology** | Controlled vocabularies: `EventType`, `ActorType`, `AssetType`, `RelationType` |
-| **Graph** | `EventGraph` over a `networkx.MultiDiGraph`: `add_*`, `get`, `neighbors`, `shortest_path` |
+| **Graph** | `GeoNexus` over a `networkx.MultiDiGraph`: `add_*`, `get`, `neighbors`, `shortest_path` |
 | **Metrics** | `centrality` (degree / betweenness / closeness) + `influence_score` (causal reach) |
 | **Causality** | `impact(target)` — deterministic, ranked, explainable causal chains |
 | **Analytics** | `emerging_clusters()` (Louvain communities) + `risk_hotspots()` (centrality × influence × density) |
@@ -184,13 +184,13 @@ export_graphml(g, "graph.graphml")  # → Gephi / yEd
 
 ## Real-world demo: World Observer
 
-To show EventGraph on a live feed rather than a toy, `examples/` includes an
+To show GeoNexus on a live feed rather than a toy, `examples/` includes an
 experimental integration with [World Observer](https://github.com/) — a corpus of
 analysed geopolitical articles (countries, actors, theatres, categories,
 importance, dates, plus WO's LLM-flagged `entities_to_watch` as a lightweight
 forward-looking signal). The integration is **read-only and one-directional**: a
 single script exports a real sample to JSON; the library never depends on World
-Observer, and EventGraph itself runs no LLM.
+Observer, and GeoNexus itself runs no LLM.
 
 ```bash
 python examples/world_observer_demo.py   # text report
@@ -204,15 +204,15 @@ assets) lives at [`reports/world_observer_results.md`](reports/world_observer_re
 ### Self-contained HTML dashboard
 
 ```bash
-python examples/build_dashboard.py   # → reports/eventgraph_dashboard.html
+python examples/build_dashboard.py   # → reports/geonexus_dashboard.html
 ```
 
 One self-contained file (interactive pyvis network inlined — no server, no app,
 works offline). Tabs for overview, network, clusters, hotspots and causal paths —
 a prototype for a future World Observer tab.
 
-![EventGraph dashboard — overview](assets/dashboard_overview.png)
-![EventGraph dashboard — clusters](assets/dashboard_clusters.png)
+![GeoNexus dashboard — overview](assets/dashboard_overview.png)
+![GeoNexus dashboard — clusters](assets/dashboard_clusters.png)
 
 From **2,365 real events** (a 14-day window), the graph (~4,500 nodes) surfaces —
 with no LLM and no hand-tuning — the structure of the news cycle:
@@ -246,23 +246,23 @@ Middle East, Iran/Gulf, Russia/Ukraine and Asia-Pacific — from co-occurrence a
 
 World Observer already computes, on a schedule, per-country / per-theatre
 intelligence: instability scores, attention shares, narratives and LLM summaries.
-Rather than re-deriving a weaker "attention" from raw articles, EventGraph can
+Rather than re-deriving a weaker "attention" from raw articles, GeoNexus can
 **consume those scores as node attributes** and add the relational layer WO lacks
 — a country co-occurrence graph, communities (blocs) and connectivity ranking.
 
 ```bash
 python examples/extract_world_observer_synthesis.py   # → data/world_observer_synthesis.json
 python examples/world_observer_synthesis.py           # report → reports/world_observer_synthesis.md
-python examples/build_synthesis_dashboard.py          # → reports/eventgraph_synthesis_dashboard.html
+python examples/build_synthesis_dashboard.py          # → reports/geonexus_synthesis_dashboard.html
 ```
 
 This is the honest division of labour: **ranking by WO's real instability &
-attention** (not a recomputed proxy), with EventGraph contributing structure —
+attention** (not a recomputed proxy), with GeoNexus contributing structure —
 e.g. the US is the most *connected* country (it bridges theatres) though far from
 the most *unstable*, and co-occurrence communities surface real blocs (Gulf/Iran,
 Russia/Ukraine/Baltics, the Sahel…) ranked by mean WO instability.
 
-![EventGraph over WO's synthesis layer](assets/synthesis_dashboard.png)
+![GeoNexus over WO's synthesis layer](assets/synthesis_dashboard.png)
 
 ### Narrative evolution — where the genuinely new signal is
 
@@ -323,7 +323,7 @@ narratives now carry it, a trajectory sparkline, and where it spread. (Other tab
 momentum chart, dated rising topics, chronological feed, per-entity timelines.)
 
 ```bash
-python examples/build_narrative_dashboard.py   # → reports/eventgraph_narrative_dashboard.html
+python examples/build_narrative_dashboard.py   # → reports/geonexus_narrative_dashboard.html
 ```
 
 ![Narrative dashboard — emerging-signals board](assets/narrative_dashboard.png)
@@ -345,14 +345,14 @@ python examples/narrative_llm_brief.py --model qwen2.5:14b --top 8
 ▲ Bahrain Iran launches missile and drone attacks on Bahrain, escalating Gulf tensions.
 ```
 
-EventGraph itself stays LLM-free; this enrichment lives in `examples/` and
+GeoNexus itself stays LLM-free; this enrichment lives in `examples/` and
 degrades gracefully if Ollama isn't running. Detection is reproducible; the
 LLM interpretation layer is not.
 
 #### Relating signals into chains
 
 Signals that surface in the same narratives are linked into **chains** — built
-deterministically as connected components of a signal graph (EventGraph used on
+deterministically as connected components of a signal graph (GeoNexus used on
 its own output). With `--llm`, a local Qwen names each storyline and explains how
 the pieces connect, grounded in the per-signal explanations:
 
@@ -372,7 +372,7 @@ Chains and co-occurrence only connect things that share a narrative — and plai
 co-occurrence/PMI mining turned out to be mostly noise (split names, definitional
 pairs). The approach that actually works is **relation extraction**: a local Qwen
 pulls explicit `SUBJECT | RELATION | OBJECT` triples from each summary, which build
-a typed relation graph in EventGraph. Multi-hop queries then return *real stated
+a typed relation graph in GeoNexus. Multi-hop queries then return *real stated
 relations*, not statistical co-occurrence.
 
 ```bash
@@ -397,7 +397,7 @@ The same relations render as an **interactive network** — each edge is one gro
 fact (hover for the verb), showing the connected core (degree-1 leaves hidden):
 
 ```bash
-python examples/relation_network.py   # → reports/eventgraph_relation_network.html
+python examples/relation_network.py   # → reports/geonexus_relation_network.html
 ```
 
 ![Relation network](assets/relation_network.png)
@@ -427,7 +427,7 @@ Maritime: Hormuz/Gulf of Oman [oil] → Iran, United States, Israel, Kuwait …
 ```
 
 Honest split: the news layers are *reported stance* (LLM-classified, imperfect);
-PortWatch is hard data. EventGraph's `MultiDiGraph` carries the parallel typed
+PortWatch is hard data. GeoNexus's `MultiDiGraph` carries the parallel typed
 layers natively.
 
 It all comes together in a dashboard — small-multiples (one signed network per
@@ -436,7 +436,7 @@ layer, green = cooperation / red = conflict) + the maritime layer, plus
 military+diplomatic alignment, à la "enemy of my enemy"):
 
 ```bash
-python examples/build_multilayer_dashboard.py   # → reports/eventgraph_multilayer_dashboard.html
+python examples/build_multilayer_dashboard.py   # → reports/geonexus_multilayer_dashboard.html
 ```
 
 Actors are normalised and filtered to real countries/blocs (junk like "World Cup
@@ -454,7 +454,7 @@ gives three legible, interactive views in one file — pick whichever fits:
 - **Matrix** — country x country grid, cell = net stance, filter by layer.
 
 ```bash
-python examples/build_country_views.py   # → reports/eventgraph_country_views.html
+python examples/build_country_views.py   # → reports/geonexus_country_views.html
 ```
 
 The Network view also comes in **navigable 3D** — one force-directed cloud you fly
@@ -462,7 +462,7 @@ through, labelled, edges green/red, filter by layer, click a country to fly to i
 and focus its links:
 
 ```bash
-python examples/build_country_network_3d.py   # → reports/eventgraph_country_network_3d.html (WebGL)
+python examples/build_country_network_3d.py   # → reports/geonexus_country_network_3d.html (WebGL)
 ```
 
 Links are coloured by domain (military/economic/diplomatic/energy/health), conflict
@@ -479,7 +479,7 @@ For a navigable view, an **interactive 3D multiplex** stacks each layer as a pla
 links couple a country across layers) — drag to rotate, scroll to zoom:
 
 ```bash
-python examples/build_multilayer_3d.py   # → reports/eventgraph_multilayer_3d.html (WebGL)
+python examples/build_multilayer_3d.py   # → reports/geonexus_multilayer_3d.html (WebGL)
 ```
 
 ### Tracking change over time with `EventMemory`
@@ -507,7 +507,7 @@ Cluster changes  2026-05-20 → 2026-06-07
 ```
 
 ```python
-from eventgraph import EventMemory
+from geonexus import EventMemory
 
 mem = EventMemory("snapshots/")          # optional on-disk persistence
 mem.snapshot("2026-06-07", graph)
@@ -559,10 +559,10 @@ CI runs the same checks on Python **3.11** and **3.12** (see
 ### Project layout
 
 ```
-src/eventgraph/
+src/geonexus/
 ├── core/          # Event, Actor, Asset, Relation (pydantic models)
 ├── ontology/      # controlled vocabularies (event/actor/asset/relation types)
-├── graph/         # EventGraph — the public API over networkx
+├── graph/         # GeoNexus — the public API over networkx
 ├── causality/     # propagation + scoring (the reasoning engine)
 ├── storage/       # in-memory & JSON backends (Storage protocol)
 └── visualization/ # matplotlib (default) + pyvis (optional) + GraphML

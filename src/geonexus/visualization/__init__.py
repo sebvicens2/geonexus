@@ -1,6 +1,6 @@
 """Rendering helpers (matplotlib by default, pyvis as an optional extra)."""
 
-from eventgraph.visualization.network import (
+from geonexus.visualization.network import (
     draw,
     export_graphml,
     export_html,

@@ -7,8 +7,8 @@ from typing import Any, ClassVar
 
 from pydantic import BaseModel, Field
 
-from eventgraph.core.node import NodeKind
-from eventgraph.ontology.event_types import EventType
+from geonexus.core.node import NodeKind
+from geonexus.ontology.event_types import EventType
 
 
 class Event(BaseModel):

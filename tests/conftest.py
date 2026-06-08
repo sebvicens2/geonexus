@@ -6,23 +6,23 @@ from datetime import datetime, timezone
 
 import pytest
 
-from eventgraph import (
+from geonexus import (
     Actor,
     ActorType,
     Asset,
     AssetType,
     Event,
-    EventGraph,
     EventType,
+    GeoNexus,
     Relation,
     RelationType,
 )
 
 
 @pytest.fixture
-def chain_graph() -> EventGraph:
+def chain_graph() -> GeoNexus:
     """Iran -> Hormuz -> Oil supply risk -> Oil -> Inflation -> Gold."""
-    g = EventGraph()
+    g = GeoNexus()
     now = datetime(2026, 6, 7, tzinfo=timezone.utc)
 
     iran = g.add_actor(Actor(id="iran", name="Iran", category=ActorType.COUNTRY))

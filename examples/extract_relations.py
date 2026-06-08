@@ -4,7 +4,7 @@ Co-occurrence/PMI mining of these summaries is mostly noise (it counts what
 appears together, not what is *related*). This instead asks a local Qwen to pull
 explicit ``SUBJECT | RELATION | OBJECT`` triples from each entity's latest
 summary — real, stated relations — and writes them to JSON. A separate consumer
-builds an EventGraph from them and traces multi-hop links.
+builds an GeoNexus from them and traces multi-hop links.
 
 LLM-heavy and non-deterministic (that's the trade for real relations). Requires
 Ollama. Read-only on the committed narrative history (no WO DB access).

@@ -7,8 +7,8 @@ from datetime import datetime, timezone
 import pytest
 from pydantic import ValidationError
 
-from eventgraph import Actor, Asset, Event, Relation
-from eventgraph.core.node import NodeKind
+from geonexus import Actor, Asset, Event, Relation
+from geonexus.core.node import NodeKind
 
 
 def test_node_ids_are_namespaced() -> None:

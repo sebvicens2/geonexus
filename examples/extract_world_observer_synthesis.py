@@ -8,7 +8,7 @@ plus a country co-occurrence graph derived from recent articles. Read-only.
     python examples/extract_world_observer_synthesis.py
         → examples/data/world_observer_synthesis.json
 
-EventGraph then *consumes WO's scores as node attributes* and adds the relational
+GeoNexus then *consumes WO's scores as node attributes* and adds the relational
 layer (co-occurrence edges, clusters) on top, instead of recomputing attention.
 """
 

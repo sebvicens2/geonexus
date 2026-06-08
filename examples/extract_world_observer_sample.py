@@ -3,7 +3,7 @@
 This is the ONLY piece that touches World Observer, and it only *reads* its
 SQLite database (never modifies it). Run it once on a machine that has the WO
 database; it writes ``examples/data/world_observer_sample.json``, which the demo
-and map scripts then consume. EventGraph itself stays fully independent of WO.
+and map scripts then consume. GeoNexus itself stays fully independent of WO.
 
 Usage:
     python examples/extract_world_observer_sample.py \

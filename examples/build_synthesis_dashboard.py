@@ -1,11 +1,11 @@
 """Self-contained HTML dashboard over World Observer's synthesis layer.
 
     python examples/build_synthesis_dashboard.py
-        → reports/eventgraph_synthesis_dashboard.html
+        → reports/geonexus_synthesis_dashboard.html
 
 Reuses the reusable HTML components from ``build_dashboard.py`` (stat_card, table,
 bar, the inlined pyvis network) — but ranked by World Observer's *own* instability
-and attention scores, with EventGraph adding the relational layer (co-occurrence
+and attention scores, with GeoNexus adding the relational layer (co-occurrence
 network, blocs, connectivity). Open in any browser; no server.
 """
 
@@ -20,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from build_dashboard import PALETTE, _backbone, _network_iframe, bar, stat_card, table
 from world_observer_synthesis import attention_momentum, build, kind, load
 
-OUT_PATH = Path("reports") / "eventgraph_synthesis_dashboard.html"
+OUT_PATH = Path("reports") / "geonexus_synthesis_dashboard.html"
 
 
 def _bloc_card(color: str, mean_inst: float, members: list[str]) -> str:
@@ -69,7 +69,7 @@ def main() -> None:
     ]
     inst_tbl = table(["Country", "Instability (WO)", "Class", "Top driver"], inst_rows)
 
-    # most-connected (EventGraph's relational add)
+    # most-connected (GeoNexus's relational add)
     conn_rows = [
         [
             g.label(o.node_id),
@@ -171,7 +171,7 @@ def main() -> None:
 _TEMPLATE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EventGraph — World Observer synthesis</title>
+<title>GeoNexus — World Observer synthesis</title>
 <style>
   :root {{ --bg:#f1f5f9; --panel:#fff; --ink:#0f172a; --muted:#64748b;
     --line:#e2e8f0; --accent:#2563eb; }}
@@ -233,15 +233,15 @@ _TEMPLATE = """<!doctype html>
 </style></head>
 <body>
 <header>
-  <h1>EventGraph — World Observer synthesis</h1>
+  <h1>GeoNexus — World Observer synthesis</h1>
   <p>Ranked by World Observer's own instability &amp; attention;
-    EventGraph adds the relational layer.</p>
+    GeoNexus adds the relational layer.</p>
   <span class="badge">{n_countries} countries · {n_theatres} theatres
     · {n_edges} relations · {n_war} at war</span>
 </header>
 <div class="disclaimer">
   <b>Instability, attention and narratives are World Observer's own outputs.</b>
-  EventGraph contributes the relational layer: the country co-occurrence graph,
+  GeoNexus contributes the relational layer: the country co-occurrence graph,
   the blocs (communities) and the connectivity ranking.
 </div>
 <nav>
@@ -258,7 +258,7 @@ _TEMPLATE = """<!doctype html>
     <div class="grid">{cards}</div>
     <div class="twocol">
       <div><h2 class="section">Most unstable (WO score)</h2><div class="panel">{inst}</div></div>
-      <div><h2 class="section">Most connected (EventGraph)</h2><div class="panel">{conn}</div></div>
+      <div><h2 class="section">Most connected (GeoNexus)</h2><div class="panel">{conn}</div></div>
     </div>
   </section>
   <section class="tab" id="network">
@@ -284,7 +284,7 @@ _TEMPLATE = """<!doctype html>
   </section>
 </main>
 <footer>
-  <b>EventGraph</b> layered a {n_edges}-edge relational graph over World Observer's
+  <b>GeoNexus</b> layered a {n_edges}-edge relational graph over World Observer's
   synthesis of <b>{n_countries}</b> countries and <b>{n_theatres}</b> theatres.
 </footer>
 <script>

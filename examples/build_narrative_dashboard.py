@@ -1,7 +1,7 @@
 """Self-contained HTML dashboard for the narrative-evolution analysis.
 
     python examples/build_narrative_dashboard.py
-        → reports/eventgraph_narrative_dashboard.html
+        → reports/geonexus_narrative_dashboard.html
 
 Shows how WO's LLM narratives drift over time — momentum chart, dated rising
 topics with sparklines, a chronological feed, and per-entity enter/fade/timeline.
@@ -37,7 +37,7 @@ from narrative_llm_brief import _prompt, ollama
 from relation_graph import build as build_relations
 from relation_graph import grounded_relations, load_triples, top_hubs
 
-OUT_PATH = Path("reports") / "eventgraph_narrative_dashboard.html"
+OUT_PATH = Path("reports") / "geonexus_narrative_dashboard.html"
 SPOTLIGHT = (
     "gulf_iran",
     "ukraine_russia",
@@ -306,7 +306,7 @@ def main() -> None:
 _TEMPLATE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EventGraph — narrative evolution</title>
+<title>GeoNexus — narrative evolution</title>
 <style>
   :root {{ --bg:#f1f5f9; --panel:#fff; --ink:#0f172a; --muted:#64748b;
     --line:#e2e8f0; --accent:#2563eb; }}
@@ -393,13 +393,13 @@ _TEMPLATE = """<!doctype html>
 </style></head>
 <body>
 <header>
-  <h1>EventGraph — narrative evolution</h1>
+  <h1>GeoNexus — narrative evolution</h1>
   <p>How World Observer's LLM syntheses drift over time: what enters, fades and persists.</p>
   <span class="badge">{n_entities} entities · {n_days} days · {first} → {last} · no LLM</span>
 </header>
 <div class="disclaimer">
   Topics are extracted deterministically from WO's summary bullets (no LLM).
-  EventGraph stores one graph per day in an EventMemory and diffs the daily topic sets.
+  GeoNexus stores one graph per day in an EventMemory and diffs the daily topic sets.
 </div>
 <nav>
   <button class="active" data-tab="signals">⚡ Emerging signals</button>
@@ -421,7 +421,7 @@ _TEMPLATE = """<!doctype html>
   <section class="tab" id="chains">
     <h2 class="section">Signal chains — storylines that rose together</h2>
     <p class="hint">Signals that surfaced in the same narratives are linked into
-      chains (EventGraph connected components). With <code>--llm</code>, a local
+      chains (GeoNexus connected components). With <code>--llm</code>, a local
       Qwen names each storyline and how the pieces connect.</p>
     <div class="chains">{chains}</div>
   </section>

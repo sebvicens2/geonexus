@@ -1,6 +1,6 @@
 """Multi-layer geopolitical network: signed news layers + hard maritime layer.
 
-Combines two sources into one EventGraph:
+Combines two sources into one GeoNexus:
   - CAMEO signed layers (military / economic / diplomatic / energy / health):
     country↔country edges signed by stance (extract_cameo.py).
   - Hard maritime layer: chokepoint nodes with real PortWatch disruption, linked
@@ -21,7 +21,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from eventgraph import Actor, EventGraph, Relation, RelationType
+from geonexus import Actor, GeoNexus, Relation, RelationType
 
 CAMEO = Path(__file__).parent / "data" / "world_observer_cameo.json"
 MARITIME = Path(__file__).parent / "data" / "world_observer_maritime.json"
@@ -181,9 +181,9 @@ def _triangles(g: object):
                         yield (a, b, c)
 
 
-def build(cameo: list[dict], maritime: list[dict]) -> EventGraph:
-    """EventGraph: country nodes + chokepoint nodes; signed layer edges + maritime links."""
-    g = EventGraph()
+def build(cameo: list[dict], maritime: list[dict]) -> GeoNexus:
+    """GeoNexus: country nodes + chokepoint nodes; signed layer edges + maritime links."""
+    g = GeoNexus()
     theatre_countries = countries_per_theatre()
     for lay, dyads in net_dyads(cameo).items():
         for (a, b), net in dyads.items():

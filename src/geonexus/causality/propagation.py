@@ -1,7 +1,7 @@
 """Causal propagation: enumerate and score chains through the graph.
 
 Functions here operate directly on a ``networkx.MultiDiGraph`` so the causality
-engine stays decoupled from the :class:`~eventgraph.graph.knowledge_graph.EventGraph`
+engine stays decoupled from the :class:`~geonexus.graph.knowledge_graph.GeoNexus`
 wrapper (and is therefore easy to unit-test in isolation).
 """
 
@@ -12,7 +12,7 @@ from itertools import pairwise
 
 import networkx as nx
 
-from eventgraph.causality.scoring import DEFAULT_DECAY, CausalPath, path_score
+from geonexus.causality.scoring import DEFAULT_DECAY, CausalPath, path_score
 
 
 def _best_edge(graph: nx.MultiDiGraph, u: str, v: str) -> tuple[float, str]:

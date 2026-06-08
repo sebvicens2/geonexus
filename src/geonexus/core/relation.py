@@ -6,14 +6,14 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from eventgraph.ontology.relation_types import RelationType
+from geonexus.ontology.relation_types import RelationType
 
 
 class Relation(BaseModel):
     """A directed, weighted link between two nodes.
 
     ``source`` and ``target`` are graph ``node_id`` strings (the namespaced
-    ``"<kind>:<id>"`` form). The :class:`~eventgraph.graph.knowledge_graph.EventGraph`
+    ``"<kind>:<id>"`` form). The :class:`~geonexus.graph.knowledge_graph.GeoNexus`
     helpers accept node objects directly and resolve them for you.
 
     Attributes:

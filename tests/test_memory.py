@@ -5,13 +5,13 @@ from __future__ import annotations
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from eventgraph import Actor, Event, EventGraph, EventMemory, Relation, RelationType
-from eventgraph.memory.event_memory import _norm_date
+from geonexus import Actor, Event, EventMemory, GeoNexus, Relation, RelationType
+from geonexus.memory.event_memory import _norm_date
 
 NOW = datetime(2026, 1, 1, tzinfo=timezone.utc)
 
 
-def _group(g: EventGraph, prefix: str, n_events: int = 2) -> None:
+def _group(g: GeoNexus, prefix: str, n_events: int = 2) -> None:
     """Add a dense community: entities prefix1..3 sharing n_events events."""
     actors = [f"actor:{prefix}{i}" for i in range(1, 4)]
     for i in range(1, 4):
@@ -27,8 +27,8 @@ def _group(g: EventGraph, prefix: str, n_events: int = 2) -> None:
             )
 
 
-def _graph(*prefixes: str) -> EventGraph:
-    g = EventGraph()
+def _graph(*prefixes: str) -> GeoNexus:
+    g = GeoNexus()
     for p in prefixes:
         _group(g, p)
     return g

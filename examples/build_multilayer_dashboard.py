@@ -5,7 +5,7 @@ plus the hard maritime layer, with the cross-layer divergence, signed-network
 factions/balance, and chokepoint disruption tables.
 
     python examples/build_multilayer_dashboard.py
-        → reports/eventgraph_multilayer_dashboard.html
+        → reports/geonexus_multilayer_dashboard.html
 """
 
 from __future__ import annotations
@@ -167,7 +167,7 @@ def main() -> None:
         n_cp=n_cp,
         n_countries=len(g) - n_cp,
     )
-    out = Path("reports") / "eventgraph_multilayer_dashboard.html"
+    out = Path("reports") / "geonexus_multilayer_dashboard.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
     print(f"wrote {out} ({out.stat().st_size // 1024} KB) — open it in a browser")
@@ -176,7 +176,7 @@ def main() -> None:
 _TEMPLATE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EventGraph — multi-layer geopolitical network</title>
+<title>GeoNexus — multi-layer geopolitical network</title>
 <style>
   :root {{ --bg:#f1f5f9; --panel:#fff; --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; }}
   * {{ box-sizing:border-box; }}
@@ -208,7 +208,7 @@ _TEMPLATE = """<!doctype html>
 </style></head>
 <body>
 <header>
-  <h1>EventGraph — multi-layer geopolitical network</h1>
+  <h1>GeoNexus — multi-layer geopolitical network</h1>
   <p>{n_countries} countries · {n_cp} chokepoints
     · 5 signed news layers + a hard maritime layer.</p>
 </header>
@@ -227,7 +227,7 @@ _TEMPLATE = """<!doctype html>
   <h2 class="section">Hard maritime layer — chokepoints by PortWatch disruption</h2>
   <div class="panel">{maritime}</div>
 </main>
-<footer>Multi-layer signed network — EventGraph over World Observer.</footer>
+<footer>Multi-layer signed network — GeoNexus over World Observer.</footer>
 </body></html>
 """
 

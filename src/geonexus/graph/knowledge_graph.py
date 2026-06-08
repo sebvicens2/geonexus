@@ -1,4 +1,4 @@
-"""EventGraph: a typed, causal knowledge graph.
+"""GeoNexus: a typed, causal knowledge graph.
 
 This is the single public entry point of the library. It wraps a
 ``networkx.MultiDiGraph`` (directed, parallel edges allowed) behind a small,
@@ -14,14 +14,14 @@ from typing import Any
 
 import networkx as nx
 
-from eventgraph.causality.propagation import impact_paths, reachable_scores
-from eventgraph.causality.scoring import DEFAULT_DECAY, CausalPath
-from eventgraph.core.actor import Actor
-from eventgraph.core.asset import Asset
-from eventgraph.core.event import Event
-from eventgraph.core.node import NodeKind
-from eventgraph.core.relation import Relation
-from eventgraph.graph.analytics import RiskHotspot
+from geonexus.causality.propagation import impact_paths, reachable_scores
+from geonexus.causality.scoring import DEFAULT_DECAY, CausalPath
+from geonexus.core.actor import Actor
+from geonexus.core.asset import Asset
+from geonexus.core.event import Event
+from geonexus.core.node import NodeKind
+from geonexus.core.relation import Relation
+from geonexus.graph.analytics import RiskHotspot
 
 #: Anything that can stand in for a node: an id string or a node object.
 NodeRef = str | Event | Actor | Asset
@@ -31,12 +31,12 @@ Direction = str  # "in" | "out" | "both"
 CentralityMethod = str  # "degree" | "betweenness" | "closeness"
 
 
-class EventGraph:
+class GeoNexus:
     """A causal graph of events, actors and assets.
 
     Example:
-        >>> from eventgraph import EventGraph, Actor, Asset, Relation, RelationType
-        >>> g = EventGraph()
+        >>> from geonexus import GeoNexus, Actor, Asset, Relation, RelationType
+        >>> g = GeoNexus()
         >>> iran = g.add_actor(Actor(id="iran", name="Iran"))
         >>> gold = g.add_asset(Asset(ticker="XAU_USD"))
         >>> g.add_relation(Relation(source=iran, target=gold,
@@ -99,7 +99,7 @@ class EventGraph:
 
         Builds a :class:`Relation` and delegates to :meth:`add_relation`.
         """
-        from eventgraph.ontology.relation_types import RelationType
+        from geonexus.ontology.relation_types import RelationType
 
         rel = Relation(
             source=self._ref(source),
@@ -253,7 +253,7 @@ class EventGraph:
         Returns:
             Clusters (lists of ``node_id``) of size ``>= min_size``, largest first.
         """
-        from eventgraph.graph.analytics import detect_communities
+        from geonexus.graph.analytics import detect_communities
 
         return detect_communities(self, min_size=min_size, seed=seed)
 
@@ -266,9 +266,9 @@ class EventGraph:
         """Rank nodes by a blended risk-concentration heuristic.
 
         Combines degree centrality, :meth:`influence_score` and local density.
-        See :func:`eventgraph.graph.analytics.risk_hotspots`.
+        See :func:`geonexus.graph.analytics.risk_hotspots`.
         """
-        from eventgraph.graph.analytics import risk_hotspots as _risk_hotspots
+        from geonexus.graph.analytics import risk_hotspots as _risk_hotspots
 
         return _risk_hotspots(self, top_k=top_k, weights=weights)
 
@@ -301,7 +301,7 @@ class EventGraph:
         return {"events": events, "actors": actors, "assets": assets, "relations": relations}
 
     @classmethod
-    def from_dict(cls, data: dict[str, list[dict[str, Any]]]) -> EventGraph:
+    def from_dict(cls, data: dict[str, list[dict[str, Any]]]) -> GeoNexus:
         """Rebuild a graph from :meth:`to_dict` output."""
         g = cls()
         for raw in data.get("events", []):
@@ -319,7 +319,7 @@ class EventGraph:
         Path(path).write_text(json.dumps(self.to_dict(), indent=2), encoding="utf-8")
 
     @classmethod
-    def load_json(cls, path: str | Path) -> EventGraph:
+    def load_json(cls, path: str | Path) -> GeoNexus:
         """Load a graph previously written by :meth:`save_json`."""
         return cls.from_dict(json.loads(Path(path).read_text(encoding="utf-8")))
 

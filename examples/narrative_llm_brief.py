@@ -7,7 +7,7 @@ changed & why it matters" and cleans up the topic names, using the actual
 before/after WO summaries as context (temperature 0, told to use only facts in
 the text). Bounded to the top-N signals (~N LLM calls).
 
-Requires Ollama running locally with a qwen model. EventGraph itself stays
+Requires Ollama running locally with a qwen model. GeoNexus itself stays
 LLM-free; this lives in examples/ as an optional enrichment.
 
     python examples/narrative_llm_brief.py [--model qwen2.5:14b] [--top 8]

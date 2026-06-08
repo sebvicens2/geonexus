@@ -29,8 +29,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from world_observer_common import build_graph
 
-from eventgraph import EventMemory
-from eventgraph.visualization import plot_hotspot_evolution
+from geonexus import EventMemory
+from geonexus.visualization import plot_hotspot_evolution
 
 TIMELINE = Path(__file__).parent / "data" / "world_observer_timeline.json"
 PNG_PATH = Path("world_observer_timeline.png")

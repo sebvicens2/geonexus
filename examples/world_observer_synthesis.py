@@ -1,8 +1,8 @@
-"""EventGraph over World Observer's synthesis layer.
+"""GeoNexus over World Observer's synthesis layer.
 
 Instead of recomputing attention from raw articles, this consumes WO's already-
 computed per-entity intelligence (instability, attention share, narrative,
-summaries) as **node attributes**, and lets EventGraph add the **relational
+summaries) as **node attributes**, and lets GeoNexus add the **relational
 layer** WO does not have: a country co-occurrence graph, communities (blocs),
 and connectivity ranking.
 
@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from eventgraph import Actor, ActorType, EventGraph, Relation, RelationType
+from geonexus import Actor, ActorType, GeoNexus, Relation, RelationType
 
 DATA = Path(__file__).parent / "data" / "world_observer_synthesis.json"
 REPORT = Path("reports") / "world_observer_synthesis.md"
@@ -38,9 +38,9 @@ def load() -> dict:
     return json.loads(DATA.read_text(encoding="utf-8"))
 
 
-def build(data: dict) -> EventGraph:
+def build(data: dict) -> GeoNexus:
     """Country/theatre graph: WO scores as node metadata, co-occurrence as edges."""
-    g = EventGraph()
+    g = GeoNexus()
     for c in data["countries"]:
         g.add_actor(
             Actor(
@@ -89,7 +89,7 @@ def build(data: dict) -> EventGraph:
     return g
 
 
-def kind(g: EventGraph, nid: str) -> str:
+def kind(g: GeoNexus, nid: str) -> str:
     return str(g.get(nid).metadata.get("wo_kind", "node"))
 
 
@@ -120,10 +120,10 @@ def main() -> None:
         print(f"\n{'=' * 72}\n{t}\n{'=' * 72}")
 
     print(
-        f"EventGraph over WO synthesis: {len(countries)} countries, {len(theatres)} theatres, "
+        f"GeoNexus over WO synthesis: {len(countries)} countries, {len(theatres)} theatres, "
         f"{g.raw.number_of_edges()} relations."
     )
-    print("Scores below are World Observer's own (instability, attention); EventGraph")
+    print("Scores below are World Observer's own (instability, attention); GeoNexus")
     print("adds the relational layer (co-occurrence graph, blocs, connectivity).")
 
     head("1. MOST UNSTABLE COUNTRIES  (World Observer instability score)")
@@ -148,7 +148,7 @@ def main() -> None:
     for t in top_att:
         print(f"  {t['name']:<26} share={t['attention_share']:.2f}")
 
-    head("3. MOST CONNECTED COUNTRIES  (EventGraph adds this — co-occurrence degree)")
+    head("3. MOST CONNECTED COUNTRIES  (GeoNexus adds this — co-occurrence degree)")
     conn_rank = sorted(countries, key=lambda o: degree[o.node_id], reverse=True)[:10]
     for o in conn_rank:
         inst = by_name[o.node_id.split(":", 1)[1]]["instability"]
@@ -194,7 +194,7 @@ def main() -> None:
 
     print(f"\n{'=' * 72}")
     print(
-        f"EventGraph layered a {g.raw.number_of_edges()}-edge relational graph over WO's "
+        f"GeoNexus layered a {g.raw.number_of_edges()}-edge relational graph over WO's "
         f"synthesis of {len(countries)} countries / {len(theatres)} theatres —"
     )
     print("ranking by WO's real instability & attention, not by recomputed proxies.")
@@ -206,9 +206,9 @@ def main() -> None:
 
 def _write_markdown(data, g, by_name, top_inst, top_att, conn_rank, blocs, mom, degree) -> None:
     L: list[str] = []
-    L.append("# EventGraph over World Observer synthesis\n")
+    L.append("# GeoNexus over World Observer synthesis\n")
     L.append(
-        "_EventGraph **consumes World Observer's own scores** (instability, attention, "
+        "_GeoNexus **consumes World Observer's own scores** (instability, attention, "
         "narrative) as node attributes and adds the relational layer (co-occurrence "
         "graph, blocs, connectivity). No recomputation of attention; no LLM here._\n"
     )
@@ -230,7 +230,7 @@ def _write_markdown(data, g, by_name, top_inst, top_att, conn_rank, blocs, mom, 
     for t in top_att:
         L.append(f"| {t['name']} | {t['attention_share']:.2f} |")
 
-    L.append("\n## Most connected countries (EventGraph co-occurrence degree)\n")
+    L.append("\n## Most connected countries (GeoNexus co-occurrence degree)\n")
     L.append("| Country | Degree | WO instability |")
     L.append("| --- | --: | --: |")
     for o in conn_rank:

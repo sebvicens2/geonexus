@@ -6,8 +6,8 @@ from typing import Any, ClassVar
 
 from pydantic import BaseModel, Field
 
-from eventgraph.core.node import NodeKind
-from eventgraph.ontology.actor_types import ActorType
+from geonexus.core.node import NodeKind
+from geonexus.ontology.actor_types import ActorType
 
 
 class Actor(BaseModel):

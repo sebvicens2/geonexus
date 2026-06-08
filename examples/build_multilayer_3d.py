@@ -6,7 +6,7 @@ plane it appears in; intra-layer edges are green (cooperation) / red (conflict);
 thin vertical links couple the same country across layers. Rendered with WebGL
 (3d-force-graph) — drag to rotate, scroll to zoom.
 
-    python examples/build_multilayer_3d.py  → reports/eventgraph_multilayer_3d.html
+    python examples/build_multilayer_3d.py  → reports/geonexus_multilayer_3d.html
 
 Opens in any browser (loads 3d-force-graph from a CDN, so needs internet + WebGL).
 """
@@ -106,14 +106,14 @@ def main() -> None:
         .replace("__LEGEND__", legend)
         .replace("__N__", str(len(data["nodes"])))
     )
-    out = Path("reports") / "eventgraph_multilayer_3d.html"
+    out = Path("reports") / "geonexus_multilayer_3d.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
     print(f"wrote {out} ({out.stat().st_size // 1024} KB) — open in a browser (needs WebGL)")
 
 
 _TEMPLATE = """<!doctype html>
-<html><head><meta charset="utf-8"><title>EventGraph — 3D multiplex</title>
+<html><head><meta charset="utf-8"><title>GeoNexus — 3D multiplex</title>
 <style>
   body { margin:0; background:#0b1020; color:#e2e8f0;
     font-family:system-ui,sans-serif; overflow:hidden; }
@@ -127,7 +127,7 @@ _TEMPLATE = """<!doctype html>
 <script src="https://unpkg.com/3d-force-graph"></script>
 </head><body>
 <div id="hud">
-  <h1>EventGraph — 3D multiplex (__N__ nodes)</h1>
+  <h1>GeoNexus — 3D multiplex (__N__ nodes)</h1>
   <p>Stacked layers; a country sits at the same x,y on each plane. Green = cooperation,
      red = conflict; faint vertical links couple a country across layers.
      Drag to rotate · scroll to zoom.</p>

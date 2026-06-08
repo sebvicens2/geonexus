@@ -26,8 +26,8 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from world_observer_common import build_graph, load_events, subgraph
 
-from eventgraph import EventGraph
-from eventgraph.visualization import export_html
+from geonexus import GeoNexus
+from geonexus.visualization import export_html
 
 PALETTE = ["#e74c3c", "#3498db", "#2ecc71", "#9b59b6", "#f39c12", "#1abc9c", "#e67e22"]
 PNG_PATH = Path("world_observer_graph.png")
@@ -35,7 +35,7 @@ HTML_PATH = Path("world_observer_graph.html")
 
 
 def select_backbone(
-    g: EventGraph,
+    g: GeoNexus,
     clusters: list[list[str]],
     *,
     n_clusters: int = 4,
@@ -57,7 +57,7 @@ def select_backbone(
     return keep, cluster_of
 
 
-def render_png(g: EventGraph, cluster_of: dict[str, int]) -> None:
+def render_png(g: GeoNexus, cluster_of: dict[str, int]) -> None:
     h = g.raw.to_undirected()
     pos = nx.spring_layout(h, seed=11, k=0.6)
     colors = [PALETTE[cluster_of.get(n, 0) % len(PALETTE)] for n in h.nodes]
@@ -88,7 +88,7 @@ def main() -> None:
         export_html(sub, HTML_PATH)
         print(f"wrote {HTML_PATH}")
     except ModuleNotFoundError:
-        print("pyvis not installed — skipping interactive HTML (pip install eventgraph[viz])")
+        print("pyvis not installed — skipping interactive HTML (pip install geonexus[viz])")
 
 
 if __name__ == "__main__":

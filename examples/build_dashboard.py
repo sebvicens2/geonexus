@@ -1,6 +1,6 @@
 """Build a self-contained HTML dashboard from the World Observer results.
 
-    python examples/build_dashboard.py   →   reports/eventgraph_dashboard.html
+    python examples/build_dashboard.py   →   reports/geonexus_dashboard.html
 
 Open the file in any browser — no server, no app, no runtime dependency. The
 interactive network is a pyvis graph inlined into the page (works offline); if
@@ -8,7 +8,7 @@ pyvis is not installed it falls back to a static PNG.
 
 This is a *prototype of a future World Observer tab*: the layout, sections and
 small HTML "components" below are meant to be lifted into WO later. No LLM —
-every figure is computed by EventGraph from real events.
+every figure is computed by GeoNexus from real events.
 """
 
 from __future__ import annotations
@@ -24,16 +24,16 @@ sys.path.insert(0, str(Path(__file__).parent))
 from results_report import ASSETS, _window, add_asset_overlay, causal_paths, collect
 from world_observer_common import build_graph, load_events
 
-from eventgraph import EventGraph
+from geonexus import GeoNexus
 
-OUT_PATH = Path("reports") / "eventgraph_dashboard.html"
+OUT_PATH = Path("reports") / "geonexus_dashboard.html"
 PALETTE = ["#2563eb", "#dc2626", "#16a34a", "#9333ea", "#ea580c", "#0891b2"]
 
 
 # --------------------------------------------------------------------------- #
 # network (interactive pyvis, inlined; PNG fallback)
 # --------------------------------------------------------------------------- #
-def _backbone(g: EventGraph, n_clusters: int = 4) -> tuple[set[str], dict[str, int], list[str]]:
+def _backbone(g: GeoNexus, n_clusters: int = 4) -> tuple[set[str], dict[str, int], list[str]]:
     clusters = [c for c in g.emerging_clusters(min_size=5) if len(c) >= 20][:n_clusters]
     keep: set[str] = set()
     cluster_of: dict[str, int] = {}
@@ -57,7 +57,7 @@ def _backbone(g: EventGraph, n_clusters: int = 4) -> tuple[set[str], dict[str, i
     return keep, cluster_of, names
 
 
-def _network_iframe(g: EventGraph, keep: set[str], cluster_of: dict[str, int]) -> str:
+def _network_iframe(g: GeoNexus, keep: set[str], cluster_of: dict[str, int]) -> str:
     try:
         from pyvis.network import Network
     except ModuleNotFoundError:
@@ -87,11 +87,11 @@ def _network_iframe(g: EventGraph, keep: set[str], cluster_of: dict[str, int]) -
     inner = net.generate_html()
     return (
         f'<iframe class="network-frame" srcdoc="{html.escape(inner, quote=True)}" '
-        f'title="EventGraph network"></iframe>'
+        f'title="GeoNexus network"></iframe>'
     )
 
 
-def _network_png(g: EventGraph, keep: set[str], cluster_of: dict[str, int]) -> str:
+def _network_png(g: GeoNexus, keep: set[str], cluster_of: dict[str, int]) -> str:
     import matplotlib
 
     matplotlib.use("Agg")
@@ -258,7 +258,7 @@ def render(
 _TEMPLATE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EventGraph — World Observer dashboard</title>
+<title>GeoNexus — World Observer dashboard</title>
 <style>
   :root {{ --bg:#f1f5f9; --panel:#fff; --ink:#0f172a; --muted:#64748b;
     --line:#e2e8f0; --accent:#2563eb; }}
@@ -333,7 +333,7 @@ _TEMPLATE = """<!doctype html>
 </style></head>
 <body>
 <header>
-  <h1>EventGraph — World Observer</h1>
+  <h1>GeoNexus — World Observer</h1>
   <p>A descriptive map of <b>media attention</b> over a real news feed —
     not a risk or forecasting model.</p>
   <span class="badge">{n_events} events · {n_days} days · {n_major} clusters
@@ -383,7 +383,7 @@ _TEMPLATE = """<!doctype html>
   </section>
 </main>
 <footer>
-  <b>EventGraph</b> organised <b>{n_events}</b> real World Observer events
+  <b>GeoNexus</b> organised <b>{n_events}</b> real World Observer events
   ({n_days} days) into <b>{n_major}</b> major media clusters (of {total} communities)
   and ranked <b>{n_hot}</b> attention hotspots — a descriptive map of media attention.
 </footer>

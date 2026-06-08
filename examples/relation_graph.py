@@ -1,7 +1,7 @@
 """Build and query a typed relation graph from LLM-extracted triples.
 
 Consumes ``world_observer_relations.json`` (subject → relation → object triples
-extracted by examples/extract_relations.py) into an EventGraph, where each edge
+extracted by examples/extract_relations.py) into an GeoNexus, where each edge
 carries the actual stated relation. Unlike the PMI co-occurrence approach, paths
 here are real relation chains, e.g. China —adjusts→ Belt and Road —... → Africa.
 
@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from narrative_evolution import DATA as NARRATIVE_DATA
 
-from eventgraph import Actor, EventGraph, Relation, RelationType
+from geonexus import Actor, GeoNexus, Relation, RelationType
 
 DATA = Path(__file__).parent / "data" / "world_observer_relations.json"
 REPORT = Path("reports") / "world_observer_relations.md"
@@ -74,9 +74,9 @@ def _norm(name: str) -> str:
     return n[:1].upper() + n[1:] if n else n
 
 
-def build(triples: list[dict]) -> tuple[EventGraph, dict]:
-    """EventGraph of entities; each edge stores the stated relation verb."""
-    g = EventGraph()
+def build(triples: list[dict]) -> tuple[GeoNexus, dict]:
+    """GeoNexus of entities; each edge stores the stated relation verb."""
+    g = GeoNexus()
     rel_of: dict[tuple[str, str], str] = {}
     for t in triples:
         a, b = _norm(t["subject"]), _norm(t["object"])
@@ -98,7 +98,7 @@ def build(triples: list[dict]) -> tuple[EventGraph, dict]:
     return g, rel_of
 
 
-def _edge_label(g: EventGraph, a: str, b: str) -> str:
+def _edge_label(g: GeoNexus, a: str, b: str) -> str:
     """Relation verb on the edge between node-ids a and b (either direction)."""
     data = g.raw.get_edge_data(a, b) or g.raw.get_edge_data(b, a) or {}
     for d in data.values():
@@ -108,7 +108,7 @@ def _edge_label(g: EventGraph, a: str, b: str) -> str:
     return "->"
 
 
-def _resolve(g: EventGraph, query: str) -> str | None:
+def _resolve(g: GeoNexus, query: str) -> str | None:
     """Find a node id matching ``query`` by label (exact, then substring)."""
     ql = query.strip().lower()
     nodes = list(g.nodes())
@@ -123,13 +123,13 @@ def load_triples() -> list[dict]:
     return json.loads(DATA.read_text(encoding="utf-8")) if DATA.exists() else []
 
 
-def top_hubs(g: EventGraph, n: int = 12) -> list[tuple[str, int]]:
+def top_hubs(g: GeoNexus, n: int = 12) -> list[tuple[str, int]]:
     """Most-connected entities (label, relation count)."""
     ranked = sorted(g.nodes(), key=lambda o: len(g.neighbors(o.node_id)), reverse=True)
     return [(g.label(o.node_id), len(g.neighbors(o.node_id))) for o in ranked[:n]]
 
 
-def chain(g: EventGraph, a: str, b: str) -> list[tuple[str, str, str]] | None:
+def chain(g: GeoNexus, a: str, b: str) -> list[tuple[str, str, str]] | None:
     """Shortest relation chain between two entities as (from, relation, to) steps."""
     import networkx as nx
 

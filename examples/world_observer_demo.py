@@ -1,4 +1,4 @@
-"""World Observer → EventGraph: turn a real event feed into actionable structure.
+"""World Observer → GeoNexus: turn a real event feed into actionable structure.
 
 Loads a real sample of analysed World Observer articles, builds a causal/relational
 graph, and surfaces:
@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from world_observer_common import build_graph, load_events, wo_kind
 
-from eventgraph import EventGraph
+from geonexus import GeoNexus
 
 
 def _rule(title: str) -> None:
@@ -29,7 +29,7 @@ def _rule(title: str) -> None:
     print("─" * len(title))
 
 
-def top_by_influence(g: EventGraph, kind: str, n: int = 8) -> list[tuple[str, float]]:
+def top_by_influence(g: GeoNexus, kind: str, n: int = 8) -> list[tuple[str, float]]:
     scored = [
         (g.label(obj.node_id), g.influence_score(obj.node_id))
         for obj in g.nodes()
@@ -39,7 +39,7 @@ def top_by_influence(g: EventGraph, kind: str, n: int = 8) -> list[tuple[str, fl
     return scored[:n]
 
 
-def most_connected_events(g: EventGraph, n: int = 8) -> list[tuple[str, int]]:
+def most_connected_events(g: GeoNexus, n: int = 8) -> list[tuple[str, int]]:
     events = [
         (g.label(obj.node_id), len(g.neighbors(obj.node_id, direction="in")))
         for obj in g.nodes()
@@ -49,7 +49,7 @@ def most_connected_events(g: EventGraph, n: int = 8) -> list[tuple[str, int]]:
     return events[:n]
 
 
-def describe_cluster(g: EventGraph, cluster: list[str], n_entities: int = 5) -> list[str]:
+def describe_cluster(g: GeoNexus, cluster: list[str], n_entities: int = 5) -> list[str]:
     entities = [nid for nid in cluster if not nid.startswith("event:")]
     entities.sort(key=lambda nid: g.influence_score(nid), reverse=True)
     return [g.label(nid) for nid in entities[:n_entities]]

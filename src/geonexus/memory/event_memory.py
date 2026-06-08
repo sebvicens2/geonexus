@@ -1,6 +1,6 @@
 """EventMemory: store dated graph snapshots and compare them over time.
 
-A snapshot is a frozen copy of an :class:`EventGraph` keyed by a date. From a
+A snapshot is a frozen copy of an :class:`GeoNexus` keyed by a date. From a
 series of snapshots you can:
 
 - track how a node's risk hotspot score evolves (:meth:`hotspot_series`),
@@ -18,7 +18,7 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
 
-from eventgraph.graph.knowledge_graph import EventGraph
+from geonexus.graph.knowledge_graph import GeoNexus
 
 
 def _norm_date(value: str | date | datetime) -> str:
@@ -100,22 +100,22 @@ class ClusterDiff:
 
 
 class EventMemory:
-    """A time-indexed collection of EventGraph snapshots."""
+    """A time-indexed collection of GeoNexus snapshots."""
 
     def __init__(self, directory: str | Path | None = None) -> None:
         self._dir = Path(directory) if directory else None
-        self._snapshots: dict[str, EventGraph] = {}
+        self._snapshots: dict[str, GeoNexus] = {}
         if self._dir and self._dir.exists():
             for f in sorted(self._dir.glob("*.json")):
-                self._snapshots[f.stem] = EventGraph.load_json(f)
+                self._snapshots[f.stem] = GeoNexus.load_json(f)
 
     # ------------------------------------------------------------------ #
     # storage
     # ------------------------------------------------------------------ #
-    def snapshot(self, when: str | date | datetime, graph: EventGraph) -> str:
+    def snapshot(self, when: str | date | datetime, graph: GeoNexus) -> str:
         """Freeze ``graph`` under date ``when`` and return the normalised key."""
         key = _norm_date(when)
-        frozen = EventGraph.from_dict(graph.to_dict())  # decouple from later mutation
+        frozen = GeoNexus.from_dict(graph.to_dict())  # decouple from later mutation
         self._snapshots[key] = frozen
         if self._dir is not None:
             self._dir.mkdir(parents=True, exist_ok=True)
@@ -126,7 +126,7 @@ class EventMemory:
         """All snapshot dates, ascending."""
         return sorted(self._snapshots)
 
-    def get(self, when: str | date | datetime) -> EventGraph:
+    def get(self, when: str | date | datetime) -> GeoNexus:
         """Return the snapshot stored at ``when``.
 
         Raises:
@@ -269,13 +269,13 @@ class EventMemory:
         return ClusterDiff(tuple(changes))
 
     @staticmethod
-    def _signature(graph: EventGraph, members: set[str], k: int = 8) -> set[str]:
+    def _signature(graph: GeoNexus, members: set[str], k: int = 8) -> set[str]:
         """A cluster's identity: its ``k`` most influential entity members."""
         entities = sorted(_entities(members), key=graph.influence_score, reverse=True)
         return set(entities[:k])
 
     @staticmethod
-    def _cluster_label(graph: EventGraph, members: set[str], n: int = 3) -> str:
+    def _cluster_label(graph: GeoNexus, members: set[str], n: int = 3) -> str:
         """Name a cluster by its most influential non-event members."""
         entities = [m for m in members if not m.startswith("event:")]
         entities.sort(key=graph.influence_score, reverse=True)

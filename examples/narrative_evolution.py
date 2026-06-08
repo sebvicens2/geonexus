@@ -2,7 +2,7 @@
 
 For each entity (country/theatre) and each day, we deterministically extract the
 named topics from WO's synthesis bullets (no LLM), model entity→topic links in a
-daily EventGraph, and store the days in an EventMemory. We then diff an entity's
+daily GeoNexus, and store the days in an EventMemory. We then diff an entity's
 topic set over time, and roll up which topics are *entering the world narrative*.
 
 This is where the genuinely new, interpretable signal lives: not the static
@@ -22,7 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from eventgraph import Actor, EventGraph, EventMemory, Relation, RelationType
+from geonexus import Actor, EventMemory, GeoNexus, Relation, RelationType
 
 DATA = Path(__file__).parent / "data" / "world_observer_narrative_history.json"
 REPORT = Path("reports") / "world_observer_narrative_evolution.md"
@@ -162,11 +162,11 @@ def extract_topics(text: str, own_name: str) -> set[str]:
 
 
 def build_memory(entities: list[dict]) -> EventMemory:
-    """One EventGraph per day: entity -> topic links, stored in an EventMemory."""
+    """One GeoNexus per day: entity -> topic links, stored in an EventMemory."""
     days = sorted({d for e in entities for d in e["by_day"]})
     memory = EventMemory()
     for day in days:
-        g = EventGraph()
+        g = GeoNexus()
         for ent in entities:
             text = ent["by_day"].get(day)
             if not text:
@@ -284,13 +284,13 @@ def emerging_signals(
 def relate_signals(signals: list[dict], *, min_overlap: float = 0.2) -> list[list[dict]]:
     """Group emerging signals into chains: signals sharing the narratives they appear in.
 
-    Builds an EventGraph of signals (edge = Jaccard overlap of their ``where``
+    Builds an GeoNexus of signals (edge = Jaccard overlap of their ``where``
     narratives) and returns the connected components of size >= 2 — the
     storylines. Deterministic; reproducible.
     """
     import networkx as nx
 
-    g = EventGraph()
+    g = GeoNexus()
     by_node: dict[str, dict] = {}
     for s in signals:
         nid = g.add_actor(Actor(id=s["topic"], name=s["topic"]))
@@ -464,7 +464,7 @@ def _write_markdown(
     L.append(
         f"_How WO's LLM syntheses drifted between **{first}** and **{last}**: which "
         "topics entered, faded or persisted, and *when*. Topics are extracted "
-        "deterministically from the summary bullets (no LLM). EventGraph stores one "
+        "deterministically from the summary bullets (no LLM). GeoNexus stores one "
         "graph per day in an EventMemory and diffs the daily topic sets._\n"
     )
 

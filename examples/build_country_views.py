@@ -5,7 +5,7 @@ One self-contained HTML with three tabs over the signed multi-layer data:
   B. Network   — interactive labelled graph, filter by layer, click a country to focus.
   C. Matrix    — country x country grid, cell = net stance, filter by layer.
 
-    python examples/build_country_views.py  → reports/eventgraph_country_views.html
+    python examples/build_country_views.py  → reports/geonexus_country_views.html
 
 (The Network tab uses vis-network from a CDN; Explorer and Matrix are pure HTML.)
 """
@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from multilayer import CAMEO, LAYERS, net_dyads
 
-OUT_PATH = Path("reports") / "eventgraph_country_views.html"
+OUT_PATH = Path("reports") / "geonexus_country_views.html"
 
 
 def main() -> None:
@@ -52,7 +52,7 @@ def main() -> None:
 _TEMPLATE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EventGraph — country connections</title>
+<title>GeoNexus — country connections</title>
 <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 <style>
   :root { --bg:#f1f5f9; --panel:#fff; --ink:#0f172a; --muted:#64748b; --line:#e2e8f0;
@@ -90,7 +90,7 @@ _TEMPLATE = r"""<!doctype html>
   .muted { color:var(--muted); font-size:13px; }
 </style></head>
 <body>
-<header><h1>EventGraph — connections between countries</h1>
+<header><h1>GeoNexus — connections between countries</h1>
   <p>Signed multi-layer (CAMEO): green = cooperation, red = conflict. Three ways to read it.</p>
 </header>
 <nav>

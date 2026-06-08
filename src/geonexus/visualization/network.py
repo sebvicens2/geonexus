@@ -4,7 +4,7 @@
 ``to_pyvis`` / ``export_html`` produce an interactive HTML graph but require the
 optional ``pyvis`` extra::
 
-    pip install eventgraph[viz]
+    pip install geonexus[viz]
 
 They import pyvis lazily, so the rest of the library works without it.
 """
@@ -16,13 +16,13 @@ from typing import TYPE_CHECKING, Any
 
 import networkx as nx
 
-from eventgraph.core.node import NodeKind
+from geonexus.core.node import NodeKind
 
 if TYPE_CHECKING:
     from matplotlib.axes import Axes
 
-    from eventgraph.graph.knowledge_graph import EventGraph
-    from eventgraph.memory.event_memory import EventMemory
+    from geonexus.graph.knowledge_graph import GeoNexus
+    from geonexus.memory.event_memory import EventMemory
 
 #: Colour per node kind, shared across backends.
 NODE_COLORS: dict[str, str] = {
@@ -33,13 +33,13 @@ NODE_COLORS: dict[str, str] = {
 _DEFAULT_COLOR = "#95a5a6"
 
 
-def _kind(graph: EventGraph, node_id: str) -> str:
+def _kind(graph: GeoNexus, node_id: str) -> str:
     kind: str = graph.raw.nodes[node_id]["kind"]
     return kind
 
 
 def draw(
-    graph: EventGraph,
+    graph: GeoNexus,
     ax: Axes | None = None,
     *,
     with_labels: bool = True,
@@ -117,7 +117,7 @@ def plot_hotspot_evolution(
     return ax
 
 
-def to_pyvis(graph: EventGraph, *, height: str = "750px", width: str = "100%") -> Any:
+def to_pyvis(graph: GeoNexus, *, height: str = "750px", width: str = "100%") -> Any:
     """Build an interactive ``pyvis.network.Network`` from the graph.
 
     Raises:
@@ -127,7 +127,7 @@ def to_pyvis(graph: EventGraph, *, height: str = "750px", width: str = "100%") -
         from pyvis.network import Network
     except ModuleNotFoundError as exc:  # pragma: no cover - depends on optional dep
         raise ModuleNotFoundError(
-            "Interactive visualisation requires pyvis. Install it with: pip install eventgraph[viz]"
+            "Interactive visualisation requires pyvis. Install it with: pip install geonexus[viz]"
         ) from exc
 
     net = Network(height=height, width=width, directed=True)
@@ -143,7 +143,7 @@ def to_pyvis(graph: EventGraph, *, height: str = "750px", width: str = "100%") -
     return net
 
 
-def export_html(graph: EventGraph, path: str | Path) -> Path:
+def export_html(graph: GeoNexus, path: str | Path) -> Path:
     """Write an interactive HTML visualisation to ``path`` (requires pyvis)."""
     net = to_pyvis(graph)
     out = Path(path)
@@ -151,7 +151,7 @@ def export_html(graph: EventGraph, path: str | Path) -> Path:
     return out
 
 
-def export_graphml(graph: EventGraph, path: str | Path) -> Path:
+def export_graphml(graph: GeoNexus, path: str | Path) -> Path:
     """Export to GraphML (Gephi/yEd) using only networkx — no extra deps.
 
     The opaque ``obj`` payload is stripped so the output stays GraphML-valid.

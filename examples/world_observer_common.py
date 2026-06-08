@@ -1,10 +1,10 @@
-"""Shared helpers for the World Observer → EventGraph demos.
+"""Shared helpers for the World Observer → GeoNexus demos.
 
-Loads the extracted real-data sample and builds an EventGraph from it. Kept
+Loads the extracted real-data sample and builds an GeoNexus from it. Kept
 separate so both ``world_observer_demo.py`` and ``world_observer_map.py`` use the
 exact same graph construction.
 
-Graph model (reusing EventGraph's three node kinds, no new abstractions):
+Graph model (reusing GeoNexus's three node kinds, no new abstractions):
     - each article            -> Event   (severity = importance / 10)
     - countries/actors/orgs   -> Actor   (metadata wo_kind="actor")
     - theatre                 -> Actor   (metadata wo_kind="region")
@@ -25,13 +25,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from eventgraph import (
+from geonexus import (
     Actor,
     ActorType,
     Asset,
     AssetType,
     Event,
-    EventGraph,
+    GeoNexus,
     Relation,
     RelationType,
 )
@@ -81,13 +81,13 @@ def load_events(path: Path = DATA_PATH) -> list[dict[str, Any]]:
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def build_graph(events: list[dict[str, Any]]) -> EventGraph:
-    """Build an EventGraph from World Observer event records.
+def build_graph(events: list[dict[str, Any]]) -> GeoNexus:
+    """Build an GeoNexus from World Observer event records.
 
     Entities are de-duplicated across case/underscore variants, so ``Iran``,
     ``iran`` and a category ``iran`` all collapse onto one node.
     """
-    g = EventGraph()
+    g = GeoNexus()
 
     # pass 1: pick a canonical display name per entity key (merge variants)
     display: dict[str, str] = {}
@@ -218,7 +218,7 @@ def build_graph(events: list[dict[str, Any]]) -> EventGraph:
     return g
 
 
-def wo_kind(g: EventGraph, node_id: str) -> str:
+def wo_kind(g: GeoNexus, node_id: str) -> str:
     """Return the World Observer role tag stored on a node ('actor', 'region', ...)."""
     obj = g.get(node_id)
     kind = obj.metadata.get("wo_kind")
@@ -227,9 +227,9 @@ def wo_kind(g: EventGraph, node_id: str) -> str:
     return "event" if node_id.startswith("event:") else "node"
 
 
-def subgraph(g: EventGraph, node_ids: set[str]) -> EventGraph:
-    """Build a new EventGraph induced on ``node_ids`` (keeps edges among them)."""
-    sub = EventGraph()
+def subgraph(g: GeoNexus, node_ids: set[str]) -> GeoNexus:
+    """Build a new GeoNexus induced on ``node_ids`` (keeps edges among them)."""
+    sub = GeoNexus()
     for nid in node_ids:
         obj = g.get(nid)
         if nid.startswith("event:"):

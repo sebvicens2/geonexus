@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import pytest
 
-from eventgraph import EventGraph
-from eventgraph.causality.scoring import path_score
+from geonexus import GeoNexus
+from geonexus.causality.scoring import path_score
 
 
 def test_path_score_single_edge_is_weight() -> None:
@@ -24,7 +24,7 @@ def test_path_score_empty() -> None:
     assert path_score([]) == 0.0
 
 
-def test_impact_finds_chain_to_gold(chain_graph: EventGraph) -> None:
+def test_impact_finds_chain_to_gold(chain_graph: GeoNexus) -> None:
     paths = chain_graph.impact("asset:XAU_USD")
     assert paths, "expected at least one causal chain"
     # every returned chain must terminate at the requested target
@@ -34,7 +34,7 @@ def test_impact_finds_chain_to_gold(chain_graph: EventGraph) -> None:
     assert scores == sorted(scores, reverse=True)
 
 
-def test_impact_full_chain_from_iran(chain_graph: EventGraph) -> None:
+def test_impact_full_chain_from_iran(chain_graph: GeoNexus) -> None:
     paths = chain_graph.impact("asset:XAU_USD", sources=["actor:iran"])
     assert len(paths) == 1
     full = paths[0]
@@ -51,14 +51,14 @@ def test_impact_full_chain_from_iran(chain_graph: EventGraph) -> None:
     assert full.score == pytest.approx(expected)
 
 
-def test_impact_respects_max_depth(chain_graph: EventGraph) -> None:
+def test_impact_respects_max_depth(chain_graph: GeoNexus) -> None:
     shallow = chain_graph.impact("asset:XAU_USD", sources=["actor:iran"], max_depth=2)
     assert shallow == []  # the only iran->gold path is 5 hops
 
 
-def test_impact_unknown_target(chain_graph: EventGraph) -> None:
+def test_impact_unknown_target(chain_graph: GeoNexus) -> None:
     assert chain_graph.impact("asset:DOES_NOT_EXIST") == []
 
 
-def test_impact_top_k(chain_graph: EventGraph) -> None:
+def test_impact_top_k(chain_graph: GeoNexus) -> None:
     assert len(chain_graph.impact("asset:XAU_USD", top_k=2)) <= 2

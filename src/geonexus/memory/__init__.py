@@ -1,6 +1,6 @@
 """Temporal memory: snapshot graphs over time and diff them."""
 
-from eventgraph.memory.event_memory import (
+from geonexus.memory.event_memory import (
     ClusterChange,
     ClusterDiff,
     EventMemory,

@@ -9,22 +9,22 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
-from eventgraph import (
+from geonexus import (
     Actor,
     ActorType,
     Asset,
     AssetType,
     Event,
-    EventGraph,
     EventType,
+    GeoNexus,
     Relation,
     RelationType,
 )
 
 
-def build_graph() -> EventGraph:
+def build_graph() -> GeoNexus:
     """Wire up the canonical Iran -> Gold causal chain."""
-    g = EventGraph()
+    g = GeoNexus()
 
     now = datetime(2026, 6, 7, tzinfo=timezone.utc)
 
