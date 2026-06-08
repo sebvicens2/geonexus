@@ -245,11 +245,8 @@ def main() -> None:
     )
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
-    print(f"wrote {OUT_PATH} ({OUT_PATH.stat().st_size // 1024} KB)")
-    print(
-        "Open via a local server for flags & labels — re-run with --serve, or "
-        "`python -m http.server` in reports/ (file:// blocks ES modules)."
-    )
+    print(f"wrote {OUT_PATH} ({OUT_PATH.stat().st_size // 1024} KB) — open it in a browser")
+    print("(works from file://; needs internet for the 3d-force-graph script. --serve to host it.)")
     if args.serve:
         _serve()
 
@@ -274,6 +271,12 @@ _TEMPLATE = r"""<!doctype html>
     border-radius:999px; padding:5px 12px; font-size:13px; margin-right:4px; }
   #pair { margin-top:9px; font-size:13px; color:#8b9bb4; }
   #g { position:fixed; inset:0; z-index:1; }
+  #overlay { position:fixed; inset:0; z-index:5; pointer-events:none; overflow:hidden; }
+  #overlay .flag { position:absolute; transform:translate(-50%,-50%);
+    border-radius:2px; box-shadow:0 0 4px #000a; }
+  #overlay .nlabel { position:absolute; transform:translate(-50%,-100%);
+    color:#f8fafc; font-size:11px; font-weight:600; white-space:nowrap;
+    text-shadow:0 1px 3px #000, 0 0 5px #000; padding-bottom:2px; }
   #report { position:fixed; top:0; right:0; width:380px; max-width:90vw; height:100%;
     z-index:20; background:#0f172af2; border-left:1px solid #334155; padding:20px 22px;
     overflow:auto; transform:translateX(100%); transition:transform .25s;
@@ -290,14 +293,7 @@ _TEMPLATE = r"""<!doctype html>
   #rptclose { float:right; cursor:pointer; color:#94a3b8; font-size:18px; border:none;
     background:none; }
 </style>
-<!-- single shared three instance (importmap) so label sprites render correctly;
-     three/ prefix covers subpaths like three/webgpu that 3d-force-graph imports -->
-<script type="importmap">
-{ "imports": {
-  "three": "https://esm.sh/three@0.160.0",
-  "three/": "https://esm.sh/three@0.160.0/"
-} }
-</script>
+<script src="https://unpkg.com/3d-force-graph"></script>
 </head><body>
 <div id="hud">
   <h1><span>GeoNexus</span> — 3D country network</h1>
@@ -324,62 +320,20 @@ _TEMPLATE = r"""<!doctype html>
   <div id="rptbody">__SITUATION__</div>
 </div>
 <div id="g"></div>
-<script type="module">
-// Primary: one shared three (ES modules) -> always-on hub labels, no black box.
-// Fallback: UMD 3d-force-graph -> still navigable, names on hover.
-let ForceGraph3D = null, SpriteText = null;
-try {
-  ForceGraph3D = (await import('https://esm.sh/3d-force-graph?external=three')).default;
-  SpriteText = (await import('https://esm.sh/three-spritetext?external=three')).default;
-} catch (e) {
-  try {
-    await new Promise((res, rej) => {
-      const sc = document.createElement('script');
-      sc.src = 'https://unpkg.com/3d-force-graph';
-      sc.onload = res; sc.onerror = rej;
-      document.head.appendChild(sc);
-    });
-    ForceGraph3D = window.ForceGraph3D;  // SpriteText stays null -> hover labels only
-    document.getElementById('hud').insertAdjacentHTML('beforeend',
-      '<div style="color:#fbbf24;font-size:12px;margin-top:6px">'
-      + '⚠ Flags &amp; labels need a local web server (file:// blocks ES modules). '
-      + 'Run <code>python examples/build_country_network_3d.py --serve</code>, '
-      + 'or <code>python -m http.server</code> in reports/ and open via http://.</div>');
-  } catch (e2) {
-    document.getElementById('g').innerHTML =
-      '<p style="color:#f87171;padding:140px 40px">Could not load the 3D libraries '
-      + '(needs an internet connection).</p>';
-    throw e2;
-  }
+<div id="overlay"></div>
+<script>
+// UMD only (loads from file:// too); flags + labels are drawn as an HTML overlay,
+// so they don't depend on ES modules / WebGL textures.
+if (typeof ForceGraph3D === 'undefined') {
+  document.getElementById('g').innerHTML =
+    '<p style="color:#f87171;padding:140px 40px">Could not load 3d-force-graph '
+    + '(needs an internet connection).</p>';
+  throw new Error('3d-force-graph not loaded');
 }
-// same three instance as 3d-force-graph -> flag sprites render; optional, fails soft
-let THREE = null;
-try { THREE = await import('https://esm.sh/three@0.160.0'); } catch (e) { /* no flags */ }
 const D = __DATA__;
 const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign,why}]}
 const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interactions:[...]}
-const FLAGS = __FLAGS__;  // country -> base64 flag data-URI (blocs absent -> coloured sphere)
-const SPHERE_GEO = THREE ? new THREE.SphereGeometry(1, 14, 14) : null;
-
-// preload every flag (base64 -> 128x128 canvas -> CanvasTexture) BEFORE building nodes,
-// so each material is created WITH its map (assigning map after first render renders black)
-const FLAG_TEX = {};
-if (THREE) {
-  await Promise.all(Object.entries(FLAGS).map(([name, uri]) => new Promise(res => {
-    const img = new Image();
-    img.onload = () => {
-      const cv = document.createElement('canvas');
-      cv.width = 128; cv.height = 128;
-      cv.getContext('2d').drawImage(img, 0, 0, 128, 128);
-      const t = new THREE.CanvasTexture(cv);
-      t.colorSpace = THREE.SRGBColorSpace;
-      FLAG_TEX[name] = t;
-      res();
-    };
-    img.onerror = () => res();
-    img.src = uri;
-  })));
-}
+const FLAGS = __FLAGS__;  // country -> base64 flag data-URI (overlay <img>)
 const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 function bulletize(text) {  // render LLM bullet output as a list (fallback: paragraph)
   const lines = text.split('\n').map(x => x.trim()).filter(Boolean);
@@ -426,40 +380,7 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .nodeOpacity(0.95)
   .nodeVal(n => 2 + n.deg)
   .nodeColor(n => (hlNodes.size && !hlNodes.has(n.id)) ? 'rgba(148,163,184,0.25)' : NODE_COLOR(n))
-  .nodeLabel('id')  // hover tooltip (and the only labels in UMD fallback mode)
-  .nodeThreeObject(n => {
-    if (!THREE) return undefined;  // UMD fallback: default sphere + hover labels
-    const dim = hlNodes.size > 0 && !hlNodes.has(n.id);
-    const focused = hlNodes.size > 0 && hlNodes.has(n.id);
-    const sz = 5 + Math.min(11, n.deg);
-    const group = new THREE.Group();
-    // coloured sphere keeps the volume (Mesh+colour renders fine everywhere)
-    const mesh = new THREE.Mesh(SPHERE_GEO, new THREE.MeshBasicMaterial({
-      color: NODE_COLOR(n), transparent: true, opacity: dim ? 0.18 : 0.9,
-    }));
-    mesh.scale.setScalar(sz * 0.4);
-    group.add(mesh);
-    // flag as a billboard sprite on the sphere — same Sprite+CanvasTexture path as labels
-    const tex = FLAG_TEX[n.id];
-    if (tex) {
-      const sp = new THREE.Sprite(new THREE.SpriteMaterial({
-        map: tex, transparent: true, opacity: dim ? 0.25 : 1, depthTest: false,
-      }));
-      sp.scale.set(sz * 0.85, sz * 0.57, 1);  // flags are ~3:2
-      sp.renderOrder = 3;
-      group.add(sp);
-    }
-    if (SpriteText && (focused || n.labelOn)) {  // label hubs + the focused node
-      const t = new SpriteText(n.id);
-      t.backgroundColor = 'rgba(7,11,21,0.5)'; t.padding = 1.5; t.borderRadius = 3;
-      t.color = dim ? 'rgba(200,210,225,0.25)' : '#f8fafc';
-      t.textHeight = 6 + Math.min(5, n.deg); t.fontWeight = '600';
-      t.position.set(0, sz * 0.9 + 3, 0);
-      group.add(t);
-    }
-    return group;
-  })
-  .nodeThreeObjectExtend(false)
+  .nodeLabel('id')  // hover tooltip
   .linkColor(l => {
     const base = LAYER_COLOR[l.layer] || '#94a3b8';
     if (!hlLinks.size) return base;
@@ -522,6 +443,57 @@ spread.oninput = () => {
   Graph.d3ReheatSimulation();
 };
 
+// ---- HTML overlay: flags (<img>) + hub labels (<div>) positioned over the 3D nodes ----
+const overlay = document.getElementById('overlay');
+let overlayItems = [];
+function buildOverlay(nodes) {
+  overlay.innerHTML = '';
+  overlayItems = nodes.map(n => {
+    let img = null;
+    if (FLAGS[n.id]) {
+      img = document.createElement('img');
+      img.className = 'flag'; img.src = FLAGS[n.id];
+      overlay.appendChild(img);
+    }
+    const label = document.createElement('div');
+    label.className = 'nlabel'; label.textContent = n.id;
+    overlay.appendChild(label);
+    return { n, img, label };
+  });
+}
+function syncOverlay() {
+  const cam = Graph.camera().position;
+  const W = innerWidth, H = innerHeight;
+  for (const it of overlayItems) {
+    const n = it.n;
+    const front = n.x !== undefined &&
+      (-cam.x) * (n.x - cam.x) + (-cam.y) * (n.y - cam.y) + (-cam.z) * (n.z - cam.z) > 0;
+    const sc = front ? Graph.graph2ScreenCoords(n.x, n.y, n.z) : null;
+    const on = !!sc && sc.x > -60 && sc.x < W + 60 && sc.y > -60 && sc.y < H + 60;
+    const dim = hlNodes.size > 0 && !hlNodes.has(n.id);
+    const dist = front ? Math.hypot(n.x - cam.x, n.y - cam.y, n.z - cam.z) : 1;
+    const sz = Math.max(11, Math.min(54, 1300 / dist)) * (1 + Math.min(8, n.deg) * 0.05);
+    if (it.img) {
+      const s = it.img.style;
+      s.display = on ? 'block' : 'none';
+      if (on) {
+        s.left = sc.x + 'px'; s.top = sc.y + 'px';
+        s.width = (sz * 1.5) + 'px'; s.height = sz + 'px';
+        s.opacity = dim ? 0.15 : 1;
+      }
+    }
+    const show = on && (n.labelOn || (hlNodes.size > 0 && hlNodes.has(n.id)));
+    const ls = it.label.style;
+    ls.display = show ? 'block' : 'none';
+    if (show) {
+      ls.left = sc.x + 'px'; ls.top = (sc.y - sz * 0.7) + 'px';
+      ls.opacity = dim ? 0.25 : 1;
+      ls.fontSize = Math.max(10, Math.min(15, sz * 0.4)) + 'px';
+    }
+  }
+  requestAnimationFrame(syncOverlay);
+}
+
 const lid = l => l.source.id || l.source;       // link endpoints can be id or node obj
 const tid = l => l.target.id || l.target;
 
@@ -543,7 +515,9 @@ function currentData() {
 
 function redraw() {
   hlNodes = new Set(); hlLinks = new Set();
-  Graph.graphData(currentData());
+  const gd = currentData();
+  Graph.graphData(gd);
+  buildOverlay(gd.nodes);  // overlay tracks the same node objects the engine positions
   const [a, b] = pair;
   document.getElementById('pairinfo').textContent =
     a && b ? `— showing ${a} & ${b} and their direct links` : '';
@@ -642,6 +616,7 @@ function renderPanel() {
 document.getElementById('rpt').onclick = () => report.classList.toggle('open');
 document.getElementById('rptclose').onclick = () => report.classList.remove('open');
 redraw();
+syncOverlay();  // start the overlay positioning loop
 </script>
 </body></html>
 """
