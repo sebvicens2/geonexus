@@ -74,6 +74,8 @@ _TEMPLATE = r"""<!doctype html>
 <div id="g"></div>
 <script>
 const D = __DATA__;
+const active = new Set(LAYERS);  // multi-select: all layers on by default
+const HUBS = 16;                 // how many top countries get a permanent label
 if (typeof ForceGraph3D === 'undefined' || typeof SpriteText === 'undefined') {
   document.getElementById('g').innerHTML =
     '<p style="color:#f87171;padding:140px 40px">Could not load the 3D libraries '
@@ -81,13 +83,11 @@ if (typeof ForceGraph3D === 'undefined' || typeof SpriteText === 'undefined') {
   throw new Error('libs not loaded');
 }
 const LAYERS = D.layers;
-let curLayer = 'all';
 const COOP = '#22c55e', CONF = '#ef4444';
 
-function graphFor(lay) {
-  const agg = {};
-  const sources = lay === 'all' ? LAYERS : [lay];
-  for (const L of sources) for (const [a, b, s] of D.dyads[L]) {
+function graphFor(activeSet) {
+  const agg = {}, deg = {};
+  for (const L of activeSet) for (const [a, b, s] of D.dyads[L]) {
     const k = a < b ? a + '|' + b : b + '|' + a;
     agg[k] = (agg[k] || 0) + s;
   }
@@ -96,9 +96,13 @@ function graphFor(lay) {
     if (!agg[k]) continue;
     const [a, b] = k.split('|');
     ids.add(a); ids.add(b);
+    deg[a] = (deg[a] || 0) + 1; deg[b] = (deg[b] || 0) + 1;
     links.push({ source: a, target: b, net: agg[k] });
   }
-  const nodes = [...ids].map(c => ({ id: c, deg: D.degree[c] || 1 }));
+  const nodes = [...ids].map(c => ({ id: c, deg: deg[c] || 1 }));
+  // label only the top-degree hubs ("les principaux") to avoid clutter
+  const hubSet = new Set([...nodes].sort((x, y) => y.deg - x.deg).slice(0, HUBS).map(n => n.id));
+  nodes.forEach(n => { n.labelOn = hubSet.has(n.id); });
   return { nodes, links };
 }
 
@@ -108,11 +112,16 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .nodeRelSize(4)
   .nodeVal(n => 2 + n.deg)
   .nodeThreeObject(n => {
+    const focused = hlNodes.size > 0 && hlNodes.has(n.id);
+    if (!focused && !n.labelOn) return undefined;  // hubs + focused only
     const s = new SpriteText(n.id);
-    s.color = hlNodes.size && !hlNodes.has(n.id) ? 'rgba(200,210,225,0.22)' : '#f8fafc';
+    s.backgroundColor = false;  // no black box
+    s.padding = 0;
+    s.borderWidth = 0;
+    s.color = hlNodes.size > 0 && !focused ? 'rgba(200,210,225,0.25)' : '#f8fafc';
     s.textHeight = 7 + Math.min(6, n.deg);
     s.fontWeight = '600';
-    s.position.y = 8;
+    s.position.y = 9;
     return s;
   })
   .nodeThreeObjectExtend(true)
@@ -143,23 +152,24 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     Graph.linkColor(Graph.linkColor());
   });
 
-function setLayer(lay) {
-  curLayer = lay;
+function redraw() {
   hlNodes = new Set(); hlLinks = new Set();
-  Graph.graphData(graphFor(lay));
+  Graph.graphData(graphFor(active));
 }
 
 const btns = document.getElementById('btns');
-['all', ...LAYERS].forEach((lay, i) => {
+LAYERS.forEach(lay => {  // multi-select: each button toggles a layer on/off
   const b = document.createElement('button');
-  b.className = 'btn' + (i === 0 ? ' on' : ''); b.textContent = lay;
+  b.className = 'btn on'; b.textContent = lay;
   b.onclick = () => {
-    document.querySelectorAll('#btns .btn').forEach(x => x.classList.remove('on'));
-    b.classList.add('on'); setLayer(lay);
+    if (active.has(lay)) { active.delete(lay); b.classList.remove('on'); }
+    else { active.add(lay); b.classList.add('on'); }
+    if (active.size === 0) { active.add(lay); b.classList.add('on'); }  // keep ≥1
+    redraw();
   };
   btns.appendChild(b);
 });
-setLayer('all');
+redraw();
 </script>
 </body></html>
 """
