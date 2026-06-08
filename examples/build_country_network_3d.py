@@ -14,12 +14,11 @@ from __future__ import annotations
 
 import json
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from multilayer import CAMEO, LAYERS, net_dyads
+from multilayer import CAMEO, LAYERS, _actor
 
 OUT_PATH = Path("reports") / "geonexus_country_network_3d.html"
 SITUATION = Path(__file__).parent / "data" / "world_observer_situation.json"
@@ -47,27 +46,34 @@ def main() -> None:
     if not CAMEO.exists():
         print(f"{CAMEO} not found — run extract_cameo.py first.")
         return
-    net = net_dyads(json.loads(CAMEO.read_text(encoding="utf-8")))
-    dyads: dict[str, list] = {}
-    degree: dict[str, int] = defaultdict(int)
-    for lay in LAYERS:
-        rows = []
-        for (a, b), s in net[lay].items():
-            rows.append([a, b, s])
-            degree[a] += 1
-            degree[b] += 1
-        dyads[lay] = rows
-    countries = sorted(degree, key=lambda c: -degree[c])
-    data = {"layers": LAYERS, "dyads": dyads, "degree": degree, "countries": countries}
+    # directed dyads: subject -> object (who acts on whom), net sign per (a, b, layer)
+    cameo = json.loads(CAMEO.read_text(encoding="utf-8"))
+    directed: dict[str, dict[tuple[str, str], int]] = {lay: {} for lay in LAYERS}
+    actors: set[str] = set()
+    for e in cameo:
+        a, b = _actor(e["a"]), _actor(e["b"])
+        if not a or not b or a == b or e["domain"] not in directed:
+            continue
+        directed[e["domain"]][(a, b)] = directed[e["domain"]].get((a, b), 0) + e["sign"]
+        actors.update((a, b))
+    dyads = {lay: [[a, b, s] for (a, b), s in d.items() if s] for lay, d in directed.items()}
+    countries = sorted(actors)  # alphabetical for the pair dropdowns
+    data = {"layers": LAYERS, "dyads": dyads, "countries": countries}
+
     sit = json.loads(SITUATION.read_text(encoding="utf-8")) if SITUATION.exists() else {}
     pairs_js = {
         k: {"text": v.get("text", ""), "edges": v.get("edges", [])}
         for k, v in sit.get("pairs", {}).items()
     }
+    countries_js = {
+        k: {"text": v.get("text", ""), "interactions": v.get("interactions", [])}
+        for k, v in sit.get("countries", {}).items()
+    }
     page = (
         _TEMPLATE.replace("__DATA__", json.dumps(data))
         .replace("__SITUATION__", _situation_html())
         .replace("__PAIRS__", json.dumps(pairs_js))
+        .replace("__COUNTRIES__", json.dumps(countries_js))
     )
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
@@ -115,10 +121,10 @@ _TEMPLATE = r"""<!doctype html>
 </head><body>
 <div id="hud">
   <h1>GeoNexus — 3D country network</h1>
-  <p>Link colour = domain (buttons below) · moving dots = sign
-     (<span style="color:#4ade80">green cooperation</span> /
-     <span style="color:#f87171">red conflict</span>).
-     Click a country to focus; empty space resets.</p>
+  <p>Link colour = domain · dots = sign
+     (<span style="color:#4ade80">green coop</span> /
+     <span style="color:#f87171">red conflict</span>) · arrow = who acted (subject → object).
+     Click a country for its summary; empty space resets.</p>
   <div id="btns"></div>
   <div id="pair">Focus a pair:
     <select id="pa"></select> <select id="pb"></select>
@@ -160,11 +166,13 @@ try {
 }
 const D = __DATA__;
 const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign,why}]}
+const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interactions:[...]}
 const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 const LAYERS = D.layers;
 const active = new Set(LAYERS);  // multi-select: all layers on by default
 const HUBS = 16;                 // how many top countries get a permanent label
 let pair = [null, null];         // when both set: show only the pair + direct neighbours
+let selectedCountry = null;      // when a node is clicked: show that country's summary
 const LAYER_COLOR = {            // link colour = domain; conflict shown via moving particles
   military: '#ef4444', economic: '#f59e0b', diplomatic: '#3b82f6',
   energy: '#a855f7', health: '#10b981',
@@ -222,13 +230,17 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .linkDirectionalParticleWidth(3)
   .linkDirectionalParticleSpeed(l => (l.net < 0 ? 0.012 : 0.006))
   .linkDirectionalParticleColor(l => (l.net > 0 ? '#4ade80' : '#f87171'))
-  .linkLabel(l => {  // hover tooltip: domain, stance, and the reason behind it
+  .linkDirectionalArrowLength(3.5)  // arrow = direction: subject (initiator) -> object
+  .linkDirectionalArrowRelPos(1)
+  .linkDirectionalArrowColor(l => LAYER_COLOR[l.layer] || '#888')
+  .linkLabel(l => {  // hover tooltip: who acts on whom, domain, stance, and the reason
     const a = l.source.id || l.source, b = l.target.id || l.target;
     const p = PAIRS[[a, b].sort().join('|')];
     const stance = l.net > 0 ? 'cooperation' : 'conflict';
     const m = p && p.edges ? p.edges.find(e => e.domain === l.layer && e.why) : null;
     const col = LAYER_COLOR[l.layer] || '#888';
-    return `<div style="max-width:280px"><b>${a} &ndash; ${b}</b><br>`
+    return `<div style="max-width:280px"><b>${a} → ${b}</b> `
+      + `<span style="color:#94a3b8">(${a} acted toward ${b})</span><br>`
       + `<span style="color:${col}">${l.layer}</span> · ${stance}`
       + (m ? `<br><i style="color:#cbd5e1">${esc(m.why)}</i>` : '') + '</div>';
   })
@@ -244,11 +256,15 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     Graph.linkColor(Graph.linkColor());
     const d = 140, r = 1 + d / Math.hypot(node.x, node.y, node.z || 1);
     Graph.cameraPosition({ x: node.x * r, y: node.y * r, z: node.z * r }, node, 1200);
+    selectedCountry = node.id;  // show this country's summary
+    renderPanel();
+    report.classList.add('open');
   })
   .onBackgroundClick(() => {
-    hlNodes = new Set(); hlLinks = new Set();
+    hlNodes = new Set(); hlLinks = new Set(); selectedCountry = null;
     Graph.nodeThreeObject(Graph.nodeThreeObject());
     Graph.linkColor(Graph.linkColor());
+    renderPanel();
   });
 
 const lid = l => l.source.id || l.source;       // link endpoints can be id or node obj
@@ -307,44 +323,67 @@ function fill(sel) {
 fill(pa); fill(pb);
 pa.onchange = pb.onchange = () => {
   pair = [pa.value || null, pb.value || null];
+  selectedCountry = null;
   redraw();
   if (pair[0] && pair[1]) report.classList.add('open');  // surface the pair summary
 };
 document.getElementById('clr').onclick = () => {
-  pa.value = ''; pb.value = ''; pair = [null, null]; redraw();
+  pa.value = ''; pb.value = ''; pair = [null, null]; selectedCountry = null; redraw();
 };
 
 const report = document.getElementById('report');
 const GLOBAL_HTML = document.getElementById('rptbody').innerHTML;
+
+function _interactionRows(items, withField) {
+  return items.map(e => {
+    const why = e.why ? `<div class="why">${esc(e.why)}</div>` : '';
+    const who = withField ? `${esc(e.with)} · ` : '';
+    return `<div class="ev"><span style="color:${LAYER_COLOR[e.domain] || '#888'}">●</span> `
+      + `${who}${esc(e.domain)}: ${esc(e.cameo)} (${e.sign > 0 ? '+' : ''}${e.sign})</div>${why}`;
+  }).join('');
+}
+
 function renderPanel() {
   const [a, b] = pair;
   const title = document.getElementById('rpttitle');
   const sub = document.getElementById('rptsub');
   const body = document.getElementById('rptbody');
-  if (!a || !b) {
-    title.textContent = 'Situation report';
-    sub.textContent = 'Written by a local LLM from the signed multi-layer signals · cached.';
-    body.innerHTML = GLOBAL_HTML;
+
+  if (a && b) {  // a focused pair
+    const p = PAIRS[[a, b].sort().join('|')];
+    title.textContent = a + ' & ' + b;
+    if (!p || (!p.text && !(p.edges && p.edges.length))) {
+      sub.textContent = '';
+      body.innerHTML = '<p class="muted">No direct interactions recorded between these two.</p>';
+      return;
+    }
+    sub.textContent = 'Pair summary (LLM + interactions, cached) · media-derived.';
+    body.innerHTML = (p.text ? '<p>' + esc(p.text) + '</p>' : '')
+      + (p.edges && p.edges.length
+        ? '<p class="muted2">Interactions &amp; reasons</p>'
+          + _interactionRows(p.edges, false) : '');
     return;
   }
-  const p = PAIRS[[a, b].sort().join('|')];
-  title.textContent = a + ' & ' + b;
-  if (!p || (!p.text && !(p.edges && p.edges.length))) {
-    sub.textContent = '';
-    body.innerHTML = '<p class="muted">No direct interactions recorded between these two.</p>';
+
+  if (selectedCountry) {  // a clicked country
+    const c = COUNTRIES[selectedCountry];
+    title.textContent = selectedCountry;
+    if (!c || (!c.text && !(c.interactions && c.interactions.length))) {
+      sub.textContent = '';
+      body.innerHTML = '<p class="muted">No summary recorded for this country.</p>';
+      return;
+    }
+    sub.textContent = 'Country summary (LLM + interactions, cached) · media-derived.';
+    body.innerHTML = (c.text ? '<p>' + esc(c.text) + '</p>' : '')
+      + (c.interactions && c.interactions.length
+        ? '<p class="muted2">Interactions &amp; reasons</p>'
+          + _interactionRows(c.interactions, true) : '');
     return;
   }
-  sub.textContent = 'Pair summary (LLM + interactions, cached) · media-derived.';
-  let h = p.text ? '<p>' + esc(p.text) + '</p>' : '';
-  if (p.edges && p.edges.length) {
-    h += '<p class="muted2">Interactions &amp; reasons</p>';
-    h += p.edges.map(e => {
-      const why = e.why ? `<div class="why">${esc(e.why)}</div>` : '';
-      return `<div class="ev"><span style="color:${LAYER_COLOR[e.domain] || '#888'}">●</span> `
-        + `${esc(e.domain)}: ${esc(e.cameo)} (${e.sign > 0 ? '+' : ''}${e.sign})</div>${why}`;
-    }).join('');
-  }
-  body.innerHTML = h;
+
+  title.textContent = 'Situation report';  // global
+  sub.textContent = 'Written by a local LLM from the signed multi-layer signals · cached.';
+  body.innerHTML = GLOBAL_HTML;
 }
 document.getElementById('rpt').onclick = () => report.classList.toggle('open');
 document.getElementById('rptclose').onclick = () => report.classList.remove('open');

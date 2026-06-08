@@ -38,6 +38,14 @@ _PAIR_PROMPT = (
     "DOMAINS & EVENTS:\n{lines}"
 )
 
+_COUNTRY_PROMPT = (
+    "Summarise {c}'s geopolitical situation over ~12 days in 3-4 sentences, focused on "
+    "the REASONS and key events, drawing on its interactions below (with whom, domain, "
+    "cooperation or conflict). Do NOT mention numeric scores — describe the underlying "
+    "dynamics in plain prose. Media-derived. Be specific.\n"
+    "INTERACTIONS:\n{lines}"
+)
+
 _PROMPT = (
     "You are a geopolitical analyst. Write a SITUATION REPORT in 4-6 short paragraphs "
     "from the signals below (from ~12 days of news coverage). For the main fault lines, "
@@ -166,6 +174,55 @@ def _pair_reports(model: str, refresh: bool, cached: dict, pairs: dict) -> dict:
     return out
 
 
+def build_countries(pairs: dict[str, list[dict]]) -> dict[str, list[dict]]:
+    """Per country: every interaction it takes part in (with whom, domain, reason)."""
+    countries: dict[str, list[dict]] = {}
+    for key, edges in pairs.items():
+        a, b = key.split("|")
+        for c, other in ((a, b), (b, a)):
+            lst = countries.setdefault(c, [])
+            for e in edges:
+                lst.append(
+                    {
+                        "with": other,
+                        "domain": e["domain"],
+                        "cameo": e["cameo"],
+                        "sign": e["sign"],
+                        "why": e["why"],
+                    }
+                )
+    return countries
+
+
+def _country_reports(model: str, refresh: bool, cached: dict, countries: dict) -> dict:
+    """Per-country entries {h, interactions, text}; LLM summary if >= MIN_LLM interactions."""
+    prev = cached.get("countries", {}) if cached else {}
+    todo = sum(1 for v in countries.values() if len(v) >= MIN_LLM)
+    out: dict[str, dict] = {}
+    done = 0
+    for name, ints in countries.items():
+        keep = ints[:14]  # cap embedded size
+        ch = hashlib.sha256(json.dumps(keep, sort_keys=True).encode()).hexdigest()[:12]
+        entry: dict = {"h": ch, "interactions": keep, "text": ""}
+        if len(ints) >= MIN_LLM:
+            old = prev.get(name)
+            if old and old.get("h") == ch and old.get("text") and not refresh:
+                entry["text"] = old["text"]
+            else:
+                lines = "\n".join(
+                    f"- {x['with']} · {x['domain']} ({_word(x['sign'])}): {x['why']}".rstrip(": ")
+                    for x in keep
+                )
+                txt = ollama(model, _COUNTRY_PROMPT.format(c=name, lines=lines), timeout=120)
+                entry["text"] = (txt or "").strip()
+                done += 1
+                if done % 10 == 0:
+                    print(f"  country summaries: {done}/{todo}")
+        out[name] = entry
+    print(f"  country summaries done ({todo} via LLM, {len(out)} total)")
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", default="qwen2.5:7b")
@@ -190,17 +247,25 @@ def main() -> None:
 
     print("generating per-pair summaries…")
     pair_reports = _pair_reports(args.model, args.refresh, cached, pairs)
+    print("generating per-country summaries…")
+    country_reports = _country_reports(args.model, args.refresh, cached, build_countries(pairs))
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(
         json.dumps(
-            {"hash": digest, "text": text, "facts": facts, "pairs": pair_reports},
+            {
+                "hash": digest,
+                "text": text,
+                "facts": facts,
+                "pairs": pair_reports,
+                "countries": country_reports,
+            },
             ensure_ascii=False,
             indent=2,
         ),
         encoding="utf-8",
     )
-    print(f"wrote {OUT} (global {len(text)} chars, {len(pair_reports)} pairs)")
+    print(f"wrote {OUT} ({len(pair_reports)} pairs, {len(country_reports)} countries)")
 
 
 if __name__ == "__main__":
