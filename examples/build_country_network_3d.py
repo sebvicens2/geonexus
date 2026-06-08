@@ -83,18 +83,22 @@ def main() -> None:
 _TEMPLATE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><title>GeoNexus — 3D country network</title>
 <style>
-  body { margin:0; background:#0b1020; color:#e2e8f0;
-    font-family:system-ui,sans-serif; overflow:hidden; }
-  #hud { position:fixed; top:0; left:0; right:0; z-index:10; padding:12px 18px;
-    background:linear-gradient(#0b1020f2,#0b102000); }
-  #hud h1 { margin:0; font-size:17px; }
-  #hud p { margin:4px 0 6px; font-size:12.5px; color:#94a3b8; }
-  .btn { background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:13px;
-    padding:6px 13px; border-radius:8px; cursor:pointer; margin-right:5px; }
-  .btn.on { background:#2563eb; border-color:#2563eb; color:#fff; }
-  select { background:#1e293b; color:#cbd5e1; border:1px solid #334155;
-    border-radius:8px; padding:5px 8px; font-size:13px; margin-right:4px; }
-  #pair { margin-top:8px; font-size:13px; color:#94a3b8; }
+  body { margin:0; color:#e2e8f0; overflow:hidden;
+    background:radial-gradient(ellipse at 50% 38%, #0e1730 0%, #070b15 55%, #04060d 100%);
+    font-family:"Segoe UI",system-ui,-apple-system,sans-serif; }
+  #hud { position:fixed; top:0; left:0; right:0; z-index:10; padding:14px 22px;
+    background:linear-gradient(180deg,#070b15ee 0%,#070b1500 100%); }
+  #hud h1 { margin:0; font-size:18px; font-weight:700; letter-spacing:.3px; }
+  #hud h1 span { color:#7dd3fc; }
+  #hud p { margin:5px 0 9px; font-size:12.5px; color:#8b9bb4; max-width:780px; }
+  .btn { background:#172033cc; border:1px solid #2b3a52; color:#cbd5e1; font-size:13px;
+    padding:6px 13px; border-radius:999px; cursor:pointer; margin-right:5px;
+    transition:all .15s; }
+  .btn:hover { border-color:#475569; background:#1e293b; }
+  .btn.on { background:#2563eb; border-color:#3b82f6; color:#fff; }
+  select { background:#172033cc; color:#cbd5e1; border:1px solid #2b3a52;
+    border-radius:999px; padding:5px 12px; font-size:13px; margin-right:4px; }
+  #pair { margin-top:9px; font-size:13px; color:#8b9bb4; }
   #g { position:fixed; inset:0; z-index:1; }
   #report { position:fixed; top:0; right:0; width:380px; max-width:90vw; height:100%;
     z-index:20; background:#0f172af2; border-left:1px solid #334155; padding:20px 22px;
@@ -120,7 +124,7 @@ _TEMPLATE = r"""<!doctype html>
 </script>
 </head><body>
 <div id="hud">
-  <h1>GeoNexus — 3D country network</h1>
+  <h1><span>GeoNexus</span> — 3D country network</h1>
   <p>Link colour = domain · dots = sign
      (<span style="color:#4ade80">green coop</span> /
      <span style="color:#f87171">red conflict</span>) · arrow = who acted (subject → object).
@@ -164,6 +168,13 @@ try {
     throw e2;
   }
 }
+// optional neon glow (post-processing); shares the same three instance, fails soft
+let THREE = null, UnrealBloomPass = null;
+try {
+  THREE = await import('https://esm.sh/three@0.160.0');
+  const mod = await import('https://esm.sh/three@0.160.0/addons/postprocessing/UnrealBloomPass.js?external=three');
+  UnrealBloomPass = mod.UnrealBloomPass;
+} catch (e) { /* bloom is optional */ }
 const D = __DATA__;
 const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign,why}]}
 const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interactions:[...]}
@@ -197,23 +208,29 @@ function graphFor(activeSet) {
 }
 
 let hlNodes = new Set(), hlLinks = new Set();
+const NODE_COLOR = n =>  // visual hierarchy by connectivity (bloom makes hubs glow)
+  n.deg >= 8 ? '#fcd34d' : n.deg >= 4 ? '#7dd3fc' : '#94a3b8';
 const Graph = ForceGraph3D()(document.getElementById('g'))
-  .backgroundColor('#0b1020')
+  .backgroundColor('rgba(0,0,0,0)')  // transparent -> CSS radial gradient shows through
   .nodeRelSize(4)
+  .nodeResolution(14)
+  .nodeOpacity(0.95)
   .nodeVal(n => 2 + n.deg)
+  .nodeColor(n => (hlNodes.size && !hlNodes.has(n.id)) ? 'rgba(148,163,184,0.25)' : NODE_COLOR(n))
   .nodeLabel('id')  // hover tooltip (and the only labels in UMD fallback mode)
   .nodeThreeObject(n => {
     if (!SpriteText) return undefined;  // fallback mode: no always-on labels
     const focused = hlNodes.size > 0 && hlNodes.has(n.id);
     if (!focused && !n.labelOn) return undefined;  // hubs + focused only
     const s = new SpriteText(n.id);
-    s.backgroundColor = false;  // no black box
-    s.padding = 0;
+    s.backgroundColor = 'rgba(7,11,21,0.5)';  // subtle pill for readability
+    s.padding = 1.5;
+    s.borderRadius = 3;
     s.borderWidth = 0;
     s.color = hlNodes.size > 0 && !focused ? 'rgba(200,210,225,0.25)' : '#f8fafc';
     s.textHeight = 7 + Math.min(6, n.deg);
     s.fontWeight = '600';
-    s.position.y = 9;
+    s.position.y = 10;
     return s;
   })
   .nodeThreeObjectExtend(true)
@@ -253,7 +270,7 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
       }
     });
     Graph.nodeThreeObject(Graph.nodeThreeObject());  // refresh labels
-    Graph.linkColor(Graph.linkColor());
+    Graph.linkColor(Graph.linkColor()); Graph.nodeColor(Graph.nodeColor());
     const d = 140, r = 1 + d / Math.hypot(node.x, node.y, node.z || 1);
     Graph.cameraPosition({ x: node.x * r, y: node.y * r, z: node.z * r }, node, 1200);
     selectedCountry = node.id;  // show this country's summary
@@ -263,9 +280,19 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .onBackgroundClick(() => {
     hlNodes = new Set(); hlLinks = new Set(); selectedCountry = null;
     Graph.nodeThreeObject(Graph.nodeThreeObject());
-    Graph.linkColor(Graph.linkColor());
+    Graph.linkColor(Graph.linkColor()); Graph.nodeColor(Graph.nodeColor());
     renderPanel();
   });
+
+Graph.d3Force('charge').strength(-150);  // more repulsion -> a more legible, spread layout
+
+if (UnrealBloomPass && THREE) {  // neon glow on nodes/links
+  try {
+    const bloom = new UnrealBloomPass(
+      new THREE.Vector2(window.innerWidth, window.innerHeight), 1.1, 0.7, 0.05);
+    Graph.postProcessingComposer().addPass(bloom);
+  } catch (e) { /* skip bloom */ }
+}
 
 const lid = l => l.source.id || l.source;       // link endpoints can be id or node obj
 const tid = l => l.target.id || l.target;
