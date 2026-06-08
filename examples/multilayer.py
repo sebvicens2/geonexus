@@ -23,7 +23,13 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from geonexus import Actor, GeoNexus, Relation, RelationType
 
-CAMEO = Path(__file__).parent / "data" / "world_observer_cameo.json"
+_DATA = Path(__file__).parent / "data"
+# prefer the audited/gated extraction (fully-valid links) when available
+CAMEO = (
+    _DATA / "world_observer_cameo_verified.json"
+    if (_DATA / "world_observer_cameo_verified.json").exists()
+    else _DATA / "world_observer_cameo.json"
+)
 MARITIME = Path(__file__).parent / "data" / "world_observer_maritime.json"
 SAMPLE = Path(__file__).parent / "data" / "world_observer_sample.json"
 REPORT = Path("reports") / "world_observer_multilayer.md"

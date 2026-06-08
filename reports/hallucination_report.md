@@ -1,252 +1,147 @@
 # GeoNexus — CAMEO link audit
 
-_Strict fact-check of 425 extracted links vs their source summaries: is the tie a DIRECT interaction between the two countries, is the DOMAIN right, is the STANCE supported? Report only — nothing is removed._
+_Strict fact-check of 327 extracted links vs their source summaries: is the tie a DIRECT interaction between the two countries, is the DOMAIN right, is the STANCE supported? Report only — nothing is removed._
 
 ## Trust scores
 
-- **fully valid (direct + domain + stance): 210 (49%)**
-- direct interaction: 252 (59%)
-- domain correct: 241 (56%)
-- stance supported: 211 (49%)
-- both actors present in source (deterministic): 360
+- **fully valid (direct + domain + stance): 217 (66%)**
+- direct interaction: 244 (74%)
+- domain correct: 232 (70%)
+- stance supported: 220 (67%)
+- both actors present in source (deterministic): 298
 
 ## Domain misclassification (claimed -> correct)
 
-- economic -> none: 58
-- military -> none: 53
-- diplomatic -> none: 52
-- energy -> none: 12
+- diplomatic -> none: 45
+- economic -> none: 24
+- military -> none: 14
 - diplomatic -> military: 5
-- health -> none: 3
-- diplomatic -> economic: 1
+- energy -> none: 3
+- economic -> diplomatic: 2
+- health -> none: 2
 
 ## Most-flagged source summaries
 
-- central_banks: 5
-- gulf_iran: 3
+- Turkey: 4
 - taiwan_strait: 3
 - china_indo_pacific: 3
-- north_american_trade: 3
-- fx: 3
-- sovereign_debt: 3
-- Somalia: 3
-- Ethiopia: 3
-- nordic_arctic: 3
+- africa_sahel: 3
+- south_asia: 3
+- gulf_iran: 2
+- Canada: 2
+- critical_minerals: 2
+- Belgium: 2
+- sanctions: 2
 
-## Flagged links (215)
+## Flagged links (110)
 
-- US →[diplomatic]→ Canada (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between US and Canada._
-- Russia →[diplomatic]→ North Korea (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention Russia-North Korea interaction._
-- Canada →[economic]→ U.S. (material_conflict): **not-direct, domain→none, unsupported** — _Summary mentions Canada and U.S. but not their direct interaction._
-- US →[military]→ Israel (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between US and Israel._
-- Iran →[diplomatic]→ US (verbal_conflict): **domain→military** — _Military skirmishes near Strait of Hormuz mentioned._
-- Israel →[military]→ US (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Israel and US._
-- Iran →[economic]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Iran and China._
-- Iran →[energy]→ Israel (verbal_conflict): **unsupported** — _Claimed domain overemphasizes; primary issue is military conflict._
-- Iran →[diplomatic]→ Israel (verbal_conflict): **domain→military, unsupported** — _Summary describes military actions, not diplomatic interactions._
-- U.S. →[health]→ Mauritius (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions Ebola but not interaction between U.S. and Mauritius._
-- U.S. →[military]→ Israel (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe US-Israel military interaction._
-- US →[economic]→ Asia (countries) (material_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not specify direct interaction between US and Asia._
-- UN →[health]→ Iran (neutral): **not-direct, domain→none, unsupported** — _Summary mentions UN report on Iran but no interaction._
-- Ukraine →[military]→ NATO (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention Ukraine-NATO interaction._
-- US →[diplomatic]→ Israel (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention US-Israel direct interaction._
-- Western_countries →[economic]→ Israel (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions sanctions preparation, not interaction._
-- Russia →[military]→ Iran (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Russia and Iran._
-- US →[economic]→ Russia (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe US-Russia interaction._
-- UK →[diplomatic]→ Ukraine (verbal_conflict): **unsupported** — _PM warns Russia, not direct conflict with Ukraine._
-- Mercuria Energy Group →[energy]→ Government(s) (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not specify which government Mercuria deals with._
-- Japan →[military]→ China (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Japan and China._
-- Japan →[diplomatic]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary does not show direct diplomatic interaction._
-- UN →[economic]→ Lebanon (verbal_cooperation): **not-direct, domain→none, unsupported** — _UN aid, not economic interaction._
-- OPEC+ →[economic]→ OPEC (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between OPEC and OPEC+._
-- OPEC+ →[energy]→ OPEC (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between OPEC and OPEC+._
-- US →[military]→ Europe (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions US but not interacting militarily with Europe._
-- India →[diplomatic]→ Bangladesh (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions dispute but no current interaction described._
-- Iran →[economic]→ Saudi Arabia (neutral): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention interaction between Iran and Saudi Arabia._
-- South Korea →[economic]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between South Korea and China._
-- US →[diplomatic]→ Iran (verbal_conflict): **domain→military, unsupported** — _Summary describes military, not diplomatic interactions._
-- Israel →[military]→ Microsoft (material_conflict): **unsupported** — _Summary mentions inquiry not conflict._
-- Taiwan →[military]→ US (verbal_conflict): **unsupported** — _Summary shows support not conflict._
-- China →[military]→ Japan (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between China and Japan._
-- Beijing →[military]→ Taiwan (material_cooperation): **not-direct, domain→none, unsupported** — _Summary describes interactions but not direct cooperation between Beijing and Taiwan._
-- Anthropic →[diplomatic]→ Global community (verbal_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention interaction between Anthropic and global community._
-- Ukraine →[diplomatic]→ Putin (verbal_cooperation): **unsupported** — _Summary mentions proposal but no actual cooperation indicated._
-- Russia →[economic]→ Western business jets manufacturers (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention interaction between Russia and jet manufacturers._
-- Dutch →[military]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Dutch and China._
-- Brazil →[diplomatic]→ US (verbal_conflict): **unsupported** — _Summary mentions designation but no conflict stated._
-- Brazil →[economic]→ global_tensions (neutral): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions economic pressures but not from interaction._
-- US →[economic]→ Germany (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe economic interaction between US and Germany._
-- China →[military]→ Middle East (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions risks, not direct interaction._
-- China →[diplomatic]→ Taiwan (neutral): **domain→military, unsupported** — _Summary mentions operations near Taiwan, not diplomatic interaction._
-- China →[economic]→ Japan (material_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions but does not describe direct economic interaction._
-- China →[diplomatic]→ Russia (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention China-Russia interaction._
-- Middle East →[energy]→ China (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Middle East and China._
-- U.S. →[military]→ China (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between U.S. and China._
-- Mexico →[military]→ World Cup organizers (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions Mexico's internal action, not interaction with organizers._
-- Geopolitical tensions →[diplomatic]→ Global (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions tensions but not specific diplomatic interactions._
-- NATO →[military]→ Russia (neutral): **not-direct, domain→none, unsupported** — _Summary mentions NATO challenges but not interaction with Russia._
-- UK →[diplomatic]→ Russia (verbal_conflict): **not-direct, domain→none, unsupported** — _UK PM warned of future NATO risk, no direct interaction._
-- US/Europe →[economic]→ Russia (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention US/Europe economic interaction with Russia._
-- India →[diplomatic]→ China (verbal_conflict): **unsupported** — _Summary shows attempts to rebuild relations, not conflict._
-- Japan →[economic]→ Philippines (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions talks, not economic interaction._
-- US →[military]→ Brazil (verbal_conflict): **domain→none, unsupported** — _Summary mentions designation but not military interaction._
-- Tanzania →[economic]→ Kenya (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Tanzania and Kenya._
-- Nigeria →[economic]→ Tanzania (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Nigeria and Tanzania._
-- DRC →[economic]→ Uganda (verbal_conflict): **domain→none, unsupported** — _Summary mentions both countries but not their economic interaction._
-- Somalia →[military]→ East African Community (neutral): **not-direct, domain→none, unsupported** — _Summary mentions Somalia but not interacting with EAC._
+- Iran →[diplomatic]→ Israel (verbal_conflict): **domain→military** — _Iran launches missiles at Israeli targets._
+- Iran →[energy]→ Israel (material_cooperation): **not-direct, domain→none, unsupported** — _Summary shows conflict, not cooperation or energy interaction._
+- US →[diplomatic]→ Israel (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention US-Israel interaction._
+- Ukraine →[diplomatic]→ Russia (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary shows conflict, not diplomatic cooperation._
+- Western countries →[economic]→ Israel (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions sanctions threat, not economic cooperation._
+- Canadian Prime Minister Carney →[diplomatic]→ US (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions Carney, but not as current PM; interaction details missing._
+- Canadian Prime Minister Carney →[diplomatic]→ China (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions Carney, but not interacting with China._
+- UN →[economic]→ Lebanon (material_cooperation): **not-direct, domain→none, unsupported** — _UN aid, not economic interaction._
+- French Foreign Minister →[economic]→ Israel (verbal_cooperation): **domain→none, unsupported** — _No economic interaction mentioned_
+- China →[economic]→ Japan (material_conflict): **unsupported** — _Summary states decrease but not conflict._
+- Pakistan →[military]→ India (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions claim but does not describe direct interaction._
+- EU →[diplomatic]→ China (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention EU-China interaction._
+- South Korea →[economic]→ multiple sources (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interactions with multiple sources._
+- Ukraine →[diplomatic]→ EU (material_conflict): **unsupported** — _Ukraine requests, not in conflict._
+- EU →[economic]→ Israel (material_conflict): **domain→diplomatic, unsupported** — _EU considers sanctions, not economic interaction._
+- China →[military]→ Japan (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between China and Japan._
+- US →[diplomatic]→ Taiwan (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct diplomatic interaction._
+- China →[diplomatic]→ Taiwan (verbal_conflict): **domain→military, unsupported** — _Summary shows military tensions, not diplomatic interactions._
+- Anthropic →[diplomatic]→ global (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe country interaction._
+- UK →[economic]→ Israel (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions sanctions threat, not economic cooperation._
+- EU →[economic]→ Israel (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions EU considering sanctions, not cooperation._
+- Brazil →[economic]→ US (neutral): **not-direct, domain→none, unsupported** — _Summary mentions US action, not mutual interaction._
+- US →[military]→ Russia (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe US-Russia interaction in military domain._
+- Germany →[economic]→ Japan (neutral): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention Japan or relevant economic interaction._
+- China →[diplomatic]→ Japan (neutral): **not-direct, domain→none, unsupported** — _Summary mentions but does not describe direct interaction._
+- China →[military]→ Taiwan (material_cooperation): **unsupported** — _Summary mentions ops near Taiwan, not cooperation._
+- China →[diplomatic]→ Philippines (neutral): **not-direct, domain→none, unsupported** — _Summary mentions China and Philippines but not interacting._
+- Australia →[diplomatic]→ United States (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe direct interaction between Australia and US._
+- Mexico →[military]→ World Cup participants (neutral): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions Mexico's internal actions, not interactions._
+- NATO →[military]→ Russia (neutral): **not-direct, domain→none, unsupported** — _Summary mentions NATO but not interacting with Russia._
+- NATO →[military]→ Ukraine (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between NATO and Ukraine._
+- US →[diplomatic]→ Europe (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention US-Europe interaction._
+- China →[diplomatic]→ US (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions claims but no direct interaction._
+- Myanmar's military →[economic]→ Russia (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention economic interaction._
+- Kenya →[economic]→ US (verbal_conflict): **domain→none, unsupported** — _Claimed economic conflict not described in summary._
 - Uganda →[economic]→ DR Congo (material_conflict): **unsupported** — _Trade halted due to health concerns, not conflict._
 - Uganda →[economic]→ Congo (material_conflict): **unsupported** — _Summary states disruption but not conflict._
-- Uganda →[diplomatic]→ DR Congo (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary describes border closure, not diplomatic interaction._
-- Argentina →[diplomatic]→ Chile (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Argentina and Chile._
-- Italy →[military]→ Malta (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions Malta but no direct interaction described._
-- OPEC →[economic]→ Iran (material_conflict): **not-direct, domain→none, unsupported** — _Summary mentions OPEC and Iran but does not describe their interaction._
-- South Africa →[diplomatic]→ Kenya (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between South Africa and Kenya._
-- US →[energy]→ China (material_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions rivalry, not cooperation._
-- US →[diplomatic]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe a neutral diplomatic interaction._
-- Uzbekistan →[military]→ Russia (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention military interaction._
-- China →[energy]→ Russia (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between China and Russia._
-- Bank of England →[energy]→ Middle East (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions crisis but no direct interaction._
-- India →[energy]→ Middle East (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions but does not describe interaction between India and Middle East._
-- Pakistan →[economic]→ Middle East (verbal_conflict): **unsupported** — _Summary mentions effects but no conflict stated._
-- Venezuela →[economic]→ Middle East (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Venezuela and Middle East._
-- Kazakhstan →[economic]→ Middle East (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Kazakhstan and the Middle East._
+- EU →[economic]→ China (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention EU-China interaction._
+- Chile →[diplomatic]→ Argentina (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Chile and Argentina._
+- Italy →[health]→ Malta (neutral): **not-direct, domain→none, unsupported** — _Summary mentions Malta but does not describe interaction._
+- OPEC+ →[diplomatic]→ UAE (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between OPEC+ and UAE._
+- PLA →[military]→ Dutch warship (verbal_cooperation): **unsupported** — _PLA responded but did not cooperate with the Dutch ship._
+- South Africa →[economic]→ Kenya (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between South Africa and Kenya._
+- Uzbekistan →[economic]→ Russia (material_cooperation): **domain→none, unsupported** — _Nuclear construction not explicitly economic interaction._
+- Kuwait →[diplomatic]→ Iran (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary shows Iran attacking Kuwait, no diplomatic interaction._
 - US →[diplomatic]→ Colombia (verbal_conflict): **unsupported** — _Summary shows endorsement but no conflict._
-- China →[diplomatic]→ US (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between China and US._
 - Israel →[diplomatic]→ Iran (verbal_conflict): **contradicted** — _Summary states negative views of Israel increased due to conflict, not direct diplomatic interaction._
-- North Korea →[diplomatic]→ United States (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe direct interaction between NK and USA._
-- Israel →[diplomatic]→ Egypt (verbal_conflict): **unsupported** — _Summary mentions talks but does not indicate conflict._
-- Turkey →[diplomatic]→ Iran (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Turkey and Iran._
-- US →[military]→ Central America (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions detection, not interaction._
-- Mexico →[economic]→ US (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions issues but no direct economic conflict._
-- Mexico →[diplomatic]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention direct interaction between Mexico and China._
-- Alberta →[diplomatic]→ Canada (verbal_conflict): **unsupported** — _Summary mentions but does not detail conflict or specific interaction._
-- Ontario →[diplomatic]→ Alberta (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Ontario and Alberta._
-- US →[military]→ Singapore (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe direct military interaction between US and Singapore._
-- Singapore →[military]→ Taiwan (verbal_conflict): **unsupported** — _Summary mentions training but not conflict._
-- US →[economic]→ Latin America (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction._
-- South Korea →[economic]→ US (material_conflict): **unsupported** — _Summary states fact, no conflict mentioned._
-- Indonesia →[economic]→ Malaysia (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions countries but not their interaction._
-- OPEC+ →[economic]→ Russia (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not link OPEC+ and Russia directly._
-- China →[economic]→ Central banks (verbal_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe interaction between China and central banks._
-- China →[economic]→ Global central banks (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe direct interaction between China and global central banks._
-- Royal_Bank_of_Canada →[economic]→ National_Bank_of_Canada (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention interaction between the two banks._
-- IMF →[diplomatic]→ Lipsky (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions IMF podcast, no interaction or domain specified._
-- Egypt →[diplomatic]→ Iran (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention Egypt interacting with Iran._
-- Ukraine →[economic]→ Africa (material_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe interaction between Ukraine and Africa._
+- North Korea →[diplomatic]→ United States (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe direct interaction between NK and US._
+- Russia →[economic]→ Armenia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions political pressure, not economic interaction._
+- Egypt →[diplomatic]→ Israel (neutral): **not-direct, domain→none, unsupported** — _Summary mentions Egypt hosting talks but not interacting with Israel._
+- Egypt →[diplomatic]→ Gaza (neutral): **not-direct, domain→none, unsupported** — _Summary mentions Egypt hosting talks, not direct interaction with Gaza._
+- Turkey →[diplomatic]→ Iran (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Turkey and Iran._
+- Turkey →[economic]→ NATO (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct economic interaction between Turkey and NATO._
+- Singapore →[military]→ Taiwan (neutral): **not-direct, domain→none, unsupported** — _Summary mentions troops training but not interaction between Singapore and Taiwan._
+- Singapore →[diplomatic]→ US (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not show direct interaction in claimed domain or stance._
+- US →[diplomatic]→ Canada (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between US and Canada._
+- Asia →[energy]→ Iran (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Asia and Iran._
+- Egyptian officials →[diplomatic]→ Kuwait (verbal_conflict): **not-direct, domain→none, unsupported** — _Egypt condemned Kuwait, not direct interaction._
 - UN →[military]→ Libya (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention UN interaction with Libya._
-- Singapore →[diplomatic]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary mentions pressure but no direct diplomatic interaction stated._
-- Portugal →[diplomatic]→ Germany (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Portugal and Germany._
-- China →[diplomatic]→ Philippines (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between China and Philippines._
-- Venezuela →[economic]→ France (verbal_conflict): **unsupported** — _Summary mentions controversy over French financier's involvement, not country interaction._
-- U.S. →[economic]→ Dr. Doom Peter Schiff (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between U.S. and Peter Schiff._
-- G20 →[economic]→ Venezuela (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions G20 template, not direct interaction with Venezuela._
-- Germany →[diplomatic]→ Ukraine (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions Russia supporting Ukraine, not direct interaction between Germany and Ukraine._
-- US →[health]→ China (verbal_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions both countries but not their interaction._
+- UN →[military]→ Nigeria (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention UN interaction with Nigeria._
+- UN →[military]→ Sahel region (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions UN warning but no interaction described._
+- U.S. →[diplomatic]→ China (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention direct interaction between U.S. and China._
+- Uganda →[diplomatic]→ DR Congo (neutral): **not-direct, domain→none, unsupported** — _Summary describes border closure and trade impacts, not diplomatic interactions._
+- Pakistan →[diplomatic]→ newly elected non-permanent UNSC members (verbal_cooperation): **not-direct, domain→none, unsupported** — _Pakistan only congratulates, no interaction mentioned._
 - U.S. Department of Defense →[military]→ Chinese firms (material_conflict): **unsupported** — _Summary mentions challenges but no direct interaction stated._
-- India →[economic]→ Australia (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between India and Australia._
-- US →[diplomatic]→ Russia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between US and Russia._
-- Russian →[military]→ Uzbekistan (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions celebration of nuclear power, not military cooperation._
-- China →[diplomatic]→ Quad (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between China and Quad._
-- China →[diplomatic]→ US (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions China criticizing US, not diplomatic cooperation._
-- OPEC →[economic]→ US (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between OPEC and US._
-- OPEC+ →[economic]→ Iran (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between OPEC+ and Iran._
-- South Africa →[economic]→ Mozambique (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between SA and Mozambique._
-- South Africa →[diplomatic]→ Zimbabwe (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between SA and Zimbabwe._
-- China →[military]→ Vietnam (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between China and Vietnam in military domain._
-- Taiwan →[military]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Taiwan and China._
-- Brazil →[economic]→ Latin American markets (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions Brazil and Latin American markets but does not describe interaction._
-- Brazil →[economic]→ Southeast Asia (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Brazil and Southeast Asia._
-- UN →[military]→ Serbia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions UN condemning a killing but no interaction with Serbia._
-- Switzerland →[diplomatic]→ Donald Trump Jr. (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions but does not describe interaction between countries._
-- Switzerland →[economic]→ Partners Group (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between countries._
-- Ukraine →[economic]→ Africa (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions effects on Africa, not direct interaction._
-- Africa →[energy]→ Iran (material_conflict): **not-direct, domain→none, unsupported** — _Summary mentions Iran but not interacting with Africa in claimed domain._
-- China →[diplomatic]→ Japan (verbal_conflict): **domain→economic, unsupported** — _Rare-earth exports dropped, not diplomatic conflict._
-- Kyrgyzstan →[diplomatic]→ Kazakhstan (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not show direct interaction between Kyrgyzstan and Kazakhstan._
-- UN →[diplomatic]→ Middle East (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between UN and Middle East._
-- UN →[military]→ Somalia (neutral): **domain→none, unsupported** — _Summary mentions UN warnings but no direct military interaction._
-- UN →[economic]→ International aid networks (verbal_conflict): **domain→none, unsupported** — _UN warns but does not interact economically with aid networks._
-- Finland →[military]→ Russia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct military interaction._
-- Finland →[military]→ NATO (verbal_conflict): **unsupported** — _Summary mentions NATO borders near Finland, no conflict stated._
-- Panama →[diplomatic]→ US (verbal_conflict): **unsupported** — _Summary mentions balance but no conflict._
-- Panama →[diplomatic]→ China (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction in claimed domain._
-- Poland →[economic]→ European Union (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention EU economic interaction._
-- Zimbabwe →[diplomatic]→ South Africa (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Zimbabwe and South Africa._
-- Romania →[military]→ Ukraine (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct military interaction._
-- Senegal →[military]→ Mali (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Senegal and Mali._
-- FRETILIN →[diplomatic]→ Ministry of Foreign and Cooperative Affairs (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not show interaction between FRETILIN and the ministry._
-- United States →[military]→ Bolivia (verbal_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe direct military interaction._
-- Slovakia →[diplomatic]→ Serbia (verbal_conflict): **unsupported** — _Summary states discussion, not conflict._
-- Mali →[military]→ US (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Mali and US._
-- Trafigura →[energy]→ Middle East (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions Trafigura but does not describe interaction._
-- UN →[diplomatic]→ US (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between UN and US._
-- CEPA →[economic]→ Government_of_Papua_New_Guinea (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe interaction between CEPA and PNG government._
-- Turkey →[military]→ Malta (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Turkey and Malta._
-- Turkey →[diplomatic]→ Russia (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention interaction between Turkey and Russia._
-- Yemen →[diplomatic]→ Iran (verbal_conflict): **not-direct, domain→none, unsupported** — _Yemen condemned Iran but no direct interaction stated._
-- Ukraine →[military]→ EU (material_conflict): **unsupported** — _Summary mentions EU support but not conflict._
-- Sweden →[military]→ Brazil (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Sweden and Brazil._
-- Syria →[economic]→ Saudi Arabia (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention Saudi Arabia or economic interaction._
-- Chile →[economic]→ Brazil (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Chile and Brazil._
-- Ethiopia →[diplomatic]→ US (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention direct interaction between Ethiopia and the US._
-- Ethiopia →[diplomatic]→ IGAD (neutral): **not-direct, domain→none, unsupported** — _Summary mentions IGAD but not interacting with Ethiopia._
-- Ethiopia →[economic]→ Yemen (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Ethiopia and Yemen._
-- Greece →[military]→ Turkey (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Greece and Turkey._
-- Sudan →[military]→ United States (material_conflict): **unsupported** — _Summary mentions US-led coalition but not direct interaction with Sudan._
-- Somalia →[diplomatic]→ Government (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Somalia and a generic "Government"._
-- Albania →[diplomatic]→ EU (verbal_conflict): **unsupported** — _Summary mentions EU concerns but no conflict stated._
-- Opec+ →[economic]→ UAE (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Opec+ and UAE._
-- China →[military]→ Czech Republic (material_conflict): **unsupported** — _Summary states cyberattacks, not military conflict._
-- Czech Republic →[diplomatic]→ Russia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe a diplomatic interaction between Czech and Russia._
-- India →[diplomatic]→ Myanmar (verbal_conflict): **unsupported** — _Summary mentions engagement but not conflict._
-- China →[economic]→ Russia (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between China and Russia._
-- Azerbaijan →[military]→ Ukraine (via Azov Sea) (material_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention interaction between Azerbaijan and Ukraine._
-- US →[military]→ Yemen (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between US and Yemen._
-- Bank of Canada →[economic]→ Economists (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions economists' views, no interaction shown._
-- Estonia →[diplomatic]→ Russia (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Estonia and Russia._
-- Denmark →[military]→ Ukraine (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions match, no direct interaction._
-- China →[military]→ New Zealand (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe military interaction._
-- Russia →[diplomatic]→ Ukraine (verbal_conflict): **domain→military, unsupported** — _Summary describes military actions, not diplomatic interactions._
-- Federal_Reserve →[military]→ Middle_East (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions impacts but no direct interaction._
-- Brazil →[economic]→ Federal_Reserve (verbal_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions both but shows no direct interaction._
-- U.S. →[diplomatic]→ Sweden (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between U.S. and Sweden._
-- UK →[economic]→ Norway (neutral): **not-direct, domain→none, unsupported** — _Summary mentions UK and Norway separately, no interaction._
-- Norway →[economic]→ Canada (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Norway and Canada._
-- US and Italy →[military]→ Niger (material_conflict): **unsupported** — _Summary states assistance but no conflict mentioned._
-- Intel →[economic]→ Broadcom (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Intel and Broadcom._
-- Sudan →[military]→ RSF (material_conflict): **unsupported** — _Summary mentions RSF but not interacting with Sudan._
-- Morocco →[military]→ Brazil (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions training near but no military interaction._
-- Senegal →[diplomatic]→ Morocco (verbal_conflict): **not-direct, domain→none, unsupported** — _Senegal and Morocco not directly interacting._
-- Uruguay →[energy]→ Vaca Muerta (material_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions field, not interaction._
-- Iran →[economic]→ US (neutral): **not-direct, domain→none, unsupported** — _Summary mentions interactions but not economic ones._
-- Iran →[energy]→ Kazakhstan (material_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions but does not describe interaction between them._
-- Ireland →[economic]→ Cardano Community (neutral): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions Cardano but no interaction described._
-- Luxembourg →[diplomatic]→ Germany (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Luxembourg and Germany._
-- Luxembourg →[military]→ Romania (material_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions trains but no military interaction._
-- Ghana →[diplomatic]→ African Union (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention AU interaction._
-- Ghana →[economic]→ international organizations (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention interaction with intl orgs._
-- Guatemala →[military]→ United States (verbal_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary mentions but does not describe direct military interaction._
-- Jordan →[military]→ Israel (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Jordan and Israel._
-- Slovakia →[military]→ Russia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct military interaction._
-- Slovakia →[diplomatic]→ EU (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention EU interaction._
-- Rwanda →[economic]→ European Union (neutral): **not-direct, domain→none, unsupported** — _Summary mentions EU policy, not direct interaction with Rwanda._
-- Tunisia →[diplomatic]→ UNHCR (verbal_conflict): **unsupported** — _Protesters targeted UNHCR, not state-level interaction._
-- Tunisia →[military]→ sub-Saharan African migrants (neutral): **domain→none, unsupported** — _Protesters target migrants, no military interaction._
-- Venezuela →[military]→ Iran (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Venezuela and Iran._
-- Venezuela →[military]→ United States (material_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe direct military conflict between them._
-- Cambodia →[economic]→ CPTPP (material_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions considering joining, not interaction with another country._
-- Uganda →[diplomatic]→ Congo (verbal_conflict): **unsupported** — _Uganda closed border, not explicit conflict._
-- EU →[diplomatic]→ Serbia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions countries but not direct interaction._
-- Namibia →[diplomatic]→ South Africa (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Namibia and South Africa._
-- Paraguay →[diplomatic]→ Argentina (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Paraguay and Argentina._
-- Argentina →[diplomatic]→ Brazil (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Argentina and Brazil._
-- Argentina →[economic]→ South American countries (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct economic interactions._
-- Kuwait →[military]→ Bahrain (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Kuwait and Bahrain._
-- Ivory Coast →[military]→ France (verbal_conflict): **not-direct, domain→none, unsupported** — _Sports event, not military interaction._
-- Trump administration →[diplomatic]→ Western Balkans (verbal_conflict): **unsupported** — _Summary mentions policy report but not conflict._
-- Burkina Faso →[military]→ Mali (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Burkina Faso and Mali._
-- Ecuador →[military]→ Security forces (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe country interaction._
-- Argentina →[diplomatic]→ Ecuador (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Argentina and Ecuador._
-- Estonia →[military]→ Russia (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Estonia and Russia._
-- Laos →[military]→ United States (material_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not describe interaction between Laos and US._
-- Laos →[energy]→ Laotian teams (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention country-country interaction._
+- China →[economic]→ US (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention direct interaction between China and US._
+- Pakistan →[economic]→ India (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions claims but no direct economic interaction._
+- Russia →[diplomatic]→ Pakistan (verbal_conflict): **domain→military, unsupported** — _Summary mentions security ties, not diplomatic conflict._
+- India →[diplomatic]→ Myanmar (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between India and Myanmar._
+- China →[diplomatic]→ South China Sea countries (verbal_conflict): **domain→military, unsupported** — _Summary mentions China's actions, not diplomatic interactions._
+- Taiwan →[military]→ South China Sea countries (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention interaction between Taiwan and other South China Sea countries._
+- Serbia →[diplomatic]→ Kosovo (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Serbia and Kosovo._
+- Japan →[diplomatic]→ Philippines (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Japan and Philippines._
+- EBRD →[economic]→ Kyrgyzstan (material_conflict): **unsupported** — _EBRD downgraded forecast, no conflict stated._
+- Opec+ →[economic]→ OPEC+ member countries (material_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention OPEC+ interactions._
+- US →[diplomatic]→ Iran (verbal_conflict): **domain→military** — _US ships targeted by Iranian missiles_
+- Panama →[diplomatic]→ China (neutral): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Panama and China._
+- European countries →[diplomatic]→ Russia (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between European countries and Russia._
+- US →[diplomatic]→ Shield of Americas (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between US and Shield of Americas._
+- US →[military]→ Africa (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct US-Africa interaction._
+- Qatar →[diplomatic]→ Israel (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary does not show direct interaction between Qatar and Israel._
+- UN →[economic]→ US-Iran (material_conflict): **unsupported** — _Summary mentions UN warning but no direct interaction stated._
+- Russia →[military]→ Pakistan (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention Russia-Pakistan interaction._
+- Erdogan →[diplomatic]→ Putin (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention Erdogan-Putin interaction._
+- EU →[diplomatic]→ Ukraine (verbal_conflict): **unsupported** — _Summary mentions support but not conflict._
+- Greece →[diplomatic]→ Cyprus (neutral): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between Greece and Cyprus._
+- OPEC+ →[diplomatic]→ UAE (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not mention interaction between OPEC+ and UAE._
+- OPEC+ →[diplomatic]→ U.S., Iran (material_conflict): **not-direct/actor-absent, domain→none, unsupported** — _Summary lacks direct interaction details._
+- 11 European countries →[economic]→ Russia (verbal_conflict): **domain→none, unsupported** — _Summary mentions visa policies, not economic interaction._
+- India →[diplomatic]→ Myanmar's junta (neutral): **unsupported** — _Summary mentions but does not clarify nature of interaction._
+- China →[economic]→ Russia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between China and Russia._
+- Armenia →[diplomatic]→ Russia (verbal_conflict): **unsupported** — _Summary mentions pressure but no conflict stated._
+- Yemen →[diplomatic]→ Iran (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Yemen and Iran._
+- Estonia →[diplomatic]→ Russia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Estonia and Russia._
+- United States →[economic]→ Five Eyes allies (verbal_cooperation): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention economic interaction between US and Five Eyes._
+- Sudan →[economic]→ UNICEF (material_cooperation): **domain→diplomatic** — _Sudan signed an agreement with UNICEF for a project._
+- Morocco →[diplomatic]→ Brazil (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions co-location for training, not diplomatic interaction._
+- Brazil →[diplomatic]→ Morocco (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions both countries but does not describe an interaction._
+- US →[economic]→ Iran (neutral): **not-direct, domain→none, unsupported** — _Summary mentions interactions but not economic ones._
+- U.S. →[military]→ Central America (material_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct military interaction._
+- Jordan →[diplomatic]→ Israel (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Jordan and Israel._
+- European Union →[diplomatic]→ United States (neutral): **not-direct/actor-absent, domain→none, unsupported** — _Summary does not mention EU-US interaction._
+- Venezuela →[economic]→ US (material_conflict): **unsupported** — _Summary shows increased exports, not conflict._
+- China →[diplomatic]→ Global Trade (verbal_cooperation): **not-direct, domain→none, unsupported** — _Summary mentions China's concern but no direct interaction stated._
+- Argentina →[economic]→ South America (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction between Argentina and South America._
+- Argentina →[energy]→ South America (material_cooperation): **not-direct, domain→none, unsupported** — _Summary does not describe direct interaction in energy domain._
+- Kuwait →[diplomatic]→ Bahrain (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary does not describe interaction between Kuwait and Bahrain._
+- European countries →[health]→ migrants (material_conflict): **not-direct, domain→none, unsupported** — _Summary mentions policy towards migrants, not interaction._
+- Benin →[economic]→ Niger (material_cooperation): **domain→none, unsupported** — _Visit focused on security and trade, no explicit economic interaction._
+- European countries →[diplomatic]→ Russia (verbal_conflict): **not-direct, domain→none, unsupported** — _Summary mentions actions but not direct interaction between Europe and Russia._

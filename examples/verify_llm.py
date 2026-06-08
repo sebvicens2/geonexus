@@ -27,8 +27,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from extract_cameo import ollama
-from multilayer import CAMEO, NARR, _canon
+from multilayer import NARR, _canon
 
+RAW = Path(__file__).parent / "data" / "world_observer_cameo.json"  # audit the raw extraction
+VERIFIED = Path(__file__).parent / "data" / "world_observer_cameo_verified.json"  # gated output
 CACHE = Path(__file__).parent / "data" / "cameo_verification.json"
 REPORT = Path("reports") / "hallucination_report.md"
 STANCE = {2: "cooperation", 1: "cooperation", 0: "neutral", -1: "conflict", -2: "conflict"}
@@ -104,7 +106,7 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0)
     args = ap.parse_args()
 
-    edges = json.loads(CAMEO.read_text(encoding="utf-8"))
+    edges = json.loads(RAW.read_text(encoding="utf-8"))
     if args.limit:
         edges = edges[: args.limit]
     summ = _summaries()
@@ -141,8 +143,20 @@ def main() -> None:
 
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
     _report(results)
+
+    # gate: write the fully-valid links (the network prefers this file). Skip on --limit.
+    keep = ("a", "b", "domain", "cameo", "sign", "source", "day")
+    valid_edges = [
+        {k: r[k] for k in keep if k in r}
+        for r in results
+        if r["direct"] and r["domain_ok"] and r["stance"] == "SUPPORTED"
+    ]
+    if not args.limit:
+        VERIFIED.write_text(json.dumps(valid_edges, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"gated -> {VERIFIED.name} ({len(valid_edges)} fully-valid links kept)")
+
     n = len(results) or 1
-    valid = sum(1 for r in results if r["direct"] and r["domain_ok"] and r["stance"] == "SUPPORTED")
+    valid = len(valid_edges)
     print(
         f"\n{len(results)} links · fully-valid {valid} ({100 * valid // n}%) · "
         f"direct {sum(r['direct'] for r in results)} · "

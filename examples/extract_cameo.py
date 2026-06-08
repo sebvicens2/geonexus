@@ -38,14 +38,21 @@ SIGN = {
     "material_conflict": -2,
 }
 _PROMPT = (
-    "From this news summary, extract interactions between TWO distinct named actors "
-    "(countries, blocs, or major orgs). One per line, exactly:\n"
-    "ACTOR_A | ACTOR_B | DOMAIN | CLASS\n"
-    "DOMAIN ∈ military, economic, diplomatic, energy, health\n"
+    "From this news summary, extract ONLY interactions where the text EXPLICITLY states "
+    "that one country/bloc did something TO or WITH another country/bloc.\n"
+    "STRICT RULES:\n"
+    "- Both actors must DIRECTLY interact. Skip mere co-mentions (both named but not "
+    "interacting), one-actor facts, and anything merely implied or inferred.\n"
+    "- If you are unsure they directly interact, DO NOT output the line.\n"
+    "One per line, exactly: ACTOR_A | ACTOR_B | DOMAIN | CLASS\n"
+    "DOMAIN = the domain OF THE ACTION:\n"
+    "  military = armed force, strikes, troops, weapons, defense pacts;\n"
+    "  economic = trade, tariffs, sanctions, investment, aid, debt;\n"
+    "  diplomatic = talks, statements, summits, treaties, recognition, condemnation;\n"
+    "  energy = oil/gas/energy supply, pipelines; health = disease, vaccines, medical aid.\n"
     "CLASS ∈ material_cooperation, verbal_cooperation, neutral, verbal_conflict, "
     "material_conflict\n"
-    "Only real interactions between two actors (skip one-actor facts). Max 8 lines. "
-    "No preamble.\nTEXT:\n{text}"
+    "Max 8 lines. No preamble.\nTEXT:\n{text}"
 )
 
 

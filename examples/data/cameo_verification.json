@@ -1,129 +1,87 @@
 {
-  "7dd81cf38c4f59cd": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between US and Canada."
-  },
   "9feb3139729c9995": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Strikes and drone launches indicate conflict."
+    "reason": "Strikes on Iranian sites after drone threat."
   },
-  "5cb2e812ebb184c2": {
+  "2f31f65b8df50bb2": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "U.S.-Russia tensions over Ukraine's nuclear facility attack."
   },
-  "d025c09bac7626b3": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention Russia-North Korea interaction."
-  },
-  "a83a84d5a3b33100": {
+  "4afb9fd9832d9699": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Xi Jinping's visit strengthens ties."
   },
-  "c4e3a56e84869cb5": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Canada and U.S. but not their direct interaction."
+  "a4dc5965697eddf8": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Russia attacks Ukrainian nuclear site"
+  },
+  "ee2902c6395f7248": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Canada bans U.S. cattle due to outbreak."
   },
   "1af95373cea69cfc": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "U.S. and Iran near agreement on ceasefire extension."
   },
-  "e95850e3ceaf2a68": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between US and Israel."
+  "e45bfee753fadd2e": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Both engaged in military skirmishes near Strait of Hormuz."
   },
   "280fca9c6c38e9c2": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Iran launched missiles at Israel’s airbase."
   },
-  "9484537a65bbccef": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Military skirmishes near Strait of Hormuz mentioned."
-  },
-  "cb1adc8ab92adc52": {
+  "511362da33d5d16b": {
     "direct": true,
     "domain_ok": false,
     "domain_fix": "military",
     "stance": "SUPPORTED",
     "reason": "Iran launches missiles at Israeli targets."
   },
-  "e8f9984d4a5b1b3f": {
+  "38a6c5f0aa565477": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Israel and US."
+    "reason": "Summary shows conflict, not cooperation or energy interaction."
   },
-  "8251b7af5cbcea58": {
+  "759c92843352caa5": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "US and Iran engaged in military skirmishes."
-  },
-  "2899e1829a446674": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Iran and China."
-  },
-  "2620f45513ad733a": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "energy",
-    "stance": "UNSUPPORTED",
-    "reason": "Claimed domain overemphasizes; primary issue is military conflict."
-  },
-  "64ea271086568f97": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Xi Jinping's visit aims to strengthen ties."
-  },
-  "edeb6c07f00f7d70": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Commercial flights boost indicates cooperation."
   },
-  "2ae798a25e04d356": {
+  "e59231d9cc139ad7": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "EU warns of stronger response; China threatens retaliation."
+    "reason": "EU warns of stronger response to Chinese exports."
   },
   "d65540875a837843": {
     "direct": true,
@@ -134,344 +92,246 @@
   },
   "0a06d5fde5051c5d": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Missiles launched and intercepted, ceasefire violations."
   },
-  "76b525512a0e3dc5": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary describes military actions, not diplomatic interactions."
-  },
-  "83435178875f7473": {
+  "8250bdf68a05480c": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Ebola but not interaction between U.S. and Mauritius."
-  },
-  "410339688ba20a8f": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe US-Israel military interaction."
-  },
-  "447c002b029a11e3": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "U.S. strikes and shoots down Iranian drones escalating tensions."
-  },
-  "2317ed8fd99e3b26": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Attacks mentioned, conflictual interaction."
+    "reason": "Summary does not mention US-Israel interaction."
   },
   "5e3991765119c385": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Iran launched missiles at Bahrain as claimed."
   },
   "e716a2508c9479b2": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Iran launched missiles at Kuwait."
   },
-  "f8a2a3fda17f034d": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "A conflict mentioned affecting energy-importing regions."
-  },
   "b84b1260d00d2a5f": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Trade tensions mentioned between US and China."
   },
-  "fcc1c97596b2d22d": {
+  "7497dd6de15034d0": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Russia attacks Ukraine, escalating conflict."
+    "reason": "Attack on nuclear site is a military action."
   },
   "8e1a687a252a4512": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Both engage in offensive actions against each other."
   },
-  "fd9423ba9d7b3e56": {
+  "867f2afb978950f1": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Diplomatic proposal met with ongoing military conflict."
+    "reason": "Drone strike on nuclear site confirmed."
+  },
+  "06e5b8b1729f678b": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Zelensky proposes meeting to end war."
+  },
+  "49d3400826899e41": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Trump reinstated tariffs on Asian countries."
   },
   "fd41542733804526": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Democrats' win could disrupt U.S.-China detente."
   },
-  "6dec4464d08f2dca": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not specify direct interaction between US and Asia."
-  },
-  "03d6f3f952f478e0": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions UN report on Iran but no interaction."
-  },
-  "f9fc197c63a494cc": {
+  "8391da2a133315ca": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Strikes and retaliation described."
+    "reason": "Forces attacking facilities, vessels, raising concerns."
   },
-  "f0db054c4bf78550": {
+  "4dfebdf3f55a1722": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "IAEA brokers ceasefire for nuclear plant repair."
   },
-  "dae7a47a0cd54ee3": {
+  "57f4da1d16aa5a85": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention Ukraine-NATO interaction."
+    "reason": "Summary shows conflict, not diplomatic cooperation."
   },
-  "85e6710bc944eb37": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention US-Israel direct interaction."
-  },
-  "f43998d524863024": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions sanctions preparation, not interaction."
-  },
-  "1a09c04df671345a": {
+  "85a217d13812cd65": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "China threatens retaliation against EU over exports."
+    "reason": "Israeli attacks in Gaza result in Palestinian casualties."
   },
-  "86c8aa2a9f332619": {
+  "e348e9098737ea14": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Russia and Iran."
+    "reason": "Summary mentions sanctions threat, not economic cooperation."
   },
-  "6f3f3896bca80353": {
+  "65fc2c51049a8f3d": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Carney engages in diplomatic balancing act between US and China."
+    "reason": "China threatens retaliation, indicating economic conflict."
   },
-  "f32ba0c27f586ca6": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Carney engages in diplomatic balancing act between US and China."
-  },
-  "7a367e5b950982ac": {
+  "a874c72614dcf0da": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe US-Russia interaction."
+    "reason": "Summary mentions Carney, but not as current PM; interaction details missing."
+  },
+  "465cfab57ec4470a": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions Carney, but not interacting with China."
   },
   "ea4eb5dc1db11e78": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Attacks and deaths match claim."
-  },
-  "567efb702ed207d7": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Attacks and deaths match claim."
-  },
-  "10a8cf1d426b9ac4": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Israel attacks Palestinians in Hebron."
   },
   "398c4402ea6211c0": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Hamas criticizes Israeli actions during talks."
   },
-  "e7d4f3d013793e6b": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Ceasefire for repairs indicates military involvement."
-  },
   "5b8637f5df8e01f0": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "EU actions prompted Chinese threats, indicating conflict."
   },
   "043ed6ece9585436": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "India-Pakistan dispute over water rights is diplomatic and neutral."
+    "reason": "India-Pakistan dispute over water under treaty."
   },
-  "44f53ac1c4d262b7": {
+  "35c3dac46fcb51f0": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "PM warns Russia could attack NATO."
   },
-  "663349bf30c65d03": {
+  "f206c5ca98fe3051": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "PM warns Russia, not direct conflict with Ukraine."
-  },
-  "d4345fa3a6bc2ea0": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not specify which government Mercuria deals with."
-  },
-  "37c571276b3eac90": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Zelensky criticizes Russian drone strikes."
+    "reason": "UK prepares sanctions against Israel economically."
   },
-  "b05fae20aaf34fea": {
+  "88cc7bc9050ea5c2": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "China urges Japan to upgrade fleet amid tensions."
-  },
-  "110facb0146795d9": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between Japan and China."
-  },
-  "23f2fc8bef9e1057": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not show direct diplomatic interaction."
+    "reason": "China urges Japan to upgrade fleet, conduct exercises near Taiwan."
   },
   "ed8a6948fa35e3f6": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "US reinstated tariffs on multiple Asian countries."
   },
-  "53d589c2fa8fe535": {
+  "8b7dabb91deae1ae": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Strikes and retaliation described."
+  },
+  "fab1e66620ba8a42": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
     "reason": "UN aid, not economic interaction."
   },
-  "bbffb93305af78b9": {
+  "17f907ddfff00886": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "A faces Russian pressure, Moscow threatens scenario."
+    "reason": "Russia threatens Armenia over alignment with Europe."
   },
-  "c31e82aa689d18ba": {
+  "27ce9b5f2d672ed2": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "A aims for closer ties with EU"
   },
-  "c17db3595b8b60d8": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between OPEC and OPEC+."
-  },
-  "0dfa212495f599bc": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between OPEC and OPEC+."
+  "f801a185d4a599fa": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "PM seeks closer ties with US"
   },
   "dedc8278d06b891f": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "France initiates war crimes probes into Israel's treatment."
   },
-  "9a6a982551f0967a": {
-    "direct": false,
+  "172d56d61565167b": {
+    "direct": true,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions US but not interacting militarily with Europe."
+    "reason": "No economic interaction mentioned"
   },
   "3511d2fcc5740158": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "US and India explore cooperation amid energy crises."
   },
@@ -482,740 +342,670 @@
     "stance": "SUPPORTED",
     "reason": "India increases oil imports from Venezuela."
   },
-  "f1380a1aaa70e63b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
+  "f1363a5f7f248221": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions dispute but no current interaction described."
+    "reason": "Summary states decrease but not conflict."
   },
   "a11e6c6927e0202d": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Pakistan rejects India's objections on elections, reiterating Kashmir stance."
-  },
-  "6b8c0a6f4fbc562e": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Iran and Saudi Arabia."
-  },
-  "4b5db8feb5070eb5": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Pakistan claims India weaponizes water through river projects."
-  },
-  "ab0640f1da1ae885": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Interior Minister visits to restart US-Iran negotiations."
-  },
-  "f68bf1cb632b722c": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Chinese medical team aids Ebola outbreak."
+    "reason": "Pakistan rejects India's objections on elections, reiterating Kashmir stance."
   },
-  "8db80d32db6cb17d": {
+  "f7aa83bedf265944": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Export drop indicates economic tension."
+    "reason": "Diplomatic attempts and military conflicts coexist."
   },
-  "fe4db3f8672ec205": {
+  "9946056f9cc21421": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between South Korea and China."
+    "reason": "Summary mentions claim but does not describe direct interaction."
   },
-  "559b644f83b10739": {
+  "d87e4aa6c4e654fe": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "OECD downgraded Mexico's GDP forecast, indicating interaction."
+    "reason": "Interior Minister visited Iran for negotiations."
   },
-  "9b99f3aa4fcdbcd9": {
+  "37ef7b415bd5a6a2": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary describes military, not diplomatic interactions."
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Russia's drone strikes affect Ukraine's nuclear sites."
   },
-  "0335634f1f902851": {
+  "0a6617263d4329aa": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention EU-China interaction."
+  },
+  "ed6d5a7bbf6d42b4": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention interactions with multiple sources."
+  },
+  "73aa22f047f4eaeb": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions inquiry not conflict."
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Visa issues and tensions mentioned."
   },
-  "5208001dda17a287": {
+  "32cff73878a91dab": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Xi visits North Korea, likely for diplomacy."
+  },
+  "858a4a98c0a78274": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "UNSUPPORTED",
+    "reason": "Ukraine requests, not in conflict."
+  },
+  "7e5af16345eaac67": {
     "direct": true,
     "domain_ok": false,
     "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Ukraine requests EU action on migration policy."
-  },
-  "5605d336879fbc26": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
     "stance": "UNSUPPORTED",
-    "reason": "Summary shows support not conflict."
+    "reason": "EU considers sanctions, not economic interaction."
   },
-  "ca36b1e9c4f8f6e9": {
+  "276a93fdba39a5fb": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Military tensions and provocations are evident."
+  },
+  "0643db2b3f40c08b": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
     "reason": "Summary does not describe interaction between China and Japan."
   },
-  "318075f4ff0c336c": {
+  "770759c462b9ad6b": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "China and Taiwan engage in military actions and deployments."
+  },
+  "db2923edff65583a": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary describes interactions but not direct cooperation between Beijing and Taiwan."
+    "reason": "Summary does not describe direct diplomatic interaction."
   },
-  "24801bbf48c323cd": {
+  "4bef1e17d73d84f0": {
     "direct": true,
     "domain_ok": false,
     "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "China deploys missiles and provokes Taiwan militarily."
+    "stance": "UNSUPPORTED",
+    "reason": "Summary shows military tensions, not diplomatic interactions."
   },
-  "b574c04d6fcaf09d": {
+  "a67055500fa3a966": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Tourism and flights boost economic ties."
-  },
-  "c276722d775d2806": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "N expands navy to reinforce nuclear threat against S."
   },
-  "8c59158969df62ce": {
+  "fe10e193da359550": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "DOD faces challenges from Chinese techniques."
+    "reason": "U.S. DoD faces challenges from Chinese AI techniques."
   },
-  "417e563555787b5d": {
+  "0b6b864a062369cb": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Anthropic and global community."
-  },
-  "496d559d3984bcde": {
-    "direct": true,
-    "domain_ok": true,
-    "domain_fix": "",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions proposal but no actual cooperation indicated."
+    "reason": "Summary does not describe country interaction."
   },
   "a43b50a8163f73a6": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "US expands sanctions on Iranian entities."
   },
-  "0e3b07d4ef64456b": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "UK prepares sanctions against Israel over settlements."
-  },
-  "a7200e48ae04f9eb": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "EU considers sanctions on Israeli officials."
-  },
-  "f33779fcdb78504a": {
+  "38e0932bbf6f1f3a": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Russia and jet manufacturers."
+    "reason": "Summary mentions sanctions threat, not economic cooperation."
   },
-  "b03ba5931aba31ac": {
-    "direct": true,
-    "domain_ok": true,
-    "domain_fix": "",
-    "stance": "SUPPORTED",
-    "reason": "US supports Taiwan militarily."
+  "953b17a59eadee3c": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions EU considering sanctions, not cooperation."
   },
   "c8d587d9a7b70995": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Military tensions and actions described."
+    "reason": "Military tensions and provocations described."
   },
-  "44d571e0f9d422b8": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Dutch and China."
-  },
-  "1eb948c52bb62b31": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "health",
-    "stance": "SUPPORTED",
-    "reason": "A and B cooperate on screwworm control."
-  },
-  "ae738989e37238d0": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Argentina's grain exports affect global market positively."
-  },
-  "f425553b36750d8d": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions designation but no conflict stated."
-  },
-  "ef4eb533f6b1e775": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions economic pressures but not from interaction."
-  },
-  "6e70d7dd2abcd802": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe economic interaction between US and Germany."
-  },
-  "c8b79e9df3fc75be": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "A avoided action to prevent B misinterpretation."
-  },
-  "eda5c8f64c9c74a1": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions risks, not direct interaction."
-  },
-  "65178c04ab448e3c": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions operations near Taiwan, not diplomatic interaction."
-  },
-  "69674be60e9b813b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions but does not describe direct economic interaction."
-  },
-  "a651f6d977dc6d5b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention China-Russia interaction."
-  },
-  "1301d0e37244865e": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "S Korea and China boost commercial flights for tourism."
-  },
-  "f10acd82a2594d23": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Conflict mentioned impacting Strait of Hormuz trade."
-  },
-  "260f5c443a604d8f": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between Middle East and China."
-  },
-  "69d1112c81fa983a": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between U.S. and China."
-  },
-  "3a97d1bd7dc9632c": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Australian Greens反对AUKUS协议，警告可能与中国开战。"
-  },
-  "0d4dc30eb52be3b6": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "China reduced rare-earth exports to Japan."
-  },
-  "f96be578598d527a": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Mexico's internal action, not interaction with organizers."
-  },
-  "94dc985d978f9a3c": {
+  "974b0afc921307fc": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Scotland qualifies through FIFA cooperation."
+    "reason": "PLA maintained alert due to Dutch ship crossing Taiwan Strait."
   },
-  "c564ac60efa1f90d": {
+  "10b4abff8f6ece53": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Russia threatens Armenia over alignment."
+    "reason": "A imposed sanctions on B gangs."
   },
-  "37e72dd498eb0e4a": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "US endorsed PM Pashinyan and engaged with Armenia."
-  },
-  "9b85ddc4dd261e1c": {
+  "a2b69385d31e6072": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions tensions but not specific diplomatic interactions."
+    "reason": "Summary mentions US action, not mutual interaction."
+  },
+  "e0fc15c92841a900": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Zelenskyy meets Western leaders in London."
+  },
+  "e1e407c66e9eb97d": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe US-Russia interaction in military domain."
+  },
+  "f09c5fdbcd881526": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention Japan or relevant economic interaction."
+  },
+  "c8b79e9df3fc75be": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "A avoided action to prevent B misinterpretation."
+  },
+  "b43f8a24e5553396": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "China conducts ops near Taiwan, Japan boosts missile capabilities."
+  },
+  "cd268a7c8027b8d8": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions but does not describe direct interaction."
+  },
+  "d29cb45002926b81": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions ops near Taiwan, not cooperation."
+  },
+  "51ff4838af91787f": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions China and Philippines but not interacting."
+  },
+  "f2d2f082318a3d71": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Xi visits to strengthen ties directly stated."
+  },
+  "8cb27facdf90950a": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Conflict impacts Strait of Hormuz trade."
+  },
+  "0fda7eb49a43c5d2": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Conflict impacts global shipping rates and trade."
+  },
+  "27201c34766633a4": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe direct interaction between Australia and US."
+  },
+  "04fda33581230fc6": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions Mexico's internal actions, not interactions."
+  },
+  "37e72dd498eb0e4a": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US endorsed PM Pashinyan and engaged with Armenia."
+  },
+  "1213202663192f0f": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "EU uses healthcare denial to deter migrants, creating tension with Russia."
+  },
+  "e3c9b00d87778e45": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Putin rejected Zelensky's meeting proposal as rude."
   },
   "bda59501e48cf1d8": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions NATO challenges but not interaction with Russia."
+    "reason": "Summary mentions NATO but not interacting with Russia."
   },
-  "c89e46117440e450": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Russia responds militarily to Ukraine, affecting NATO."
-  },
-  "395244234af347c1": {
+  "2014ab42a2e5fb18": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "UK PM warned of future NATO risk, no direct interaction."
+    "reason": "Summary does not describe direct interaction between NATO and Ukraine."
   },
-  "46bd652e5f4d403d": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Chinese team inspected Russian bases, Putin praised alliance."
-  },
-  "ff771608354029bb": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention US/Europe economic interaction with Russia."
-  },
-  "46ffd11f27699b33": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary shows attempts to rebuild relations, not conflict."
-  },
-  "8f980069bc7fcf06": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "US threats of tariffs indicate economic conflict."
-  },
-  "fc5fad8f4cf86790": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "China conducts exercises near Taiwan in response to talks involving Philippines."
-  },
-  "42e2df3492bdcb12": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions talks, not economic interaction."
-  },
-  "249be46e24b10e64": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Nigerian army rescues captives from Boko Haram."
-  },
-  "725f1804f54af367": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "UN warns weapons from Libya fuel extremism in Nigeria."
-  },
-  "8d5c16907874ab90": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions designation but not military interaction."
-  },
-  "c4885c5372616a25": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Gen. Dan Caine visited Venezuela post-regime change for stability and democracy."
-  },
-  "e87cba0693192b50": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Argentina warns against UK firms' Falklands oil plans."
-  },
-  "55b8d1be20f3791e": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Tanzania and Kenya."
-  },
-  "461735b0048e2139": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Nigeria and Tanzania."
-  },
-  "a29419f4c206beb6": {
+  "b93e09a478c2ceef": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "A and B are navigating diplomatic relations."
+    "reason": "Russia responds militarily to Ukrainian drone strikes."
+  },
+  "f04cf86f7b302e38": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "China inspected Russia's bases as natural allies."
+  },
+  "fb498d75aa4786ca": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention US-Europe interaction."
+  },
+  "4ee669bd541aea39": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US restricts exports affecting China's semiconductor industry."
+  },
+  "1cf45f315eb98fd7": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions claims but no direct interaction."
+  },
+  "3d870953235fc765": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Pakistan and India clash at the UN Security Council over Kashmir."
+  },
+  "c2444e5eb9213bb8": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US threats of tariffs indicate economic conflict."
+  },
+  "f1574c4576bb7986": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "J and P begin talks on EEZ delimitation."
+  },
+  "fc5fad8f4cf86790": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "China conducts exercises near Taiwan in response to talks involving Philippines."
+  },
+  "cf7830aeeeee55e5": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "ASEAN and China consider a legally binding agreement."
+  },
+  "a917755a1a832f0a": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "UN warns about weapons affecting Nigeria."
+  },
+  "cedbc981071a4fad": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Weapons from Libya fuel extremism in Nigeria."
+  },
+  "b68a2d1fdc692365": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Argentina warns against UK firms' Falklands oil plans."
   },
   "8730c08da62db641": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Deals and flights to boost business ties."
   },
-  "fa2863d5c530151e": {
+  "cd8b2a33dd643765": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Ukrainian drone incident in Romanian port."
   },
-  "9bec4b69de60217f": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions both countries but not their economic interaction."
-  },
-  "425a3ac31c5d9599": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "health",
-    "stance": "SUPPORTED",
-    "reason": "Protesters clashed against a US-funded Ebola facility."
-  },
-  "0f38f8e137e229cf": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "EAC ministers agreed on harmonized response measures involving DRC."
-  },
-  "acf2fc4fe1915699": {
+  "60eeadbcf9c57fef": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Somalia but not interacting with EAC."
+    "reason": "Summary does not mention economic interaction."
   },
-  "9da1b986a9724b7e": {
+  "8c7ffaba1f2bd764": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "WHO reports on Ebola cases in region."
+    "reason": "Both countries face Ebola, leading to border closures."
+  },
+  "3e9c317634e56e98": {
+    "direct": true,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Claimed economic conflict not described in summary."
+  },
+  "1a841d619d3d6fd0": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "China sent a medical team to help fight Ebola."
   },
   "81442b62fb24c394": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "UNSUPPORTED",
     "reason": "Trade halted due to health concerns, not conflict."
   },
   "6c5945346309b59d": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "UNSUPPORTED",
     "reason": "Summary states disruption but not conflict."
   },
-  "28e9732c4699950e": {
+  "56123daca524d2a0": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary describes border closure, not diplomatic interaction."
+    "reason": "Summary does not mention EU-China interaction."
   },
-  "120b09a52e2fb81d": {
+  "0860cabc53ba6ca4": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Malaysia and Netherlands seek to strengthen partnership."
   },
-  "b174983f0fb956de": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Malaysia's tourism/economy benefits Indonesia."
-  },
-  "9fc166ced68e3a64": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "A criticized B's handling of an issue."
-  },
-  "9b0d0922b3819fe3": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Argentina warns UK of legal and diplomatic actions over Falklands."
-  },
-  "ecba122428896137": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Argentina and Chile."
-  },
-  "b51bac8d17fe0928": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Nigerian army rescued abductees from Boko Haram."
-  },
-  "0d71a890aef9a76a": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Malta but no direct interaction described."
-  },
-  "d0d7a2a5e26a4aec": {
+  "36a4cb86b58f79f8": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Saudi Arabia supports Lebanese sovereignty against Israel."
+    "reason": "A criticized B's policy during visit."
   },
-  "c546288f63516839": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions OPEC and Iran but does not describe their interaction."
-  },
-  "fe98bcbc2826e562": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Israel deployed troops near regions involved with Iran's conflict."
-  },
-  "e8ccb68e087f858c": {
+  "e26e507942b94f86": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "China tracked and called Dutch passage illegal."
+    "reason": "Foreign fleets threaten Argentina's fishery resources."
   },
-  "f344e8b7c6582f14": {
-    "direct": true,
+  "23876c80dbc0cd38": {
+    "direct": false,
     "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "PLA tracked and called passage illegal."
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe direct interaction between Chile and Argentina."
   },
-  "5387763fb7411ac0": {
+  "8bde48898bc121c4": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions Malta but does not describe interaction."
+  },
+  "111f75213aef3a44": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe interaction between OPEC+ and UAE."
+  },
+  "cf904f845f81899e": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "New maritime route established between Indian port and Saudi city."
+  },
+  "c18a90b3ec2beb6f": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Highway projects invite Saudi investment."
+  },
+  "b94d1d7252f43f9d": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Israel deployed troops to Azerbaijan during conflict with Iran."
+  },
+  "deee5db7de901b8e": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Israel deployed troops near UAE during conflict with Iran."
+  },
+  "786e1bd3e56861b0": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Israel deployed troops to Iraq during conflict with Iran."
+  },
+  "d2a2992b85e4c39f": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Troops were deployed during conflict involving both."
+  },
+  "7fbab25befa24c13": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "China tracked and called the passage illegal."
+  },
+  "7ed802e96b153585": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "UNSUPPORTED",
+    "reason": "PLA responded but did not cooperate with the Dutch ship."
+  },
+  "ad2a3128e86d36bd": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Malaysia and Netherlands seek to strengthen ties."
+  },
+  "d460ab130d2cdc16": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Ruto defended decision during US state visit"
+  },
+  "331155607b22cab0": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
     "reason": "Summary does not describe interaction between South Africa and Kenya."
   },
-  "91e8c9cfc2a4d306": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions rivalry, not cooperation."
-  },
-  "758a113eabaf81ac": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe a neutral diplomatic interaction."
-  },
-  "50aa20bd98a28ee1": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention military interaction."
-  },
-  "769efabfaccb7b79": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between China and Russia."
-  },
-  "1361538644d0df47": {
+  "fc37bcea70791ff6": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Kuwait meets US Secretary of State to reaffirm support."
+    "reason": "Trade tensions and tariffs indicate economic conflict."
   },
-  "7c493bf2d51b2294": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions crisis but no direct interaction."
+  "51cce79e18789195": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Energy dominance mentioned as key focus in rivalry."
   },
-  "0a9641e22995ed9f": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions but does not describe interaction between India and Middle East."
-  },
-  "331a2ed188544c39": {
+  "ccc31b1ffd81cc9a": {
     "direct": true,
     "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions effects but no conflict stated."
+    "reason": "Nuclear construction not explicitly economic interaction."
   },
-  "90361b4272afddb8": {
+  "5ae8958e1fa15024": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Japan implements emergency budget due to Middle East conflicts."
+  },
+  "c1f55bd8c9de51e5": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Venezuela and Middle East."
+    "reason": "Summary shows Iran attacking Kuwait, no diplomatic interaction."
   },
-  "77a7206e895a8504": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Kazakhstan and the Middle East."
+  "1bdb6f30db4f7895": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US met Kuwait's FM, reaffirmed support."
   },
   "a73b37c6ebfd2927": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "UNSUPPORTED",
     "reason": "Summary shows endorsement but no conflict."
   },
   "698bb17de367f2b7": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Trump endorsed candidate, Petro criticized US support."
   },
-  "1e86dab8043e8d70": {
+  "1287d79e6d9cb560": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "A imposed sanctions on B"
+    "reason": "Sanctions are an economic conflict."
   },
-  "08156872571202f0": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between China and US."
-  },
-  "53136ac71e25c6ad": {
+  "8f848bf9e9e0e3a3": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "US tariffs impact Asian economies."
+    "reason": "China considers reviving a canal project in Nicaragua."
   },
-  "12aa659462398d79": {
+  "db1c0f3247e29406": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "US tariffs impact Indonesia economically."
+    "reason": "Tariffs impact Indonesia economically."
   },
   "d5a18fad612857c7": {
     "direct": true,
@@ -1229,231 +1019,168 @@
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between NK and USA."
+    "reason": "Summary does not describe direct interaction between NK and US."
   },
-  "eaf09a8a03575a27": {
-    "direct": true,
+  "4f8fafddcedac230": {
+    "direct": false,
     "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Summary mentions potential shift towards Europe."
-  },
-  "3de7ef904a39c37a": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions talks but does not indicate conflict."
+    "reason": "Summary mentions political pressure, not economic interaction."
   },
   "d17f05690c49e9fa": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Israel's action in Gaza involves military conflict."
+    "reason": "Israel's action in Gaza described."
   },
-  "16471aabd818b97f": {
+  "e0177897fa586a28": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "NATO considers military aid for Ukraine."
+    "reason": "NATO considers aid for Ukraine's defense."
   },
-  "90c832a9189a4fe4": {
+  "1aff3507b31259c7": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions Egypt hosting talks but not interacting with Israel."
+  },
+  "1150f8a9c66d3b8b": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions Egypt hosting talks, not direct interaction with Gaza."
+  },
+  "71f59e921161fa2c": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
     "reason": "Summary does not describe interaction between Turkey and Iran."
   },
-  "84f6086110aacfff": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "NATO allies consider aid, Turkey expands defense exports."
-  },
-  "c05ea7a7eb68fad2": {
+  "3f18da562c24c9a7": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions detection, not interaction."
+    "reason": "Summary does not describe direct economic interaction between Turkey and NATO."
   },
-  "757cc6c68ca44c9c": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions issues but no direct economic conflict."
-  },
-  "c8b7be3a8359f014": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention direct interaction between Mexico and China."
-  },
-  "1bae437996f12ee0": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions but does not detail conflict or specific interaction."
-  },
-  "a180266c1e40d5df": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Ontario and Alberta."
-  },
-  "32875beeba926c83": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "health",
-    "stance": "SUPPORTED",
-    "reason": "US plan criticized, protests against Ebola quarantine."
-  },
-  "c472b39876c33b0c": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "SA and Kenya signed accords to boost trade and ties."
-  },
-  "652ecc75ab33230b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct military interaction between US and Singapore."
-  },
-  "ad254328731d713b": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions training but not conflict."
-  },
-  "19d87bab53e5b197": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Tariffs imposed by the US on Southeast Asian countries for forced labor."
-  },
-  "8103154ea23164ac": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "health",
-    "stance": "SUPPORTED",
-    "reason": "SA reaffirmed commitment to address Ebola in CA."
-  },
-  "0a944299f9ee78be": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction."
-  },
-  "0db0842ebcd5e4af": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary states fact, no conflict mentioned."
-  },
-  "1274379ebce4652b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions countries but not their interaction."
-  },
-  "1a8670e85a4d17dd": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not link OPEC+ and Russia directly."
-  },
-  "f6fbbcb22bd4e7ee": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "K and H are partnering to boost agricultural exports."
-  },
-  "d0d363bbcdc5ffec": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between China and central banks."
-  },
-  "bdcc8026dcd3aec4": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between China and global central banks."
-  },
-  "c12c68d93fa6235b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between the two banks."
-  },
-  "ed82e9cca4ca6082": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions IMF podcast, no interaction or domain specified."
-  },
-  "748cf5aef1ba1f7f": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Ceasefire talks between Israel and Palestinian factions mediated by Egypt."
-  },
-  "fa7ea2ad0db54333": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Egypt mediates ceasefire talks between Israel and Palestinian factions."
-  },
-  "f45acd139a50117e": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention Egypt interacting with Iran."
-  },
-  "1e622187b74b1177": {
+  "92bd096eb4a4ab6b": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "A and B collaborated on Ebola response plan."
+    "reason": "Carney engages with both the US and China."
   },
-  "3d118479f19d7027": {
+  "8d8ab1dd2a94539e": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Junta offers reward for capture of JNIM leader."
+    "reason": "AMLO accuses U.S. of interventionist practices."
   },
-  "4daabf64d4a54293": {
+  "0e3553f65970de99": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "PQ plans to maintain contact with Alberta separatists."
+  },
+  "5cdcf1e9587d41db": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Presidents signed accords to boost trade and ties."
+  },
+  "82858430523f298f": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Ukraine and Africa."
+    "reason": "Summary mentions troops training but not interaction between Singapore and Taiwan."
+  },
+  "926688b65808e232": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not show direct interaction in claimed domain or stance."
+  },
+  "36fd8f04113fc85b": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe interaction between US and Canada."
+  },
+  "3bf3886be26a1adf": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "WHO warns about Ebola outbreak scale."
+  },
+  "8e5abc6b1582d097": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "SA gov committed to addressing Ebola on continent."
+  },
+  "c84dfe686edec2c9": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Kazakhstan and Hong Kong are partnering on agricultural exports."
+  },
+  "767a07ed75d5a051": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe interaction between Asia and Iran."
+  },
+  "a28fb06849fa657c": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Asia increases imports of U.S. oil and gas."
+  },
+  "fdcda0d1b3c898a6": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Summary mentions impact on global trade and economy."
+  },
+  "bd43a80a84a3e321": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Strikes and talks indicate conflict."
+  },
+  "72f1f0dd70ce6051": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Egypt condemned Kuwait, not direct interaction."
+  },
+  "0edc645da1ae0b82": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "CDC and WHO launched joint Ebola response plan."
   },
   "b911c8c10a19d5c9": {
     "direct": false,
@@ -1462,854 +1189,630 @@
     "stance": "UNSUPPORTED",
     "reason": "Summary does not mention UN interaction with Libya."
   },
-  "e9840e0f869b6233": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "U.S. is pressuring Singapore, indicating diplomatic interaction."
-  },
-  "33e016c67fa55196": {
+  "a3ec6980e5dfd87a": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions pressure but no direct diplomatic interaction stated."
+    "reason": "Summary does not mention UN interaction with Nigeria."
   },
-  "07ca5815b116ab69": {
-    "direct": true,
+  "4165463bbe7517fd": {
+    "direct": false,
     "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Japan is expanding export presence through factories and initiatives in Southeast Asia."
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions UN warning but no interaction described."
   },
-  "b8ae6949ff650e60": {
+  "d0f777b1f74116aa": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention direct interaction between U.S. and China."
+  },
+  "5a5944266caf92d4": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Malaysia and Netherlands seek bilateral relationship strengthening."
+  },
+  "63d9bdd66a2304a1": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "U.S. commits funds for LNG and energy projects in India."
   },
-  "72f5c1c9accea635": {
+  "bb582308660d9cf5": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Coast guard standoffs indicate conflict."
-  },
-  "ba9aa8884a66b90b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between Portugal and Germany."
+    "reason": "U.S. commits funds for LNG and energy projects in the region."
   },
   "4c0430ca2a273336": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Germany blamed Russia for failing to get a UN seat."
   },
-  "88117cc034b84fa1": {
+  "6a59c10cc9c29d73": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary describes border closure and trade impacts, not diplomatic interactions."
+  },
+  "25448ec65fa17a36": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Uganda works with WHO on Ebola response."
+    "reason": "J&P enhancing maritime security against C influence."
   },
-  "c7e3b560c597264b": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Coast guards involved in standoffs."
-  },
-  "f387da72760ac13a": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between China and Philippines."
-  },
-  "ace72975f7a5287d": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "J and P strengthen maritime security against C."
-  },
-  "812911cb430d54fa": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions controversy over French financier's involvement, not country interaction."
-  },
-  "bdd4711f6104b022": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between U.S. and Peter Schiff."
-  },
-  "7cec665bd4f5b921": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions G20 template, not direct interaction with Venezuela."
-  },
-  "430d37959ddc0421": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Fitch upgraded South Africa's credit rating, indicating cooperation."
-  },
-  "6f7344b3ac399146": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Sudan signed agreement for economic project restructuring."
-  },
-  "7ec022e524cd8bcd": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Sudan signed agreement including UNICEF for emergency project."
-  },
-  "e1f40192017fdab2": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Russia supporting Ukraine, not direct interaction between Germany and Ukraine."
-  },
-  "647fc1ac73c61922": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions both countries but not their interaction."
-  },
-  "b2dadb2242979692": {
+  "2aedd896e4153d93": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "US medical teams assist DRC in health crisis."
+    "reason": "G20 released template for sovereign debt restructuring."
+  },
+  "801b2d905dd642ef": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Pakistan only congratulates, no interaction mentioned."
+  },
+  "63c78e4049971b0d": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US medical teams assist DR Congo against Ebola."
+  },
+  "f57d8df0e794c61b": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Chinese teams assist DR Congo on health issues."
   },
   "cb172317c5720276": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "UNSUPPORTED",
     "reason": "Summary mentions challenges but no direct interaction stated."
   },
-  "8613e1484f0e8942": {
+  "c9730d45c1228921": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Washington and Brussels compete on AI regulations."
+    "reason": "Both compete to shape AI regulations."
   },
-  "3bdf87e95726ab87": {
+  "786dc9c73edba3a8": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "US funds and invests in India's energy security."
+    "reason": "India focuses on cooperation with the US for energy security amid Middle Eastern crises."
   },
-  "23249b9c867d9479": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between India and Australia."
-  },
-  "e6a77b2e6248b488": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between US and Russia."
-  },
-  "55f1f1aa371beb2c": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions celebration of nuclear power, not military cooperation."
-  },
-  "000cef183fce2391": {
+  "77fc0ed8c307c3e1": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Putin authorized sale due to sanctions"
+  },
+  "95ce2185617f48b8": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Russia and Uzbekistan celebrated nuclear plant construction."
+  },
+  "53ba9e2cc3f2375b": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Pakistan signed agreements with Russia to combat illegal immigration and drug trafficking."
   },
-  "61f4006c015a5f60": {
+  "e2718d811239267a": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "China became largest assessed contributor after US quit."
+    "reason": "Pakistan signed agreements with Central Asian countries."
   },
-  "07c9ceaa5141aa57": {
+  "df3e2fece9638396": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between China and Quad."
+    "reason": "Summary does not mention direct interaction between China and US."
   },
-  "1ffd9b681b57952d": {
+  "a5339006a0c083fb": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "A and B agreed on a strategic treaty."
   },
-  "2288ac058b90dc45": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Project delays due to industrial action affect economics."
-  },
-  "29a16ae5b9cad7de": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Sanctions impact tourism and mining sectors."
-  },
-  "11ad20de9df9916a": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions China criticizing US, not diplomatic cooperation."
-  },
-  "93cba83ba661f910": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between OPEC and US."
-  },
-  "57b5e3b6de5fca3e": {
+  "fcc644b65efabca4": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Acting president visits Turkey for talks."
+    "reason": "US general visited Venezuela emphasizing stability."
   },
   "255f0694a7b34062": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "India increased oil imports from Venezuela."
   },
-  "837ece19e36f5f83": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between OPEC+ and Iran."
-  },
-  "b1b7d90d37d4c03f": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Russia deepens security ties with Taliban, involving Pakistan."
-  },
-  "7a7a3bb4255bb5e5": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between SA and Mozambique."
-  },
-  "0f26c7fe7e75c45b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between SA and Zimbabwe."
-  },
-  "09150b42f42737a8": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between China and Vietnam in military domain."
-  },
-  "895d3ba83aeb9a1e": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "U.S. initiated tariffs on Vietnam."
-  },
-  "790d5e8026809527": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "U.S. initiated tariffs on Vietnam."
-  },
-  "78793412c39607ad": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Taiwan and China."
-  },
-  "c208931c22218214": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Brazil and Latin American markets but does not describe interaction."
-  },
-  "7062f4574c507b67": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Brazil and Southeast Asia."
-  },
-  "190c54a96c9c3f84": {
+  "62e1379a4393baa5": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Vucic supports Macron-Merz proposal for EU integration."
+    "reason": "Venezuela's acting president visits Turkey for talks."
+  },
+  "3247818942c94796": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Iran's actions affect OPEC+'s oil output and prices."
+  },
+  "12432eb63c5d741c": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions claims but no direct economic interaction."
+  },
+  "152368954d0070cd": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Russia deepens military ties with Taliban."
+  },
+  "b02dbc4aa05b6a55": {
+    "direct": true,
+    "domain_ok": false,
+    "domain_fix": "military",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions security ties, not diplomatic conflict."
+  },
+  "aabc09042e173b50": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention interaction between India and Myanmar."
+  },
+  "73f4ff040de96bd4": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "SA and Kenya signed accords to boost trade."
+  },
+  "f85943a6f2a870a1": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Tariffs imposed, conflict over labor issues."
+  },
+  "9c446ecae5de0f60": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "U.S. initiated tariffs on Vietnam."
+  },
+  "3b9ad686f2c3febc": {
+    "direct": true,
+    "domain_ok": false,
+    "domain_fix": "military",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions China's actions, not diplomatic interactions."
+  },
+  "9ce3817b276f4602": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention interaction between Taiwan and other South China Sea countries."
+  },
+  "c1b74e0a66d5bf91": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe direct interaction between Serbia and Kosovo."
+  },
+  "7e6c0bf24ceeeb38": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "SG condemned killing of Serbian peacekeeper"
   },
   "589a44c3dd56f78d": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "EU leaders met to affirm membership prospects."
+    "reason": "EU leaders met to reaffirm membership prospects."
   },
-  "d33fd2fa3542bb2b": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions UN condemning a killing but no interaction with Serbia."
-  },
-  "233fe0f1685ccee6": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions but does not describe interaction between countries."
-  },
-  "20023a43eabd4b2e": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between countries."
-  },
-  "d17e6c7ee5a6c12a": {
+  "2a129ef055d0d548": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US outlined new policy on engagement."
+  },
+  "7fa713074abc2ea3": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "US and Iran close to a ceasefire deal."
   },
-  "5c63d385f6e9f5c2": {
+  "cfc355ab1285798a": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions effects on Africa, not direct interaction."
+    "reason": "Summary does not describe interaction between Japan and Philippines."
   },
-  "44c7cb3463511d31": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Iran but not interacting with Africa in claimed domain."
-  },
-  "bfb53d81584d179e": {
+  "36065e2e8a04eade": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "UNSUPPORTED",
-    "reason": "Rare-earth exports dropped, not diplomatic conflict."
+    "reason": "EBRD downgraded forecast, no conflict stated."
   },
-  "c1b0c6a076307e73": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not show direct interaction between Kyrgyzstan and Kazakhstan."
-  },
-  "7c1177720ee6bf8d": {
+  "ba4cab9b5534e702": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "C5+1 involves supply chains including Kyrgyzstan."
+    "reason": "Pakistan reaffirmed commitment to Shanghai spirit."
   },
-  "c9d5b1bf2699fc9f": {
+  "3552700a2fbf3edd": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention OPEC+ interactions."
+  },
+  "4bdd7c4de0c7f7d0": {
     "direct": true,
     "domain_ok": false,
     "domain_fix": "military",
     "stance": "SUPPORTED",
-    "reason": "Iran fired warning missiles at US warships."
+    "reason": "US ships targeted by Iranian missiles"
   },
-  "c75db4eeec3a362c": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between UN and Middle East."
-  },
-  "7f4e511006a57e10": {
+  "45fe0f40bf5cf882": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions UN warnings but no direct military interaction."
-  },
-  "e945cc895af2e39a": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "UN warns but does not interact economically with aid networks."
-  },
-  "7459c05f5388f43e": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct military interaction."
-  },
-  "e7e6e58d4362815a": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions NATO borders near Finland, no conflict stated."
-  },
-  "8f009f7361ec18f7": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Finland’s President suggests EU expansion."
+    "reason": "Drone incursions increase tension along NATO’s borders near Russia."
   },
-  "c946c1aece4299ae": {
+  "3ad771090a0df087": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions balance but no conflict."
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "11 EU countries called for stricter visa policies."
   },
-  "ca0c07879329d998": {
+  "89585565feaf303d": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Summary mentions Panama balancing efforts between the US and China."
+  },
+  "b444833b23796018": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction in claimed domain."
-  },
-  "a3d282068854c301": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Traffic disruptions mentioned, affecting canal economics."
+    "reason": "Summary does not describe direct interaction between Panama and China."
   },
   "1d241103a8ad77d5": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Tension due to historical honor decision."
   },
-  "002d4ef5dd416ee2": {
+  "b4b3fdc99eadce2b": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention EU economic interaction."
+    "reason": "Summary does not describe direct interaction between European countries and Russia."
   },
-  "8cf1e187050585b2": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Zimbabwe and South Africa."
-  },
-  "0969b0cd9fda4c60": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct military interaction."
-  },
-  "26b1efcfe3d67844": {
+  "220b8acc14c2e717": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Hungary dropped EU veto, signaling improved relations."
+    "reason": "Poland and China bought gold, affecting reserves."
   },
-  "de977c73045d5572": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Senegal and Mali."
-  },
-  "2183b10f1994ef57": {
+  "8a04b47f8d40f022": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "energy",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "US actions affect Iranian energy sector."
+    "reason": "Hungary allowed Ukraine to start EU accession talks."
   },
-  "3dadd367d2e0682b": {
+  "5f6aae82c4c2b5bf": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Romania enhances defenses with NATO allies."
+  },
+  "7382a71f82e8aabf": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "A and B have recent conflicts over disputed areas."
   },
-  "ab88512eaacf98e6": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "A and B are resolving maritime disputes through arbitration."
-  },
-  "aa63848e6b8ac904": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not show interaction between FRETILIN and the ministry."
-  },
-  "fe05695e9241eaf9": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "health",
-    "stance": "SUPPORTED",
-    "reason": "WHO organizes a regional health meeting Timor-Leste prepares for."
-  },
-  "a5d927e33239ea4d": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "US backs Bolivian President during crisis, condemns efforts to oust him."
-  },
-  "17f8ae34bfe16eff": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct military interaction."
-  },
-  "a7c2dd15f9be8f10": {
+  "bbd3a220452b09b3": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Kosovo aims for EU membership, EU meets on Balkan country prospects."
+    "reason": "A and B are in maritime arbitration over disputed areas."
   },
-  "2cc8284fbfe98a7b": {
+  "073627ecb0895724": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary states discussion, not conflict."
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US backs Bolivian President diplomatically."
   },
-  "b4d2048ef64608ce": {
+  "5960b4689e3eb36d": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US publicly backs Bolivian President during crisis."
+  },
+  "7a4824753633ea39": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between Mali and US."
+    "reason": "Summary does not mention interaction between US and Shield of Americas."
   },
-  "39e40a04e5ef1315": {
+  "47c5cbb79b25f5c2": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "French diplomat sentenced, straining relations."
+    "reason": "Slovakia discussed Serbia's stance on Kosovo."
   },
-  "ee4c0a2e455d4736": {
+  "98ff2636377f34be": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Mali offers reward for arrest of JNIM leader."
+    "reason": "French diplomat's sentence strained relations."
   },
-  "1ede391b5288a894": {
+  "aae842a618d2fa20": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Trafigura but does not describe interaction."
+    "reason": "Summary does not describe direct US-Africa interaction."
   },
-  "0aa584831b9c9226": {
+  "19b36b6821ca7786": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "U.S.-Qatar dominance in natural gas mentioned."
-  },
-  "2cb7f3a8bdc1ef51": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Iran damaged US facility in Qatar during conflict."
+    "reason": "Iran damaged U.S. facility in Qatar during conflict."
   },
   "05430eb33eca7f5e": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Qatar condemned Israel's action, showing conflict."
+    "reason": "Qatar condemned Israel's action, showing diplomatic conflict."
   },
-  "864759b679495816": {
+  "c549ed3660e95911": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between UN and US."
+    "reason": "Summary does not show direct interaction between Qatar and Israel."
   },
-  "0ba89a0ddb16197b": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Russia deepens ties with Taliban, indicating cooperation."
-  },
-  "bd4413729d0d3d24": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between CEPA and PNG government."
-  },
-  "2596f7d32008d5e7": {
+  "1c602365974f5640": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "TotalEnergies sponsors the club economically."
+    "reason": "Egypt hosts ceasefire talks between Israel and others."
   },
-  "7bade7e964ee23ca": {
+  "0020157509e2efa6": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "UN warns about conflict's impact, indicating diplomatic interaction."
+  },
+  "f123ae2b549adb6b": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions UN warning but no direct interaction stated."
+  },
+  "73e391a8a0ef142d": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Turkey and Malta."
+    "reason": "Summary does not mention Russia-Pakistan interaction."
   },
-  "2ba01a6f24c0c4f7": {
+  "f57259076902b937": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Venezuela's acting president plans talks with Erdogan to boost trade ties."
   },
-  "4853c709c4a8c756": {
+  "2dd3ee46280d9334": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Turkey and Russia."
+    "reason": "Summary does not mention Erdogan-Putin interaction."
   },
-  "e15823a0282dc5e6": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Yemen condemned Iran but no direct interaction stated."
-  },
-  "06dc6942e32c28ad": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "UK confirms ship delivery despite impact on Norway's build slots."
-  },
-  "5a3affd65d75e49b": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Royal Navy frigates and HMS Prince of Wales mentioned."
-  },
-  "07563f37a8fe4cc3": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions EU support but not conflict."
-  },
-  "9dad3ab75284db94": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Sweden and Brazil."
-  },
-  "085d0665030dac0c": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Israeli air strike injured people in Lebanon."
-  },
-  "bac8cd2423236333": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention Saudi Arabia or economic interaction."
-  },
-  "62b036b9de58d22e": {
+  "6943e26c536562d3": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "U.S.-Qatar dominance in natural gas highlighted in summary."
+    "reason": "UK delivered frigates to Royal Navy, HMS Prince of Wales deployed in Norwegian waters."
   },
-  "2d66e86442c0d1b5": {
+  "9206b9f2e16b9690": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Qatar supplies natural gas to Europe."
+    "reason": "UK ship had technical issue during deployment in Norwegian waters."
   },
-  "694b937a0aa28afe": {
+  "fc7e70ec7156f530": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Algeria builds pipeline to supply Europe natural gas."
+    "reason": "Brazil's interest in Swedish jets indicates economic cooperation."
   },
-  "bfdbd421a9ff4b34": {
+  "174d56b73b43bf73": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions support but not conflict."
+  },
+  "4b086176cbb3120b": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Israeli air strike injured Syrians."
+  },
+  "0fca05e8824dec94": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Syria may benefit economically from new oil transport route."
+  },
+  "2131231bb0a3abfc": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "India aims to enhance energy security through PNG partnerships."
   },
-  "96d6b2b5bf376958": {
+  "6b60da457d712158": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Chile dismisses Argentine claims over the Strait of Magellan."
+    "reason": "IGAD called for de-escalation in Somalia."
   },
-  "ac98ba3b92d3d4ae": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Chile and Brazil."
-  },
-  "330605df078ad945": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention direct interaction between Ethiopia and the US."
-  },
-  "e9cf37e28f0b09d6": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions IGAD but not interacting with Ethiopia."
-  },
-  "a3175e9928ba4812": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Ethiopia and Yemen."
-  },
-  "b04cfff8ec33ddad": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Greece and Turkey."
-  },
-  "1e22d9f198fe7d37": {
+  "3203b46b8c56cc1b": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions US-led coalition but not direct interaction with Sudan."
-  },
-  "56a8cbe7175af9df": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Somalia and a generic \"Government\"."
-  },
-  "0afc6c5ad6e1450f": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions EU concerns but no conflict stated."
-  },
-  "4ab1411d3e87941c": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Opec+ and UAE."
-  },
-  "3d156cf055c17046": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary states cyberattacks, not military conflict."
-  },
-  "8aa2f62371697eb2": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe a diplomatic interaction between Czech and Russia."
-  },
-  "cb9c0a0fb0436819": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Russia supports Myanmar's military cyber capabilities."
+    "reason": "Japan commended Ethiopia’s election."
   },
-  "8604116f84fd7e92": {
+  "a3824c04d4636c21": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention interaction between Greece and Cyprus."
+  },
+  "38ebdab118e68b37": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Turkey warns Greece against arms race."
+  },
+  "2ed697ac7e26ac4e": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Turkey warns Cyprus against arms race."
+  },
+  "d82a340d977f1c04": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Coalition involves military protection of Red Sea shipping."
+  },
+  "530b528524b7647d": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Albanian government pressured to affirm EU membership prospects."
+  },
+  "a2593f7b0260b10b": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention interaction between OPEC+ and UAE."
+  },
+  "a2a7c086546d32f6": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary lacks direct interaction details."
+  },
+  "c69908431c5c6a5d": {
     "direct": true,
     "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions engagement but not conflict."
+    "reason": "Summary mentions visa policies, not economic interaction."
   },
-  "d58559c053ff3f30": {
+  "8a5d717eaf16348f": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions but does not clarify nature of interaction."
+  },
+  "3ffe2132325201d5": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
@@ -2323,157 +1826,101 @@
     "stance": "SUPPORTED",
     "reason": "T criticized M, diplomatic conflict."
   },
-  "c9005b95b549fa53": {
+  "c5778c31c87acabc": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Troops deployed during conflict with Iran included Azerbaijan."
-  },
-  "86a74093af6f7a22": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Azerbaijan and Ukraine."
+    "reason": "Summary mentions pressure but no conflict stated."
   },
-  "d771b66f8922c82d": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "EU court influenced Hungarian legal decision."
-  },
-  "85ede00229f94aee": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between US and Yemen."
-  },
-  "f327a1d32b4b2e3c": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions economists' views, no interaction shown."
-  },
-  "833884767286d5f2": {
+  "7e56284c0aea8ed1": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Bank of Canada interacted with Reuters for economic forecasts."
+    "reason": "EU court ruled on Hungarian case"
   },
-  "80072faaf254717a": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Estonia and Russia."
-  },
-  "5e3fcc8a594f3554": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions match, no direct interaction."
-  },
-  "5bc588baae9daf16": {
+  "ad75ce9a9ff1088b": {
     "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "A led coalition to protect shipping routes."
+  },
+  "1188ad5b38ffa5b4": {
+    "direct": false,
     "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe direct interaction between Yemen and Iran."
+  },
+  "ab0f0675d7b49d24": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not describe interaction between Estonia and Russia."
+  },
+  "c29e06ed28ace02a": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "China imposes bans in response to NZ lawmakers' Taiwan visit."
   },
-  "f26782b107fabdb7": {
+  "981e3541d7d0c34a": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe military interaction."
+    "reason": "Summary does not mention economic interaction between US and Five Eyes."
   },
-  "3173af0a49faaf18": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary describes military actions, not diplomatic interactions."
-  },
-  "56ddf46d3a0ca44c": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions impacts but no direct interaction."
-  },
-  "ee7db48cefc7dc20": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions both but shows no direct interaction."
-  },
-  "9d5035c3b25430b7": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between U.S. and Sweden."
-  },
-  "00608d4f5f751733": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions UK and Norway separately, no interaction."
-  },
-  "29f9f1d8dbc432e3": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Norway and Canada."
-  },
-  "059d2314c4b19cba": {
+  "5bc588baae9daf16": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Tchiani met Erdogan, discussed bilateral relations and cooperation."
+    "reason": "China imposes bans in response to NZ lawmakers' Taiwan visit."
   },
-  "e849a0ce5b0c556a": {
+  "c663aa5411aba210": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Benin's president visits Niger to improve relations."
+    "reason": "Attack on vessels is a military action."
   },
-  "b139c60ed79639b4": {
+  "3e94e6a2f537fd59": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary states assistance but no conflict mentioned."
-  },
-  "7f44c4f61fb5005f": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Intel and Broadcom."
-  },
-  "181ad6ae30508c46": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "U.S. has ongoing tensions with Iran affecting markets."
+    "reason": "Drone explosion linked to Russia at Romanian port."
+  },
+  "308d1e6a5324615c": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Meeting discussed bilateral relations and cooperation."
+  },
+  "dca468417f7e1a0b": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US provides military aid to Niger's forces."
+  },
+  "3b6250c29738e9e1": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Italy provides military assistance to Niger's armed forces."
   },
   "5166daeba7c204b6": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Tariffs imposed by A on B's goods."
   },
@@ -2484,494 +1931,361 @@
     "stance": "SUPPORTED",
     "reason": "B's FM elected president of UN GA session"
   },
-  "09a4619b84c19c4b": {
+  "e9f5ac1372ec979f": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Russia and Belarus preparing for potential escalation together."
   },
-  "153dc4b52b676a89": {
+  "95539d84fe87c09a": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions RSF but not interacting with Sudan."
-  },
-  "354277fdc6f8bcdf": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Drone strikes caused civilian casualties."
+    "reason": "Finance Minister signed agreement with AfDB for a project."
   },
-  "0b3b84be510ae4f8": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions training near but no military interaction."
-  },
-  "2af80c6c68a31799": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Senegal and Morocco not directly interacting."
-  },
-  "f189fad878180920": {
+  "279f56de5125ecea": {
     "direct": true,
     "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_fix": "diplomatic",
     "stance": "SUPPORTED",
-    "reason": "Flight searches increased due to visa-free entry."
+    "reason": "Sudan signed an agreement with UNICEF for a project."
   },
-  "6d30bfac865d6551": {
+  "82e7115ede51762a": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions field, not interaction."
+    "reason": "Summary mentions co-location for training, not diplomatic interaction."
   },
-  "51fce8b498500839": {
+  "a931ec6e1abf9441": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions both countries but does not describe an interaction."
+  },
+  "d2259fc91be126b1": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
     "reason": "Summary mentions interactions but not economic ones."
   },
-  "a8ac157753f9f268": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions but does not describe interaction between them."
-  },
-  "4daeab7a321fddec": {
+  "7149bc5e5fd3dfca": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "K willing to store I's enriched uranium under nuclear deals."
+  },
+  "d02ca7eb12300f3b": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Ireland bans entry for Israeli ministers"
   },
-  "15d72901430f59d3": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions Cardano but no interaction described."
-  },
-  "7b9b664cde922ee9": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Luxembourg and Germany."
-  },
-  "189295bab2f8f7e4": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions trains but no military interaction."
-  },
   "4ddceac25960c148": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "PM called for UK mediation in a border dispute rejected by India."
+    "reason": "PM called for UK mediation in border dispute, rejected by India."
   },
-  "6341eea246f0e080": {
+  "d67e2fb8d65009c9": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "PM called for UK mediation in border dispute."
   },
-  "59b9283724b0eb8c": {
+  "d88d635b31f9de23": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Lula criticizes US tariffs, indicating economic conflict."
+    "reason": "India rejected Nepal's mediation request in a border dispute."
   },
-  "0fed94c26c7490ed": {
+  "0596e0fe53162446": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Lula thanked China for beef trade deal."
   },
-  "e81551dc8f1c3112": {
+  "41130a551ba1f0a1": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Kenya and South Africa signed MoUs for economic cooperation."
+    "reason": "Kenya and South Africa signed MoUs for deeper cooperation."
   },
-  "11addbc91569c6f4": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention AU interaction."
-  },
-  "629ae0b54520cf30": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction with intl orgs."
+  "689885a46979b865": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Lula criticizes new US tariffs, indicating conflict."
   },
   "2a209d49422a6d7b": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Brazil and Guatemala signed an agricultural-cooperation accord."
-  },
-  "0a3af4a8acafda04": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions but does not describe direct military interaction."
-  },
-  "ccfdeba077536953": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between Jordan and Israel."
-  },
-  "fedb000c72b90d01": {
-    "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "UK supports Jordan's custodianship of Al-Aqsa Mosque."
+    "reason": "Brazil and Guatemala signed an agricultural-cooperation accord."
   },
-  "b6afd461add683c0": {
+  "606d2baed3e862d7": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
     "reason": "Summary does not describe direct military interaction."
   },
-  "09bd5e0a9da9c1be": {
+  "e87bfc07c6cc025a": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention EU interaction."
+    "reason": "Summary does not describe direct interaction between Jordan and Israel."
   },
-  "d8b579d09d071a8c": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Slovenia blocked Israeli flight for political reasons."
-  },
-  "8abb239c72749972": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
-    "stance": "SUPPORTED",
-    "reason": "Jamaica's economy affected by Middle Eastern tensions."
-  },
-  "4de1b112f0cc6e31": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "France and Rwanda improve relations through memorial inauguration."
-  },
-  "af58362726aef5a3": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions EU policy, not direct interaction with Rwanda."
-  },
-  "55840f047e9e3aa6": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "Protesters targeted UNHCR, not state-level interaction."
-  },
-  "ea9d777a7a75e75d": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Protesters target migrants, no military interaction."
-  },
-  "832bdddc7253a665": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Venezuela and Iran."
-  },
-  "00f5d8622d34cdf9": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct military conflict between them."
-  },
-  "b416e1ffb4fe14a0": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "China expressed concerns about Hormuz for trade security."
-  },
-  "8ff9423bba506384": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Maritime disputes and recent armed confrontations indicated."
-  },
-  "efb3797860becb87": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Maritime disputes and recent armed confrontations indicated."
-  },
-  "3868dc7645d09777": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions considering joining, not interaction with another country."
-  },
-  "b5bb9d4f50ca5b21": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "Cambodia uses UN for maritime arbitration with Thailand."
-  },
-  "3a3a1145a214b3db": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "UNSUPPORTED",
-    "reason": "Uganda closed border, not explicit conflict."
-  },
-  "f2ea57ec0ae27c75": {
+  "f00e4250d3d919f6": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "WHO seeks resources to fight Ebola in Congo."
+    "reason": "UK supports Jordan's custodianship of Al-Aqsa Mosque."
   },
-  "a5a15cd05c09eb9f": {
+  "6e55aa5f713f4cd1": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "U.S. benefits from using Jordan's territory for warfare."
+  },
+  "bfac42654f3946a7": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "PM linked drone strike in Romania to EU-Moscow dialogue."
+  },
+  "ff5b316588505f54": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "FM stressed need for talks to resolve Ukraine conflict"
+  },
+  "acc16dd3e208ee51": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Slovenia blocked Israeli flight for political reasons."
+  },
+  "4de1b112f0cc6e31": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "France and Rwanda improve relations through memorial inauguration."
+  },
+  "5e6751afa1d7e339": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary does not mention EU-US interaction."
+  },
+  "fcfcc59c31f9daac": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary shows increased exports, not conflict."
+  },
+  "8bb59277500d15f7": {
+    "direct": false,
+    "domain_ok": false,
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions China's concern but no direct interaction stated."
+  },
+  "22e7eaa00ea643f3": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Maritime disputes resolved via UNCLOS, neutral stance."
+  },
+  "8ff9423bba506384": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Maritime disputes and recent armed confrontations indicated."
+  },
+  "e9801b2d07de4b11": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Germany announces plans within EU context."
   },
-  "d02356a6fc8866bd": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary mentions countries but not direct interaction."
-  },
-  "75e31cacef39b765": {
+  "955d9cc700f4e539": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Chinese company's investment approved by Namibia's Competition Commission."
+    "reason": "EU discusses enlargement and integration for WB and Ukraine."
   },
-  "77e71667d60424a8": {
+  "7eb75eb97dad1af3": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Leaders attend EU summit for membership prospects."
+  },
+  "2b8c8dd16d44effd": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Montenegro restricted entry for Serbians, a diplomatic action."
+  },
+  "924fc63e7ba40e29": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Investment approval indicates cooperation."
+  },
+  "c558583558571fca": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Namibia and South Africa."
+    "reason": "Summary does not describe direct interaction between Argentina and South America."
   },
-  "d38dc094d5715614": {
+  "a25002a8cfed7d59": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Paraguay and Argentina."
+    "reason": "Summary does not describe direct interaction in energy domain."
   },
-  "2af3542de22e3e38": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Argentina and Brazil."
+  "b668a4e0f15c8b1a": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "US approved sale of counter-drone systems to Kuwait."
   },
-  "f2683741062f84bb": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct economic interactions."
-  },
-  "5b1991ee17bd7b06": {
+  "1d98602076dff598": {
     "direct": false,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
     "reason": "Summary does not describe interaction between Kuwait and Bahrain."
   },
-  "20b70c60413f7cdd": {
+  "3e61d8efc292172a": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "US approved sale of counter-drone systems to Kuwait."
-  },
-  "bffd7c9e8deca6e9": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Israel detained activist, conflict implied."
-  },
-  "3efdb27a4027d17a": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Turkey warned Greece against arms race."
   },
-  "d395fbc34a655b10": {
+  "73cd8a44198990f4": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Turkey warned Cyprus against arms race."
-  },
-  "bfeafe60707ef978": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Sports event, not military interaction."
+    "reason": "Turkey warned Cyprus against an arms race."
   },
   "7099e1f3c46eb476": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "A threatens to reconsider role due to dispute."
   },
-  "9bcd90b07c706724": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
-    "stance": "SUPPORTED",
-    "reason": "EU leaders meet in Montenegro for Bosnia's membership prospects."
-  },
-  "c2cdc4323c2b398f": {
+  "ab83ad943e4ebd26": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "EU leaders meet in Montenegro for diplomatic talks."
+    "reason": "EU leaders meet to reaffirm membership prospects for six Balkan countries."
   },
-  "a2606df2331856dc": {
-    "direct": true,
+  "c9859d323395771a": {
+    "direct": false,
     "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary mentions policy report but not conflict."
+    "reason": "Summary mentions policy towards migrants, not interaction."
   },
-  "ca759b1490f4220e": {
-    "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
-    "stance": "SUPPORTED",
-    "reason": "Burkina Faso and Niger involved in West African countries' military action."
-  },
-  "43cb674e666a6670": {
+  "a3230f11f4635b40": {
     "direct": true,
     "domain_ok": true,
     "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Benin's president visited focusing on cooperation."
+    "reason": "West African countries activate military force in Niger."
   },
-  "a205cebc179f31d7": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between Burkina Faso and Mali."
-  },
-  "c8a9d0651ee11931": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe country interaction."
-  },
-  "9ab83837861c04bf": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention interaction between Argentina and Ecuador."
-  },
-  "c4bf46f26d9f2841": {
+  "d57d1701a818ca16": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "diplomatic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Summary mentions Estonia's interaction with other European countries on policy issues."
+    "reason": "Trade and infrastructure focus indicates cooperation."
   },
-  "07ca5fe8f312ec28": {
-    "direct": false,
+  "63378bc665300bd1": {
+    "direct": true,
     "domain_ok": false,
     "domain_fix": "none",
     "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe direct interaction between Estonia and Russia."
+    "reason": "Visit focused on security and trade, no explicit economic interaction."
   },
-  "6bb73193e73376a9": {
+  "e1c121b3a8169e19": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "economic",
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Summary mentions China's economic engagement in Latin America."
+    "reason": "Countries called for stricter visa policies towards Russian citizens."
   },
-  "0d98fd096bb662f2": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not describe interaction between Laos and US."
-  },
-  "b9145c9f6109d8ab": {
-    "direct": false,
-    "domain_ok": false,
-    "domain_fix": "none",
-    "stance": "UNSUPPORTED",
-    "reason": "Summary does not mention country-country interaction."
-  },
-  "d8e615b0314a4c8d": {
+  "6a68d5bbe9f6741e": {
     "direct": true,
-    "domain_ok": false,
-    "domain_fix": "military",
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "Estonia establishes production line in Netherlands."
+  },
+  "9ddd249cdd41a2b2": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
+    "stance": "SUPPORTED",
+    "reason": "A's president visited B to enhance relations"
+  },
+  "ab4d2a145a488f87": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
     "reason": "Latvia discusses military threat from Russia."
   },
-  "76fcbd5dbbcd7a5a": {
-    "direct": true,
+  "b6bf9f0f909601cb": {
+    "direct": false,
     "domain_ok": false,
-    "domain_fix": "military",
+    "domain_fix": "none",
+    "stance": "UNSUPPORTED",
+    "reason": "Summary mentions actions but not direct interaction between Europe and Russia."
+  },
+  "a04e3449903dd9a6": {
+    "direct": true,
+    "domain_ok": true,
+    "domain_fix": "",
     "stance": "SUPPORTED",
-    "reason": "Latvia cooperates with NATO on military exercises."
+    "reason": "NATO conducts drills and tests in Latvia."
   }
 }
