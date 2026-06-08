@@ -1,6 +1,6 @@
 {
   "hash": "b7f8ac0ba4c535d2",
-  "text": "### Situation Report\n\nThe geopolitical landscape over the past 12 days has been marked by a complex web of conflicts and cooperation, with several key fault lines emerging. The primary military conflicts include those between Iran and the United States, Iran and Israel, Russia and Ukraine, and China and Taiwan. These tensions are driven by strategic interests, territorial disputes, and ideological differences. For instance, the US military strikes on Iranian sites followed by Iran's retaliatory drone launches towards the Strait of Hormuz highlight ongoing hostilities in the Middle East. Similarly, the escalation of conflict between Russia and Ukraine, with Ukraine launching 500 drone strikes into Russian territory, underscores the deepening tensions in Eastern Europe.\n\nDiplomatically, notable conflicts include those between India and Pakistan, Armenia and Russia, and Colombia and the United States. These disputes often stem from historical grievances and regional power dynamics. For example, the heightened tensions between China and Japan over carrier fleet upgrades reflect broader strategic competition in East Asia. The visit by Chinese President Xi Jinping to North Korea to strengthen ties amid growing Russian-North Korean relations exemplifies the complex interplay of alliances and rivalries.\n\nEconomically, significant conflicts are evident between the United States and Vietnam, Canada, Russia, China, Japan, and Iran. These tensions often arise from trade disputes and economic sanctions. For instance, the ongoing trade tensions between the US and China have led to a reconfiguration of global supply chains as other countries seek new trade relationships. The US and India are exploring cooperation opportunities amid energy crises, highlighting potential areas for collaboration despite existing conflicts.\n\nHealth-related conflicts, such as those between Kenya and the United States over Ebola travel restrictions, underscore the interconnectedness of global health issues. However, there is also notable cooperation in areas like China's support for the Democratic Republic of Congo (DRC) during its Ebola outbreak response.\n\nIn terms of bloc structures, countries are aligning along certain lines but with significant cross-layer divergences. The blocs identified include a group led by Canada, France, and the European Union, and another comprising China, Russia, and several Asian nations. These blocs often cooperate in specific areas while conflicting on others. For example, China and Russia maintain strong military and energy ties despite diplomatic conflicts with countries like Ukraine.\n\nMaritime chokepoints remain relatively stable, with normal traffic flow through key straits such as the Strait of Hormuz, Suez Canal, Bab el-Mandeb, Malacca, Panama, Gibraltar, Bosphorus, and Taiwan Strait. However, the ongoing tensions in these regions could potentially disrupt trade if conflicts escalate.\n\nIn summary, the geopolitical landscape is characterized by a mix of military confrontations, economic rivalries, diplomatic tensions, and health-related challenges. The bloc structures are fluid, with countries engaging in both cooperation and conflict across multiple domains.",
+  "text": "- Media-derived stances noted, not ground truth.\n- Iran-United States conflict escalates with US military strikes on Iranian sites and Iranian drone launches towards the Strait of Hormuz.\n- China-Russia cooperation deepens as Xi Jinping visits North Korea to strengthen ties amid growing Russian-North Korean relations.\n- Russia-Ukraine conflict intensifies with Ukraine launching 500 drone strikes into Russia, escalating tensions as NATO advances its Nordic strategy.\n- Israel-United States and Iran-Israel conflicts persist, with Iran condemning US and Israeli attacks on its nuclear facilities during an IAEA board meeting.\n- China-United States trade tensions continue, with other countries forming new trade relationships amid energy crises.\n- India-United States cooperation is explored amid energy crises as India increases oil imports from Venezuela due to Middle Eastern supply disruptions.\n- Cambodia-Thailand maritime dispute remains unresolved despite diplomatic cooperation efforts through UN-backed arbitration.",
   "facts": {
     "layers": {
       "military": {
@@ -190,7 +190,7 @@
           "why": "Canadian Prime Minister Mark Carney is navigating diplomatic relations between Canada, the US, and China."
         }
       ],
-      "text": "The relationship between Canada and the United States continues to be marked by both cooperation and occasional conflict. In the realm of diplomacy, they have collaborated on security measures such as implementing travel restrictions related to Ebola ahead of the 2026 World Cup. However, economic tensions have emerged with the U.S. Federal Reserve's push towards rate hikes due to strong job reports, which contrasts with Canada's central bank stance and widens the gap between their monetary policies. Additionally, Canadian Prime Minister Justin Trudeau (not Mark Carney, who was the former Governor of the Bank of England) is actively navigating diplomatic relations, including managing tensions between the U.S. and China."
+      "text": "- Diplomatic cooperation: The US, Mexico, and Canada have collaborated on travel restrictions for the 2026 World Cup to address health concerns.\n- Economic conflict: Tensions between the US and Russia have increased due to Russian attacks on Ukrainian nuclear sites, indirectly affecting Canada's stance.\n- Diplomatic cooperation: Canadian Prime Minister Mark Carney is managing relations among Canada, the US, and China, highlighting ongoing diplomatic efforts.\n- Economic divergence: The Federal Reserve's move towards rate hikes due to strong US jobs reports contrasts with Canada's central bank policies."
     },
     "Iran|United States": {
       "h": "ba1caccb3325",
@@ -287,7 +287,7 @@
           "why": "The US announces an end to its naval blockade of Iran amid ongoing diplomatic tensions."
         }
       ],
-      "text": "The relationship between Iran and the United States has been marked by significant military conflicts, particularly around the Strait of Hormuz, where both countries have engaged in skirmishes that test ceasefires and escalate tensions. Diplomatically, there have been instances of cooperation, such as efforts to extend a ceasefire, but these are often overshadowed by broader conflicts, including economic sanctions imposed by the U.S. on Iran. These dynamics reflect ongoing disagreements over nuclear facilities, regional influence, and security concerns in the Middle East."
+      "text": "- Military conflicts between the U.S. and Iran have escalated near the Strait of Hormuz, with both sides engaging in skirmishes that test ceasefire agreements.\n- Diplomatic tensions between the U.S. and Iran intensified during IAEA board meetings, where Iran condemned U.S.-led attacks on its nuclear facilities.\n- Economic sanctions imposed by the U.S. on Iran have expanded to target multiple entities and vessels globally, further straining bilateral relations.\n- The U.S. has ended its naval blockade of Iran amid ongoing diplomatic tensions, indicating a potential shift in approach towards de-escalation."
     },
     "Russia|United States": {
       "h": "30dedc54d998",
@@ -321,7 +321,7 @@
           "why": "US commits funds and invests $1.5 billion in energy security and LNG infrastructure projects in India and Southeast Asia."
         }
       ],
-      "text": "The relationship between Russia and the United States remains tense, driven by ongoing military conflicts such as Russia's attacks on Ukrainian nuclear waste storage facilities, which have escalated tensions further. Additionally, economic factors are complicating relations, with the U.S. Federal Reserve's decision to potentially raise interest rates in response to a strong jobs report creating divergence from Canada’s central bank policies. In an effort to avoid misinterpretation and potential conflict, the U.S. has decided against deploying Tomahawk missiles in Germany. Diplomatically, the U.S. is also engaging in strategic economic partnerships, committing significant funds to energy security projects in India and Southeast Asia, which may further strain relations with Russia due to geopolitical considerations."
+      "text": "- Military conflict: U.S.-Russia tensions escalate following Russia's attack on a Ukrainian nuclear waste storage facility, highlighting ongoing hostilities.\n- Economic conflict: The U.S. Federal Reserve's move towards rate hikes due to strong jobs report widens economic divergence with Russia and other nations, including Canada.\n- Military conflict: The U.S. refrains from deploying Tomahawk missiles in Germany to prevent potential Russian misinterpretation, showcasing strategic diplomatic considerations.\n- Diplomatic conflict: U.S. investments in energy security projects in India and Southeast Asia signal a shift in focus away from traditional allies like Russia, emphasizing economic partnerships."
     },
     "North Korea|Russia": {
       "h": "e1d0acb8738d",
@@ -354,7 +354,7 @@
           "why": "Chinese President Xi Jinping is visiting North Korea, aiming to strengthen ties amid growing Russian-North Korean relations."
         }
       ],
-      "text": "China and North Korea maintain a close relationship driven by mutual strategic interests and historical ties. The recent visit of Chinese President Xi Jinping to North Korea underscores this cooperation, aimed at strengthening diplomatic bonds. This visit comes in the context of growing Russian-North Korean relations, indicating that both China and Russia are seeking to bolster their influence in the region through multilateral partnerships."
+      "text": "- Xi Jinping's visit aims to enhance Sino-North Korean relations in response to strengthening ties between Russia and North Korea.\n- The visit underscores China's commitment to maintaining diplomatic cooperation with North Korea despite international pressures.\n- Concrete events include high-level state visits, indicating a strategic partnership amidst regional geopolitical shifts."
     },
     "Israel|United States": {
       "h": "2d34a211ec7e",
@@ -388,7 +388,7 @@
           "why": "Israeli attacks in Gaza despite ceasefire result in multiple Palestinian deaths and injuries."
         }
       ],
-      "text": "The relationship between Israel and the United States is deeply rooted in shared strategic interests, particularly concerning security and mutual threats, such as Iran's nuclear program. This was evident when both countries condemned Iranian attacks on their facilities during an IAEA board meeting, highlighting their alignment against perceived regional adversaries. Additionally, despite efforts to maintain stability, Israeli military operations in Gaza, even after a ceasefire, have strained diplomatic relations, leading to tragic consequences for Palestinians and further complicating the broader Middle East landscape."
+      "text": "- The relationship between Israel and the United States is driven by shared security interests, particularly regarding threats from Iran, as evidenced by mutual military actions against Iranian nuclear facilities.\n- Tensions between Israel and the U.S. have been exacerbated by Iranian retaliatory attacks on Israeli targets through ballistic missiles, highlighting ongoing conflicts in the region.\n- The U.S.-Africa Business Summit was postponed due to an Ebola outbreak in Mauritius, illustrating how regional crises can impact broader diplomatic engagements involving both nations.\n- Despite a ceasefire, Israeli military operations in Gaza continue, leading to Palestinian casualties and straining diplomatic relations between Israel and the United States."
     },
     "Iran|Israel": {
       "h": "063a9e27131b",
@@ -443,7 +443,7 @@
           "why": "Negative global views of Israel increase following Iran conflict."
         }
       ],
-      "text": "The relationship between Iran and Israel is marked by ongoing tensions and conflicts, often driven by mutual accusations and retaliatory actions. In a recent incident, Iran condemned US and Israeli attacks on its nuclear facilities during an IAEA board meeting, highlighting the deep-seated distrust and hostility between the two nations. This was followed by Iran launching ballistic missiles at Israeli targets, which escalated regional tensions. Additionally, Israel deployed troops to several countries including Azerbaijan, UAE, Iraq, and Somaliland, further complicating their relationship and increasing negative global perceptions of Israel in response to these actions."
+      "text": "- Military conflicts between Iran and Israel have escalated due to mutual attacks on nuclear facilities and the use of ballistic missiles as a response.\n- Diplomatic tensions have risen as both nations accuse each other of aggression, leading to negative perceptions globally.\n- Iran's military actions against Israeli targets have been part of broader regional conflicts involving multiple countries."
     },
     "China|Iran": {
       "h": "ce657e7bc0c1",
@@ -483,7 +483,7 @@
           "why": "South Korea and China are boosting commercial flights due to increased tourism between the two countries."
         }
       ],
-      "text": "The relationship between China and South Korea has been driven by a combination of economic cooperation and contact. Recently, both nations have been enhancing commercial flights to accommodate growing tourist traffic, reflecting an increase in people-to-people exchanges. Additionally, there has been a notable shift in trade dynamics, as China's exports of rare earth elements to Japan have decreased significantly, prompting South Korean companies to seek alternative sources for these critical materials. This event underscores the evolving economic landscape and interdependencies between the two countries."
+      "text": "- Economic cooperation is driving an increase in commercial flights between China and South Korea to accommodate growing tourist traffic.\n- The reduction in China's rare-earth exports to Japan has prompted Korean companies to seek alternative sources, indirectly affecting economic relations.\n- Increased commercial flights are a concrete event reflecting enhanced tourism between China and South Korea."
     },
     "China|European Union": {
       "h": "288e9d759519",
@@ -510,7 +510,7 @@
           "why": "EU calls for stronger response to Chinese exports, prompting Beijing's threat of retaliation."
         }
       ],
-      "text": "The relationship between China and the European Union is marked by both economic tensions and diplomatic conflicts. Recently, there has been a push for increased commercial flights between China and South Korea due to rising tourism, highlighting some positive aspects in their bilateral relations. However, this dynamic is overshadowed by ongoing economic disputes, where the EU has called for a stronger response to what it perceives as unfair Chinese exports. In reaction, China has threatened retaliation, indicating a fragile balance in their economic interactions and diplomatic engagements."
+      "text": "- Economic conflicts arise from increased commercial flights between China and South Korea driven by growing tourism.\n- Diplomatic tensions escalate as China threatens retaliation against the EU due to export concerns.\n- The EU responds with a call for a stronger reaction to Chinese exports, leading Beijing to issue a retaliatory threat."
     },
     "China|DR Congo": {
       "h": "b5de62abc6fe",
@@ -530,7 +530,7 @@
           "why": "Chinese medical team arrives in DR Congo to assist in Ebola outbreak, highlighting health diplomacy efforts."
         }
       ],
-      "text": "The relationship between China and the Democratic Republic of Congo (DR Congo) has been strengthened through collaborative health initiatives, particularly during crises such as the Ebola outbreak. In response to a public health emergency, a Chinese medical team was dispatched to DR Congo, demonstrating China's commitment to global health cooperation and its efforts in health diplomacy. This concrete event underscores the growing partnership between the two nations in addressing international health challenges."
+      "text": "- A Chinese medical team arrives in DR Congo to help combat the Ebola outbreak, showcasing China's commitment to global health cooperation.\n- The arrival of the Chinese medical team underscores China's role in international health diplomacy and crisis response.\n- This event highlights concrete actions by China in supporting African nations during public health emergencies."
     },
     "Israel|Palestine": {
       "h": "a338fe709e48",
@@ -631,7 +631,7 @@
           "why": "China criticizes US for terrorism charges against Cuba and calls for an end to sanctions."
         }
       ],
-      "text": "The relationship between China and the United States is marked by both cooperation and conflict across various domains. In the economic sphere, trade tensions persist as new tariffs and regulations are implemented, leading other countries to form alternative trade relationships. Diplomatically, while there have been instances of cooperation, such as joint efforts in health crises like the Ebola outbreak in DR Congo, conflicts arise over issues like US insurers continuing to cover vaccines through 2027 or China's potential revival of a canal project in Nicaragua, which could challenge American influence in the region. These dynamics reflect a complex interplay of interests and strategic competition between the two global powers."
+      "text": "- economic (conflict): Trade tensions between the US and China continue, with new tariffs and regulations leading to heightened conflicts.\n- military (conflict): China's reduction in rare-earth exports to Japan has forced Japanese companies to seek alternative sources, potentially escalating regional tensions.\n- diplomatic (contact): Despite conflicts, US insurers will cover vaccines for China through 2027, indicating some level of ongoing cooperation.\n- health (cooperation): US and Chinese medical teams collaborate in DR Congo during an Ebola outbreak, showcasing areas of potential cooperation."
     },
     "Russia|Ukraine": {
       "h": "08908825050a",
@@ -672,7 +672,7 @@
           "why": "Ukraine claims Russia shot down hundreds of drones during an economic forum in St Petersburg."
         }
       ],
-      "text": "The relationship between Russia and Ukraine has been marked by escalating conflict, driven by Ukraine's military actions against Russian targets. Specifically, Ukraine launched 500 drone strikes into Russian territory, which intensified tensions. Additionally, diplomatic relations have deteriorated as Ukraine accused Russia of shooting down hundreds of its drones during an economic forum in St Petersburg. These events are part of a broader context where NATO is advancing its Nordic strategy, further complicating the geopolitical dynamics between these nations."
+      "text": "- Ukraine launches 500 drone strikes into Russian territory, escalating military conflict.\n- Diplomatic tensions rise as Ukraine accuses Russia of shooting down drones at a St Petersburg economic forum.\n- NATO's advancement of its Nordic strategy adds to geopolitical pressures between Russia and Ukraine.\n- UK Prime Minister warns of potential Russian attack on NATO within four years, highlighting ongoing security concerns."
     },
     "Israel|Lebanon": {
       "h": "97caf1089c7f",
@@ -692,7 +692,7 @@
           "why": "Israeli air strike in southern Lebanon injures two Syrians and two Bangladeshis."
         }
       ],
-      "text": "The relationship between Israel and Lebanon remains tense, driven by ongoing military conflicts and retaliatory actions. Recently, Iran has escalated tensions by launching missile strikes against Israel in response to what it perceives as continued attacks on Lebanese territory. Additionally, an Israeli air strike in southern Lebanon resulted in injuries to civilians from Syria and Bangladesh, further complicating the already fragile relationship between the two nations."
+      "text": "- Military conflict between Israel and Lebanon has been driven by ongoing attacks, with Iran retaliating against Israel by firing missiles at Lebanon.\n- An Israeli air strike in southern Lebanon resulted in injuries to civilians from Syria and Bangladesh, highlighting the human cost of the conflict."
     },
     "IAEA|Ukraine": {
       "h": "72e14a67cc00",
@@ -725,7 +725,7 @@
           "why": "NATO considers €70 billion in military aid for Ukraine ahead of Ankara summit."
         }
       ],
-      "text": "The relationship between NATO and Ukraine has been significantly strengthened by mutual military cooperation, particularly as Ukraine intensifies its operations against Russian forces with the use of 500 drone strikes. This cooperation is part of a broader NATO strategy that includes advancing military support to Ukraine. Additionally, NATO is considering providing substantial financial aid amounting to €70 billion ahead of an upcoming Ankara summit, further solidifying this alliance and demonstrating NATO's commitment to supporting Ukraine in its conflict with Russia."
+      "text": "- NATO is increasing military cooperation with Ukraine, including considering €70 billion in military aid.\n- Ukraine is intensifying its military operations against Russia by launching 500 drone strikes.\n- These actions align with NATO's broader strategy in the region, particularly its advancing Nordic approach.\n- The Ankara summit may further solidify NATO-Ukraine defense ties as part of collective security efforts."
     },
     "Iran|Russia": {
       "h": "8ad6aafde9d1",
@@ -791,7 +791,7 @@
           "why": "Pakistan claims India is weaponizing water through Chenab River projects."
         }
       ],
-      "text": "The relationship between India and Pakistan remains tense due to ongoing disputes over the management of shared rivers, particularly the Chenab River, which threatens regional stability under the Indus Waters Treaty. Additionally, Pakistan has rejected India's objections to upcoming elections in Gilgit-Baltistan, asserting its claim over Kashmir. Pakistan also accuses India of weaponizing water through projects on the Chenab River, further exacerbating the already fragile diplomatic relations between the two countries."
+      "text": "- Diplomatic tensions arise from water disputes over the Chenab River, threatening regional stability under the Indus Waters Treaty.\n- Pakistan rejects India's objections to elections in Gilgit-Baltistan, reinforcing its stance on Kashmir.\n- Pakistan accuses India of weaponizing water through Chenab River projects, escalating diplomatic conflict."
     },
     "Russia|United Kingdom": {
       "h": "0c73208a13df",
@@ -811,7 +811,7 @@
           "why": "UK Prime Minister warns of potential Russian attack on NATO within four years."
         }
       ],
-      "text": "The relationship between Russia and the United Kingdom is marked by heightened tensions, driven primarily by concerns over military conflict. In recent statements, UK Prime Minister Keir Starmer has warned that Russia could launch an attack on NATO member states within the next four years, underscoring a sense of impending threat and the potential for escalation in their relationship. This warning reflects ongoing geopolitical tensions and Russia's assertive actions in regions like Ukraine, which have strained relations between the two nations."
+      "text": "- The relationship between Russia and the United Kingdom is marked by tensions, particularly in light of warnings from UK leaders about potential Russian military aggression against NATO.\n- Diplomatic relations have been strained due to statements from UK officials, such as Prime Minister Keir Starmer, who have warned of a possible Russian attack on NATO members within four years.\n- These warnings reflect ongoing geopolitical concerns and the broader context of Russia's actions in Ukraine and its implications for European security."
     },
     "Ukraine|United Kingdom": {
       "h": "131b88e4f4ca",
@@ -886,7 +886,7 @@
           "why": "China's rare-earth exports to Japan dropped by over 80%, prompting companies to seek alternatives."
         }
       ],
-      "text": "The relationship between China and Japan is marked by both cooperation and conflict, particularly in the military and economic spheres. Tensions have escalated as China has urged Japan to upgrade its carrier fleet, reflecting a broader strategic competition in the region. This has been paralleled by Japan's efforts to enhance its anti-ship missile capabilities and defensive posture. Additionally, economic relations have been strained due to significant drops in China's rare-earth exports to Japan, forcing Japanese companies to seek alternative sources, which underscores underlying economic rivalries and dependencies between the two nations."
+      "text": "- Military tensions rise as China urges Japan to upgrade its carrier fleet, amid heightened conflicts.\n- Economic conflict escalates with China reducing rare-earth exports to Japan by over 80%, forcing Japanese businesses to find new sources.\n- Diplomatic relations are strained as both nations engage in competitive military and economic posturing.\n- Japan enhances anti-ship missile capabilities, prompting China to call for its own fleet upgrades."
     },
     "Armenia|Russia": {
       "h": "ed337ae6a0da",
@@ -906,7 +906,7 @@
           "why": "Russia is applying political pressure on Armenia ahead of the elections, threatening a 'Ukrainian scenario' if Armenia continues its European integration."
         }
       ],
-      "text": "The relationship between Armenia and Russia has been marked by significant political pressure from Moscow as Armenia prepares for upcoming parliamentary elections. Russia has warned Armenia against aligning more closely with Europe, explicitly threatening to impose a similar fate as Ukraine faced if it were to do so. This pressure reflects Russia's desire to maintain its influence over Armenia and prevent the country from moving too far away from its sphere of influence towards Western institutions and alliances."
+      "text": "- Russia threatens a \"Ukrainian scenario\" for Armenia if it aligns more closely with Europe during parliamentary elections.\n- Moscow applies political pressure on Armenia to discourage closer ties with Europe before the upcoming elections.\n- The relationship is driven by Russia's desire to maintain influence over Armenia, similar to its actions in Ukraine."
     },
     "Armenia|European Union": {
       "h": "4f40db0858ea",
@@ -939,7 +939,7 @@
           "why": "OPEC+ agreed to a fourth increase in oil output targets despite ongoing conflicts and sanctions."
         }
       ],
-      "text": "OPEC and OPEC+ have maintained a cooperative relationship by agreeing to increase oil output targets for the fourth time, despite facing challenges such as ongoing conflicts and sanctions. This decision reflects their shared economic interests and aims to stabilize global oil markets amid volatile conditions. The concrete event driving this cooperation is the collective effort to address supply shortages and meet growing demand, particularly in light of geopolitical tensions that could disrupt oil supplies."
+      "text": "- OPEC+ cooperated by agreeing to a fourth increase in oil output targets, demonstrating economic motives despite global conflicts and sanctions.\n- The decision to boost oil production was driven by economic considerations, aiming to stabilize oil prices and meet growing demand.\n- Specific events included the continuation of previous agreements and the addition of new members to OPEC+, enhancing collective influence in the market."
     },
     "India|United States": {
       "h": "74688605fc9c",
@@ -973,7 +973,7 @@
           "why": "US commits funds and invests $1.5 billion in energy security and LNG infrastructure projects in India and Southeast Asia."
         }
       ],
-      "text": "The relationship between India and the United States is driven by a mix of cooperation and strategic considerations, particularly in the realm of energy security. The U.S. has committed significant financial resources to support energy infrastructure projects in India, investing $1.5 billion in liquefied natural gas (LNG) infrastructure to bolster energy security amid global crises. This economic cooperation aligns with broader geopolitical interests as both nations seek to balance against rising tensions with China, especially following the Ladakh military confrontation. Additionally, efforts to rebuild diplomatic relations between India and China have indirectly strengthened ties between India and the U.S., creating a framework for collaborative initiatives that benefit both countries economically and strategically."
+      "text": "- Economic cooperation drives US-India relations through joint initiatives on energy security, exemplified by investments in LNG infrastructure.\n- Diplomatic efforts aim to mend ties between India and China following the Ladakh military standoff, indirectly strengthening US-India alliances.\n- Energy crises prompt both nations to explore cooperative opportunities, particularly in the realm of energy supply and security.\n- The US commits significant financial support for energy projects in India, including a $1.5 billion investment in LNG infrastructure, reinforcing economic ties."
     },
     "India|Venezuela": {
       "h": "947177028f4e",
@@ -993,7 +993,7 @@
           "why": "India increased oil imports from Venezuela amid Middle Eastern supply disruptions."
         }
       ],
-      "text": "The relationship between India and Venezuela has strengthened due to India's increased oil imports from Venezuela, particularly as Middle Eastern supply lines faced disruptions. This shift in energy cooperation reflects a strategic move by India to diversify its sources of crude oil and ensure more stable supplies. As a result, India has become a key market for Venezuelan oil exports, fostering economic ties between the two countries despite broader geopolitical challenges."
+      "text": "- India increased its oil imports from Venezuela due to disruptions in Middle Eastern supply lines.\n- The relationship between India and Venezuela strengthened as India sought alternative energy sources.\n- Economic cooperation was driven by the need for stable oil supplies amidst global market uncertainties."
     },
     "Bangladesh|India": {
       "h": "4fb5477a8e59",
@@ -1052,7 +1052,7 @@
           "why": "EU ministers support limiting protection for Ukrainian men of military age in the conflict."
         }
       ],
-      "text": "The relationship between the European Union and Ukraine has been shaped by both diplomatic cooperation and military conflict. In response to Russia's invasion, Ukraine requested that the EU exclude men of military age from temporary protection programs, aiming to ensure their availability for defense against Russian forces. This request was supported by EU ministers who agreed to limit protection measures for these individuals, aligning with broader efforts to assist Ukraine in its fight against aggression while addressing concerns about potential security risks within member states."
+      "text": "- Ukraine seeks to differentiate between civilian and military populations in EU protection programs due to ongoing conflict.\n- EU ministers agree to limit temporary protection for Ukrainian men of military age, reflecting concerns over potential recruitment into armed forces.\n- This decision highlights the complex balance between humanitarian aid and security considerations in EU-Ukraine relations."
     },
     "Taiwan|United States": {
       "h": "a15df4801158",
@@ -1072,7 +1072,7 @@
           "why": "Taiwan is expanding its anti-ship missile arsenal in response to US military support uncertainties."
         }
       ],
-      "text": "The relationship between Taiwan and the United States is characterized by a complex interplay of military cooperation and tension, driven by mutual security concerns. Taiwan has been expanding its anti-ship missile arsenal as a strategic move in response to uncertainties surrounding U.S. military support, reflecting a broader effort to enhance its self-defense capabilities against potential threats from mainland China. This development underscores the ongoing reliance on and strategic partnership between the two entities in the face of regional geopolitical tensions."
+      "text": "- Taiwan's expansion of anti-ship missile arsenal reflects concerns over potential US military support uncertainties.\n- Military cooperation between the United States and Taiwan has been driven by mutual security interests amid regional tensions.\n- Uncertainties in US military support have prompted Taiwan to enhance its defensive capabilities, including through anti-ship missiles."
     },
     "China|Taiwan": {
       "h": "e0315ca8113d",
@@ -1120,7 +1120,7 @@
           "why": "Taiwan is considering using armed robot dogs to patrol South China Sea islands."
         }
       ],
-      "text": "The relationship between China and Taiwan remains tense, driven by mutual military posturing and strategic concerns. In response to perceived uncertainties in US military support, Taiwan has expanded its anti-ship missile arsenal. Simultaneously, China has deployed new missiles near Taiwan, mirroring the capabilities of US Patriot systems, indicating a heightened state of military readiness. These actions are part of broader maritime operations conducted by both sides, such as China's third incursion into waters near Taiwan within a month and Taiwan's consideration of using armed robot dogs to patrol South China Sea islands. These events reflect ongoing strategic competition and the complex dynamics between the two entities in the region."
+      "text": "- Military tensions rise as China deploys new missiles opposite Taiwan, mirroring US Patriot systems, amid uncertainties in US military support.\n- Diplomatic and military conflicts escalate with China conducting maritime incursions near Taiwan during regional territorial talks between Japan and the Philippines.\n- Taiwan expands its anti-ship missile arsenal in response to perceived threats from China, driven by ongoing military tensions.\n- Taiwan considers using armed robot dogs for island patrols as part of broader efforts to strengthen its defense capabilities in disputed areas."
     },
     "Israel|United Kingdom": {
       "h": "cbd4feafb331",
@@ -1166,7 +1166,7 @@
           "why": "US detects New World screwworm in Texas, highlighting ongoing contraband cattle smuggling from Central America."
         }
       ],
-      "text": "The relationship between Mexico and the United States is shaped by both cooperation and conflict, particularly in the realms of health and economics. In response to a health crisis, the two countries have collaborated to address screwworm outbreaks that threaten livestock in Texas and Mexico, underscoring their shared interest in agricultural safety. However, economic tensions arise from ongoing issues such as contraband cattle smuggling from Central America into the United States, which was highlighted when new World screwworms were detected in Texas, raising concerns about illegal trade and its potential impacts on U.S. border security and agriculture."
+      "text": "- The relationship between Mexico and the United States is influenced by health concerns, such as the outbreak of New World screwworms in Texas, which pose a threat to both countries' livestock industries.\n- Economic tensions arise due to U.S. detections of New World screwworms in Texas, linking back to ongoing contraband cattle smuggling from Central America, highlighting the complex border dynamics and trade issues between the two nations."
     },
     "Brazil|United States": {
       "h": "8d91341014da",
@@ -1193,7 +1193,7 @@
           "why": "Brazilian President Lula thanks China for beef trade deal and threatens to sell elsewhere if US imposes tariffs."
         }
       ],
-      "text": "The relationship between Brazil and the United States has been marked by tensions, particularly in recent years. The U.S. designation of Brazil's two largest gangs as terrorist organizations has strained diplomatic relations, impacting legal outcomes and cooperation between the countries. Additionally, economic conflicts have emerged, such as when Brazilian President Luiz Inácio Lula da Silva thanked China for a beef trade deal and threatened to seek alternative markets if the U.S. imposed tariffs, highlighting the competitive dynamics in international trade."
+      "text": "- US designates Brazil’s two largest gangs as terrorist organizations, impacting diplomatic relations.\n- Brazilian President Lula expresses gratitude towards China over a beef trade agreement, signaling potential economic shifts away from the US.\n- The US designation of Brazilian gangs as terrorist organizations leads to legal conflicts between the countries."
     },
     "Germany|United States": {
       "h": "0ea4e32a9914",
@@ -1240,7 +1240,7 @@
           "why": "China and Russia compete for rare earths in Myanmar, raising environmental worries."
         }
       ],
-      "text": "The relationship between China and Russia has been strengthened by Xi Jinping's visit to North Korea, which aims to bolster Sino-North Korean ties as Russia also enhances its diplomatic and military cooperation with North Korea. In the military domain, Ukraine’s intensification of drone strikes against Russian targets has escalated the conflict. Economically, both countries are competing for rare earth resources in Myanmar, highlighting their strategic interests in the region despite their growing partnership. Additionally, Uzbekistan and Russia have initiated construction on a new nuclear power plant, symbolizing their deepening cooperation in energy sectors."
+      "text": "- diplomatic: Xi Jinping's visit to North Korea aims to bolster Sino-North Korean relations amidst expanding Russian-North Korean ties.\n- military: Ukraine's drone strikes on Russia escalate the conflict, indirectly affecting regional dynamics involving China and Russia.\n- energy: Uzbekistan and Russia start building a new nuclear power plant, enhancing their cooperation in the energy sector.\n- economic: China and Russia vie for control over rare earths in Myanmar, raising environmental concerns and intensifying competition."
     },
     "Australia|China": {
       "h": "449fcedb6bd2",
@@ -1286,7 +1286,7 @@
           "why": "NATO faces challenges amid Russian and Ukrainian drone warfare."
         }
       ],
-      "text": "The relationship between NATO and Russia has deteriorated significantly due to ongoing tensions in Ukraine, particularly with the escalation of drone warfare. Reports indicate that Russian aircraft have been intercepted by NATO countries over the Baltic Sea, highlighting the increasing military confrontations and raising concerns about potential conflict. These events underscore the heightened tensions and the challenges faced by NATO in maintaining stability in the region."
+      "text": "- NATO has faced increased tensions due to Russian and Ukrainian drone conflicts.\n- Reports indicate Russian aircraft being intercepted by NATO forces over the Baltic Sea.\n- Escalating drone warfare between Russia and Ukraine poses direct military challenges to NATO."
     },
     "China|India": {
       "h": "c06463c9f99b",
@@ -1319,7 +1319,7 @@
           "why": "Japan and Philippines are strengthening maritime security cooperation to counter China's influence."
         }
       ],
-      "text": "The relationship between China and the Philippines has been strained by territorial disputes in the South China Sea, particularly regarding the delimitation of Exclusive Economic Zones with Japan. This has led to increased military tensions as both countries have engaged in talks that China views unfavorably. Additionally, there has been a strengthening of diplomatic and maritime security cooperation between Japan and the Philippines aimed at countering what they perceive as China's growing influence in the region."
+      "text": "- Talks between Japan and the Philippines on delimiting Exclusive Economic Zones have upset China due to military tensions in the region.\n- Japan and the Philippines are enhancing maritime security cooperation to counterbalance Chinese influence, driven by diplomatic efforts to challenge China’s assertiveness.\n- These actions reflect a strategic alignment among countries to manage territorial disputes and enhance regional stability against perceived Chinese dominance."
     },
     "Japan|Philippines": {
       "h": "3d128499987b",
@@ -1339,7 +1339,7 @@
           "why": "Japan and Philippines are strengthening maritime security cooperation to counter China's influence."
         }
       ],
-      "text": "Japan and the Philippines have been deepening their cooperation in response to China's increasing assertiveness in the South China Sea. This partnership includes discussions on delimiting Exclusive Economic Zones, which has raised tensions with China over territorial claims. Additionally, both countries are enhancing maritime security cooperation to counteract Chinese influence in the region, focusing on shared interests and mutual defense against potential threats."
+      "text": "- Japan and the Philippines are cooperating economically by initiating discussions on delimiting Exclusive Economic Zones, which has caused tensions with China.\n- The two countries are enhancing their military partnership to jointly address maritime security concerns, particularly in countering Chinese influence in the region.\n- These actions are driven by a mutual desire to balance against China's growing assertiveness in the South China Sea."
     },
     "Romania|Ukraine": {
       "h": "8c1874fa8758",
@@ -1359,7 +1359,7 @@
           "why": "A Ukrainian naval drone exploded in a Romanian port, marking the first such incident on NATO territory."
         }
       ],
-      "text": "The relationship between Romania and Ukraine has been significantly influenced by their shared involvement in regional conflicts. In response to ongoing tensions with Russia, Ukraine has launched drone attacks targeting strategic locations in eastern Ukraine, including St. Petersburg. This military action underscores the broader conflict dynamics in the region. Additionally, a Ukrainian naval drone exploded in a Romanian port, marking the first such incident on NATO territory, highlighting the spillover effects of the conflict and raising security concerns for Romania as it aligns more closely with NATO allies."
+      "text": "- Romania and Ukraine have a military alliance through their participation in NATO, which has been strained by recent incidents.\n- Ukraine launched drone attacks targeting locations in Romania, specifically St, indicating tensions between the two nations.\n- A Ukrainian naval drone exploded in a Romanian port, marking the first such incident on NATO territory, further complicating relations."
     },
     "Kenya|United States": {
       "h": "7a8e90c987b9",
@@ -1379,7 +1379,7 @@
           "why": "Kenyan residents protest against a US Ebola quarantine facility, leading to violent clashes."
         }
       ],
-      "text": "The relationship between Kenya and the United States has been strained by conflicts related to health initiatives. In Nairobi, Kenyans have protested against a U.S.-funded Ebola quarantine facility, resulting in violent protests and clashes. These events reflect tensions over foreign intervention in local affairs and concerns about the handling of public health crises."
+      "text": "- Violent protests erupted in Kenya against a US-funded Ebola quarantine facility near Nairobi, reflecting tensions over foreign intervention in public health crises.\n- Kenyan residents clashed with security forces during protests against the US Ebola quarantine facility, highlighting local opposition to international aid efforts.\n- The conflict surrounding the Ebola quarantine facility underscores the complex relationship between Kenya and the United States, influenced by perceptions of external interference."
     },
     "DR Congo|Uganda": {
       "h": "459f55e04a4a",
@@ -1399,7 +1399,7 @@
           "why": "Trade on the Uganda–DR Congo border has halted, causing goods to spoil and significant losses to traders."
         }
       ],
-      "text": "The relationship between DR Congo and Uganda has been strained by economic conflicts, particularly trade disruptions. Due to Ebola-related restrictions, trade has ceased along their shared border, leading to a backlog of goods that are now spoiling. This situation has resulted in substantial financial losses for the traders on both sides."
+      "text": "- Economic conflict: Trade between DR Congo and Uganda has been disrupted by Ebola-related border restrictions, leading to spoiled goods and financial losses for traders.\n- Diplomatic cooperation: Despite the trade halt, there is an ongoing effort towards cooperation between the two nations, though this is currently overshadowed by the immediate economic challenges."
     },
     "Congo|Uganda": {
       "h": "c3bb025aa6dc",
@@ -1419,7 +1419,7 @@
           "why": "Uganda has closed its border with Congo due to an Ebola outbreak, disrupting traders and local economies."
         }
       ],
-      "text": "The relationship between Congo and Uganda has been strained by the closure of their shared border due to an Ebola outbreak in Congo. This action by Uganda has disrupted trade and affected local economies on both sides, leading to diplomatic tensions as traders and businesses face significant challenges."
+      "text": "- Uganda closed its border with Congo due to an Ebola outbreak, affecting economic activities and local trade.\n- The closure of the border has disrupted both trade and local economies in the region.\n- Diplomatic relations between the two countries have been strained by the border closure resulting from the health crisis."
     },
     "Malaysia|Netherlands": {
       "h": "844743ebc03f",
@@ -1452,7 +1452,7 @@
           "why": "A weak rupiah makes Indonesia an attractive destination for Malaysian tourists and shoppers."
         }
       ],
-      "text": "The relationship between Indonesia and Malaysia has been bolstered by economic cooperation, particularly in the tourism and shopping sectors. With the Indonesian rupiah experiencing weakness, it has become more appealing for Malaysians to visit and shop in Indonesia, driving a mutual benefit that strengthens bilateral ties through shared economic interests."
+      "text": "- Economic cooperation between Indonesia and Malaysia is bolstered by the weak rupiah, attracting Malaysian tourists and shoppers to Indonesia.\n- The attractiveness of Indonesia as a tourist and shopping destination due to the weak rupiah enhances bilateral economic relations between the two countries."
     },
     "Argentina|United Kingdom": {
       "h": "74bed6f67ccf",
@@ -1485,7 +1485,7 @@
           "why": "Chile reasserts sovereignty over the Strait of Magellan, dismissing Argentine claims."
         }
       ],
-      "text": "Argentina and Chile have experienced tensions in their relations due to overlapping territorial claims and resource exploration activities. Recently, Argentina has warned Britain about potential legal and diplomatic actions against oil drilling plans near the Falkland Islands, which are claimed by Argentina. Simultaneously, Chile has reasserted its sovereignty over the Strait of Magellan, countering Argentine claims in this region. These events highlight the ongoing disputes between the two countries over maritime boundaries and natural resources."
+      "text": "- Argentina threatens legal and diplomatic action against Britain over oil drilling near the Falkland Islands.\n- Chile disputes Argentine sovereignty claims over the Strait of Magellan, strengthening its own position.\n- Diplomatic tensions arise as both countries assert their territorial rights in South American waters."
     },
     "Lebanon|Saudi Arabia": {
       "h": "29cc9d7d9b8f",
@@ -1538,7 +1538,7 @@
           "why": "Kenya and South Africa signed six MoUs to deepen economic cooperation, including trade facilitation."
         }
       ],
-      "text": "The relationship between Kenya and South Africa is marked by strong diplomatic and economic cooperation. This was evident when South African President Cyril Ramaphosa reaffirmed his country's commitment to addressing Ebola as a global pandemic and combating drug trafficking, highlighting shared regional concerns. Additionally, the Kenyan and South African presidents held talks in Pretoria, resulting in the signing of six new accords aimed at boosting trade and economic ties between the two nations. These agreements include measures for trade facilitation, underscoring their commitment to strengthening bilateral relations through concrete actions."
+      "text": "- Diplomatic cooperation was highlighted when South African President Ramaphosa emphasized joint efforts against Ebola and drug trafficking.\n- Economic cooperation deepened through talks between Kenyan and South African presidents in Pretoria, resulting in the signing of six new accords.\n- Specific economic initiatives included signing six Memorandums of Understanding (MoUs) to enhance trade facilitation between Kenya and South Africa."
     },
     "Russia|Uzbekistan": {
       "h": "1e1cdfa4c6cc",
@@ -1571,7 +1571,7 @@
           "why": "The US has approved a $1.98bn sale of counter-drone systems to Kuwait."
         }
       ],
-      "text": "The relationship between Kuwait and the United States is characterized by strong diplomatic and military cooperation, driven by shared concerns over regional stability. This was evident when US Secretary of State Marco Rubio met with Kuwait’s Foreign Minister to reaffirm support following Iranian attacks, highlighting mutual defense interests. Additionally, the approval of a $1.98 billion sale of counter-drone systems to Kuwait underscores the两国之间的关系由强烈的外交和军事合作驱动，旨在维护地区稳定。这体现在美国国务卿马科·鲁比奥与科威特外交大臣会面时重申支持，以应对伊朗的攻击，突显了双方共同的安全关切。此外，批准向科威特出售价值19.8亿美元的反无人机系统进一步证明了两国在军事合作方面的紧密联系。"
+      "text": "- Diplomatic cooperation is evident through the meeting between US Secretary of State Marco Rubio and Kuwait’s Foreign Minister, aimed at reinforcing mutual support after Iranian attacks.\n- Military collaboration is underscored by the US approval for a significant arms deal worth $1.98 billion, involving the sale of counter-drone systems to Kuwait."
     },
     "Colombia|United States": {
       "h": "75a582aab9f7",
@@ -1591,7 +1591,7 @@
           "why": "US President Donald Trump endorsed right-wing candidate Abelardo de la Espriella in Colombia’s presidential runoff."
         }
       ],
-      "text": "The relationship between Colombia and the United States was strained during Donald Trump's presidency due to his endorsement of right-wing candidate Abelardo de la Espriella in Colombia's 2018 presidential runoff. This diplomatic conflict highlighted tensions, as such endorsements are typically seen as interference in a sovereign nation’s internal affairs and were met with criticism from Colombian political leaders."
+      "text": "- The endorsement of Abelardo de la Espriella by US President Donald Trump during Colombia's presidential runoff highlighted a strategic alignment between the two countries, though it was met with criticism.\n- This diplomatic move aimed to support conservative policies and potentially strengthen anti-narcotics efforts in Colombia, reflecting ongoing cooperation on security issues.\n- The event underscored the influence of US foreign policy under the Trump administration in regional elections, impacting political dynamics within Colombia."
     },
     "Cuba|United States": {
       "h": "e071bb2e9065",
@@ -1611,7 +1611,7 @@
           "why": "US imposes sanctions on Cuban President Díaz-Canel and Castro family members, escalating pressure."
         }
       ],
-      "text": "The relationship between Cuba and the United States has been marked by ongoing diplomatic and economic tensions, with the U.S. imposing sanctions on Cuban President Miguel Díaz-Canel and members of the Castro family. These actions are part of a broader strategy to exert pressure on the Cuban government, aimed at undermining its leadership and influencing internal politics."
+      "text": "- The United States has imposed sanctions on Cuban President Díaz-Canel and Castro family members, intensifying diplomatic conflict between the two nations.\n- These sanctions are part of broader economic measures aimed at increasing pressure on Cuba's leadership.\n- The actions reflect ongoing tensions rooted in ideological differences and historical conflicts."
     },
     "Indonesia|United States": {
       "h": "5cf1b3995716",
@@ -1657,7 +1657,7 @@
           "why": "Israeli strikes in Gaza kill at least nine people, prompting renewed ceasefire talks in Egypt."
         }
       ],
-      "text": "The relationship between Egypt and Israel has been marked by both cooperation and conflict, often driven by the dynamics of regional stability and security concerns. In recent events, Israel's military operations in Gaza have led to significant casualties, prompting international calls for a ceasefire. Egypt, acting as a mediator, has hosted talks aimed at resolving these conflicts, reflecting its role in maintaining peace and stability in the region."
+      "text": "- Diplomatic tensions between Egypt and Israel have been driven by Israel's military actions in Gaza, such as the strike that killed nine people.\n- Egypt has hosted multiple rounds of ceasefire talks aimed at resolving conflicts in Gaza, reflecting its role as a mediator.\n- The recurring nature of these events indicates an ongoing relationship where both countries engage in dialogue despite periodic conflicts."
     },
     "Iran|Turkey": {
       "h": "7202566566b5",
@@ -1703,7 +1703,7 @@
           "why": "is pressuring Singapore, potentially leading to a diversified foreign policy that includes increased engagement with China."
         }
       ],
-      "text": "The relationship between Singapore and the United States has been shaped by both military and diplomatic dynamics. The US Defence Secretary Pete Hegseth's speech at the Shangri-La Dialogue highlighted a shift in tone towards China, emphasizing the need for regional security cooperation against perceived Chinese assertiveness. This has prompted Singapore to consider diversifying its foreign policy, potentially leading to increased engagement with China while maintaining strong ties with the United States."
+      "text": "- Military cooperation has shifted due to US Defence Secretary Pete Hegseth's speech at the Shangri-La Dialogue, highlighting tensions with China.\n- Diplomatic pressure from the United States may drive Singapore towards a more diversified foreign policy, including enhanced engagement with China.\n- The relationship between Singapore and the United States is influenced by geopolitical shifts, particularly in the context of US-China relations."
     },
     "Singapore|Taiwan": {
       "h": "3086abd90873",
@@ -1905,7 +1905,7 @@
           "why": "Russia deepens military and security ties with Afghanistan’s Taliban government while warning of terrorist threats from Pakistan."
         }
       ],
-      "text": "Pakistan and Russia have strengthened their cooperation in recent years, particularly in the areas of diplomacy and security. Pakistan signed agreements with Russia and other Central Asian countries aimed at combating illegal immigration and drug trafficking, reflecting a shared interest in regional stability. Additionally, Russia has deepened its military and security ties with Afghanistan’s Taliban government, which has prompted warnings from Russia about potential terrorist threats emanating from Pakistan, highlighting the complex interplay of regional security concerns between the two nations."
+      "text": "- Pakistan signed agreements with Russia for cooperation in combating illegal immigration and drug trafficking, enhancing regional security.\n- Russia is deepening its military and security partnerships with the Afghan Taliban government, which has implications for Pakistan regarding terrorist threats.\n- These diplomatic and military ties reflect a broader strategic alignment between Pakistan and Russia against common security challenges in the region."
     },
     "China|WHO": {
       "h": "9c97570b5d72",
@@ -1964,7 +1964,7 @@
           "why": "Turkey seeks to expand defence exports amid shifting NATO alliances."
         }
       ],
-      "text": "The relationship between Turkey and Venezuela has been marked by diplomatic and economic cooperation, driven by shared interests in defense and political stability. Recently, Venezuela’s acting president, Delcy Rodriguez, is scheduled to visit Turkey for talks, highlighting the diplomatic engagement between the two nations. Additionally, Turkey aims to expand its defense exports to Venezuela as part of broader efforts to diversify its export markets amid shifting alliances within NATO."
+      "text": "- Diplomatic cooperation: Venezuela's acting president Delcy Rodriguez is scheduled to visit Turkey for talks, indicating a strengthening of diplomatic ties.\n- Economic cooperation: Turkey aims to increase its defense exports to Venezuela as part of broader economic relations, reflecting strategic interests in the region.\n- Shifting NATO alliances: Turkey's efforts to expand defense exports are driven by its desire to diversify military partnerships outside traditional NATO frameworks."
     },
     "Iran|OPEC+": {
       "h": "82ac8576c7ff",
@@ -1997,7 +1997,7 @@
           "why": "Xenophobic attacks led to displaced migrants leaving South Africa, affecting neighboring regions including Zimbabwe."
         }
       ],
-      "text": "The relationship between South Africa and Zimbabwe has been influenced by xenophobic attacks in South Africa that forced many migrants to flee the country, impacting neighboring regions like Zimbabwe. Additionally, there have been diplomatic efforts focused on addressing global health crises such as Ebola, with South African President Ramaphosa emphasizing the need for cooperation to tackle pandemics. These events highlight both the challenges and collaborative aspects of their bilateral relations."
+      "text": "- Diplomatic relations were strained due to xenophobic attacks in South Africa that forced many Zimbabwean migrants to flee the country.\n- South African President Ramaphosa's commitment to addressing Ebola as a global pandemic reflects ongoing cooperation between South Africa and other nations, including Zimbabwe, on health issues.\n- The displacement of migrants from South Africa has had economic impacts on neighboring regions, including areas in Zimbabwe."
     },
     "China|Vietnam": {
       "h": "5a4c9595f0cc",
@@ -2030,7 +2030,7 @@
           "why": "Vietnam disputes U.S"
         }
       ],
-      "text": "The relationship between the United States and Vietnam has been strained by economic conflicts, particularly over trade disputes. Vietnam has expressed concerns over U.S. policies that it sees as detrimental to its economic interests, leading to tensions in their bilateral relations. These disagreements have centered around issues such as market access and trade barriers, with both countries engaging in diplomatic efforts to address these conflicts."
+      "text": "- Tensions in the South China Sea have led to economic conflicts between the United States and Vietnam.\n- The dispute involves territorial claims and maritime rights, impacting bilateral trade relations.\n- Specific events include Vietnamese actions that challenge U.S. interests in the region, exacerbating tensions."
     },
     "France|Serbia": {
       "h": "9cc51f48f254",
@@ -2167,7 +2167,7 @@
           "why": "Viktor Orban's potential defeat in Hungary could be one of the most important events in European politics over the decade."
         }
       ],
-      "text": "The relationship between the European Union and Hungary has seen significant shifts, particularly with Hungary dropping its veto on Ukraine’s accession negotiations, which marked an improvement in their cooperation. This move was driven by strategic considerations and likely aimed at easing tensions within the EU. Additionally, there are ongoing political dynamics within Hungary, with Viktor Orban's potential defeat potentially reshaping the country's stance and role within the European Union over the coming years."
+      "text": "- Hungary drops EU veto on Ukraine's accession negotiations, improving bilateral relations and cooperation within the bloc.\n- Potential defeat of Viktor Orban may significantly impact future EU-Hungary dynamics, potentially leading to closer alignment or divergence based on electoral outcomes."
     },
     "Mali|Senegal": {
       "h": "790e54da3be0",
@@ -2214,7 +2214,7 @@
           "why": "Thailand and Cambodia are engaging in UN-backed maritime arbitration over a disputed sea area."
         }
       ],
-      "text": "The relationship between Cambodia and Thailand has been marked by both cooperation and conflict, particularly in the context of UN-backed maritime arbitration. Both countries are engaged in legal proceedings to resolve disputes over a shared sea area, which highlights their ongoing tensions despite efforts at diplomatic resolution. This arbitration process underscores the complexity of their bilateral relations, influenced by historical claims and contemporary geopolitical considerations."
+      "text": "- Military and diplomatic conflicts between Thailand and Cambodia arise from UN-backed maritime arbitration over a disputed sea area.\n- The disputes involve specific areas of the Gulf of Thailand, leading to both military and cooperative efforts through international arbitration.\n- These events highlight ongoing tensions despite attempts at cooperation through multilateral platforms like the United Nations."
     },
     "Bolivia|United States": {
       "h": "18d9d8b38385",
@@ -2234,7 +2234,7 @@
           "why": "Bolivian congress debates allowing military intervention to clear blockades."
         }
       ],
-      "text": "The relationship between Bolivia and the United States has been marked by ongoing tensions, particularly in the context of internal political crises. In recent times, Bolivia's Congress has debated allowing military intervention from the United States to help clear blockades, reflecting a complex dynamic of cooperation and conflict. This proposal underscores deeper geopolitical interests and the influence of external actors in Bolivian domestic affairs."
+      "text": "- Bolivian congress debates allowing military intervention, potentially with U.S. cooperation, to address blockades.\n- Diplomatic relations involve discussions on clearing blockades, indicating ongoing coordination between Bolivia and the United States.\n- Specific events include congressional debates that suggest a level of trust and cooperation in addressing domestic issues."
     },
     "European Union|Kosovo": {
       "h": "a0260235f1df",
@@ -2365,7 +2365,7 @@
           "why": "UK Defense Minister confirms all eight Type 26 frigates will be delivered to the Royal Navy as planned."
         }
       ],
-      "text": "The relationship between Norway and the United Kingdom is characterized by strong diplomatic and military cooperation, exemplified by the confirmation that all eight Type 26 frigates will be delivered to the Royal Navy despite concerns over potential build slots for Norway. This event underscores the ongoing collaboration in defense and security matters, highlighting the mutual benefits and strategic alignment between the two nations."
+      "text": "- Diplomatic cooperation between Norway and the United Kingdom is evident through the confirmation of the delivery of all eight Type 26 frigates to the Royal Navy.\n- Military contact is reinforced by the UK Defense Minister's assurance regarding the timely delivery, addressing concerns about potential build slots for Norway.\n- Economic ties are maintained as the delivery of these ships ensures continued trade and defense collaboration between the two nations."
     },
     "Brazil|Sweden": {
       "h": "c1493696c258",
@@ -2476,7 +2476,7 @@
           "why": "Turkey warned Greece and Cyprus against engaging in an arms race."
         }
       ],
-      "text": "The relationship between Greece and Turkey has been strained by mutual tensions, particularly regarding their respective defense policies. In recent developments, Turkey has issued warnings to both Greece and Cyprus, cautioning them against engaging in an arms race. This warning reflects ongoing concerns over regional security dynamics and potential military escalation in the Eastern Mediterranean."
+      "text": "- Military tensions between Greece and Turkey have been driven by mutual warnings against engaging in an arms race.\n- Specific events include Turkey's direct warnings to both Greece and Cyprus regarding potential arms accumulation.\n- These conflicts are rooted in historical territorial disputes and maritime boundaries in the Eastern Mediterranean."
     },
     "Sudan|United States": {
       "h": "b58302cdb0c9",
@@ -2613,7 +2613,7 @@
           "why": "Estonia's former President shares lessons learned in managing relations with Russia."
         }
       ],
-      "text": "Estonia and Russia have a complex relationship marked by both cooperation and conflict, as highlighted by the insights shared by Estonia's former President. During NATO exercises, Estonia has sought to strengthen its defense capabilities while maintaining diplomatic channels with Russia. However, these interactions are often colored by historical tensions and geopolitical concerns, leading to challenges in managing relations effectively."
+      "text": "- Diplomatic cooperation: Estonia's former President discusses strategies for engaging with Russia within NATO frameworks.\n- Military conflict: Estonia's former President highlights the importance of preparedness and unity in managing tensions with Russia."
     },
     "Denmark|Ukraine": {
       "h": "89211c281c38",
@@ -2646,7 +2646,7 @@
           "why": "China bans four New Zealand MPs over their visit to Taiwan."
         }
       ],
-      "text": "The relationship between China and New Zealand has been strained by diplomatic tensions, particularly following a visit by four New Zealand Members of Parliament to Taiwan. In response, China banned these MPs from entering the country, highlighting the deepening ideological divide and the impact of cross-strait issues on international relations. This event underscores the sensitivity surrounding Taiwan's status and the broader geopolitical dynamics between China and countries that recognize Taiwan as part of China."
+      "text": "- Diplomatic tensions arose between China and New Zealand due to the visit of four New Zealand MPs to Taiwan.\n- The ban on these MPs by China reflects the country's stance against international recognition of Taiwan as a separate entity.\n- Military contact was indirectly affected, with potential implications for bilateral defense cooperation."
     },
     "Sweden|United States": {
       "h": "562d657e2959",
@@ -3281,7 +3281,7 @@
           "why": "Fortune Minerals plans to publish an updated feasibility study for its Nico project in Canada’s Northwest Territories."
         }
       ],
-      "text": "Over the past 12 days, Canada's geopolitical situation has been marked by a mix of cooperation and conflict. Diplomatic ties with the United States have remained strong as both countries collaborated on travel restrictions related to Ebola ahead of the World Cup 2026. However, economic tensions between Canada and the U.S. have risen due to differing monetary policies, with the Federal Reserve's potential rate hikes creating a divergence from Canada's central bank. Additionally, Canada has been actively navigating diplomatic relations, particularly in managing interactions with China, while also cooperating with Norway on mining projects in Canada’s Northwest Territories."
+      "text": "- United States · diplomatic (cooperation): The US, Mexico, and Canada have implemented joint travel restrictions ahead of the World Cup 2026.\n- United States · economic (conflict): Escalating U.S.-Russia tensions affect Canada's geopolitical stance amid Russian attacks on Ukrainian nuclear sites.\n- United States · diplomatic (cooperation): Canadian Prime Minister Mark Carney engages in diplomacy with the US and China, managing relations amidst global economic shifts.\n- China · diplomatic (cooperation): Canada collaborates with China to enforce travel restrictions for the World Cup to address Ebola concerns."
     },
     "United States": {
       "h": "e7f035378caa",
@@ -3385,7 +3385,7 @@
           "why": "Iran fired warning missiles at US warships in the Gulf of Oman after seizing a commercial oil tanker."
         }
       ],
-      "text": "Over the past 12 days, the United States has navigated a complex geopolitical landscape marked by both cooperation and conflict. Diplomatic tensions escalated with Canada over economic policies and central bank decisions, while security concerns led to joint travel restrictions for the upcoming World Cup 2026. Meanwhile, the U.S. engaged in military conflicts with Iran near the Strait of Hormuz, amid ongoing economic sanctions and diplomatic efforts to extend a ceasefire. Additionally, rising domestic job growth pushed the Federal Reserve closer to rate hikes, widening the gap with Canada's central bank policies. The broader context included heightened tensions between the U.S. and Russia over Ukraine, further complicating regional dynamics."
+      "text": "- Canada · diplomatic (cooperation): The U.S., Mexico, and Canada implement Ebola-related travel restrictions for the World Cup 2026.\n- Iran · military (conflict): U.S. military strikes on Iranian sites follow Iran's drone launches towards the Strait of Hormuz.\n- Iran · economic (conflict): U.S. expands sanctions on Iran, targeting entities and vessels internationally.\n- Iran · diplomatic (cooperation): U.S. and Iran nearly agree to extend a 60-day ceasefire, despite ongoing military skirmishes near the Strait of Hormuz."
     },
     "Iran": {
       "h": "1eb26c572386",
@@ -3489,7 +3489,7 @@
           "why": "Iran condemned US and Israeli attacks on its nuclear facilities during an IAEA board meeting."
         }
       ],
-      "text": "Over a 12-day period, Iran's geopolitical situation was marked by intense conflict with the United States in various domains, including military, economic, and energy. The U.S. initiated military strikes against Iranian sites following drone launches towards the Strait of Hormuz, while also expanding sanctions on Iran and engaging in skirmishes near the strait that tested a ceasefire agreement. Diplomatically, there were both cooperation efforts, such as discussions for extending a ceasefire by 60 days, and conflicts, including condemnation from Iran at an IAEA board meeting regarding U.S.-Israeli attacks on its nuclear facilities. Additionally, the situation escalated with Iran firing warning missiles at U.S. warships in the Gulf of Oman after seizing a commercial oil tanker, further complicating regional stability."
+      "text": "- United States · military (conflict): US military strikes on Iranian sites followed Iran's launch of drones towards the Strait of Hormuz.\n- United States · economic (conflict): US expands sanctions on Iran, targeting entities and vessels in multiple countries.\n- United States · military (conflict): Iran fired warning missiles at US warships in the Gulf of Oman after seizing a commercial oil tanker.\n- Israel · military (conflict): Iran condemned US and Israeli attacks on its nuclear facilities during an IAEA board meeting."
     },
     "Russia": {
       "h": "76e9a0f83b6f",
@@ -3593,7 +3593,7 @@
           "why": "Armenia faces Russian pressure in its upcoming parliamentary elections, with Moscow threatening a 'Ukrainian scenario' if it aligns more with Europe."
         }
       ],
-      "text": "Over the past 12 days, Russia's geopolitical situation has been marked by ongoing conflicts and tensions, primarily with the United States and Ukraine. The U.S. has escalated military and economic confrontations, while also warning of potential Russian attacks on NATO within four years. Simultaneously, Russia faces increasing pressure from Armenia, which is threatened with a \"Ukrainian scenario\" if it aligns more closely with Europe. Additionally, Russia's relations with Iran have seen minors recruited for hostile acts in various regions, and there are ongoing military and diplomatic conflicts with Ukraine, including the use of drones to strike Russian targets."
+      "text": "- Russia escalates tensions with the United States over Ukraine by attacking Ukrainian nuclear waste storage facilities, leading to increased U.S.-Russia military conflict.\n- U.S. decisions on missile deployments and economic policies widen gaps with Russia, intensifying diplomatic and economic conflicts.\n- Ukraine's drone strikes against Russian targets escalate military conflict, while NATO advances its Nordic strategy, putting Russia on high alert.\n- Russia faces potential threats of NATO attacks within four years as warned by UK Prime Minister Keir Starmer, heightening geopolitical tensions."
     },
     "North Korea": {
       "h": "2503a927a070",
@@ -3627,7 +3627,7 @@
           "why": "Chinese President Xi Jinping is visiting North Korea, marking his first trip since 2019."
         }
       ],
-      "text": "Over the past 12 days, North Korea's geopolitical situation has been marked by a strengthening of its diplomatic ties with Russia and China, particularly through high-level visits aimed at enhancing cooperation. Notably, Chinese President Xi Jinping's visit to North Korea signifies an effort to bolster relations amid growing Russian-North Korean interactions. Simultaneously, this diplomatic engagement contrasts with ongoing tensions in the domain of international diplomacy, as evidenced by the United States' continued conflictual stance towards North Korea during this period."
+      "text": "- Russia and China deepen diplomatic cooperation by strengthening ties with North Korea.\n- Chinese President Xi Jinping's visit to North Korea aims to enhance bilateral relations amid growing Russian-North Korean interactions.\n- United States expresses diplomatic conflict through heightened tensions over China's visit to North Korea."
     },
     "China": {
       "h": "376c1821aee0",
@@ -3731,7 +3731,7 @@
           "why": "China's rare-earth exports to Japan have dropped by over 80%, forcing Japanese companies to seek alternatives."
         }
       ],
-      "text": "Over the past 12 days, China has navigated a complex geopolitical landscape marked by both cooperation and conflict. Xi Jinping’s visit to North Korea aimed to strengthen ties amid growing Russian-North Korean relations, highlighting strategic partnerships in the region. Meanwhile, tensions escalated with the European Union over export concerns, as Beijing threatened retaliation against EU measures, while Brussels called for stronger responses to Chinese exports. Internationally, China also engaged in health diplomacy by sending a medical team to DR Congo to assist in fighting an Ebola outbreak, showcasing its global health initiatives."
+      "text": "- North Korea · diplomatic (cooperation): China's Xi Jinping visits North Korea, aiming to strengthen ties amid growing Russian-North Korean relations.\n- Iran · economic (contact): Iran launches ballistic missiles at Israeli targets, escalating tensions in the region.\n- South Korea · economic (cooperation): China and South Korea boost commercial flights due to increasing tourism between their countries.\n- European Union · diplomatic (conflict): China threatens retaliation against EU over export concerns."
     },
     "Israel": {
       "h": "c159a8513f01",
@@ -3835,7 +3835,7 @@
           "why": "Israeli air strike in southern Lebanon injures two Syrians and two Bangladeshis."
         }
       ],
-      "text": "Over the 12-day period, tensions between Israel and its adversaries escalated significantly, primarily due to ongoing military conflicts and diplomatic standoffs. The United States' military actions against Iran's nuclear facilities led to mutual condemnation from both sides during an IAEA board meeting, while Iran retaliated by launching ballistic missiles at Israeli targets, escalating regional tensions. Additionally, Israel's continued attacks in Gaza despite a ceasefire resulted in Palestinian casualties, further straining its relationships and drawing negative global attention. Lebanon also became embroiled as Iran responded to Israeli strikes on Lebanon by firing missiles back at Israel, while Israel deployed troops to several countries in the region during its conflict with Iran."
+      "text": "- United States and Israel engage in military conflict with Iran, leading to Iranian missile attacks on Israeli targets.\n- Iran condemns U.S.-Israel attacks during IAEA board meeting, escalating regional tensions through military actions.\n- Palestinian casualties result from Israeli attacks in Gaza despite a ceasefire, drawing international criticism of Israel.\n- Iran retaliates against Israel by firing missiles and deploying troops across multiple countries, worsening geopolitical dynamics."
     },
     "South Korea": {
       "h": "8a640e3a744f",
@@ -3869,7 +3869,7 @@
           "why": "The South Korean won has reached its lowest level against the US dollar since the 2009 financial crisis."
         }
       ],
-      "text": "Over the past 12 days, South Korea's geopolitical situation has been marked by a mix of cooperation and conflict in the economic domain. South Korea and China have enhanced commercial flights to boost tourism, reflecting a positive economic relationship between the two nations. However, tensions have also emerged as China's reduction in rare-earth exports to Japan led companies to seek alternative sources, indirectly affecting South Korea due to its close ties with Japan. Additionally, the South Korean won's depreciation against the US dollar has reached levels not seen since the 2009 financial crisis, indicating economic concerns and potential geopolitical tensions related to trade dynamics."
+      "text": "- - China and South Korea enhance commercial flights amid rising tourism, fostering economic cooperation.\n- - China reduces rare-earth exports to Japan, prompting Japanese businesses to seek alternative suppliers.\n- - South Korea's currency, the won, depreciates significantly against the US dollar, reaching its lowest level since 2009 due to economic tensions.\n- - Economic conflicts between the United States and South Korea contribute to fluctuations in South Korean currency values."
     },
     "European Union": {
       "h": "5f71c29f275c",
@@ -3973,7 +3973,7 @@
           "why": "Over 10% of apartments in Slovakia are empty according to NBS reports."
         }
       ],
-      "text": "Over the past 12 days, the European Union has navigated a complex geopolitical landscape marked by both cooperation and conflict. Key tensions arose from its interactions with China, where mutual economic interests clashed with diplomatic disagreements over export concerns, leading to threats of retaliation on both sides. Meanwhile, within Europe, the EU's relationship with Ukraine remained strained as ministers supported limiting protection for Ukrainian men of military age amid ongoing conflict. On a more positive note, Hungary dropped its veto, allowing Ukraine’s accession negotiations to proceed and signaling improved relations, while Finland proposed expanding the EU to include up to 40 states, including Canada and the UK."
+      "text": "- China and South Korea boost commercial flights, increasing tourism between their countries, while EU faces Chinese threats of retaliation over export concerns.\n- Armenia's Prime Minister Pashinyan seeks closer ties with the EU and US, aiming to pivot away from Russia ahead of parliamentary elections.\n- Ukraine requests EU exclude men of military age from temporary protection programs, leading EU ministers to support limiting such protections for Ukrainian men in conflict zones.\n- Hungary drops its veto on Ukraine’s accession negotiations, signaling improved relations, while Viktor Orban's potential defeat could be a significant event in European politics."
     },
     "DR Congo": {
       "h": "3bfdba7fc86d",
@@ -4007,7 +4007,7 @@
           "why": "Trade on the Uganda–DR Congo border has halted, causing goods to spoil and significant losses to traders."
         }
       ],
-      "text": "Over a 12-day period, DR Congo faced significant geopolitical challenges primarily centered around health and economic cooperation and conflict. China played a role in health diplomacy by sending a medical team to assist in fighting an Ebola outbreak, showcasing international collaboration in public health crises. Simultaneously, Uganda's actions led to a halt in trade on the border due to Ebola-related restrictions, resulting in substantial losses for traders and highlighting the economic impacts of such measures."
+      "text": "- China · health (cooperation): A Chinese medical team arrives in DR Congo to help fight an Ebola outbreak, showcasing health diplomacy efforts.\n- Uganda · economic (conflict): Trade has ceased between Uganda and DR Congo due to Ebola-related border restrictions, leading to spoiled goods and financial losses for traders.\n- Uganda · diplomatic (cooperation): Despite the conflict over halted trade, Ugandan officials are working towards resolving the issues caused by Ebola-related border closures."
     },
     "Palestine": {
       "h": "3ab58c32a193",
@@ -4027,7 +4027,7 @@
           "why": "Israeli strikes in Gaza kill at least nine people, prompting renewed ceasefire talks in Egypt."
         }
       ],
-      "text": "Over the course of 12 days, Palestine's geopolitical situation was marked by ongoing conflict with Israel over military operations in Gaza, which led to significant casualties despite efforts to restore a ceasefire. Simultaneously, diplomatic cooperation between Palestine and Egypt played a crucial role as Egyptian mediators facilitated renewed talks aimed at stabilizing the region."
+      "text": "- Israel engages in military conflict with Gaza, causing significant Palestinian casualties during a supposed ceasefire.\n- Egyptian diplomats facilitate renewed ceasefire negotiations following Israeli attacks that result in multiple deaths.\n- The interactions highlight ongoing tensions and the complex geopolitical dynamics between Israel, Gaza, and Egypt."
     },
     "Bahrain": {
       "h": "2707b4efb525",
@@ -4047,7 +4047,7 @@
           "why": "Kuwait and Bahrain issued warnings of aerial threats, reflecting heightened regional tensions."
         }
       ],
-      "text": "Over the past 12 days, Bahrain's geopolitical situation has been marked by heightened tensions, primarily due to its interactions with Iran over military conflicts. In response to perceived provocations from the U.S., Iran launched missile attacks on both Bahrain and Kuwait, escalating regional security concerns. Simultaneously, Bahrain and Kuwait issued warnings of aerial threats against each other, further intensifying the already volatile situation in the Gulf region."
+      "text": "- Iran launches missiles at Bahrain and Kuwait in response to U.S actions, highlighting military conflict.\n- Bahrain and Kuwait issue warnings about aerial threats from each other, indicating increased regional tension.\n- Military conflicts between Iran and its neighbors underscore geopolitical instability in the region."
     },
     "Kuwait": {
       "h": "e710168ff769",
@@ -4081,7 +4081,7 @@
           "why": "Kuwait and Bahrain issued warnings of aerial threats, reflecting heightened regional tensions."
         }
       ],
-      "text": "Over the past 12 days, Kuwait's geopolitical situation has been marked by increased tension due to Iranian military provocations, including missile attacks on both Bahrain and Kuwait in response to U.S. actions. In response to these threats, the United States has strengthened its cooperation with Kuwait through diplomatic reassurances and military support, approving a significant sale of counter-drone systems. Meanwhile, regional tensions have also been heightened by warnings issued by Kuwait and Bahrain regarding aerial threats, underscoring the ongoing conflict dynamics in the area."
+      "text": "- Iran launches missiles at Bahrain and Kuwait in response to U.S actions, highlighting military conflict in the region.\n- US Secretary of State Marco Rubio meets with Kuwait’s Foreign Minister to reaffirm support following Iranian attacks, indicating diplomatic cooperation.\n- The US approves a $1.98bn sale of counter-drone systems to Kuwait, showcasing military cooperation between the two nations.\n- Kuwait and Bahrain issue warnings of aerial threats, reflecting heightened regional tensions amid military conflicts."
     },
     "Ukraine": {
       "h": "25720b1aae6c",
@@ -4185,7 +4185,7 @@
           "why": "Russia is blamed by Germany for supporting Ukraine and Israel in the election process."
         }
       ],
-      "text": "Over 12 days, Ukraine's geopolitical situation intensified with ongoing military conflict against Russia, marked by significant drone strikes from both sides. The conflict also saw increased tensions as NATO advanced its Nordic strategy, prompting warnings from UK Prime Minister Keir Starmer about potential Russian attacks on NATO within four years. Amidst the fighting, there were instances of cooperation, such as the IAEA's efforts to broker a local ceasefire for the Zaporizhzhia nuclear plant and NATO considering substantial military aid for Ukraine. However, diplomatic conflicts arose, particularly with the European Union and Romania, over the exclusion of men of military age from temporary protection programs and the first drone incident on NATO territory in Romania."
+      "text": "- Ukraine escalates conflict with Russia through 500 drone strikes, leading to diplomatic tensions as NATO advances its Nordic strategy.\n- Russia accuses Ukraine of shooting down hundreds of drones during an economic forum in St Petersburg, heightening military and diplomatic conflicts.\n- IAEA brokers a local ceasefire in Ukraine to repair the Zaporizhzhia nuclear plant, highlighting areas of cooperation amid broader conflict.\n- NATO considers €70 billion in military aid for Ukraine as part of its support, while Romania experiences its first drone incident on NATO territory."
     },
     "Lebanon": {
       "h": "1426c726d2d5",
@@ -4212,7 +4212,7 @@
           "why": "Saudi Arabia condemns Israel's actions against Lebanon, supporting Lebanese sovereignty."
         }
       ],
-      "text": "Over the past 12 days, Lebanon has been caught in a web of geopolitical tensions primarily centered around its conflict with Israel. The situation escalated when Iran retaliated against Israeli attacks on Lebanon by launching missiles at Israel, highlighting the deep-seated enmity and ongoing proxy warfare between these parties. Additionally, an Israeli air strike in southern Lebanon resulted in injuries to civilians from other countries, further complicating the region's already volatile dynamics. Simultaneously, Saudi Arabia has engaged diplomatically with Lebanon, condemning Israel’s actions and affirming its support for Lebanese sovereignty, thereby adding another layer of regional involvement in the conflict."
+      "text": "- Israel engages in military conflict with Lebanon, leading to Iranian retaliation through missile attacks on Israel.\n- An Israeli air strike in southern Lebanon results in injuries among foreign workers, escalating tensions.\n- Saudi Arabia diplomatically supports Lebanon, condemning Israel's actions and affirming support for Lebanese sovereignty."
     },
     "IAEA": {
       "h": "9115fefba4da",
@@ -4273,7 +4273,7 @@
           "why": "Latvian general warns of potential Russian invasion of NATO states by end-2028."
         }
       ],
-      "text": "Over the past 12 days, NATO has been grappling with heightened tensions on its eastern flank due to ongoing drone warfare between Russia and Ukraine. This conflict has led to increased military cooperation, including a proposed €70 billion in aid for Ukraine, as NATO advances its Nordic strategy. Simultaneously, drone incursions by both sides have raised concerns among neighboring countries like Finland, while Latvian officials warn of potential Russian aggression, highlighting the complex geopolitical dynamics and ongoing challenges faced by NATO."
+      "text": "- Ukraine · military (cooperation): Ukraine launches 500 drone strikes into Russia amid NATO's advancing Nordic strategy.\n- NATO faces challenges as Russia and Ukraine escalate drone warfare, with reports of Russian aircraft intercepted over the Baltic Sea.\n- Drone incursions are increasing tension and uncertainty along NATO’s borders, including those near Finland.\n- Latvia · military (cooperation): Latvian general warns of potential Russian invasion of NATO states by end-2028."
     },
     "Hamas": {
       "h": "3d7886eec7f3",
@@ -4390,7 +4390,7 @@
           "why": "India's engagement with Myanmar's junta raises strategic concerns."
         }
       ],
-      "text": "Over the past 12 days, India has navigated a complex geopolitical landscape marked by both cooperation and conflict. Diplomatic tensions with Pakistan have escalated over water disputes and Kashmir, while India and the United States are exploring economic opportunities in energy security but also attempting to mend relations after the Ladakh military confrontation. Simultaneously, India is diversifying its energy sources through increased imports from Venezuela amid supply disruptions, and strengthening partnerships for gas networks with Papua New Guinea. Strategic concerns have also emerged due to India's engagement with Myanmar’s junta, while regional stability remains threatened by ongoing disputes such as those over the Teesta River with Bangladesh and the Chenab River with Pakistan."
+      "text": "- Pakistan · diplomatic (conflict): Pakistan rejects India's objections to upcoming elections in Gilgit-Baltistan, reiterating its stance on Kashmir.\n- United States · economic (cooperation): US and India explore cooperation opportunities amid energy crises, investing $1.5 billion in energy security projects.\n- China · diplomatic (conflict): India and China attempt to rebuild diplomatic relations after the Ladakh military confrontation.\n- Myanmar · diplomatic (conflict): India's engagement with Myanmar's junta raises strategic concerns."
     },
     "Pakistan": {
       "h": "74684525acf8",
@@ -4438,7 +4438,7 @@
           "why": "Russia deepens military and security ties with Afghanistan’s Taliban government while warning of terrorist threats from Pakistan."
         }
       ],
-      "text": "Over the past 12 days, Pakistan's geopolitical situation has been marked by ongoing tensions with India, particularly over water disputes and Kashmir-related issues. Pakistan accuses India of weaponizing the Chenab River under the Indus Waters Treaty, leading to diplomatic conflicts. Simultaneously, Pakistan has engaged in cooperation with Russia on security matters, signing agreements to combat illegal immigration and drug trafficking, while also expressing concerns about potential terrorist threats from Pakistan's direction. Additionally, Pakistan has maintained a cooperative relationship with Iran regarding water disputes, further highlighting the complex web of interactions influencing regional stability."
+      "text": "- India · diplomatic (conflict): Pakistan claims India is weaponizing water through Chenab River projects, escalating tensions under the Indus Waters Treaty.\n- Iran · diplomatic (cooperation): Pakistan and Iran share concerns over Indian water projects, indicating cooperation on regional issues.\n- Russia · military (cooperation): Russia strengthens security ties with Afghanistan’s Taliban government, indirectly pressuring Pakistan on terrorism.\n- India · diplomatic (conflict): Pakistan rejects India's objections to upcoming elections in Gilgit-Baltistan, highlighting Kashmir dispute."
     },
     "United Kingdom": {
       "h": "7e639547c169",
@@ -4514,7 +4514,7 @@
           "why": "UK government supports Jordan's custodianship of Al-Aqsa Mosque."
         }
       ],
-      "text": "Over the past 12 days, the United Kingdom has navigated a complex geopolitical landscape marked by both cooperation and conflict. The primary source of tension stems from Russia, with UK Prime Minister Keir Starmer issuing warnings about potential Russian attacks on NATO, highlighting ongoing military and diplomatic conflicts between the two nations. Internationally, the UK engaged in diplomatic efforts, notably preparing sanctions against Israel over proposed West Bank settlements and facing legal challenges from Argentina regarding oil drilling near the Falkland Islands. Simultaneously, the UK maintained strong military and economic ties with Norway through the delivery of Type 26 frigates, while also engaging diplomatically with countries like Jordan on issues such as religious sites."
+      "text": "- Russia · military (conflict): UK Prime Minister Keir Starmer warns Russia could attack NATO within four years.\n- Ukraine · diplomatic (conflict): UK Prime Minister Keir Starmer warns Russia could attack NATO within four years.\n- Israel · diplomatic (conflict): UK and Western allies prepare sanctions against Israel over proposed West Bank settlements.\n- Argentina · diplomatic (conflict): Argentina warns of legal and diplomatic actions against British oil drilling plans near Falkland Islands."
     },
     "Japan": {
       "h": "73faca44619c",
@@ -4590,7 +4590,7 @@
           "why": "Japan and Philippines are strengthening maritime security cooperation to counter China's influence."
         }
       ],
-      "text": "Over the past 12 days, Japan has faced heightened tensions with China over military capabilities and economic dependencies. China has urged Japan to upgrade its carrier fleet, leading to increased conflict in the military domain while also pushing for diplomatic contact. Economically, China's significant reduction in rare-earth exports to Japan has forced Japanese companies to seek alternative sources, exacerbating economic conflicts. Meanwhile, Japan has been cooperating with the Philippines on maritime security and delimiting Exclusive Economic Zones, further antagonizing China's interests in the region."
+      "text": "- China urges Japan to upgrade carrier fleet amid heightened tensions, leading to conflict in the military domain.\n- China's rare-earth exports to Japan drop significantly by over 80%, causing economic conflict between the two nations.\n- Japan and the Philippines strengthen maritime security cooperation against Chinese influence, resulting in diplomatic and economic cooperation.\n- China is contacted regarding its carrier fleet upgrades as Japan enhances anti-ship missile capabilities and defensive posture."
     },
     "Armenia": {
       "h": "4fca88a20f02",
@@ -4624,7 +4624,7 @@
           "why": "The US administration has endorsed Armenian Prime Minister Pashinyan and emphasized continuity in engagement with the Western Balkans while signaling a shift towards expecting more self-reliance from the region."
         }
       ],
-      "text": "Over the past 12 days, Armenia's geopolitical situation has been marked by significant tensions and strategic shifts. Russia has intensified its diplomatic pressure on Armenia ahead of upcoming parliamentary elections, threatening a \"Ukrainian scenario\" if Armenia aligns more closely with Europe. In contrast, Armenia is actively seeking to pivot towards closer ties with the European Union and the United States, as evidenced by Prime Minister Pashinyan's efforts to distance his country from Russia. The United States has supported this shift, signaling a move towards expecting greater self-reliance from Armenia in its foreign policy decisions."
+      "text": "- Armenia faces Russian pressure over its potential alignment with Europe, with Moscow threatening a 'Ukrainian scenario' if it moves closer to the EU.\n- Russia applies political pressure on Armenia ahead of parliamentary elections, warning of consequences for aligning more with European integration.\n- Armenian Prime Minister Pashinyan seeks to pivot towards closer ties with the EU and US in upcoming elections, distancing from Russia.\n- The US administration supports Armenian Prime Minister Pashinyan and signals a shift towards expecting increased self-reliance from the region."
     },
     "OPEC": {
       "h": "db49fa38c855",
@@ -4658,7 +4658,7 @@
           "why": "OPEC crude output hits historic lows due to US sanctions on Iran."
         }
       ],
-      "text": "Over the past 12 days, OPEC's geopolitical situation has been marked by cooperation within its alliance, as OPEC+ agreed to a fourth increase in oil output targets despite ongoing conflicts and sanctions. However, this cooperation has been overshadowed by conflict with external actors, particularly the United States and Iran, where US sanctions on Iran have led to historic lows in OPEC crude output."
+      "text": "- OPEC+ agreed to a fourth increase in oil output targets despite ongoing conflicts and sanctions, focusing on economic cooperation.\n- OPEC crude output hit historic lows due to US sanctions on Iran, leading to conflict between OPEC and the United States over Iran's participation.\n- Iran's reduced output contributed to overall OPEC production decreases, exacerbating tensions with the United States."
     },
     "OPEC+": {
       "h": "caacf058650c",
@@ -4692,7 +4692,7 @@
           "why": "OPEC+ meeting is unlikely to impact oil prices due to Iran blocking the Strait of Hormuz."
         }
       ],
-      "text": "Over 12 days, OPEC+ demonstrated a focus on economic cooperation by agreeing to a fourth increase in oil output targets, despite ongoing conflicts and sanctions. This decision was influenced by Russia's support for similar increases, highlighting cooperation within the domain of energy production. However, tensions with Iran persisted as Iran's actions at the Strait of Hormuz created uncertainty, though OPEC+ meetings did not significantly alter oil price expectations due to this conflict."
+      "text": "- OPEC+ agreed to a fourth increase in oil output targets, focusing on economic cooperation despite ongoing conflicts and sanctions.\n- Russia cooperated with OPEC+ by supporting increased oil production amid issues at the Strait of Hormuz.\n- UAE's exit from OPEC did not significantly impact the decision to boost oil output.\n- Iran's blocking of the Strait of Hormuz is seen as a potential conflict that may affect future oil price discussions."
     },
     "Venezuela": {
       "h": "98bd26d66f9b",
@@ -4754,7 +4754,7 @@
           "why": "Venezuelan crude exports increased through the Strait of Hormuz following a US-led blockade."
         }
       ],
-      "text": "Over 12 days, Venezuela's geopolitical situation was marked by both cooperation and conflict. India increased its oil imports from Venezuela as Middle Eastern supply lines were disrupted, highlighting economic cooperation in energy. However, this period also saw tensions rise with France and the G20 over Venezuela's debt restructuring process, particularly due to French financier Matthieu Pigasse's involvement. Additionally, Turkey engaged diplomatically and economically with Venezuela, with acting president Delcy Rodriguez set to visit for talks, while global markets faced volatility from disruptions in Iran and US-led blockades affecting oil exports."
+      "text": "- India increases oil imports from Venezuela as Middle Eastern supply lines are disrupted, focusing on energy cooperation.\n- France and G20 face controversy over Venezuelan debt restructuring involving French financier Matthieu Pigasse, highlighting economic conflicts.\n- Turkey seeks to expand defence exports amid shifting NATO alliances and cooperates with Venezuela's acting president Delcy Rodriguez for diplomatic talks.\n- Venezuela increases crude exports through the Strait of Hormuz in response to a US-led blockade, indicating military conflict."
     },
     "Bangladesh": {
       "h": "2392c4de8fb1",
@@ -4774,7 +4774,7 @@
           "why": "Bangladesh faces dual challenges of economic revival and managing relations with nuclear powers."
         }
       ],
-      "text": "Over the past 12 days, Bangladesh has faced significant geopolitical challenges primarily centered around ongoing conflicts and economic pressures. The long-standing Teesta River dispute with India continues to strain bilateral relations, reflecting deeper issues in their diplomatic interactions. Additionally, Bangladesh is navigating its economic revival while maintaining delicate relationships with nuclear powers, particularly the United States, where economic cooperation is crucial but fraught with complexities."
+      "text": "- - India's Teesta River dispute continues to strain bilateral relations, impacting water management cooperation.\n- - Economic revival efforts in Bangladesh face complications due to its complex geopolitical landscape, including tensions with the United States.\n- - Diplomatic conflicts persist over the Teesta River, affecting regional stability and cross-border cooperation.\n- - Managing relations with nuclear powers complicates Bangladesh's economic strategies and international diplomacy."
     },
     "Saudi Arabia": {
       "h": "971ac8943708",
@@ -4801,7 +4801,7 @@
           "why": "Undeclared chemical weapons found in Syria, including types used in Ghouta attack."
         }
       ],
-      "text": "Over the past 12 days, Saudi Arabia has navigated a complex geopolitical landscape marked by both cooperation and tension. In the domain of diplomacy and economics, Saudi Arabia engaged with Lebanon to condemn Israel's actions, supporting Lebanese sovereignty. Meanwhile, there were unconfirmed reports of undeclared chemical weapons found in Syria, prompting concerns similar to those during the Ghouta attack, which likely influenced Saudi Arabia's stance on regional stability. Additionally, Saudi Arabia considered potential economic and diplomatic cooperation with Iran under certain conditions proposed by US President Trump, reflecting ongoing strategic considerations in its relations with key regional players."
+      "text": "- Saudi Arabia engages in economic and diplomatic cooperation with Iran under potential future conditions set by US President Trump.\n- Saudi Arabia supports Lebanese sovereignty against Israeli actions, fostering diplomatic relations with Lebanon.\n- Saudi Arabia is involved in undeclared chemical weapons findings in Syria, hinting at ongoing economic or strategic cooperation."
     },
     "Taiwan": {
       "h": "762343a0c8db",
@@ -4870,7 +4870,7 @@
           "why": "Leaked video shows Singaporean troops training in Taiwan, highlighting regional tensions."
         }
       ],
-      "text": "Over 12 days, Taiwan's geopolitical situation was marked by a complex interplay of cooperation and conflict, primarily centered around its interactions with the United States and China. In response to perceived uncertainties in US military support, Taiwan expanded its anti-ship missile arsenal, drawing both US and Chinese military reactions. Meanwhile, China intensified its military presence near Taiwan, including deploying new missiles and conducting multiple maritime incursions, while also engaging in diplomatic maneuvers such as maritime operations during territorial talks with neighboring countries like Japan and the Philippines."
+      "text": "- United States and China both express military concerns over Taiwan's anti-ship missile expansion.\n- China deploys new missiles near Taiwan in response to perceived US support uncertainties.\n- China conducts maritime operations near Taiwan during territorial disputes with other nations.\n- China incurs near Taiwan for the third time within a month, escalating tensions in the South China Sea.\n- Singaporean troops are trained in Taiwan, highlighting regional military cooperation and tensions."
     },
     "Mexico": {
       "h": "cfb723532cae",
@@ -4897,7 +4897,7 @@
           "why": "Canadian Prime Minister Carney engages with both the US and China, balancing diplomatic relations between major trading partners."
         }
       ],
-      "text": "Over the past 12 days, Mexico has navigated a complex geopolitical landscape marked by both cooperation and conflict. In the domain of health, Mexico collaborated closely with the United States to address screwworm outbreaks, which threaten livestock in both countries, highlighting their shared interests in agricultural security. However, economic tensions arose when the U.S. detected New World screwworms in Texas, linking these pests to ongoing contraband cattle smuggling from Central America, indicating deeper issues of border control and trade. Diplomatically, Mexico maintained a delicate balance by engaging with Canada and China, as evidenced by Canadian Prime Minister Carney's efforts to maintain positive relations with both major trading partners, showcasing the country’s strategic importance in regional dynamics."
+      "text": "- - United States and Mexico cooperate on health issues to address screwworm outbreaks affecting both countries' livestock industries.\n- - Conflict arises over economic concerns as the U.S. discovers New World screwworm in Texas, linking it to contraband cattle smuggling from Central America through Mexico.\n- - Diplomatic engagement between Canada and China highlights the balancing act in international relations, with potential implications for Mexico's trade relationships."
     },
     "Brazil": {
       "h": "92f352d49262",
@@ -4966,7 +4966,7 @@
           "why": "Six South American countries qualified for the 2026 World Cup, including Brazil and Argentina."
         }
       ],
-      "text": "Over a span of about 12 days, Brazil's geopolitical situation was marked by both cooperation and conflict. Diplomatically, Brazil engaged in economic cooperation with China over beef trade, while also signaling potential shifts in trade partners if the United States imposes tariffs. Militarily, Brazil hosted training for Morocco’s national football team preparing for the 2026 World Cup, showcasing regional sports diplomacy. However, tensions arose when the U.S. designated Brazil's two largest gangs as terrorist organizations, leading to legal and diplomatic conflicts. Additionally, Brazil faced economic pressure from the U.S., which further strained bilateral relations in the domain of trade."
+      "text": "- United States engages in conflict with Brazil over gang designations, impacting legal outcomes.\n- Brazil cooperates economically with China by thanking for a beef trade deal and threatening to sell elsewhere if US imposes tariffs.\n- Brazil collaborates militarily with Sweden by considering lowering the age of criminal responsibility due to rising youth violence.\n- Brazil works on economic cooperation with Guatemala through an agricultural-cooperation accord for beef exports."
     },
     "Germany": {
       "h": "c46eb5fe463b",
@@ -5014,7 +5014,7 @@
           "why": "Germany's Chancellor announces EU plans to integrate six Western Balkan countries."
         }
       ],
-      "text": "Over a span of 12 days, Germany navigated complex geopolitical dynamics. Diplomatically at odds with Russia over the latter’s influence in international affairs, particularly regarding Ukraine and Israel, Germany faced criticism for its failure to secure a UN Security Council seat. Simultaneously, tensions escalated with Portugal and Austria in diplomatic contests, notably when both countries won seats on the UN Security Council, highlighting internal EU rivalries. Internally, Germany also engaged in economic cooperation with the United States, as evidenced by the recovery of an American doctor from Ebola treatment in Germany while the Democratic Republic of Congo faced an Ebola outbreak."
+      "text": "- Germany faces diplomatic conflicts with Russia over UN Security Council seats and mutual accusations of supporting opposing sides in Ukraine.\n- A conflict arises diplomatically between Germany and Portugal/Austria regarding UN Security Council seat elections.\n- Economic cooperation continues with the United States as a US doctor receives treatment in Germany amid Ebola concerns in DRC.\n- Germany collaborates diplomatically within the European Union to discuss integrating six Western Balkan countries into EU structures."
     },
     "Australia": {
       "h": "9b6199d422f5",
@@ -5034,7 +5034,7 @@
           "why": "US commits funds and invests $1.5 billion in energy security and LNG infrastructure projects in India and Southeast Asia."
         }
       ],
-      "text": "Over the past 12 days, Australia's geopolitical situation has been marked by tensions with China over strategic partnerships, while also showing increased engagement with India on economic fronts. The Greens party's call for the cancellation of the AUKUS nuclear submarine deal highlighted growing concerns about potential military conflicts with China, reflecting broader anxieties in Australian foreign policy circles regarding its security alliances. Simultaneously, Australia has deepened economic ties with India through significant investments in energy infrastructure, signaling a strategic pivot towards stronger economic cooperation in the Indo-Pacific region."
+      "text": "- Australia faces diplomatic tension with China over the AUKUS nuclear submarine deal, with the Greens party advocating for its cancellation to avoid potential military conflict.\n- The US strengthens economic ties with India by investing $1.5 billion in energy security and LNG infrastructure projects, enhancing cooperation in the domain of energy and security."
     },
     "Philippines": {
       "h": "182568009d3a",
@@ -5068,7 +5068,7 @@
           "why": "Japan and Philippines are strengthening maritime security cooperation to counter China's influence."
         }
       ],
-      "text": "Over the past 12 days, the Philippines has been navigating a complex geopolitical landscape primarily due to its interactions with China over territorial disputes in the South China Sea. These tensions have escalated as Japan and the Philippines initiated talks on delimiting Exclusive Economic Zones, which have upset China. Simultaneously, both countries are also cooperating on maritime security to counterbalance Chinese influence, while Japan is further deepening economic and military cooperation with the Philippines, aiming to strengthen regional stability in response to China's assertiveness."
+      "text": "- China objects to Japan and Philippines talks on delimiting Exclusive Economic Zones, leading to conflict in the military domain.\n- Japan and Philippines cooperate diplomatically and militarily to counterbalance Chinese influence in the region.\n- Both Japan and Philippines initiate discussions on maritime boundaries with Japan aiming to strengthen economic ties while also addressing security concerns."
     },
     "Romania": {
       "h": "e0faa07eef0c",
@@ -5095,7 +5095,7 @@
           "why": "Luxembourg's 1990s trains are now operational in Romania."
         }
       ],
-      "text": "Over the past 12 days, Romania has been navigating complex geopolitical dynamics primarily centered around its relationship with Ukraine and Luxembourg. The conflict between Ukraine and Russia has spilled over to Romanian territory as a Ukrainian naval drone exploded in a Romanian port, marking the first such incident on NATO soil, highlighting Romania's proximity to the ongoing military tensions. Simultaneously, Romania has shown cooperation in the military domain by utilizing trains originally supplied by Luxembourg in the 1990s, now operational and contributing to its defense capabilities."
+      "text": "- Romania experiences conflict with Ukraine over drone attacks on its territory.\n- A significant event occurs as a Ukrainian naval drone explodes in a Romanian port, highlighting tensions within NATO.\n- Romania and Luxembourg cooperate in the domain of military logistics, with Luxembourg's 1990s trains now operational in Romania."
     },
     "Kenya": {
       "h": "d75eba668ac4",
@@ -5136,7 +5136,7 @@
           "why": "Kenya and South Africa signed six MoUs to deepen economic cooperation, including trade facilitation."
         }
       ],
-      "text": "Over the past 12 days, Kenya's geopolitical situation has been marked by both conflict and cooperation. The country experienced violent protests against a US-funded Ebola quarantine facility near Nairobi, reflecting tensions over foreign intervention in health matters. Simultaneously, Kenya showed diplomatic and economic cooperation with South Africa, as evidenced by the signing of six new accords to boost trade and address issues like drug trafficking, indicating efforts towards regional integration and mutual support."
+      "text": "- - United States and Kenya experienced conflict over health issues as violent protests erupted against a US-funded Ebola quarantine facility in Nairobi.\n- - South Africa engaged in diplomatic cooperation with Kenya by reaffirming commitment to combating drug trafficking and addressing the Ebola pandemic.\n- - Economic cooperation between South Africa and Kenya intensified through signed accords, focusing on trade facilitation among other areas.\n- - Kenya and South Africa deepened their economic ties through six Memorandums of Understanding (MoUs) aimed at boosting bilateral trade and relations."
     },
     "Uganda": {
       "h": "7c1e2e31fa5a",
@@ -5177,7 +5177,7 @@
           "why": "WHO and Africa CDC unveil a $518m plan to combat the Ebola outbreak in DRC and Uganda."
         }
       ],
-      "text": "Over the past 12 days, Uganda's geopolitical situation has been marked by economic conflicts and diplomatic tensions due to an Ebola outbreak in neighboring Democratic Republic of Congo (DRC). The closure of borders between Uganda and both DRC and Congo has disrupted trade, causing significant losses for traders and local economies. However, there has been some cooperation with the World Health Organization (WHO) and Africa CDC, who have unveiled a comprehensive plan to address the Ebola outbreak, aiming to mitigate its impact on regional health and economic stability."
+      "text": "- DR Congo · economic (conflict): Trade on the Uganda–DR Congo border has halted due to Ebola-related restrictions, causing goods to spoil.\n- DR Congo · diplomatic (cooperation): Uganda and DR Congo cooperate diplomatically despite trade disruptions caused by Ebola.\n- Congo · economic (conflict): Uganda closes its border with Congo over an Ebola outbreak, affecting local economies and traders.\n- WHO · health (cooperation): WHO and Africa CDC launch a $518m plan to combat the Ebola outbreak in DRC and Uganda."
     },
     "Congo": {
       "h": "efbc8efb0110",
@@ -5204,7 +5204,7 @@
           "why": "Health workers in Congo treat Ebola patients without pay as WHO seeks resources."
         }
       ],
-      "text": "Over the past 12 days, Congo's geopolitical situation has been marked by economic and diplomatic tensions with Uganda over an Ebola outbreak, which led to border closures that disrupted trade and local economies. Simultaneously, there has been cooperation between Congo and the World Health Organization (WHO) in addressing the health crisis, as health workers continue to treat patients despite financial challenges, while WHO seeks additional resources to combat the epidemic."
+      "text": "- Uganda closes border with Congo over Ebola outbreak, causing economic disruption.\n- Diplomatic tensions rise as Uganda restricts trade between the two countries due to health concerns.\n- WHO and Congolese health workers cooperate in treating Ebola patients despite financial challenges."
     },
     "Malaysia": {
       "h": "301d2006e679",
@@ -5231,7 +5231,7 @@
           "why": "A weak rupiah makes Indonesia an attractive destination for Malaysian tourists and shoppers."
         }
       ],
-      "text": "Over the past 12 days, Malaysia has navigated a complex geopolitical landscape characterized by both cooperation and strategic considerations. Malaysia and the Netherlands have been working to strengthen their bilateral partnership in response to broader geopolitical tensions, focusing on diplomatic relations and mutual interests. Simultaneously, Malaysia has capitalized on economic opportunities by leveraging Indonesia's weak rupiah, which has made it an attractive destination for Malaysian tourists and shoppers, fostering economic cooperation between the two nations despite any underlying political differences."
+      "text": "- Malaysia seeks to strengthen its bilateral partnership with the Netherlands amid geopolitical tensions through diplomatic cooperation.\n- Malaysia benefits economically from Indonesian tourism and shopping due to a weak rupiah, fostering cooperation in the economic domain.\n- The weak rupiah continues to attract Malaysian visitors and consumers to Indonesia, enhancing economic ties between the two nations."
     },
     "Netherlands": {
       "h": "0d0989233974",
@@ -5271,7 +5271,7 @@
           "why": "US tariffs are reinstated, impacting Asia including Indonesia."
         }
       ],
-      "text": "Over the past 12 days, Indonesia's geopolitical situation has been marked by both cooperation and conflict. The country has seen a positive interaction with Malaysia, where the weak rupiah has made Indonesia an attractive destination for Malaysian tourists and shoppers, fostering economic ties between the two nations through increased trade and tourism. However, tensions have arisen due to conflicts with the United States, as US tariffs reinstated in Asia have had adverse effects on Indonesia's economy, highlighting underlying economic disputes in the region."
+      "text": "- - Weak rupiah leads to increased Malaysian tourism and shopping in Indonesia, highlighting economic cooperation between the two countries.\n- - US reintroduction of tariffs affects Asia, indirectly impacting Indonesia's economy through trade disruptions.\n- - No direct geopolitical conflict noted with Malaysia; economic benefits from tourist influx outweigh tensions."
     },
     "Argentina": {
       "h": "a088be419d59",
@@ -5319,7 +5319,7 @@
           "why": "Argentina, Ecuador, and Panama rank among the worst countries for workers' rights."
         }
       ],
-      "text": "Over the past 12 days, Argentina has engaged in a series of diplomatic interactions that highlight both cooperation and conflict. The country warned the United Kingdom and Chile about potential legal and diplomatic actions regarding British oil drilling plans near the Falkland Islands and Chile's assertion of sovereignty over the Strait of Magellan, respectively, indicating ongoing tensions related to territorial claims and resource exploitation. Additionally, Argentina faced criticism alongside Ecuador for poor workers' rights records, while maintaining a cooperative relationship with Paraguay as it qualified for the 2026 World Cup after a 16-year absence. Brazil's qualification for the same event also brought Argentina into contact but did not result in significant conflict or cooperation."
+      "text": "- Argentina warns United Kingdom and Chile of legal and diplomatic actions over British oil drilling near Falkland Islands and Chile's claims on the Strait of Magellan.\n- Paraguay cooperates with Argentina by qualifying for the 2026 World Cup after a 16-year absence.\n- Brazil maintains contact but no significant conflict, as six South American countries, including both nations, qualify for the 2026 World Cup.\n- Argentina joins Ecuador and Panama in criticism of poor workers' rights, highlighting ongoing issues in regional cooperation."
     },
     "Chile": {
       "h": "fddd26f58d9f",
@@ -5346,7 +5346,7 @@
           "why": "Canadian mining company Aclara Resources plans to establish an independent rare-earth supply chain in Brazil and Chile."
         }
       ],
-      "text": "Over a span of 12 days, Chile's geopolitical situation was marked by both cooperation and conflict. Initially, tensions arose when Argentina warned of potential legal and diplomatic actions against British oil drilling near the Falkland Islands, prompting Chile to reassert its sovereignty over the Strait of Magellan in response, dismissing Argentine claims. Simultaneously, Chile engaged in economic cooperation with Brazil as a Canadian mining company planned to establish an independent rare-earth supply chain in both countries, highlighting areas of mutual interest and potential collaboration."
+      "text": "- Chile engages in diplomatic conflict with Argentina over territorial waters near the Falkland Islands.\n- Chile asserts sovereignty over the Strait of Magellan, countering Argentine claims.\n- Chile cooperates economically with Brazil through a partnership aimed at developing an independent rare-earth supply chain by Canadian mining company Aclara Resources."
     },
     "South Africa": {
       "h": "f37c239ced48",
@@ -5394,7 +5394,7 @@
           "why": "Chinese company's investment in Etango uranium project approved by Namibia's Competition Commission."
         }
       ],
-      "text": "Over the past 12 days, South Africa has engaged in both cooperation and conflict with its neighbors. Diplomatically, South African President Ramaphosa worked to address regional issues such as Ebola and drug trafficking, reaffirming commitments to cooperation with Kenya. Economically, South Africa deepened trade ties with Kenya through six new accords aimed at boosting economic relations. However, the country also faced challenges, including xenophobic attacks that displaced migrants from Zimbabwe, straining cross-border relations. Additionally, Namibia's approval of a Chinese company's investment in an uranium project near the border highlighted potential economic tensions."
+      "text": "- - Kenya · diplomatic (cooperation): South African President Ramaphosa reaffirms commitment to addressing Ebola as a pandemic and combating drug trafficking.\n- - Kenya · economic (cooperation): South African and Kenyan presidents hold talks in Pretoria, signing six new accords to boost trade and ties.\n- - Zimbabwe · diplomatic (conflict): Xenophobic attacks led to displaced migrants leaving South Africa, affecting neighboring regions including Zimbabwe.\n- - Namibia · diplomatic (conflict): Chinese company's investment in Etango uranium project approved by Namibia's Competition Commission."
     },
     "Uzbekistan": {
       "h": "e699bbc46ce6",
@@ -5427,7 +5427,7 @@
           "why": "US President Donald Trump endorsed right-wing candidate Abelardo de la Espriella in Colombia’s presidential runoff."
         }
       ],
-      "text": "Over the course of 12 days, Colombia's geopolitical situation was marked by significant tension with the United States due to Donald Trump's endorsement of right-wing candidate Abelardo de la Espriella during the country's presidential runoff. This diplomatic conflict highlighted the shifting dynamics between the two nations and underscored the influence of U.S. foreign policy on Colombian electoral processes. The endorsement fueled internal political divisions and raised concerns about U.S. interference in Colombia’s democratic processes."
+      "text": "- - United States endorsed right-wing candidate Abelardo de la Espriella in Colombia's presidential runoff, leading to diplomatic tensions.\n- - Colombia faced internal political pressure as the U.S. supported a candidate opposed by many local stakeholders.\n- - The endorsement fueled conflict within Colombian politics and society, highlighting divisions between left and right."
     },
     "Cuba": {
       "h": "c7603ddc22c7",
@@ -5447,7 +5447,7 @@
           "why": "US imposes sanctions on Cuban President Díaz-Canel and Castro family members, escalating pressure."
         }
       ],
-      "text": "Over the past 12 days, Cuba has faced significant geopolitical challenges primarily from the United States, which have intensified both diplomatically and economically. The U.S. has imposed sanctions on Cuban President Miguel Díaz-Canel and members of the Castro family, aiming to escalate pressure on the Cuban government. These actions reflect ongoing conflicts in diplomatic relations and economic policies between the two nations."
+      "text": "- United States engages in diplomatic conflict with Cuba by imposing sanctions on Cuban President Díaz-Canel and Castro family members.\n- United States escalates economic pressure on Cuba through targeted sanctions against key individuals.\n- Diplomatic relations between the US and Cuba remain strained due to ongoing sanctions and tensions."
     },
     "Egypt": {
       "h": "63eec9ad9ca5",
@@ -5481,7 +5481,7 @@
           "why": "Egyptian officials condemn Kuwait's downing of Iranian missiles as a violation of sovereignty."
         }
       ],
-      "text": "Over the past 12 days, Egypt has been at the center of geopolitical tensions, primarily due to its role in facilitating diplomatic efforts amid ongoing conflicts. The country hosted renewed ceasefire talks between Israel and Palestine following Israeli strikes that killed at least nine people in Gaza, highlighting Egypt's continued involvement in mediating regional disputes. Additionally, Egypt expressed condemnation towards Kuwait for downing Iranian missiles, indicating growing friction with Iran over sovereignty issues, which underscores the complex web of alliances and conflicts in the region."
+      "text": "- Israel · diplomatic (conflict): Israel kills nine in Gaza during renewed ceasefire talks hosted by Egypt.\n- Palestine · diplomatic (cooperation): Palestinian groups join in calling for renewed ceasefire talks mediated by Egypt following Israeli strikes.\n- Iran · diplomatic (conflict): Egyptian officials react to Kuwait's downing of Iranian missiles, viewing it as a sovereignty violation."
     },
     "Turkey": {
       "h": "41caa62e667b",
@@ -5543,7 +5543,7 @@
           "why": "Turkey warned Greece and Cyprus against engaging in an arms race."
         }
       ],
-      "text": "Over the past 12 days, Turkey has navigated a complex geopolitical landscape marked by both cooperation and conflict. Diplomatically, Turkey is expanding its regional influence through interactions with Iran and Venezuela, aiming to bolster its role in the Middle East and beyond. Simultaneously, tensions have escalated with Greece over military alliances and arms races in the Eastern Mediterranean, reflecting broader strategic disagreements within NATO. These dynamics underscore Turkey's efforts to assert its sovereignty and regional leadership while managing competing interests from various stakeholders."
+      "text": "- Iran · diplomatic (contact): Turkey anticipates expanding its regional influence due to Iran's conflicts reshaping the Middle East.\n- Venezuela · diplomatic (cooperation): Venezuela's acting president Delcy Rodriguez is scheduled to visit Turkey for talks.\n- Russia · diplomatic (conflict): Turkey seeks to expand defence exports, conflicting with Russia amid shifting NATO alliances.\n- Greece · military (conflict): Turkey warns Greece and Cyprus against an arms race."
     },
     "Singapore": {
       "h": "f33c8bde0892",
@@ -5577,7 +5577,7 @@
           "why": "is pressuring Singapore, potentially leading to a diversified foreign policy that includes increased engagement with China."
         }
       ],
-      "text": "Over the past 12 days, Singapore's geopolitical situation has been marked by shifting dynamics and heightened tensions. The United States' Defence Secretary Pete Hegseth's speech at the Shangri-La Dialogue signaled a more assertive stance towards China, which prompted Singapore to consider diversifying its foreign policy, potentially leading to increased engagement with China. Additionally, leaked videos showing Singaporean troops training in Taiwan have further complicated regional relations and highlighted ongoing military tensions. These interactions underscore the complex web of diplomatic and military engagements that Singapore must navigate."
+      "text": "- United States shifts tone towards China at Shangri-La Dialogue, influencing Singapore's geopolitical stance.\n- US pressures Singapore for a diversified foreign policy, including enhanced ties with China.\n- Leaked video of Singaporean troops training in Taiwan escalates regional tensions.\n- China pressures Singapore to diversify its foreign policy, potentially increasing engagement with the country."
     },
     "Hong Kong": {
       "h": "8f279c3ff354",
@@ -5617,7 +5617,7 @@
           "why": "Kazakhstan expresses willingness to store Iran’s enriched uranium under potential nuclear deals."
         }
       ],
-      "text": "Over the past 12 days, Kazakhstan's geopolitical situation has been marked by a mix of cooperation and diplomatic engagement. The country is deepening economic ties with Hong Kong through agricultural exports, aiming to tap into Asia's market. Diplomatically, Kazakhstan's support for Kyrgyzstan’s election to the UN Security Council reflects regional solidarity and collaboration among Central Asian nations. Additionally, Kazakhstan has shown willingness to engage in potential nuclear cooperation with Iran by considering storing enriched uranium, highlighting its role as a mediator in regional energy matters."
+      "text": "- Kazakhstan cooperates with Hong Kong on agricultural exports, enhancing economic ties in Asia.\n- Kazakhstan and Kyrgyzstan work together diplomatically, as Kyrgyzstan's election to the UN Security Council reflects regional cooperation.\n- Kazakhstan engages in energy cooperation with Iran, considering storing enriched uranium under potential nuclear agreements."
     },
     "Portugal": {
       "h": "0f43d3b89881",
@@ -5657,7 +5657,7 @@
           "why": "Health workers in Congo treat Ebola patients without pay as WHO seeks resources."
         }
       ],
-      "text": "Over a span of approximately 12 days, the World Health Organization (WHO) navigated significant geopolitical dynamics. Key events included enhanced cooperation with China, which emerged as the largest assessed contributor to the organization following the United States' withdrawal. Additionally, the WHO collaborated closely with Uganda and the Africa CDC to address an Ebola outbreak, securing a substantial funding plan of $518 million. Simultaneously, in Congo, health workers continued their efforts despite financial constraints, highlighting the ongoing challenges and cooperation within the global health community."
+      "text": "- WHO cooperates with Africa CDC and Uganda to launch a $518m plan for Ebola outbreak response.\n- China becomes the largest assessed contributor to WHO, replacing the US after its withdrawal.\n- WHO collaborates with health workers in Congo who treat Ebola patients without pay, seeking additional resources."
     },
     "France": {
       "h": "f5c0ed7d8001",
@@ -5698,7 +5698,7 @@
           "why": "Ivory Coast defeated France in a World Cup warmup match."
         }
       ],
-      "text": "Over 12 days, France navigated a complex geopolitical landscape marked by both cooperation and conflict. Diplomatic tensions escalated with Mali after a French diplomat was sentenced to 20 years for state security breaches, straining bilateral relations. Meanwhile, France's interactions improved with Rwanda as they inaugurated a memorial in Paris honoring victims of the Rwandan genocide, symbolizing enhanced diplomatic ties. In economic domains, France faced controversy over French financier Matthieu Pigasse’s involvement in Venezuela's debt restructuring process, leading to conflicts with Caracas. Additionally, Serbia showed support for France by backing the Macron-Merz proposal for gradual EU integration, while France experienced a sporting defeat when Ivory Coast triumphed over France in a World Cup warmup match, highlighting regional rivalries."
+      "text": "- Venezuela · economic (conflict): French financier Matthieu Pigasse's involvement in Venezuela's debt restructuring process sparks controversy.\n- Serbia · diplomatic (cooperation): Serbian President Vucic supports the Macron-Merz proposal for gradual EU integration, enhancing bilateral cooperation.\n- Mali · diplomatic (conflict): A French diplomat sentenced to 20 years in prison for undermining state security strains relations between France and Mali.\n- Rwanda · diplomatic (cooperation): France and Rwanda inaugurate a memorial in Paris honoring victims of the Rwandan genocide, improving diplomatic ties."
     },
     "G20": {
       "h": "24a1d34bd29a",
@@ -5744,7 +5744,7 @@
           "why": "Xenophobic attacks led to displaced migrants leaving South Africa, affecting neighboring regions including Zimbabwe."
         }
       ],
-      "text": "Over the past 12 days, Zimbabwe's geopolitical situation has been marked by ongoing tensions and cooperation, primarily centered around regional security and migration issues. Key events included a reaffirmation of diplomatic ties with South Africa, where President Ramaphosa emphasized shared commitments to addressing global health crises like Ebola as a pandemic. However, these positive interactions were overshadowed by the outbreak of xenophobic attacks in South Africa, which led to a significant number of displaced migrants seeking refuge in neighboring countries, including Zimbabwe, thereby straining regional relations and cooperation."
+      "text": "- - Zimbabwe faced xenophobic attacks from displaced migrants fleeing South Africa, impacting regional stability.\n- - South African President Ramaphosa's commitment to addressing Ebola as a pandemic had no direct impact on Zimbabwe's immediate geopolitical situation.\n- - Diplomatic conflict arose between South Africa and Zimbabwe due to the displacement of migrants following xenophobic attacks in South Africa."
     },
     "Vietnam": {
       "h": "020b3f17c955",
@@ -5771,7 +5771,7 @@
           "why": "Vietnam disputes U.S"
         }
       ],
-      "text": "Over the past 12 days, Vietnam's geopolitical situation has been marked by ongoing tensions and interactions primarily with China in the military domain and with the United States in the economic sphere. Vietnam faces conflict with China over territorial claims in the South China Sea, as evidenced by China’s militarization of features like Antelope Reef through extensive dredging operations. Simultaneously, there have been disputes with the United States, particularly regarding economic policies and trade relations, indicating a complex web of interactions that shape Vietnam's strategic environment."
+      "text": "- China and Vietnam have conflicts over territorial claims in the South China Sea, with China's military activities at Antelope Reef.\n- The U.S. has economic disagreements with Vietnam, including trade tensions and disputes over intellectual property rights.\n- Vietnam maintains a delicate balance in its interactions with both China and the U.S., navigating military and economic challenges in regional geopolitics."
     },
     "Serbia": {
       "h": "23842fa0c011",
@@ -5798,7 +5798,7 @@
           "why": "Germany's Chancellor announces EU plans to integrate six Western Balkan countries."
         }
       ],
-      "text": "Over the past 12 days, Serbia has navigated a complex geopolitical landscape marked by both cooperation and conflict. Diplomatically aligning with France, Serbian President Vucic supported the Macron-Merz proposal for gradual EU integration, indicating a strategic move to advance Serbia's European aspirations through closer ties with key EU members. However, tensions arose when Slovakia discussed Serbia’s stance on Kosovo’s territorial integrity, highlighting ongoing disputes in regional diplomacy. Additionally, Serbia faced opposition from the European Union as Germany's Chancellor announced plans to integrate six Western Balkan countries into the EU framework, potentially sidelining Serbia and sparking concerns about its future within the bloc."
+      "text": "- France and Serbia cooperated diplomatically, with Vucic supporting Macron-Merz proposals for gradual EU integration.\n- Slovakia engaged in diplomatic conflict with Serbia over Kosovo’s territorial integrity during discussions between officials.\n- Serbia faced diplomatic conflict with the European Union when Germany announced plans to integrate six Western Balkan countries into the EU."
     },
     "Kyrgyzstan": {
       "h": "a9a97fa43ca2",
@@ -5838,7 +5838,7 @@
           "why": "Finland’s President suggests the EU should expand to include up to 40 states, such as Canada and the U.K."
         }
       ],
-      "text": "Over the past 12 days, Finland's geopolitical situation has been marked by increasing tensions with Russia over military conflicts, particularly in relation to energy security debates favoring renewables. Simultaneously, NATO has heightened concerns through frequent drone incursions near Finnish borders, adding to regional uncertainty. Diplomatically, Finland has engaged in cooperative efforts with the European Union, with its President advocating for a larger EU that could potentially include up to 40 states such as Canada and the U.K., reflecting broader strategic interests beyond immediate neighbors."
+      "text": "- Russia's military actions are intensifying Finland's focus on renewable energy sources for enhanced energy security.\n- Drone incursions by unknown entities are escalating tensions and uncertainty along NATO borders, affecting Finland.\n- Finland’s President advocates for EU expansion to include up to 40 states, proposing potential new members like Canada and the U.K."
     },
     "Panama": {
       "h": "c687375ba9d4",
@@ -5858,7 +5858,7 @@
           "why": "Panama's efforts are being balanced between the US and China, addressing concerns from the former over Cuba's ties."
         }
       ],
-      "text": "Over 12 days, Panama navigated a complex geopolitical landscape, balancing its relationships with both the United States and China. The primary tension arose from U.S. concerns about Panama's diplomatic relations with Cuba, leading to a period of cautious diplomacy as Panama sought to maintain good standing with all parties. Simultaneously, Panama engaged more closely with China, further solidifying its strategic partnerships in the face of U.S. pressure."
+      "text": "- - United States expresses concerns to Panama regarding its diplomatic relations with Cuba.\n- - Panama seeks a balance in diplomacy, engaging with both the United States and China.\n- - China supports Panama’s diplomatic efforts, countering U.S. concerns over Cuba."
     },
     "Poland": {
       "h": "2802d157ece3",
@@ -5878,7 +5878,7 @@
           "why": "Ukrainian President Zelensky's decision to honor a WWII-era militia has caused tension with Poland."
         }
       ],
-      "text": "Over the past 12 days, Poland has faced significant geopolitical challenges primarily due to Ukraine's decision to honor a World War II-era militia, which has strained diplomatic relations between the two countries. This action by Ukrainian President Zelensky has led to increased tensions, particularly in the domain of historical and political narratives. Simultaneously, these tensions have also affected Poland's interactions with the European Union, where cooperation remains focused on economic matters despite the ongoing conflict over historical memory issues."
+      "text": "- Ukraine · diplomatic (conflict): Polish-Presidential tensions rise over Ukraine honoring a WWII-era militia.\n- European Union · economic (cooperation): Despite domestic conflicts, Poland continues cooperative economic relations within the EU framework."
     },
     "Hungary": {
       "h": "69d26d563f39",
@@ -5898,7 +5898,7 @@
           "why": "Viktor Orban's potential defeat in Hungary could be one of the most important events in European politics over the decade."
         }
       ],
-      "text": "Over the past 12 days, Hungary's geopolitical situation has seen a shift towards cooperation within the European Union, primarily due to its decision to drop a veto on Ukraine’s accession negotiations, signaling improved relations with the EU. Additionally, there are significant political dynamics at play domestically, with Viktor Orban's potential defeat looming as one of the most critical events in European politics, which could reshape Hungary's future interactions and alliances within the region."
+      "text": "- - Hungarian government drops EU veto on Ukraine's accession negotiations, indicating improved relations with the European Union.\n- - Diplomatic cooperation between Hungary and the European Union is noted as potentially significant for future European political dynamics.\n- - Viktor Orban's potential defeat could reshape Hungarian politics and have far-reaching implications for Europe."
     },
     "Mali": {
       "h": "059a608e04e2",
@@ -5932,7 +5932,7 @@
           "why": "Burkina Faso's junta leader Ibrahim Traore calls for forgetting democracy."
         }
       ],
-      "text": "Over the past 12 days, Mali has faced significant geopolitical tensions and interactions. The country's military junta is in conflict with Senegal over the latter's ousted Prime Minister Ousmane Sonko, who continues to consolidate support as a key political figure. Additionally, Mali’s military junta is engaged in a high-stakes conflict with international partners, notably offering a substantial reward for information leading to the arrest of Iyad Ag Ghaly, leader of JNIM, while also experiencing strained relations with France due to a diplomat's conviction that has further complicated diplomatic ties."
+      "text": "- Senegal·military(conflict):Mali'smilitaryjuntarespondstoSenegal'soustedPrimeMinisterOusmaneSonko'sconsolidationofsupport.\n- UnitedStates·military(conflict):Mali'sjuntaoffersarewardforinformationleadingtothearrestofIyadAgGhaly,leaderofJNIM.\n- France·diplomatic(conflict):AFrenchdiplomatissentencedtoprisonstrainingrelationsbetweenFranceandMali.\n- BurkinaFaso·military(contact):BurkinaFaso'sjuntatleaderIbrahimTraorecallsforforgettingdemocracy."
     },
     "Senegal": {
       "h": "d54326b072bd",
@@ -5952,7 +5952,7 @@
           "why": "Morocco's national football team will train near Brazil's camp in New Jersey for the 2026 World Cup."
         }
       ],
-      "text": "Over the past 12 days, Senegal has navigated complex geopolitical dynamics, primarily through conflict and diplomacy. The consolidation of support for ousted Prime Minister Ousmane Sonko as party leader reflects ongoing political tensions within Senegal's military and political spheres. Additionally, Senegal's interaction with Morocco took a diplomatic turn when Morocco’s national football team chose to train near the United States for the 2026 World Cup, highlighting potential areas of cooperation or competition in international sports and regional politics."
+      "text": "- - Senegal engages in conflict with Mali over military issues related to ousted Prime Minister Ousmane Sonko.\n- - Diplomatic tensions arise between Senegal and Morocco as Morocco's national football team trains near Senegal for the 2026 World Cup."
     },
     "Cambodia": {
       "h": "4f717891b1cf",
@@ -5986,7 +5986,7 @@
           "why": "Thailand and Cambodia are engaging in UN-backed maritime arbitration over a disputed sea area."
         }
       ],
-      "text": "Over the past 12 days, Cambodia's geopolitical situation has been marked by ongoing conflicts with Thailand, primarily centered around maritime disputes. These interactions have involved both military tensions and diplomatic engagements within the framework of UN-backed arbitration, reflecting deep-seated territorial disagreements between the two countries. Despite efforts at cooperation through diplomatic channels, the core issues remain unresolved, highlighting the complexity and persistence of their geopolitical dynamics in the region."
+      "text": "- - Thailand is involved in both military and diplomatic conflicts with Cambodia over disputed sea areas through UN-backed maritime arbitration.\n- - The interactions between Thailand and Cambodia in the maritime dispute domain highlight ongoing tensions despite attempts at cooperation.\n- - Both military and diplomatic engagements indicate a complex geopolitical situation where conflict and cooperation coexist."
     },
     "Thailand": {
       "h": "c21e659d9d8b",
@@ -6020,7 +6020,7 @@
           "why": "Thailand and Cambodia are engaging in UN-backed maritime arbitration over a disputed sea area."
         }
       ],
-      "text": "Over the past 12 days, Thailand has been engaged in both conflict and cooperation with Cambodia regarding disputed sea areas through UN-backed maritime arbitration. The military tensions between the two countries have persisted as they navigate these legal proceedings, while diplomatic efforts are also underway to address the issues. These interactions highlight the ongoing geopolitical complexities and the dual nature of their relationship in the domain of maritime territorial disputes."
+      "text": "- - Thailand is engaged in UN-backed maritime arbitration with Cambodia over disputed sea areas, involving both military and diplomatic interactions.\n- - The conflict between Thailand and Cambodia continues through UN-backed arbitration, highlighting ongoing tensions.\n- - Both military and diplomatic efforts are part of the interaction, indicating a complex geopolitical situation."
     },
     "Bolivia": {
       "h": "f54e9c2d031e",
@@ -6040,7 +6040,7 @@
           "why": "Bolivian congress debates allowing military intervention to clear blockades."
         }
       ],
-      "text": "Over the past 12 days, Bolivia's geopolitical situation has been marked by internal tensions and external influences, particularly from the United States. The Bolivian Congress has been engaged in heated debates over whether to allow military intervention to clear blockades, reflecting a complex interplay of domestic political dynamics and international cooperation. This debate underscores the country’s vulnerability to external pressures and its ongoing challenges in managing internal conflicts."
+      "text": "- Bolivia's congress debates allowing military intervention from the United States to clear blockades, highlighting U.S.-Bolivia diplomatic cooperation.\n- The debate on military intervention reflects internal geopolitical tensions and external influence in Bolivia.\n- Blockade-related issues underscore economic and political conflicts within Bolivia, influenced by external actors."
     },
     "Kosovo": {
       "h": "95834c9e4814",
@@ -6080,7 +6080,7 @@
           "why": "Over 10% of apartments in Slovakia are empty according to NBS reports."
         }
       ],
-      "text": "Over the past 12 days, Slovakia has navigated a complex geopolitical landscape marked by both cooperation and conflict. Diplomatically, Slovakia engaged with Serbia over issues related to Kosovo's territorial integrity, reflecting ongoing tensions in regional relations. Simultaneously, Slovakia faced challenges from Russia in the military domain, which may have contributed to an increase in empty apartments, highlighting economic vulnerabilities. Additionally, Slovakia maintained its ties with the European Union through diplomatic channels, though this cooperation did not address the issue of empty housing directly."
+      "text": "- Slovakia discussed Kosovo’s territorial integrity with Serbian officials, indicating a focus on regional stability and diplomacy.\n- Over 10% of apartments in Slovakia being empty is noted as a key economic issue, affecting both Serbia and Slovakia's domestic policies.\n- Slovakia engaged in diplomatic cooperation with the European Union regarding housing vacancy rates, highlighting EU influence on national issues.\n- Conflict with Russia over military concerns is mentioned, though specific events are not detailed, suggesting ongoing tensions."
     },
     "Qatar": {
       "h": "51ee17be1c82",
@@ -6100,7 +6100,7 @@
           "why": "U.S.-Qatar dominance in natural gas left global energy markets dangerously exposed."
         }
       ],
-      "text": "Over the past 12 days, Qatar's geopolitical situation has been marked by both cooperation and conflict. In terms of cooperation, Qatar has strengthened its ties with the United States in the domain of energy, where their joint dominance in natural gas production has significantly impacted global energy markets. Simultaneously, Qatar has engaged in diplomatic tensions with Israel, condemning an Israeli attack on a Lebanese army patrol and emphasizing the violation of Lebanon's sovereignty, highlighting ongoing conflicts in regional politics."
+      "text": "- - Qatar engages in diplomatic conflict with Israel over an Israeli attack on a Lebanese army patrol.\n- - Qatar cooperates with the United States in the energy sector, particularly in natural gas, highlighting their joint influence on global energy markets.\n- - The interactions reflect Qatar's strategic balancing act between key regional and international partners."
     },
     "Afghanistan": {
       "h": "3e6fd2fbdcee",
@@ -6140,7 +6140,7 @@
           "why": "US-Iran talks are deadlocked, raising concerns over potential conflict expansion in key shipping routes."
         }
       ],
-      "text": "Over the past 12 days, Yemen's geopolitical situation has been marked by ongoing conflicts and cooperation. The country has engaged in diplomatic tensions with Iran, viewing its attacks as dangerous and a threat to regional stability. Simultaneously, economic competition between Yemen and Ethiopia has intensified, with Ethiopian migrants displacing Yemeni workers in low-skilled sectors, leading to job displacement concerns. Additionally, the United States' military cooperation with Yemen has been overshadowed by the deadlock in US-Iran talks, which raises fears of potential conflict escalation that could impact key shipping routes in the region."
+      "text": "- Iran · diplomatic (conflict): Yemen criticizes Iranian attacks, seeing them as a threat.\n- Ethiopia · economic (conflict): Yemeni workers compete with lower-paid Ethiopian migrants for jobs.\n- United States · military (cooperation): US-Iran talks fail, increasing worries about potential conflict in strategic shipping areas."
     },
     "Norway": {
       "h": "e510f81e2d0d",
@@ -6174,7 +6174,7 @@
           "why": "Fortune Minerals plans to publish an updated feasibility study for its Nico project in Canada’s Northwest Territories."
         }
       ],
-      "text": "Over the past 12 days, Norway's geopolitical situation has been marked by ongoing cooperation with the United Kingdom, particularly in the military and economic domains. The UK Defense Minister confirmed that all eight Type 26 frigates will be delivered to the Royal Navy as planned, despite concerns over potential build slots for Norway, highlighting a strong defense partnership. Additionally, Norwegian interests have extended into Canada through economic cooperation, with Fortune Minerals planning to publish an updated feasibility study for its Nico project in Canada's Northwest Territories."
+      "text": "- Norway maintains cooperation with the United Kingdom in defense, confirming delivery of all eight Type 26 frigates despite potential build slot concerns.\n- Diplomatic and military contacts between Norway and the United Kingdom ensure continued defense collaboration as planned.\n- Economic ties with Canada are strengthened through Fortune Minerals' intention to update its feasibility study for the Nico project."
     },
     "Sweden": {
       "h": "5cc6ffaee2e3",
@@ -6194,7 +6194,7 @@
           "why": "Sweden considers lowering the age of criminal responsibility to address rising youth violence."
         }
       ],
-      "text": "Over a span of 12 days, Sweden's geopolitical situation was marked by cooperative efforts in addressing domestic issues through international collaboration. Specifically, Sweden and Brazil engaged in military cooperation, which influenced Sweden’s consideration of lowering the age of criminal responsibility due to rising youth violence. Additionally, Sweden worked closely with the United States on diplomatic fronts, further solidifying its stance on this issue, highlighting a trend of international cooperation in tackling societal challenges."
+      "text": "- Sweden considers lowering the age of criminal responsibility in cooperation with Brazil, focusing on addressing rising youth violence.\n- Sweden and the United States cooperate diplomatically on issues related to youth violence and criminal justice policies.\n- Cooperation with Brazil and the U.S. highlights international interest and potential support for Sweden's proposed policy changes."
     },
     "Syria": {
       "h": "c73c86dd0bf0",
@@ -6240,7 +6240,7 @@
           "why": "Yemeni workers face job displacement by lower-paid Ethiopian migrants in low-skilled sectors."
         }
       ],
-      "text": "Over the past 12 days, Ethiopia has navigated a complex geopolitical landscape marked by both cooperation and conflict. Diplomatically, the country maintained ties with the United States through cooperative channels, as evidenced by the recent parliamentary elections which are expected to solidify Prime Minister Abiy Ahmed's ruling party's position. Simultaneously, Ethiopia is grappling with economic tensions in Yemen, where Ethiopian migrant workers have displaced Yemeni laborers in low-skilled sectors, leading to job displacement and potential social unrest."
+      "text": "- - United States engaged in diplomatic cooperation with Ethiopia, focusing on confirming the ruling party's dominance through parliamentary elections.\n- - Economic conflict arose between Ethiopia and Yemen as Ethiopian migrants displaced Yemeni workers in low-skilled jobs.\n- - Key events included electoral processes aimed at reinforcing Abiy Ahmed's political position within Ethiopia."
     },
     "Greece": {
       "h": "8bf717d3cb90",
@@ -6260,7 +6260,7 @@
           "why": "Turkey warned Greece and Cyprus against engaging in an arms race."
         }
       ],
-      "text": "Over the past 12 days, Greece's geopolitical situation has been marked by tensions with Turkey, particularly in the domain of military affairs. Turkey has issued warnings to both Greece and Cyprus, cautioning them against engaging in an arms race, which highlights ongoing conflicts and strategic concerns between the two nations. These interactions underscore the competitive dynamics and security challenges in the region."
+      "text": "- Turkey's military tensions with Greece escalate as both warn against an arms race.\n- Conflict between Turkey and Greece continues over military developments, with mutual warnings.\n- No new cooperation or significant events noted during the 12-day period."
     },
     "Sudan": {
       "h": "f750ac53484f",
@@ -6306,7 +6306,7 @@
           "why": "11 European countries call for stricter visa policies towards Russian citizens."
         }
       ],
-      "text": "Over the past 12 days, the Czech Republic has faced significant geopolitical challenges, primarily from China in the domain of cybersecurity and from Russia through diplomatic pressure. The country experienced a series of dual-method cyberattacks originating from China, targeting various sectors including government, research, technology, and finance. Simultaneously, in response to Russia's actions, 11 European countries, including the Czech Republic, called for stricter visa policies towards Russian citizens, indicating growing tensions and a unified stance against Russia's behavior."
+      "text": "- - Czech Republic faces geopolitical tension with China over cyberattacks targeting multiple sectors.\n- - Diplomatic pressure from the Czech Republic and 10 other nations increases against Russia through tightened visa regulations.\n- - Conflicts arise in both military and diplomatic domains, highlighting international concerns over security and sovereignty."
     },
     "Myanmar": {
       "h": "badfbba7c4fc",
@@ -6333,7 +6333,7 @@
           "why": "Timor-Leste criticizes Myanmar as a stain on ASEAN."
         }
       ],
-      "text": "Over the past 12 days, Myanmar's geopolitical situation has been marked by both cooperation and conflict. The military government has strengthened its ties with Russia by seeking cyber technology support, indicating a strategic alignment in the realm of defense and security. Simultaneously, there have been diplomatic tensions, particularly with India, as its engagement with Myanmar’s junta has raised significant strategic concerns among regional partners. Additionally, Timor-Leste has publicly criticized Myanmar for undermining ASEAN unity, highlighting ongoing disputes within the organization over human rights and democratic governance issues."
+      "text": "- Myanmar's military seeks cooperation with Russia in cyber technology.\n- India expresses strategic concerns over Myanmar's junta engagement.\n- Timor-Leste criticizes Myanmar, marking a strain within ASEAN."
     },
     "Timor-Leste": {
       "h": "aebd34eeae1e",
@@ -6379,7 +6379,7 @@
           "why": "Estonia's former President shares lessons learned in managing relations with Russia."
         }
       ],
-      "text": "Over the past 12 days, Estonia has navigated a complex geopolitical landscape primarily through interactions with Russia. Diplomatically, Estonia's former President engaged in discussions aimed at maintaining cooperation during NATO exercises, highlighting the importance of dialogue and strategic partnerships to manage tensions. Simultaneously, there were instances of military conflict, as the same former President shared insights on managing relations with Russia, underscoring the ongoing challenges and the need for careful diplomacy in the face of potential conflicts."
+      "text": "- Estonia engages in diplomatic cooperation with Russia through its former President, sharing insights on handling Russian relations during NATO exercises.\n- Estonia experiences military conflict with Russia as highlighted by its former President, who discusses the challenges of managing such relations."
     },
     "Denmark": {
       "h": "1b8b07f11ea8",
@@ -6412,7 +6412,7 @@
           "why": "China bans four New Zealand MPs over their visit to Taiwan."
         }
       ],
-      "text": "Over a span of 12 days, New Zealand's geopolitical situation was significantly shaped by its interactions with China, primarily centered on diplomatic and military domains. The country faced diplomatic conflict when China banned four New Zealand Members of Parliament from entering the country following their unauthorized visit to Taiwan, highlighting tensions in bilateral relations. Additionally, this incident underscored the broader context of Sino-New Zealand relations, where military contact was also a factor, further emphasizing the complexity and sensitivity of their interactions."
+      "text": "- China bans four New Zealand MPs from visiting the country due to their trip to Taiwan, highlighting diplomatic tensions.\n- No direct military contact or cooperation is reported between New Zealand and China during this period.\n- The incident underscores the geopolitical pressure New Zealand faces in maintaining its relationships with major powers like China."
     },
     "Niger": {
       "h": "a627ce1d050c",
@@ -6432,7 +6432,7 @@
           "why": "Benin's new president visits Burkina Faso and Niger, focusing on security, counterterrorism, trade, and infrastructure."
         }
       ],
-      "text": "Over the past 12 days, Niger has navigated complex geopolitical dynamics, primarily through cooperation but with underlying tensions. The country worked closely with Turkey in a humanitarian crisis where 49 people tragically died of thirst after their truck broke down while returning from Mali, highlighting the need for better coordination and support in border regions. Additionally, Niger engaged in military and diplomatic cooperation when its new president visited Burkina Faso, focusing on security, counterterrorism efforts, trade, and infrastructure development, aiming to strengthen regional stability and economic ties despite ongoing challenges."
+      "text": "- Turkey and Niger cooperate diplomatically to address humanitarian crises in the Sahara desert.\n- Niger engages in military cooperation with Burkina Faso through a presidential visit aimed at enhancing security and counterterrorism efforts.\n- The interactions focus on regional stability and economic development through trade and infrastructure projects."
     },
     "Belarus": {
       "h": "de794c93f877",
@@ -6465,7 +6465,7 @@
           "why": "Morocco's national football team will train near Brazil's camp in New Jersey for the 2026 World Cup."
         }
       ],
-      "text": "Over the course of 12 days, Morocco's geopolitical situation was marked by both cooperation and conflict, primarily centered around its participation in the 2026 FIFA World Cup. Morocco's national football team trained near Brazil's camp in New Jersey, fostering military and diplomatic interactions with Brazil. However, this arrangement also led to a diplomatic clash with Senegal, which highlights ongoing tensions within the region despite shared interests in sports and international competitions."
+      "text": "- - Morocco cooperates with Brazil on training arrangements for the 2026 World Cup.\n- - Morocco experiences diplomatic tension with Senegal over similar training arrangements for the same event.\n- - The interactions highlight Morocco's involvement in international sporting events and its geopolitical engagements through sports diplomacy.\n- - These events underscore regional dynamics and potential conflicts in West Africa related to football and national pride."
     },
     "Uruguay": {
       "h": "5598c2dfa01f",
@@ -6511,7 +6511,7 @@
           "why": "Luxembourg's 1990s trains are now operational in Romania."
         }
       ],
-      "text": "Over the past 12 days, Luxembourg has been engaged in significant diplomatic and military interactions that highlight its role in regional cooperation. Diplomatically, Luxembourg is working closely with Germany on legislative and administrative reforms set to take effect in June, which involve multiple countries including Belgium and France. Militarily, Luxembourg has bolstered its partnerships by ensuring the operational readiness of its 1990s trains in Romania, demonstrating a commitment to enhancing military cooperation within the region."
+      "text": "- - Luxembourg engages in diplomatic discussions with Germany regarding legislative and administrative reforms scheduled for June.\n- - Luxembourg collaborates militarily with Romania, utilizing its older train fleet for operations in the country.\n- - The interactions highlight ongoing cooperation across multiple domains including legislation, administration, and military operations."
     },
     "Nepal": {
       "h": "57c602273599",
@@ -6531,7 +6531,7 @@
           "why": "Nepali PM Balendra Shah called for UK mediation in an India-Nepal border dispute, which was rejected by India."
         }
       ],
-      "text": "Over the past 12 days, Nepal's geopolitical situation has been marked by both cooperation and conflict. The country engaged in diplomatic efforts with India, where Nepali Foreign Minister Pradeep Kumar Khanal emphasized the need for development-focused relations during a recent visit. Simultaneously, Nepal sought international mediation when Prime Minister Balendra Shah called on the United Kingdom to intervene in an ongoing border dispute with India, though this request was rejected by India. These interactions highlight Nepal's strategic balancing act between its larger neighbors while seeking support and cooperation in various domains."
+      "text": "- Nepal seeks development-focused cooperation with India but faces diplomatic tensions over border disputes.\n- India rejects UK's mediation offer in the ongoing India-Nepal border dispute.\n- Nepali FM Khanal visits India to advocate for improved bilateral relations centered on development."
     },
     "African Union": {
       "h": "9fa5d5a630a3",
@@ -6577,7 +6577,7 @@
           "why": "Mexican authorities captured an alleged high-ranking MS-13 leader near Guatemala's border."
         }
       ],
-      "text": "Over the past 12 days, Guatemala has navigated a complex geopolitical landscape marked by both cooperation and conflict. In the economic domain, Guatemala strengthened its ties with Brazil through a significant agricultural-cooperation accord, facilitating beef exports that could bolster Guatemala’s economy. Simultaneously, in the military sphere, tensions escalated as Mexican authorities apprehended an alleged high-ranking leader of the MS-13 gang near Guatemala's border, highlighting ongoing challenges related to regional security and cooperation in combating transnational criminal organizations."
+      "text": "- Brazil and Guatemala cooperated in the agricultural domain, focusing on beef exports.\n- The capture of a suspected high-ranking MS-13 leader by Mexican authorities near Guatemala's border highlighted ongoing conflict issues.\n- Guatemala faced geopolitical tensions with the United States due to the apprehension of a key gang member close to its territory."
     },
     "Jordan": {
       "h": "cabf156b34ce",
@@ -6597,7 +6597,7 @@
           "why": "UK government supports Jordan's custodianship of Al-Aqsa Mosque."
         }
       ],
-      "text": "Over the course of 12 days, Jordan navigated a complex geopolitical landscape marked by both cooperation and conflict. Diplomatically, it maintained close ties with the United Kingdom, which supported Jordan’s role as custodian of the Al-Aqsa Mosque, reinforcing its standing in regional diplomacy. Simultaneously, tensions escalated due to military conflicts, as Jordan condemned an Israeli attack on a Lebanese military convoy, highlighting ongoing friction in the region and Jordan's stance against such actions."
+      "text": "- Jordan engages in conflict with Israel over an Israeli attack on a Lebanese military convoy.\n- Jordan cooperates diplomatically with the United Kingdom regarding Jordan's custodianship of Al-Aqsa Mosque.\n- The interactions highlight Jordan's efforts to maintain regional stability amidst conflicts and seek international support for its religious sites."
     },
     "Rwanda": {
       "h": "a24bde8ee48f",
@@ -6617,7 +6617,7 @@
           "why": "France and Rwanda inaugurate a memorial in Paris to honor victims of the Rwandan genocide, marking improved relations."
         }
       ],
-      "text": "Over the past 12 days, Rwanda's geopolitical situation has seen significant improvements in its diplomatic and economic interactions, particularly with France. The inauguration of a memorial in Paris to honor victims of the Rwandan genocide symbolizes enhanced cooperation between the two countries in the domain of diplomacy. Additionally, these events have facilitated increased economic contact, further strengthening their bilateral relations."
+      "text": "- - France and Rwanda cooperate diplomatically through the inauguration of a memorial in Paris honoring victims of the Rwandan genocide.\n- - The event signifies improved relations between the two countries.\n- - France and Rwanda maintain economic contact as part of their broader diplomatic engagement."
     },
     "Namibia": {
       "h": "9f76c5fc5680",
@@ -6637,7 +6637,7 @@
           "why": "Chinese company's investment in Etango uranium project approved by Namibia's Competition Commission."
         }
       ],
-      "text": "Over the past 12 days, Namibia has navigated a complex geopolitical landscape marked by both cooperation and conflict. The approval of a Chinese company’s investment in the Etango uranium project by Namibia's Competition Commission reflects a growing economic partnership between China and Namibia, highlighting mutual interests in resource development. Simultaneously, this interaction has also sparked diplomatic tensions with South Africa, which may view such foreign investments as potentially undermining local business opportunities or national sovereignty concerns."
+      "text": "- - Conflict with South Africa over a Chinese company's approval for the Etango uranium project investment.\n- - Economic cooperation between China and Namibia through the approval of the Etango uranium project.\n- - Diplomatic tensions involving South African concerns regarding foreign investments in Namibia."
     },
     "Paraguay": {
       "h": "18e466b8cd35",
@@ -6696,7 +6696,7 @@
           "why": "EU leaders will meet in Montenegro to reaffirm membership prospects for six western Balkan countries, including Bosnia and Herzegovina."
         }
       ],
-      "text": "Over the past 12 days, Bosnia and Herzegovina has navigated complex geopolitical dynamics, primarily with the United States and the European Union. Tensions arose when the U.S. threatened to reconsider its support due to a dispute over a top administrative post, highlighting the country's vulnerability in diplomatic relations. Simultaneously, Bosnia and Herzegovina participated in EU-led cooperation efforts, as EU leaders met in Montenegro to reaffirm membership prospects for six western Balkan countries, including Bosnia and Herzegovina, underscoring the region’s collective aspirations for integration."
+      "text": "- United States threatens to reconsider its involvement in Bosnia and Herzegovina over a dispute regarding a top administrative position.\n- European Union reaffirms membership prospects for Bosnia and Herzegovina during a meeting with other Western Balkan countries.\n- Diplomatic conflict arises between the US and Bosnia and Herzegovina due to disagreements on key administrative roles.\n- Cooperation between Bosnia and Herzegovina and EU is highlighted in discussions about future membership."
     },
     "Montenegro": {
       "h": "a86c38484a9c",
@@ -6729,7 +6729,7 @@
           "why": "Burkina Faso's junta leader Ibrahim Traore calls for forgetting democracy."
         }
       ],
-      "text": "Over the past 12 days, Burkina Faso has navigated complex geopolitical dynamics, primarily through cooperation in the military domain with Niger, where Benin’s new president visited to discuss security and counterterrorism efforts alongside trade and infrastructure development. Simultaneously, Burkina Faso's junta leader Ibrahim Traore emphasized a shift away from democratic principles, indicating internal political tensions and a potential realignment of power structures within the country."
+      "text": "- - Military cooperation between Burkina Faso and Niger focuses on security and counterterrorism efforts.\n- - Burkina Faso's junta leader Ibrahim Traore emphasizes the need to prioritize stability over democracy in discussions with Mali.\n- - No significant conflict or cooperation events noted between Burkina Faso and Benin during this period."
     },
     "Ecuador": {
       "h": "a03e0ac17a31",
@@ -6775,7 +6775,7 @@
           "why": "Latvian general warns of potential Russian invasion of NATO states by end-2028."
         }
       ],
-      "text": "Over the past 12 days, Latvia's geopolitical situation has been dominated by concerns over potential Russian aggression, with a specific focus on the possibility of an invasion of NATO states by the end of 2028. This warning was echoed by both Latvian military officials and NATO representatives, highlighting the ongoing tensions in the region and the need for enhanced cooperation among allied nations to ensure security. The mutual acknowledgment of these threats underscores Latvia's commitment to maintaining strong defense ties within NATO despite the broader geopolitical uncertainties."
+      "text": "- Latvia's military leaders warn of a potential Russian invasion of NATO states by the end of 2028, highlighting tensions with Russia in the military domain.\n- Latvia cooperates with NATO on defense and security matters, reflecting its commitment to collective defense mechanisms within the alliance.\n- Russia is identified as the primary geopolitical threat, prompting Latvian military warnings and strategic preparations."
     }
   }
 }

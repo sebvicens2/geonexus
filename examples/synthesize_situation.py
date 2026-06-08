@@ -30,32 +30,34 @@ def _word(s: int) -> str:
     return "cooperation" if s > 0 else "conflict" if s < 0 else "contact"
 
 
+_BULLETS = (
+    "Answer ONLY as bullet points, one per line, each starting with '- '. "
+    "No intro, no headers, no numeric scores. "
+)
+
 _PAIR_PROMPT = (
-    "Explain the relationship between {a} and {b} in 3-4 sentences, focused on the "
+    "In 3-4 bullet points, explain the relationship between {a} and {b}, focused on the "
     "REASONS and concrete events driving it, drawing on the news excerpts below. "
-    "Do NOT mention any numeric scores or ratings — describe the underlying events "
-    "and dynamics in plain prose. These are media-derived. Be specific.\n"
-    "DOMAINS & EVENTS:\n{lines}"
+    + _BULLETS
+    + "Media-derived. Be specific.\nDOMAINS & EVENTS:\n{lines}"
 )
 
 _COUNTRY_PROMPT = (
-    "Summarise {c}'s geopolitical situation over ~12 days in 3-4 sentences, focused on "
-    "the REASONS and key events, drawing on its interactions below (with whom, domain, "
-    "cooperation or conflict). Do NOT mention numeric scores — describe the underlying "
-    "dynamics in plain prose. Media-derived. Be specific.\n"
+    "In 3-4 bullet points, summarise {c}'s geopolitical situation over ~12 days, focused "
+    "on the REASONS and key events, drawing on its interactions below (with whom, domain, "
+    "cooperation or conflict). " + _BULLETS + "Media-derived. Be specific.\n"
     "INTERACTIONS:\n{lines}"
 )
 
 _PROMPT = (
-    "You are a geopolitical analyst. Write a SITUATION REPORT in 4-6 short paragraphs "
-    "from the signals below (from ~12 days of news coverage). For the main fault lines, "
-    "notable cooperation and cross-domain divergences (e.g. economic rivals that are "
-    "diplomatic partners), EXPLAIN THE REASONS using the concrete events in KEY EVENTS. "
-    "Do NOT mention numeric scores or ratings — describe the underlying drivers. Cover "
-    "the bloc structure and any maritime/chokepoint risk. Be specific with country "
-    "names; do not invent beyond the signals. Begin by noting these are media-derived "
-    "stances, not ground truth. Plain prose, no markdown headers.\n\n"
-    "SIGNALS:\n{facts}"
+    "You are a geopolitical analyst. Write a SITUATION REPORT as 6-9 bullet points "
+    "from the signals below (from ~12 days of news coverage). Cover the main fault lines, "
+    "notable cooperation, cross-domain divergences (e.g. economic rivals that are "
+    "diplomatic partners), the bloc structure and any maritime/chokepoint risk — and "
+    "EXPLAIN THE REASONS using the concrete events in KEY EVENTS. "
+    + _BULLETS
+    + "Begin with one bullet noting these are media-derived stances, not ground truth. "
+    "Be specific with country names; do not invent beyond the signals.\n\nSIGNALS:\n{facts}"
 )
 
 

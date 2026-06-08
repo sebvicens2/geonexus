@@ -23,6 +23,120 @@ from multilayer import CAMEO, LAYERS, _actor
 OUT_PATH = Path("reports") / "geonexus_country_network_3d.html"
 SITUATION = Path(__file__).parent / "data" / "world_observer_situation.json"
 
+# country name -> ISO 3166-1 alpha-2 (for flagcdn flag textures); blocs fall back to a sphere
+ISO2 = {
+    "Afghanistan": "af",
+    "Albania": "al",
+    "Algeria": "dz",
+    "Argentina": "ar",
+    "Armenia": "am",
+    "Australia": "au",
+    "Azerbaijan": "az",
+    "Bahrain": "bh",
+    "Bangladesh": "bd",
+    "Belarus": "by",
+    "Bolivia": "bo",
+    "Bosnia and Herzegovina": "ba",
+    "Brazil": "br",
+    "Burkina Faso": "bf",
+    "Cambodia": "kh",
+    "Canada": "ca",
+    "Chile": "cl",
+    "China": "cn",
+    "Colombia": "co",
+    "Congo": "cg",
+    "Cuba": "cu",
+    "Cyprus": "cy",
+    "Czech Republic": "cz",
+    "DR Congo": "cd",
+    "Denmark": "dk",
+    "Ecuador": "ec",
+    "Egypt": "eg",
+    "Estonia": "ee",
+    "Ethiopia": "et",
+    "European Union": "eu",
+    "Finland": "fi",
+    "France": "fr",
+    "Germany": "de",
+    "Ghana": "gh",
+    "Greece": "gr",
+    "Guatemala": "gt",
+    "Hong Kong": "hk",
+    "Hungary": "hu",
+    "India": "in",
+    "Indonesia": "id",
+    "Iran": "ir",
+    "Ireland": "ie",
+    "Israel": "il",
+    "Italy": "it",
+    "Ivory Coast": "ci",
+    "Jamaica": "jm",
+    "Japan": "jp",
+    "Jordan": "jo",
+    "Kazakhstan": "kz",
+    "Kenya": "ke",
+    "Kosovo": "xk",
+    "Kuwait": "kw",
+    "Kyrgyzstan": "kg",
+    "Laos": "la",
+    "Latvia": "lv",
+    "Lebanon": "lb",
+    "Luxembourg": "lu",
+    "Malaysia": "my",
+    "Mali": "ml",
+    "Mexico": "mx",
+    "Montenegro": "me",
+    "Morocco": "ma",
+    "Myanmar": "mm",
+    "Namibia": "na",
+    "Nepal": "np",
+    "Netherlands": "nl",
+    "New Zealand": "nz",
+    "Niger": "ne",
+    "Nigeria": "ng",
+    "North Korea": "kp",
+    "Norway": "no",
+    "Pakistan": "pk",
+    "Palestine": "ps",
+    "Panama": "pa",
+    "Papua New Guinea": "pg",
+    "Paraguay": "py",
+    "Philippines": "ph",
+    "Poland": "pl",
+    "Portugal": "pt",
+    "Qatar": "qa",
+    "Romania": "ro",
+    "Russia": "ru",
+    "Rwanda": "rw",
+    "Saudi Arabia": "sa",
+    "Senegal": "sn",
+    "Serbia": "rs",
+    "Singapore": "sg",
+    "Slovakia": "sk",
+    "Somalia": "so",
+    "South Africa": "za",
+    "South Korea": "kr",
+    "Sudan": "sd",
+    "Sweden": "se",
+    "Switzerland": "ch",
+    "Syria": "sy",
+    "Taiwan": "tw",
+    "Thailand": "th",
+    "Timor-Leste": "tl",
+    "Tunisia": "tn",
+    "Turkey": "tr",
+    "Uganda": "ug",
+    "Ukraine": "ua",
+    "United Kingdom": "gb",
+    "United States": "us",
+    "Uruguay": "uy",
+    "Uzbekistan": "uz",
+    "Venezuela": "ve",
+    "Vietnam": "vn",
+    "Yemen": "ye",
+    "Zimbabwe": "zw",
+}
+
 
 def _situation_html() -> str:
     """Cached LLM situation report as HTML paragraphs (empty hint if not generated)."""
@@ -34,12 +148,11 @@ def _situation_html() -> str:
             "<code>python examples/synthesize_situation.py</code> (needs Ollama).</p>"
         )
     text = json.loads(SITUATION.read_text(encoding="utf-8")).get("text", "")
-    paras = []
-    for block in text.split("\n\n"):
-        block = block.strip().lstrip("#").strip()
-        if block:
-            paras.append(f"<p>{_html.escape(block)}</p>")
-    return "".join(paras)
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    items = [ln.lstrip("-•*").strip() for ln in lines if ln.lstrip()[:1] in "-•*"]
+    if items:
+        return "<ul>" + "".join(f"<li>{_html.escape(i)}</li>" for i in items) + "</ul>"
+    return "".join(f"<p>{_html.escape(b.strip())}</p>" for b in text.split("\n\n") if b.strip())
 
 
 def main() -> None:
@@ -74,6 +187,7 @@ def main() -> None:
         .replace("__SITUATION__", _situation_html())
         .replace("__PAIRS__", json.dumps(pairs_js))
         .replace("__COUNTRIES__", json.dumps(countries_js))
+        .replace("__ISO2__", json.dumps({k: v for k, v in ISO2.items() if k in actors}))
     )
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(page, encoding="utf-8")
@@ -108,6 +222,8 @@ _TEMPLATE = r"""<!doctype html>
   #report h2 { margin:0 0 4px; font-size:16px; }
   #report .muted2 { color:#64748b; font-size:11.5px; margin:0 0 12px; }
   #report p { font-size:13.5px; line-height:1.55; color:#cbd5e1; }
+  #report ul { margin:6px 0 10px; padding-left:18px; }
+  #report li { font-size:13.5px; line-height:1.5; margin:5px 0; color:#cbd5e1; }
   #report code { background:#1e293b; padding:1px 5px; border-radius:4px; }
   #report .ev { margin-top:5px; font-size:13px; }
   #report .why { color:#94a3b8; font-size:12px; margin:1px 0 0 16px; font-style:italic; }
@@ -168,10 +284,23 @@ try {
     throw e2;
   }
 }
+// same three instance as 3d-force-graph -> flag sprites render; optional, fails soft
+let THREE = null;
+try { THREE = await import('https://esm.sh/three@0.160.0'); } catch (e) { /* no flags */ }
 const D = __DATA__;
 const PAIRS = __PAIRS__;  // per-pair: {text (LLM summary), edges:[{domain,cameo,sign,why}]}
 const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interactions:[...]}
+const ISO2 = __ISO2__;  // country -> iso2 for flag textures (blocs absent -> sphere)
+const flagLoader = THREE ? new THREE.TextureLoader() : null;
+const SPHERE_GEO = THREE ? new THREE.SphereGeometry(1, 14, 14) : null;
 const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+function bulletize(text) {  // render LLM bullet output as a list (fallback: paragraph)
+  const lines = text.split('\n').map(x => x.trim()).filter(Boolean);
+  const items = lines.filter(l => /^[-•*]/.test(l)).map(l => l.replace(/^[-•*]\s*/, ''));
+  return items.length
+    ? '<ul>' + items.map(i => `<li>${esc(i)}</li>`).join('') + '</ul>'
+    : '<p>' + esc(text) + '</p>';
+}
 const LAYERS = D.layers;
 const active = new Set(LAYERS);  // multi-select: all layers on by default
 const HUBS = 16;                 // how many top countries get a permanent label
@@ -212,35 +341,53 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .nodeColor(n => (hlNodes.size && !hlNodes.has(n.id)) ? 'rgba(148,163,184,0.25)' : NODE_COLOR(n))
   .nodeLabel('id')  // hover tooltip (and the only labels in UMD fallback mode)
   .nodeThreeObject(n => {
-    if (!SpriteText) return undefined;  // fallback mode: no always-on labels
+    if (!THREE) return undefined;  // UMD fallback: default sphere + hover labels
+    const dim = hlNodes.size > 0 && !hlNodes.has(n.id);
     const focused = hlNodes.size > 0 && hlNodes.has(n.id);
-    if (!focused && !n.labelOn) return undefined;  // hubs + focused only
-    const s = new SpriteText(n.id);
-    s.backgroundColor = 'rgba(7,11,21,0.5)';  // subtle pill for readability
-    s.padding = 1.5;
-    s.borderRadius = 3;
-    s.borderWidth = 0;
-    s.color = hlNodes.size > 0 && !focused ? 'rgba(200,210,225,0.25)' : '#f8fafc';
-    s.textHeight = 7 + Math.min(6, n.deg);
-    s.fontWeight = '600';
-    s.position.y = 10;
-    return s;
+    const sz = 5 + Math.min(11, n.deg);
+    const group = new THREE.Group();
+    const iso = ISO2[n.id];
+    if (iso && flagLoader) {  // flag of the country, billboarded
+      const mat = new THREE.SpriteMaterial({
+        map: flagLoader.load('https://flagcdn.com/w80/' + iso + '.png'),
+        transparent: true, opacity: dim ? 0.18 : 1,
+      });
+      const sp = new THREE.Sprite(mat);
+      sp.scale.set(sz * 1.5, sz, 1);  // flags are ~3:2
+      group.add(sp);
+    } else {  // bloc / unmapped actor: a coloured sphere
+      const mesh = new THREE.Mesh(SPHERE_GEO, new THREE.MeshBasicMaterial({
+        color: NODE_COLOR(n), transparent: true, opacity: dim ? 0.18 : 0.95,
+      }));
+      mesh.scale.setScalar(sz * 0.4);
+      group.add(mesh);
+    }
+    if (SpriteText && (focused || n.labelOn)) {  // label hubs + the focused node
+      const t = new SpriteText(n.id);
+      t.backgroundColor = 'rgba(7,11,21,0.5)'; t.padding = 1.5; t.borderRadius = 3;
+      t.color = dim ? 'rgba(200,210,225,0.25)' : '#f8fafc';
+      t.textHeight = 6 + Math.min(5, n.deg); t.fontWeight = '600';
+      t.position.set(0, sz * 0.9 + 3, 0);
+      group.add(t);
+    }
+    return group;
   })
-  .nodeThreeObjectExtend(true)
+  .nodeThreeObjectExtend(false)
   .linkColor(l => {
     const base = LAYER_COLOR[l.layer] || '#94a3b8';
     if (!hlLinks.size) return base;
-    return hlLinks.has(l) ? base : 'rgba(100,116,139,0.10)';
+    return hlLinks.has(l) ? base : 'rgba(100,116,139,0.04)';  // distant flows recede
   })
   .linkWidth(l => Math.min(5, 0.6 + Math.abs(l.net)))
   .linkCurvature(l => (LAYERS.indexOf(l.layer) - 2) * 0.12)  // fan parallel layer edges
   .linkOpacity(0.5)
-  // moving dots on EVERY link encode the sign: green = cooperation, red = conflict
-  .linkDirectionalParticles(l => 2 + Math.min(4, Math.abs(l.net)))
+  // a focus dims/hides the distant flows: only the selected country's links keep dots/arrows
+  .linkDirectionalParticles(l =>
+    (hlLinks.size && !hlLinks.has(l)) ? 0 : 2 + Math.min(4, Math.abs(l.net)))
   .linkDirectionalParticleWidth(3)
   .linkDirectionalParticleSpeed(l => (l.net < 0 ? 0.012 : 0.006))
   .linkDirectionalParticleColor(l => (l.net > 0 ? '#4ade80' : '#f87171'))
-  .linkDirectionalArrowLength(3.5)  // arrow = direction: subject (initiator) -> object
+  .linkDirectionalArrowLength(l => (hlLinks.size && !hlLinks.has(l)) ? 0 : 3.5)
   .linkDirectionalArrowRelPos(1)
   .linkDirectionalArrowColor(l => LAYER_COLOR[l.layer] || '#888')
   .linkLabel(l => {  // hover tooltip: who acts on whom, domain, stance, and the reason
@@ -264,16 +411,19 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
     });
     Graph.nodeThreeObject(Graph.nodeThreeObject());  // refresh labels
     Graph.linkColor(Graph.linkColor()); Graph.nodeColor(Graph.nodeColor());
-    const d = 140, r = 1 + d / Math.hypot(node.x, node.y, node.z || 1);
-    Graph.cameraPosition({ x: node.x * r, y: node.y * r, z: node.z * r }, node, 1200);
-    selectedCountry = node.id;  // show this country's summary
+    Graph.linkDirectionalParticles(Graph.linkDirectionalParticles());
+    Graph.linkDirectionalArrowLength(Graph.linkDirectionalArrowLength());
+    const d = 80, r = 1 + d / Math.hypot(node.x, node.y, node.z || 1);  // closer standoff
+    Graph.cameraPosition({ x: node.x * r, y: node.y * r, z: node.z * r }, node, 1000);
+    selectedCountry = node.id;  // panel content updates; user opens it via the button
     renderPanel();
-    report.classList.add('open');
   })
   .onBackgroundClick(() => {
     hlNodes = new Set(); hlLinks = new Set(); selectedCountry = null;
     Graph.nodeThreeObject(Graph.nodeThreeObject());
     Graph.linkColor(Graph.linkColor()); Graph.nodeColor(Graph.nodeColor());
+    Graph.linkDirectionalParticles(Graph.linkDirectionalParticles());
+    Graph.linkDirectionalArrowLength(Graph.linkDirectionalArrowLength());
     renderPanel();
   });
 
@@ -336,8 +486,7 @@ fill(pa); fill(pb);
 pa.onchange = pb.onchange = () => {
   pair = [pa.value || null, pb.value || null];
   selectedCountry = null;
-  redraw();
-  if (pair[0] && pair[1]) report.classList.add('open');  // surface the pair summary
+  redraw();  // panel content updates; user opens it via the Situation report button
 };
 document.getElementById('clr').onclick = () => {
   pa.value = ''; pb.value = ''; pair = [null, null]; selectedCountry = null; redraw();
@@ -370,7 +519,7 @@ function renderPanel() {
       return;
     }
     sub.textContent = 'Pair summary (LLM + interactions, cached) · media-derived.';
-    body.innerHTML = (p.text ? '<p>' + esc(p.text) + '</p>' : '')
+    body.innerHTML = (p.text ? bulletize(p.text) : '')
       + (p.edges && p.edges.length
         ? '<p class="muted2">Interactions &amp; reasons</p>'
           + _interactionRows(p.edges, false) : '');
@@ -386,7 +535,7 @@ function renderPanel() {
       return;
     }
     sub.textContent = 'Country summary (LLM + interactions, cached) · media-derived.';
-    body.innerHTML = (c.text ? '<p>' + esc(c.text) + '</p>' : '')
+    body.innerHTML = (c.text ? bulletize(c.text) : '')
       + (c.interactions && c.interactions.length
         ? '<p class="muted2">Interactions &amp; reasons</p>'
           + _interactionRows(c.interactions, true) : '');
