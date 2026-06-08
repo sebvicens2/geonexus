@@ -99,6 +99,8 @@ _TEMPLATE = r"""<!doctype html>
   #report .muted2 { color:#64748b; font-size:11.5px; margin:0 0 12px; }
   #report p { font-size:13.5px; line-height:1.55; color:#cbd5e1; }
   #report code { background:#1e293b; padding:1px 5px; border-radius:4px; }
+  #report .ev { margin-top:5px; font-size:13px; }
+  #report .why { color:#94a3b8; font-size:12px; margin:1px 0 0 16px; font-style:italic; }
   #rptclose { float:right; cursor:pointer; color:#94a3b8; font-size:18px; border:none;
     background:none; }
 </style>
@@ -322,10 +324,12 @@ function renderPanel() {
   sub.textContent = 'Pair summary (LLM + interactions, cached) · media-derived.';
   let h = p.text ? '<p>' + esc(p.text) + '</p>' : '';
   if (p.edges && p.edges.length) {
-    h += '<p class="muted2">Interactions</p>';
-    h += p.edges.map(e =>
-      `<div><span style="color:${LAYER_COLOR[e.domain] || '#888'}">●</span> `
-      + `${esc(e.domain)}: ${esc(e.cameo)} (${e.sign > 0 ? '+' : ''}${e.sign})</div>`).join('');
+    h += '<p class="muted2">Interactions &amp; reasons</p>';
+    h += p.edges.map(e => {
+      const why = e.why ? `<div class="why">${esc(e.why)}</div>` : '';
+      return `<div class="ev"><span style="color:${LAYER_COLOR[e.domain] || '#888'}">●</span> `
+        + `${esc(e.domain)}: ${esc(e.cameo)} (${e.sign > 0 ? '+' : ''}${e.sign})</div>${why}`;
+    }).join('');
   }
   body.innerHTML = h;
 }

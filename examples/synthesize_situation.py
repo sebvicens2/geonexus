@@ -20,38 +20,83 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from extract_cameo import ollama
-from multilayer import CAMEO, LAYERS, MARITIME, _actor, net_dyads, signed_analysis
+from multilayer import CAMEO, LAYERS, MARITIME, NARR, _actor, net_dyads, signed_analysis
 
 OUT = Path(__file__).parent / "data" / "world_observer_situation.json"
 MIN_LLM = 2  # pairs with >= this many interactions get an LLM summary; others show facts only
 
+
+def _word(s: int) -> str:
+    return "cooperation" if s > 0 else "conflict" if s < 0 else "contact"
+
+
 _PAIR_PROMPT = (
-    "In 2-3 sentences, summarise the relationship between {a} and {b}, based ONLY on "
-    "these interactions from ~12 days of news coverage (+ = cooperation, - = conflict). "
-    "These are media-derived stances. Be specific, do not invent. Plain prose.\n"
-    "INTERACTIONS:\n{lines}"
+    "Explain the relationship between {a} and {b} in 3-4 sentences, focused on the "
+    "REASONS and concrete events driving it, drawing on the news excerpts below. "
+    "Do NOT mention any numeric scores or ratings — describe the underlying events "
+    "and dynamics in plain prose. These are media-derived. Be specific.\n"
+    "DOMAINS & EVENTS:\n{lines}"
 )
 
 _PROMPT = (
-    "You are a geopolitical analyst. Using ONLY the structured signals below "
-    "(stances extracted from ~12 days of news coverage; + = cooperation, "
-    "- = conflict, by domain), write a concise SITUATION REPORT in 4-6 short "
-    "paragraphs. Cover: the main fault lines, notable cooperation, cross-domain "
-    "divergences (e.g. economic rivals that are diplomatic partners), the bloc "
-    "structure, and any maritime/chokepoint risk. Be specific with country names. "
-    "Do NOT invent anything beyond the signals. Begin by noting these are "
-    "media-derived stances, not ground truth. Plain prose, no markdown headers.\n\n"
+    "You are a geopolitical analyst. Write a SITUATION REPORT in 4-6 short paragraphs "
+    "from the signals below (from ~12 days of news coverage). For the main fault lines, "
+    "notable cooperation and cross-domain divergences (e.g. economic rivals that are "
+    "diplomatic partners), EXPLAIN THE REASONS using the concrete events in KEY EVENTS. "
+    "Do NOT mention numeric scores or ratings — describe the underlying drivers. Cover "
+    "the bloc structure and any maritime/chokepoint risk. Be specific with country "
+    "names; do not invent beyond the signals. Begin by noting these are media-derived "
+    "stances, not ground truth. Plain prose, no markdown headers.\n\n"
     "SIGNALS:\n{facts}"
 )
 
 
-def build_facts() -> dict:
+def _summaries() -> dict[str, dict[str, str]]:
+    if not hasattr(_summaries, "_cache"):
+        data = json.loads(NARR.read_text(encoding="utf-8")) if NARR.exists() else []
+        _summaries._cache = {e["key"]: e["by_day"] for e in data}  # type: ignore[attr-defined]
+    return _summaries._cache  # type: ignore[attr-defined]
+
+
+def _ground(source: str, day: str, ra: str, rb: str) -> str:
+    """The source sentence behind an interaction — the 'reason' (no scores)."""
+    import re
+
+    text = _summaries().get(source, {}).get(day, "")
+    chunks = [" ".join(c.split()) for c in re.split(r"(?:\n|- |\. )", text) if c.strip()]
+    both = [c for c in chunks if ra in c and rb in c]
+    one = [c for c in chunks if ra in c or rb in c]
+    return (both or one or [""])[0][:220]
+
+
+def build_pairs() -> dict[str, list[dict]]:
+    """Per canonical country pair: its CAMEO interactions, each with its source 'reason'."""
+    cam = json.loads(CAMEO.read_text(encoding="utf-8"))
+    pairs: dict[str, list[dict]] = {}
+    for e in cam:
+        a, b = _actor(e["a"]), _actor(e["b"])
+        if not a or not b or a == b:
+            continue
+        key = "|".join(sorted((a, b)))
+        pairs.setdefault(key, []).append(
+            {
+                "domain": e["domain"],
+                "cameo": e["cameo"],
+                "sign": e["sign"],
+                "source": e["source"],
+                "why": _ground(e["source"], e.get("day", ""), e["a"], e["b"]),
+            }
+        )
+    return pairs
+
+
+def build_facts(pairs: dict[str, list[dict]]) -> dict:
     net = net_dyads(json.loads(CAMEO.read_text(encoding="utf-8")))
     facts: dict = {"layers": {}}
     for lay in LAYERS:
         items = net[lay].items()
-        conf = [f"{a}-{b} ({s})" for (a, b), s in sorted(items, key=lambda kv: kv[1]) if s < 0]
-        coop = [f"{a}-{b} (+{s})" for (a, b), s in sorted(items, key=lambda kv: -kv[1]) if s > 0]
+        conf = [f"{a}-{b}" for (a, b), s in sorted(items, key=lambda kv: kv[1]) if s < 0]
+        coop = [f"{a}-{b}" for (a, b), s in sorted(items, key=lambda kv: -kv[1]) if s > 0]
         facts["layers"][lay] = {"conflict": conf[:6], "cooperation": coop[:6]}
 
     by_pair: dict = {}
@@ -63,9 +108,20 @@ def build_facts() -> dict:
         signs = [s for s in ls.values() if s]
         if any(s > 0 for s in signs) and any(s < 0 for s in signs):
             div.append(
-                f"{pair[0]}-{pair[1]}: " + ", ".join(f"{ly} {s:+d}" for ly, s in ls.items() if s)
+                f"{pair[0]}-{pair[1]}: "
+                + ", ".join(f"{ly} {_word(s)}" for ly, s in ls.items() if s)
             )
     facts["cross_layer_divergence"] = div[:10]
+
+    # KEY EVENTS: the concrete reasons behind the strongest dyads (no scores)
+    strength = {k: sum(abs(e["sign"]) for e in v) for k, v in pairs.items()}
+    events = []
+    for k in sorted(strength, key=lambda k: -strength[k])[:14]:
+        a, b = k.split("|")
+        why = next((e["why"] for e in pairs[k] if e["why"]), "")
+        if why:
+            events.append(f"{a}/{b}: {why}")
+    facts["key_events"] = events
 
     sa = signed_analysis(net)
     facts["structural_balance_pct"] = round(sa["balance_pct"])
@@ -75,33 +131,16 @@ def build_facts() -> dict:
 
     mar = json.loads(MARITIME.read_text(encoding="utf-8")) if MARITIME.exists() else []
     facts["maritime"] = [
-        f"{c['name']} ({c['commodity']}): {c['disruption']['classification']}, "
-        f"z={c['disruption']['z_score']}"
+        f"{c['name']} ({c['commodity']}): {c['disruption']['classification']}"
         for c in mar
         if c.get("disruption")
     ][:8]
     return facts
 
 
-def build_pairs() -> dict[str, list[dict]]:
-    """Per canonical country pair: the list of CAMEO interactions between them."""
-    cam = json.loads(CAMEO.read_text(encoding="utf-8"))
-    pairs: dict[str, list[dict]] = {}
-    for e in cam:
-        a, b = _actor(e["a"]), _actor(e["b"])
-        if not a or not b or a == b:
-            continue
-        key = "|".join(sorted((a, b)))
-        pairs.setdefault(key, []).append(
-            {"domain": e["domain"], "cameo": e["cameo"], "sign": e["sign"], "source": e["source"]}
-        )
-    return pairs
-
-
-def _pair_reports(model: str, refresh: bool, cached: dict) -> dict:
-    """Per-pair entries {h, edges, text}; LLM summary for pairs with >= MIN_LLM edges."""
+def _pair_reports(model: str, refresh: bool, cached: dict, pairs: dict) -> dict:
+    """Per-pair entries {h, edges, text}; reason-based LLM summary for pairs >= MIN_LLM."""
     prev = cached.get("pairs", {}) if cached else {}
-    pairs = build_pairs()
     todo = sum(1 for v in pairs.values() if len(v) >= MIN_LLM)
     out: dict[str, dict] = {}
     done = 0
@@ -114,7 +153,9 @@ def _pair_reports(model: str, refresh: bool, cached: dict) -> dict:
                 entry["text"] = old["text"]
             else:
                 a, b = key.split("|")
-                lines = "\n".join(f"- {x['domain']}: {x['cameo']} ({x['sign']:+d})" for x in edges)
+                lines = "\n".join(
+                    f"- {x['domain']} ({_word(x['sign'])}): {x['why']}".rstrip(": ") for x in edges
+                )
                 txt = ollama(model, _PAIR_PROMPT.format(a=a, b=b, lines=lines), timeout=120)
                 entry["text"] = (txt or "").strip()
                 done += 1
@@ -131,7 +172,8 @@ def main() -> None:
     parser.add_argument("--refresh", action="store_true", help="regenerate even if cached")
     args = parser.parse_args()
 
-    facts = build_facts()
+    pairs = build_pairs()
+    facts = build_facts(pairs)
     digest = hashlib.sha256(json.dumps(facts, sort_keys=True).encode()).hexdigest()[:16]
     cached = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
 
@@ -147,18 +189,18 @@ def main() -> None:
             return
 
     print("generating per-pair summaries…")
-    pairs = _pair_reports(args.model, args.refresh, cached)
+    pair_reports = _pair_reports(args.model, args.refresh, cached, pairs)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(
         json.dumps(
-            {"hash": digest, "text": text, "facts": facts, "pairs": pairs},
+            {"hash": digest, "text": text, "facts": facts, "pairs": pair_reports},
             ensure_ascii=False,
             indent=2,
         ),
         encoding="utf-8",
     )
-    print(f"wrote {OUT} (global {len(text)} chars, {len(pairs)} pairs)")
+    print(f"wrote {OUT} (global {len(text)} chars, {len(pair_reports)} pairs)")
 
 
 if __name__ == "__main__":
