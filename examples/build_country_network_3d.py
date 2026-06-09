@@ -17,6 +17,7 @@ import base64
 import json
 import sys
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -210,17 +211,37 @@ def main() -> None:
     if not CAMEO.exists():
         print(f"{CAMEO} not found — run extract_cameo.py first.")
         return
-    # directed dyads: subject -> object (who acts on whom), net sign per (a, b, layer)
+    # directed dyads: subject -> object (who acts on whom), net sign per (a, b, layer).
+    # links have a LIFESPAN: each interaction decays with a 7-day half-life from its day,
+    # so the net is recency-weighted and each dyad carries a "freshness" (0..1).
     cameo = json.loads(CAMEO.read_text(encoding="utf-8"))
-    directed: dict[str, dict[tuple[str, str], int]] = {lay: {} for lay in LAYERS}
+    HALF_LIFE = 7.0
+    days = [e["day"] for e in cameo if e.get("day")]
+    today = date.fromisoformat(max(days)) if days else None
+    acc: dict[str, dict[tuple[str, str], list]] = {lay: {} for lay in LAYERS}
     actors: set[str] = set()
     for e in cameo:
         a, b = _actor(e["a"]), _actor(e["b"])
-        if not a or not b or a == b or e["domain"] not in directed:
+        if not a or not b or a == b or e["domain"] not in acc:
             continue
-        directed[e["domain"]][(a, b)] = directed[e["domain"]].get((a, b), 0) + e["sign"]
+        eday = e.get("day", "")
+        age = (today - date.fromisoformat(eday)).days if (today and eday) else 0
+        weight = 0.5 ** (max(0, age) / HALF_LIFE)
+        cell = acc[e["domain"]].setdefault((a, b), [0.0, eday])
+        cell[0] += e["sign"] * weight
+        if eday > cell[1]:
+            cell[1] = eday
         actors.update((a, b))
-    dyads = {lay: [[a, b, s] for (a, b), s in d.items() if s] for lay, d in directed.items()}
+    dyads = {}
+    for lay, d in acc.items():
+        rows = []
+        for (a, b), (wsum, last) in d.items():
+            if abs(wsum) < 0.05:  # fully decayed away
+                continue
+            stale = (today - date.fromisoformat(last)).days if (today and last) else 0
+            fresh = 0.5 ** (max(0, stale) / HALF_LIFE)
+            rows.append([a, b, round(wsum, 2), round(fresh, 2)])
+        dyads[lay] = rows
     countries = sorted(actors)  # alphabetical for the pair dropdowns
 
     # 20-year GDELT baseline: kept as a SHORT per-pair summary for the panel (a few
@@ -317,7 +338,7 @@ _TEMPLATE = r"""<!doctype html>
   <p>Link colour = domain · dots = sign
      (<span style="color:#4ade80">green coop</span> /
      <span style="color:#f87171">red conflict</span>) · arrow = who acted (subject → object).
-     Click a country for its summary; empty space resets.</p>
+     Links fade as they age (7-day half-life). Click a country for its summary; empty space resets.</p>
   <div id="btns"></div>
   <div id="pair">Focus a pair:
     <select id="pa"></select> <select id="pb"></select>
@@ -353,6 +374,10 @@ const COUNTRIES = __COUNTRIES__;  // per-country: {text (LLM summary), interacti
 const FLAGS = __FLAGS__;  // country -> base64 flag data-URI (overlay <img>)
 const HISTPAIRS = __HISTPAIRS__;  // "A|B" -> {domain: net Goldstein over 20y} (panel summary)
 const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const hexA = (h, a) => {  // "#rrggbb" + alpha -> rgba() (per-link freshness fade)
+  const n = parseInt(h.slice(1), 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a.toFixed(2)})`;
+};
 function bulletize(text) {  // render LLM bullet output as a list (fallback: paragraph)
   const lines = text.split('\n').map(x => x.trim()).filter(Boolean);
   const items = lines.filter(l => /^[-•*]/.test(l)).map(l => l.replace(/^[-•*]\s*/, ''));
@@ -397,9 +422,9 @@ const LAYER_COLOR = {            // link colour = domain; conflict shown via mov
 function graphFor(activeSet) {
   // one link per (dyad, layer) so link colour can show the domain (no aggregation)
   const links = [], nbr = {};
-  for (const L of activeSet) for (const [a, b, s] of D.dyads[L]) {
+  for (const L of activeSet) for (const [a, b, s, f] of D.dyads[L]) {
     if (!s) continue;
-    links.push({ source: a, target: b, net: s, layer: L });
+    links.push({ source: a, target: b, net: s, layer: L, fresh: f ?? 1 });
     (nbr[a] = nbr[a] || new Set()).add(b);
     (nbr[b] = nbr[b] || new Set()).add(a);
   }
@@ -424,13 +449,13 @@ const Graph = ForceGraph3D()(document.getElementById('g'))
   .nodeColor(n => (hlNodes.size && !hlNodes.has(n.id)) ? 'rgba(148,163,184,0.25)' : NODE_COLOR(n))
   .nodeLabel('id')  // hover tooltip
   .linkColor(l => {
+    if (hlLinks.size && !hlLinks.has(l)) return 'rgba(100,116,139,0.04)';  // distant flows recede
     const base = LAYER_COLOR[l.layer] || '#94a3b8';
-    if (!hlLinks.size) return base;
-    return hlLinks.has(l) ? base : 'rgba(100,116,139,0.04)';  // distant flows recede
+    return hexA(base, 0.18 + 0.62 * (l.fresh ?? 1));  // aging links fade out (7-day half-life)
   })
-  .linkWidth(l => Math.min(5, 0.6 + Math.abs(l.net)))
+  .linkWidth(l => Math.min(5, 0.6 + Math.abs(l.net)) * (0.4 + 0.6 * (l.fresh ?? 1)))
   .linkCurvature(l => (LAYERS.indexOf(l.layer) - 2) * 0.12)  // fan parallel layer edges
-  .linkOpacity(0.5)
+  .linkOpacity(1)  // alpha carried per-link in linkColor (freshness)
   // a focus dims/hides the distant flows: only the selected country's links keep dots/arrows
   .linkDirectionalParticles(l =>
     (hlLinks.size && !hlLinks.has(l)) ? 0 : 2 + Math.min(4, Math.abs(l.net)))
